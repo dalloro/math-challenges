@@ -5,6 +5,7 @@ import { db } from '../firebase';
 export interface Question {
   id: string;
   grade: number;
+  level: number;
   difficulty: 'gifted';
   type: string;
   question: string;

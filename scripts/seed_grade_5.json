@@ -1,85 +1,82 @@
 [
   {
-    "grade": 5,
-    "difficulty": "gifted",
-    "type": "geometry",
-    "question": "A cube with a side length of 6 cm is painted blue on all its faces. It is then cut into smaller cubes with a side length of 2 cm. How many of these smaller cubes have exactly two faces painted blue?",
-    "options": ["4", "8", "12", "24", "27"],
-    "correct_answer": "12",
-    "ideal_solution": "1. Large cube side = 6 cm, Small cube side = 2 cm. So, 3x3x3 = 27 small cubes total.
-2. Cubes with 2 faces painted blue are located on the edges of the large cube, excluding the corners.
-3. Each edge of the large cube is 6 cm, which fits 3 small cubes. The 2 corners have 3 faces painted, so only the 1 middle cube on each edge has exactly 2 faces painted.
-4. A cube has 12 edges. Total = 12 * 1 = 12.",
-    "failure_modes": {
-      "corner_inclusion": "Remember that corner cubes have 3 faces painted, not 2.",
-      "edge_counting": "Check how many small cubes fit on one edge and subtract the two corner cubes."
-    }
+    "grade": 5, "level": 1, "difficulty": "gifted", "type": "logic",
+    "question": "Alice, Bob, and Charlie each have a different favorite fruit: Apple, Banana, and Cherry. Charlie does not like Bananas. Alice's favorite is not Apple. Bob's favorite is Cherry. What is Charlie's favorite fruit?",
+    "options": ["Apple", "Banana", "Cherry", "Grapes", "Cannot be determined"],
+    "correct_answer": "Apple",
+    "ideal_solution": "Bob=Cherry. Alice!=Apple so Alice=Banana. Charlie=Apple.",
+    "failure_modes": { "elimination_logic": "Bob has Cherry, cross it out for others.", "reading_error": "Alice does NOT like Apple." }
   },
   {
-    "grade": 5,
-    "difficulty": "gifted",
-    "type": "number_theory",
-    "question": "The product of three different prime numbers is 105. What is the sum of these three prime numbers?",
-    "options": ["15", "18", "21", "25", "30"],
-    "correct_answer": "15",
-    "ideal_solution": "1. Factorize 105 into primes: 105 = 5 * 21 = 5 * 3 * 7.
-2. The primes are 3, 5, and 7.
-3. Sum = 3 + 5 + 7 = 15.",
-    "failure_modes": {
-      "non_prime_factors": "Make sure the factors you found are all prime. 1 and 21 are not prime numbers in this context.",
-      "arithmetic_error": "Re-check your addition: 3 + 5 + 7 = 15."
-    }
+    "grade": 5, "level": 2, "difficulty": "gifted", "type": "geometry",
+    "question": "The perimeter of a rectangle is 24 cm. If the side lengths are integers, how many different areas are possible for this rectangle?",
+    "options": ["3", "4", "5", "6", "11"],
+    "correct_answer": "6",
+    "ideal_solution": "L + W = 12. Pairs (L, W): (11,1), (10,2), (9,3), (8,4), (7,5), (6,6). 6 total.",
+    "failure_modes": { "square_exclusion": "A square is a rectangle!", "perimeter_mixup": "L+W is half the perimeter." }
   },
   {
-    "grade": 5,
-    "difficulty": "gifted",
-    "type": "algebra",
-    "question": "If 4 pencils and 3 erasers cost $2.50, and 2 pencils and 1 eraser cost $1.10, what is the cost of one pencil?",
-    "options": ["$0.30", "$0.40", "$0.45", "$0.50", "$0.60"],
-    "correct_answer": "$0.40",
-    "ideal_solution": "1. Let P = pencil cost, E = eraser cost.
-2. 4P + 3E = 2.50
-3. 2P + E = 1.10  => E = 1.10 - 2P
-4. Substitute E into the first equation: 4P + 3(1.10 - 2P) = 2.50
-5. 4P + 3.30 - 6P = 2.50
-6. -2P = 2.50 - 3.30 = -0.80
-7. P = 0.40.",
-    "failure_modes": {
-      "substitution_error": "Check your distribution when multiplying 3 by (1.10 - 2P).",
-      "sign_error": "Ensure you handled the negative signs correctly when subtracting 3.30 from 2.50."
-    }
+    "grade": 5, "level": 3, "difficulty": "gifted", "type": "number_theory",
+    "question": "The sum of three consecutive odd integers is 57. What is the largest of these integers?",
+    "options": ["17", "19", "21", "23", "25"],
+    "correct_answer": "21",
+    "ideal_solution": "3x=57 => x=19. Integers 17, 19, 21.",
+    "failure_modes": { "consecutive_definition": "Odd integers differ by 2.", "average_trick": "Sum/3 is the middle number." }
   },
   {
-    "grade": 5,
-    "difficulty": "gifted",
-    "type": "logic",
-    "question": "In a race of 1000 meters, Runner A beats Runner B by 100 meters. In a race of 1000 meters, Runner B beats Runner C by 100 meters. By how many meters would Runner A beat Runner C in a 1000-meter race?",
-    "options": ["100 m", "190 m", "200 m", "210 m", "250 m"],
-    "correct_answer": "190 m",
-    "ideal_solution": "1. When A finishes (1000m), B has run 900m. So B's speed is 0.9 times A's speed.
-2. When B finishes (1000m), C has run 900m. So C's speed is 0.9 times B's speed.
-3. C's speed relative to A = 0.9 * 0.9 = 0.81.
-4. When A runs 1000m, C runs 1000 * 0.81 = 810m.
-5. Distance A beats C = 1000 - 810 = 190m.",
-    "failure_modes": {
-      "additive_error": "Do not simply add the distances (100 + 100 = 200). The head start is proportional to the speed and time elapsed.",
-      "ratio_miscalculation": "Remember that B and C's relative speed applies to the distance B has actually run when A finishes."
-    }
+    "grade": 5, "level": 4, "difficulty": "gifted", "type": "geometry",
+    "question": "A large cube is made of 27 identical small cubes. If the surface of the large cube is painted red, how many of the small cubes have exactly one face painted red?",
+    "options": ["1", "6", "8", "12", "26"],
+    "correct_answer": "6",
+    "ideal_solution": "1. Center of each face has 1 cube. 6 faces = 6.",
+    "failure_modes": { "corner_counting": "Corner cubes have 3 faces painted.", "edge_counting": "Edge cubes have 2 faces painted." }
   },
   {
-    "grade": 5,
-    "difficulty": "gifted",
-    "type": "fractions",
-    "question": "What is the result of (1/2 + 1/3) / (1/4 + 1/5) in simplest form?",
-    "options": ["25/27", "50/27", "25/54", "5/9", "31/27"],
-    "correct_answer": "50/27",
-    "ideal_solution": "1. Numerator: 1/2 + 1/3 = 3/6 + 2/6 = 5/6.
-2. Denominator: 1/4 + 1/5 = 5/20 + 4/20 = 9/20.
-3. (5/6) / (9/20) = 5/6 * 20/9 = 100/54.
-4. Simplify: 100/54 = 50/27.",
-    "failure_modes": {
-      "common_denominator": "Check your addition of fractions. 1/2 + 1/3 is 5/6, not 2/5.",
-      "division_rule": "Remember to flip the second fraction and multiply: (a/b) / (c/d) = (a/b) * (d/c)."
-    }
+    "grade": 5, "level": 5, "difficulty": "gifted", "type": "logic",
+    "question": "In a logic puzzle, there are three chests: Gold, Silver, and Lead. Gold: 'The treasure is not in the Silver chest.' Silver: 'The treasure is not in this chest.' Lead: 'The treasure is in this chest.' If exactly one is true, where is the treasure?",
+    "options": ["Gold", "Silver", "Lead", "None", "Unknown"],
+    "correct_answer": "Silver",
+    "ideal_solution": "If treasure is in Silver, all statements are false (0 true). If treasure is in Gold, Gold and Silver are true (2 true). If treasure is in Lead, Gold and Lead are true (2 true). The only way to get exactly one true is if 'Not in Silver' is the lie, meaning it IS in Silver.",
+    "failure_modes": { "trial_error": "Test each chest one by one.", "contradiction_check": "If Gold is false, treasure MUST be in Silver." }
+  },
+  {
+    "grade": 5, "level": 6, "difficulty": "gifted", "type": "number_theory",
+    "question": "How many two-digit numbers are such that the sum of their digits is a perfect square?",
+    "options": ["13", "17", "19", "21", "25"],
+    "correct_answer": "17",
+    "ideal_solution": "Perfect squares 1, 4, 9, 16. Counts: (10)=1, (13,22,31,40)=4, (18,27,36,45,54,63,72,81,90)=9, (79,88,97)=3. Total = 17.",
+    "failure_modes": { "missing_zero": "Don't forget 10, 40, 90.", "calculation_error": "Check sums 1, 4, 9, 16." }
+  },
+  {
+    "grade": 5, "level": 7, "difficulty": "gifted", "type": "geometry",
+    "question": "A rectangle has a length 4 cm longer than its width. If the area is 96 square cm, what is the perimeter?",
+    "options": ["20 cm", "28 cm", "40 cm", "44 cm", "48 cm"],
+    "correct_answer": "40 cm",
+    "ideal_solution": "w(w+4)=96 => w=8. L=12. P=2(8+12)=40.",
+    "failure_modes": { "quadratic_setup": "w * (w+4) = 96.", "perimeter_formula": "2 * (L+W)." }
+  },
+  {
+    "grade": 5, "level": 8, "difficulty": "gifted", "type": "number_theory",
+    "question": "What is the smallest positive integer divisible by all integers from 1 to 10?",
+    "options": ["504", "1260", "2520", "5040", "25200"],
+    "correct_answer": "2520",
+    "ideal_solution": "LCM(1...10) = 8 * 9 * 5 * 7 = 2520.",
+    "failure_modes": { "multiplication_error": "Check 2^3 and 3^2.", "missing_factor": "Include 7 and 9." }
+  },
+  {
+    "grade": 5, "level": 9, "difficulty": "gifted", "type": "logic",
+    "question": "If 5 cats can catch 5 mice in 5 minutes, how many cats are needed to catch 100 mice in 100 minutes?",
+    "options": ["5", "20", "25", "100", "500"],
+    "correct_answer": "5",
+    "ideal_solution": "1 cat catches 1 mouse in 5 mins. In 100 mins, 1 cat catches 20 mice. 100/20 = 5 cats.",
+    "failure_modes": { "linear_trap": "Mice and time both grew by 20x, cats stay the same.", "rate_calculation": "Rate is 1 mouse / 5 mins per cat." }
+  },
+  {
+    "grade": 5, "level": 10, "difficulty": "gifted", "type": "logic",
+    "question": "A train 100m long passes a bridge 400m long in 25 seconds. Speed in km/h?",
+    "options": ["20", "36", "72", "90", "100"],
+    "correct_answer": "72",
+    "ideal_solution": "Dist=500m. Time=25s. Speed=20m/s = 72km/h.",
+    "failure_modes": { "distance_error": "Add train length!", "unit_conversion": "1 m/s = 3.6 km/h." }
   }
 ]

@@ -1,0 +1,1402 @@
+[
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Amy, Ben, and Carl are standing in a line. Amy is not first. Carl is standing between Amy and Ben. Who is standing first in line?",
+    "options": ["Amy", "Ben", "Carl", "Amy and Ben", "No one"],
+    "correct_answer": "Ben",
+    "ideal_solution": "If Amy is not first, she must be 2nd or 3rd. Since Carl is between Amy and Ben, Carl must be 2nd. This leaves the 1st and 3rd spots for Amy and Ben. Since Amy cannot be 1st, Ben must be 1st and Amy must be 3rd.",
+    "failure_modes": {
+      "order_reversal": "Check if your order allows Carl to be in the middle of the other two.",
+      "amy_first_error": "Remember the rule states Amy is NOT first."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "I am a number between 10 and 20. If you add my two digits together, the sum is 5. What number am I?",
+    "options": ["12", "13", "14", "15", "16"],
+    "correct_answer": "14",
+    "ideal_solution": "Numbers between 10 and 20 all start with the digit 1. To find the second digit, we subtract 1 from the total sum: 5 - 1 = 4. The number is 14.",
+    "failure_modes": {
+      "sum_error": "Make sure the two digits add up to exactly five.",
+      "range_error": "The number must be larger than 10 and smaller than 20."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many squares of any size can you find in a 2x2 grid made of 4 small squares?",
+    "options": ["2", "4", "5", "6", "8"],
+    "correct_answer": "5",
+    "ideal_solution": "Count the small individual squares first: there are 4. Then look for a larger square made by combining all of them: there is 1. Total: 4 + 1 = 5.",
+    "failure_modes": {
+      "small_only": "Don't forget the large outer square that contains the smaller ones.",
+      "counting_overlap": "Ensure you are only counting shapes that have four equal sides."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If two identical apples weigh the same as three identical plums, and one apple weighs 6 ounces, how much does one plum weigh?",
+    "options": ["2 ounces", "3 ounces", "4 ounces", "5 ounces", "6 ounces"],
+    "correct_answer": "4 ounces",
+    "ideal_solution": "Two apples weigh 6 + 6 = 12 ounces. Since three plums weigh the same as two apples, three plums weigh 12 ounces. Divide 12 by 3 to find the weight of one plum: 4 ounces.",
+    "failure_modes": {
+      "single_apple_bias": "Remember the total weight is for two apples, not just one.",
+      "division_error": "Think: what number added to itself three times equals 12?"
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A blue box is heavier than a red box. A green box is heavier than the blue box. Which box is the lightest?",
+    "options": ["Blue", "Red", "Green", "Blue and Green", "They weigh the same"],
+    "correct_answer": "Red",
+    "ideal_solution": "Compare them in pairs: Blue > Red. Green > Blue. This means Green > Blue > Red. The red box is at the end of the chain, making it the lightest.",
+    "failure_modes": {
+      "misreading_heavier": "Draw a scale or list them from heaviest to lightest to keep track.",
+      "middle_item_confusion": "The blue box is in the middle, so it cannot be the lightest or heaviest."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Five children are in a race. Joy finished after Sam but before Tim. Leo finished first. Mia finished last. Who finished in second place?",
+    "options": ["Joy", "Sam", "Tim", "Leo", "Mia"],
+    "correct_answer": "Sam",
+    "ideal_solution": "Leo is 1st. Mia is 5th. Between them are Sam, Joy, and Tim. Since Joy is after Sam but before Tim, the order must be Sam (2nd), Joy (3rd), and Tim (4th). Therefore, Sam is 2nd.",
+    "failure_modes": {
+      "reversing_order": "Make sure 'after' means a higher number (like 2nd is after 1st).",
+      "middle_swap": "Check if Joy is between the other two names."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many triangles are in a square that has one line drawn from the top-left corner to the bottom-right corner?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "2",
+    "ideal_solution": "A square has four sides. A diagonal line cuts the square into two equal parts. Each part has three sides, making them triangles. 1 + 1 = 2.",
+    "failure_modes": {
+      "side_counting": "Count the shapes created, not the number of lines.",
+      "square_counting": "The question asks for triangles, not the original square."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "A pattern goes: 2, 5, 8, 11, ... What is the 6th number in this pattern?",
+    "options": ["13", "14", "15", "16", "17"],
+    "correct_answer": "17",
+    "ideal_solution": "The pattern adds 3 each time (2+3=5, 5+3=8). The 5th number is 11+3=14. The 6th number is 14+3=17.",
+    "failure_modes": {
+      "off_by_one": "Count carefully to ensure you reach the 6th spot, not the 5th.",
+      "addition_error": "Verify that you are adding exactly 3 every time."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If a star + a star = 10, and a star + a heart = 12, what is the value of a heart?",
+    "options": ["2", "5", "7", "10", "12"],
+    "correct_answer": "7",
+    "ideal_solution": "If two stars are 10, one star must be 5 (because 5+5=10). If 5 + heart = 12, then heart = 12 - 5, which is 7.",
+    "failure_modes": {
+      "star_value": "First find what one single star is worth.",
+      "subtraction_error": "Ensure 5 plus your answer equals 12."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "There are 4 cups in a row. A marble is in the cup that is to the right of the blue cup but to the left of the yellow cup. The red cup is the furthest to the left. Which cup is the marble in?",
+    "options": ["Red cup", "Blue cup", "Green cup", "Yellow cup", "The marble is lost"],
+    "correct_answer": "Green cup",
+    "ideal_solution": "The red cup is 1st. Since the marble is between blue and yellow, and red is already 1st, the order must be Red, Blue, [Marble Cup], Yellow. The only cup remaining for the marble is the Green one (or the 3rd cup).",
+    "failure_modes": {
+      "direction_confusion": "Remember left and right positions in the row.",
+      "color_omission": "Use the process of elimination for the unnamed cup."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Four friends are sitting in a row. Dana is not next to Sam. Sam is at the very end. If Leo is between Dana and Sam, who is sitting next to Dana?",
+    "options": ["Leo", "Sam", "Mila", "No one", "Dana"],
+    "correct_answer": "Leo",
+    "ideal_solution": "If Sam is at the end (1st) and Leo is between Dana and Sam, the order must be Sam (1st), Leo (2nd), and Dana (3rd). Therefore, Leo is sitting next to Dana.",
+    "failure_modes": {
+      "end_position": "Start by placing Sam at position 1 and work outward.",
+      "middle_definition": "Remember that 'between' means the person is directly touching both neighbors."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A square paper is folded in half once to make a rectangle. Then it is folded in half again to make a smaller square. How many layers of paper are there now?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correct_answer": "4",
+    "ideal_solution": "The first fold doubles the layers (1 to 2). The second fold doubles the layers again (2 to 4). Total layers: 4.",
+    "failure_modes": {
+      "addition_trap": "Avoid adding 1+1+1; each fold doubles the current thickness.",
+      "visual_error": "Imagine the paper stacking on top of itself with every move."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "If you count by 5s starting from 5, which of these numbers will you NOT say?",
+    "options": ["10", "15", "22", "25", "30"],
+    "correct_answer": "22",
+    "ideal_solution": "Counting by 5s means every number must end in 0 or 5 (5, 10, 15, 20, 25, 30). 22 ends in 2, so it is not in the pattern.",
+    "failure_modes": {
+      "ending_digit": "Check the last digit of every number in the list.",
+      "skip_counting": "Verify your jumps are exactly 5 units apart."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "One heavy ball weighs the same as 4 light balls. If 2 heavy balls are on one side of a scale, how many light balls are needed on the other side to balance it?",
+    "options": ["2", "4", "6", "8", "10"],
+    "correct_answer": "8",
+    "ideal_solution": "If 1 heavy = 4 light, then 2 heavy = 4 + 4 = 8 light balls.",
+    "failure_modes": {
+      "single_unit_error": "Don't forget to double the count because there are two heavy balls.",
+      "addition_mistake": "Ensure you add 4 twice or multiply 4 by 2."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "There are 5 birds on a fence. The red bird is to the left of the blue bird. The green bird is to the right of the blue bird. Which bird is in the middle?",
+    "options": ["Red", "Blue", "Green", "Yellow", "Purple"],
+    "correct_answer": "Blue",
+    "ideal_solution": "The order described is Red -> Blue -> Green. In this set of three, the Blue bird is clearly in the center position.",
+    "failure_modes": {
+      "left_right_swap": "Re-check which side is left and which is right.",
+      "missing_birds": "Focus only on the three colors provided to find the sequence."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many corners (vertices) does a cube have?",
+    "options": ["4", "6", "8", "10", "12"],
+    "correct_answer": "8",
+    "ideal_solution": "A cube has a square on top and a square on the bottom. Each square has 4 corners. 4 + 4 = 8.",
+    "failure_modes": {
+      "face_counting": "Be careful not to count the flat sides (6) instead of the pointy corners.",
+      "edge_confusion": "A corner is where three lines meet, not the lines themselves."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "I have 3 more cookies than Sam. Sam has 2 fewer cookies than Kim. If Kim has 5 cookies, how many do I have?",
+    "options": ["3", "4", "5", "6", "8"],
+    "correct_answer": "6",
+    "ideal_solution": "Start with Kim (5). Sam has 2 fewer, so 5 - 2 = 3. I have 3 more than Sam, so 3 + 3 = 6.",
+    "failure_modes": {
+      "order_of_ops": "Solve for Sam's cookies before trying to find 'my' total.",
+      "subtraction_direction": "Ensure 'fewer' means you are taking away from Kim's total."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "A toy car costs $3 and a book costs $5. If I have $10, can I buy two books?",
+    "options": ["Yes, with $0 left", "Yes, with $2 left", "No, I need $2 more", "No, I need $3 more", "Yes, with $1 left"],
+    "correct_answer": "Yes, with $0 left",
+    "ideal_solution": "One book is $5. Two books are $5 + $5 = $10. If I have $10, I can buy them and have $0 remaining.",
+    "failure_modes": {
+      "multiplication_error": "Double-check that 5 + 5 is exactly 10.",
+      "car_distraction": "Ignore the price of the toy car; it is not part of the final purchase."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Today is Tuesday. What day of the week was it 2 days ago?",
+    "options": ["Sunday", "Monday", "Wednesday", "Thursday", "Friday"],
+    "correct_answer": "Sunday",
+    "ideal_solution": "Count backward from Tuesday. One day ago was Monday. Two days ago was Sunday.",
+    "failure_modes": {
+      "forward_counting": "Make sure you count backward for 'ago' and forward for 'from now'.",
+      "off_by_one": "Do not count Tuesday itself as the first day back."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A pizza is cut into 4 equal slices. If I eat 2 slices, what part of the pizza is left?",
+    "options": ["None", "One quarter", "Half", "Three quarters", "All of it"],
+    "correct_answer": "Half",
+    "ideal_solution": "4 slices total minus 2 slices eaten leaves 2 slices. 2 out of 4 is the same as half of the pizza.",
+    "failure_modes": {
+      "counting_eaten": "Ensure you are counting what is left, not what was eaten.",
+      "fraction_naming": "Remember that 2 out of 4 is the same as 1 out of 2."
+    }
+  },
+{
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A train has 4 cars. The blue car is behind the red car. The yellow car is in front of the red car. Which car is first in line?",
+    "options": ["Blue", "Red", "Yellow", "Green", "Last car"],
+    "correct_answer": "Yellow",
+    "ideal_solution": "If Yellow is in front of Red, and Blue is behind Red, the order is Yellow -> Red -> Blue. Therefore, Yellow is the first car.",
+    "failure_modes": {
+      "reversing_front_back": "Visualize the train moving to the left; 'front' is the leftmost position.",
+      "middle_car_error": "Identify that Red is between the other two."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "I am thinking of a number. If you double it and then add 2, you get 10. What is my number?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correct_answer": "4",
+    "ideal_solution": "Work backward. 10 minus 2 is 8. Half of 8 is 4. To check: 4 doubled is 8, plus 2 is 10.",
+    "failure_modes": {
+      "omitting_step": "Don't forget to subtract the 2 before dividing by 2.",
+      "doubling_error": "Ensure you are looking for a number that, when added to itself, equals 8."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many triangles can you find in a shape made of two triangles joined at one side to look like a diamond?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "3",
+    "ideal_solution": "Count the two small triangles first. Then, look at the whole diamond shape—it has 4 sides, so it is not a triangle. However, if the triangles overlap or contain a middle line, you count 2 small ones. In a standard 'gifted' logic puzzle, if a line divides the large shape, you have 2 small and 0 large triangles unless they overlap.",
+    "failure_modes": {
+      "overcounting": "Check if the combined shape has 3 sides or 4 sides.",
+      "side_sharing": "Remember a triangle must have exactly 3 straight sides."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If 3 pencils cost the same as 1 pen, and 1 pen costs $6, how much does 1 pencil cost?",
+    "options": ["$1", "$2", "$3", "$4", "$5"],
+    "correct_answer": "$2",
+    "ideal_solution": "If 3 pencils = $6, we need to find what number added three times equals 6. 2 + 2 + 2 = 6. So, 1 pencil is $2.",
+    "failure_modes": {
+      "multiplication_trap": "Avoid multiplying 3 by 6; you are breaking the $6 total into 3 parts.",
+      "value_swap": "Ensure you are finding the price of the cheaper item (the pencil)."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "In a house, the cat is older than the dog. The bird is younger than the dog. Who is the youngest?",
+    "options": ["Cat", "Dog", "Bird", "They are same age", "The human"],
+    "correct_answer": "Bird",
+    "ideal_solution": "Cat > Dog. Dog > Bird. Therefore, Cat > Dog > Bird. The Bird is the youngest.",
+    "failure_modes": {
+      "comparison_direction": "Draw a line with 'Oldest' on one side and 'Youngest' on the other.",
+      "middle_animal": "Identify that the Dog is in the middle of the age range."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "Which number comes next in this pattern? 20, 18, 16, 14, ...",
+    "options": ["10", "11", "12", "13", "15"],
+    "correct_answer": "12",
+    "ideal_solution": "The numbers are getting smaller by 2 each time. 14 - 2 = 12.",
+    "failure_modes": {
+      "subtraction_error": "Count backward by 2 carefully from 14.",
+      "pattern_direction": "Notice the numbers are decreasing, not increasing."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "If you put two identical squares side-by-side so they touch, what new shape do they make?",
+    "options": ["Triangle", "Circle", "Rectangle", "Hexagon", "Pentagon"],
+    "correct_answer": "Rectangle",
+    "ideal_solution": "Two squares joined create a shape with 4 sides where the top and bottom are longer than the left and right sides. This is a rectangle.",
+    "failure_modes": {
+      "side_count": "Ensure you count the new outer boundary (4 sides).",
+      "shape_naming": "Recall that a shape with 4 sides and 4 square corners is a rectangle."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "A basket has 10 apples. If I take out half, then put back 2, how many apples are in the basket now?",
+    "options": ["2", "5", "7", "8", "12"],
+    "correct_answer": "7",
+    "ideal_solution": "Half of 10 is 5. If I take out 5, then 10 - 5 = 5 remain. Then add 2 back: 5 + 2 = 7.",
+    "failure_modes": {
+      "half_calculation": "Confirm that 5 + 5 = 10 to find the half mark.",
+      "action_sequence": "Follow the steps in order: subtract first, then add."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If all 'Gloops' are green, and this tiny ball is blue, is it a Gloop?",
+    "options": ["Yes", "No", "Maybe", "Only on Tuesdays", "If it is small"],
+    "correct_answer": "No",
+    "ideal_solution": "The rule is that every Gloop must be green. Since the ball is blue, it cannot be a Gloop.",
+    "failure_modes": {
+      "rule_reversal": "Remember that if it's NOT green, it CANNOT be a Gloop.",
+      "color_confusion": "Check the color of the ball against the required color for a Gloop."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is the smallest two-digit number you can make using the numbers 3 and 8?",
+    "options": ["3", "8", "33", "38", "83"],
+    "correct_answer": "38",
+    "ideal_solution": "To make the smallest number, put the smaller digit (3) in the tens place and the larger digit (8) in the ones place.",
+    "failure_modes": {
+      "single_digit": "The question asks for a two-digit number, so '3' is incorrect.",
+      "place_value": "Compare 38 and 83 to see which is smaller."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Five people are in line. If you are in the middle, how many people are behind you?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "2",
+    "ideal_solution": "In a line of 5, the middle person is the 3rd person. This means there are 2 people in front (1st, 2nd) and 2 people behind (4th, 5th).",
+    "failure_modes": {
+      "middle_counting": "Identify the 3rd spot as the middle of 5.",
+      "total_count": "Make sure the front + you + back equals 5."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "Which shape has more sides than a triangle but fewer sides than a pentagon?",
+    "options": ["Circle", "Square", "Hexagon", "Star", "Oval"],
+    "correct_answer": "Square",
+    "ideal_solution": "A triangle has 3 sides. A pentagon has 5 sides. We need a shape with 4 sides. A square has 4 sides.",
+    "failure_modes": {
+      "side_count_error": "List the sides: Triangle(3), Square(4), Pentagon(5).",
+      "shape_confusion": "Remember that circles and ovals have no straight sides."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "If you have 3 dimes and 2 nickels, how many cents do you have in total?",
+    "options": ["15 cents", "30 cents", "35 cents", "40 cents", "50 cents"],
+    "correct_answer": "40 cents",
+    "ideal_solution": "3 dimes = 10 + 10 + 10 = 30 cents. 2 nickels = 5 + 5 = 10 cents. 30 + 10 = 40 cents.",
+    "failure_modes": {
+      "coin_value": "Remember a dime is 10 and a nickel is 5.",
+      "addition_error": "Add the two totals together carefully."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "A toy costs 12 dollars. You have a 5-dollar bill and a 10-dollar bill. How much change will you get?",
+    "options": ["$1", "$2", "$3", "$4", "$5"],
+    "correct_answer": "$3",
+    "ideal_solution": "Total money = 5 + 10 = 15 dollars. Change = 15 - 12 = 3 dollars.",
+    "failure_modes": {
+      "total_money": "First add your two bills together to see how much you have.",
+      "subtraction_step": "Subtract the cost from your total money."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "There are 3 boxes: Small, Medium, and Large. The toy is NOT in the Large box. The Medium box is empty. Where is the toy?",
+    "options": ["Small box", "Medium box", "Large box", "Under the table", "In all boxes"],
+    "correct_answer": "Small box",
+    "ideal_solution": "By elimination: It's not in the Large box. The Medium box is empty. Only the Small box is left.",
+    "failure_modes": {
+      "ignoring_clues": "Use the 'empty' clue to cross off the Medium box.",
+      "negative_logic": "Focus on what is left after removing the 'not' options."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A clock shows 3:00. What kind of angle do the two hands make?",
+    "options": ["Acute", "Straight", "Right", "Obtuse", "Round"],
+    "correct_answer": "Right",
+    "ideal_solution": "At 3:00, the big hand is on the 12 and the small hand is on the 3. This makes a square corner, also known as a right angle.",
+    "failure_modes": {
+      "visualizing_clock": "Imagine the hands pointing straight up and straight to the side.",
+      "angle_names": "Remember 'Right' angle means 90 degrees or a square corner."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is the sum of the first three odd numbers?",
+    "options": ["3", "5", "7", "9", "11"],
+    "correct_answer": "9",
+    "ideal_solution": "The first three odd numbers are 1, 3, and 5. 1 + 3 + 5 = 9.",
+    "failure_modes": {
+      "even_odd_confusion": "Ensure you are using 1, 3, 5 and not 2, 4, 6.",
+      "zero_start": "Remember that 1 is the first odd number."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If 4 kids each have 2 gloves, how many gloves are there in total?",
+    "options": ["2", "4", "6", "8", "10"],
+    "correct_answer": "8",
+    "ideal_solution": "Each kid has 2. 2 + 2 + 2 + 2 = 8. Or 4 times 2 is 8.",
+    "failure_modes": {
+      "counting_kids": "The question asks for the number of gloves, not the number of kids.",
+      "addition_error": "Count by 2s four times."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If you are taller than Bob, and Bob is taller than Joe, but Joe is taller than Sam, who is the shortest?",
+    "options": ["You", "Bob", "Joe", "Sam", "They are equal"],
+    "correct_answer": "Sam",
+    "ideal_solution": "The height order is You > Bob > Joe > Sam. Sam is at the very end of the list.",
+    "failure_modes": {
+      "name_skipping": "Ensure you include all four people in your comparison line.",
+      "reversing_height": "Keep the 'shortest' person at the end of the taller-than chain."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many sides does a shape have if it is made by putting two triangles together side-by-side without overlapping?",
+    "options": ["3", "4", "5", "6", "Any of these"],
+    "correct_answer": "4",
+    "ideal_solution": "Two triangles joined along a full side create a 4-sided shape (a quadrilateral).",
+    "failure_modes": {
+      "side_addition": "Don't just add 3+3; the two sides that touch are now hidden inside the shape.",
+      "vertex_counting": "Count the boundary lines only."
+    }
+  },
+{
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A shelf has 5 books. The red book is exactly in the middle. How many books are to the left of the red book?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "2",
+    "ideal_solution": "In a group of 5, the 3rd book is the middle. This leaves the 1st and 2nd books to the left, and the 4th and 5th books to the right. 5 - 1 (middle) = 4. 4 divided by 2 = 2.",
+    "failure_modes": {
+      "middle_counting": "Identify the middle position as the 3rd spot.",
+      "total_count_error": "Ensure the books on the left, the middle book, and the books on the right add up to 5."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "If you add 2 to an even number, do you get an even or an odd number?",
+    "options": ["Always even", "Always odd", "Sometimes even", "Sometimes odd", "Zero"],
+    "correct_answer": "Always even",
+    "ideal_solution": "Even numbers are in a pattern: 2, 4, 6, 8... Since you skip one number to get to the next even number, adding 2 will always land you on another even number.",
+    "failure_modes": {
+      "example_check": "Try it with numbers like 2+2=4 or 4+2=6 to see the pattern.",
+      "odd_even_definition": "Remember that even numbers can always be split into two equal groups."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many sides does a stop sign have?",
+    "options": ["4", "5", "6", "8", "10"],
+    "correct_answer": "8",
+    "ideal_solution": "A stop sign is an octagon. An octagon has 8 straight sides.",
+    "failure_modes": {
+      "shape_naming": "Recall that 'octo' means eight, like an octopus has 8 legs.",
+      "visual_miscount": "Carefully count each flat edge around the shape."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If 10 minus a secret number is 7, what is the secret number?",
+    "options": ["2", "3", "4", "5", "17"],
+    "correct_answer": "3",
+    "ideal_solution": "To find the difference, you can subtract 7 from 10. 10 - 7 = 3. Check: 10 - 3 = 7.",
+    "failure_modes": {
+      "addition_trap": "Don't add 10 and 7; the secret number must be smaller than 10.",
+      "subtraction_error": "Count back from 10 to 7 to find how many steps you took."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "There are three fruit baskets. The first has only apples. The second has only oranges. The third has both apples and oranges. If you pick a fruit from a basket labeled 'Apples' but it is actually an orange, what is inside that basket?",
+    "options": ["Only apples", "Only oranges", "Both", "No fruit", "Grapes"],
+    "correct_answer": "Only oranges",
+    "ideal_solution": "If the basket contains an orange, it cannot be the 'Only apples' basket. Since the question implies each basket has a specific type, and you found an orange, it must be the 'Only oranges' or 'Both' basket. In this logic puzzle style, if a label is wrong, finding one fruit tells you the true contents.",
+    "failure_modes": {
+      "label_trust": "Assume the label on the basket is incorrect based on what you found.",
+      "mixture_confusion": "Consider if one fruit is enough to know it isn't a mix."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is the largest number you can make using the digits 1, 5, and 0? (Use each digit once)",
+    "options": ["150", "501", "510", "105", "551"],
+    "correct_answer": "510",
+    "ideal_solution": "To make the largest number, place the largest digit (5) in the hundreds place and the next largest (1) in the tens place.",
+    "failure_modes": {
+      "place_value": "Check if 510 is bigger than 501.",
+      "digit_use": "Ensure you only use the numbers given (1, 5, 0)."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "If you cut a circle exactly in half, what is the name of the new shapes?",
+    "options": ["Semicircles", "Squares", "Ovals", "Quarter circles", "Triangles"],
+    "correct_answer": "Semicircles",
+    "ideal_solution": "The prefix 'semi' means half. A half-circle is called a semicircle.",
+    "failure_modes": {
+      "naming_error": "Recall that a 'quarter' would mean it was cut into four pieces, not two.",
+      "shape_visual": "Picture a moon shape that is flat on one side and curved on the other."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "A robot moves 3 steps forward and 1 step backward. How many total steps does it take to end up 4 steps ahead of where it started?",
+    "options": ["4", "5", "6", "7", "8"],
+    "correct_answer": "6",
+    "ideal_solution": "In one 'turn' (4 steps), the robot ends up 2 steps ahead (3-1=2). To get 4 steps ahead, it needs two turns. 4 steps (1st turn) + 2 steps (forward move in 2nd turn) = 6 steps. (Note: It hits the 4-step mark on the 6th step).",
+    "failure_modes": {
+      "net_gain": "Calculate how much progress is made after both forward and backward moves.",
+      "last_step_logic": "Check if the robot hits the goal before it has to take the backward step."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If all dogs bark and Buddy is a dog, which must be true?",
+    "options": ["Buddy barks", "Buddy is brown", "All barkers are dogs", "Buddy is loud", "Cats bark too"],
+    "correct_answer": "Buddy barks",
+    "ideal_solution": "The rule applies to all dogs. Since Buddy is a dog, he must follow the rule and bark.",
+    "failure_modes": {
+      "extra_info": "Don't assume things not mentioned, like color or volume.",
+      "reverse_logic": "Remember that just because dogs bark doesn't mean everything that barks is a dog."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "How many numbers between 1 and 20 end in the digit 3?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "2",
+    "ideal_solution": "List the numbers: 3 and 13. 23 is too high. So there are 2.",
+    "failure_modes": {
+      "counting_3s": "Make sure the number *ends* in 3, don't just count every number with a 3 in it.",
+      "range_check": "Stay inside the 1 to 20 limit."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "Which of these solid shapes can roll but NOT slide?",
+    "options": ["Cube", "Sphere", "Cylinder", "Pyramid", "None of these"],
+    "correct_answer": "Sphere",
+    "ideal_solution": "A sphere (like a ball) has no flat sides, so it can only roll. A cylinder has flat sides so it can slide, and a cube only has flat sides.",
+    "failure_modes": {
+      "rolling_vs_sliding": "A shape needs a flat face to slide.",
+      "cylinder_trap": "Remember a cylinder can roll on its side AND slide on its flat top."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If 5 + 5 + 5 = 3 times a mystery number, what is the mystery number?",
+    "options": ["3", "5", "10", "15", "20"],
+    "correct_answer": "5",
+    "ideal_solution": "5 + 5 + 5 is 15. 3 times what equals 15? 3 times 5 is 15. The number is 5.",
+    "failure_modes": {
+      "sum_error": "First find the total on the left side of the equals sign.",
+      "multiplication_meaning": "Remember that '3 times' means adding the same number together three times."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A family has 2 mothers and 2 daughters. What is the smallest number of people that could be in this family?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correct_answer": "3",
+    "ideal_solution": "A grandmother (mother), her daughter (who is both a mother and a daughter), and her granddaughter (daughter). That is 3 people.",
+    "failure_modes": {
+      "double_counting": "Think about how one person can have two roles (like being a mother and a daughter).",
+      "addition_trap": "Avoid just adding 2+2; look for overlapping roles."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is 10 more than the number that is 5 less than 20?",
+    "options": ["15", "20", "25", "30", "35"],
+    "correct_answer": "25",
+    "ideal_solution": "First, find 5 less than 20: 20 - 5 = 15. Then, find 10 more than 15: 15 + 10 = 25.",
+    "failure_modes": {
+      "step_order": "Solve the 'less than' part before the 'more than' part.",
+      "addition_error": "Double check 15 + 10."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many rectangles can you see in a rectangle that has one line cutting it in half?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "3",
+    "ideal_solution": "There are 2 small rectangles created by the line, plus the 1 original large rectangle that contains them. 2 + 1 = 3.",
+    "failure_modes": {
+      "missing_large_shape": "Don't forget to count the whole shape as one of the rectangles.",
+      "line_counting": "Count the shapes (areas), not the lines."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If one cookie costs 5 cents, how many cookies can you buy with two quarters?",
+    "options": ["5", "10", "15", "20", "25"],
+    "correct_answer": "10",
+    "ideal_solution": "Two quarters = 25 + 25 = 50 cents. If each cookie is 5 cents, count by 5s to 50: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50. That is 10 cookies.",
+    "failure_modes": {
+      "quarter_value": "Remember a quarter is 25 cents.",
+      "skip_counting_error": "Make sure you count all the way to 50 by 5s."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "I have four legs but cannot walk. I have a back but no spine. You sit on me. What am I?",
+    "options": ["A dog", "A chair", "A table", "A car", "A bed"],
+    "correct_answer": "A chair",
+    "ideal_solution": "A chair has four legs (the supports) and a back, but it is an object and cannot walk.",
+    "failure_modes": {
+      "living_thing_trap": "Rule out animals because the object cannot walk.",
+      "usage_clue": "Focus on the hint about 'sitting'."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is the only number that stays the same when you add it to itself?",
+    "options": ["0", "1", "2", "5", "10"],
+    "correct_answer": "0",
+    "ideal_solution": "0 + 0 = 0. For any other number, adding it to itself makes it bigger (e.g., 1 + 1 = 2).",
+    "failure_modes": {
+      "identity_property": "Think about which number represents 'nothing'.",
+      "one_trap": "Check 1 + 1 to see if it equals 1."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "Which shape can you make by putting two identical triangles together along their longest sides?",
+    "options": ["A bigger triangle", "A rectangle", "A circle", "A pentagon", "A hexagon"],
+    "correct_answer": "A rectangle",
+    "ideal_solution": "If the triangles are right-angled, putting them together on the longest side (hypotenuse) forms a rectangle or square.",
+    "failure_modes": {
+      "triangle_type": "Assume the triangles can be arranged to fit perfectly.",
+      "side_matching": "Visualize the two long sides touching to hide the diagonal."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If you have 8 candies and share them equally between you and 3 friends, how many candies does each person get?",
+    "options": ["1", "2", "3", "4", "8"],
+    "correct_answer": "2",
+    "ideal_solution": "You + 3 friends = 4 people total. 8 candies divided by 4 people: 2 + 2 + 2 + 2 = 8. Each person gets 2.",
+    "failure_modes": {
+      "counting_self": "Don't forget to count yourself as one of the people receiving candy.",
+      "sharing_math": "Divide the total number of candies by the total number of people."
+    }
+  },
+{
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If all 'Zips' are yellow and all 'Zaps' are 'Zips', which of these must be true?",
+    "options": ["Zaps are blue", "Zaps are yellow", "Zips are Zaps", "Nothing is yellow", "Zaps are green"],
+    "correct_answer": "Zaps are yellow",
+    "ideal_solution": "Since all Zaps are Zips, and every Zip must be yellow, it follows logically that every Zap must also be yellow.",
+    "failure_modes": {
+      "reverse_logic": "Remember that while all Zaps are Zips, not all Zips have to be Zaps.",
+      "category_confusion": "Think of it like: All dogs (Zips) are animals (yellow), and all Poodles (Zaps) are dogs."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "I am a number. If you subtract 5 from me, I become 10. What number am I?",
+    "options": ["5", "10", "15", "20", "25"],
+    "correct_answer": "15",
+    "ideal_solution": "To find the starting number, perform the opposite action. 10 + 5 = 15. Check: 15 - 5 = 10.",
+    "failure_modes": {
+      "subtraction_trap": "Do not subtract 5 from 10; you need a larger number to start with.",
+      "check_math": "Ensure your answer minus five actually equals ten."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many total faces does a standard six-sided die have?",
+    "options": ["4", "6", "8", "10", "12"],
+    "correct_answer": "6",
+    "ideal_solution": "A die is a cube. A cube has one top, one bottom, and four sides. 1 + 1 + 4 = 6.",
+    "failure_modes": {
+      "edge_counting": "Count the flat surfaces, not the lines where they meet.",
+      "vertex_counting": "Faces are the flat parts you can land on when rolling."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If a balance scale has 3 marbles on the left and 1 marble plus a toy block on the right, and it is balanced, how many marbles is the block worth?",
+    "options": ["1 marble", "2 marbles", "3 marbles", "4 marbles", "5 marbles"],
+    "correct_answer": "2 marbles",
+    "ideal_solution": "3 (left) = 1 + Block (right). To keep it balanced, subtract 1 from both sides. 3 - 1 = 2. The block is worth 2 marbles.",
+    "failure_modes": {
+      "imbalance": "Make sure both sides have the same 'value' in marbles.",
+      "addition_error": "Verify that 1 + your answer equals 3."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If you have a drawer with 4 red socks and 4 blue socks, what is the smallest number of socks you must take out to be 100% sure you have a matching pair?",
+    "options": ["2", "3", "4", "5", "8"],
+    "correct_answer": "3",
+    "ideal_solution": "If the first is red and the second is blue, the third sock must be either red or blue, completing a pair. Thus, 3 socks guarantee a match.",
+    "failure_modes": {
+      "best_case_scenario": "Don't assume you will get lucky and pick two of the same color on the first try.",
+      "color_count": "Even if you have many socks, you only have two colors to worry about."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "Which number is both greater than 10 and less than 15, and is an even number?",
+    "options": ["11", "12", "13", "15", "16"],
+    "correct_answer": "12",
+    "ideal_solution": "Numbers between 10 and 15 are: 11, 12, 13, 14. Among these, the even numbers are 12 and 14. 12 is the only option provided.",
+    "failure_modes": {
+      "even_check": "Remember even numbers end in 0, 2, 4, 6, or 8.",
+      "boundary_check": "Ensure the number is not 10 or 15 themselves."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "If you place two identical equilateral triangles side-by-side (sharing one side), what 4-sided shape do you create?",
+    "options": ["Square", "Rectangle", "Rhombus", "Trapezoid", "Circle"],
+    "correct_answer": "Rhombus",
+    "ideal_solution": "Two equilateral triangles joined create a shape with four equal sides, but the corners are not 90 degrees. This is a rhombus (often called a diamond).",
+    "failure_modes": {
+      "angle_trap": "A square must have 'square' (90 degree) corners; these triangles don't provide that.",
+      "side_counting": "Confirm the final shape has 4 sides total."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "A snail is at the bottom of a 5-foot hole. Each day it climbs up 3 feet, but each night it slides down 2 feet. How many days will it take to reach the top?",
+    "options": ["2 days", "3 days", "4 days", "5 days", "6 days"],
+    "correct_answer": "3 days",
+    "ideal_solution": "Day 1: Climbs to 3ft, slides to 1ft. Day 2: Starts at 1ft, climbs to 4ft, slides to 2ft. Day 3: Starts at 2ft, climbs 3ft and reaches 5ft (the top!).",
+    "failure_modes": {
+      "net_math": "Don't just assume it gains 1 foot every day; it might finish its climb before the final slide.",
+      "day_count": "Track the snail's height at the end of the climbing part of the day."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Which of these is the most likely to happen?",
+    "options": ["A cow flying", "It snowing in summer", "The sun rising tomorrow", "Finding a dragon", "A fish walking"],
+    "correct_answer": "The sun rising tomorrow",
+    "ideal_solution": "The sun rising is a proven fact of nature that happens every day, whereas the other options are impossible or very rare.",
+    "failure_modes": {
+      "fantasy_thinking": "Stick to real-world facts and patterns.",
+      "probability_logic": "Look for the event that happens with 100% certainty."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "If you have 15 stickers and give 3 to each of your friends, and you have no stickers left, how many friends do you have?",
+    "options": ["3", "4", "5", "6", "15"],
+    "correct_answer": "5",
+    "ideal_solution": "Count by 3s until you reach 15: 3, 6, 9, 12, 15. That is 5 groups of 3.",
+    "failure_modes": {
+      "addition_error": "Make sure you count your groups of 3 accurately.",
+      "division_logic": "Think: what number multiplied by 3 equals 15?"
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A rectangle is made of two squares. If the perimeter of one square is 4 inches, what is the length of the long side of the rectangle?",
+    "options": ["1 inch", "2 inches", "4 inches", "6 inches", "8 inches"],
+    "correct_answer": "2 inches",
+    "ideal_solution": "If a square's perimeter is 4, each side is 1 (1+1+1+1=4). Two squares side-by-side mean the long side is 1 + 1 = 2 inches.",
+    "failure_modes": {
+      "perimeter_vs_side": "Remember to divide the square's perimeter by 4 to find the length of one side.",
+      "visual_stacking": "Picture the squares horizontally to see the total length."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If 1 circle + 1 circle = 8, and 1 circle - 1 triangle = 1, what is the triangle?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "3",
+    "ideal_solution": "Two circles = 8, so one circle = 4. Since 4 - triangle = 1, then the triangle must be 3.",
+    "failure_modes": {
+      "symbol_value": "Find the value of the circle first before solving for the triangle.",
+      "subtraction_check": "Ensure 4 minus your answer equals 1."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A man is looking at a photo. He says, 'I have no brothers or sisters, but that man's father is my father's son.' Who is in the photo?",
+    "options": ["Himself", "His son", "His father", "His grandfather", "His uncle"],
+    "correct_answer": "His son",
+    "ideal_solution": "'My father's son' must be the man himself (since he has no siblings). So, 'that man's father is ME'. If I am the father of the person in the photo, the person is my son.",
+    "failure_modes": {
+      "self_reference": "Identify that 'my father's son' can only be 'me' if there are no siblings.",
+      "generation_skip": "Trace the relationship step by step."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "How many tens are in the number 70?",
+    "options": ["0", "7", "10", "70", "700"],
+    "correct_answer": "7",
+    "ideal_solution": "70 is made of 7 groups of ten (10, 20, 30, 40, 50, 60, 70).",
+    "failure_modes": {
+      "place_value_confusion": "Don't confuse the number of tens with the value (70).",
+      "digit_reading": "Look at the digit in the tens place."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many sides does a shape have if it has 3 corners?",
+    "options": ["2", "3", "4", "5", "6"],
+    "correct_answer": "3",
+    "ideal_solution": "A shape with 3 corners (vertices) is a triangle, and every triangle has exactly 3 sides.",
+    "failure_modes": {
+      "corner_side_match": "Remember that in simple shapes, the number of corners always equals the number of sides.",
+      "open_shape_trap": "Assume the shape is closed to be a proper geometric figure."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If you have 3 bags of marbles and each bag has 4 marbles, how many more marbles do you need to have 20 total?",
+    "options": ["4", "6", "8", "10", "12"],
+    "correct_answer": "8",
+    "ideal_solution": "Total current marbles = 3 groups of 4 = 12. To reach 20: 20 - 12 = 8.",
+    "failure_modes": {
+      "multiplication_error": "Calculate 3 times 4 correctly first.",
+      "difference_math": "Subtract your current total from the goal of 20."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Three people (A, B, C) are in a line. A is not first. B is after A. Who is first?",
+    "options": ["A", "B", "C", "A and C", "None"],
+    "correct_answer": "C",
+    "ideal_solution": "If A is not first, and B is after A, A must be 2nd and B must be 3rd. This leaves C for the 1st spot.",
+    "failure_modes": {
+      "ordering_process": "Use elimination to find who can't be first.",
+      "after_logic": "If B is after A, B can't be first either."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "If a number is odd, and you add 1 to it, what kind of number do you always get?",
+    "options": ["Odd", "Even", "Zero", "Prime", "Negative"],
+    "correct_answer": "Even",
+    "ideal_solution": "Odd numbers and even numbers alternate. Adding 1 to an odd number (like 3+1=4) always results in an even number.",
+    "failure_modes": {
+      "alternating_pattern": "Think of the number line: 1 (O), 2 (E), 3 (O), 4 (E).",
+      "example_testing": "Test it with small numbers like 1, 3, and 5."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many straight lines do you need to draw a star with 5 points without lifting your pencil?",
+    "options": ["3", "4", "5", "6", "10"],
+    "correct_answer": "5",
+    "ideal_solution": "A standard 5-pointed star (pentagram) is drawn with 5 straight continuous lines.",
+    "failure_modes": {
+      "point_vs_line": "Don't count the points; count the long lines used to connect them.",
+      "visual_tracing": "Imagine drawing the star in one go."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If a pencil is 5 inches long and a crayon is 3 inches long, how much longer are two crayons than one pencil?",
+    "options": ["1 inch", "2 inches", "3 inches", "4 inches", "5 inches"],
+    "correct_answer": "1 inch",
+    "ideal_solution": "Two crayons = 3 + 3 = 6 inches. One pencil = 5 inches. 6 - 5 = 1 inch difference.",
+    "failure_modes": {
+      "unit_addition": "Sum the length of the two crayons first.",
+      "comparison_subtraction": "Subtract the length of the pencil from the total crayon length."
+    }
+  },
+{
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If you have three brothers, and each of your brothers has one sister, how many sisters do you have?",
+    "options": ["0", "1", "2", "3", "4"],
+    "correct_answer": "1",
+    "ideal_solution": "All the brothers are in the same family. If they each have a sister, they are all referring to the same girl. Therefore, there is only 1 sister in the family.",
+    "failure_modes": {
+      "multiplication_trap": "Avoid adding 1+1+1; remember that the brothers share the same siblings.",
+      "perspective_shift": "Think of yourself and your siblings as one group."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is the smallest number that is both even and greater than 0?",
+    "options": ["0", "1", "2", "4", "10"],
+    "correct_answer": "2",
+    "ideal_solution": "Even numbers are 0, 2, 4, 6... Since the number must be greater than 0, the next even number is 2.",
+    "failure_modes": {
+      "zero_exclusion": "The rule 'greater than 0' means you cannot pick 0.",
+      "even_definition": "Remember that 1 is an odd number."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A rectangle has a length of 5 cm and a width of 3 cm. If you increase the width by 2 cm, what shape does it become?",
+    "options": ["A longer rectangle", "A square", "A triangle", "A circle", "A pentagon"],
+    "correct_answer": "A square",
+    "ideal_solution": "The original width is 3 cm. 3 + 2 = 5 cm. Now the length is 5 cm and the width is 5 cm. Since all sides are equal, it is a square.",
+    "failure_modes": {
+      "addition_error": "Calculate the new width carefully before naming the shape.",
+      "shape_definition": "Recall that a rectangle with four equal sides is called a square."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If 5 + [ ] = 12 and [ ] - 2 = { }, what is the value of { }?",
+    "options": ["5", "7", "9", "12", "14"],
+    "correct_answer": "5",
+    "ideal_solution": "First, find the missing number in the brackets: 12 - 5 = 7. Then use that number in the second part: 7 - 2 = 5.",
+    "failure_modes": {
+      "step_skip": "You must find the first unknown value before you can solve for the second.",
+      "subtraction_error": "Double check 12 minus 5 and 7 minus 2."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "There are 10 people in a room. Every person shakes hands with everyone else exactly once. How many handshakes did the first person make?",
+    "options": ["1", "5", "9", "10", "11"],
+    "correct_answer": "9",
+    "ideal_solution": "The first person shakes hands with everyone except themselves. Since there are 10 people total, they shake 10 - 1 = 9 hands.",
+    "failure_modes": {
+      "self_counting": "A person does not shake their own hand.",
+      "total_handshake_confusion": "Focus only on the 'first person' rather than the total number of handshakes in the room."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "I am thinking of a two-digit number. The first digit is 2. The second digit is double the first. What is the number?",
+    "options": ["22", "24", "42", "26", "28"],
+    "correct_answer": "24",
+    "ideal_solution": "The first digit (tens place) is 2. Double 2 is 4 (2+2=4). Putting them together gives 24.",
+    "failure_modes": {
+      "place_value_swap": "Ensure the 2 is in the tens place and the 4 is in the ones place.",
+      "doubling_error": "Confirm that 2 + 2 is 4."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many small cubes are needed to build a large cube that is 2 cubes high, 2 cubes wide, and 2 cubes deep?",
+    "options": ["4", "6", "8", "10", "12"],
+    "correct_answer": "8",
+    "ideal_solution": "The bottom layer is 2x2 = 4 cubes. The top layer is also 2x2 = 4 cubes. 4 + 4 = 8 total cubes.",
+    "failure_modes": {
+      "missing_dimension": "Don't forget to count the depth; a cube is 3D.",
+      "layer_counting": "Multiply width by height and then by depth (2x2x2)."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If you have 12 markers and want to put an equal number into 2 boxes, how many go in each box?",
+    "options": ["2", "4", "6", "8", "10"],
+    "correct_answer": "6",
+    "ideal_solution": "Splitting 12 into 2 equal parts is 12 divided by 2. 6 + 6 = 12, so 6 markers go in each box.",
+    "failure_modes": {
+      "addition_check": "Make sure your answer added to itself equals 12.",
+      "half_logic": "Think of this as finding half of 12."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If you are 5th in line from the front and 5th in line from the back, how many people are in the line?",
+    "options": ["5", "9", "10", "11", "25"],
+    "correct_answer": "9",
+    "ideal_solution": "There are 4 people in front of you and 4 people behind you. 4 + 1 (you) + 4 = 9.",
+    "failure_modes": {
+      "double_counting": "If you add 5+5, you are counting yourself twice.",
+      "line_visualization": "Draw 10 dots and see where the 5th dot from each side lands."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "Which number is missing? 1, 3, 6, 10, ...",
+    "options": ["11", "13", "14", "15", "16"],
+    "correct_answer": "15",
+    "ideal_solution": "The amount added increases each time: 1(+2)=3, 3(+3)=6, 6(+4)=10. The next jump should be +5. 10 + 5 = 15.",
+    "failure_modes": {
+      "constant_addition": "Notice that the jump size is getting bigger, it's not the same every time.",
+      "counting_steps": "Track exactly how much is added at each step."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "If you spin a square around very fast, what 3D shape does it look like?",
+    "options": ["Sphere", "Cylinder", "Cube", "Cone", "Pyramid"],
+    "correct_answer": "Cylinder",
+    "ideal_solution": "As the square spins around its center line, the corners trace a circle. The height stays the same, creating a cylinder shape.",
+    "failure_modes": {
+      "flat_thinking": "Think about the shape 'carved' in the air as it moves.",
+      "circular_trap": "While it looks circular, a flat square can't make a perfectly round ball (sphere)."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "One pizza has 8 slices. If three friends each eat 2 slices, how many slices are left for the fourth friend?",
+    "options": ["1", "2", "3", "4", "5"],
+    "correct_answer": "2",
+    "ideal_solution": "Total slices eaten = 3 friends x 2 slices = 6 slices. Remaining slices = 8 - 6 = 2 slices.",
+    "failure_modes": {
+      "multiplication_error": "Calculate the total eaten by the first three friends first.",
+      "subtraction_step": "Subtract that total from the original 8 slices."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A box contains 3 apples and 2 oranges. You pick two fruits. What is the smallest number of oranges you could have?",
+    "options": ["0", "1", "2", "3", "5"],
+    "correct_answer": "0",
+    "ideal_solution": "Since there are 3 apples, it is possible to pick 2 apples and 0 oranges. Therefore, the smallest number of oranges is zero.",
+    "failure_modes": {
+      "forced_pick": "Remember you are looking for the *smallest* possible amount, not the largest.",
+      "count_check": "Since there are more apples than the number of fruits you pick, you don't 'have' to pick an orange."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "What is the sum of the largest one-digit number and the smallest two-digit number?",
+    "options": ["10", "11", "19", "20", "99"],
+    "correct_answer": "19",
+    "ideal_solution": "The largest one-digit number is 9. The smallest two-digit number is 10. 9 + 10 = 19.",
+    "failure_modes": {
+      "number_identification": "Check that 9 is the highest single digit and 10 is the start of the double digits.",
+      "addition_error": "Ensure 9 plus 10 is calculated correctly."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "How many triangles are visible if you draw an 'X' inside a square?",
+    "options": ["2", "4", "6", "8", "10"],
+    "correct_answer": "8",
+    "ideal_solution": "There are 4 small triangles created by the lines. There are also 4 larger triangles created by combining two small ones along the sides of the square. 4 + 4 = 8.",
+    "failure_modes": {
+      "missing_large_triangles": "Look at the square sideways; do you see larger triangles made of two smaller ones?",
+      "overcounting": "Only count shapes with 3 straight sides."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If you have 1 dime and 3 pennies, and you spend 5 cents, how much money do you have left?",
+    "options": ["5 cents", "8 cents", "10 cents", "13 cents", "15 cents"],
+    "correct_answer": "8",
+    "ideal_solution": "Total money = 10 (dime) + 3 (pennies) = 13 cents. 13 - 5 = 8 cents.",
+    "failure_modes": {
+      "coin_values": "A dime is 10 cents, not 1 cent.",
+      "subtraction_error": "Count back 5 from 13."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "There are two doors. One leads to a prize, one is empty. A guard tells you: 'The prize is not in the first door.' If the guard is LYING, where is the prize?",
+    "options": ["First door", "Second door", "Both doors", "Neither door", "Behind the guard"],
+    "correct_answer": "First door",
+    "ideal_solution": "If the statement 'The prize is not in the first door' is a lie, then the truth is the opposite: the prize IS in the first door.",
+    "failure_modes": {
+      "trusting_the_lie": "If someone is lying, you must believe the opposite of what they say.",
+      "door_confusion": "Keep track of which door is which when you flip the statement."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "number theory",
+    "question": "If you count the number of fingers on 3 hands, what is the total?",
+    "options": ["5", "10", "15", "20", "25"],
+    "correct_answer": "15",
+    "ideal_solution": "One hand has 5 fingers. 5 + 5 + 5 = 15.",
+    "failure_modes": {
+      "hand_pair_trap": "Make sure you count 3 hands, not 3 pairs of hands.",
+      "skip_counting": "Count by 5s three times."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "Which of these objects is shaped most like a cylinder?",
+    "options": ["A ball", "A book", "A soda can", "A party hat", "A box"],
+    "correct_answer": "A soda can",
+    "ideal_solution": "A soda can has a circular top and bottom with a straight side connecting them. This is the definition of a cylinder.",
+    "failure_modes": {
+      "cone_confusion": "A party hat is a cone because it comes to a point; a cylinder does not.",
+      "flat_shape_trap": "A book is a rectangular prism, not a cylinder."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 1,
+    "difficulty": "gifted",
+    "type": "algebraic thinking",
+    "question": "If a bird eats 2 worms every morning, how many worms will it eat in one week?",
+    "options": ["7", "10", "12", "14", "16"],
+    "correct_answer": "14",
+    "ideal_solution": "There are 7 days in a week. 7 days x 2 worms each day = 14 worms.",
+    "failure_modes": {
+      "days_in_week": "Ensure you are using 7 days for the calculation.",
+      "addition_error": "Add 2 seven times or multiply 7 by 2."
+    }
+  }
+]
