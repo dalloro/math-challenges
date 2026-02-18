@@ -1,0 +1,85 @@
+[
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A cube with a side length of 6 cm is painted blue on all its faces. It is then cut into smaller cubes with a side length of 2 cm. How many of these smaller cubes have exactly two faces painted blue?",
+    "options": ["4", "8", "12", "24", "27"],
+    "correct_answer": "12",
+    "ideal_solution": "1. Large cube side = 6 cm, Small cube side = 2 cm. So, 3x3x3 = 27 small cubes total.
+2. Cubes with 2 faces painted blue are located on the edges of the large cube, excluding the corners.
+3. Each edge of the large cube is 6 cm, which fits 3 small cubes. The 2 corners have 3 faces painted, so only the 1 middle cube on each edge has exactly 2 faces painted.
+4. A cube has 12 edges. Total = 12 * 1 = 12.",
+    "failure_modes": {
+      "corner_inclusion": "Remember that corner cubes have 3 faces painted, not 2.",
+      "edge_counting": "Check how many small cubes fit on one edge and subtract the two corner cubes."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "number_theory",
+    "question": "The product of three different prime numbers is 105. What is the sum of these three prime numbers?",
+    "options": ["15", "18", "21", "25", "30"],
+    "correct_answer": "15",
+    "ideal_solution": "1. Factorize 105 into primes: 105 = 5 * 21 = 5 * 3 * 7.
+2. The primes are 3, 5, and 7.
+3. Sum = 3 + 5 + 7 = 15.",
+    "failure_modes": {
+      "non_prime_factors": "Make sure the factors you found are all prime. 1 and 21 are not prime numbers in this context.",
+      "arithmetic_error": "Re-check your addition: 3 + 5 + 7 = 15."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "algebra",
+    "question": "If 4 pencils and 3 erasers cost $2.50, and 2 pencils and 1 eraser cost $1.10, what is the cost of one pencil?",
+    "options": ["$0.30", "$0.40", "$0.45", "$0.50", "$0.60"],
+    "correct_answer": "$0.40",
+    "ideal_solution": "1. Let P = pencil cost, E = eraser cost.
+2. 4P + 3E = 2.50
+3. 2P + E = 1.10  => E = 1.10 - 2P
+4. Substitute E into the first equation: 4P + 3(1.10 - 2P) = 2.50
+5. 4P + 3.30 - 6P = 2.50
+6. -2P = 2.50 - 3.30 = -0.80
+7. P = 0.40.",
+    "failure_modes": {
+      "substitution_error": "Check your distribution when multiplying 3 by (1.10 - 2P).",
+      "sign_error": "Ensure you handled the negative signs correctly when subtracting 3.30 from 2.50."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "In a race of 1000 meters, Runner A beats Runner B by 100 meters. In a race of 1000 meters, Runner B beats Runner C by 100 meters. By how many meters would Runner A beat Runner C in a 1000-meter race?",
+    "options": ["100 m", "190 m", "200 m", "210 m", "250 m"],
+    "correct_answer": "190 m",
+    "ideal_solution": "1. When A finishes (1000m), B has run 900m. So B's speed is 0.9 times A's speed.
+2. When B finishes (1000m), C has run 900m. So C's speed is 0.9 times B's speed.
+3. C's speed relative to A = 0.9 * 0.9 = 0.81.
+4. When A runs 1000m, C runs 1000 * 0.81 = 810m.
+5. Distance A beats C = 1000 - 810 = 190m.",
+    "failure_modes": {
+      "additive_error": "Do not simply add the distances (100 + 100 = 200). The head start is proportional to the speed and time elapsed.",
+      "ratio_miscalculation": "Remember that B and C's relative speed applies to the distance B has actually run when A finishes."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "fractions",
+    "question": "What is the result of (1/2 + 1/3) / (1/4 + 1/5) in simplest form?",
+    "options": ["25/27", "50/27", "25/54", "5/9", "31/27"],
+    "correct_answer": "50/27",
+    "ideal_solution": "1. Numerator: 1/2 + 1/3 = 3/6 + 2/6 = 5/6.
+2. Denominator: 1/4 + 1/5 = 5/20 + 4/20 = 9/20.
+3. (5/6) / (9/20) = 5/6 * 20/9 = 100/54.
+4. Simplify: 100/54 = 50/27.",
+    "failure_modes": {
+      "common_denominator": "Check your addition of fractions. 1/2 + 1/3 is 5/6, not 2/5.",
+      "division_rule": "Remember to flip the second fraction and multiply: (a/b) / (c/d) = (a/b) * (d/c)."
+    }
+  }
+]

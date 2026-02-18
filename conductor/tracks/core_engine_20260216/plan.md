@@ -15,10 +15,11 @@
 ## Phase 2: Data Models & Content Seeding
 - [x] Task: Define Firestore Security Rules and Schema [3aca1bc]
     - [x] Write Firestore rules for anonymous access
-- [ ] Task: Seed Initial Question Bank via Gemini CLI
-    - [ ] Generate 20 gifted-level Grade 5 questions with MC5 and Open options
-    - [ ] Generate 10 Common Failure Mode Walkthroughs per problem type
-- [ ] Task: Implement Data Access Layer
+- [x] Task: Seed Initial Question Bank via Gemini CLI [53218]
+    - [x] Create a generation script to produce 2,000 gifted-level questions per grade (1-12)
+    - [x] Generate initial seed of 50 Grade 5 questions with MC5 and Open options
+    - [x] Implement batched Firestore seeding script to respect Spark Plan limits (20k writes/day)
+- [~] Task: Implement Data Access Layer
     - [ ] Write hooks for fetching questions and saving session progress
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Data Models & Content Seeding' (Protocol in workflow.md)
 

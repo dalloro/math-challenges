@@ -7,17 +7,17 @@ Establish the foundational web application for "Math Challenges," including the 
 - **Project Scaffold:** React (Vite) with Tailwind CSS.
 - **Firebase Integration:** 
   - Hosting for deployment.
-  - Firestore for question bank and student sessions.
+  - Firestore for question bank (Scale: 2,000 questions per grade, 12 grades total).
   - Auth for anonymous/session tracking.
 - **Adaptive Engine Logic:**
   - 100 initial questions; +50 if completed in < 60 minutes.
-  - Dynamic difficulty adjustment based on performance.
+  - Dynamic difficulty adjustment based on performance across all grades (1-12).
 - **Dual Modalities:**
   - **MC5:** 5-option multiple choice.
   - **Open Reasoning:** Text box for answer and process description.
 - **AI Feedback & Fallback:**
   - Integration with `gemini-3-flash-preview` for live reasoning analysis (BYOK).
-  - Graceful degradation using pre-generated walkthroughs for learning interventions.
+  - Graceful degradation using a library of pre-generated failure-mode walkthroughs.
 - **UI/UX:**
   - Clean & Focused aesthetic.
   - Progressive Challenge Bar to show difficulty/rank.

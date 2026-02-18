@@ -1,0 +1,132 @@
+[
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "The area of a large square is 144 square centimeters. It is divided into 9 smaller identical squares. What is the perimeter of one of these smaller squares?",
+    "options": ["12 cm", "16 cm", "18 cm", "24 cm", "48 cm"],
+    "correct_answer": "16 cm",
+    "ideal_solution": "1. Area of large square = 144 cm², so side = √144 = 12 cm.\n2. 9 identical squares in a 3x3 grid means each smaller square side = 12 / 3 = 4 cm.\n3. Perimeter of small square = 4 * 4 = 16 cm.",
+    "failure_modes": {
+      "area_confusion": "You might have confused area with side length. Remember, if 9 identical squares make up the large area, each small area is 144/9 = 16. Then find the side from there.",
+      "perimeter_formula": "Check your perimeter calculation. Perimeter is the sum of all 4 sides (4s), not the area (s²)."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "algebra",
+    "question": "If 3 identical robots can assemble 15 toys in 5 hours, how many toys can 5 robots assemble in 8 hours?",
+    "options": ["20", "25", "32", "40", "45"],
+    "correct_answer": "40",
+    "ideal_solution": "1. Rate of 3 robots = 15 toys / 5 hours = 3 toys per hour.\n2. Rate of 1 robot = 3 / 3 = 1 toy per hour.\n3. 5 robots rate = 5 toys per hour.\n4. In 8 hours, 5 robots = 5 * 8 = 40 toys.",
+    "failure_modes": {
+      "linear_scaling": "Ensure you calculate the rate per robot per hour first. Scaling only the robots or only the hours will lead to an incorrect result.",
+      "division_error": "Re-check your division when finding the single robot rate. 15 toys / (3 robots * 5 hours) = 1 toy/robot-hour."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "number_theory",
+    "question": "What is the smallest positive integer that is divisible by both 12 and 18, and is also a perfect square?",
+    "options": ["36", "72", "144", "180", "324"],
+    "correct_answer": "36",
+    "ideal_solution": "1. Find LCM of 12 and 18. 12 = 2² * 3, 18 = 2 * 3². LCM = 2² * 3² = 36.\n2. 36 is already a perfect square (6²).\n3. Thus, 36 is the smallest such integer.",
+    "failure_modes": {
+      "lcm_calculation": "Double-check your prime factorization. 12 = 2x2x3 and 18 = 2x3x3.",
+      "square_check": "Remember to check if your common multiple is a perfect square. 72 is a multiple but not a square."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "Five friends (A, B, C, D, E) stand in a line. A is not at either end. B is to the immediate right of C. D is second from the left. E is to the left of A. Who is at the far right?",
+    "options": ["A", "B", "C", "D", "E"],
+    "correct_answer": "B",
+    "ideal_solution": "1. 5 spots: _ _ _ _ _\n2. D is 2nd: _ D _ _ _\n3. E is left of A, and A is not at ends. Possible for A: 3rd or 4th. If A is 3rd, E must be 1st: E D A _ _.\n4. B is right of C (CB pair). Only fits in 4th and 5th: E D A C B.\n5. Far right is B.",
+    "failure_modes": {
+      "position_overlap": "Make sure you don't place two people in the same spot. D's position is fixed at 2nd.",
+      "direction_confusion": "Remember 'left' and 'right' relative to the line. B is to the right of C means C comes first (CB)."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "combinatorics",
+    "question": "How many different 3-digit numbers can be formed using the digits 1, 2, 3, 4, and 5 if each digit can be used at most once in each number?",
+    "options": ["15", "60", "120", "125", "240"],
+    "correct_answer": "60",
+    "ideal_solution": "1. 1st digit: 5 choices.\n2. 2nd digit: 4 choices (since one is used).\n3. 3rd digit: 3 choices.\n4. Total = 5 * 4 * 3 = 60.",
+    "failure_modes": {
+      "with_replacement": "Check if you allowed the same digit to be used more than once. The problem says 'at most once'.",
+      "addition_instead_multiplication": "Remember that for independent choices in sequence, you multiply the number of possibilities."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "fractions",
+    "question": "A container is 1/3 full of water. After adding 10 liters of water, it is 1/2 full. What is the total capacity of the container in liters?",
+    "options": ["20", "30", "40", "60", "80"],
+    "correct_answer": "60",
+    "ideal_solution": "1. Let C be capacity. 1/3 C + 10 = 1/2 C.\n2. 10 = 1/2 C - 1/3 C = (3/6 - 2/6) C = 1/6 C.\n3. C = 10 * 6 = 60 liters.",
+    "failure_modes": {
+      "fraction_subtraction": "Ensure you have a common denominator when subtracting 1/3 from 1/2.",
+      "inverse_scaling": "If 10 liters is 1/6 of the container, the total is 10 * 6, not 10 / 6."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "probability",
+    "question": "A bag contains 3 red marbles and 2 blue marbles. If two marbles are drawn at random without replacement, what is the probability that both are red?",
+    "options": ["3/10", "6/25", "1/5", "3/5", "9/25"],
+    "correct_answer": "3/10",
+    "ideal_solution": "1. Prob(1st is red) = 3/5.\n2. Prob(2nd is red | 1st was red) = 2/4 = 1/2.\n3. Prob(both red) = 3/5 * 1/2 = 3/10.",
+    "failure_modes": {
+      "with_replacement": "Check if you assumed the first marble was put back. 'Without replacement' means the total count decreases.",
+      "denominator_error": "Ensure you decrease both the numerator and denominator for the second draw."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "arithmetic",
+    "question": "What is the value of 1 - 2 + 3 - 4 + 5 - 6 + ... + 99 - 100?",
+    "options": ["-50", "0", "50", "-100", "100"],
+    "correct_answer": "-50",
+    "ideal_solution": "1. Group terms in pairs: (1-2) + (3-4) + (5-6) + ... + (99-100).\n2. Each pair equals -1.\n3. There are 100 numbers, so 50 pairs.\n4. Total = 50 * (-1) = -50.",
+    "failure_modes": {
+      "counting_pairs": "Make sure you correctly identified the number of pairs. 100 terms make 50 pairs.",
+      "sign_error": "Check the result of each pair. 1-2 is -1, not 1."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A rectangular tank measures 50 cm by 40 cm by 30 cm. It is filled with water to a height of 20 cm. How many more liters of water are needed to fill the tank completely?",
+    "options": ["20", "24", "40", "60", "12"],
+    "correct_answer": "20",
+    "ideal_solution": "1. Remaining height to fill = 30 - 20 = 10 cm.\n2. Volume needed = 50 * 40 * 10 = 20,000 cm³.\n3. 1,000 cm³ = 1 liter.\n4. 20,000 / 1,000 = 20 liters.",
+    "failure_modes": {
+      "unit_conversion": "Remember that 1 liter = 1000 cubic centimeters.",
+      "total_volume": "Make sure you calculated the *remaining* volume needed, not the *current* volume or *total* volume."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "algebra",
+    "question": "The sum of three consecutive odd integers is 105. What is the largest of these integers?",
+    "options": ["33", "35", "37", "39", "41"],
+    "correct_answer": "37",
+    "ideal_solution": "1. Let integers be x-2, x, x+2.\n2. (x-2) + x + (x+2) = 3x = 105.\n3. x = 105 / 3 = 35.\n4. Integers are 33, 35, 37. Largest is 37.",
+    "failure_modes": {
+      "consecutive_integers": "Check if you used x, x+1, x+2. Consecutive *odd* integers differ by 2.",
+      "middle_vs_largest": "Make sure you provided the *largest* integer (x+2), not the middle one (x)."
+    }
+  }
+]

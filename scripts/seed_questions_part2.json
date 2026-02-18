@@ -1,0 +1,159 @@
+[
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "A clock strikes 4 times in 3 seconds. How many seconds does it take to strike 8 times?",
+    "options": ["6", "7", "8", "9", "12"],
+    "correct_answer": "7",
+    "ideal_solution": "1. 4 strikes have 3 intervals. Total time = 3s, so 1 interval = 3/3 = 1s.
+2. 8 strikes have 7 intervals.
+3. Total time = 7 intervals * 1s = 7s.",
+    "failure_modes": {
+      "strike_vs_interval": "Remember that the time is spent in the *intervals between* strikes. 4 strikes means 3 gaps, not 4.",
+      "direct_proportion": "Check if you assumed a direct proportion (4 strikes : 3s :: 8 strikes : 6s). You must account for the gaps."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "number_theory",
+    "question": "What is the units digit of 3^2026?",
+    "options": ["1", "3", "7", "9", "0"],
+    "correct_answer": "9",
+    "ideal_solution": "1. Pattern of units digits for 3^n: 3, 9, 27(7), 81(1), then repeats.
+2. Cycle length is 4: 3, 9, 7, 1.
+3. 2026 divided by 4 has a remainder of 2 (2024 is div by 4).
+4. The 2nd number in the cycle is 9.",
+    "failure_modes": {
+      "cycle_offset": "Ensure you correctly identify the remainder. Remainder 0 corresponds to the last digit in the cycle (1).",
+      "multiplication_error": "Double-check the powers of 3: 3^1=3, 3^2=9, 3^3=27, 3^4=81."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "The length of a rectangle is increased by 20% and the width is decreased by 20%. What is the percentage change in the area?",
+    "options": ["No change", "4% increase", "4% decrease", "2% decrease", "1% increase"],
+    "correct_answer": "4% decrease",
+    "ideal_solution": "1. Let L and W be 100. Area = 10,000.
+2. New L = 120, New W = 80.
+3. New Area = 120 * 80 = 9,600.
+4. Change = (9600 - 10000) / 10000 = -400 / 10000 = -4%.",
+    "failure_modes": {
+      "additive_logic": "Check if you assumed +20% and -20% cancel out to 0%. Percentages apply to the new values.",
+      "calculation_error": "Ensure you multiply the scaling factors correctly: 1.2 * 0.8 = 0.96."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "arithmetic",
+    "question": "The average of 5 numbers is 20. If a 6th number is added, the new average becomes 22. What is the 6th number?",
+    "options": ["22", "30", "32", "42", "50"],
+    "correct_answer": "32",
+    "ideal_solution": "1. Total of 5 numbers = 5 * 20 = 100.
+2. Total of 6 numbers = 6 * 22 = 132.
+3. 6th number = 132 - 100 = 32.",
+    "failure_modes": {
+      "average_vs_sum": "Remember that Total = Average * Count. You need the totals to find the missing number.",
+      "subtraction_error": "Check your math: 132 - 100 = 32."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "algebra",
+    "question": "A father is 3 times as old as his son. In 12 years, he will be twice as old as his son. How old is the son now?",
+    "options": ["10", "12", "15", "18", "24"],
+    "correct_answer": "12",
+    "ideal_solution": "1. Let son = s, father = 3s.
+2. In 12 years: (3s + 12) = 2(s + 12).
+3. 3s + 12 = 2s + 24.
+4. s = 12.",
+    "failure_modes": {
+      "equation_setup": "Make sure you added 12 years to *both* the father and the son in your equation.",
+      "distributive_property": "Remember to multiply both the 's' and the '12' by 2: 2(s+12) = 2s + 24."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "number_theory",
+    "question": "How many factors does the number 72 have?",
+    "options": ["6", "8", "10", "12", "15"],
+    "correct_answer": "12",
+    "ideal_solution": "1. Prime factorization of 72 = 2^3 * 3^2.
+2. Number of factors = (3+1) * (2+1) = 4 * 3 = 12.
+3. (Factors are 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72).",
+    "failure_modes": {
+      "missing_pairs": "If you are listing factors manually, check that you found all pairs (e.g., 8x9, 6x12).",
+      "exponent_rule": "Remember the rule: add 1 to each exponent in the prime factorization and multiply them."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "geometry",
+    "question": "A circle is inscribed in a square with a side length of 10 cm. What is the area of the circle in terms of π?",
+    "options": ["10π cm²", "20π cm²", "25π cm²", "50π cm²", "100π cm²"],
+    "correct_answer": "25π cm²",
+    "ideal_solution": "1. If a circle is inscribed in a square, its diameter = side of square = 10 cm.
+2. Radius r = 10 / 2 = 5 cm.
+3. Area = πr² = π(5²) = 25π.",
+    "failure_modes": {
+      "diameter_vs_radius": "Check if you used the side length as the radius. The side length is the diameter.",
+      "area_formula": "Remember that the area of a circle is πr², not 2πr (which is circumference)."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "arithmetic",
+    "question": "What is 0.125 as a fraction in simplest form?",
+    "options": ["1/4", "1/5", "1/8", "1/10", "1/12"],
+    "correct_answer": "1/8",
+    "ideal_solution": "1. 0.125 = 125/1000.
+2. Divide both by 125: 125/125 = 1, 1000/125 = 8.
+3. Result = 1/8.",
+    "failure_modes": {
+      "place_value": "Ensure you identified the place value correctly. 0.125 is 125 thousandths.",
+      "simplification": "Check your division when reducing the fraction. 125 goes into 1000 eight times."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "logic",
+    "question": "If tomorrow was yesterday, then today would be Friday. What day is it today?",
+    "options": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "correct_answer": "Sunday",
+    "ideal_solution": "1. Let today be X.
+2. 'If tomorrow (X+1) was yesterday (X-1)', then (X-1) = Friday.
+3. If (X-1) = Friday, then X = Saturday. Wait, let's re-eval.
+4. If 'tomorrow' (Sunday) was 'yesterday' (Friday), then today (Saturday) would be Friday? No.
+5. Let's try X = Sunday. Yesterday was Saturday. Tomorrow is Monday. If Monday was Saturday... No.
+6. Correct logic: The day that 'would be Friday' is 'today'. So X-1 (yesterday) = Friday. Thus today is Saturday. If tomorrow (Sunday) was Saturday, then today would be Friday. Yes. Wait, the target 'today' is Friday.
+7. Let's use the shift: Day + 1 = Day - 1 + Shift. If tomorrow was yesterday, we are moving 2 days back. If moving 2 days back brings us to Friday, today is Sunday.",
+    "failure_modes": {
+      "temporal_shift": "This is a tricky logic puzzle. Try setting 'today' to each option and see which one fits the 'if' condition.",
+      "direction_error": "Check if you moved forward or backward in time correctly."
+    }
+  },
+  {
+    "grade": 5,
+    "difficulty": "gifted",
+    "type": "algebra",
+    "question": "Find x if 2^(x+3) = 32.",
+    "options": ["2", "3", "4", "5", "8"],
+    "correct_answer": "2",
+    "ideal_solution": "1. Write 32 as a power of 2: 32 = 2^5.
+2. Since 2^(x+3) = 2^5, then x + 3 = 5.
+3. x = 2.",
+    "failure_modes": {
+      "base_conversion": "Ensure you correctly identified 32 as 2^5. (2, 4, 8, 16, 32...)",
+      "algebraic_error": "Check your final step: if x+3 = 5, then x = 2, not 8."
+    }
+  }
+]

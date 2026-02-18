@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function SettingsPage() {
+export function SettingsPage() {
   const navigate = useNavigate();
   const [apiKey, setApiKey] = useState(localStorage.getItem('gemini_api_key') || '');
 

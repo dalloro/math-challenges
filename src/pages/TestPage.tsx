@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function TestPage() {
+export function TestPage() {
   const navigate = useNavigate();
 
   return (

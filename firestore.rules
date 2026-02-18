@@ -10,7 +10,7 @@ service cloud.firestore {
 
     // Allow users to manage their own sessions
     match /sessions/{sessionId} {
-      allow create: if true; // Allow initial creation
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
       allow read, update: if request.auth != null && request.auth.uid == resource.data.userId;
     }
   }
