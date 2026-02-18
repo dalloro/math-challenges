@@ -1,0 +1,8 @@
+{
+  "track_id": "core_engine_20260216",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-18T02:16:05Z",
+  "updated_at": "2026-02-18T02:16:05Z",
+  "description": "Build the core adaptive testing engine, dual modalities, and Firebase integration."
+}
