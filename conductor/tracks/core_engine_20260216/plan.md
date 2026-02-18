@@ -21,6 +21,7 @@
     - [x] Implement batched Firestore seeding script to respect Spark Plan limits (20k writes/day)
 - [~] Task: Implement Data Access Layer
     - [ ] Write hooks for fetching questions and saving session progress
+- [x] Task: Apply review suggestions [7da4e46]
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Data Models & Content Seeding' (Protocol in workflow.md)
 
 ## Phase 3: Core Adaptive Testing Engine
