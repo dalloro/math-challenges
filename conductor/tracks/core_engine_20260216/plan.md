@@ -13,8 +13,8 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Firebase Setup' (Protocol in workflow.md)
 
 ## Phase 2: Data Models & Content Seeding
-- [ ] Task: Define Firestore Security Rules and Schema
-    - [ ] Write Firestore rules for anonymous access
+- [x] Task: Define Firestore Security Rules and Schema [3aca1bc]
+    - [x] Write Firestore rules for anonymous access
 - [ ] Task: Seed Initial Question Bank via Gemini CLI
     - [ ] Generate 20 gifted-level Grade 5 questions with MC5 and Open options
     - [ ] Generate 10 Common Failure Mode Walkthroughs per problem type
