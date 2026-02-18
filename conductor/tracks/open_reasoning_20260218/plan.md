@@ -5,7 +5,7 @@
     - [x] Set up Vitest mocks for Firestore and Router
     - [x] Write test case: "Stay at current level if next level is empty"
     - [x] Write test case: "Correctly display question level from metadata"
-- [~] Task: Refactor Adaptive Logic into a custom hook `useAdaptiveEngine` for better testability
+- [x] Task: Refactor Adaptive Logic into a custom hook `useAdaptiveEngine` for better testability [a6ec060]
 
 ## Phase 2: Open Reasoning UI
 - [ ] Task: Build Open Reasoning Component
