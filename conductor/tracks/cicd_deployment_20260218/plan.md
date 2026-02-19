@@ -17,12 +17,12 @@
     - [x] Implement Quality Gates (lint, type-check, test)
     - [x] Implement fresh build step (`npm run build`)
     - [x] Implement Firebase Hosting deployment step
-- [~] Task: Implement Versioning and GitHub Releases
+- [x] Task: Implement Versioning and GitHub Releases [57541e0]
     - [x] Update `package.json` version
     - [x] Update `LandingPage.tsx` to read version from `package.json`
     - [x] Create `.github/workflows/release.yml`
 - [x] Task: Configure GitHub Secrets for Firebase [f307359]
-- [x] Task: Conductor - User Manual Verification 'Phase 2: GitHub Actions Workflow Implementation' (Protocol in workflow.md) [e723917]
+- [x] Task: Conductor - User Manual Verification 'Phase 2: GitHub Actions Workflow Implementation' (Protocol in workflow.md) [57541e0]
 
 ## Phase 3: CI/CD Pipeline Verification & Hardening
 - [~] Task: Verify Success Path
