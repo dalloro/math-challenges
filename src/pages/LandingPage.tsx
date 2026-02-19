@@ -21,7 +21,7 @@ export function LandingPage() {
             Math Challenges
           </h1>
           <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            Experience gifted-level assessment and AI-powered Socratic learning.
+            Experience gifted-level assessment and AI-powered Socratic learning. Fully automated deployment active.
           </p>
         </header>
 
