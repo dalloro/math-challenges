@@ -24,5 +24,5 @@
     - [x] Logic to show `ideal_solution` from Firestore if API key is missing or call fails
 
 ## Phase 4: Verification & Polish
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Stability & Regression Testing'
-- [ ] Task: Conductor - User Manual Verification 'Phase 2 & 3: AI Reasoning'
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Stability & Regression Testing' [8cc5e11]
+- [x] Task: Conductor - User Manual Verification 'Phase 2 & 3: AI Reasoning' [8cc5e11]
