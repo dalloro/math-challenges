@@ -8,19 +8,19 @@
 - [x] Task: Refactor Adaptive Logic into a custom hook `useAdaptiveEngine` for better testability [a6ec060]
 
 ## Phase 2: Open Reasoning UI
-- [ ] Task: Build Open Reasoning Component
-    - [ ] Add "Switch to Reasoning" toggle in `TestPage`
-    - [ ] Implement multi-line text input for student process
-    - [ ] Create "Submit for Review" button
-- [ ] Task: Build Feedback Display
-    - [ ] Create UI for displaying AI feedback / Ideal Solution
-    - [ ] Implement thematic shift integration for reasoning mode
+- [x] Task: Build Open Reasoning Component [a6ec060]
+    - [x] Add "Switch to Reasoning" toggle in `TestPage`
+    - [x] Implement multi-line text input for student process
+    - [x] Create "Submit for Review" button
+- [x] Task: Build Feedback Display [a6ec060]
+    - [x] Create UI for displaying AI feedback / Ideal Solution
+    - [x] Implement thematic shift integration for reasoning mode
 
 ## Phase 3: AI Integration & Fallback
-- [ ] Task: Implement AI Feedback Client
-    - [ ] Create service to call Gemini API with student input
-    - [ ] Write Socratic prompt for reasoning evaluation
-- [ ] Task: Implement Static Fallback logic
+- [x] Task: Implement AI Feedback Client [a6ec060]
+    - [x] Create service to call Gemini API with student input
+    - [x] Write Socratic prompt for reasoning evaluation
+- [~] Task: Implement Static Fallback logic
     - [ ] Logic to show `ideal_solution` from Firestore if API key is missing or call fails
 
 ## Phase 4: Verification & Polish
