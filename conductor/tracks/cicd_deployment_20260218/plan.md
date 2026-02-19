@@ -11,13 +11,17 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Project ID Investigation & Configuration' (Protocol in workflow.md) [611f315]
 
 ## Phase 2: GitHub Actions Workflow Implementation
-- [x] Task: Create GitHub Actions Deployment Workflow [611f315]
+- [x] Task: Create GitHub Actions Deployment Workflow [0a9a649]
     - [x] Create `.github/workflows/deploy.yml`
     - [x] Define environment setup (Node.js setup, npm install)
     - [x] Implement Quality Gates (lint, type-check, test)
     - [x] Implement fresh build step (`npm run build`)
     - [x] Implement Firebase Hosting deployment step
-- [~] Task: Configure GitHub Secrets for Firebase
+- [~] Task: Implement Versioning and GitHub Releases
+    - [x] Update `package.json` version
+    - [x] Update `LandingPage.tsx` to read version from `package.json`
+    - [x] Create `.github/workflows/release.yml`
+- [ ] Task: Configure GitHub Secrets for Firebase
     - [ ] Generate a Firebase CI token or Service Account key
     - [ ] Provide instructions for adding `FIREBASE_TOKEN` or `FIREBASE_SERVICE_ACCOUNT` to GitHub repository secrets
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: GitHub Actions Workflow Implementation' (Protocol in workflow.md)
