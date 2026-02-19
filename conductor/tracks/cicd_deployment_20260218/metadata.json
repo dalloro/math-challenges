@@ -1,0 +1,8 @@
+{
+  "track_id": "cicd_deployment_20260218",
+  "type": "chore",
+  "status": "new",
+  "created_at": "2026-02-18T22:15:00Z",
+  "updated_at": "2026-02-18T22:15:00Z",
+  "description": "Automate deployment to Firebase using GitHub Actions and investigate cleaner project URL."
+}
