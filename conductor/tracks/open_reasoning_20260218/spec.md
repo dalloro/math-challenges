@@ -12,7 +12,7 @@ Implement the "Open Reasoning" modality where students type their logic, add reg
   - UI for displaying the "Ideal Solution" side-by-side or as a toggle.
 - **AI Integration (BYOK):**
   - Use the Gemini API key from local storage.
-  - Call `gemini-1.5-flash` to evaluate the student's typed reasoning.
+  - Call `gemini-3-flash-preview` to evaluate the student's typed reasoning.
   - Socratic feedback: provide hints without giving the final answer.
 - **Graceful Degradation:**
   - If no API key is present, show the static "Ideal Solution" instead of live feedback.

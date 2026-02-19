@@ -9,7 +9,7 @@ export async function evaluateReasoning(
   if (!apiKey) throw new Error("API Key is required");
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
 
   const prompt = `
     You are a Socratic math tutor for gifted students.
