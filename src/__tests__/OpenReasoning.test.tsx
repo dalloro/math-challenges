@@ -89,7 +89,9 @@ describe('Open Reasoning UI & Integration', () => {
     }, { timeout: 3000 });
   });
 
-  it('should fallback to Ideal Solution if API key is missing', async () => {
+  it('should fallback to Ideal Solution if API key is missing (Graceful Static Mode)', async () => {
+    // No API key in localStorage
+    
     render(
       <MemoryRouter initialEntries={['/test?grade=1']}>
         <Routes>
@@ -104,12 +106,15 @@ describe('Open Reasoning UI & Integration', () => {
 
     await waitFor(() => {
       expect(aiService.evaluateReasoning).not.toHaveBeenCalled();
+      // Use AllBy to handle multiple matching elements
+      const elements = screen.getAllByText(/Ideal Solution/i);
+      expect(elements.length).toBeGreaterThan(0);
       expect(screen.getByText('Ideal Solution Content')).toBeInTheDocument();
     }, { timeout: 3000 });
   });
 
-  it('should fallback to Ideal Solution if AI service fails', async () => {
-    window.localStorage.setItem('gemini_api_key', 'real-key');
+  it('should display error if API key is present but service fails (Config Mistake)', async () => {
+    window.localStorage.setItem('gemini_api_key', 'wrong-key');
     vi.mocked(aiService.evaluateReasoning).mockRejectedValue(new Error('API Down'));
 
     render(
@@ -125,7 +130,9 @@ describe('Open Reasoning UI & Integration', () => {
     fireEvent.click(screen.getByText(/Submit for Review/i));
 
     await waitFor(() => {
-      expect(screen.getByText('Ideal Solution Content')).toBeInTheDocument();
-    }, { timeout: 3000 });
+      expect(screen.getByText(/AI Configuration Error/i)).toBeInTheDocument();
+      // Should NOT show ideal solution here (it's hidden in case of error)
+      expect(screen.queryByText(/Ideal Solution Content/i)).not.toBeInTheDocument();
+    });
   });
 });

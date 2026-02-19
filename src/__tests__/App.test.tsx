@@ -10,6 +10,6 @@ describe('App', () => {
 
   it('renders the start challenge button', () => {
     render(<App />);
-    expect(screen.getByRole('button', { name: /Start Challenge/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Start Adaptive Challenge/i })).toBeInTheDocument();
   });
 });

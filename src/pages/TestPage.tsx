@@ -32,6 +32,7 @@ export function TestPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [feedbackType, setFeedbackType] = useState<'ai' | 'ideal' | null>(null);
+  const [feedbackError, setFeedbackError] = useState<string | null>(null);
   
   const [timer, setTimer] = useState(3600); // 60 minutes
 
@@ -58,7 +59,8 @@ export function TestPage() {
 
   useEffect(() => {
     if (!currentQuestion && availablePool.length > 0) {
-      setCurrentQuestion(availablePool[0]);
+      const randomIndex = Math.floor(Math.random() * availablePool.length);
+      setCurrentQuestion(availablePool[randomIndex]);
     }
   }, [availablePool, currentQuestion]);
 
@@ -88,36 +90,40 @@ export function TestPage() {
     setModality('mcq');
     setAiFeedback(null);
     setFeedbackType(null);
+    setFeedbackError(null);
   };
 
   const handleSubmitReasoning = async () => {
     if (!reasoning || !currentQuestion) return;
     setIsSubmitting(true);
+    setFeedbackError(null);
     
     const apiKey = localStorage.getItem('gemini_api_key');
     
-    if (apiKey) {
-      try {
-        const feedback = await evaluateReasoning(
-          currentQuestion.question,
-          reasoning,
-          currentQuestion.ideal_solution,
-          apiKey
-        );
-        setAiFeedback(feedback);
-        setFeedbackType('ai');
-      } catch (err) {
-        console.error("AI reasoning failed, falling back to ideal solution", err);
-        setAiFeedback(currentQuestion.ideal_solution);
-        setFeedbackType('ideal');
-      }
-    } else {
-      // Static fallback
+    if (!apiKey) {
+      // INTENTIONAL ABSENCE: Show static ideal solution
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
+      setIsSubmitting(false);
+      return;
     }
-    
-    setIsSubmitting(false);
+
+    try {
+      const feedback = await evaluateReasoning(
+        currentQuestion.question,
+        reasoning,
+        currentQuestion.ideal_solution,
+        apiKey
+      );
+      setAiFeedback(feedback);
+      setFeedbackType('ai');
+    } catch (err) {
+      // CONFIGURATION ERROR: Show explicit error
+      console.error("AI reasoning failed:", err);
+      setFeedbackError("AI Configuration Error: Failed to reach the service. Check your API key or connection.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (loading) return <div className="flex items-center justify-center min-h-screen">Loading Grade {grade} challenges...</div>;
@@ -225,12 +231,28 @@ export function TestPage() {
               </div>
             ) : (
               <div className="space-y-6">
+                <div className="flex flex-wrap gap-2 pb-4 border-b border-gray-100">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 w-full mb-1">Available Options:</span>
+                  {currentQuestion.options.map((option: string, idx: number) => (
+                    <span key={option} className="px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-xl text-sm text-gray-500 font-bold">
+                      {String.fromCharCode(65 + idx)}) {option}
+                    </span>
+                  ))}
+                </div>
+
                 <textarea
                   value={reasoning}
                   onChange={(e) => setReasoning(e.target.value)}
                   placeholder="Explain your reasoning step-by-step..."
                   className="w-full h-64 p-6 rounded-2xl border-2 border-gray-100 focus:border-blue-500 focus:ring-0 outline-none text-xl text-gray-800 placeholder-gray-300 resize-none transition-all bg-gray-50/30"
                 />
+                
+                {feedbackError && (
+                  <div className="p-4 bg-red-50 border border-red-100 rounded-xl text-red-600 text-sm font-medium animate-in fade-in slide-in-from-top-2">
+                    {feedbackError}
+                  </div>
+                )}
+
                 <div className="flex justify-end">
                   <button
                     onClick={handleSubmitReasoning}
