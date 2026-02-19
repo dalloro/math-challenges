@@ -27,10 +27,10 @@ function run() {
 
   let bump: 'major' | 'minor' | 'patch' = 'patch';
 
-  // Logic for semantic versioning
-  if (commitMessages.includes('BREAKING CHANGE') || commitMessages.toLowerCase().includes('major:')) {
+  // Logic for semantic versioning using regex to support scopes (e.g., feat(ui):)
+  if (/BREAKING CHANGE|major(\(.*\))?:/i.test(commitMessages)) {
     bump = 'major';
-  } else if (commitMessages.toLowerCase().includes('feat:')) {
+  } else if (/feat(\(.*\))?:/i.test(commitMessages)) {
     bump = 'minor';
   }
 
