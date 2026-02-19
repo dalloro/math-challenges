@@ -25,10 +25,10 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: GitHub Actions Workflow Implementation' (Protocol in workflow.md) [57541e0]
 
 ## Phase 3: CI/CD Pipeline Verification & Hardening
-- [~] Task: Verify Success Path
-    - [ ] Push a minor cosmetic change to `main`
-    - [ ] Monitor GitHub Actions to ensure build and deploy succeed
-- [ ] Task: Verify Failure Path (Regression Prevention)
-    - [ ] Temporarily break a unit test and push to a test branch (or simulate in `main`)
-    - [ ] Verify that the deployment is correctly blocked by the failing test
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: CI/CD Pipeline Verification & Hardening' (Protocol in workflow.md)
+- [x] Task: Verify Success Path [cf46c3d]
+    - [x] Push a minor cosmetic change to `main`
+    - [x] Monitor GitHub Actions to ensure build and deploy succeed
+- [x] Task: Verify Failure Path (Regression Prevention) [260ecc9]
+    - [x] Temporarily break a unit test and push to a test branch (or simulate in `main`)
+    - [x] Verify that the deployment is correctly blocked by the failing test
+- [x] Task: Conductor - User Manual Verification 'Phase 3: CI/CD Pipeline Verification & Hardening' (Protocol in workflow.md) [260ecc9]
