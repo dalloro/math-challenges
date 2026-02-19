@@ -21,13 +21,11 @@
     - [x] Update `package.json` version
     - [x] Update `LandingPage.tsx` to read version from `package.json`
     - [x] Create `.github/workflows/release.yml`
-- [ ] Task: Configure GitHub Secrets for Firebase
-    - [ ] Generate a Firebase CI token or Service Account key
-    - [ ] Provide instructions for adding `FIREBASE_TOKEN` or `FIREBASE_SERVICE_ACCOUNT` to GitHub repository secrets
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: GitHub Actions Workflow Implementation' (Protocol in workflow.md)
+- [x] Task: Configure GitHub Secrets for Firebase [f307359]
+- [x] Task: Conductor - User Manual Verification 'Phase 2: GitHub Actions Workflow Implementation' (Protocol in workflow.md) [e723917]
 
 ## Phase 3: CI/CD Pipeline Verification & Hardening
-- [ ] Task: Verify Success Path
+- [~] Task: Verify Success Path
     - [ ] Push a minor cosmetic change to `main`
     - [ ] Monitor GitHub Actions to ensure build and deploy succeed
 - [ ] Task: Verify Failure Path (Regression Prevention)
