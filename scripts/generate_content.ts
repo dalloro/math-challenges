@@ -71,12 +71,24 @@ async function generateBatch(grade: number, level: number, count: number) {
   }
 }
 
+interface Question {
+  grade: number;
+  level: number;
+  difficulty: string;
+  type: string;
+  question: string;
+  options: string[];
+  correct_answer: string;
+  ideal_solution: string;
+  failure_modes: Record<string, string>;
+}
+
 async function run(grade: number, totalTarget: number) {
   const outputDir = path.join(process.cwd(), 'content_bank');
   if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
 
   const filePath = path.join(outputDir, `grade_${grade}.json`);
-  let existingData: any[] = [];
+  let existingData: Question[] = [];
   
   if (fs.existsSync(filePath)) {
     existingData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -86,8 +98,6 @@ async function run(grade: number, totalTarget: number) {
   console.log(`Starting generation for Grade ${grade}. Total Target: ${totalTarget} (${targetPerLevel} per level).`);
 
   for (let level = 1; level <= 10; level++) {
-    const currentLevelCount = existingData.filter(q => q.level === level).length;
-    
     while (existingData.filter(q => q.level === level).length < targetPerLevel) {
       const remainingForLevel = targetPerLevel - existingData.filter(q => q.level === level).length;
       const batchSize = Math.min(5, remainingForLevel);

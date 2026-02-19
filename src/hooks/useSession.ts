@@ -16,13 +16,13 @@ export interface SessionState {
 }
 
 export function useSession() {
-  const [session, setSession] = useState<SessionState>({
+  const [session, setSession] = useState<SessionState>(() => ({
     currentQuestionIndex: 0,
     score: 0,
     answers: [],
     startTime: Date.now(),
     isComplete: false,
-  });
+  }));
 
   const recordAnswer = useCallback((questionId: string, answer: string, isCorrect: boolean) => {
     setSession(prev => ({
