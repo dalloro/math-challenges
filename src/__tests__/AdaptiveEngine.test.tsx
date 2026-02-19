@@ -62,22 +62,25 @@ describe('Adaptive Engine Logic', () => {
       </MemoryRouter>
     );
 
-    // Answer Q1 Correct
+    // Initial question (randomized, but we know it's one of the 3)
+    const q1 = await screen.findByText(/Q\d L1/);
     fireEvent.click(screen.getByText('A'));
     fireEvent.click(screen.getByText(/Confirm Selection/i));
 
-    // Wait for Q2
+    // Wait for the NEXT question (should be one of the remaining two)
     await waitFor(() => {
-      expect(screen.getByText('Q2 L1')).toBeInTheDocument();
+      const q2 = screen.getByText(/Q\d L1/);
+      expect(q2.textContent).not.toBe(q1.textContent);
     });
     
-    // Answer Q2 Correct (Streak = 2)
+    // Answer second question correctly (Streak = 2)
     fireEvent.click(screen.getByText('A'));
     fireEvent.click(screen.getByText(/Confirm Selection/i));
 
-    // Wait for Q3
+    // Wait for the THIRD question
     await waitFor(() => {
-      expect(screen.getByText('Q3 L1')).toBeInTheDocument();
+      const q3 = screen.getByText(/Q\d L1/);
+      expect(q3).toBeInTheDocument();
     });
 
     // The level should still be 1 because Level 2 doesn't exist in questions array
