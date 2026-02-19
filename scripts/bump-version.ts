@@ -9,7 +9,7 @@ function run() {
   let lastTag = '';
   try {
     lastTag = execSync('git describe --tags --abbrev=0').toString().trim();
-  } catch (e) {
+  } catch {
     // No tags yet, start from v0.0.0
     lastTag = 'v0.0.0';
   }
