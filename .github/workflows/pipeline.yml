@@ -1,0 +1,70 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Necessary to analyze commit history for versioning
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # 1. Bump Version based on Commits
+      - name: Bump Version
+        id: bump
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          npx tsx scripts/bump-version.ts
+          NEW_VER=$(node -p "require('./package.json').version")
+          echo "version=$NEW_VER" >> $GITHUB_OUTPUT
+          
+          # Commit the updated package.json back to the repo
+          git add package.json
+          git commit -m "chore(release): v$NEW_VER [skip ci]" || echo "No version change"
+          git push origin main || echo "Nothing to push"
+
+      # 2. Quality Gates
+      - name: Lint
+        run: npm run lint
+
+      - name: Type Check
+        run: npx tsc -b
+
+      - name: Test
+        run: CI=true npm test
+
+      # 3. Build & Deploy
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MATH_CHALLENGES_GIFTED }}'
+          channelId: live
+          projectId: math-challenges-gifted
+
+      # 4. Create GitHub Release
+      - name: Create GitHub Release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "v${{ steps.bump.outputs.version }}"
+          prerelease: false
+          title: "Release v${{ steps.bump.outputs.version }}"
