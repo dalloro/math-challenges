@@ -3,8 +3,8 @@ import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, query, where
 import fs from "fs";
 
 const firebaseConfig = {
-  projectId: "math-challenges-gifted-99",
-  apiKey: "AIzaSyBGAlV-Vk4hR8WKIyoqnj_Z3W1rKmE3x8A",
+  projectId: "math-challenges-gifted",
+  apiKey: "AIzaSyArf6jpOKlf4nTzAR20aVbG4ffagpKVYzA",
 };
 
 const app = initializeApp(firebaseConfig);

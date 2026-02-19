@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  projectId: "math-challenges-gifted-99",
-  appId: "1:299687337678:web:117f9078b94ca630f63a9f",
-  storageBucket: "math-challenges-gifted-99.firebasestorage.app",
-  apiKey: "AIzaSyBGAlV-Vk4hR8WKIyoqnj_Z3W1rKmE3x8A",
-  authDomain: "math-challenges-gifted-99.firebaseapp.com",
-  messagingSenderId: "299687337678"
+  projectId: "math-challenges-gifted",
+  appId: "1:589334742260:web:4e7cbf3c417c493f6e8aa1",
+  storageBucket: "math-challenges-gifted.firebasestorage.app",
+  apiKey: "AIzaSyArf6jpOKlf4nTzAR20aVbG4ffagpKVYzA",
+  authDomain: "math-challenges-gifted.firebaseapp.com",
+  messagingSenderId: "589334742260"
 };
 
 const app = initializeApp(firebaseConfig);
