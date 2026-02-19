@@ -4,10 +4,12 @@ import packageJson from '../../package.json';
 
 export function LandingPage() {
   const navigate = useNavigate();
-  const [selectedGrade, setSelectedGrade] = useState<number>(5);
+  const [selectedGrade, setSelectedGrade] = useState<number | null>(null);
 
   const handleStart = () => {
-    navigate(`/test?grade=${selectedGrade}`);
+    if (selectedGrade !== null) {
+      navigate(`/test?grade=${selectedGrade}`);
+    }
   };
 
   return (
@@ -49,7 +51,8 @@ export function LandingPage() {
 
           <button 
             onClick={handleStart}
-            className="w-full py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-100"
+            disabled={selectedGrade === null}
+            className="w-full py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-xl shadow-blue-100"
           >
             Start Adaptive Challenge
           </button>
