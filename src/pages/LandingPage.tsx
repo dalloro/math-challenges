@@ -95,7 +95,7 @@ export function LandingPage() {
                   type="text"
                   value={roomCodeInput}
                   onChange={(e) => setRoomCodeInput(e.target.value.toUpperCase())}
-                  placeholder="WORD-WORD-00"
+                  placeholder="Room Code"
                   className="flex-1 px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-blue-500 outline-none font-mono font-bold text-center"
                 />
                 <button

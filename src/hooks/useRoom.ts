@@ -25,7 +25,10 @@ const LOCAL_STORAGE_KEY = 'math_challenge_room_code';
 const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
 
 export function useRoom({ grade, initialRoomCode }: { grade?: number; initialRoomCode?: string | null }) {
-  const [roomCode, setRoomCode] = useState<string | null>(initialRoomCode || localStorage.getItem(LOCAL_STORAGE_KEY));
+  const [roomCode, setRoomCode] = useState<string | null>(() => {
+    const rawCode = initialRoomCode || localStorage.getItem(LOCAL_STORAGE_KEY);
+    return rawCode ? rawCode.trim().toUpperCase() : null;
+  });
   const [roomData, setRoomData] = useState<RoomState | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
