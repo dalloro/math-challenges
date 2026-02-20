@@ -7,6 +7,7 @@ import * as useSessionHook from '../hooks/useSession';
 import * as useRoomHook from '../hooks/useRoom';
 import * as aiService from '../services/ai';
 import { useState } from 'react';
+import { FieldValue } from 'firebase/firestore';
 
 vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
@@ -53,11 +54,13 @@ describe('Open Reasoning UI & Integration', () => {
         roomCode: 'TEST01',
         grade: 1,
         currentLevel: 1,
+        streak: 0,
+        currentQuestionId: null,
         score: 0,
         answers: [],
         remainingSeconds: 3600,
         lastInteractionAt: Date.now(),
-        createdAt: {}
+        createdAt: {} as unknown as FieldValue
       },
       loading: false,
       error: null,

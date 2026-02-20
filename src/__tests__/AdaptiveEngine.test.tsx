@@ -6,6 +6,7 @@ import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useSessionHook from '../hooks/useSession';
 import * as useRoomHook from '../hooks/useRoom';
 import { useState, useCallback } from 'react';
+import { FieldValue } from 'firebase/firestore';
 
 // Mock the hooks
 vi.mock('../hooks/useQuestions');
@@ -51,11 +52,13 @@ describe('Adaptive Engine Logic', () => {
         roomCode: 'TEST01',
         grade: 1,
         currentLevel: 1,
+        streak: 0,
+        currentQuestionId: null,
         score: 0,
         answers: [],
         remainingSeconds: 3600,
         lastInteractionAt: Date.now(),
-        createdAt: {}
+        createdAt: {} as unknown as FieldValue
       },
       loading: false,
       error: null,
