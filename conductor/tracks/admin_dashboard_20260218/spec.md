@@ -1,7 +1,7 @@
 # Specification - Admin Content Management Dashboard
 
 ## Goal
-Implement a secure, admin-only dashboard within the web application to manage the question bank, allowing for bulk JSON uploads and single-question creation with robust validation.
+Implement a secure, admin-only dashboard within the web application to manage the question bank, allowing for bulk JSON uploads, single-question creation, and data export with robust validation.
 
 ## Functional Requirements
 1.  **Secure Admin Access:**
@@ -9,7 +9,7 @@ Implement a secure, admin-only dashboard within the web application to manage th
     - The `/admin` route is protected by a route guard that verifies the admin claim.
     - Firestore rules updated to allow `write` operations on the `questions` collection ONLY if `request.auth.token.admin == true`.
 2.  **Admin Dashboard UI:**
-    - Accessible via manual URL entry (`/admin`).
+    - Accessible via manual URL entry (`/admin`) or footer login.
     - Displays the required **JSON Schema** prominently for reference.
 3.  **Bulk Management Modality:**
     - Text area for pasting a JSON array of questions.
@@ -17,12 +17,15 @@ Implement a secure, admin-only dashboard within the web application to manage th
     - **Duplicate Prevention:** Before saving, the system checks the incoming batch and existing database for duplicate question text within the same grade.
 4.  **Single Question Wizard ("Nicer UI"):**
     - Form with fields for all question properties (Grade, Level, Type, Question, Options A-E, Correct Answer, Ideal Solution, Failure Modes).
-    - **Live Validation:**
-        - Grade must be 1-12.
-        - Level must be 1-10.
-        - Exactly 5 options.
-        - Correct answer must match one of the options.
-5.  **Admin Setup Utility:**
+    - **Live Validation:** Ensure all fields are filled and a correct answer is selected.
+    - **Dynamic Failure Modes:** Support up to 3 custom failure modes with titles and content.
+5.  **Live Question Explorer:**
+    - Browse questions by grade.
+    - Support for **deleting** individual questions from the live database.
+6.  **Backup & Export:**
+    - Download questions as JSON files formatted for the project's seeding scripts.
+    - Support for single-grade export or batch export of all grades.
+7.  **Admin Setup Utility:**
     - Provide a standalone script (`scripts/set-admin.ts`) to assign the `admin` claim to a specific UID via `firebase-admin`.
 
 ## Technical Details
@@ -31,12 +34,13 @@ Implement a secure, admin-only dashboard within the web application to manage th
 - **Validation Logic:** Client-side validation + Firestore Rule enforcement.
 
 ## Acceptance Criteria
-- [ ] Non-admin users are redirected away from `/admin` or shown a 403 error.
-- [ ] Pasting malformed JSON in the bulk editor shows a clear syntax error.
-- [ ] Submitting a question with invalid parameters (e.g., Level 11) is blocked by the UI.
-- [ ] Successfully added questions appear immediately in the student testing pool.
-- [ ] "Refresh" mode correctly purges only the targeted Grade/Level before upload.
+- [x] Non-admin users are redirected away from `/admin` or shown a 403 error.
+- [x] Pasting malformed JSON in the bulk editor shows a clear syntax error.
+- [x] Submitting a question with invalid parameters is blocked by the UI.
+- [x] Successfully added questions appear immediately in the student testing pool.
+- [x] "Refresh" mode correctly purges only the targeted Grade/Level before upload.
+- [x] Exported files are compatible with `seed_grade_X.json` format.
 
 ## Out of Scope
-- Editing existing questions individually (initial scope is create/delete).
-- Image uploads for questions (text-only for now).
+- Editing existing questions individually (creation and deletion are supported).
+- Image uploads for questions.
