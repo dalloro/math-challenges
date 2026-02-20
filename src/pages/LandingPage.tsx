@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 import packageJson from '../../package.json';
 
 export function LandingPage() {
@@ -9,6 +11,12 @@ export function LandingPage() {
   const [activeRoomCode] = useState<string | null>(() => 
     localStorage.getItem('math_challenge_room_code')
   );
+
+  // Admin Login State
+  const [isAdminLoginVisible, setIsAdminLoginVisible] = useState(false);
+  const [adminEmail, setAdminEmail] = useState('');
+  const [adminPassword, setAdminPassword] = useState('');
+  const [adminLoginError, setAdminLoginError] = useState<string | null>(null);
 
   const handleStart = () => {
     if (selectedGrade !== null) {
@@ -28,6 +36,18 @@ export function LandingPage() {
   const handleResume = () => {
     if (activeRoomCode) {
       navigate(`/test?room=${activeRoomCode}`);
+    }
+  };
+
+  const handleAdminLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAdminLoginError(null);
+    try {
+      await signInWithEmailAndPassword(auth, adminEmail, adminPassword);
+      // Wait a moment for the claim to be recognized by the observer
+      setTimeout(() => navigate('/admin'), 500);
+    } catch (err: any) {
+      setAdminLoginError(err.message);
     }
   };
 
@@ -117,12 +137,54 @@ export function LandingPage() {
         </main>
 
         <footer className="flex flex-col items-center space-y-6">
-          <button 
-            onClick={() => navigate('/settings')}
-            className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
-          >
-            Settings & API Configuration
-          </button>
+          <div className="flex space-x-4 items-center">
+            <button 
+              onClick={() => navigate('/settings')}
+              className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
+            >
+              Settings
+            </button>
+            <span className="text-gray-300">|</span>
+            <button 
+              onClick={() => setIsAdminLoginVisible(!isAdminLoginVisible)}
+              className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
+            >
+              Admin Access
+            </button>
+          </div>
+
+          {isAdminLoginVisible && (
+            <form 
+              onSubmit={handleAdminLogin}
+              className="w-full bg-gray-100 p-6 rounded-2xl border border-gray-200 space-y-4 animate-in fade-in slide-in-from-bottom-2"
+            >
+              <h4 className="text-xs font-black uppercase tracking-widest text-gray-500">Site Admin Login</h4>
+              <input 
+                type="email" 
+                placeholder="Admin Email"
+                value={adminEmail}
+                onChange={(e) => setAdminEmail(e.target.value)}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 text-sm"
+                required
+              />
+              <input 
+                type="password" 
+                placeholder="Password"
+                value={adminPassword}
+                onChange={(e) => setAdminPassword(e.target.value)}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 text-sm"
+                required
+              />
+              {adminLoginError && <p className="text-[10px] text-red-500 font-bold">{adminLoginError}</p>}
+              <button 
+                type="submit"
+                className="w-full py-2 bg-gray-900 text-white rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-black transition-colors"
+              >
+                Login to Dashboard
+              </button>
+            </form>
+          )}
+
           <div className="flex space-x-4 text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em]">
             <span>Persistent Rooms</span>
             <span>•</span>

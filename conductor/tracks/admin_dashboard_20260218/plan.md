@@ -1,21 +1,21 @@
 # Implementation Plan - Admin Content Management Dashboard
 
-## Phase 1: Security & Auth Foundation
-- [ ] Task: Implement Admin Custom Claim Script
-    - [ ] Create `scripts/set-admin.ts` using `firebase-admin` to set custom user claims
-- [ ] Task: Update Firestore Security Rules
-    - [ ] Add `allow write: if request.auth.token.admin == true;` to the `questions` collection
-- [ ] Task: Create Admin Route Guard
-    - [ ] Implement a higher-order component or hook to check for the `admin` claim before rendering the `/admin` route
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Security & Auth Foundation' (Protocol in workflow.md)
+## Phase 1: Security & Auth Foundation [checkpoint: e05cc9a]
+- [x] Task: Implement Admin Custom Claim Script [664e690]
+    - [x] Create `scripts/set-admin.ts` using `firebase-admin` to set custom user claims
+- [x] Task: Update Firestore Security Rules [95b7f75]
+    - [x] Add `allow write: if request.auth.token.admin == true;` to the `questions` collection
+- [x] Task: Create Admin Route Guard [3c70116]
+    - [x] Implement a higher-order component or hook to check for the `admin` claim before rendering the `/admin` route
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Security & Auth Foundation' (Protocol in workflow.md)
 
 ## Phase 2: Admin Dashboard Skeleton
-- [ ] Task: Build Admin Page Layout
-    - [ ] Create `/src/pages/AdminPage.tsx` with a split view (Bulk vs. Wizard)
-    - [ ] Add the JSON Schema documentation section
-- [ ] Task: Implement Single Question Wizard
-    - [ ] Build the form with live validation logic
-    - [ ] Implement "Add Question" button with duplicate checking
+- [x] Task: Build Admin Page Layout [10fb546]
+    - [x] Create `/src/pages/AdminPage.tsx` with a split view (Bulk vs. Wizard)
+    - [x] Add the JSON Schema documentation section
+- [x] Task: Implement Single Question Wizard [a09139a]
+    - [x] Build the form with live validation logic
+    - [x] Implement "Add Question" button with duplicate checking
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Admin Dashboard Skeleton' (Protocol in workflow.md)
 
 ## Phase 3: Bulk Management & Data Sync
