@@ -25,8 +25,8 @@ export function LandingPage() {
 
   const handleJoinRoom = (e: React.FormEvent) => {
     e.preventDefault();
-    if (roomCodeInput.length === 6) {
-      navigate(`/test?room=${roomCodeInput.toUpperCase()}`);
+    if (roomCodeInput.trim().length > 0) {
+      navigate(`/test?room=${roomCodeInput.trim().toUpperCase()}`);
     }
   };
 

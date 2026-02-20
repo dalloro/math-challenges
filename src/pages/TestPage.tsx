@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuestions } from '../hooks/useQuestions';
 import type { Question } from '../hooks/useQuestions';
@@ -75,7 +75,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     };
   }, []);
 
-  // Derive available questions for current level that haven't been answered
+  // Derive available pool for current level
   const availablePool = useMemo(() => {
     const answeredIds = session.answers.map(a => a.questionId);
     let pool = questions.filter(q => q.level === currentLevel && !answeredIds.includes(q.id));
@@ -94,26 +94,31 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   }, [questions, currentLevel, session.answers]);
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
+  const initializedFromRoom = useRef(false);
 
-  // Question Selection Logic: Priority to restored currentQuestionId
+  // Question Selection Logic
   useEffect(() => {
     if (questions.length === 0 || currentQuestion) return;
 
-    if (initialRoomState.currentQuestionId) {
+    // 1. Try to restore the question from the room state ONCE
+    if (!initializedFromRoom.current && initialRoomState.currentQuestionId) {
       const restored = questions.find(q => q.id === initialRoomState.currentQuestionId);
       const isAlreadyAnswered = session.answers.some(a => a.questionId === initialRoomState.currentQuestionId);
       
       if (restored && !isAlreadyAnswered) {
         setCurrentQuestion(restored);
+        initializedFromRoom.current = true;
         return;
       }
     }
 
+    // 2. Otherwise pick randomly from the pool
     if (availablePool.length > 0) {
       const randomIndex = Math.floor(Math.random() * availablePool.length);
       const picked = availablePool[randomIndex];
       setCurrentQuestion(picked);
       onSync({ currentQuestionId: picked.id });
+      initializedFromRoom.current = true;
     }
   }, [availablePool, currentQuestion, questions, initialRoomState.currentQuestionId, session.answers, onSync]);
 
@@ -127,15 +132,15 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     return () => clearInterval(interval);
   }, [isActive]);
 
-  // Periodic Timer Sync: Only if active
+  // Periodic Timer Sync: Every 30s
   useEffect(() => {
     const interval = setInterval(() => {
       if (isActive) {
         onSync({ remainingSeconds: timer });
       }
-    }, 30000); // Sync every 30s
+    }, 30000);
     return () => clearInterval(interval);
-  }, [timer, onSync, isActive]);
+  }, [onSync, isActive, timer]);
 
   const formatTime = (seconds: number) => {
     const m = Math.floor(seconds / 60);
@@ -150,7 +155,19 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     recordAnswer(currentQuestion.id, selectedOption, isCorrect);
     handleAnswer(isCorrect);
 
-    // Reset local UI state
+    // Sync all state changes back to room immediately on confirm
+    onSync({ 
+      currentLevel, 
+      streak, 
+      score: session.score + (isCorrect ? 1 : 0), 
+      answers: [
+        ...session.answers,
+        { questionId: currentQuestion.id, answer: selectedOption, isCorrect, timestamp: Date.now() }
+      ],
+      remainingSeconds: timer,
+      currentQuestionId: null // Clear so next effect picks a new one
+    });
+
     setSelectedOption(null);
     setCurrentQuestion(null);
     setReasoning('');
@@ -159,17 +176,6 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     setFeedbackType(null);
     setFeedbackError(null);
   };
-
-  // Sync state changes back to room on interaction
-  useEffect(() => {
-    onSync({ 
-      currentLevel, 
-      streak, 
-      score: session.score, 
-      answers: session.answers,
-      remainingSeconds: timer
-    });
-  }, [currentLevel, streak, session.score, session.answers, onSync, timer]);
 
   const handleSubmitReasoning = async () => {
     if (!reasoning || !currentQuestion) return;
@@ -260,7 +266,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                   {currentQuestion.type}
                 </span>
                 <span className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest ${
-                  currentQuestion.level > 7 ? 'bg-purple-50 text-purple-600' : currentQuestion.level > 4 ? 'bg-blue-50 text-blue-600' : 'bg-green-50 text-green-600'
+                  currentLevel > 7 ? 'bg-purple-50 text-purple-600' : currentLevel > 4 ? 'bg-blue-50 text-blue-600' : 'bg-green-50 text-green-600'
                 }`}>
                   Level {currentQuestion.level} / 10
                 </span>
