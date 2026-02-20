@@ -18,8 +18,8 @@ describe('useAdmin Hook', () => {
   });
 
   it('should return isAdmin: false when user is not logged in', async () => {
-    vi.mocked(onAuthStateChanged).mockImplementation((auth, callback: any) => {
-      callback(null);
+    vi.mocked(onAuthStateChanged).mockImplementation((_auth, callback) => {
+      (callback as (user: unknown) => void)(null);
       return () => {};
     });
 
@@ -38,8 +38,8 @@ describe('useAdmin Hook', () => {
       })
     };
 
-    vi.mocked(onAuthStateChanged).mockImplementation((auth, callback: any) => {
-      callback(mockUser);
+    vi.mocked(onAuthStateChanged).mockImplementation((_auth, callback) => {
+      (callback as (user: unknown) => void)(mockUser);
       return () => {};
     });
 
@@ -58,8 +58,8 @@ describe('useAdmin Hook', () => {
       })
     };
 
-    vi.mocked(onAuthStateChanged).mockImplementation((auth, callback: any) => {
-      callback(mockUser);
+    vi.mocked(onAuthStateChanged).mockImplementation((_auth, callback) => {
+      (callback as (user: unknown) => void)(mockUser);
       return () => {};
     });
 

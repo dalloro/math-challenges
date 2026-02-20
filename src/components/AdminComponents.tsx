@@ -1,7 +1,7 @@
-import { useState, useMemo } from 'react';
-import { collection, addDoc, query, where, getDocs, writeBatch, doc } from 'firebase/firestore';
+import { useState } from 'react';
+import { collection, query, where, getDocs, writeBatch, doc } from 'firebase/firestore';
 import { db } from '../firebase';
-import { Plus, Check, AlertCircle, Terminal, Trash2, Search, Info, Download } from 'lucide-react';
+import { Check, AlertCircle, Terminal, Trash2, Search, Info, Download } from 'lucide-react';
 
 interface Question {
   id?: string;
@@ -90,8 +90,9 @@ export function BulkUpload() {
         message: `Import complete! ${refreshMode ? 'Refreshed' : 'Appended'} ${addedCount} questions. ${skippedCount > 0 ? `Skipped ${skippedCount} duplicates.` : ''}` 
       });
       setJsonInput('');
-    } catch (err: any) {
-      setStatus({ type: 'error', message: `Import error: ${err.message}` });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      setStatus({ type: 'error', message: `Import error: ${message}` });
     } finally {
       setIsSubmitting(false);
     }
@@ -163,7 +164,7 @@ export function QuestionExporter() {
   const [grade, setGrade] = useState<number | 'all'>(5);
   const [isExporting, setIsExporting] = useState(false);
 
-  const downloadJson = (data: any, filename: string) => {
+  const downloadJson = (data: unknown, filename: string) => {
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -200,8 +201,8 @@ export function QuestionExporter() {
 
       if (grade === 'all') {
         // Group by grade and download multiple files
-        const grouped = allQuestions.reduce((acc: Record<number, any[]>, curr: any) => {
-          const g = curr.grade;
+        const grouped = allQuestions.reduce((acc: Record<number, unknown[]>, curr: unknown) => {
+          const g = (curr as Question).grade;
           if (!acc[g]) acc[g] = [];
           acc[g].push(curr);
           return acc;
@@ -286,9 +287,10 @@ export function QuestionExplorer() {
       const snapshot = await getDocs(q);
       const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() } as Question));
       setQuestions(data.sort((a, b) => a.level - b.level));
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
-      setError(err.message);
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      setError(message);
     } finally {
       setIsLoading(false);
     }
@@ -301,7 +303,8 @@ export function QuestionExplorer() {
       const { deleteDoc } = await import('firebase/firestore');
       await deleteDoc(doc(db, 'questions', id));
       setQuestions(prev => prev.filter(q => q.id !== id));
-    } catch (err) {
+    } catch (err: unknown) {
+      console.error(err);
       alert('Delete failed');
     }
   };

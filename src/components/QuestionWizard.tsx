@@ -75,8 +75,8 @@ export function QuestionWizard() {
       });
 
       // 3. Save to Firestore
-      const { ...submitData } = formData;
-      delete (submitData as any).failure_modes_list;
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { failure_modes_list, ...submitData } = formData;
 
       await addDoc(collection(db, 'questions'), {
         ...submitData,
@@ -95,8 +95,9 @@ export function QuestionWizard() {
         ideal_solution: '',
         failure_modes_list: [{ title: '', content: '' }]
       }));
-    } catch (err: any) {
-      setStatus({ type: 'error', message: err.message });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      setStatus({ type: 'error', message: message });
     } finally {
       setIsSubmitting(false);
     }

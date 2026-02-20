@@ -46,8 +46,9 @@ export function LandingPage() {
       await signInWithEmailAndPassword(auth, adminEmail, adminPassword);
       // Wait a moment for the claim to be recognized by the observer
       setTimeout(() => navigate('/admin'), 500);
-    } catch (err: any) {
-      setAdminLoginError(err.message);
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      setAdminLoginError(message);
     }
   };
 
