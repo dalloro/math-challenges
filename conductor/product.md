@@ -26,6 +26,10 @@ A gifted-level math testing and learning web application designed for students a
   - **Closed Choice:** 5-option multiple-choice questions.
   - **Open Reasoning:** A text area for the final answer and a detailed explanation of the process.
 - **AI-Powered Evaluation:** Integration with `gemini-3-flash-preview` to provide real-time, qualitative feedback on the student's reasoning, identifying strengths and flaws in their logic.
+- **Content Management Dashboard:** 
+  - Secure, admin-only interface for managing the question bank.
+  - Support for single question entry via wizard, bulk JSON imports, and data export for backups.
+  - Real-time question explorer with deletion capabilities.
 
 ## Deployment & Tech Goals
 - Fully functional and deployed web application.
