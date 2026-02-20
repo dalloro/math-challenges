@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { doc, getDoc, setDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc, serverTimestamp, FieldValue } from 'firebase/firestore';
 import { db } from '../firebase';
 import { generateRoomCode } from '../utils/roomCode';
 
@@ -18,7 +18,7 @@ export interface RoomState {
   }>;
   remainingSeconds: number;
   lastInteractionAt: number;
-  createdAt: any;
+  createdAt: FieldValue;
 }
 
 const LOCAL_STORAGE_KEY = 'math_challenge_room_code';

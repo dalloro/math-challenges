@@ -70,7 +70,7 @@ describe('useRoom Hook', () => {
         remainingSeconds: 3600,
         lastInteractionAt: Date.now(),
       })
-    } as any);
+    } as unknown as firebaseFirestore.DocumentSnapshot);
 
     const { result } = renderHook(() => useRoom({ grade: 5 }));
     
@@ -93,7 +93,7 @@ describe('useRoom Hook', () => {
         remainingSeconds: storedRemaining,
         lastInteractionAt: tenMinutesAgo,
       })
-    } as any);
+    } as unknown as firebaseFirestore.DocumentSnapshot);
 
     const { result } = renderHook(() => useRoom({ initialRoomCode: existingCode }));
     

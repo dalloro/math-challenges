@@ -1,19 +1,14 @@
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import packageJson from '../../package.json';
 
 export function LandingPage() {
   const navigate = useNavigate();
   const [selectedGrade, setSelectedGrade] = useState<number | null>(null);
   const [roomCodeInput, setRoomCodeInput] = useState('');
-  const [activeRoomCode, setActiveRoomCode] = useState<string | null>(null);
-
-  useEffect(() => {
-    const savedCode = localStorage.getItem('math_challenge_room_code');
-    if (savedCode) {
-      setActiveRoomCode(savedCode);
-    }
-  }, []);
+  const [activeRoomCode] = useState<string | null>(() => 
+    localStorage.getItem('math_challenge_room_code')
+  );
 
   const handleStart = () => {
     if (selectedGrade !== null) {
