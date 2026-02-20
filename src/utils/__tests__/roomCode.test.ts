@@ -2,14 +2,10 @@ import { describe, it, expect } from 'vitest';
 import { generateRoomCode } from '../roomCode';
 
 describe('generateRoomCode', () => {
-  it('should generate a 6-character string', () => {
+  it('should generate a code in the format WORD-WORD-NUMBER', () => {
     const code = generateRoomCode();
-    expect(code).toHaveLength(6);
-  });
-
-  it('should only contain uppercase letters and numbers', () => {
-    const code = generateRoomCode();
-    expect(code).toMatch(/^[A-Z0-9]{6}$/);
+    // Regex: uppercase letters, hyphen, uppercase letters, hyphen, 2 digits
+    expect(code).toMatch(/^[A-Z]+-[A-Z]+-[0-9]{2}$/);
   });
 
   it('should generate different codes on subsequent calls', () => {

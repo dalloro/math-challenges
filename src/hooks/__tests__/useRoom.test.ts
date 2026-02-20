@@ -32,7 +32,7 @@ describe('useRoom Hook', () => {
     const { result } = renderHook(() => useRoom({ grade: 5 }));
     
     await waitFor(() => {
-      expect(result.current.roomCode).toHaveLength(6);
+      expect(result.current.roomCode).toMatch(/^[A-Z]+-[A-Z]+-[0-9]{2}$/);
     });
     
     expect(window.localStorage.getItem('math_challenge_room_code')).toBe(result.current.roomCode);

@@ -93,15 +93,14 @@ export function LandingPage() {
               <form onSubmit={handleJoinRoom} className="flex gap-2">
                 <input
                   type="text"
-                  maxLength={6}
                   value={roomCodeInput}
                   onChange={(e) => setRoomCodeInput(e.target.value.toUpperCase())}
-                  placeholder="6-CHAR CODE"
+                  placeholder="WORD-WORD-00"
                   className="flex-1 px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-blue-500 outline-none font-mono font-bold text-center"
                 />
                 <button
                   type="submit"
-                  disabled={roomCodeInput.length !== 6}
+                  disabled={!roomCodeInput.includes('-')}
                   className="px-6 py-3 bg-gray-900 text-white rounded-xl font-bold disabled:opacity-20 transition-all"
                 >
                   Join
