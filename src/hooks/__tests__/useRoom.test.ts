@@ -3,6 +3,23 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { useRoom } from '../useRoom';
 import * as firebaseFirestore from 'firebase/firestore';
 
+// Manual mock for localStorage
+const localStorageMock = (function() {
+  let store: Record<string, string> = {};
+  return {
+    getItem: (key: string) => store[key] || null,
+    setItem: (key: string, value: string) => { store[key] = value.toString(); },
+    clear: () => { store = {}; },
+    removeItem: (key: string) => { delete store[key]; },
+    length: 0,
+    key: (index: number) => Object.keys(store)[index] || null
+  };
+})();
+
+Object.defineProperty(window, 'localStorage', {
+  value: localStorageMock
+});
+
 // Mock Firebase
 vi.mock('firebase/firestore', () => ({
   collection: vi.fn(),
@@ -62,11 +79,11 @@ describe('useRoom Hook', () => {
     });
   });
 
-  it('should recover timer correctly based on last interaction', async () => {
+  it('should recover timer correctly based on last interaction (accounting for 5m threshold)', async () => {
     const existingCode = 'TIMER1';
     const now = Date.now();
-    const tenMinutesAgo = now - (10 * 60 * 1000);
-    const storedRemaining = 3600; // 60 mins
+    const tenMinutesAgo = now - (10 * 60 * 1000); // 10 mins ago
+    const storedRemaining = 3600; // 60 mins left at that time
     
     vi.mocked(firebaseFirestore.getDoc).mockResolvedValue({
       exists: () => true,
@@ -84,7 +101,10 @@ describe('useRoom Hook', () => {
       expect(result.current.roomData).not.toBeNull();
     });
 
-    expect(result.current.roomData?.remainingSeconds).toBeLessThanOrEqual(3000);
-    expect(result.current.roomData?.remainingSeconds).toBeGreaterThan(2990);
+    // 10 mins elapsed > 5 mins threshold. 
+    // We only subtract 5 mins (300s).
+    // 3600 - 300 = 3300.
+    expect(result.current.roomData?.remainingSeconds).toBeLessThanOrEqual(3300);
+    expect(result.current.roomData?.remainingSeconds).toBeGreaterThan(3290);
   });
 });

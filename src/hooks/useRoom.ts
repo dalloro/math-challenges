@@ -22,6 +22,7 @@ export interface RoomState {
 }
 
 const LOCAL_STORAGE_KEY = 'math_challenge_room_code';
+const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
 
 export function useRoom({ grade, initialRoomCode }: { grade?: number; initialRoomCode?: string | null }) {
   const [roomCode, setRoomCode] = useState<string | null>(initialRoomCode || localStorage.getItem(LOCAL_STORAGE_KEY));
@@ -31,8 +32,10 @@ export function useRoom({ grade, initialRoomCode }: { grade?: number; initialRoo
 
   const recoverTimer = (storedRemaining: number, lastInteraction: number) => {
     const now = Date.now();
-    const elapsedSinceLastInteraction = Math.floor((now - lastInteraction) / 1000);
-    const recovered = storedRemaining - elapsedSinceLastInteraction;
+    const elapsedMs = now - lastInteraction;
+    // Only subtract up to the threshold (the time the user was 'active' before auto-pause)
+    const activeElapsedSeconds = Math.floor(Math.min(elapsedMs, INACTIVITY_THRESHOLD_MS) / 1000);
+    const recovered = storedRemaining - activeElapsedSeconds;
     return recovered > 0 ? recovered : 0;
   };
 

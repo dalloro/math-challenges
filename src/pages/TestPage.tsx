@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuestions } from '../hooks/useQuestions';
 import type { Question } from '../hooks/useQuestions';
@@ -15,6 +15,8 @@ const RANKS = [
   'Master',        // Level 7-8
   'Grandmaster'    // Level 9-10
 ];
+
+const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
 
 type Modality = 'mcq' | 'reasoning';
 
@@ -52,8 +54,26 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   const [feedbackError, setFeedbackError] = useState<string | null>(null);
   
   const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
+  const [lastActivity, setLastActivity] = useState(Date.now());
 
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
+
+  const isActive = useMemo(() => Date.now() - lastActivity < INACTIVITY_THRESHOLD_MS, [lastActivity]);
+
+  // Track user activity (mouse, touch, keyboard)
+  useEffect(() => {
+    const updateActivity = () => setLastActivity(Date.now());
+    window.addEventListener('mousemove', updateActivity);
+    window.addEventListener('keydown', updateActivity);
+    window.addEventListener('touchstart', updateActivity);
+    window.addEventListener('click', updateActivity);
+    return () => {
+      window.removeEventListener('mousemove', updateActivity);
+      window.removeEventListener('keydown', updateActivity);
+      window.removeEventListener('touchstart', updateActivity);
+      window.removeEventListener('click', updateActivity);
+    };
+  }, []);
 
   // Derive available questions for current level that haven't been answered
   const availablePool = useMemo(() => {
@@ -97,24 +117,25 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     }
   }, [availablePool, currentQuestion, questions, initialRoomState.currentQuestionId, session.answers, onSync]);
 
-  // Timer Countdown Logic
+  // Timer Countdown Logic: Only if active
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimer(t => {
-        const next = t > 0 ? t - 1 : 0;
-        return next;
-      });
+      if (isActive) {
+        setTimer(t => (t > 0 ? t - 1 : 0));
+      }
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isActive]);
 
-  // Periodic Timer Sync
+  // Periodic Timer Sync: Only if active
   useEffect(() => {
     const interval = setInterval(() => {
-      onSync({ remainingSeconds: timer });
+      if (isActive) {
+        onSync({ remainingSeconds: timer });
+      }
     }, 30000); // Sync every 30s
     return () => clearInterval(interval);
-  }, [timer, onSync]);
+  }, [timer, onSync, isActive]);
 
   const formatTime = (seconds: number) => {
     const m = Math.floor(seconds / 60);
@@ -148,7 +169,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       answers: session.answers,
       remainingSeconds: timer
     });
-  }, [currentLevel, streak, session.score, session.answers, onSync]); // This runs whenever critical state changes
+  }, [currentLevel, streak, session.score, session.answers, onSync, timer]);
 
   const handleSubmitReasoning = async () => {
     if (!reasoning || !currentQuestion) return;
