@@ -13,5 +13,10 @@ service cloud.firestore {
       allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
       allow read, update: if request.auth != null && request.auth.uid == resource.data.userId;
     }
+
+    // Allow rooms access via room code
+    match /rooms/{roomCode} {
+      allow read, create, update: if true;
+    }
   }
 }

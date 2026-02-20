@@ -4,11 +4,13 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { TestPage } from '../pages/TestPage';
 import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useSessionHook from '../hooks/useSession';
+import * as useRoomHook from '../hooks/useRoom';
 import * as aiService from '../services/ai';
 import { useState } from 'react';
 
 vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
+vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
 
 const mockQuestion: useQuestionsHook.Question = {
@@ -35,21 +37,6 @@ function StatefulSessionMock() {
   return { session, recordAnswer: vi.fn(), completeSession: vi.fn() };
 }
 
-// Manual mock for localStorage
-const localStorageMock = (function() {
-  let store: Record<string, string> = {};
-  return {
-    getItem: (key: string) => store[key] || null,
-    setItem: (key: string, value: string) => { store[key] = value.toString(); },
-    clear: () => { store = {}; },
-    removeItem: (key: string) => { delete store[key]; }
-  };
-})();
-
-Object.defineProperty(window, 'localStorage', {
-  value: localStorageMock
-});
-
 describe('Open Reasoning UI & Integration', () => {
   beforeEach(() => {
     vi.clearAllMocks();
@@ -59,6 +46,24 @@ describe('Open Reasoning UI & Integration', () => {
       error: null
     });
     vi.mocked(useSessionHook.useSession).mockImplementation(StatefulSessionMock);
+    
+    vi.mocked(useRoomHook.useRoom).mockReturnValue({
+      roomCode: 'TEST01',
+      roomData: {
+        roomCode: 'TEST01',
+        grade: 1,
+        currentLevel: 1,
+        score: 0,
+        answers: [],
+        remainingSeconds: 3600,
+        lastInteractionAt: Date.now(),
+        createdAt: {}
+      },
+      loading: false,
+      error: null,
+      syncRoom: vi.fn()
+    });
+
     window.localStorage.clear();
   });
 
@@ -90,8 +95,6 @@ describe('Open Reasoning UI & Integration', () => {
   });
 
   it('should fallback to Ideal Solution if API key is missing (Graceful Static Mode)', async () => {
-    // No API key in localStorage
-    
     render(
       <MemoryRouter initialEntries={['/test?grade=1']}>
         <Routes>
@@ -106,7 +109,6 @@ describe('Open Reasoning UI & Integration', () => {
 
     await waitFor(() => {
       expect(aiService.evaluateReasoning).not.toHaveBeenCalled();
-      // Use AllBy to handle multiple matching elements
       const elements = screen.getAllByText(/Ideal Solution/i);
       expect(elements.length).toBeGreaterThan(0);
       expect(screen.getByText('Ideal Solution Content')).toBeInTheDocument();
@@ -131,7 +133,6 @@ describe('Open Reasoning UI & Integration', () => {
 
     await waitFor(() => {
       expect(screen.getByText(/AI Configuration Error/i)).toBeInTheDocument();
-      // Should NOT show ideal solution here (it's hidden in case of error)
       expect(screen.queryByText(/Ideal Solution Content/i)).not.toBeInTheDocument();
     });
   });

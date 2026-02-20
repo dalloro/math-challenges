@@ -1,9 +1,9 @@
 import { useState, useCallback } from 'react';
 import type { Question } from './useQuestions';
 
-export function useAdaptiveEngine(questions: Question[]) {
-  const [currentLevel, setCurrentLevel] = useState(1);
-  const [streak, setStreak] = useState(0);
+export function useAdaptiveEngine(questions: Question[], initialLevel: number = 1, initialStreak: number = 0) {
+  const [currentLevel, setCurrentLevel] = useState(initialLevel);
+  const [streak, setStreak] = useState(initialStreak);
   const [theme, setTheme] = useState<'default' | 'focus'>('default');
 
   const handleAnswer = useCallback((isCorrect: boolean) => {

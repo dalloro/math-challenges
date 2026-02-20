@@ -15,13 +15,14 @@ export interface SessionState {
   isComplete: boolean;
 }
 
-export function useSession() {
+export function useSession(initialState?: Partial<SessionState>) {
   const [session, setSession] = useState<SessionState>(() => ({
     currentQuestionIndex: 0,
     score: 0,
     answers: [],
     startTime: Date.now(),
     isComplete: false,
+    ...initialState
   }));
 
   const recordAnswer = useCallback((questionId: string, answer: string, isCorrect: boolean) => {

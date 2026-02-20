@@ -4,11 +4,13 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { TestPage } from '../pages/TestPage';
 import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useSessionHook from '../hooks/useSession';
+import * as useRoomHook from '../hooks/useRoom';
 import { useState, useCallback } from 'react';
 
 // Mock the hooks
 vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
+vi.mock('../hooks/useRoom');
 
 const mockQuestions: useQuestionsHook.Question[] = [
   { id: '1', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q1 L1', options: ['A'], correct_answer: 'A', ideal_solution: '', failure_modes: {} },
@@ -43,6 +45,22 @@ function StatefulSessionMock() {
 describe('Adaptive Engine Logic', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(useRoomHook.useRoom).mockReturnValue({
+      roomCode: 'TEST01',
+      roomData: {
+        roomCode: 'TEST01',
+        grade: 1,
+        currentLevel: 1,
+        score: 0,
+        answers: [],
+        remainingSeconds: 3600,
+        lastInteractionAt: Date.now(),
+        createdAt: {}
+      },
+      loading: false,
+      error: null,
+      syncRoom: vi.fn()
+    });
   });
 
   it('should stay at level 1 if level 2 questions do not exist', async () => {

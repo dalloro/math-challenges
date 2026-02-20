@@ -1,9 +1,11 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuestions } from '../hooks/useQuestions';
 import type { Question } from '../hooks/useQuestions';
 import { useSession } from '../hooks/useSession';
 import { useAdaptiveEngine } from '../hooks/useAdaptiveEngine';
+import { useRoom } from '../hooks/useRoom';
+import type { RoomState } from '../hooks/useRoom';
 import { evaluateReasoning } from '../services/ai';
 
 const RANKS = [
@@ -16,15 +18,30 @@ const RANKS = [
 
 type Modality = 'mcq' | 'reasoning';
 
-export function TestPage() {
+interface TestEngineProps {
+  grade: number;
+  initialRoomState: RoomState;
+  onSync: (updates: Partial<RoomState>) => void;
+  roomCode: string;
+}
+
+function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEngineProps) {
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const grade = parseInt(searchParams.get('grade') || '5');
-  
   const { questions, loading, error } = useQuestions(grade);
-  const { session, recordAnswer } = useSession();
   
-  const { currentLevel, theme, handleAnswer } = useAdaptiveEngine(questions);
+  // Initialize session with restored state
+  const { session, recordAnswer } = useSession({
+    score: initialRoomState.score,
+    answers: initialRoomState.answers,
+    currentQuestionIndex: initialRoomState.answers.length
+  });
+  
+  // Initialize adaptive engine with restored level and streak
+  const { currentLevel, theme, handleAnswer, streak } = useAdaptiveEngine(
+    questions, 
+    initialRoomState.currentLevel,
+    initialRoomState.streak
+  );
   
   const [modality, setModality] = useState<Modality>('mcq');
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -34,42 +51,70 @@ export function TestPage() {
   const [feedbackType, setFeedbackType] = useState<'ai' | 'ideal' | null>(null);
   const [feedbackError, setFeedbackError] = useState<string | null>(null);
   
-  const [timer, setTimer] = useState(3600); // 60 minutes
+  const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
 
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
+  // Derive available questions for current level that haven't been answered
   const availablePool = useMemo(() => {
     const answeredIds = session.answers.map(a => a.questionId);
-    let levelPool = questions.filter(q => q.level === currentLevel && !answeredIds.includes(q.id));
+    let pool = questions.filter(q => q.level === currentLevel && !answeredIds.includes(q.id));
     
-    if (levelPool.length === 0 && questions.length > 0) {
+    if (pool.length === 0 && questions.length > 0) {
       const anyUnanswered = questions.filter(q => !answeredIds.includes(q.id));
       if (anyUnanswered.length > 0) {
         const levels = anyUnanswered.map(q => q.level);
         const closest = levels.reduce((prev, curr) => 
           Math.abs(curr - currentLevel) < Math.abs(prev - currentLevel) ? curr : prev
         );
-        levelPool = anyUnanswered.filter(q => q.level === closest);
+        pool = anyUnanswered.filter(q => q.level === closest);
       }
     }
-    return levelPool;
+    return pool;
   }, [questions, currentLevel, session.answers]);
 
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
 
+  // Question Selection Logic: Priority to restored currentQuestionId
   useEffect(() => {
-    if (!currentQuestion && availablePool.length > 0) {
-      const randomIndex = Math.floor(Math.random() * availablePool.length);
-      setCurrentQuestion(availablePool[randomIndex]);
-    }
-  }, [availablePool, currentQuestion]);
+    if (questions.length === 0 || currentQuestion) return;
 
+    if (initialRoomState.currentQuestionId) {
+      const restored = questions.find(q => q.id === initialRoomState.currentQuestionId);
+      const isAlreadyAnswered = session.answers.some(a => a.questionId === initialRoomState.currentQuestionId);
+      
+      if (restored && !isAlreadyAnswered) {
+        setCurrentQuestion(restored);
+        return;
+      }
+    }
+
+    if (availablePool.length > 0) {
+      const randomIndex = Math.floor(Math.random() * availablePool.length);
+      const picked = availablePool[randomIndex];
+      setCurrentQuestion(picked);
+      onSync({ currentQuestionId: picked.id });
+    }
+  }, [availablePool, currentQuestion, questions, initialRoomState.currentQuestionId, session.answers, onSync]);
+
+  // Timer Countdown Logic
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimer(t => (t > 0 ? t - 1 : 0));
+      setTimer(t => {
+        const next = t > 0 ? t - 1 : 0;
+        return next;
+      });
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  // Periodic Timer Sync
+  useEffect(() => {
+    const interval = setInterval(() => {
+      onSync({ remainingSeconds: timer });
+    }, 30000); // Sync every 30s
+    return () => clearInterval(interval);
+  }, [timer, onSync]);
 
   const formatTime = (seconds: number) => {
     const m = Math.floor(seconds / 60);
@@ -84,6 +129,7 @@ export function TestPage() {
     recordAnswer(currentQuestion.id, selectedOption, isCorrect);
     handleAnswer(isCorrect);
 
+    // Reset local UI state
     setSelectedOption(null);
     setCurrentQuestion(null);
     setReasoning('');
@@ -93,6 +139,17 @@ export function TestPage() {
     setFeedbackError(null);
   };
 
+  // Sync state changes back to room on interaction
+  useEffect(() => {
+    onSync({ 
+      currentLevel, 
+      streak, 
+      score: session.score, 
+      answers: session.answers,
+      remainingSeconds: timer
+    });
+  }, [currentLevel, streak, session.score, session.answers, onSync]); // This runs whenever critical state changes
+
   const handleSubmitReasoning = async () => {
     if (!reasoning || !currentQuestion) return;
     setIsSubmitting(true);
@@ -101,7 +158,6 @@ export function TestPage() {
     const apiKey = localStorage.getItem('gemini_api_key');
     
     if (!apiKey) {
-      // INTENTIONAL ABSENCE: Show static ideal solution
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
       setIsSubmitting(false);
@@ -118,7 +174,6 @@ export function TestPage() {
       setAiFeedback(feedback);
       setFeedbackType('ai');
     } catch (err) {
-      // CONFIGURATION ERROR: Show explicit error
       console.error("AI reasoning failed:", err);
       setFeedbackError("AI Configuration Error: Failed to reach the service. Check your API key or connection.");
     } finally {
@@ -163,7 +218,7 @@ export function TestPage() {
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-4">
         <div>
           <h2 className="text-xl font-semibold text-gray-900 tracking-tight">Grade {grade} Adaptive Challenge</h2>
-          <p className="text-sm text-gray-500 font-medium">Current Rank: {currentRank}</p>
+          <p className="text-sm text-gray-500 font-medium">Room: <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span></p>
         </div>
         <div className="flex items-center space-x-6">
           <div className="text-lg font-mono font-bold text-blue-600 bg-white border border-blue-100 px-3 py-1 rounded-lg shadow-sm">
@@ -348,5 +403,36 @@ export function TestPage() {
         </div>
       </main>
     </div>
+  );
+}
+
+export function TestPage() {
+  const [searchParams] = useSearchParams();
+  const roomParam = searchParams.get('room');
+  const gradeParam = parseInt(searchParams.get('grade') || '');
+  
+  const { roomCode, roomData, loading, error, syncRoom } = useRoom({
+    grade: isNaN(gradeParam) ? undefined : gradeParam,
+    initialRoomCode: roomParam
+  });
+
+  if (loading) return <div className="flex items-center justify-center min-h-screen font-medium text-gray-500">Initializing your room...</div>;
+  
+  if (error) return (
+    <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
+      <p className="text-xl text-red-500 font-medium">{error}</p>
+      <button onClick={() => window.location.href = '/'} className="text-blue-600 font-bold hover:underline">Return to Selection</button>
+    </div>
+  );
+
+  if (!roomData || !roomCode) return null;
+
+  return (
+    <TestEngine 
+      grade={roomData.grade} 
+      initialRoomState={roomData} 
+      roomCode={roomCode}
+      onSync={syncRoom} 
+    />
   );
 }
