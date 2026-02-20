@@ -7,7 +7,7 @@
 
 ## Backend & Infrastructure (Zero-Cost / Firebase Spark Plan)
 - **Hosting:** Firebase Hosting (Static asset delivery)
-- **Database:** Cloud Firestore (Storing question bank, student progress, and pre-generated walkthroughs)
+- **Database:** Cloud Firestore (Storing question bank, persistent "Test Rooms" state, and student progress)
 - **Authentication:** Firebase Auth (Anonymous or Email-based sign-in for progress tracking)
 - **Backend Logic:** Client-side only (To maintain Spark Plan compatibility and avoid credit card requirements)
 

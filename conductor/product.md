@@ -13,6 +13,10 @@ A gifted-level math testing and learning web application designed for students a
 
 ## Core Features
 - **Gifted-Level Assessments:** Content sourced from AoPS/MATHCOUNTS, Common Core Advanced standards, and IMO/Kangaroo Math.
+- **Session Persistence (Test Rooms):** 
+  - Progress is automatically saved and synchronized via unique, human-friendly room codes (e.g., `MATH-BRAIN-42`).
+  - Students can resume their tests across different devices or after a page refresh.
+  - **Smart Timer Recovery:** Inactivity-aware timer that pauses after 5 minutes of no interaction and resumes accurately upon return.
 - **Adaptive Testing Engine:** 
   - Starts with 100 questions.
   - Adds 50 additional questions if the first 100 are completed in under 60 minutes.
