@@ -1,11 +1,11 @@
 # Math Challenges — Seed Content Generation Plan
 
-Generate 12,000 math questions (12 grades × 10 levels × 100 questions) using the prompt in `CONTENT-GENERATOR-PROMPT.md`.
+Generate 12,000 math questions (12 grades × 10 levels × 100 questions) using the prompt in `CONTENT-GENERATOR-PROMPT.md`, calibrated to each grade's curriculum scope as defined in `seed_content/CURRICULUM_GUIDE.md`.
 
 ## Updated Pseudo-Code
 
 ```
-BATCH_SIZE = 25
+BATCH_SIZE = 50
 
 for grade = 1 to 12:
     all_questions = []
@@ -43,13 +43,13 @@ end
 
 | Parameter | Value |
 |---|---|
-| Batch size per LLM call | 25 |
-| Batches per (grade, level) | 4 (minimum, more if dedup removes items) |
+| Batch size per LLM call | 50 |
+| Batches per (grade, level) | 2 (minimum, more if dedup removes items) |
 | Questions per level | 100 |
 | Levels per grade | 10 |
 | Questions per grade | 1,000 |
 | Total questions | 12,000 |
-| Total LLM calls | ~480 (more if dedup triggers extra batches) |
+| Total LLM calls | ~240 (more if dedup triggers extra batches) |
 
 ## Directory Layout
 
