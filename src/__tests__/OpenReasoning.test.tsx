@@ -6,6 +6,7 @@ import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useSessionHook from '../hooks/useSession';
 import * as useRoomHook from '../hooks/useRoom';
 import * as aiService from '../services/ai';
+import * as storageService from '../services/storage';
 import { useState } from 'react';
 import { FieldValue } from 'firebase/firestore';
 
@@ -13,6 +14,7 @@ vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
+vi.mock('../services/storage');
 
 const mockQuestion: useQuestionsHook.Question = {
   id: '1',
@@ -71,7 +73,7 @@ describe('Open Reasoning UI & Integration', () => {
   });
 
   it('should call AI service if API key is present', async () => {
-    window.localStorage.setItem('gemini_api_key', 'real-key');
+    vi.mocked(storageService.getApiKey).mockReturnValue('real-key');
     vi.mocked(aiService.evaluateReasoning).mockResolvedValue('AI Response');
 
     render(
@@ -98,6 +100,8 @@ describe('Open Reasoning UI & Integration', () => {
   });
 
   it('should fallback to Ideal Solution if API key is missing (Graceful Static Mode)', async () => {
+    vi.mocked(storageService.getApiKey).mockReturnValue(null);
+
     render(
       <MemoryRouter initialEntries={['/test?grade=1']}>
         <Routes>
@@ -106,9 +110,11 @@ describe('Open Reasoning UI & Integration', () => {
       </MemoryRouter>
     );
 
+    expect(screen.getByText(/Static Mode/i)).toBeInTheDocument();
+
     fireEvent.click(screen.getByText(/Switch to Reasoning/i));
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
-    fireEvent.click(screen.getByText(/Submit for Review/i));
+    fireEvent.click(screen.getByText(/Show Ideal Solution/i));
 
     await waitFor(() => {
       expect(aiService.evaluateReasoning).not.toHaveBeenCalled();
@@ -119,7 +125,7 @@ describe('Open Reasoning UI & Integration', () => {
   });
 
   it('should display error if API key is present but service fails (Config Mistake)', async () => {
-    window.localStorage.setItem('gemini_api_key', 'wrong-key');
+    vi.mocked(storageService.getApiKey).mockReturnValue('wrong-key');
     vi.mocked(aiService.evaluateReasoning).mockRejectedValue(new Error('API Down'));
 
     render(

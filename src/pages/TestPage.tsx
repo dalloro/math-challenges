@@ -7,6 +7,7 @@ import { useAdaptiveEngine } from '../hooks/useAdaptiveEngine';
 import { useRoom } from '../hooks/useRoom';
 import type { RoomState } from '../hooks/useRoom';
 import { evaluateReasoning } from '../services/ai';
+import { getApiKey } from '../services/storage';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -59,6 +60,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
   const isActive = useMemo(() => Date.now() - lastActivity < INACTIVITY_THRESHOLD_MS, [lastActivity]);
+  const isStaticMode = useMemo(() => !getApiKey(), []);
 
   // Track user activity (mouse, touch, keyboard)
   useEffect(() => {
@@ -182,9 +184,10 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     setIsSubmitting(true);
     setFeedbackError(null);
     
-    const apiKey = localStorage.getItem('gemini_api_key');
+    const apiKey = getApiKey();
     
     if (!apiKey) {
+      // STATIC MODE: No API key found in localStorage
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
       setIsSubmitting(false);
@@ -202,7 +205,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       setFeedbackType('ai');
     } catch (err) {
       console.error("AI reasoning failed:", err);
-      setFeedbackError("AI Configuration Error: Failed to reach the service. Check your API key or connection.");
+      setFeedbackError("AI Configuration Error: Failed to reach the service. Check your API key in Settings.");
     } finally {
       setIsSubmitting(false);
     }
@@ -243,8 +246,15 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
     }`}>
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-4">
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 tracking-tight">Grade {grade} Adaptive Challenge</h2>
+        <div className="flex flex-col">
+          <div className="flex items-center space-x-2">
+            <h2 className="text-xl font-semibold text-gray-900 tracking-tight">Grade {grade} Adaptive Challenge</h2>
+            {isStaticMode && (
+              <span className="px-2 py-0.5 bg-gray-100 text-gray-400 text-[8px] font-black uppercase tracking-widest rounded border border-gray-200">
+                Static Mode
+              </span>
+            )}
+          </div>
           <p className="text-sm text-gray-500 font-medium">Room: <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span></p>
         </div>
         <div className="flex items-center space-x-6">
@@ -341,7 +351,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                     disabled={!reasoning || isSubmitting}
                     className="px-10 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-blue-100"
                   >
-                    {isSubmitting ? 'Analyzing...' : 'Submit for Review'}
+                    {isSubmitting ? 'Analyzing...' : isStaticMode ? 'Show Ideal Solution' : 'Submit for Review'}
                   </button>
                 </div>
               </div>
