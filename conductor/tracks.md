@@ -6,8 +6,3 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 - [ ] **Track: User-Specific API Keys and Enhanced Static Fallback**
 *Link: [./tracks/user_api_keys_20260218/](./tracks/user_api_keys_20260218/)*
-
----
-
-- [x] **Track: Content Generator Prompt**
-*Link: [./tracks/content_generator_20260220/](./tracks/content_generator_20260220/)*
