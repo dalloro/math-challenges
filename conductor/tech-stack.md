@@ -22,3 +22,4 @@
 
 ## Development Tools
 - **Content Generation:** Gemini CLI used during development to generate the gifted-level question bank and common failure-mode walkthroughs as static data.
+- **Prompt Engineering:** Parametric markdown templates (`CONTENT-GENERATOR-PROMPT.md`) for high-rigor, schema-compliant content synthesis via LLMs.
