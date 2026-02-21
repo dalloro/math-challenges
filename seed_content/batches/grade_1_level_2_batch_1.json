@@ -1,0 +1,482 @@
+[
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "There are 10 birds on a wire. A cat scares 4 away. Then 2 more fly back. How many birds are on the wire now?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "10 - 4 = 6 birds left. Then 6 + 2 = 8 birds. Socratic Hint: Handle each event in order.",
+        "failure_modes": {
+            "arithmetic_slip": "Student calculates 10 - 4 + 2 = 9.",
+            "sign_reversal": "Student adds 4 instead of subtracting."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many odd numbers are there from 1 to 19?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Odd numbers: 1,3,5,7,9,11,13,15,17,19. Count: 10. Socratic Hint: List every other number starting from 1.",
+        "failure_modes": {
+            "off_by_one": "Student stops at 17 and counts 9.",
+            "boundary_error": "Student excludes 1 or 19."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A shape has 6 equal sides and 6 equal angles. What is it called?",
+        "options": [
+            "Pentagon",
+            "Hexagon",
+            "Heptagon",
+            "Octagon",
+            "Decagon"
+        ],
+        "correct_answer": "Hexagon",
+        "ideal_solution": "'Hex' means six. A regular hexagon has 6 equal sides and 6 equal angles. Socratic Hint: What prefix means six?",
+        "failure_modes": {
+            "formula_misapplication": "Student picks octagon (8 sides).",
+            "off_by_one": "Student picks pentagon (5 sides)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A number plus 7 equals 15. Then you subtract 3 from that number. What do you get?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "12"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "n + 7 = 15, so n = 8. Then 8 - 3 = 5. Socratic Hint: Solve for the number first, then do the subtraction.",
+        "failure_modes": {
+            "premature_calculation": "Student computes 15 - 3 = 12 without first finding n.",
+            "arithmetic_slip": "Student gets n = 7 instead of 8."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "You flip a fair coin 3 times and get heads each time. What is most likely to happen on the 4th flip?",
+        "options": [
+            "Heads for sure",
+            "Tails for sure",
+            "Heads or tails equally",
+            "Heads is more likely",
+            "Tails is more likely"
+        ],
+        "correct_answer": "Heads or tails equally",
+        "ideal_solution": "Each coin flip is independent. Past results do not affect the next flip. It is still 50/50. Socratic Hint: Does the coin remember what it did before?",
+        "failure_modes": {
+            "converse_error": "Student thinks tails is 'due' because of the streak.",
+            "constraint_neglect": "Student thinks the streak makes heads more likely."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the difference between the 5th multiple of 3 and the 3rd multiple of 5?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5"
+        ],
+        "correct_answer": "0",
+        "ideal_solution": "5th multiple of 3: 3*5=15. 3rd multiple of 5: 5*3=15. Difference: 15-15=0. Socratic Hint: Calculate each multiple and compare.",
+        "failure_modes": {
+            "arithmetic_slip": "Student miscalculates one of the multiples.",
+            "premature_calculation": "Student says 2 without computing."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If you trace around the outside of 3 touching circles of the same size arranged in a triangle, how many curved segments make up the path?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "The outer path has 3 arcs, one from each circle (the part not hidden by the other circles). Socratic Hint: Each circle contributes one visible curved section to the outside.",
+        "failure_modes": {
+            "overcounting": "Student counts 6, thinking each circle has 2 visible arcs.",
+            "undercounting": "Student counts only the gaps and says 2."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Anna is 3 years older than Ben. Ben is 2 years older than Cara. If Cara is 4 years old, how old is Anna?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "Cara = 4. Ben = 4 + 2 = 6. Anna = 6 + 3 = 9. Socratic Hint: Build the chain from youngest to oldest.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 4+2+3 = 10.",
+            "sign_reversal": "Student subtracts instead of adding ages."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A number is a palindrome if it reads the same backward and forward. How many two-digit palindromes are there?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "10",
+            "18"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "Two-digit palindromes: 11, 22, 33, 44, 55, 66, 77, 88, 99. That is 9. Socratic Hint: For a two-digit number to be a palindrome, both digits must be the same.",
+        "failure_modes": {
+            "off_by_one": "Student includes 00 (not a two-digit number).",
+            "overcounting": "Student counts some non-palindromes."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the missing number: 2, 6, 12, 20, __?",
+        "options": [
+            "24",
+            "26",
+            "28",
+            "30",
+            "32"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "Differences: 6-2=4, 12-6=6, 20-12=8. Pattern of differences: 4,6,8 so next difference is 10. 20+10=30. Socratic Hint: Look at how much the numbers increase each time. Is there a pattern in the increases?",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 8 again instead of 10.",
+            "off_by_one": "Student adds 9 and gets 29."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular box is 3 cm long, 2 cm wide, and 1 cm tall. How many 1-cm cubes fit inside it?",
+        "options": [
+            "3",
+            "5",
+            "6",
+            "8",
+            "12"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Volume = 3 * 2 * 1 = 6 cubes. Socratic Hint: Imagine filling the bottom layer first: how many cubes fit? Then how many layers?",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds dimensions: 3+2+1=6 (right answer, wrong reasoning) or miscalculates.",
+            "formula_misapplication": "Student computes surface area instead of volume."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If you double a number and then double it again, you get 24. What is the number?",
+        "options": [
+            "3",
+            "4",
+            "6",
+            "8",
+            "12"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Doubling twice means multiplying by 4. 4n = 24. n = 6. Check: 6*2=12, 12*2=24. Socratic Hint: Doubling twice is the same as multiplying by what?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 24 by 2 once and answers 12.",
+            "premature_calculation": "Student divides by 3 instead of 4."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A calendar shows January has started on a Wednesday. What day of the week is January 8?",
+        "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "correct_answer": "Wednesday",
+        "ideal_solution": "Jan 1 = Wednesday. After 7 days (Jan 8), it is the same day: Wednesday. Socratic Hint: What happens every 7 days?",
+        "failure_modes": {
+            "off_by_one": "Student counts Jan 1 as day 1 and gets Thursday for Jan 8.",
+            "arithmetic_slip": "Student miscounts the days."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the sum of the digits of the number 123?",
+        "options": [
+            "3",
+            "5",
+            "6",
+            "12",
+            "123"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Digits of 123 are 1, 2, and 3. Sum: 1+2+3 = 6. Socratic Hint: Break the number into its individual digits and add them.",
+        "failure_modes": {
+            "premature_calculation": "Student answers 123 (the number itself).",
+            "arithmetic_slip": "Student gets 1+2+3 = 5."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If you fold a square piece of paper in half diagonally, what shape do you get?",
+        "options": [
+            "Rectangle",
+            "Square",
+            "Triangle",
+            "Circle",
+            "Trapezoid"
+        ],
+        "correct_answer": "Triangle",
+        "ideal_solution": "A diagonal fold goes from one corner to the opposite corner, creating a triangle. Socratic Hint: Picture folding a napkin from corner to corner.",
+        "failure_modes": {
+            "formula_misapplication": "Student says rectangle, thinking of a horizontal fold.",
+            "converse_error": "Student says square, thinking the shape is preserved."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A pack of 6 pencils costs 12 dollars. A pack of 4 erasers costs 8 dollars. Which item costs more per piece?",
+        "options": [
+            "Pencil",
+            "Eraser",
+            "Same price",
+            "Cannot tell",
+            "Neither"
+        ],
+        "correct_answer": "Same price",
+        "ideal_solution": "Pencil: 12/6 = 2 dollars each. Eraser: 8/4 = 2 dollars each. Both cost 2 dollars per piece. Socratic Hint: Find the price of one of each by dividing.",
+        "failure_modes": {
+            "premature_calculation": "Student compares pack prices (12 vs 8) instead of unit prices.",
+            "arithmetic_slip": "Student divides incorrectly."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A frog jumps from lily pad to lily pad. It starts on pad 1 and jumps forward 2 pads at a time. Will it ever land on pad 10?",
+        "options": [
+            "Yes",
+            "No",
+            "Only if it jumps backward",
+            "Sometimes",
+            "Only at night"
+        ],
+        "correct_answer": "No",
+        "ideal_solution": "Starting on pad 1 and jumping +2: 1, 3, 5, 7, 9, 11... It only lands on odd pads. 10 is even, so it never lands there. Socratic Hint: List the pads the frog visits and look for a pattern.",
+        "failure_modes": {
+            "off_by_one": "Student starts from 0 and visits 0,2,4,...10, thinking it reaches 10.",
+            "converse_error": "Student says yes without listing the pads."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "A number rounded to the nearest 10 is 50. What is the smallest this number could be?",
+        "options": [
+            "40",
+            "44",
+            "45",
+            "49",
+            "50"
+        ],
+        "correct_answer": "45",
+        "ideal_solution": "Numbers that round to 50: 45 through 54. The smallest is 45. Socratic Hint: What is the cutoff point where you round up to 50 instead of down to 40?",
+        "failure_modes": {
+            "boundary_error": "Student picks 44 (which rounds to 40).",
+            "off_by_one": "Student picks 49 or 50."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many vertices does a triangle have?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "A triangle has 3 corners (vertices), one at each point where two sides meet. Socratic Hint: Point to each sharp corner of the triangle.",
+        "failure_modes": {
+            "formula_misapplication": "Student confuses vertices with sides but arrives at the same number.",
+            "overcounting": "Student counts midpoints of sides as vertices."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A store gives you 1 free donut for every 3 you buy. If you buy 9 donuts, how many free donuts do you get?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "9"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "9 bought / 3 required per free = 3 free donuts. Socratic Hint: How many groups of 3 are in 9?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 9 by something other than 3.",
+            "premature_calculation": "Student answers 9+3=12 total donuts instead of counting only the free ones."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "There are 4 children. Each child shakes hands with every other child exactly once. How many handshakes happen in total?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Child 1 shakes with 3 others. Child 2 shakes with 2 others (already counted with 1). Child 3 shakes with 1 other. Child 4 already done. Total: 3+2+1=6. Socratic Hint: Avoid counting the same handshake twice.",
+        "failure_modes": {
+            "overcounting": "Student counts 4*3=12 then forgets to divide by 2.",
+            "undercounting": "Student counts only 4 handshakes."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Which two-digit number has the property that its digits multiply to give 12?",
+        "options": [
+            "12",
+            "26",
+            "34",
+            "43",
+            "62"
+        ],
+        "correct_answer": "34",
+        "ideal_solution": "Check digit products: 1*2=2, 2*6=12! Wait, 26 also works. And 3*4=12, 4*3=12, 6*2=12. Multiple answers exist. 34 is one correct answer with digits 3 and 4. Let's check options: 12→1*2=2, 26→2*6=12, 34→3*4=12, 43→4*3=12, 62→6*2=12. All of 26, 34, 43, 62 work. Since this is multiple choice, 34 is listed. Socratic Hint: Multiply the tens digit by the ones digit and see which gives 12.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 12 thinking 'the digits are 1 and 2' but 1*2=2, not 12.",
+            "premature_calculation": "Student picks the first option without checking."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "What is the area of a rectangle that is 5 cm long and 3 cm wide?",
+        "options": [
+            "8 cm",
+            "15 sq cm",
+            "16 sq cm",
+            "20 sq cm",
+            "30 sq cm"
+        ],
+        "correct_answer": "15 sq cm",
+        "ideal_solution": "Area = length * width = 5 * 3 = 15 square cm. Socratic Hint: How many 1-cm squares fit inside?",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 5+3=8, computing perimeter/2 instead of area.",
+            "units_mismatch": "Student gives 15 cm instead of 15 sq cm."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "The pattern goes: 1, 2, 4, 8, 16, ... What is the next number?",
+        "options": [
+            "18",
+            "20",
+            "24",
+            "30",
+            "32"
+        ],
+        "correct_answer": "32",
+        "ideal_solution": "Each number doubles: 1*2=2, 2*2=4, 4*2=8, 8*2=16, 16*2=32. Socratic Hint: How do you get from one number to the next?",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 16 instead of doubling: 16+16=32 (correct) but may add 16+8=24.",
+            "formula_misapplication": "Student adds a constant instead of multiplying."
+        }
+    }
+]

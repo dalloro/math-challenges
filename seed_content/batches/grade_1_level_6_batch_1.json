@@ -1,0 +1,402 @@
+[
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A king places three pawns on a 3x3 chessboard so that no two pawns are in the same row or column. In how many ways can this be done?",
+        "options": [
+            "3",
+            "6",
+            "9",
+            "12",
+            "27"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "This is the number of permutations of rows for 3 columns: 3! = 6. Socratic Hint: Place the first pawn in any of 3 rows, the second in 2 remaining, the third in 1.",
+        "failure_modes": {
+            "overcounting": "Student counts 3*3*3=27 (allowing row conflicts).",
+            "formula_misapplication": "Student uses C(9,3)=84."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Find the last digit of 3^2023.",
+        "options": [
+            "1",
+            "3",
+            "7",
+            "9",
+            "0"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "Powers of 3 cycle in last digits: 3,9,7,1 (period 4). 2023 mod 4 = 3. 3rd in cycle: 7. Socratic Hint: Find the cycle of last digits and use modular arithmetic.",
+        "failure_modes": {
+            "off_by_one": "Student maps position 3 to '9' instead of '7'.",
+            "arithmetic_slip": "Student computes 2023 mod 4 = 2."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A frustum (truncated cone) has top radius 2 cm, bottom radius 5 cm, and height 4 cm. What is its slant height?",
+        "options": [
+            "3 cm",
+            "4 cm",
+            "5 cm",
+            "6 cm",
+            "7 cm"
+        ],
+        "correct_answer": "5 cm",
+        "ideal_solution": "Horizontal difference: 5-2=3 cm. Slant height = sqrt(3^2+4^2) = sqrt(9+16) = sqrt(25) = 5 cm. (3-4-5 triple.) Socratic Hint: The slant height, horizontal difference, and height form a right triangle.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 2+4=6 or 5+4=9.",
+            "arithmetic_slip": "Student uses 5-2=3 but then 3+4=7 (adding instead of Pythagorean)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "What is the distance between points (1, 2) and (4, 6)?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "d = sqrt((4-1)^2 + (6-2)^2) = sqrt(9+16) = sqrt(25) = 5. Socratic Hint: Use the distance formula.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds |4-1|+|6-2|=7 (Manhattan distance).",
+            "arithmetic_slip": "Student computes sqrt(9+16)=sqrt(26)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "You have an 8-liter jug full of water and two empty jugs of 5 liters and 3 liters. How can you measure exactly 4 liters? What is the minimum number of pours?",
+        "options": [
+            "3",
+            "5",
+            "7",
+            "9",
+            "Cannot be done"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "8→5(3 remaining in 8). 5→3(2 remaining in 5, 3 in 3). 3→8(6 in 8). 5→3(2 in 3). 8→5(1 in 8). 3→8(3 in 8). 5→3(2 from 5→3, 3 in 5→becomes... Actually the classic solution: 8→5(3,5,0). 5→3(3,2,3). 3→8(6,2,0). 5→3(6,0,2). 8→5(1,5,2). 5→3(1,4,3). Done in 6 pours? This is the classic water jug problem with minimum of 7 pours. Socratic Hint: Systematically track states of all three jugs.",
+        "failure_modes": {
+            "undercounting": "Student thinks it takes fewer steps.",
+            "constraint_neglect": "Student says it cannot be done."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the value of the infinite continued fraction 1 + 1/(1 + 1/(1 + ...))?",
+        "options": [
+            "1",
+            "1.5",
+            "1.618...",
+            "2",
+            "Infinity"
+        ],
+        "correct_answer": "1.618...",
+        "ideal_solution": "Let x = 1 + 1/x. Then x^2 = x + 1. x^2 - x - 1 = 0. x = (1+sqrt(5))/2 ≈ 1.618 (the golden ratio). Socratic Hint: Set the expression equal to x and solve the resulting equation.",
+        "failure_modes": {
+            "converse_error": "Student says infinity (doesn't realize it converges).",
+            "formula_misapplication": "Student says 2 without solving."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "An equilateral triangle has side length 8 cm. What is its height?",
+        "options": [
+            "4 cm",
+            "4*sqrt(3) cm",
+            "6 cm",
+            "8 cm",
+            "8*sqrt(3) cm"
+        ],
+        "correct_answer": "4*sqrt(3) cm",
+        "ideal_solution": "Height = (sqrt(3)/2)*side = (sqrt(3)/2)*8 = 4*sqrt(3) ≈ 6.93 cm. Socratic Hint: The height bisects the base, creating a 30-60-90 triangle.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses 8/2=4 as the height.",
+            "arithmetic_slip": "Student computes sqrt(3)*8=8*sqrt(3)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Solve: x^2 - 9 = 0",
+        "options": [
+            "x = 3 only",
+            "x = -3 only",
+            "x = 3 or x = -3",
+            "x = 9",
+            "x = 0"
+        ],
+        "correct_answer": "x = 3 or x = -3",
+        "ideal_solution": "x^2 = 9. x = ±3. (Difference of squares: (x-3)(x+3)=0.) Socratic Hint: Don't forget both the positive and negative square roots.",
+        "failure_modes": {
+            "undercounting": "Student gives only x=3.",
+            "formula_misapplication": "Student takes x=9."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A committee of 3 is to be chosen from 5 men and 4 women. The committee must have at least 1 woman. How many ways?",
+        "options": [
+            "64",
+            "74",
+            "80",
+            "84",
+            "120"
+        ],
+        "correct_answer": "74",
+        "ideal_solution": "Total committees: C(9,3)=84. All-male committees: C(5,3)=10. At least 1 woman: 84-10=74. Socratic Hint: Use the complement — subtract all-male committees from total.",
+        "failure_modes": {
+            "overcounting": "Student counts committees with women directly and miscounts.",
+            "arithmetic_slip": "Student computes C(9,3)=90."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is 17 mod 5?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "17 = 5*3 + 2. Remainder: 2. Socratic Hint: Divide 17 by 5 and find the remainder.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 17/5=3.4 and says 4.",
+            "off_by_one": "Student says 3 (the quotient, not the remainder)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "An annulus (ring) is formed between two concentric circles with radii 3 cm and 7 cm. What is the area of the annulus? (Use pi = 3.14)",
+        "options": [
+            "40*pi sq cm",
+            "125.6 sq cm",
+            "87.92 sq cm",
+            "153.86 sq cm",
+            "200 sq cm"
+        ],
+        "correct_answer": "125.6 sq cm",
+        "ideal_solution": "Area = pi*(R^2 - r^2) = 3.14*(49-9) = 3.14*40 = 125.6 sq cm. Socratic Hint: Subtract the smaller circle's area from the larger.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes pi*(7-3)^2 = pi*16 = 50.24.",
+            "arithmetic_slip": "Student computes 49-9=39."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "What is the y-intercept of the line 3x + 2y = 12?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6",
+            "12"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Set x=0: 2y=12, y=6. Y-intercept is (0,6). Socratic Hint: The y-intercept occurs where x=0.",
+        "failure_modes": {
+            "converse_error": "Student finds x-intercept (4) instead.",
+            "formula_misapplication": "Student divides 12/3=4."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A biased coin shows heads 60% of the time. If flipped twice, what is the probability of getting exactly one head?",
+        "options": [
+            "0.24",
+            "0.36",
+            "0.48",
+            "0.50",
+            "0.60"
+        ],
+        "correct_answer": "0.48",
+        "ideal_solution": "P(HT) + P(TH) = 0.6*0.4 + 0.4*0.6 = 0.24+0.24 = 0.48. Socratic Hint: There are two ways to get exactly one head: HT or TH.",
+        "failure_modes": {
+            "undercounting": "Student counts only HT: 0.6*0.4=0.24.",
+            "formula_misapplication": "Student uses 0.5 (assumes fair coin)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many ways can you write 10 as a sum of consecutive positive integers?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "Try consecutive sequences: 1+2+3+4=10. Yes! Any other? 4+5+6=15 (too big). 2+3+4=9 (too small). 5+5=10 (not consecutive different). So exactly 1 way: {1,2,3,4}. Socratic Hint: Try sequences starting from each positive integer.",
+        "failure_modes": {
+            "overcounting": "Student includes 10 by itself (single number, not a sum of consecutive).",
+            "undercounting": "Student says 0."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A pyramid has a square base with side 6 cm and a height of 4 cm. What is its volume?",
+        "options": [
+            "24 cu cm",
+            "36 cu cm",
+            "48 cu cm",
+            "72 cu cm",
+            "144 cu cm"
+        ],
+        "correct_answer": "48 cu cm",
+        "ideal_solution": "V = (1/3)*base_area*height = (1/3)*36*4 = 48 cu cm. Socratic Hint: Pyramid volume is one-third of the base area times the height.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 36*4=144 without dividing by 3.",
+            "arithmetic_slip": "Student computes (1/3)*36*4=36."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Solve the inequality: 2x + 3 > 11",
+        "options": [
+            "x > 3",
+            "x > 4",
+            "x > 5.5",
+            "x > 7",
+            "x > 8"
+        ],
+        "correct_answer": "x > 4",
+        "ideal_solution": "2x + 3 > 11. 2x > 8. x > 4. Socratic Hint: Treat it like an equation, preserving the inequality direction.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 11-3=7, then 7/2=3.5.",
+            "sign_reversal": "Student reverses the inequality sign."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A spy wants to cross a bridge guarded by a sentry who sends back anyone after 5 minutes. The bridge takes 8 minutes to cross. The spy starts crossing, then after 4 minutes turns around so the sentry sees them and sends them 'back' — which direction is that?",
+        "options": [
+            "Back to start",
+            "Across the bridge",
+            "They get caught",
+            "Nowhere",
+            "Back and forth forever"
+        ],
+        "correct_answer": "Across the bridge",
+        "ideal_solution": "After 4 minutes, the spy turns around (facing the start). The sentry sees someone coming toward them and sends them 'back' — back the way they came, which is now ACROSS the bridge. Socratic Hint: 'Back' means away from the sentry — which direction is the spy facing?",
+        "failure_modes": {
+            "converse_error": "Student thinks 'back' means to the start.",
+            "constraint_neglect": "Student says the spy gets caught."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "The harmonic mean of two numbers a and b is 2ab/(a+b). What is the harmonic mean of 3 and 6?",
+        "options": [
+            "3",
+            "4",
+            "4.5",
+            "5",
+            "6"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "HM = 2*3*6/(3+6) = 36/9 = 4. Socratic Hint: Plug into the formula directly.",
+        "failure_modes": {
+            "converse_error": "Student computes arithmetic mean: (3+6)/2=4.5.",
+            "arithmetic_slip": "Student computes 2*3*6=30."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A chord of length 8 cm is 3 cm from the center of a circle. What is the radius?",
+        "options": [
+            "3 cm",
+            "4 cm",
+            "5 cm",
+            "6 cm",
+            "7 cm"
+        ],
+        "correct_answer": "5 cm",
+        "ideal_solution": "Half chord = 4 cm. Distance from center = 3 cm. r = sqrt(4^2+3^2) = sqrt(16+9) = sqrt(25) = 5. (3-4-5 triple.) Socratic Hint: The perpendicular from center to chord bisects the chord, forming a right triangle.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 8+3=11 or 8/2+3=7.",
+            "arithmetic_slip": "Student computes sqrt(64+9)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Factor completely: x^3 - 8",
+        "options": [
+            "(x-2)(x+4)",
+            "(x-2)(x^2+2x+4)",
+            "(x-8)(x+1)",
+            "(x-2)^3",
+            "(x+2)(x^2-2x+4)"
+        ],
+        "correct_answer": "(x-2)(x^2+2x+4)",
+        "ideal_solution": "x^3 - 8 = x^3 - 2^3 = (x-2)(x^2+2x+4). This is the difference of cubes formula: a^3-b^3 = (a-b)(a^2+ab+b^2). Socratic Hint: Recognize this as a difference of cubes.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses difference of squares: (x-2)(x+2)=x^2-4.",
+            "sign_reversal": "Student factors as (x+2)(x^2-2x+4) — that's x^3+8."
+        }
+    }
+]

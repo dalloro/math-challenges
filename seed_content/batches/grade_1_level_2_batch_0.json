@@ -1,0 +1,482 @@
+[
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Three friends each like a different sport: soccer, swimming, and tennis. Alex does not like swimming. Blake likes tennis. What sport does Casey like?",
+        "options": [
+            "Soccer",
+            "Swimming",
+            "Tennis",
+            "Basketball",
+            "Cannot tell"
+        ],
+        "correct_answer": "Swimming",
+        "ideal_solution": "Blake likes tennis. Alex does not like swimming, so Alex likes soccer. That leaves swimming for Casey. Socratic Hint: Start with the friend whose sport you know for sure and eliminate.",
+        "failure_modes": {
+            "constraint_neglect": "Student gives Casey soccer, ignoring the elimination chain.",
+            "converse_error": "Student assigns swimming to Alex despite the rule."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the sum of all even numbers from 2 to 10?",
+        "options": [
+            "20",
+            "24",
+            "28",
+            "30",
+            "32"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "Even numbers: 2, 4, 6, 8, 10. Sum: 2+4+6+8+10 = 30. Socratic Hint: List every even number in the range then add them up.",
+        "failure_modes": {
+            "boundary_error": "Student stops at 8, getting 20.",
+            "arithmetic_slip": "Student miscalculates a partial sum."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A square has a perimeter of 20 cm. What is the length of one side?",
+        "options": [
+            "4 cm",
+            "5 cm",
+            "10 cm",
+            "15 cm",
+            "20 cm"
+        ],
+        "correct_answer": "5 cm",
+        "ideal_solution": "A square has 4 equal sides. Perimeter = 4 * side. So side = 20 / 4 = 5 cm. Socratic Hint: If all sides are the same, how do you split the perimeter evenly?",
+        "failure_modes": {
+            "formula_misapplication": "Student divides by 2 instead of 4 and gets 10.",
+            "premature_calculation": "Student answers 20, the perimeter itself."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A mystery number doubled, then increased by 3 equals 13. What is the mystery number?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "2n + 3 = 13. 2n = 10. n = 5. Check: 5*2+3 = 13. Socratic Hint: Undo the steps in reverse — subtract 3 first, then halve.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes (13-3)/2 incorrectly.",
+            "premature_calculation": "Student divides 13 by 2 first without subtracting 3."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In a row of 7 seats, Maria sits in the exact middle. How many seats are to her right?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "In 7 seats, the middle is seat 4. Seats 5, 6, 7 are to her right. That is 3 seats. Socratic Hint: Which seat number is the middle of seven?",
+        "failure_modes": {
+            "off_by_one": "Student says 4, counting Maria's seat too.",
+            "arithmetic_slip": "Student says 2 by miscounting."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "I am an odd number between 10 and 20. My digits add up to 4. What number am I?",
+        "options": [
+            "11",
+            "13",
+            "15",
+            "22",
+            "31"
+        ],
+        "correct_answer": "13",
+        "ideal_solution": "Odd numbers between 10 and 20: 11, 13, 15, 17, 19. Check digit sums: 1+1=2, 1+3=4. 13 works! Socratic Hint: Test each odd number's digit sum.",
+        "failure_modes": {
+            "boundary_error": "Student considers 22 or 31 which are outside the range.",
+            "arithmetic_slip": "Student miscalculates a digit sum."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Two squares share one full side. What is the total number of sides on the outside of the combined shape?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Each square has 4 sides. Combined: 4+4 = 8 total sides minus 2 (shared side counted from both squares, now interior). 8-2 = 6 outer sides. Socratic Hint: Which sides are hidden inside the combined shape?",
+        "failure_modes": {
+            "overcounting": "Student says 8, not removing the shared sides.",
+            "undercounting": "Student says 4 thinking the result is still a square."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Mia picks some flowers. She gives 4 to her mom and 3 to her sister, and has 5 left. How many did she pick?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "12",
+            "15"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "She gave away 4 + 3 = 7 flowers and has 5 left. She started with 7 + 5 = 12 flowers. Socratic Hint: Add everything she gave plus what she kept to find the total she started with.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 4+3+5 incorrectly.",
+            "premature_calculation": "Student answers 5, the number remaining."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A bag has red, blue, and yellow marbles. You cannot look inside. You pull out 1 marble and it is red. You put it back. If you pull again, what colors could you get?",
+        "options": [
+            "Only red",
+            "Only blue or yellow",
+            "Red, blue, or yellow",
+            "Only blue",
+            "None"
+        ],
+        "correct_answer": "Red, blue, or yellow",
+        "ideal_solution": "Putting the marble back means all colors are still in the bag. Any color is possible on the next draw. Socratic Hint: After you put the marble back, is the bag any different from before?",
+        "failure_modes": {
+            "converse_error": "Student thinks red is guaranteed again.",
+            "constraint_neglect": "Student forgets the marble was put back."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the largest ODD number less than 30?",
+        "options": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"
+        ],
+        "correct_answer": "29",
+        "ideal_solution": "29 is odd (not divisible by 2). 30 is even. So 29 is the largest odd number less than 30. Socratic Hint: Start at 30 and count backward until you hit an odd number.",
+        "failure_modes": {
+            "boundary_error": "Student picks 30, which is even.",
+            "off_by_one": "Student picks 27, going too far back."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many right angles does a rectangle have?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Every corner of a rectangle forms a right angle (90 degrees). A rectangle has 4 corners, so it has 4 right angles. Socratic Hint: Check each corner with the corner of a book.",
+        "failure_modes": {
+            "undercounting": "Student counts only 2, the visible corners from one view.",
+            "formula_misapplication": "Student confuses right angles with sides."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Leo buys 3 packs of cards. Each pack has 8 cards. He gives 4 cards to a friend. How many cards does Leo have now?",
+        "options": [
+            "16",
+            "18",
+            "20",
+            "24",
+            "28"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "3 packs * 8 cards = 24 cards. 24 - 4 = 20 cards. Socratic Hint: First find the total from the packs, then subtract the cards given away.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 3*8=21.",
+            "premature_calculation": "Student answers 24, forgetting to subtract the 4 given away."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A snail is at the bottom of a 10-step staircase. Each hour it climbs 3 steps and then slides back 1 step. After 4 hours, what step is the snail on?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "Net progress per hour: 3-1 = 2 steps. After 4 hours: 4*2 = 8 steps up. Socratic Hint: Find the net climb each hour first.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 3*4 = 12 and forgets the sliding back.",
+            "off_by_one": "Student finishes with 7 by miscounting an hour."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Which number is both a multiple of 3 and a multiple of 4 and is less than 20?",
+        "options": [
+            "6",
+            "8",
+            "9",
+            "12",
+            "15"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Multiples of 3: 3,6,9,12,15,18. Multiples of 4: 4,8,12,16. Both: 12. Socratic Hint: List multiples of 3 and multiples of 4, then find what shows up in both lists.",
+        "failure_modes": {
+            "premature_calculation": "Student picks 6 (multiple of 3 only) or 8 (multiple of 4 only).",
+            "overcounting": "Student includes a number not actually in both lists."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "You cut a rectangular piece of paper along one of its diagonals. What shapes do you get?",
+        "options": [
+            "Two rectangles",
+            "Two triangles",
+            "A triangle and a rectangle",
+            "Two squares",
+            "Four triangles"
+        ],
+        "correct_answer": "Two triangles",
+        "ideal_solution": "Cutting a rectangle from one corner to the opposite corner creates 2 triangles. Each piece has 3 sides. Socratic Hint: Picture drawing a line from one corner to the corner diagonally across. What shapes appear on each side of the line?",
+        "failure_modes": {
+            "formula_misapplication": "Student says two rectangles, not thinking about diagonal cuts.",
+            "overcounting": "Student says four triangles (that would be two diagonal cuts)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If 4 friends share 28 stickers equally, how many stickers does each friend get?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "28 / 4 = 7 stickers each. Socratic Hint: How many groups of 4 fit into 28?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 28 by 7 = 4 (swapping divisor and quotient).",
+            "premature_calculation": "Student answers 28, the total."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Sam is taller than Lea. Lea is taller than Roy but shorter than Zoe. Who is the tallest?",
+        "options": [
+            "Sam",
+            "Lea",
+            "Roy",
+            "Zoe",
+            "Cannot tell"
+        ],
+        "correct_answer": "Cannot tell",
+        "ideal_solution": "Zoe > Lea and Sam > Lea, but we do not know whether Sam or Zoe is taller. We cannot determine the tallest. Socratic Hint: Can you directly compare Sam and Zoe with the information given?",
+        "failure_modes": {
+            "converse_error": "Student assumes Sam is tallest because Sam is mentioned first.",
+            "constraint_neglect": "Student forgets that Sam and Zoe are never compared."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many numbers from 1 to 30 are divisible by 5?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Multiples of 5 up to 30: 5, 10, 15, 20, 25, 30. That is 6 numbers. Socratic Hint: Skip-count by 5s until you pass 30.",
+        "failure_modes": {
+            "boundary_error": "Student excludes 30, getting 5.",
+            "off_by_one": "Student starts counting from 0 and gets 7."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A shape has 4 sides. Two sides are parallel but the other two are not parallel. What is this shape called?",
+        "options": [
+            "Square",
+            "Rectangle",
+            "Trapezoid",
+            "Rhombus",
+            "Circle"
+        ],
+        "correct_answer": "Trapezoid",
+        "ideal_solution": "A quadrilateral with exactly one pair of parallel sides is a trapezoid. Socratic Hint: Which four-sided shape has only ONE pair of sides that never meet?",
+        "failure_modes": {
+            "formula_misapplication": "Student picks rectangle, which has two pairs of parallel sides.",
+            "converse_error": "Student picks rhombus, which also has two pairs of parallel sides."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A rope is 30 cm long. You cut it into 5 equal pieces. How long is each piece?",
+        "options": [
+            "3 cm",
+            "5 cm",
+            "6 cm",
+            "10 cm",
+            "15 cm"
+        ],
+        "correct_answer": "6 cm",
+        "ideal_solution": "30 / 5 = 6 cm each. Socratic Hint: Share the total length equally among 5 pieces.",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 30 by 3 and gets 10.",
+            "sign_reversal": "Student multiplies 30 * 5 = 150."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A square garden has a fence post at each corner and one post in the middle of each side. How many posts are there in total?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "4 corner posts + 4 midpoint posts (one per side) = 8 posts. Socratic Hint: Count top, bottom, left, right side posts added to the corner posts.",
+        "failure_modes": {
+            "undercounting": "Student counts only the 4 corners.",
+            "overcounting": "Student double-counts corners as both corner and side posts."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is 99 + 1?",
+        "options": [
+            "98",
+            "99",
+            "100",
+            "101",
+            "109"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "99 + 1 = 100. The ones digit (9+1) carries over to make the tens digit roll over too. Socratic Hint: What happens when you add 1 to 9?",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 109 by misplacing digits.",
+            "off_by_one": "Student answers 101 by adding 2 instead of 1."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many sides does a regular pentagon have?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "'Penta' means five. A pentagon has 5 sides, and 'regular' means all sides and angles are equal. Socratic Hint: The Pentagon building in Washington is shaped like the answer!",
+        "failure_modes": {
+            "formula_misapplication": "Student confuses pentagon with hexagon (6).",
+            "off_by_one": "Student picks 4 or 6."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A number tripled equals 21. What is the number?",
+        "options": [
+            "3",
+            "5",
+            "7",
+            "9",
+            "21"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "3 * n = 21. n = 21 / 3 = 7. Check: 3*7 = 21. Socratic Hint: What number times 3 gives 21?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 21 by 7 = 3, swapping the answer and divisor.",
+            "premature_calculation": "Student answers 21, the product."
+        }
+    }
+]

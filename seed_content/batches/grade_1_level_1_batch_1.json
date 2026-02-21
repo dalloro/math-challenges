@@ -1,0 +1,502 @@
+[
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A clock shows 3:00. What kind of angle do the two hands make?",
+        "options": [
+            "Acute",
+            "Straight",
+            "Right",
+            "Obtuse",
+            "Round"
+        ],
+        "correct_answer": "Right",
+        "ideal_solution": "At 3:00 the minute hand points to 12 and the hour hand points to 3. They form a 90-degree angle, which is a right angle. Socratic Hint: Imagine the corner of a square — does the angle look the same?",
+        "failure_modes": {
+            "formula_misapplication": "Student confuses a right angle with a straight angle (180 degrees).",
+            "undercounting": "Student says acute, not realizing 90 degrees is a special angle."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the sum of the first three odd numbers?",
+        "options": [
+            "3",
+            "5",
+            "7",
+            "9",
+            "11"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "The first three odd numbers are 1, 3, and 5. Their sum is 1 + 3 + 5 = 9. Socratic Hint: List the odd numbers starting from 1 and add the first three.",
+        "failure_modes": {
+            "off_by_one": "Student starts with 3 instead of 1, getting 3 + 5 + 7 = 15.",
+            "arithmetic_slip": "Student miscalculates 1 + 3 + 5."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If 4 children each have 2 mittens, how many mittens are there in all?",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "Each child has 2 mittens. 2 + 2 + 2 + 2 = 8 mittens. Or 4 times 2 = 8. Socratic Hint: Count by 2s four times.",
+        "failure_modes": {
+            "premature_calculation": "Student answers 4 (the number of children) instead of 8.",
+            "arithmetic_slip": "Student adds 4 + 2 = 6 instead of multiplying."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you are taller than Bob, Bob is taller than Joe, and Joe is taller than Sam, who is the shortest?",
+        "options": [
+            "You",
+            "Bob",
+            "Joe",
+            "Sam",
+            "They are equal"
+        ],
+        "correct_answer": "Sam",
+        "ideal_solution": "You > Bob > Joe > Sam. Sam is at the end of the chain, so he is the shortest. Socratic Hint: Line everyone up from tallest to shortest. Who is last?",
+        "failure_modes": {
+            "converse_error": "Student reverses the order and picks 'You'.",
+            "off_by_one": "Student picks Joe instead of Sam."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many sides does a shape have if it is made by joining two triangles along one full side without overlapping?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "Any of these"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Each triangle has 3 sides, but the shared side is hidden inside. 3 + 3 - 2 (shared side counted from both) = 4 outer sides. Socratic Hint: What happens to the side where the triangles touch?",
+        "failure_modes": {
+            "overcounting": "Student adds 3 + 3 = 6 without removing the shared side.",
+            "undercounting": "Student counts only 3 sides, thinking it is still a triangle."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Which number comes next in this pattern? 20, 18, 16, 14, ...",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "15"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "The pattern subtracts 2 each time. 14 - 2 = 12. Socratic Hint: Are the numbers getting bigger or smaller? By how much each time?",
+        "failure_modes": {
+            "sign_reversal": "Student adds 2 instead of subtracting and gets 16.",
+            "off_by_one": "Student subtracts 1 and gets 13."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A basket has 10 apples. You take out half and then put back 2. How many apples are in the basket now?",
+        "options": [
+            "2",
+            "5",
+            "7",
+            "8",
+            "12"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "Half of 10 is 5. Take out 5: 10 - 5 = 5 remain. Put back 2: 5 + 2 = 7. Socratic Hint: Do the steps one at a time in the order they happen.",
+        "failure_modes": {
+            "arithmetic_slip": "Student calculates 10 - 2 = 8 by skipping the halving step.",
+            "premature_calculation": "Student answers 5 (the halfway point) without adding 2 back."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A family has 2 mothers and 2 daughters. What is the smallest number of people in this family?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "Grandmother (mother), her daughter (who is also a mother), and her granddaughter (daughter). One person plays two roles. Total: 3. Socratic Hint: Can one person be both a mother and a daughter at the same time?",
+        "failure_modes": {
+            "overcounting": "Student adds 2 + 2 = 4, not realizing roles overlap.",
+            "undercounting": "Student says 2, which is not enough people for the described roles."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If you put two identical squares side by side so they touch, what shape do they make?",
+        "options": [
+            "Triangle",
+            "Circle",
+            "Rectangle",
+            "Hexagon",
+            "Pentagon"
+        ],
+        "correct_answer": "Rectangle",
+        "ideal_solution": "Two squares side by side create a shape with 4 sides. The top and bottom are twice as long as the left and right sides. This is a rectangle. Socratic Hint: Count the sides of the new shape.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 'square' because both pieces are squares.",
+            "overcounting": "Student counts the internal line as an extra side."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is 10 more than the number that is 5 less than 20?",
+        "options": [
+            "15",
+            "20",
+            "25",
+            "30",
+            "35"
+        ],
+        "correct_answer": "25",
+        "ideal_solution": "Step 1: 5 less than 20 is 20 - 5 = 15. Step 2: 10 more than 15 is 15 + 10 = 25. Socratic Hint: Solve the inner phrase first, then handle the outer one.",
+        "failure_modes": {
+            "premature_calculation": "Student computes 20 + 10 = 30 ignoring the subtraction.",
+            "sign_reversal": "Student adds 5 instead of subtracting."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A shelf has 5 books. The red book is exactly in the middle. How many books are to the left of the red book?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "In a row of 5, the middle position is 3rd. Books in positions 1 and 2 are to its left. That is 2 books. Socratic Hint: What position number is the middle of five?",
+        "failure_modes": {
+            "off_by_one": "Student counts the red book itself and says 3.",
+            "arithmetic_slip": "Student says 1 by miscounting positions."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If one cookie costs 5 cents, how many cookies can you buy with 50 cents?",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "20",
+            "25"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "50 / 5 = 10 cookies. Or count by 5s to 50: that is 10 steps. Socratic Hint: How many 5s fit into 50?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 50 by 10 instead of 5 and gets 5.",
+            "units_mismatch": "Student confuses dollars and cents."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many rectangles can you find in a rectangle that has one line cutting it in half?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "The line creates 2 small rectangles. The whole shape is also a rectangle. Total: 2 + 1 = 3. Socratic Hint: Don't forget to count the big rectangle that contains the smaller ones.",
+        "failure_modes": {
+            "undercounting": "Student counts only the 2 small rectangles and misses the whole one.",
+            "overcounting": "Student counts the dividing line as a rectangle."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "If you add 2 to an even number, is the result always even, always odd, or sometimes each?",
+        "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes even",
+            "Sometimes odd",
+            "Zero"
+        ],
+        "correct_answer": "Always even",
+        "ideal_solution": "Even + even = even. Since 2 is even and the starting number is even, the result is always even. Check: 4 + 2 = 6, 6 + 2 = 8. Socratic Hint: Try a few examples and look for a pattern.",
+        "failure_modes": {
+            "converse_error": "Student thinks adding any number changes even to odd.",
+            "arithmetic_slip": "Student tries one example incorrectly and draws the wrong conclusion."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A train has 4 cars. The blue car is behind the red car. The yellow car is in front of the red car. Which car is first?",
+        "options": [
+            "Blue",
+            "Red",
+            "Yellow",
+            "Green",
+            "Last car"
+        ],
+        "correct_answer": "Yellow",
+        "ideal_solution": "Yellow is in front of Red, and Blue is behind Red. Order: Yellow, Red, Blue (and the 4th car). Yellow is first. Socratic Hint: 'In front of' means closer to the front of the train.",
+        "failure_modes": {
+            "converse_error": "Student swaps 'in front of' and 'behind'.",
+            "constraint_neglect": "Student ignores the positional clues and guesses."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If 3 pencils cost the same as 1 pen, and 1 pen costs 6 dollars, how much does 1 pencil cost?",
+        "options": [
+            "1 dollar",
+            "2 dollars",
+            "3 dollars",
+            "4 dollars",
+            "6 dollars"
+        ],
+        "correct_answer": "2 dollars",
+        "ideal_solution": "3 pencils = 6 dollars. 1 pencil = 6 / 3 = 2 dollars. Socratic Hint: If three things cost 6 together, how much is one?",
+        "failure_modes": {
+            "arithmetic_slip": "Student multiplies 3 * 6 = 18 instead of dividing.",
+            "premature_calculation": "Student answers 6 (the pen price) instead of the pencil price."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If you cut a circle exactly in half, what are the two pieces called?",
+        "options": [
+            "Semicircles",
+            "Squares",
+            "Ovals",
+            "Quarter circles",
+            "Triangles"
+        ],
+        "correct_answer": "Semicircles",
+        "ideal_solution": "The prefix 'semi' means half. A half of a circle is called a semicircle. Socratic Hint: What word means 'half'?",
+        "failure_modes": {
+            "formula_misapplication": "Student picks 'quarter circles' confusing halves and quarters.",
+            "converse_error": "Student says triangles thinking a straight cut makes pointed shapes."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many numbers between 1 and 20 end in the digit 5?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "Check each number: 5 and 15 end in the digit 5. That is 2 numbers. Socratic Hint: Go through the list 1 to 20 and circle the ones ending in 5.",
+        "failure_modes": {
+            "boundary_error": "Student includes 25, which is outside the range.",
+            "overcounting": "Student counts numbers containing a 5 anywhere, not just ending in 5."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If all dogs bark and Buddy is a dog, which statement must be true?",
+        "options": [
+            "Buddy barks",
+            "Buddy is brown",
+            "All barkers are dogs",
+            "Buddy is loud",
+            "Cats bark too"
+        ],
+        "correct_answer": "Buddy barks",
+        "ideal_solution": "The rule says all dogs bark. Buddy is a dog. Therefore Buddy must bark. Socratic Hint: Does Buddy follow the rule for dogs?",
+        "failure_modes": {
+            "converse_error": "Student picks 'All barkers are dogs' reversing the logic.",
+            "constraint_neglect": "Student adds information not given, like Buddy being brown."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A robot moves 3 steps forward and then 1 step backward each round. After 2 rounds, how many steps ahead of the start is the robot?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Each round: 3 forward - 1 backward = 2 net steps forward. After 2 rounds: 2 + 2 = 4 steps ahead. Socratic Hint: How much progress does the robot make in one full round?",
+        "failure_modes": {
+            "arithmetic_slip": "Student calculates 3 + 3 - 1 - 1 = 4 but arrives at it wrongly as 3.",
+            "premature_calculation": "Student counts total steps moved (8) instead of net distance (4)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which solid shape can roll but cannot slide on a flat surface because it has no flat faces?",
+        "options": [
+            "Cube",
+            "Sphere",
+            "Cylinder",
+            "Pyramid",
+            "Cone"
+        ],
+        "correct_answer": "Sphere",
+        "ideal_solution": "A sphere has no flat faces at all; every point is curved. It can only roll. Socratic Hint: Does a ball have any flat spots?",
+        "failure_modes": {
+            "formula_misapplication": "Student picks cylinder, forgetting it has two flat circular faces.",
+            "undercounting": "Student picks cone, forgetting it has one flat circular base."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the largest three-digit number you can make using the digits 1, 5, and 0, using each digit once?",
+        "options": [
+            "105",
+            "150",
+            "501",
+            "510",
+            "515"
+        ],
+        "correct_answer": "510",
+        "ideal_solution": "Place the largest digit (5) in the hundreds place, then 1 in the tens place, then 0 in the ones place. 510. Socratic Hint: Which digit should go in the hundreds place to make the number as big as possible?",
+        "failure_modes": {
+            "converse_error": "Student picks 105, the smallest arrangement.",
+            "off_by_one": "Student picks 501 by putting 0 in the tens place instead of 1."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Five people are standing in a line. If you are in the middle, how many people are behind you?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "In a line of 5, the middle is position 3. Positions 4 and 5 are behind you. That is 2 people. Socratic Hint: The middle divides the line into two equal groups.",
+        "failure_modes": {
+            "off_by_one": "Student counts themselves and says 3.",
+            "arithmetic_slip": "Student says 1 by miscounting positions."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If 5 + 5 + 5 equals 3 times a mystery number, what is the mystery number?",
+        "options": [
+            "3",
+            "5",
+            "10",
+            "15",
+            "20"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "5 + 5 + 5 = 15. 3 times ? = 15. So ? = 15 / 3 = 5. Socratic Hint: First find the total on the left side, then figure out what times 3 gives that total.",
+        "failure_modes": {
+            "premature_calculation": "Student answers 15 (the sum) instead of the mystery number.",
+            "arithmetic_slip": "Student divides 15 by 5 instead of by 3."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which shape has more sides than a triangle but fewer sides than a pentagon?",
+        "options": [
+            "Circle",
+            "Square",
+            "Hexagon",
+            "Star",
+            "Oval"
+        ],
+        "correct_answer": "Square",
+        "ideal_solution": "Triangle = 3 sides, pentagon = 5 sides. We need 4 sides. A square has 4 sides. Socratic Hint: What number is between 3 and 5?",
+        "failure_modes": {
+            "formula_misapplication": "Student picks hexagon (6 sides), which is too many.",
+            "undercounting": "Student does not know how many sides a pentagon has."
+        }
+    }
+]

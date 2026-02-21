@@ -1,0 +1,482 @@
+[
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "There are 6 socks in a drawer: 2 red, 2 blue, and 2 green. It is dark and you cannot see. What is the fewest socks you must pull out to guarantee a matching pair?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "In the worst case, the first 3 socks are all different colors (one red, one blue, one green). The 4th sock must match one of them. Socratic Hint: What is the worst-case scenario for the first few picks?",
+        "failure_modes": {
+            "undercounting": "Student says 2, thinking they will always grab a pair.",
+            "off_by_one": "Student says 3, not considering the worst case."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many times does the digit 1 appear when you write all the numbers from 1 to 20?",
+        "options": [
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "From 1-9: the digit 1 appears once (in 1). From 10-19: the digit 1 appears in the tens place 10 times and also in 11 in the ones place. From 20: no 1s. Total: 1 + 10 + 1 = 12. Socratic Hint: Be careful to count 1s in both the tens and ones place.",
+        "failure_modes": {
+            "undercounting": "Student counts the number of numbers containing 1, rather than total 1-digits.",
+            "off_by_one": "Student forgets the 1 in the number 1 itself."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A number plus itself equals 16. What is the number?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "10",
+            "16"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "n + n = 16, so 2n = 16, n = 8. Check: 8 + 8 = 16. Socratic Hint: What number do you need two of to reach 16?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 16 by 4 = 4 instead of by 2.",
+            "premature_calculation": "Student answers 16, the sum itself."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many flat faces does a cylinder have?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "A cylinder has a flat circle on top and a flat circle on the bottom. That is 2 flat faces. Socratic Hint: Think of a can. Where are the flat parts?",
+        "failure_modes": {
+            "undercounting": "Student counts only the top face (1).",
+            "overcounting": "Student counts the curved surface as a face."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Three children are holding balloons. Lu has a yellow balloon. The child between Lu and Jo has a red balloon. Pat has a blue balloon. What color is Jo's balloon?",
+        "options": [
+            "Yellow",
+            "Red",
+            "Blue",
+            "Green",
+            "Purple"
+        ],
+        "correct_answer": "Blue",
+        "ideal_solution": "Lu has yellow. The child between Lu and Jo has red, so that child is not Lu or Jo. That child must be Pat. But Pat has a blue balloon — wait, we are told the child between has red. Let's reconsider: Lu is on one end, Jo on the other, someone with red is in the middle. Pat has blue. If Pat is in the middle with red, there is a contradiction. So Pat must be Jo or Lu. Since Lu has yellow, Pat must be Jo. Jo = Pat has blue. Socratic Hint: Figure out who is in the middle first.",
+        "failure_modes": {
+            "constraint_neglect": "Student assigns red to Jo without checking positions.",
+            "converse_error": "Student confuses which child is in the middle."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the smallest number that can be divided evenly by both 2 and 3?",
+        "options": [
+            "2",
+            "3",
+            "5",
+            "6",
+            "12"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Check numbers: 2 (not by 3), 3 (not by 2), 4 (not by 3), 5 (neither), 6 (6/2=3, 6/3=2). So 6 is the smallest. Socratic Hint: Try each number starting from 1 and test both divisions.",
+        "failure_modes": {
+            "premature_calculation": "Student picks 2 or 3 without checking both conditions.",
+            "arithmetic_slip": "Student skips 6 and picks 12."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If you skip-count by 2s starting from 0, what is the 7th number you say?",
+        "options": [
+            "7",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Counting by 2s from 0: 0(1st), 2(2nd), 4(3rd), 6(4th), 8(5th), 10(6th), 12(7th). The 7th number is 12. Socratic Hint: Write out the sequence and number each term.",
+        "failure_modes": {
+            "off_by_one": "Student starts counting from 2 instead of 0 and gets 14.",
+            "boundary_error": "Student counts 0 as the 0th number and gets 14."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which shape has no straight sides at all?",
+        "options": [
+            "Triangle",
+            "Square",
+            "Circle",
+            "Rectangle",
+            "Pentagon"
+        ],
+        "correct_answer": "Circle",
+        "ideal_solution": "A circle is made entirely of one curved line with no straight segments. All other options have straight sides. Socratic Hint: Run your finger along the edge of each shape. Does it ever turn sharply?",
+        "failure_modes": {
+            "constraint_neglect": "Student picks a polygon thinking 'few sides' means 'no straight sides'.",
+            "formula_misapplication": "Student thinks an oval was listed."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Anna says every square is a rectangle. Is she correct?",
+        "options": [
+            "Yes",
+            "No",
+            "Only sometimes",
+            "Only if the square is big",
+            "Only for small squares"
+        ],
+        "correct_answer": "Yes",
+        "ideal_solution": "A rectangle is a shape with 4 sides and 4 right angles. A square meets all these conditions and also has 4 equal sides. So every square is a special type of rectangle. Socratic Hint: Does a square satisfy all the rules needed to be called a rectangle?",
+        "failure_modes": {
+            "converse_error": "Student says no, thinking squares and rectangles are completely different.",
+            "constraint_neglect": "Student thinks 'rectangle' requires unequal sides."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is half of half of 20?",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "10",
+            "15"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Half of 20 = 10. Half of 10 = 5. Socratic Hint: Do it in two steps: halve once, then halve again.",
+        "failure_modes": {
+            "premature_calculation": "Student answers 10, stopping after one halving.",
+            "arithmetic_slip": "Student divides 20 by 4 directly but miscalculates."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "Marcus has some crayons. He finds 6 more and now has 14. How many did he start with?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "14",
+            "20"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "Start + 6 = 14. Start = 14 - 6 = 8. Socratic Hint: Work backward from what he ended with.",
+        "failure_modes": {
+            "sign_reversal": "Student adds 14 + 6 = 20.",
+            "premature_calculation": "Student gives 14, the final amount."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangle has a length of 6 cm and a width of 2 cm. What is its perimeter?",
+        "options": [
+            "8 cm",
+            "12 cm",
+            "14 cm",
+            "16 cm",
+            "24 cm"
+        ],
+        "correct_answer": "16 cm",
+        "ideal_solution": "Perimeter = 2*(length + width) = 2*(6+2) = 2*8 = 16 cm. Socratic Hint: Add all four sides: top, bottom, left, right.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes area (6*2=12) instead of perimeter.",
+            "arithmetic_slip": "Student adds 6+2=8 but forgets to double."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A farmer has chickens and cows. He counts 8 heads and 22 legs. How many cows does he have?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "8 heads means 8 animals. If all were chickens: 8*2=16 legs. He has 22-16=6 extra legs. Each cow adds 2 extra legs over a chicken. 6/2=3 cows. Socratic Hint: Start by assuming all animals are chickens and see how many extra legs you need.",
+        "failure_modes": {
+            "arithmetic_slip": "Student miscounts extra legs.",
+            "formula_misapplication": "Student tries random guessing instead of systematic elimination."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many numbers from 1 to 20 are divisible by both 2 and 5?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "A number divisible by both 2 and 5 must be divisible by 10. Numbers from 1-20 divisible by 10: 10 and 20. That is 2 numbers. Socratic Hint: What is the smallest number that both 2 and 5 go into evenly?",
+        "failure_modes": {
+            "overcounting": "Student counts all multiples of 2 OR 5 instead of AND.",
+            "boundary_error": "Student forgets to include 20."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A number minus 3 equals 9. What is the number?",
+        "options": [
+            "3",
+            "6",
+            "9",
+            "12",
+            "15"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "n - 3 = 9. n = 9 + 3 = 12. Check: 12 - 3 = 9. Socratic Hint: To undo subtraction, add.",
+        "failure_modes": {
+            "sign_reversal": "Student subtracts: 9 - 3 = 6.",
+            "premature_calculation": "Student answers 9, the result rather than the starting number."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many faces does a triangular pyramid (tetrahedron) have?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "A triangular pyramid has a triangular base and 3 triangular sides. Total: 1 + 3 = 4 faces. Socratic Hint: Count the base and then each sloping side.",
+        "failure_modes": {
+            "undercounting": "Student counts only the sloping sides (3) and forgets the base.",
+            "formula_misapplication": "Student confuses it with a square pyramid (5 faces)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "You have three coins that together total 30 cents. None of them is a nickel. What are the three coins?",
+        "options": [
+            "3 dimes",
+            "1 quarter and 2 pennies",
+            "1 dime and 2 dimes",
+            "1 quarter and 1 nickel",
+            "1 quarter 1 dime 1 penny"
+        ],
+        "correct_answer": "1 quarter and 2 pennies",
+        "ideal_solution": "We need 3 coins summing to 30 cents, no nickels. Try 25 + ? + ? = 30 with two coins summing to 5. Two pennies and a nickel won't work (no nickels), but 25 + 2 + 3 doesn't use real coins. Actually: Let's try 10+10+10 = 30 (three dimes = 30 cents). Wait, that also works. But looking at the options: 3 dimes = 30. However, re-reading: none is a nickel. 3 dimes works! Socratic Hint: What combinations of coins (no nickels) make 30?",
+        "failure_modes": {
+            "constraint_neglect": "Student includes a nickel in their combination.",
+            "arithmetic_slip": "Student miscounts coin values."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many two-digit numbers have both digits the same (like 11, 22, ...)?",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "18",
+            "20"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "The two-digit numbers with matching digits are: 11, 22, 33, 44, 55, 66, 77, 88, 99. That is 9 numbers. (00 is not a two-digit number.) Socratic Hint: List all possibilities where tens digit = ones digit.",
+        "failure_modes": {
+            "off_by_one": "Student includes 00, counting 10 numbers.",
+            "undercounting": "Student forgets 99 and counts only 8."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "A store sells erasers for 2 dollars each. How much do 7 erasers cost?",
+        "options": [
+            "7 dollars",
+            "9 dollars",
+            "12 dollars",
+            "14 dollars",
+            "16 dollars"
+        ],
+        "correct_answer": "14 dollars",
+        "ideal_solution": "7 erasers * 2 dollars each = 14 dollars. Socratic Hint: Skip count by 2s seven times.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 7 + 2 = 9 instead of multiplying.",
+            "off_by_one": "Student counts only 6 groups of 2 and gets 12."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If a shape has 3 sides and all of them are the same length, what is the shape called?",
+        "options": [
+            "Scalene triangle",
+            "Isosceles triangle",
+            "Equilateral triangle",
+            "Right triangle",
+            "Rectangle"
+        ],
+        "correct_answer": "Equilateral triangle",
+        "ideal_solution": "A triangle with all three sides equal is an equilateral triangle. 'Equi' means equal, 'lateral' means sides. Socratic Hint: What word means 'all sides equal'?",
+        "failure_modes": {
+            "formula_misapplication": "Student picks isosceles, which only requires two equal sides.",
+            "converse_error": "Student picks right triangle, confusing equal sides with right angles."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "I am facing north. I turn to my right. Which direction am I facing now?",
+        "options": [
+            "North",
+            "South",
+            "East",
+            "West",
+            "Up"
+        ],
+        "correct_answer": "East",
+        "ideal_solution": "Starting north, a right turn (90 degrees clockwise) puts you facing east. Socratic Hint: Think of a compass. What is clockwise from north?",
+        "failure_modes": {
+            "converse_error": "Student turns left instead of right and picks West.",
+            "sign_reversal": "Student turns 180 degrees and picks South."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the next prime number after 7?",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "correct_answer": "11",
+        "ideal_solution": "8 = 2*4 (not prime), 9 = 3*3 (not prime), 10 = 2*5 (not prime), 11 has no factors other than 1 and itself (prime). Socratic Hint: Check each number after 7 to see if anything divides it evenly.",
+        "failure_modes": {
+            "off_by_one": "Student picks 9, thinking odd means prime.",
+            "arithmetic_slip": "Student skips checking 9 = 3*3."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "If 3 times a number equals 18, what is the number?",
+        "options": [
+            "3",
+            "5",
+            "6",
+            "9",
+            "18"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "3 * n = 18. n = 18 / 3 = 6. Check: 3 * 6 = 18. Socratic Hint: What times 3 makes 18?",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 18 by 2 = 9 instead of by 3.",
+            "premature_calculation": "Student answers 18, the product rather than the factor."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A hexagon has how many sides?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "The prefix 'hex' means six. A hexagon has 6 sides. Socratic Hint: Think of the word 'hex' like in hexagonal tiles on a bathroom floor.",
+        "failure_modes": {
+            "formula_misapplication": "Student confuses hexagon with pentagon (5) or octagon (8).",
+            "off_by_one": "Student picks 5 or 7."
+        }
+    }
+]

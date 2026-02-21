@@ -1,0 +1,362 @@
+[
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "What is the maximum number of regions that 6 straight lines can divide a plane into?",
+        "options": [
+            "12",
+            "16",
+            "18",
+            "22",
+            "24"
+        ],
+        "correct_answer": "22",
+        "ideal_solution": "Maximum regions with n lines: 1 + n(n+1)/2. For n=6: 1 + 6*7/2 = 1+21 = 22. Socratic Hint: Each new line crosses all previous lines; line k adds k new regions.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses n^2 = 36.",
+            "off_by_one": "Student forgets the +1: 21 instead of 22."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the least quadratic residue modulo 7 (other than 0)?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "Quadratic residues mod 7: 1^2≡1, 2^2≡4, 3^2≡2, 4^2≡2, 5^2≡4, 6^2≡1. QRs: {1, 2, 4}. Least is 1. Socratic Hint: Square each element of Z_7 and find the residues.",
+        "failure_modes": {
+            "off_by_one": "Student starts from 0.",
+            "undercounting": "Student only checks 1^2 and 2^2."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "What is the rank of the matrix [[1,2,3],[4,5,6],[7,8,9]]?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "Undefined"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "Row reduce: R2←R2-4R1, R3←R3-7R1 gives [[1,2,3],[0,-3,-6],[0,-6,-12]]. R3←R3-2R2 gives [[1,2,3],[0,-3,-6],[0,0,0]]. Two non-zero rows, so rank = 2. Socratic Hint: Row reduce and count non-zero rows.",
+        "failure_modes": {
+            "overcounting": "Student says 3 without row reducing.",
+            "arithmetic_slip": "Student makes an error in elimination."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "The Hausdorff dimension of the Sierpinski triangle is:",
+        "options": [
+            "1",
+            "1.5",
+            "log(3)/log(2)",
+            "2",
+            "log(2)/log(3)"
+        ],
+        "correct_answer": "log(3)/log(2)",
+        "ideal_solution": "The Sierpinski triangle has 3 self-similar pieces, each scaled by 1/2. Dimension = log(3)/log(2) ≈ 1.585. Socratic Hint: Use the formula d = log(N)/log(s^(-1)) where N is the number of pieces and s is the scaling factor.",
+        "failure_modes": {
+            "converse_error": "Student says log(2)/log(3) (inverting the fraction).",
+            "formula_misapplication": "Student says 1.5 (average of 1 and 2)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In information theory, the entropy of a fair coin flip (probability 1/2 each) is:",
+        "options": [
+            "0 bits",
+            "1/2 bit",
+            "1 bit",
+            "2 bits",
+            "log(2) nats"
+        ],
+        "correct_answer": "1 bit",
+        "ideal_solution": "H = -Σ p_i log_2(p_i) = -(1/2)log_2(1/2) - (1/2)log_2(1/2) = 1/2 + 1/2 = 1 bit. Socratic Hint: Shannon entropy measures the expected information content.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes -log_2(1/2)=1 without averaging.",
+            "converse_error": "Student says 1/2 bit."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "The Legendre symbol (2/7) equals:",
+        "options": [
+            "-1",
+            "0",
+            "1",
+            "2",
+            "Undefined"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "2 is a quadratic residue mod 7 because 3^2 = 9 ≡ 2 (mod 7). So (2/7) = 1. Alternatively, by the formula: 2 is a QR mod p iff p ≡ ±1 (mod 8). 7 ≡ -1 (mod 8), so (2/7) = 1. Socratic Hint: Check if 2 is a perfect square modulo 7.",
+        "failure_modes": {
+            "formula_misapplication": "Student checks 2^2=4≡4 instead of finding x^2≡2.",
+            "converse_error": "Student says -1 without checking."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "What is the Jordan normal form of a 2x2 matrix with eigenvalue 3 of algebraic multiplicity 2 but geometric multiplicity 1?",
+        "options": [
+            "[[3,0],[0,3]]",
+            "[[3,1],[0,3]]",
+            "[[3,0],[1,3]]",
+            "[[3,3],[0,3]]",
+            "[[6,0],[0,0]]"
+        ],
+        "correct_answer": "[[3,1],[0,3]]",
+        "ideal_solution": "When algebraic multiplicity > geometric multiplicity, the Jordan form has a Jordan block with 1s on the superdiagonal: [[3,1],[0,3]]. Socratic Hint: A non-diagonalizable matrix has a Jordan block.",
+        "failure_modes": {
+            "converse_error": "Student says [[3,0],[0,3]] (which would mean diagonalizable).",
+            "formula_misapplication": "Student puts the 1 in the wrong position."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "What is the area of the Mandelbrot set estimated to be?",
+        "options": [
+            "pi",
+            "1.5",
+            "1.5065...",
+            "2",
+            "Infinite"
+        ],
+        "correct_answer": "1.5065...",
+        "ideal_solution": "The area of the Mandelbrot set has been computed numerically to be approximately 1.5065918... It is known to be finite. Socratic Hint: This has no closed-form solution; it must be computed numerically.",
+        "failure_modes": {
+            "converse_error": "Student says infinite (the boundary has infinite length, but the area is finite).",
+            "formula_misapplication": "Student says pi."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Gödel's first incompleteness theorem implies that for any consistent formal system F capable of expressing basic arithmetic:",
+        "options": [
+            "F can prove all true statements",
+            "F is complete",
+            "There exist true statements unprovable in F",
+            "F is inconsistent",
+            "F has no axioms"
+        ],
+        "correct_answer": "There exist true statements unprovable in F",
+        "ideal_solution": "Gödel showed that any sufficiently powerful consistent formal system contains statements that are true but unprovable within the system. This means no such system can be both consistent and complete. Socratic Hint: The theorem constructs a specific self-referential statement.",
+        "failure_modes": {
+            "converse_error": "Student thinks F must be inconsistent.",
+            "premature_calculation": "Student confuses with the second incompleteness theorem."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many group homomorphisms exist from Z_6 to Z_4?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ],
+        "correct_answer": "2",
+        "ideal_solution": "A homomorphism φ: Z_6→Z_4 is determined by φ(1), which must satisfy 6*φ(1)≡0 (mod 4). So 6*φ(1) mod 4 = 0, meaning 2*φ(1) ≡ 0 (mod 4), so φ(1) ∈ {0, 2}. Two homomorphisms. Socratic Hint: The image of the generator determines the homomorphism, and its order must divide both 6 and 4.",
+        "failure_modes": {
+            "overcounting": "Student counts all elements of Z_4.",
+            "formula_misapplication": "Student uses gcd(6,4)=2 (correct answer, possibly wrong reasoning)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "What is the norm of the vector (3, 4, 12) in R^3?",
+        "options": [
+            "5",
+            "12",
+            "13",
+            "19",
+            "169"
+        ],
+        "correct_answer": "13",
+        "ideal_solution": "||v|| = sqrt(9+16+144) = sqrt(169) = 13. Socratic Hint: The Euclidean norm is the square root of the sum of squares.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds components: 3+4+12=19.",
+            "arithmetic_slip": "Student computes sqrt(9+16+144)=sqrt(170)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A Möbius strip has how many sides?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "Infinite"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "A Möbius strip is a non-orientable surface with only one side. If you trace along the surface, you end up on the 'other side' without crossing an edge. Socratic Hint: Try drawing a line along the center of a paper Möbius strip.",
+        "failure_modes": {
+            "converse_error": "Student says 2 (like a regular strip).",
+            "formula_misapplication": "Student says 0 (confusing with Klein bottle)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "What is the time complexity of the best known algorithm for matrix multiplication of two n×n matrices?",
+        "options": [
+            "O(n^2)",
+            "O(n^2.37...)",
+            "O(n^3)",
+            "O(n^2 log n)",
+            "O(n^4)"
+        ],
+        "correct_answer": "O(n^2.37...)",
+        "ideal_solution": "The current best exponent is approximately 2.37 (Coppersmith-Winograd and improvements). The naive algorithm is O(n^3). Strassen's is O(n^2.807...). Socratic Hint: This is an active area of research; the exponent has been repeatedly reduced.",
+        "failure_modes": {
+            "converse_error": "Student says O(n^3) (the naive algorithm).",
+            "premature_calculation": "Student says O(n^2) (the theoretical lower bound, not yet achieved)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Is the group (Z_4, +) isomorphic to the group (Z_2 × Z_2, +)?",
+        "options": [
+            "Yes",
+            "No, Z_4 is cyclic but Z_2×Z_2 is not",
+            "No, they have different orders",
+            "Yes, both are abelian",
+            "Cannot determine"
+        ],
+        "correct_answer": "No, Z_4 is cyclic but Z_2×Z_2 is not",
+        "ideal_solution": "Z_4 has an element of order 4 (namely 1), so it is cyclic. Z_2 × Z_2 has no element of order 4 (max order is 2). Since they don't share the same element orders, they are not isomorphic. Socratic Hint: Compare the maximum order of elements in each group.",
+        "failure_modes": {
+            "converse_error": "Student says yes because both have order 4 and are abelian.",
+            "formula_misapplication": "Student says different orders (both have order 4)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "algebra",
+        "question": "What is the Laplace transform of f(t) = e^(2t)?",
+        "options": [
+            "1/(s-2)",
+            "1/(s+2)",
+            "2/s",
+            "s/(s^2-4)",
+            "e^(2s)"
+        ],
+        "correct_answer": "1/(s-2)",
+        "ideal_solution": "L{e^(at)} = 1/(s-a) for s>a. With a=2: L{e^(2t)} = 1/(s-2), for s>2. Socratic Hint: This is a standard Laplace transform pair.",
+        "failure_modes": {
+            "sign_reversal": "Student gives 1/(s+2).",
+            "formula_misapplication": "Student computes the integral from scratch with errors."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many Platonic solids exist?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "Infinitely many"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "The five Platonic solids are: tetrahedron, cube, octahedron, dodecahedron, and icosahedron. No others satisfy the regularity conditions. Socratic Hint: Only regular polygons with specific vertex angles can tile a sphere.",
+        "failure_modes": {
+            "undercounting": "Student forgets the dodecahedron or icosahedron.",
+            "overcounting": "Student includes Archimedean solids."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "The halting problem asks: given a program P and input I, will P eventually halt? Turing proved this is:",
+        "options": [
+            "Always solvable",
+            "Solvable for finite inputs",
+            "Undecidable",
+            "Solvable in polynomial time",
+            "NP-complete"
+        ],
+        "correct_answer": "Undecidable",
+        "ideal_solution": "Turing proved there is no general algorithm that can determine whether an arbitrary program will halt. The proof uses diagonalization/self-reference. Socratic Hint: The proof constructs a contradictory program that halts iff it doesn't.",
+        "failure_modes": {
+            "converse_error": "Student says solvable (it is for specific programs, but not in general).",
+            "formula_misapplication": "Student confuses with NP-completeness."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Fermat's Last Theorem (proved by Andrew Wiles) states that there are no positive integer solutions to x^n + y^n = z^n for n ≥ ___.",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "10"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "Fermat's Last Theorem states that x^n + y^n = z^n has no positive integer solutions for n ≥ 3. For n=2, solutions exist (Pythagorean triples). Socratic Hint: n=2 gives Pythagorean triples; the theorem is about n≥3.",
+        "failure_modes": {
+            "off_by_one": "Student says n≥2 (but Pythagorean triples exist).",
+            "converse_error": "Student says n≥4."
+        }
+    }
+]
