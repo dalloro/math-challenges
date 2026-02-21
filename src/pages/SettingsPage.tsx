@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getApiKey, saveApiKey, deleteApiKey } from '../services/storage';
 import { validateApiKey } from '../services/ai';
-import { Shield, Key, CheckCircle, AlertCircle, Trash2, RefreshCw } from 'lucide-react';
+import { Shield, Key, CheckCircle, AlertCircle, Trash2, RefreshCw, Info } from 'lucide-react';
 
 export function SettingsPage() {
   const navigate = useNavigate();
@@ -34,8 +34,9 @@ export function SettingsPage() {
     try {
       await validateApiKey(apiKey.trim());
       setStatus({ type: 'success', message: 'Connection successful! Your key is valid.' });
-    } catch (err: any) {
-      setStatus({ type: 'error', message: `Validation failed: ${err.message}` });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      setStatus({ type: 'error', message: `Validation failed: ${message}` });
     } finally {
       setIsValidating(false);
     }
@@ -96,6 +97,12 @@ export function SettingsPage() {
                 placeholder="Enter your Google AI API Key..."
                 className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:border-blue-500 focus:ring-0 outline-hidden transition-all font-mono text-sm"
               />
+            </div>
+            <div className="flex items-center space-x-2 text-blue-500 bg-blue-50/50 p-3 rounded-xl border border-blue-100/50">
+              <Info size={14} className="shrink-0" />
+              <p className="text-[10px] leading-tight font-medium">
+                You can get a free API key from the <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noreferrer" className="underline font-bold">Google AI Studio</a>. No credit card is required for basic usage.
+              </p>
             </div>
           </div>
 

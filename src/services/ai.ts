@@ -52,8 +52,9 @@ export async function validateApiKey(apiKey: string): Promise<boolean> {
   try {
     await model.generateContent("ping");
     return true;
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Gemini Validation Error:", error);
-    throw new Error(error.message || "Invalid API Key or connection issue.");
+    const message = error instanceof Error ? error.message : "Invalid API Key or connection issue.";
+    throw new Error(message);
   }
 }
