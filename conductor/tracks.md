@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: User-Specific API Keys and Enhanced Static Fallback**
+- [~] **Track: User-Specific API Keys and Enhanced Static Fallback**
 *Link: [./tracks/user_api_keys_20260218/](./tracks/user_api_keys_20260218/)*

@@ -19,12 +19,15 @@ export async function evaluateReasoning(
     Student's Reasoning: ${studentInput}
     
     Task:
-    Evaluate the student's reasoning. 
-    - If they are on the right track, provide a supportive nudge to the next step.
-    - If they have a logical flaw, ask a probing question to help them discover the error themselves.
+    Evaluate the student's reasoning based on the ideal solution.
+    - If they are on the right track: Provide a supportive nudge or a minor hint toward the next logical step.
+    - If they are off track or have a logical flaw: Provide clearer guidance. Offer a simplified parallel example or a conceptual analogy to illustrate the mistake, then ask a Socratic question to help them discover the error themselves.
     - NEVER give the final answer directly.
-    - Keep your response concise (2-3 sentences).
-    - Be professional but encouraging.
+    - Keep your response concise but helpful (3-4 sentences).
+    - Be professional, encouraging, and intellectually stimulating.
+    
+    Mandatory Closing:
+    End your response with exactly: "Now that you've thought about this a bit more, confirm your answer below and submit it."
   `;
 
   try {

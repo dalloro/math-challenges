@@ -358,6 +358,17 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
             )
           ) : (
             <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              {/* Student's Original Reasoning */}
+              <div className="p-8 rounded-3xl border border-gray-100 bg-gray-50/50">
+                <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-gray-400">
+                  Your Reasoning
+                </h4>
+                <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-gray-700">
+                  {reasoning}
+                </div>
+              </div>
+
+              {/* AI/Ideal Feedback */}
               <div className={`p-8 rounded-3xl border ${
                 feedbackType === 'ai' ? 'bg-purple-50 border-purple-100' : 'bg-blue-50 border-blue-100'
               }`}>
@@ -374,11 +385,11 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
               </div>
               
               <div className="flex flex-col space-y-4">
-                <p className="text-center text-gray-400 text-sm font-medium">
-                  {feedbackType === 'ai' 
-                    ? "Based on the feedback, select your final answer:" 
-                    : "Now that you've reviewed the solution, select the correct answer:"}
-                </p>
+                {feedbackType !== 'ai' && (
+                  <p className="text-center text-gray-400 text-sm font-medium">
+                    Now that you've reviewed the solution, select the correct answer:
+                  </p>
+                )}
                 <div className="grid grid-cols-1 gap-4">
                   {currentQuestion.options.map((option: string) => (
                     <button
