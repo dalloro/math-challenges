@@ -36,3 +36,24 @@ export async function evaluateReasoning(
     throw new Error("Failed to get AI feedback");
   }
 }
+
+/**
+ * Validates the Gemini API key by making a simple request to the service.
+ * @param apiKey The key to validate.
+ * @returns true if valid, throws error otherwise.
+ */
+export async function validateApiKey(apiKey: string): Promise<boolean> {
+  if (!apiKey) throw new Error("API Key is required");
+
+  const genAI = new GoogleGenerativeAI(apiKey);
+  // Using a very small prompt to minimize tokens/cost
+  const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
+
+  try {
+    await model.generateContent("ping");
+    return true;
+  } catch (error: any) {
+    console.error("Gemini Validation Error:", error);
+    throw new Error(error.message || "Invalid API Key or connection issue.");
+  }
+}
