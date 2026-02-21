@@ -13,8 +13,8 @@ def validate_file(filepath):
         print(f"❌ Root of '{filepath}' must be a JSON array.")
         return False
         
-    if len(data) != 50:
-        print(f"❌ Batch '{filepath}' must have exactly 50 questions, found {len(data)}.")
+    if len(data) != 25:
+        print(f"❌ Batch '{filepath}' must have exactly 25 questions, found {len(data)}.")
         return False
         
     required_keys = {"grade", "level", "difficulty", "type", "question", "options", "correct_answer", "ideal_solution", "failure_modes"}
