@@ -1,0 +1,473 @@
+[
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 850 + 155?",
+        "options": [
+            "905",
+            "1000",
+            "1005",
+            "1015",
+            "1105"
+        ],
+        "correct_answer": "1005",
+        "ideal_solution": "850 + 100 = 950. 950 + 50 = 1000. 1000 + 5 = 1005. Socratic Hint: Focus on the fifties. 50 + 50 makes another solid hundred.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 1015 or 905."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Mia has exactly $10.00. She buys a toy for $3.50 and candy for $1.75. How much change does she get?",
+        "options": [
+            "$4.75",
+            "$5.00",
+            "$5.25",
+            "$5.50",
+            "$6.75"
+        ],
+        "correct_answer": "$4.75",
+        "ideal_solution": "Cost = 3.50 + 1.75 = 3.50 + 1.50 = $5.00 + .25 = $5.25. Change = 10.00 - 5.25. 10.00 - 5.00 = 5.00. 5.00 - .25 = 4.75 ($4.75). Socratic Hint: First add the costs. A dollar fifty plus two quarters is $2.00. Three dollars plus a dollar seventy-five...",
+        "failure_modes": {
+            "arithmetic_slip": "Student calculates cost as $4.25 and change as $5.75."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A painter charges $20 for every room he paints. He paints 4 rooms on Monday and 2 rooms on Tuesday. How much money did he make in total?",
+        "options": [
+            "$40",
+            "$80",
+            "$100",
+            "$120",
+            "$140"
+        ],
+        "correct_answer": "$120",
+        "ideal_solution": "Total rooms = 4 + 2 = 6. 6 rooms × $20/room. 6 × 2 = 12. So $120. Socratic Hint: Add the total number of rooms he painted first. Then multiply by $20.",
+        "failure_modes": {
+            "premature_calculation": "Student only calculates Monday ($80)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1000 - 450 - 50?",
+        "options": [
+            "450",
+            "500",
+            "550",
+            "600",
+            "900"
+        ],
+        "correct_answer": "500",
+        "ideal_solution": "450 + 50 = 500. So subtract 500 total. 1000 - 500 = 500. Socratic Hint: Group the minuses together. You are subtracting a perfect 500!",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds: 1000 - 400 = 600."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Look at the pattern: 900, 880, 860, 840... What is the next number?",
+        "options": [
+            "810",
+            "820",
+            "830",
+            "850",
+            "880"
+        ],
+        "correct_answer": "820",
+        "ideal_solution": "Dropping by 20s. 840 - 20 = 820. Socratic Hint: Look at the tens column. 90, 88, 86, 84...",
+        "failure_modes": {
+            "off_by_one": "Student says 830."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "There are 4 rows. Row 1 has 5 chairs. Row 2 has 10 chairs. Row 3 has 15 chairs. If the pattern continues, how many chairs are in Row 4?",
+        "options": [
+            "16",
+            "20",
+            "25",
+            "30",
+            "50"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "Adding 5 each time. Row 4 = 15 + 5 = 20. Socratic Hint: Check how much it increases each row.",
+        "failure_modes": {
+            "off_by_one": "Student guesses 25 (skip a row)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is exactly $3.45 + $2.55?",
+        "options": [
+            "$5.00",
+            "$5.90",
+            "$6.00",
+            "$6.10",
+            "$6.90"
+        ],
+        "correct_answer": "$6.00",
+        "ideal_solution": "$3 + $2 = $5. 45 + 55 = 100c = $1.00. $5 + $1 = $6.00. Socratic Hint: Move 5 cents from the 55 to the 45. Now you have 50 and 50. What is 50+50?",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $5.90 or $6.10."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add 34 + 35 + 36.",
+        "options": [
+            "90",
+            "95",
+            "100",
+            "105",
+            "115"
+        ],
+        "correct_answer": "105",
+        "ideal_solution": "30 + 30 + 30 = 90. 4 + 5 + 6 = 15. 90 + 15 = 105. Socratic Hint: Group the tens to get 90. The ones add to exactly 15.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 95 or 100."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A solid rectangular box has 6 faces. How many faces does it have if I cut the box exactly down the middle into two smaller boxes, and separate them?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Two separate rectangular boxes. Each has 6 faces. 6 + 6 = 12. Socratic Hint: The cutting creates new walls on the inside. But it's easier to think: each new piece is just a full box with 6 faces.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 10 or 8."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you subtract 99 from 1000, what is the answer?",
+        "options": [
+            "900",
+            "901",
+            "911",
+            "991",
+            "899"
+        ],
+        "correct_answer": "901",
+        "ideal_solution": "1000 - 100 = 900. Because we only took away 99, we add 1 back. 901. Socratic Hint: Treat 99 like 100. Subtract 100, then put 1 back.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 911 or 900."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 10 × 12? (Or 12 jumps of 10)",
+        "options": [
+            "102",
+            "112",
+            "120",
+            "130",
+            "1200"
+        ],
+        "correct_answer": "120",
+        "ideal_solution": "Any number × 10 adds a zero. 12 becomes 120. Socratic Hint: Stick a zero on the end of 12.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 102."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A string is 30 centimeters. I cut it into pieces that are each exactly 5 cm long. How many pieces do I have?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "10",
+            "25"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Count up by 5s to 30. 5, 10, 15, 20, 25, 30. That is 6 pieces. Socratic Hint: How many fives make thirty?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 5."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which of these is the largest total?",
+        "options": [
+            "9 hundreds",
+            "95 tens",
+            "800 ones",
+            "1 thousand",
+            "Exactly 999"
+        ],
+        "correct_answer": "1 thousand",
+        "ideal_solution": "900, 950, 800, 1000, 999. 1000 is the largest. Socratic Hint: '1 thousand' means exactly 1,000.",
+        "failure_modes": {
+            "converse_error": "Student guesses 999, thinking it's the biggest 3-digit number."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 500 - 205?",
+        "options": [
+            "295",
+            "305",
+            "395",
+            "405",
+            "205"
+        ],
+        "correct_answer": "295",
+        "ideal_solution": "500 - 200 = 300. 300 - 5 = 295. Socratic Hint: Knock out the 200. Now you just have 300 minus 5.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 305."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add perfectly: 45 + 55 + 45 + 55",
+        "options": [
+            "150",
+            "180",
+            "190",
+            "200",
+            "210"
+        ],
+        "correct_answer": "200",
+        "ideal_solution": "45 + 55 = 100. 45 + 55 = 100. 100 + 100 = 200. Socratic Hint: See the 45 and 55? What do they add up to? 40+50=90. 5+5=10.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 190."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "I have 3 quarters, 2 dimes, and 1 nickel. Do I have exactly $1.00?",
+        "options": [
+            "Yes",
+            "No",
+            "I have more",
+            "Cannot tell"
+        ],
+        "correct_answer": "Yes",
+        "ideal_solution": "3 Q = 75c. 2 D = 20c. 1 N = 5c. 75 + 20 + 5 = 100c = $1.00. Yes. Socratic Hint: Nickels and quarters fit nicely together. 75 cents plus 5 cents is 80 cents.",
+        "failure_modes": {
+            "converse_error": "Student guesses No."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is half of 400?",
+        "options": [
+            "100",
+            "200",
+            "300",
+            "40",
+            "20"
+        ],
+        "correct_answer": "200",
+        "ideal_solution": "2 + 2 = 4. 200 + 200 = 400. Socratic Hint: What is half of 4?",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 100."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Lily buys 3 packs of stickers. Each pack has 12 stickers. If she gives 6 stickers away, how many does she keep?",
+        "options": [
+            "18",
+            "24",
+            "30",
+            "36"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "Total = 3 × 12 = 36. 36 - 6 = 30. Socratic Hint: 3 × 12. Think: 12 + 12 + 12.",
+        "failure_modes": {
+            "premature_calculation": "Student stops at 36."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 1000 - 150.",
+        "options": [
+            "750",
+            "800",
+            "850",
+            "900",
+            "950"
+        ],
+        "correct_answer": "850",
+        "ideal_solution": "1000 - 100 = 900. 900 - 50 = 850. Socratic Hint: 100 - 15 = 85. So add a zero.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 750 or 800."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangle has sides of 3 inches and 6 inches. A square has sides of 4 inches. Which has a larger distance all the way around (Perimeter)?",
+        "options": [
+            "The rectangle",
+            "The square",
+            "They are exactly the same",
+            "Cannot tell"
+        ],
+        "correct_answer": "The rectangle",
+        "ideal_solution": "Rectangle = 3+3+6+6 = 18. Square = 4+4+4+4 = 16. 18 > 16. The rectangle. Socratic Hint: Add up all four sides of each shape. Rectangle = 3+3+6+6. Square = 4+4+4+4.",
+        "failure_modes": {
+            "premature_calculation": "Student compares area inadvertently (18 vs 16, still rect) or adds only 2 sides (9 vs 8)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 35 + 47 an odd or even number?",
+        "options": [
+            "Odd",
+            "Even",
+            "Both",
+            "Neither"
+        ],
+        "correct_answer": "Even",
+        "ideal_solution": "Odd + Odd = Even. Or solve: 30+40=70. 5+7=12. 70+12=82. 82 is even. Socratic Hint: Just look at 5 + 7. It makes 12. Is 12 odd or even?",
+        "failure_modes": {
+            "converse_error": "Student guesses Odd."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 444 + 111?",
+        "options": [
+            "555",
+            "500",
+            "441",
+            "666",
+            "411"
+        ],
+        "correct_answer": "555",
+        "ideal_solution": "4+1=5 straight down. Hundreds, tens, ones. 555. Socratic Hint: 4+1 for every digit.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 666."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In a row of 7 houses, every house is painted Blue except the houses on the very ends. The end houses are Red. How many houses are Blue?",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Ends = 2. Total = 7. 7 - 2 = 5 Blue houses. Socratic Hint: The ends take exactly 2 spots no matter how long the row is.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 6 or 4."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you add exactly one hundred to 905, what number do you get?",
+        "options": [
+            "915",
+            "955",
+            "1005",
+            "1105",
+            "1905"
+        ],
+        "correct_answer": "1005",
+        "ideal_solution": "905 + 100. Crosses the thousand line. 1005. Socratic Hint: 9 hundreds + 1 hundred is 10 hundreds. So 1000. And keep the 5.",
+        "failure_modes": {
+            "converse_error": "Student guesses 1105."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 9,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 250 - 99.",
+        "options": [
+            "150",
+            "151",
+            "161",
+            "199",
+            "349"
+        ],
+        "correct_answer": "151",
+        "ideal_solution": "250 - 100 = 150. Add 1 back: 151. Socratic Hint: Take exactly 100 away. Then realize you took 1 too many.",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 150 or 161."
+        }
+    }
+]

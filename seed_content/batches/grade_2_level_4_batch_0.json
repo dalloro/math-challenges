@@ -1,0 +1,960 @@
+[
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A book has 145 pages. You read 30 pages yesterday and 20 pages today. How many pages are left?",
+        "options": [
+            "85",
+            "90",
+            "95",
+            "100",
+            "115"
+        ],
+        "correct_answer": "95",
+        "ideal_solution": "Total read = 30 + 20 = 50. Left = 145 - 50. 140 - 50 = 90. 90 + 5 = 95. Socratic Hint: First add up the pages you already read. Then subtract from the total book.",
+        "failure_modes": {
+            "premature_calculation": "Student stops at 50.",
+            "formula_misapplication": "Student adds: 145 + 50 = 195."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 230 + 150?",
+        "options": [
+            "370",
+            "380",
+            "390",
+            "400",
+            "480"
+        ],
+        "correct_answer": "380",
+        "ideal_solution": "Add hundreds: 200 + 100 = 300. Add tens: 30 + 50 = 80. 300 + 80 = 380. Socratic Hint: Ignore the zero at the end. What is 23 + 15? Then put the zero back.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 370."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which of these shapes has the FEWEST sides?",
+        "options": [
+            "Hexagon",
+            "Pentagon",
+            "Square",
+            "Octagon",
+            "Rectangle"
+        ],
+        "correct_answer": "Square",
+        "ideal_solution": "Hexagon(6), Pentagon(5), Square(4), Octagon(8), Rectangle(4). Wait, square and rectangle both have 4. A multiple choice question should only have one right answer. I should change Rectangle to Triangle.",
+        "options": [
+            "Hexagon",
+            "Pentagon",
+            "Square",
+            "Octagon",
+            "Triangle"
+        ],
+        "correct_answer": "Triangle",
+        "question": "Which of these shapes has the FEWEST sides?",
+        "ideal_solution": "Hexagon(6), Pentagon(5), Square(4), Octagon(8), Triangle(3). Triangle has the fewest. Socratic Hint: 'Fewest' means the smallest number. Think of the sides",
+        "failure_modes": {
+            "converse_error": "Student chooses Octagon thinking 'fewest' means 'most'."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "You have 2 dollar bills, 1 quarter, and 2 dimes. How much money do you have?",
+        "options": [
+            "$2.15",
+            "$2.20",
+            "$2.35",
+            "$2.45",
+            "$3.45"
+        ],
+        "correct_answer": "$2.45",
+        "ideal_solution": "2 dollars = $2.00. 1 quarter = 25 cents. 2 dimes = 20 cents. 25 + 20 = 45. Total = $2.45. Socratic Hint: Add the cents: 25 + 10 + 10.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $2.35."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you cut a long rope into 5 smaller pieces, how many cuts did you have to make?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "10"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "1 cut makes 2 pieces. 2 cuts make 3 pieces. 4 cuts make 5 pieces. The number of cuts is always 1 less than the pieces. Socratic Hint: Draw a line. Put a dash to cut it in two. How many dashes do you need for 5 parts?",
+        "failure_modes": {
+            "converse_error": "Student guesses 5 cuts, thinking cuts = pieces."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 88 - 36?",
+        "options": [
+            "42",
+            "52",
+            "62",
+            "124",
+            "44"
+        ],
+        "correct_answer": "52",
+        "ideal_solution": "Tens: 8 - 3 = 5. Ones: 8 - 6 = 2. So 52. Socratic Hint: Subtract the ones column, then the tens column.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 324 an even or odd number?",
+        "options": [
+            "Even",
+            "Odd",
+            "Both",
+            "Neither",
+            "Depends on the hundreds digit"
+        ],
+        "correct_answer": "Even",
+        "ideal_solution": "Look at the ones digit. The ones digit is 4. Since 4 is even, 324 is even. The hundreds and tens digits don't matter. Socratic Hint: You only need to check the very last digit. Is 4 even?",
+        "failure_modes": {
+            "constraint_neglect": "Student thinks the 3 makes it odd."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "There are 4 rows of 5 students, and 1 extra student. How many students in total?",
+        "options": [
+            "20",
+            "21",
+            "24",
+            "25",
+            "26"
+        ],
+        "correct_answer": "21",
+        "ideal_solution": "4 groups of 5 = 20. 20 + 1 extra = 21. Socratic Hint: Count up the 4 rows of 5 first. Then add the 1.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 4 + 5 + 1 = 10 (not an option) or picks 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 400 - 150?",
+        "options": [
+            "200",
+            "250",
+            "300",
+            "350",
+            "450"
+        ],
+        "correct_answer": "250",
+        "ideal_solution": "400 - 100 = 300. 300 - 50 = 250. Socratic Hint: Think of 40 tens minus 15 tens.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 350."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number is missing: 200, 210, 220, 230, ___",
+        "options": [
+            "231",
+            "240",
+            "250",
+            "300",
+            "235"
+        ],
+        "correct_answer": "240",
+        "ideal_solution": "Counting by tens. 230 + 10 = 240. Socratic Hint: Only the tens digit moves up.",
+        "failure_modes": {
+            "off_by_one": "Student guesses 250."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Sarah has three 10-dollar bills and two 5-dollar bills. How much money does she have?",
+        "options": [
+            "$20",
+            "$30",
+            "$35",
+            "$40",
+            "$50"
+        ],
+        "correct_answer": "$40",
+        "ideal_solution": "10+10+10 = 30. 5+5 = 10. 30 + 10 = 40. Socratic Hint: Calculate the tens first. Then add up the fives.",
+        "failure_modes": {
+            "premature_calculation": "Student says 30."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A snake is 45 centimeters long. It grew exactly 15 centimeters. How long is the snake now?",
+        "options": [
+            "30 cm",
+            "50 cm",
+            "60 cm",
+            "70 cm",
+            "15 cm"
+        ],
+        "correct_answer": "60 cm",
+        "ideal_solution": "45 + 15 = 60. 5+5 = 10, 40+10 = 50, 50+10=60. Socratic Hint: 45 + 5 is 50. Add 10 more.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts 45 - 15 = 30."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number has 7 hundreds, 0 tens, and 8 ones?",
+        "options": [
+            "78",
+            "708",
+            "780",
+            "807",
+            "7008"
+        ],
+        "correct_answer": "708",
+        "ideal_solution": "Digits from left to right: 7, 0, 8 = 708. Socratic Hint: The middle digit must be 0 because there are zero tens.",
+        "failure_modes": {
+            "converse_error": "Student chooses 780."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you cut a square perfectly in half down the middle, what two shapes do you make? (Don't cut corner-to-corner)",
+        "options": [
+            "2 squares",
+            "2 circles",
+            "2 triangles",
+            "2 rectangles",
+            "2 ovals"
+        ],
+        "correct_answer": "2 rectangles",
+        "ideal_solution": "Cutting straight down the middle (parallel to a side) makes two rectangles, each half the width of the original square. Socratic Hint: The new shapes won't have all equal sides anymore.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 2 triangles (from a corner-to-corner cut)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 60 - 15?",
+        "options": [
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"
+        ],
+        "correct_answer": "45",
+        "ideal_solution": "60 - 10 = 50. 50 - 5 = 45. Socratic Hint: 45 + 15 = 60.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 35 or 55."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which of these numbers is between 450 and 500?",
+        "options": [
+            "449",
+            "475",
+            "505",
+            "550",
+            "400"
+        ],
+        "correct_answer": "475",
+        "ideal_solution": "Number must be > 450 and < 500. 475 meets both criteria. Socratic Hint: It has to have a 4 in the hundreds place, and a tens digit higher than 5.",
+        "failure_modes": {
+            "boundary_error": "Student picks 505."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add: 20 + 30 + 40 + 10.",
+        "options": [
+            "80",
+            "90",
+            "100",
+            "110",
+            "200"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "2+3+4+1 = 10. So 10 tens = 100. Socratic Hint: Try groups. 20+30=50. 40+10=50.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 90."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A farmer has pigs and chickens. If he counts 2 pigs and 3 chickens, how many animal LEGS are there in total?",
+        "options": [
+            "5",
+            "10",
+            "14",
+            "16",
+            "20"
+        ],
+        "correct_answer": "14",
+        "ideal_solution": "2 pigs = 2 × 4 legs = 8 legs. 3 chickens = 3 × 2 legs = 6 legs. 8 + 6 = 14 legs. Socratic Hint: How many legs does one pig have? How many legs does one chicken have?",
+        "failure_modes": {
+            "premature_calculation": "Student adds animals (2+3=5)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 100 - 20 - 20?",
+        "options": [
+            "40",
+            "60",
+            "80",
+            "120",
+            "140"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "100 - 20 = 80. 80 - 20 = 60. Socratic Hint: Think 10 minus 2, then minus 2 again.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 40."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Write the largest three-digit number possible using the digits 1, 9, 4. (Use each only once).",
+        "options": [
+            "149",
+            "194",
+            "491",
+            "914",
+            "941"
+        ],
+        "correct_answer": "941",
+        "ideal_solution": "Put the biggest digit first (9). The next biggest second (4). The smallest last (1). 941. Socratic Hint: Put the largest number in the hundreds place!",
+        "failure_modes": {
+            "order_reversal": "Student writes 149 (smallest)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 35 + 35?",
+        "options": [
+            "60",
+            "70",
+            "75",
+            "80",
+            "100"
+        ],
+        "correct_answer": "70",
+        "ideal_solution": "30 + 30 = 60. 5 + 5 = 10. 60 + 10 = 70. Socratic Hint: Double 30. Then double 5. Add them together.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 60."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A toy store had 50 bouncy balls. They sold 15 in the morning and 15 in the afternoon. How many are left?",
+        "options": [
+            "10",
+            "15",
+            "20",
+            "25",
+            "30"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "Total sold = 15 + 15 = 30. Left = 50 - 30 = 20. Socratic Hint: Find the total number of balls sold first.",
+        "failure_modes": {
+            "premature_calculation": "Student says 30 (the number sold)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which set of objects below has NO flat spots at all?",
+        "options": [
+            "A cube",
+            "A sphere",
+            "A cylinder",
+            "A cone",
+            "A pyramid"
+        ],
+        "correct_answer": "A sphere",
+        "ideal_solution": "A sphere is perfectly round. Cubes, pyramids, cylinders, and cones all have at least one flat face (base or side). Socratic Hint: Which shape rolls smoothly in every single direction?",
+        "failure_modes": {
+            "converse_error": "Student chooses a cone."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you have $1.50, and you buy a juice for 75 cents, how much change?",
+        "options": [
+            "25 cents",
+            "50 cents",
+            "75 cents",
+            "$1.00",
+            "$1.25"
+        ],
+        "correct_answer": "75 cents",
+        "ideal_solution": "1.50 = 150 cents. 75 + 75 = 150. So 150 - 75 = 75 cents. Socratic Hint: $1.50 is six quarters. 75 cents is three quarters.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 50 cents."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 10 + 15 an even or odd number?",
+        "options": [
+            "Even",
+            "Odd",
+            "Both",
+            "Neither",
+            "Depends on the day"
+        ],
+        "correct_answer": "Odd",
+        "ideal_solution": "10 + 15 = 25. 25 ends in 5, which is odd. Also, Even + Odd = Odd. Socratic Hint: Does 25 end in a 0, 2, 4, 6, or 8?",
+        "failure_modes": {
+            "converse_error": "Student guesses Even."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number is 100 more than 850?",
+        "options": [
+            "750",
+            "860",
+            "900",
+            "950",
+            "1850"
+        ],
+        "correct_answer": "950",
+        "ideal_solution": "Add 1 to the hundreds place. 8 + 1 = 9. 950. Socratic Hint: 800 + 100 is 900. Don't forget the 50.",
+        "failure_modes": {
+            "off_by_one": "Student guesses 860 (added 10)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add: 12 + 13 + 14 + 15",
+        "options": [
+            "44",
+            "54",
+            "64",
+            "45",
+            "55"
+        ],
+        "correct_answer": "54",
+        "ideal_solution": "Add tens: 10×4 = 40. Add ones: 2+3+4+5 = 14. 40+14 = 54. Socratic Hint: 2+3 is 5. 5+4 is 9. 9+5 is 14. Add that to your four tens.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 44 (forgets the ones make another ten)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Jane's birthday is in 3 weeks. How many days until her birthday?",
+        "options": [
+            "15",
+            "20",
+            "21",
+            "24",
+            "30"
+        ],
+        "correct_answer": "21",
+        "ideal_solution": "1 week = 7 days. 3 weeks = 7 + 7 + 7 = 21. Socratic Hint: Count by sevens: 7, 14, ...",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 30 (thinks of months)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "There are 55 blocks. You take away 25. How many are left?",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "35",
+            "80"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "55 - 25. Tens: 5 - 2 = 3. Ones: 5 - 5 = 0. Answer is 30. Socratic Hint: Subtract the ones, then subtract the tens.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What comes next: 9, 18, 27, 36, ___",
+        "options": [
+            "40",
+            "42",
+            "45",
+            "48",
+            "54"
+        ],
+        "correct_answer": "45",
+        "ideal_solution": "Counting by 9s. 36 + 9 = 45. (Advanced: notice the digits sum to 9). Socratic Hint: Add 10 and subtract 1.",
+        "failure_modes": {
+            "off_by_one": "Student says 42 or 48."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If you build a fence around a square garden that is 5 meters on one side, how long is the fence?",
+        "options": [
+            "5 meters",
+            "10 meters",
+            "15 meters",
+            "20 meters",
+            "25 meters"
+        ],
+        "correct_answer": "20 meters",
+        "ideal_solution": "A square has 4 sides. 5 + 5 + 5 + 5 = 20. Socratic Hint: Walk around the 4 sides. 5, 10, 15...",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 5x5=25 (area instead of perimeter)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 100 - 64",
+        "options": [
+            "24",
+            "34",
+            "36",
+            "46",
+            "44"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "100 - 60 = 40. 40 - 4 = 36. Socratic Hint: Think 64 plus what equals 100?",
+        "failure_modes": {
+            "off_by_one": "Student says 46."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A girl has 3 quarters. Her friend has 8 dimes. Who has more cents?",
+        "options": [
+            "The girl",
+            "The friend",
+            "They have the same",
+            "Cannot tell"
+        ],
+        "correct_answer": "The friend",
+        "ideal_solution": "Girl = 3 quarters = 75 cents. Friend = 8 dimes = 80 cents. 80 > 75. Therefore the friend has more. Socratic Hint: Figure out exactly how much each person has first.",
+        "failure_modes": {
+            "converse_error": "Student guesses The girl because a quarter is bigger than a dime."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 76 + 24?",
+        "options": [
+            "90",
+            "96",
+            "100",
+            "104",
+            "110"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "6 + 4 = 10. 70 + 20 = 90. 90 + 10 = 100. Socratic Hint: Add the tens, add the ones, then put them together.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 90."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 500 + 500?",
+        "options": [
+            "0",
+            "50",
+            "100",
+            "1000",
+            "500500"
+        ],
+        "correct_answer": "1000",
+        "ideal_solution": "5 hundreds + 5 hundreds = 10 hundreds = 1000. Socratic Hint: What is 5 + 5? Then add two zeros.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 100."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Three identical books stacked on top of each other are 12 inches tall. How tall is ONE book?",
+        "options": [
+            "2 inches",
+            "3 inches",
+            "4 inches",
+            "6 inches",
+            "36 inches"
+        ],
+        "correct_answer": "4 inches",
+        "ideal_solution": "What number added 3 times equals 12? 4 + 4 + 4 = 12. So 4 inches. Socratic Hint: Count up by a number three times. Try 3... 3+3+3=9. Close. Try 4.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts 12 - 3 = 9."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number comes after 899?",
+        "options": [
+            "889",
+            "890",
+            "900",
+            "901",
+            "1000"
+        ],
+        "correct_answer": "900",
+        "ideal_solution": "Counting up 1 from 899 rolls the 99 over to 00, and increases the 8 to 9. 900. Socratic Hint: Think of money. What comes right after $8.99? Nine dollars.",
+        "failure_modes": {
+            "off_by_one": "Student says 901."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 8 + 7 + 5 + 2?",
+        "options": [
+            "20",
+            "21",
+            "22",
+            "23",
+            "24"
+        ],
+        "correct_answer": "22",
+        "ideal_solution": "8+2 = 10. 7+5 = 12. 10 + 12 = 22. Socratic Hint: Group the 8 and 2. Group the 7 and 5.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add 4 tens and 15 ones.",
+        "options": [
+            "19",
+            "45",
+            "55",
+            "415",
+            "65"
+        ],
+        "correct_answer": "55",
+        "ideal_solution": "4 tens = 40. 15 ones = 15. 40 + 15 = 55. Socratic Hint: Fifteen ones is actually 1 ten and 5 ones. Add that to the 4 tens.",
+        "failure_modes": {
+            "converse_error": "Student mixes place values to get 415."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A pattern goes: Triangle, Square, Circle, Triangle, Square, Circle. What is the 8th shape?",
+        "options": [
+            "Triangle",
+            "Square",
+            "Circle",
+            "Pentagon"
+        ],
+        "correct_answer": "Square",
+        "ideal_solution": "1:T, 2:S, 3:C. 4:T, 5:S, 6:C. 7:T, 8:S. Socratic Hint: Say the whole pattern out loud to 8.",
+        "failure_modes": {
+            "off_by_one": "Student guesses Triangle."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "You have 100 stickers. You give away 15. Then you give away 15 more. How many stickers do you have now?",
+        "options": [
+            "60",
+            "70",
+            "75",
+            "85",
+            "130"
+        ],
+        "correct_answer": "70",
+        "ideal_solution": "15 + 15 = 30 given away total. 100 - 30 = 70. Socratic Hint: How many did you give away altogether?",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 60."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Calculate: 90 + 20.",
+        "options": [
+            "100",
+            "110",
+            "120",
+            "190",
+            "920"
+        ],
+        "correct_answer": "110",
+        "ideal_solution": "9 + 2 = 11. So 9 tens + 2 tens = 11 tens. 110. Socratic Hint: Just count up by ten twice from 90.",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 100 or 920."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many corners do 3 triangles and 1 rectangle have together?",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14"
+        ],
+        "correct_answer": "13",
+        "ideal_solution": "Triangles = 3 corners each. 3 × 3 = 9. Rectangle = 4 corners. 9 + 4 = 13. Socratic Hint: Try drawing them and counting every single point.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 10."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "There are exactly 24 hours in one day. How many hours in two days?",
+        "options": [
+            "12",
+            "24",
+            "48",
+            "60",
+            "72"
+        ],
+        "correct_answer": "48",
+        "ideal_solution": "24 + 24 = 48. Socratic Hint: Double 24.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 12 (half a day)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract 35 from 60.",
+        "options": [
+            "15",
+            "20",
+            "25",
+            "30",
+            "35"
+        ],
+        "correct_answer": "25",
+        "ideal_solution": "60 - 30 = 30. 30 - 5 = 25. Socratic Hint: Think: 35 + what equals 60?",
+        "failure_modes": {
+            "off_by_one": "Student says 35 or 15."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Count forward by 2s: 148, 150, 152, ___",
+        "options": [
+            "153",
+            "154",
+            "156",
+            "160",
+            "200"
+        ],
+        "correct_answer": "154",
+        "ideal_solution": "152 + 2 = 154. Socratic Hint: What is 2 + 2?",
+        "failure_modes": {
+            "off_by_one": "Student says 153."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A boy has 12 apples. He wants to put 4 apples in each basket. How many baskets does he need?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "8",
+            "48"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "Count by 4s to 12. 4, 8, 12. That's 3 baskets. Socratic Hint: 4 + 4 + 4 equals 12. So how many groups of 4?",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts 12 - 4 = 8."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 79 - 29?",
+        "options": [
+            "40",
+            "49",
+            "50",
+            "60"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "Tens: 7 - 2 = 5. Ones: 9 - 9 = 0. Answer is 50. Socratic Hint: The ones digit is exactly the same, so they cancel out.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 108."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you have 10 dimes, how many dollars is that equal to?",
+        "options": [
+            "0 dollars",
+            "1 dollar",
+            "10 dollars",
+            "100 dollars",
+            "Cannot tell"
+        ],
+        "correct_answer": "1 dollar",
+        "ideal_solution": "A dime is 10 cents. 10 dimes = 10 × 10 = 100 cents = 1 dollar. Socratic Hint: Count up by tens 10 times.",
+        "failure_modes": {
+            "converse_error": "Student mixes up coins and thinks 10 dollars."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 500 + 350?",
+        "options": [
+            "800",
+            "850",
+            "900",
+            "950",
+            "8500"
+        ],
+        "correct_answer": "850",
+        "ideal_solution": "Add hundreds: 500 + 300 = 800. Add the 50. 850. Socratic Hint: Cover up the 50. What is 500 + 300?",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 800."
+        }
+    }
+]

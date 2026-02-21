@@ -1,0 +1,947 @@
+[
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 45.6 ÷ 100?",
+        "options": [
+            "4.56",
+            "0.456",
+            "456",
+            "4560",
+            "0.0456"
+        ],
+        "correct_answer": "0.456",
+        "ideal_solution": "Dividing by 100 shifts the decimal point two places to the left. 45.6 -> 0.456. Socratic Hint: There are two zeroes in 100, so move the dot two hops to make the number smaller.",
+        "failure_modes": {
+            "formula_misapplication": "Student moves the decimal right to get 4560."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 5/6 - 2/6",
+        "options": [
+            "3/12",
+            "1/3",
+            "1/2",
+            "2/3",
+            "7/6"
+        ],
+        "correct_answer": "1/2",
+        "ideal_solution": "Subtract numerators: 5 - 2 = 3. Keep denominator: 3/6. 3/6 simplifies to 1/2.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts denominators: 3/0."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If I add 4 to a number and then multiply by 3, I get 27. What was my number?",
+        "options": [
+            "5",
+            "9",
+            "10",
+            "4",
+            "23"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Work backwards. 27 ÷ 3 = 9. 9 - 4 = 5. Check: (5+4)*3 = 9*3 = 27. Socratic Hint: What number times 3 is 27? Okay, then what number plus 4 gets you there?",
+        "failure_modes": {
+            "formula_misapplication": "Student does 27 - 4 = 23."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A right rectangular prism is 3 cm by 5 cm, and its volume is 60 cubic cm. What is its height?",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "12",
+            "15"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Volume = L × W × H. 60 = 3 × 5 × H. 60 = 15 × H. 60 ÷ 15 = 4. Socratic Hint: First multiply 3 and 5. Then ask: 15 times what equals 60?",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 60 / 5 = 12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 20 - (5 + 3) × 2?",
+        "options": [
+            "24",
+            "12",
+            "4",
+            "10",
+            "15"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Parentheses: 5 + 3 = 8. Multiply: 8 × 2 = 16. Subtract: 20 - 16 = 4. Socratic Hint: Do the grouping (5+3) first. Then multiply. Subtracting is the very last step.",
+        "failure_modes": {
+            "formula_misapplication": "Student does 20 - 8 = 12, then 12 × 2 = 24."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which fraction is the largest?",
+        "options": [
+            "1/2",
+            "3/8",
+            "2/5",
+            "3/4",
+            "5/8"
+        ],
+        "correct_answer": "3/4",
+        "ideal_solution": "Convert to common denominator 40, or decimals: 0.5, 0.375, 0.4, 0.75, 0.625. 3/4 = 0.75 is largest. Socratic Hint: Three quarters is 75 cents. Are any of the others worth more than 75 cents?",
+        "failure_modes": {
+            "converse_error": "Student guesses 5/8 because 5 and 8 are big numbers."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add perfectly: $12.45 + $3.65",
+        "options": [
+            "$15.10",
+            "$16.10",
+            "$16.00",
+            "$15.00",
+            "$16.20"
+        ],
+        "correct_answer": "$16.10",
+        "ideal_solution": "45 + 65 = 110 cents ($1.10). 12 + 3 = 15 dollars. 15.00 + 1.10 = $16.10. Socratic Hint: Take 5 cents from the 45 and give it to the 65. Now you have 40 and 70.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets $15.10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Multiply 0.03 × 1000.",
+        "options": [
+            "0.3",
+            "3",
+            "30",
+            "300",
+            "0.0003"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "1000 has three zeroes. Move decimal three places right: 0.03 -> 0.3 -> 3. -> 30. Socratic Hint: Three zeroes means three hops to the right.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 3 (two hops only)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A train travels at 60 miles per hour. How far does it go in 2 and a half hours?",
+        "options": [
+            "120 miles",
+            "130 miles",
+            "140 miles",
+            "150 miles",
+            "160 miles"
+        ],
+        "correct_answer": "150 miles",
+        "ideal_solution": "1 hour = 60. 2 hours = 120. Half hour = 30. 120 + 30 = 150. Socratic Hint: How far does it go in 2 hours? Then add how far it goes in 30 minutes (a half hour).",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 120 or 140."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many total faces does a rectangular prism have?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "12"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Front/back (2), top/bottom (2), left/right (2). 2+2+2=6. Socratic Hint: It's shaped exactly like a brick or a cereal box.",
+        "failure_modes": {
+            "converse_error": "Student guesses 8 (vertices) or 12 (edges)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is exactly 4.0 - 0.04?",
+        "options": [
+            "3.96",
+            "3.06",
+            "3.6",
+            "4.04",
+            "3.90"
+        ],
+        "correct_answer": "3.96",
+        "ideal_solution": "Think 400 hundredths minus 4 hundredths = 396 hundredths = 3.96. Socratic Hint: Think of $4.00 minus 4 pennies.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 3.6 or 4.04."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 5/3 a proper fraction, an improper fraction, or a whole number?",
+        "options": [
+            "Proper fraction",
+            "Improper fraction",
+            "Whole number",
+            "Cannot tell"
+        ],
+        "correct_answer": "Improper fraction",
+        "ideal_solution": "Numerator (5) > Denominator (3), so it is greater than 1, making it improper. Socratic Hint: When the top number is bigger than or equal to the bottom number, it's 'improper'.",
+        "failure_modes": {
+            "converse_error": "Student guesses Proper because both numbers are small."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 100/100 expressed as a decimal?",
+        "options": [
+            "0.01",
+            "0.10",
+            "1.0",
+            "100.0",
+            "10.0"
+        ],
+        "correct_answer": "1.0",
+        "ideal_solution": "100 divided by 100 is exactly 1. As a decimal, that is 1.0. Socratic Hint: Any number over itself is exactly one.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 0.01."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Write 'two and three hundredths' as a decimal.",
+        "options": [
+            "2.3",
+            "2.03",
+            "2.003",
+            "23.0",
+            "0.23"
+        ],
+        "correct_answer": "2.03",
+        "ideal_solution": "2 whole units. The 3 must go in the hundredths place (second after decimal). 2.03. Socratic Hint: 'Hundredths' means two spots to the right of the dot.",
+        "failure_modes": {
+            "converse_error": "Student writes 2.3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If x = 5, evaluate 2x + 4.",
+        "options": [
+            "9",
+            "11",
+            "14",
+            "29",
+            "10"
+        ],
+        "correct_answer": "14",
+        "ideal_solution": "2x means 2 × 5 = 10. 10 + 4 = 14. Socratic Hint: Substitute the 5 in for the x. 2 times 5 plus 4.",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks 2x means 25, so 25+4=29."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A dozen eggs cost $3.60. How much is ONE egg exactly?",
+        "options": [
+            "10 cents",
+            "20 cents",
+            "30 cents",
+            "36 cents",
+            "40 cents"
+        ],
+        "correct_answer": "30 cents",
+        "ideal_solution": "A dozen is 12. 3.60 ÷ 12. 36 ÷ 12 = 3. So 0.30 or 30 cents. Socratic Hint: 12 times WHAT equals 36?",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 36 cents."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 1/2 × 3",
+        "options": [
+            "1.5",
+            "3.5",
+            "1/6",
+            "2/3",
+            "3/6"
+        ],
+        "correct_answer": "1.5",
+        "ideal_solution": "1/2 × 3 = 3/2 = 1.5. Socratic Hint: Three halves of a pizza is one and a half pizzas.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 1/6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which of these pairs of lines never ever intersect, no matter how far they go?",
+        "options": [
+            "Perpendicular lines",
+            "Parallel lines",
+            "Intersecting lines",
+            "Ray and Segment"
+        ],
+        "correct_answer": "Parallel lines",
+        "ideal_solution": "By definition, parallel lines stay exactly the same distance apart forever. Socratic Hint: Think of railroad tracks.",
+        "failure_modes": {
+            "converse_error": "Student guesses Perpendicular."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 7/10 written as a decimal?",
+        "options": [
+            "0.07",
+            "0.7",
+            "7.0",
+            "0.710",
+            "1.7"
+        ],
+        "correct_answer": "0.7",
+        "ideal_solution": "The 7 goes directly into the tenths place. 0.7. Socratic Hint: Read it out loud: 'Seven tenths'.",
+        "failure_modes": {
+            "converse_error": "Student guesses 0.07 (hundredths)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 10.5 - 2.25",
+        "options": [
+            "8.25",
+            "8.75",
+            "12.75",
+            "8.5",
+            "7.25"
+        ],
+        "correct_answer": "8.25",
+        "ideal_solution": "Think 10.50 - 2.25. 10 - 2 = 8. .50 - .25 = .25. Result: 8.25. Socratic Hint: Line up the dots. Put a zero after the 5 to make it .50.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 8.75 or 8.5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If yesterday was 3 days before Friday, what day is tomorrow?",
+        "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "correct_answer": "Thursday",
+        "ideal_solution": "3 days before Fri = Tuesday. Yesterday = Tue. Today = Wed. Tomorrow = Thursday. Socratic Hint: Work step by step. First find what day is 3 days before Friday.",
+        "failure_modes": {
+            "off_by_one": "Student guesses Wednesday (today) or Tuesday (yesterday)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is half of 1/2?",
+        "options": [
+            "1",
+            "1/4",
+            "1/8",
+            "1/3",
+            "4"
+        ],
+        "correct_answer": "1/4",
+        "ideal_solution": "1/2 ÷ 2 = 1/4. Or 1/2 × 1/2 = 1/4. Socratic Hint: Half of fifty cents is a quarter (25 cents).",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 1."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 40 ÷ 0.5?",
+        "options": [
+            "20",
+            "40",
+            "60",
+            "80",
+            "100"
+        ],
+        "correct_answer": "80",
+        "ideal_solution": "Dividing by 0.5 is the same as multiplying by 2. How many halves are in 40 wholes? 80. Socratic Hint: How many half-dollars are in 40 whole dollars?",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 40 × 0.5 = 20."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangle is 8 inches long and its area is 40 sq inches. What is its perimeter?",
+        "options": [
+            "13",
+            "26",
+            "20",
+            "40",
+            "48"
+        ],
+        "correct_answer": "26",
+        "ideal_solution": "Area = L × W. 40 = 8 × W so W = 5. Perimeter = 8+8+5+5 = 26. Socratic Hint: Find the width first. What times 8 equals 40? Then add up all four sides.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 13 (L+W only)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which represents 'thirty-five thousandths'?",
+        "options": [
+            "35.000",
+            "0.35",
+            "0.035",
+            "0.0035",
+            "3.0005"
+        ],
+        "correct_answer": "0.035",
+        "ideal_solution": "Thousandths is 3 decimal places. The '35' must end in the 3rd spot. So 0.035. Socratic Hint: It needs exactly three numbers to the right of the dot.",
+        "failure_modes": {
+            "converse_error": "Student guesses 0.35 (hundredths)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 5% expressed as a decimal?",
+        "options": [
+            "0.5",
+            "0.05",
+            "5.0",
+            "0.005",
+            "50.0"
+        ],
+        "correct_answer": "0.05",
+        "ideal_solution": "5% means 5 per 100, which is 5 hundredths (0.05). Socratic Hint: Percent means 'out of 100'. So write 5 hundredths.",
+        "failure_modes": {
+            "converse_error": "Student chooses 0.5 (which is 50%)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A sequence goes 1.2, 1.5, 1.8, 2.1... What is the next number?",
+        "options": [
+            "2.2",
+            "2.3",
+            "2.4",
+            "2.5",
+            "2.8"
+        ],
+        "correct_answer": "2.4",
+        "ideal_solution": "Adding 0.3 each step. 2.1 + 0.3 = 2.4. Socratic Hint: Look at the tenths. 2, 5, 8, 11 (which carries to 2.1)... add 3 tenths every time.",
+        "failure_modes": {
+            "off_by_one": "Student says 2.3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 10 + 10 × 0",
+        "options": [
+            "0",
+            "10",
+            "20",
+            "100",
+            "1"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Multiplication first: 10 × 0 = 0. Addition: 10 + 0 = 10. Socratic Hint: ALWAYS multiply before adding.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds first (20 × 0 = 0)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3/4 - 1/8?",
+        "options": [
+            "2/4",
+            "5/8",
+            "2/8",
+            "1/2",
+            "7/8"
+        ],
+        "correct_answer": "5/8",
+        "ideal_solution": "Convert 3/4 to 6/8. 6/8 - 1/8 = 5/8. Socratic Hint: Change the fourths into eighths. If you have 3 quarters, it's like having 6 chunks of eighths.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 6/8 - 1/8 = 7/8."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many degrees are in a straight line?",
+        "options": [
+            "90",
+            "180",
+            "270",
+            "360",
+            "45"
+        ],
+        "correct_answer": "180",
+        "ideal_solution": "A straight angle is exactly 180 degrees. Socratic Hint: It's exactly half of a full circle.",
+        "failure_modes": {
+            "converse_error": "Student guesses 360 or 90."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3.14 × 10?",
+        "options": [
+            "0.314",
+            "31.4",
+            "314",
+            "3140",
+            "3.140"
+        ],
+        "correct_answer": "31.4",
+        "ideal_solution": "Multiplying by 10 moves the decimal exactly one spot right. 31.4. Socratic Hint: One zero in 10 means one hop for the dot to make the number bigger.",
+        "failure_modes": {
+            "formula_misapplication": "Student moves left to get 0.314."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you divide $5.00 evenly among 4 friends, how much does each get?",
+        "options": [
+            "$1.00",
+            "$1.20",
+            "$1.25",
+            "$1.50",
+            "$2.00"
+        ],
+        "correct_answer": "$1.25",
+        "ideal_solution": "5.00 ÷ 4. 4.00 ÷ 4 = $1.00. $1.00 remaining is 4 quarters (25 cents). Total $1.25. Socratic Hint: Give everyone a dollar first! Now you have $1.00 left over to share.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses $1.50."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "How many centimeters in 3.5 meters?",
+        "options": [
+            "35",
+            "350",
+            "3500",
+            "0.035",
+            "3.005"
+        ],
+        "correct_answer": "350",
+        "ideal_solution": "1 m = 100 cm. 3.5 × 100 = 350. Socratic Hint: Multiply 3.5 by 100.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 35."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In a box, there are 5 bags. Inside each bag there are 5 marbles. How many marbles in total?",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "20",
+            "25"
+        ],
+        "correct_answer": "25",
+        "ideal_solution": "5 bags × 5 marbles/bag = 25 marbles. Socratic Hint: Multiply the number of bags by what's inside.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 4 + 8 ÷ 2 - 1",
+        "options": [
+            "5",
+            "7",
+            "3",
+            "9",
+            "4"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "Division first: 8 ÷ 2 = 4. Add: 4 + 4 = 8. Subtract: 8 - 1 = 7. Socratic Hint: Do the division before anything else.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds first: 12 ÷ 2 - 1 = 5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1.5 × 4?",
+        "options": [
+            "4",
+            "5",
+            "5.5",
+            "6",
+            "6.5"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "1.5 × 2 = 3. 3 × 2 = 6. Socratic Hint: What is one and a half, plus one and a half? Then double it!",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Write 2/4 as a decimal.",
+        "options": [
+            "0.24",
+            "0.42",
+            "0.5",
+            "0.2",
+            "4.2"
+        ],
+        "correct_answer": "0.5",
+        "ideal_solution": "2/4 simplifies to 1/2, which is 0.5. Socratic Hint: Two fourths is the exact same as one half.",
+        "failure_modes": {
+            "converse_error": "Student guesses 0.24."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A right triangle has a 90-degree angle. If a second angle is 40 degrees, what is the third angle?",
+        "options": [
+            "40 degrees",
+            "50 degrees",
+            "60 degrees",
+            "90 degrees",
+            "100 degrees"
+        ],
+        "correct_answer": "50 degrees",
+        "ideal_solution": "All three angles must equal 180. 90 + 40 = 130. 180 - 130 = 50. Socratic Hint: Together, all three angles must equal 180. The first two add up to 130.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 60 degrees."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 100 - 9.9?",
+        "options": [
+            "90",
+            "90.1",
+            "90.9",
+            "91.1",
+            "91.9"
+        ],
+        "correct_answer": "90.1",
+        "ideal_solution": "100.0 - 9.9. 100 - 10 = 90. Give back 0.1. 90.1. Socratic Hint: Pretend it's $100.00 minus $9.90.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 91.1 (100 - 9)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Compare: 0.12 ___ 0.2",
+        "options": [
+            ">",
+            "<",
+            "=",
+            "Cannot tell"
+        ],
+        "correct_answer": "<",
+        "ideal_solution": "0.2 is the same as 0.20. 0.12 is twelve hundredths, which is less than 0.20 (twenty hundredths). Socratic Hint: Write a zero after the 2 to make them the same length. 0.12 vs 0.20.",
+        "failure_modes": {
+            "converse_error": "Student guesses > because 12 is visually bigger than 2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Calculate: (1/3) × 9",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "6",
+            "9/3"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "9/3 = 3. One third of nine is three. Socratic Hint: Break 9 into 3 equal pieces.",
+        "failure_modes": {
+            "premature_calculation": "Student selects 9/3 (unsimplified)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If day 1 is Monday, what is day 15?",
+        "options": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "correct_answer": "Monday",
+        "ideal_solution": "Weeks are 7 days. Day 1, 8, 15 are all Mondays. Socratic Hint: Add 7 days to get to the same day next week. 1 + 7 = 8. 8 + 7 = ?",
+        "failure_modes": {
+            "off_by_one": "Student says Tuesday."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 1000 - 450",
+        "options": [
+            "450",
+            "500",
+            "550",
+            "600",
+            "650"
+        ],
+        "correct_answer": "550",
+        "ideal_solution": "100 - 45 = 55. Add zero: 550. Socratic Hint: Take away 400 first (you're at 600). Now drop 50.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 650."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Does a hexagon have more sides than a pentagon?",
+        "options": [
+            "Yes",
+            "No",
+            "They have the same",
+            "Depends on the size"
+        ],
+        "correct_answer": "Yes",
+        "ideal_solution": "Hexagon = 6 sides. Pentagon = 5 sides. Socratic Hint: 'Hex' sounds like 'Six'.",
+        "failure_modes": {
+            "converse_error": "Student guesses No."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 5.09 larger than 5.1?",
+        "options": [
+            "Yes",
+            "No",
+            "They are equal",
+            "Cannot tell"
+        ],
+        "correct_answer": "No",
+        "ideal_solution": "5.1 is equivalent to 5.10. 5.10 > 5.09. Socratic Hint: Write a zero after the 1 to make it 5.10. Now compare.",
+        "failure_modes": {
+            "converse_error": "Student guesses Yes because 9 is larger than 1."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 100 ÷ 4",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "40",
+            "50"
+        ],
+        "correct_answer": "25",
+        "ideal_solution": "4 quarters make $1.00. 100 ÷ 4 = 25. Socratic Hint: Think of quarters in a dollar.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 20."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2/5 written as a decimal?",
+        "options": [
+            "0.25",
+            "0.4",
+            "0.2",
+            "2.5",
+            "0.5"
+        ],
+        "correct_answer": "0.4",
+        "ideal_solution": "2/5 represents 4/10. 4/10 is exactly 0.4. Socratic Hint: Multiply the top and bottom by 2 so the bottom is 10.",
+        "failure_modes": {
+            "converse_error": "Student guesses 0.25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A string is folded perfectly in half. In that folded state, it is 8 inches long. When fully unfolded, how long is it?",
+        "options": [
+            "4 inches",
+            "8 inches",
+            "12 inches",
+            "16 inches",
+            "32 inches"
+        ],
+        "correct_answer": "16 inches",
+        "ideal_solution": "Folded means 2 identical layers of 8. Unfolded = 8 × 2 = 16. Socratic Hint: If half of it is 8 inches long, the whole thing is double that.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 4 (divides instead of multiplies)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "What is the volume of a 5x2x10 rectangular base prism?",
+        "options": [
+            "17",
+            "34",
+            "50",
+            "100",
+            "200"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "Volume = 5 × 2 × 10 = 10 × 10 = 100. Socratic Hint: 5 times 2 is exactly 10. Then multiply by 10.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds them: 5+2+10=17."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 2,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Solve: $20.00 - $14.50",
+        "options": [
+            "$4.50",
+            "$5.00",
+            "$5.50",
+            "$6.00",
+            "$6.50"
+        ],
+        "correct_answer": "$5.50",
+        "ideal_solution": "20.00 - 14.00 = 6.00. 6.00 - 0.50 = 5.50. Socratic Hint: $14.50 plus $5.50 equals $20.00.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $6.50 (forgets borrowing from the dollar)."
+        }
+    }
+]

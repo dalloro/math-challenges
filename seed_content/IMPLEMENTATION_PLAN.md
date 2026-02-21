@@ -90,7 +90,14 @@ On resume, the pipeline:
 2. Reloads all completed batch files from `batches/`
 3. Continues from where it left off
 
-## Verification Plan
+### Post-Generation Validation (Per Batch)
+Immediately after generating a batch file (e.g., `grade_X_level_Y_batch_Z.json`), you MUST run a validation test to ensure structural integrity and rule compliance. 
+- Run `node scripts/validate_batch.js seed_content/batches/filename.json` (or equivalent python script) to check:
+    - Valid JSON format.
+    - Exactly 50 questions in the array.
+    - Exactly 3 distinct failure modes per question.
+    - `correct_answer` strictly matches one of the items in `options`.
+    - Required fields are present.
 
 ### Automated Checks (after each grade completes)
 - Validate each `seed_grade_X.json` is valid JSON
@@ -99,6 +106,7 @@ On resume, the pipeline:
 - Check no duplicate `question` fields within a file
 - Verify all required JSON fields are present (`grade`, `level`, `difficulty`, `type`, `question`, `options`, `correct_answer`, `ideal_solution`, `failure_modes`)
 - Verify `correct_answer` is contained in `options`
+- Verify exactly 3 failure modes are present in `failure_modes` for every question
 
 ### Spot Check
 - Manually review a sample of questions from different grades/levels for quality

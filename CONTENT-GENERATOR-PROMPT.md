@@ -31,7 +31,7 @@ Refer to `seed_content/CURRICULUM_GUIDE.md` for the exact CCSS-based topic scope
 
 # Domain & Registry Constraints
 - Types: You must assign each question exactly one type: ["logic", "arithmetic", "geometry", "algebra", "number_theory"].
-- Failure Modes: You must select 1 to 3 keys from this list for the JSON 'failure_modes' field:
+- Failure Modes: You MUST select EXACTLY 3 distinct keys from this list for the JSON 'failure_modes' field. Every single question must have exactly 3 failure modes.
     - `arithmetic_slip`: Basic calculation error.
     - `sign_reversal`: Positive/negative sign error.
     - `boundary_error`: Endpoint/range inclusion error.
@@ -52,6 +52,7 @@ Refer to `seed_content/CURRICULUM_GUIDE.md` for the exact CCSS-based topic scope
 5. EXACT MATCHING: The `correct_answer` field must be an EXACT character-for-character match with one of the items in the `options` array.
 6. HYBRID SOLUTION: The `ideal_solution` must contain a direct mathematical derivation followed by a "Socratic Hint" section designed to lead the student to the answer without giving it away.
 7. LOGIC VERIFICATION: Solve the problem twice using different methods internally before generating the JSON to ensure accuracy.
+8. EXACT COUNT: You MUST generate exactly {count} complete questions in the JSON array. Do not stop early.
 
 # Output Format
 Respond ONLY with a JSON array. Do not include introductory text, explanations, or markdown code blocks (e.g., no ```json).
@@ -69,7 +70,8 @@ Respond ONLY with a JSON array. Do not include introductory text, explanations, 
     "ideal_solution": "To find the smallest integer divisible by a set of numbers, find the Least Common Multiple (LCM). Prime factors: 2=2, 3=3, 4=2^2, 5=5, 6=2*3. LCM = 2^2 * 3 * 5 = 60. Socratic Hint: Think about the smallest number that 'contains' all these prime factors at once.",
     "failure_modes": {
       "arithmetic_slip": "Student multiplies all numbers (2*3*4*5*6) to get 720, failing to use LCM logic.",
-      "undercounting": "Student picks 30, failing to check divisibility for 4 and 6."
+      "undercounting": "Student picks 30, failing to check divisibility for 4 and 6.",
+      "premature_calculation": "Student stops after listing the prime factors and guesses a random option."
     }
   }
 ]

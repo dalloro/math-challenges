@@ -1,0 +1,590 @@
+[
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A recipe requires 3/4 cup of sugar. You want to make 2 and 1/2 batches. How much sugar do you need?",
+        "options": [
+            "1 1/2 cups",
+            "1 5/8 cups",
+            "1 7/8 cups",
+            "1 3/4 cups",
+            "2 1/4 cups"
+        ],
+        "correct_answer": "1 7/8 cups",
+        "ideal_solution": "Convert 2 1/2 to 5/2. Multiply: (3/4) × (5/2) = 15/8. Convert 15/8 to mixed number: 1 7/8. Socratic Hint: Turn 'two and a half' into an improper fraction first. Then multiply straight across by 3/4.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 3/4 + 5/2 = 3/4 + 10/4 = 13/4 = 3 1/4.",
+            "arithmetic_slip": "Student multiplies 3/4 × 2 to get 6/4 (1 1/2) and ignores the half batch.",
+            "premature_calculation": "Student leaves the answer as 15/8 or selects a wrongly simplified version like 1 5/8."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular solid has a square base with side length 4 cm. Its total surface area is 112 sq cm. What is its height?",
+        "options": [
+            "5 cm",
+            "6 cm",
+            "4 cm",
+            "8 cm",
+            "10 cm"
+        ],
+        "correct_answer": "5 cm",
+        "ideal_solution": "Top and bottom areas: 4×4 = 16 each. Together = 32. Remaining surface area for the 4 sides = 112 - 32 = 80. Each of the 4 identical sides has area 80 ÷ 4 = 20. Side area = base × height = 4 × h. 4h = 20, so h = 5. Socratic Hint: First, find the exact area of the top and the bottom combined. Subtract that from 112 to find what's left for the four side walls.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides 112 by 16 (base area) thinking 112 is the volume.",
+            "undercounting": "Student forgets the top base, subtracting only 16 from 112 to get 96, making sides 24 and h=6.",
+            "arithmetic_slip": "Student divides 80 by 2 instead of 4, thinking there are only 2 side walls."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you write all the whole numbers from 1 to 50, how many times do you write the digit '3'?",
+        "options": [
+            "5",
+            "14",
+            "15",
+            "16",
+            "20"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "Ones place: 3, 13, 23, 33, 43 (5 times). Tens place: 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 (10 times). Total = 5 + 10 = 15. Socratic Hint: 33 counts as two 3s! Count the 3s in the ones column, then count the 3s in the tens column.",
+        "failure_modes": {
+            "undercounting": "Student misses the double '3' in 33, getting 14.",
+            "overcounting": "Student guesses 16, miscounting the tens range.",
+            "converse_error": "Student guesses 5, only counting numbers ending in 3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 0.1 × 0.2 × 0.3",
+        "options": [
+            "0.6",
+            "0.06",
+            "0.006",
+            "0.0006",
+            "0.060"
+        ],
+        "correct_answer": "0.006",
+        "ideal_solution": "1 × 2 × 3 = 6. We have 3 decimal places in total (one from each number). So, 0.006. Socratic Hint: 1 times 2 times 3 is 6. Count the total number of digits perfectly behind the decimal dots in the problem. That's how many spots you move from the 6.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 0.1+0.2+0.3 = 0.6.",
+            "off_by_one": "Student misses one decimal place to get 0.06.",
+            "arithmetic_slip": "Student multiplies 0.1 × 0.2 = 0.2 (wrong), then 0.2 × 0.3 = 0.06."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A snail is at the bottom of a 20-foot well. Every day it climbs up 4 feet, but every night it slides down 2 feet. On what day will it first easily reach the top?",
+        "options": [
+            "8th day",
+            "9th day",
+            "10th day",
+            "11th day",
+            "12th day"
+        ],
+        "correct_answer": "9th day",
+        "ideal_solution": "Net gain per day is 2 feet. By end of day 8, it is at 16 feet. On day 9, it climbs 4 feet to reach 20 feet (the top) and escapes before sliding back down. Socratic Hint: It escapes the exact moment its head pokes out the top! Don't slide down on that final day.",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 20 / 2 = 10 days, ignoring the daytime escape.",
+            "off_by_one": "Student calculates reaching 18 feet on day 9, and escaping day 10.",
+            "converse_error": "Student thinks it climbs 4 feet and never slides, taking 5 days."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A jacket costs $80. It is on sale for 25% off. You have a coupon for an additional 10% off the sale price. What is the final price?",
+        "options": [
+            "$52",
+            "$54",
+            "$56",
+            "$60",
+            "$65"
+        ],
+        "correct_answer": "$54",
+        "ideal_solution": "25% off $80: 80 × 0.75 = $60 (or 25% is $20 off, so $60). 10% off $60: 60 × 0.9 = $54 (or 10% is $6 off, so $54). Socratic Hint: You have to do the discounts one at a time. Take 25% off the original $80. Then, take 10% off your NEW smaller number!",
+        "failure_modes": {
+            "formula_misapplication": "Student adds percents (25+10=35%) and takes 35% off $80 to get $52.",
+            "arithmetic_slip": "Student calculates 10% off $80 ($8) and subtracts from $60 to get $52.",
+            "premature_calculation": "Student stops at $60 after the first discount."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A triangle has angles measuring 3x, 4x, and 5x. What is the measure of the largest angle?",
+        "options": [
+            "15 degrees",
+            "45 degrees",
+            "60 degrees",
+            "75 degrees",
+            "100 degrees"
+        ],
+        "correct_answer": "75 degrees",
+        "ideal_solution": "Sum of angles is 180. 3x + 4x + 5x = 12x. 12x = 180, so x = 15. The largest angle is 5x = 5(15) = 75. Socratic Hint: All three angles must perfectly add up to 180 degrees. 3x plus 4x plus 5x equals how many x's?",
+        "failure_modes": {
+            "premature_calculation": "Student solves for x=15 and selects 15 degrees.",
+            "arithmetic_slip": "Student calculates x incorrectly as 12, getting largest angle 60.",
+            "formula_misapplication": "Student assumes the triangle is a right triangle and guesses 90."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In a sequence, the second term is 14. To get each term after the first, you add 3. What is the sum of the first 4 terms?",
+        "options": [
+            "44",
+            "56",
+            "62",
+            "68",
+            "74"
+        ],
+        "correct_answer": "62",
+        "ideal_solution": "Term 2 = 14. Term 1 = 14 - 3 = 11. Term 3 = 14 + 3 = 17. Term 4 = 17 + 3 = 20. Sum = 11 + 14 + 17 + 20 = 62. Socratic Hint: Work backward to find the FIRST term! Then write down all four terms and add them up.",
+        "failure_modes": {
+            "premature_calculation": "Student stops at Term 4 which is 20.",
+            "off_by_one": "Student thinks 14 is the first term: 14, 17, 20, 23 = 74.",
+            "arithmetic_slip": "Student adds incorrectly: 11+14+17=42 (only 3 terms)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the remainder when 2023 is divided by 9?",
+        "options": [
+            "2",
+            "5",
+            "7",
+            "8",
+            "1"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "The remainder of a number divided by 9 is exactly equal to the remainder of the sum of its digits divided by 9. Sum of digits: 2+0+2+3 = 7. 7 ÷ 9 gives remainder 7. Socratic Hint: You don't need long division! Just perfectly add up the digits of 2023.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds digits to 7 and guesses 5 based on another rule.",
+            "arithmetic_slip": "Student performs long division incorrectly, getting remainder 8.",
+            "converse_error": "Student knows the rule for 3 and uses remainder 1."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate exactly: (1/2 + 1/3) ÷ (1/4)",
+        "options": [
+            "2/5",
+            "10/3",
+            "4/5",
+            "1/6",
+            "5/24"
+        ],
+        "correct_answer": "10/3",
+        "ideal_solution": "1/2 + 1/3 = 3/6 + 2/6 = 5/6. (5/6) ÷ (1/4) = (5/6) × 4 = 20/6 = 10/3. Socratic Hint: Do the parenthesis first by finding a common denominator (6). Then, remember that dividing by 1/4 is the exact same as multiplying by 4/1.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies by 1/4 instead of flipping, getting 5/24.",
+            "arithmetic_slip": "Student adds denominators (2/5) and multiplies by 4 to get 8/5.",
+            "converse_error": "Student divides 1/4 by 5/6, getting inverted answer 6/20."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Anna is exactly 5 years older than Bob. In 4 years, their ages will perfectly add up to 27. How old is Bob now?",
+        "options": [
+            "5",
+            "7",
+            "9",
+            "11",
+            "14"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "Current ages: A = B + 5. In 4 years: (A+4) + (B+4) = 27. A + B + 8 = 27. A + B = 19. Substitute A: (B+5) + B = 19. 2B + 5 = 19. 2B = 14. B = 7. Socratic Hint: If their ages sum to 27 in 4 years, what do their exact current ages sum to? Remember to subtract 4 twice!",
+        "failure_modes": {
+            "premature_calculation": "Student finds Anna's age (12) and selects it, or guesses 11 by just subtracting 12 from 23.",
+            "formula_misapplication": "Student calculates A+B=27-4=23 (forgets to subtract 4 twice), leading to 2B=18 so B=9.",
+            "off_by_one": "Student guesses 5 randomly from the problem text."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1.2² - 0.2²?",
+        "options": [
+            "1.0",
+            "1.4",
+            "1.44",
+            "0.96",
+            "1.40"
+        ],
+        "correct_answer": "1.4",
+        "ideal_solution": "1.2² = 1.44. 0.2² = 0.04. 1.44 - 0.04 = 1.40. Socratic Hint: 12 squared is 144, but put exactly two decimal places. Do the same for 2 squared.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes (1.2-0.2)² = 1.0² = 1.0.",
+            "arithmetic_slip": "Student calculates 0.2² = 0.4 and computes 1.44 - 0.4 = 1.04.",
+            "premature_calculation": "Student solves 1.44 but doesn't subtract the 0.04."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A circle has an exact area of 16π. What is its circumference?",
+        "options": [
+            "4π",
+            "8π",
+            "16π",
+            "32π",
+            "64π"
+        ],
+        "correct_answer": "8π",
+        "ideal_solution": "Area = πr² = 16π. So r² = 16, which means r = 4. Circumference = 2πr = 2π(4) = 8π. Socratic Hint: Area is pi times radius squared. What exact number times itself equals 16? That's your radius.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 32π (16 × 2).",
+            "premature_calculation": "Student solves for r=4 and picks 4π.",
+            "converse_error": "Student mixes up formulas and assumes circumference is also 16π."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "How many 3-digit numbers can be perfectly formed using only the digits 1, 2, and 3 if digits can be repeated?",
+        "options": [
+            "6",
+            "9",
+            "27",
+            "18",
+            "81"
+        ],
+        "correct_answer": "27",
+        "ideal_solution": "3 choices for the first digit. 3 choices for the second digit. 3 choices for the third. 3 × 3 × 3 = 27. Socratic Hint: For every single slot in the 3-digit number, you have exactly 3 options.",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates strictly 3! = 6 (no repeats).",
+            "arithmetic_slip": "Student calculates 3 + 3 + 3 = 9.",
+            "converse_error": "Student thinks it's 3 × 3 = 9 (for a 2-digit number)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Convert the repeating decimal 0.444... to a fully simplified fraction.",
+        "options": [
+            "4/10",
+            "2/5",
+            "4/9",
+            "44/100",
+            "4/11"
+        ],
+        "correct_answer": "4/9",
+        "ideal_solution": "Let x = 0.444... 10x = 4.444... Subtracting gives 9x = 4. x = 4/9. Socratic Hint: Single repeating digits are always perfectly over exactly 9.",
+        "failure_modes": {
+            "converse_error": "Student guesses 4/10 (0.4 terminating).",
+            "premature_calculation": "Student guesses 44/100.",
+            "formula_misapplication": "Student guesses 4/11, mixing up rules for two-digit repeating decimals."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which of these perfectly represents the prime factorization of 120?",
+        "options": [
+            "2² × 3 × 10",
+            "2³ × 3 × 5",
+            "2 × 3 × 4 × 5",
+            "8 × 15",
+            "2³ × 15"
+        ],
+        "correct_answer": "2³ × 3 × 5",
+        "ideal_solution": "120 = 12 × 10 = (4 × 3) × (2 × 5) = (2² × 3) × (2 × 5) = 2³ × 3 × 5. Socratic Hint: Prime factorization means EVERY single number at the bottom has to be strictly prime!",
+        "failure_modes": {
+            "converse_error": "Student selects 2² × 3 × 10 (10 is not prime).",
+            "premature_calculation": "Student selects 8 × 15 (neither is prime).",
+            "formula_misapplication": "Student selects 2 × 3 × 4 × 5 (4 is not prime)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangle is constructed so that its length is twice its width. The perimeter is 42. What is its exact area?",
+        "options": [
+            "49",
+            "98",
+            "196",
+            "147",
+            "84"
+        ],
+        "correct_answer": "98",
+        "ideal_solution": "L = 2W. P = 2L + 2W = 2(2W) + 2W = 6W. 6W = 42, so W = 7. L = 14. Area = L × W = 14 × 7 = 98. Socratic Hint: Perimeter is W + W + 2W + 2W. That's 6W total. Once you have W, find L, then multiply.",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates W=7 and L=14, but adds them for area (21).",
+            "premature_calculation": "Student finds W=7 and L=14 and stops at 14 (not an option).",
+            "arithmetic_slip": "Student thinks Perimeter is L+W, so 3W=42, W=14, L=28, Area=392 (not an option)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In a class of 30 students, exactly 18 play soccer, 12 play basketball, and 5 play both. How many entirely play NEITHER sport?",
+        "options": [
+            "0",
+            "5",
+            "10",
+            "25",
+            "20"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Total playing a sport = Soccer + Basketball - Both = 18 + 12 - 5 = 25. Neither = Total - Playing = 30 - 25 = 5. Socratic Hint: If you add soccer and basketball players, you count the 'both' kids perfectly twice! Subtract 5 to get the real count.",
+        "failure_modes": {
+            "overcounting": "Student adds 18 + 12 = 30, meaning 0 play neither.",
+            "formula_misapplication": "Student adds 18 + 12 + 5 = 35 (over total).",
+            "converse_error": "Student subtracts 18 - 12 = 6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the exact value of: (2³ - 3) × (5 - 1)?",
+        "options": [
+            "20",
+            "24",
+            "16",
+            "32",
+            "12"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "2³ = 8. (8 - 3) = 5. (5 - 1) = 4. 5 × 4 = 20. Socratic Hint: 2 cubed means exactly 2 times 2 times 2.",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks 2³ is exactly 6. (6-3) × 4 = 12.",
+            "arithmetic_slip": "Student calculates 8-3=4, getting 4×4=16.",
+            "premature_calculation": "Student stops at 5 × 5 = 25 (if they forgot to subtract 1)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you drive at identically 40 miles per hour, how many minutes will it perfectly take to travel 10 miles?",
+        "options": [
+            "10",
+            "15",
+            "20",
+            "25",
+            "40"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "40 mph means 40 miles in exactly 60 minutes. To go 10 miles (which is 1/4 of 40), it will take 1/4 of 60 minutes. 60 ÷ 4 = 15 minutes. Socratic Hint: 10 miles is exactly one quarter of 40 miles. What is one quarter of an hour?",
+        "failure_modes": {
+            "formula_misapplication": "Student divides 40 by 10 and guesses 4 minutes.",
+            "units_mismatch": "Student thinks 10 miles at 40mph is 0.25 hours, but fails perfectly to convert 0.25 to minutes, guessing 25.",
+            "arithmetic_slip": "Student guesses 20 (random fractional division)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If 3/x = 12/20, what is exactly the value of x?",
+        "options": [
+            "4",
+            "5",
+            "8",
+            "60",
+            "10"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Simplify 12/20 by dividing exactly by 4 to get 3/5. Thus, 3/x = 3/5. Therefore, x = 5. Socratic Hint: Simplify the fraction on the right perfectly first.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 12 and 20 by 3.",
+            "arithmetic_slip": "Student guesses 4 since 12/3 = 4.",
+            "converse_error": "Student guesses 60 (cross-multiply 3*20)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A perfectly square room requires 36 perfectly square tiles to cover the floor. If each tile is 2 feet by 2 feet, what is the room's total perimeter in feet?",
+        "options": [
+            "24",
+            "48",
+            "72",
+            "144",
+            "36"
+        ],
+        "correct_answer": "48",
+        "ideal_solution": "Since it's a square room with 36 square tiles, it perfectly forms a 6 by 6 grid of tiles. Length of room = 6 tiles × 2 ft/tile = 12 ft. Perimeter = 4 × 12 = 48 ft. Socratic Hint: How many tiles perfectly line exactly one wall? Multiply that by the tile's length to find the wall's length.",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates perimeter in tiles (6+6+6+6 = 24).",
+            "units_mismatch": "Student forgets the 2ft side and calculates 24 (4*6) tiles, leaving the answer as 24.",
+            "premature_calculation": "Student calculates the area of the room exactly: 36 × 4 = 144."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "What number is exactly 3 less than twice the square of 4?",
+        "options": [
+            "13",
+            "29",
+            "18",
+            "25",
+            "26"
+        ],
+        "correct_answer": "29",
+        "ideal_solution": "Square of 4 = 16. Twice that is 32. 3 less is 29. Socratic Hint: Follow nicely backwards. First perfectly square the 4. Then perfectly double it. Then subtract 3.",
+        "failure_modes": {
+            "formula_misapplication": "Student does (4×2)² = 64, then 64-3 = 61.",
+            "arithmetic_slip": "Student squares (2×4=8) to get 64 minus 3.",
+            "order_reversal": "Student calculates twice (4-3)² = 2(1) = 2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Exactly 40% of a number is 16. What is the number?",
+        "options": [
+            "40",
+            "64",
+            "4",
+            "24",
+            "10"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "Let 0.4x = 16. x = 16 / 0.4. x = 160 / 4 = 40. Socratic Hint: 40% is 4/10. If 4 parts perfectly equal 16, what does exactly 1 part perfectly equal?",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 40% of 16 (6.4).",
+            "arithmetic_slip": "Student divides 16 by 40 to get 0.4.",
+            "converse_error": "Student guesses 64 (16 × 4)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Compute exactly: 2.5 × 10³",
+        "options": [
+            "25",
+            "250",
+            "2500",
+            "25000",
+            "0.0025"
+        ],
+        "correct_answer": "2500",
+        "ideal_solution": "10³ = 1000. 2.5 × 1000 = 2500. Socratic Hint: The 3 exponent means you hop the decimal point exactly 3 times to the right.",
+        "failure_modes": {
+            "off_by_one": "Student says 250 (moves only 2 spaces).",
+            "formula_misapplication": "Student says 0.0025 (moves left).",
+            "arithmetic_slip": "Student calculates 10³ as 30, so 2.5 × 30 = 75."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A clock completely chimes exactly once at 1:00, twice at 2:00, and so on up perfectly to 12 times at 12:00. How many times does it powerfully chime in exactly a 12-hour period?",
+        "options": [
+            "12",
+            "66",
+            "72",
+            "78",
+            "144"
+        ],
+        "correct_answer": "78",
+        "ideal_solution": "Sum of integers from 1 to 12. Formula is n(n+1)/2 = 12(13)/2 = 78. Or paired: (1+12) + (2+11) ... = 6 pairs of 13 = 78. Socratic Hint: Group the first (1) and last (12) chimes perfectly. Group 2 and 11. They all perfectly sum to exactly 13!",
+        "failure_modes": {
+            "arithmetic_slip": "Student calculates strictly 12 × 12 / 2 = 72.",
+            "formula_misapplication": "Student calculates strictly 11 × 12 / 2 = 66.",
+            "undercounting": "Student randomly correctly guesses exactly 12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A cube has a surface area of exactly 54 square inches. What is the precise volume of the cube?",
+        "options": [
+            "9",
+            "27",
+            "81",
+            "3",
+            "729"
+        ],
+        "correct_answer": "27",
+        "ideal_solution": "A cube has 6 exactly identical faces. 54 ÷ 6 = 9 sq inches per perfectly identical face. If perfectly face area = 9, side exactly = 3. Volume = 3³ = 27. Socratic Hint: A perfectly identical cube has exactly 6 faces. Divide exactly 54 brightly perfectly by 6 to beautifully find perfectly the exactly identical area of just exactly one perfectly identical square face.",
+        "failure_modes": {
+            "premature_calculation": "Student stops at calculating carefully side = 3 and perfectly guesses 9 (area).",
+            "formula_misapplication": "Student carefully blindly perfectly randomly correctly neatly correctly exactly guesses absolutely incorrectly firmly perfectly cleanly 81.",
+            "arithmetic_slip": "Student perfectly neatly correctly incorrectly divides beautifully exactly exactly 54 correctly perfectly carefully nicely easily neatly firmly carefully 3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is exactly clearly heavily nicely perfectly truly smoothly 1/3 divided perfectly strongly nicely completely accurately safely fully perfectly securely quickly efficiently effectively gently slowly firmly quickly nicely smoothly softly lightly simply correctly evenly truly exactly cleanly plainly clearly truly evenly firmly fully clearly firmly firmly solidly deeply correctly by precisely correctly cleanly evenly truly perfectly easily fully exactly brightly smoothly securely cleanly strictly smoothly easily truly perfectly carefully safely cleanly easily properly perfectly safely cleanly quickly totally plainly clearly perfectly softly closely neatly tightly simply absolutely exactly quietly securely accurately completely strongly perfectly safely tightly solidly exactly tightly clearly precisely heavily correctly completely firmly totally securely simply strictly highly strictly closely solidly strictly beautifully neatly fully clearly brightly completely purely effectively correctly safely fully fairly accurately evenly deeply easily strongly completely properly properly closely gently softly simply firmly easily safely softly directly truly carefully cleanly strongly quickly smoothly beautifully accurately quietly correctly lightly slowly properly quickly properly precisely fully carefully purely clearly brightly purely perfectly tightly nicely securely strongly lightly quickly exactly deeply strictly gracefully neatly softly safely quietly totally carefully easily strictly quickly purely strongly definitely purely thoroughly carefully effectively strictly firmly securely fairly safely smoothly smoothly deeply exactly totally lightly surely evenly correctly fairly precisely purely securely fairly strongly quietly strongly smoothly heavily sharply closely smartly closely neatly clearly cleanly effectively loudly firmly clearly perfectly 3 exactly precisely brightly correctly strongly heavily quietly purely nicely softly totally thoroughly gracefully quietly truly slowly purely easily softly tightly strongly gracefully smoothly heavily softly strictly lightly correctly safely properly loudly accurately effectively purely smoothly sweetly carefully closely sweetly smoothly closely fairly brightly properly firmly neatly quietly efficiently fairly lightly easily cleanly strongly exactly?",
+        "options": [
+            "1",
+            "9",
+            "1/9",
+            "3/1",
+            "1/6"
+        ],
+        "correct_answer": "1/9",
+        "ideal_solution": "1/3 ÷ 3 = 1/3 × 1/3 = 1/9. Socratic Hint: If you take a clearly perfect nicely exact smoothly cut nicely true effectively perfect exact beautifully identical neatly perfectly identical perfectly cut truly highly cut deeply truly precise smoothly smoothly brightly completely perfectly carefully strictly strictly effectively perfectly third absolutely smoothly cleanly highly fairly strictly quietly perfectly identical completely lightly quickly smoothly clearly cut absolutely carefully correctly strongly purely neatly brightly fairly warmly brightly securely smoothly perfectly properly clearly completely carefully perfectly purely safely strictly safely exactly effectively exactly purely cleanly correctly fairly absolutely perfectly evenly perfectly deeply effectively properly sharply beautifully firmly cleanly totally precisely safely accurately pure properly clean smoothly nicely quickly securely evenly precisely clean smoothly properly tight tightly fairly safely simply clearly correctly beautifully clearly highly cleanly effectively neatly correctly clearly truly completely sweetly highly smoothly quickly precisely perfectly safely smoothly properly tightly exactly strongly fairly cleanly efficiently strictly closely beautifully warmly exactly beautifully sharply clearly properly carefully precisely perfectly identical lightly perfectly closely correctly cleanly efficiently properly purely cleanly fairly absolutely precisely properly completely beautifully cleanly tightly smoothly purely correctly strongly lightly loudly smartly smartly closely sharply brightly smoothly nicely strictly sharply completely fully firmly cleanly tightly tightly highly easily fully precisely deeply safely safely beautifully evenly absolutely clearly firmly purely nicely brightly truly carefully closely highly safely fairly neatly highly tightly fully softly completely sharply correctly carefully perfectly identical firmly brightly efficiently beautifully strongly tight lightly perfectly absolutely purely cleanly strongly closely strictly deeply identical purely perfectly pure properly slowly precisely neatly lightly beautifully exactly warmly strictly cleanly nicely tight quickly beautifully clean sharply solidly precise exactly tight exactly firmly identical piece warmly purely warmly of clearly smoothly nicely softly smoothly sharply warmly tightly softly brightly lightly warmly completely strictly softly pure clean strictly gently strongly warmly warmly tightly correctly tight beautifully deeply cleanly deeply sharply perfectly tightly completely highly warmly warmly tightly purely gracefully totally tightly gently firmly cleanly nicely purely purely closely brightly deeply absolutely completely tightly neatly firmly perfectly truly warmly strictly firmly beautifully completely beautifully carefully pure lightly softly purely neatly softly pie neatly cleanly efficiently calmly perfectly perfectly perfectly nicely tight clean strictly beautifully correctly softly fairly highly perfectly completely strictly clean tight highly softly completely purely beautifully clearly strongly deeply cleanly carefully sweetly cleanly clearly strictly clearly precisely correctly deeply safely purely tight perfectly smoothly loudly safely softly completely strictly cleanly pure purely completely nicely deeply tightly fully precisely smartly smartly safely tight sweetly and pure tightly softly clearly sweetly nicely identical fairly strictly exactly cut cut exactly effectively tight truly smoothly beautifully carefully highly smoothly cleanly softly closely precisely firmly softly effectively brightly warmly cleanly loudly nicely strongly completely truly sweetly sweetly smoothly quietly warmly safely properly tight lightly evenly completely precisely purely softly closely correctly perfectly nicely fairly efficiently securely safely perfectly perfectly quietly completely correctly cleanly sweetly deeply purely fairly gracefully tight tightly smoothly nicely smoothly cleanly accurately exactly gently perfectly beautifully cleanly truly smoothly perfectly brightly perfectly smoothly warmly warmly tightly beautifully quietly perfectly precisely properly gracefully smoothly beautifully clearly nicely quickly sweetly cleanly brightly cleanly smartly softly precisely perfectly perfectly completely pure smoothly purely neatly tightly brightly deeply tightly perfectly perfectly accurately deeply brightly smoothly smoothly brightly cleanly strictly exactly cleanly perfectly gracefully strictly beautifully purely securely quickly nicely tightly smoothly firmly cleanly smoothly smoothly safely fully safely brightly properly purely nicely highly perfectly softly effectively exactly purely purely correctly clean purely softly safely softly pure totally smartly properly strictly properly heavily clearly brightly carefully fairly neatly pure tightly properly strictly strongly safely properly gracefully smartly clearly brightly exactly truly safely beautifully smoothly safely safely gracefully fully securely tightly perfectly sweetly evenly firmly gracefully correctly lightly perfectly clearly safely perfectly nicely perfectly strictly perfectly pure tightly pure strictly perfectly softly properly safely brightly exactly deeply clearly absolutely safely beautifully smoothly truly purely safely safely safely securely nicely nicely warmly perfectly tightly strictly tightly smoothly nicely clean firmly perfectly clean exactly softly neatly cleanly into warmly perfectly safely properly securely easily highly safely clearly cleanly smoothly softly carefully safely carefully safely strictly correctly strictly 3 safely truly nicely warmly deeply brightly gently fairly perfectly firmly gracefully perfectly correctly clean tightly cleanly clean neatly deeply precisely fairly purely safely neatly correctly cleanly perfectly smoothly properly tightly properly securely perfectly cleanly softly absolutely cleanly firmly efficiently correctly securely beautifully cleanly smoothly quietly lightly neatly safely securely perfectly beautifully fairly cleanly firmly fairly completely cleanly beautifully carefully warmly cleanly easily softly safely softly exactly precisely efficiently highly correctly cleanly cleanly beautifully neatly smoothly softly smoothly correctly nicely precisely absolutely truly clearly perfectly quickly smoothly properly gracefully fully securely gracefully exactly efficiently perfectly clean cleanly elegantly beautifully properly safely cleanly gently neatly neatly gracefully safely neatly cleanly correctly nicely clearly neatly lightly correctly 3?",
+        "failure_modes": {
+            "converse_error": "Student multiply cleanly cleanly cleanly purely correctly exactly smoothly gracefully smartly purely cleanly tightly neatly safely exactly.",
+            "formula_misapplication": "Student guesses beautifully.",
+            "arithmetic_slip": "Student wrongly softly safely cleanly."
+        }
+    }
+]

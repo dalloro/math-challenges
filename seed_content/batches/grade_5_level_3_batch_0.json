@@ -1,0 +1,946 @@
+[
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1/3 + 1/4?",
+        "options": [
+            "2/7",
+            "7/12",
+            "1/7",
+            "5/12",
+            "2/12"
+        ],
+        "correct_answer": "7/12",
+        "ideal_solution": "Find a common denominator: 12. 1/3 = 4/12. 1/4 = 3/12. 4/12 + 3/12 = 7/12. Socratic Hint: Multiply the top and bottom of 1/3 by 4. Multiply top and bottom of 1/4 by 3.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds straight across: 2/7."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A rope is 2.5 meters long. I cut off 80 centimeters. How long is the rope now?",
+        "options": [
+            "1.7 cm",
+            "170 cm",
+            "2.42 m",
+            "3.3 m",
+            "82.5 cm"
+        ],
+        "correct_answer": "170 cm",
+        "ideal_solution": "Convert meters to cm: 2.5 m = 250 cm. 250 - 80 = 170 cm (or 1.7 m). Socratic Hint: Make everything centimeters first. 2.5 meters is 250 cm.",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 2.5 - 0.8 = 1.7 m but selects 1.7 cm."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you multiply 3/4 by 2/3, what is the simplest form answer?",
+        "options": [
+            "5/7",
+            "6/12",
+            "1/2",
+            "5/12",
+            "8/9"
+        ],
+        "correct_answer": "1/2",
+        "ideal_solution": "Multiply numerators: 3×2=6. Denominators: 4×3=12. 6/12 simplifies to 1/2. Or cancel the 3s before multiplying. Socratic Hint: Just cross off the 3 on the top and the 3 on the bottom!",
+        "failure_modes": {
+            "premature_calculation": "Student selects 6/12 (not simplest form)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A box is made of two smaller boxes stuck together. Box A is 2x2x2. Box B is 3x3x3. What is the total volume?",
+        "options": [
+            "35",
+            "125",
+            "10",
+            "30",
+            "19"
+        ],
+        "correct_answer": "35",
+        "ideal_solution": "Volume A = 8. Volume B = 27. Total = 8 + 27 = 35. Socratic Hint: Find the volume of the small cube. Find the volume of the big cube. Add them together.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds dimensions (2+3)^3 = 125."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Solve: (8 + 4) ÷ 2 × 3",
+        "options": [
+            "2",
+            "18",
+            "6",
+            "14",
+            "9"
+        ],
+        "correct_answer": "18",
+        "ideal_solution": "Parentheses: 12. Then multiply/divide left to right: 12 ÷ 2 = 6. 6 × 3 = 18. Socratic Hint: Left to right for multiplication and division! 12 divided by 2 is 6. Then multiply.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 2×3=6 first, then 12 ÷ 6 = 2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 1/2 - 1/3",
+        "options": [
+            "0",
+            "1/6",
+            "2/6",
+            "5/6",
+            "1/5"
+        ],
+        "correct_answer": "1/6",
+        "ideal_solution": "Common denominator is 6. 3/6 - 2/6 = 1/6. Socratic Hint: Change both into sixths.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds them (5/6) or subtracts straight across (0)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A frog jumps 0.5 meters forward, then 0.2 meters backward. If it repeats this exact sequence 4 times, how far is it from the start?",
+        "options": [
+            "0.3 m",
+            "1.2 m",
+            "2.0 m",
+            "2.8 m",
+            "4.0 m"
+        ],
+        "correct_answer": "1.2 m",
+        "ideal_solution": "Net jump is 0.5 - 0.2 = 0.3 m. 4 jumps × 0.3 = 1.2 m. Socratic Hint: Each complete cycle is a gain of 0.3 meters. He does 4 cycles.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 2.0 m (ignoring backward)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 12.05 × 100",
+        "options": [
+            "120.5",
+            "1205",
+            "0.1205",
+            "1.205",
+            "12050"
+        ],
+        "correct_answer": "1205",
+        "ideal_solution": "Move the decimal two places right. 12.05 becomes 1205. Socratic Hint: Two zeroes in 100 means two hops right.",
+        "failure_modes": {
+            "off_by_one": "Student guesses 120.5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If a square's area is 81 sq cm, what is its perimeter?",
+        "options": [
+            "9 cm",
+            "18 cm",
+            "36 cm",
+            "81 cm",
+            "324 cm"
+        ],
+        "correct_answer": "36 cm",
+        "ideal_solution": "Side = square root of 81 = 9. Perimeter = 4 × 9 = 36. Socratic Hint: What number times itself equals 81? That's the side length. Now multiply by 4.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 324 (81×4) thinking area is side length."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Compare: 3/4 ___ 4/5",
+        "options": [
+            ">",
+            "<",
+            "=",
+            "Cannot tell"
+        ],
+        "correct_answer": "<",
+        "ideal_solution": "Common denominator is 20. 15/20 vs 16/20. So 3/4 is less. Or decimals: 0.75 < 0.80. Socratic Hint: 4/5 is 80%. 3/4 is 75%.",
+        "failure_modes": {
+            "converse_error": "Student guesses >."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4.3 + 2.75?",
+        "options": [
+            "6.05",
+            "7.05",
+            "6.78",
+            "7.00",
+            "4.58"
+        ],
+        "correct_answer": "7.05",
+        "ideal_solution": "Line up the decimals. 4.30 + 2.75. 4+2=6. .30+.75=1.05. Total = 7.05. Socratic Hint: Write a zero after the 3! 4.30 + 2.75.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 6.78 (4.3+2.75 without aligning: 3+5=8, 4+2=6)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A recipe calls for 1 and 1/2 cups of flour. If you DOUBLE the recipe, how much flour do you need?",
+        "options": [
+            "2 cups",
+            "2 and 1/2 cups",
+            "3 cups",
+            "3 and 1/2 cups",
+            "4 cups"
+        ],
+        "correct_answer": "3 cups",
+        "ideal_solution": "1.5 × 2 = 3. Socratic Hint: Double 1 cup (2 cups). Double a half cup (1 whole cup). Add them!",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 2 and 1/2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Point A is at (2, 3). Point B is straight up from Point A by 5 units. What is Point B?",
+        "options": [
+            "(7, 3)",
+            "(2, 8)",
+            "(7, 8)",
+            "(-3, 3)",
+            "(2, -2)"
+        ],
+        "correct_answer": "(2, 8)",
+        "ideal_solution": "Moving straight up adds to the y-coordinate. 3 + 5 = 8. (2, 8). Socratic Hint: Up means the second number gets bigger.",
+        "failure_modes": {
+            "order_reversal": "Student modifies x-intercept: (7, 3)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Solve: 1.2 × 1.2",
+        "options": [
+            "1.44",
+            "2.4",
+            "14.4",
+            "12.2",
+            "0.144"
+        ],
+        "correct_answer": "1.44",
+        "ideal_solution": "12 × 12 = 144. Two decimal places behind the lines. 1.44. Socratic Hint: 12 times 12 is 144. Then count exactly two decimal places for the dot.",
+        "failure_modes": {
+            "formula_misapplication": "Student puts dot in the wrong place: 14.4."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangle's width is half of its length. If the length is 10, what is the area?",
+        "options": [
+            "15",
+            "30",
+            "50",
+            "100",
+            "200"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "L = 10. W = 5. Area = 10 × 5 = 50. Socratic Hint: First find the width... what is half of 10? Then multiply length times width.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 30 (perimeter) or 100."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 50 ÷ 0.2?",
+        "options": [
+            "10",
+            "25",
+            "100",
+            "250",
+            "2.5"
+        ],
+        "correct_answer": "250",
+        "ideal_solution": "Dividing by 0.2 is multiplying by 5 (since 0.2 = 1/5). 50 × 5 = 250. Socratic Hint: 0.2 is one-fifth. How many fifths fit into 50 wholes?",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 50 / 2 = 25 or multiplies 50 × 0.2 = 10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 0.09 > 0.1?",
+        "options": [
+            "Yes",
+            "No",
+            "They are equal",
+            "Cannot tell"
+        ],
+        "correct_answer": "No",
+        "ideal_solution": "0.1 is 0.10. 0.09 is less than 0.10. Socratic Hint: Add a zero. Is 0.09 bigger than 0.10?",
+        "failure_modes": {
+            "converse_error": "Student guesses Yes because 9 is big."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 1/5 + 2/5 + 3/5",
+        "options": [
+            "6/15",
+            "6/5",
+            "1",
+            "1 1/5",
+            "Both 6/5 and 1 1/5"
+        ],
+        "correct_answer": "Both 6/5 and 1 1/5",
+        "ideal_solution": "1+2+3 = 6. 6/5 is an improper fraction equal to 1 1/5. Socratic Hint: Denominators don't add. Just add the tops.",
+        "failure_modes": {
+            "formula_misapplication": "Student picks 6/15."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Find the missing number: 3/4 = X/16.",
+        "options": [
+            "9",
+            "10",
+            "12",
+            "15",
+            "16"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Multiply top and bottom by 4. 3×4 = 12. Socratic Hint: 4 times WHAT is 16? Do the same to the 3.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 4+12=16 so 3+12=15."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you buy 3 books for $15 total, and then buy 2 more identical books, how much did you spend in all?",
+        "options": [
+            "$10",
+            "$20",
+            "$25",
+            "$30",
+            "$45"
+        ],
+        "correct_answer": "$25",
+        "ideal_solution": "15 ÷ 3 = $5 per book. 5 books total × $5 = $25. Socratic Hint: First, find out how much exactly one book costs.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $30."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 10.0 - 0.99?",
+        "options": [
+            "9.01",
+            "9.1",
+            "9.91",
+            "9.0",
+            "9.11"
+        ],
+        "correct_answer": "9.01",
+        "ideal_solution": "1000 hundredths - 99 hundredths = 901 hundredths = 9.01. Socratic Hint: Think of $10.00 minus 99 cents.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 9.91."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many centimeters in 0.5 kilometers?",
+        "options": [
+            "50",
+            "500",
+            "5000",
+            "50000",
+            "500000"
+        ],
+        "correct_answer": "50000",
+        "ideal_solution": "1 km = 1000 m. 0.5 km = 500 m. 1 m = 100 cm. 500 × 100 = 50,000 cm. Socratic Hint: Kilo means 1000. So half a kilometer is 500 meters. Now turn meters to centimeters.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 500 or 5000."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the greatest common factor (GCF) of 12 and 16?",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "48"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 16: 1, 2, 4, 8, 16. The largest shared factor is 4. Socratic Hint: List all numbers that divide perfectly into both 12 and 16.",
+        "failure_modes": {
+            "converse_error": "Student selects 48 (LCM)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 3/4 × 4/5",
+        "options": [
+            "3/5",
+            "7/9",
+            "12/20",
+            "1/2",
+            "Both 3/5 and 12/20"
+        ],
+        "correct_answer": "Both 3/5 and 12/20",
+        "ideal_solution": "Cancel the 4s: 3/5. Or multiply: 12/20, which reduces to 3/5. Socratic Hint: The 4 on top cancels the 4 on bottom perfectly.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 7/9."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which represents six and four tenths?",
+        "options": [
+            "6.04",
+            "6.4",
+            "64.0",
+            "0.64",
+            "6.400"
+        ],
+        "correct_answer": "6.4",
+        "ideal_solution": "6 is the whole number. The 4 is in the tenths place. 6.4. 6.400 is equal, but purely matching representation is 6.4. Socratic Hint: Tenths is the first spot after the decimal.",
+        "failure_modes": {
+            "converse_error": "Student guesses 6.04."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "You have a $10 bill. You buy an apple for $1.25 and a sandwich for $4.50. How much change do you receive?",
+        "options": [
+            "$3.25",
+            "$4.25",
+            "$4.75",
+            "$5.75",
+            "$5.25"
+        ],
+        "correct_answer": "$4.25",
+        "ideal_solution": "1.25 + 4.50 = 5.75. 10.00 - 5.75. 10 - 5 = 5. .00 - .75 = borrow => $4.25. Socratic Hint: Find the total cost first ($5.75). Then subtract from $10.00.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $3.25 or $4.75."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 2 + (5 × 3) - (8 ÷ 2)",
+        "options": [
+            "13",
+            "19",
+            "21",
+            "17",
+            "9"
+        ],
+        "correct_answer": "13",
+        "ideal_solution": "Parentheses: 15 and 4. Expression: 2 + 15 - 4. 17 - 4 = 13. Socratic Hint: Do both sets of parentheses first.",
+        "failure_modes": {
+            "formula_misapplication": "Student does 17 - 8 = 9."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "True or False: Every square is a rhombus.",
+        "options": [
+            "True",
+            "False",
+            "Only if rotated",
+            "Cannot tell"
+        ],
+        "correct_answer": "True",
+        "ideal_solution": "A rhombus is a quadrilateral with 4 equal sides. A square has 4 equal sides (plus right angles). So it fulfills all rhyme requirements for rhombus. Socratic Hint: Does a square have 4 equal sides? If yes, it's automatically a rhombus!",
+        "failure_modes": {
+            "converse_error": "Student guesses False because a square has straight angles."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the least common multiple (LCM) of 4 and 6?",
+        "options": [
+            "2",
+            "10",
+            "12",
+            "24",
+            "48"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Multiples of 4: 4, 8, 12, 16. Multiples of 6: 6, 12. Smallest shared is 12. Socratic Hint: What is the smallest number that both 4 and 6 can multiply up to?",
+        "failure_modes": {
+            "converse_error": "Student guesses 24 (4×6)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Divide: 1/5 ÷ 2",
+        "options": [
+            "2/5",
+            "1/10",
+            "10",
+            "5/2",
+            "0.2"
+        ],
+        "correct_answer": "1/10",
+        "ideal_solution": "1/5 divided into 2 pieces makes each piece 1/10. Or 1/5 × 1/2 = 1/10. Socratic Hint: Take a fifth of a pizza and cut it in half.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiples them: 2/5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Look at the pattern: 2, 5, 11, 23... What is the next number?",
+        "options": [
+            "35",
+            "47",
+            "46",
+            "34",
+            "50"
+        ],
+        "correct_answer": "47",
+        "ideal_solution": "The rule is 'multiply by 2 and add 1'. 2(23)+1 = 47. Or differences: 3, 6, 12, 24. 23+24=47. Socratic Hint: Double the number and add one.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 12: 35."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Express 75% as a fraction in simplest form.",
+        "options": [
+            "75/100",
+            "3/4",
+            "3/5",
+            "7/10",
+            "2/3"
+        ],
+        "correct_answer": "3/4",
+        "ideal_solution": "75/100. Divide by 25 = 3/4. Socratic Hint: 75 cents is exactly three quarters.",
+        "failure_modes": {
+            "premature_calculation": "Student selects 75/100."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4.5 × 1.1?",
+        "options": [
+            "4.95",
+            "4.55",
+            "5.05",
+            "49.5",
+            "5.5"
+        ],
+        "correct_answer": "4.95",
+        "ideal_solution": "45 × 11 = 495. Two decimal places: 4.95. Or 4.5 × 1 = 4.5. 4.5 × .1 = .45. Add them: 4.95. Socratic Hint: 45 times 11 is 495. The problem has exactly two dots to place.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 4.55."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which polygon has exactly 8 sides?",
+        "options": [
+            "Hexagon",
+            "Heptagon",
+            "Octagon",
+            "Nonagon",
+            "Decagon"
+        ],
+        "correct_answer": "Octagon",
+        "ideal_solution": "An octagon has 8 sides. Socratic Hint: An octopus has 8 legs.",
+        "failure_modes": {
+            "converse_error": "Student guesses Heptagon."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 7/8 - 1/2?",
+        "options": [
+            "6/6",
+            "3/8",
+            "6/10",
+            "1",
+            "3/4"
+        ],
+        "correct_answer": "3/8",
+        "ideal_solution": "Convert 1/2 to 4/8. 7/8 - 4/8 = 3/8. Socratic Hint: Turn the half into eighths.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts straight across: 6/6=1."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 0.1 × 0.1",
+        "options": [
+            "0.1",
+            "0.2",
+            "0.01",
+            "1.0",
+            "0.001"
+        ],
+        "correct_answer": "0.01",
+        "ideal_solution": "1 × 1 = 1. Two decimal places = 0.01. Socratic Hint: A tenth of a tenth is exactly one hundredth.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 0.1 or 0.2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A rectangle has an area of 24. It is strictly wider than it is long (width > length). Both dimensions are whole numbers. Could its width be 6?",
+        "options": [
+            "Yes",
+            "No",
+            "Depends on units",
+            "Only if it is a square"
+        ],
+        "correct_answer": "Yes",
+        "ideal_solution": "If W=6, then L=4. Area = 24. Since 6 > 4, this meets all criteria. Socratic Hint: If the width is 6, what must the length be? Is 6 bigger than that?",
+        "failure_modes": {
+            "converse_error": "Student guesses No thinking length must be the long side."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you multiply any odd number by another odd number, the result is:",
+        "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes even, sometimes odd",
+            "None of these"
+        ],
+        "correct_answer": "Always odd",
+        "ideal_solution": "Odd × Odd = Odd. (2n+1)(2m+1) = 4nm... + 1. Socratic Hint: Try it out! 3x3, 5x5, 7x3...",
+        "failure_modes": {
+            "converse_error": "Student says Sometimes even."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 3.01 - 1.99",
+        "options": [
+            "1.02",
+            "1.01",
+            "1.98",
+            "2.02",
+            "1.12"
+        ],
+        "correct_answer": "1.02",
+        "ideal_solution": "3.01 is 2.01 above 1.00. Oh wait. 3.01 - 2.00 = 1.01. Since we subtracted 1.99 (which is 0.01 less), give back 0.01. Answer = 1.02. Socratic Hint: 1.99 is just one penny away from 2.00.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 1.01 or 1.98."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "How many millimeters are in 1 meter?",
+        "options": [
+            "10",
+            "100",
+            "1000",
+            "10,000",
+            "0.001"
+        ],
+        "correct_answer": "1000",
+        "ideal_solution": "Milli- means thousand. There are 1000 mm in 1 m. Socratic Hint: A millimeter is the tiniest mark on a standard ruler.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 100."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A cube has a volume of 64 cubic inches. What is the length of one side?",
+        "options": [
+            "4 inches",
+            "8 inches",
+            "16 inches",
+            "6 inches",
+            "2 inches"
+        ],
+        "correct_answer": "4 inches",
+        "ideal_solution": "We need exactly S³ = 64. 4 × 4=16, 16 × 4=64. Socratic Hint: What number times itself three times equals 64?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 8 (thinking area)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Divide: 1 ÷ 1/4",
+        "options": [
+            "1/4",
+            "4",
+            "4/1",
+            "0",
+            "0.25"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "How many quarters are in a whole? 4. Or 1 × 4/1 = 4. Socratic Hint: How many one-fourth slices fit into exactly one whole pie?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 1/4."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "You fill a 1-liter bottle halfway with water. Then you drink 200 milliliters of it. How much water is left?",
+        "options": [
+            "300 mL",
+            "500 mL",
+            "800 mL",
+            "100 mL",
+            "200 mL"
+        ],
+        "correct_answer": "300 mL",
+        "ideal_solution": "Half a liter is 500 mL. 500 - 200 = 300 mL. Socratic Hint: 1 liter is a thousand milliliters. So half a liter is 500.",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 800 (1000-200)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Round 9.995 to the nearest hundredth.",
+        "options": [
+            "9.99",
+            "10.00",
+            "10.0",
+            "9.90",
+            "10.99"
+        ],
+        "correct_answer": "10.00",
+        "ideal_solution": "The thousandths digit is 5. Rounds 9.99 up to 10.00. Socratic Hint: A 5 means you push it up. Pushing 9 up makes 10, which rolls everything over.",
+        "failure_modes": {
+            "formula_misapplication": "Student keeps 9.99."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3/5 + 1/2?",
+        "options": [
+            "4/7",
+            "8/10",
+            "1 1/10",
+            "1 1/5",
+            "4/10"
+        ],
+        "correct_answer": "1 1/10",
+        "ideal_solution": "Common denominator: 10. 6/10 + 5/10 = 11/10 = 1 1/10. Socratic Hint: Find a common denominator. 10 works beautifully!",
+        "failure_modes": {
+            "formula_misapplication": "Student adds perfectly across: 4/7."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Multiply: 2.3 × 0.4",
+        "options": [
+            "0.92",
+            "9.2",
+            "0.092",
+            "92",
+            "8.2"
+        ],
+        "correct_answer": "0.92",
+        "ideal_solution": "23 × 4 = 92. Two decimal places: 0.92. Socratic Hint: 23 times 4 is 92. There are exactly two decimal places in total.",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 9.2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which ordered pair is completely on the y-axis?",
+        "options": [
+            "(3, 3)",
+            "(0, 5)",
+            "(5, 0)",
+            "(1, 0)",
+            "(-1, -1)"
+        ],
+        "correct_answer": "(0, 5)",
+        "ideal_solution": "Points on the y-axis have an x-coordinate of 0. Socratic Hint: For the dot to stay perfectly on the vertical line, it can never move right or left.",
+        "failure_modes": {
+            "converse_error": "Student guesses (5, 0)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Compare: 1/3 ___ 0.33",
+        "options": [
+            ">",
+            "<",
+            "=",
+            "Cannot tell"
+        ],
+        "correct_answer": ">",
+        "ideal_solution": "1/3 is exactly 0.33333... So 0.333... > 0.330. Socratic Hint: 1/3 is a repeating decimal that keeps going forever (0.33333...).",
+        "failure_modes": {
+            "converse_error": "Student guesses =."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 50 - (20 - 5)",
+        "options": [
+            "25",
+            "35",
+            "45",
+            "15",
+            "5"
+        ],
+        "correct_answer": "35",
+        "ideal_solution": "Parentheses: 20 - 5 = 15. Subtraction: 50 - 15 = 35. Socratic Hint: Do the subtraction inside the parenthesis first.",
+        "failure_modes": {
+            "formula_misapplication": "Student drops parentheses: 50 - 20 - 5 = 25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 3,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 10/100 expressed as a fully simplified fraction?",
+        "options": [
+            "1/10",
+            "1/100",
+            "10/100",
+            "1/2",
+            "0.1"
+        ],
+        "correct_answer": "1/10",
+        "ideal_solution": "Divide top and bottom by 10. 1/10. Socratic Hint: Cross exactly one zero off the top and one off the bottom.",
+        "failure_modes": {
+            "premature_calculation": "Student leaves 10/100 or expresses as decimal."
+        }
+    }
+]

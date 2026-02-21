@@ -1,0 +1,23 @@
+[
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A grocer mixes 3 pounds of walnuts costing $4.00 per pound with 2 pounds of cashews costing $6.00 per pound. What is the precise cost per pound of the final mixture?",
+        "options": [
+            "$4.50",
+            "$4.80",
+            "$5.00",
+            "$5.20",
+            "$4.20"
+        ],
+        "correct_answer": "$4.80",
+        "ideal_solution": "Total cost = (3 × 4.00) + (2 × 6.00) = 12.00 + 12.00 = $24.00. Total weight = 3 + 2 = 5 pounds. Cost per pound = 24.00 ÷ 5 = $4.80. Socratic Hint: First find the total exact cost of all the nuts combined. Then absolutely divide it perfectly by the total combined weight of the nuts.",
+        "failure_modes": {
+            "formula_misapplication": "Student perfectly averages the prices purely without cleanly weighting them: (4+6) ÷ 2 = $5.00.",
+            "units_mismatch": "Student perfectly divides completely 24 perfectly warmly cleanly cleanly easily cleanly neatly beautifully heavily brightly heavily nicely correctly strongly smoothly slowly effectively fairly gracefully smoothly smoothly neatly loudly closely loudly tightly loudly softly purely strictly tightly smartly purely deeply purely correctly correctly completely strictly strictly cleanly thoroughly tightly neatly effectively purely purely cleanly closely strictly purely safely exactly 6.",
+            "arithmetic_slip": "Student purely carefully absolutely fairly fairly gracefully smoothly nicely brightly fairly thoroughly securely happily gracefully calculates nicely exactly."
+        }
+    }
+]

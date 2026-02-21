@@ -1,0 +1,937 @@
+[
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number comes after 14?",
+        "options": [
+            "13",
+            "14",
+            "15",
+            "16",
+            "10"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "When counting, the number that comes right after 14 is 15. You can count: 12, 13, 14, 15. Socratic Hint: Try counting from 10. What do you say after 14?",
+        "failure_modes": {
+            "off_by_one": "Student says 16 (skipping a number).",
+            "arithmetic_slip": "Student says 13 (counting backwards)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3 + 2?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "1"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "3 + 2 means start at 3 and count 2 more: 4, 5. So 3 + 2 = 5. Socratic Hint: Hold up 3 fingers on one hand and 2 on the other. How many fingers total?",
+        "failure_modes": {
+            "off_by_one": "Student counts only 1 more and says 4.",
+            "arithmetic_slip": "Student says 6 by counting one too many."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many sides does a triangle have?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "A triangle has 3 sides. The prefix 'tri' means three. Socratic Hint: Look at the shape — can you count each straight line that makes the edge?",
+        "failure_modes": {
+            "arithmetic_slip": "Student confuses triangle with square and says 4.",
+            "off_by_one": "Student miscounts and says 2."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 7 - 3?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "10"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "7 - 3 means start at 7 and count back 3: 6, 5, 4. So 7 - 3 = 4. Socratic Hint: If you have 7 apples and eat 3, how many are left?",
+        "failure_modes": {
+            "off_by_one": "Student counts back only 2 and says 5.",
+            "arithmetic_slip": "Student adds instead: 7 + 3 = 10."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which number is bigger: 12 or 9?",
+        "options": [
+            "9",
+            "12",
+            "They are the same",
+            "0",
+            "21"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "12 is bigger than 9. When counting, 12 comes after 9, so it is greater. 12 > 9. Socratic Hint: Think about which number you say later when counting from 1.",
+        "failure_modes": {
+            "converse_error": "Student confuses bigger/smaller and says 9.",
+            "arithmetic_slip": "Student reverses the digits of 12 to get 21."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Count the objects: 🍎🍎🍎🍎🍎🍎. How many apples are there?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Count each apple one by one: 1, 2, 3, 4, 5, 6. There are 6 apples. Socratic Hint: Point to each apple as you count. Don't skip any and don't count any twice.",
+        "failure_modes": {
+            "off_by_one": "Student miscounts and says 5 or 7.",
+            "arithmetic_slip": "Student skips an apple and says 4."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 5 + 0?",
+        "options": [
+            "0",
+            "4",
+            "5",
+            "6",
+            "50"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Adding 0 to any number gives the same number. 5 + 0 = 5. Zero means nothing is added. Socratic Hint: If you have 5 cookies and get 0 more, how many do you have?",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks adding makes it bigger and says 6.",
+            "arithmetic_slip": "Student says 0, thinking 0 'cancels' the 5."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "What shape is a door?",
+        "options": [
+            "Circle",
+            "Triangle",
+            "Rectangle",
+            "Star",
+            "Oval"
+        ],
+        "correct_answer": "Rectangle",
+        "ideal_solution": "A door is shaped like a rectangle. It has 4 sides with 4 corners, and the opposite sides are the same length. Socratic Hint: How many sides and corners does a door have? Are all sides the same length?",
+        "failure_modes": {
+            "formula_misapplication": "Student says square (a square has all equal sides; doors are taller than wide).",
+            "converse_error": "Student says circle."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2 + 6?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "4"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "2 + 6 = 8. Start at 6 and count 2 more: 7, 8. Or start at 2 and count 6 more: 3, 4, 5, 6, 7, 8. Socratic Hint: It's easier to start from the bigger number. Start at 6 and count up 2.",
+        "failure_modes": {
+            "off_by_one": "Student says 7 (counting only 1 more).",
+            "arithmetic_slip": "Student subtracts: 6 - 2 = 4."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which number is less: 11 or 15?",
+        "options": [
+            "11",
+            "15",
+            "They are the same",
+            "5",
+            "1"
+        ],
+        "correct_answer": "11",
+        "ideal_solution": "11 is less than 15. When counting, 11 comes before 15. 11 < 15. Socratic Hint: Which number do you say first when counting? That one is less.",
+        "failure_modes": {
+            "converse_error": "Student confuses less/more and says 15.",
+            "arithmetic_slip": "Student looks only at the ones digit and says 5."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number is 10 more than 5?",
+        "options": [
+            "10",
+            "15",
+            "50",
+            "6",
+            "20"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "10 more than 5 means 5 + 10 = 15. Socratic Hint: Start at 5 and count forward 10 more. Or think: 5 and then 10 makes 15.",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 50 (putting digits together).",
+            "off_by_one": "Student says 6 (thinking '1 more' not '10 more')."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "True or false: All squares are rectangles.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct_answer": "True",
+        "ideal_solution": "True! A square has 4 sides and 4 square corners, just like a rectangle. A square is a special rectangle where all 4 sides are the same length. Socratic Hint: Does a square have 4 sides and 4 corners like a rectangle?",
+        "failure_modes": {
+            "converse_error": "Student says False, thinking rectangles and squares are completely different shapes."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 9 - 9?",
+        "options": [
+            "0",
+            "1",
+            "9",
+            "18",
+            "99"
+        ],
+        "correct_answer": "0",
+        "ideal_solution": "9 - 9 = 0. Taking away the same amount as you have leaves nothing. Socratic Hint: If you have 9 toy cars and give away all 9, how many do you have left?",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 9 + 9 = 18.",
+            "arithmetic_slip": "Student says 1, thinking one must be left."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number is between 6 and 8?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "When counting 6, 7, 8 — the number 7 is between 6 and 8. Socratic Hint: Count from 6 to 8. What number do you say in the middle?",
+        "failure_modes": {
+            "off_by_one": "Student says 6 or 8 (the boundary numbers themselves).",
+            "arithmetic_slip": "Student says 5 (going the wrong direction)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many corners does a square have?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "0"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "A square has 4 corners (also called vertices). Socratic Hint: Touch each pointy corner of the square as you count them.",
+        "failure_modes": {
+            "off_by_one": "Student miscounts and says 3.",
+            "arithmetic_slip": "Student confuses sides with corners."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4 + 4?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "44"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "4 + 4 = 8. This is a doubles fact. Socratic Hint: Think of 4 fingers on each hand. How many fingers altogether?",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 44 (putting digits together instead of adding).",
+            "off_by_one": "Student says 7 or 9."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Put these in order from smallest to biggest: 3, 1, 5",
+        "options": [
+            "1, 3, 5",
+            "5, 3, 1",
+            "3, 1, 5",
+            "1, 5, 3",
+            "5, 1, 3"
+        ],
+        "correct_answer": "1, 3, 5",
+        "ideal_solution": "Start with the smallest: 1. Then 3. Then the biggest: 5. Order: 1, 3, 5. Socratic Hint: Which number would you say first when counting?",
+        "failure_modes": {
+            "converse_error": "Student orders biggest to smallest: 5, 3, 1.",
+            "arithmetic_slip": "Student leaves them in the original order."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 10 - 4?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "14"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "10 - 4 = 6. Count back from 10: 9, 8, 7, 6. Or think: 4 + ? = 10. 4 + 6 = 10. Socratic Hint: If you have 10 crayons and put 4 away, how many are on your desk?",
+        "failure_modes": {
+            "off_by_one": "Student counts back only 3 and says 7.",
+            "formula_misapplication": "Student adds: 10 + 4 = 14."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "What comes next in the pattern? 🔴🔵🔴🔵🔴___",
+        "options": [
+            "🔴",
+            "🔵",
+            "🟢",
+            "🟡",
+            "🔴🔵"
+        ],
+        "correct_answer": "🔵",
+        "ideal_solution": "The pattern alternates: red, blue, red, blue, red, blue. After red comes blue. The next one is 🔵. Socratic Hint: Read the colors out loud. Red, blue, red, blue, red... what comes next?",
+        "failure_modes": {
+            "converse_error": "Student says 🔴, repeating the last item instead of alternating.",
+            "arithmetic_slip": "Student picks a color not in the pattern."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "How many tens are in 30?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "30"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "30 = 3 tens and 0 ones. So there are 3 tens in 30. Socratic Hint: Count by tens: 10, 20, 30. How many times did you count?",
+        "failure_modes": {
+            "off_by_one": "Student says 2 (miscounting).",
+            "formula_misapplication": "Student says 30 (confusing the number itself with how many tens it has)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1 + 2 + 3?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "123"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "1 + 2 = 3. Then 3 + 3 = 6. So 1 + 2 + 3 = 6. Socratic Hint: Add the first two numbers, then add the third to that result.",
+        "failure_modes": {
+            "off_by_one": "Student says 5 (miscounting).",
+            "arithmetic_slip": "Student writes 123 (putting digits together)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which shape has no corners?",
+        "options": [
+            "Square",
+            "Triangle",
+            "Rectangle",
+            "Circle",
+            "Star"
+        ],
+        "correct_answer": "Circle",
+        "ideal_solution": "A circle is perfectly round with no corners and no straight sides. All the other shapes have corners. Socratic Hint: Run your finger along the edge of each shape. Which one never has a pointy spot?",
+        "failure_modes": {
+            "converse_error": "Student picks star (which actually has many corners).",
+            "formula_misapplication": "Student confuses curves with corners."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 8 + 2?",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "11",
+            "6"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "8 + 2 = 10. This is a 'make 10' fact. 8 needs 2 more to get to 10. Socratic Hint: Start at 8. Count 2 more: 9, 10.",
+        "failure_modes": {
+            "off_by_one": "Student says 9 (counting only 1 more).",
+            "arithmetic_slip": "Student subtracts: 8 - 2 = 6."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "How many days are in a week?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "10",
+            "12"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. Socratic Hint: Can you name each day of the week? Count them on your fingers.",
+        "failure_modes": {
+            "undercounting": "Student says 5 (only counting weekdays).",
+            "overcounting": "Student says 10 or 12 (confusing with months)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the missing number? 2, 4, ___, 8, 10",
+        "options": [
+            "3",
+            "5",
+            "6",
+            "7",
+            "9"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "The pattern is counting by 2s: 2, 4, 6, 8, 10. The missing number is 6. Socratic Hint: Each number is 2 more than the last. What is 2 more than 4?",
+        "failure_modes": {
+            "off_by_one": "Student says 5 (counting by 1 instead of 2).",
+            "arithmetic_slip": "Student says 7."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "There are 5 birds on a fence. 2 fly away. How many birds are still on the fence?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "7"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "5 birds - 2 that flew away = 3 birds left on the fence. Socratic Hint: Start with 5 fingers up. Put 2 fingers down. How many are still up?",
+        "failure_modes": {
+            "off_by_one": "Student says 2 or 4.",
+            "formula_misapplication": "Student adds: 5 + 2 = 7."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If today is Monday, what day is tomorrow?",
+        "options": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Saturday"
+        ],
+        "correct_answer": "Tuesday",
+        "ideal_solution": "The day after Monday is Tuesday. Socratic Hint: Think about the order of the days: Monday, Tuesday, Wednesday...",
+        "failure_modes": {
+            "converse_error": "Student says Sunday (the day before, not after).",
+            "arithmetic_slip": "Student says Wednesday (skipping a day)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which number is the same as 1 ten and 3 ones?",
+        "options": [
+            "3",
+            "10",
+            "13",
+            "31",
+            "103"
+        ],
+        "correct_answer": "13",
+        "ideal_solution": "1 ten = 10. 3 ones = 3. 10 + 3 = 13. So the number is 13. Socratic Hint: The tens digit tells you how many groups of 10. The ones digit tells you the extras.",
+        "failure_modes": {
+            "converse_error": "Student reverses and says 31.",
+            "arithmetic_slip": "Student says 103 (putting digits with a zero between)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 6 + 3?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "3"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "6 + 3 = 9. Count from 6: 7, 8, 9. Socratic Hint: Start at 6 on the number line and jump 3 spaces forward.",
+        "failure_modes": {
+            "off_by_one": "Student says 8 (counting only 2 more).",
+            "arithmetic_slip": "Student subtracts: 6 - 3 = 3."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Which shape has 4 equal sides?",
+        "options": [
+            "Triangle",
+            "Circle",
+            "Rectangle",
+            "Square",
+            "Oval"
+        ],
+        "correct_answer": "Square",
+        "ideal_solution": "A square has 4 sides that are all the same length. A rectangle also has 4 sides, but they don't all have to be the same length. Socratic Hint: Which shape looks the same on every side?",
+        "failure_modes": {
+            "converse_error": "Student says rectangle (4 sides, but not all equal).",
+            "arithmetic_slip": "Student says triangle (only 3 sides)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 10 + 10?",
+        "options": [
+            "10",
+            "15",
+            "20",
+            "100",
+            "1010"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "10 + 10 = 20. Two groups of ten make twenty. Socratic Hint: Count by tens: 10, 20. How many did you say?",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 1010 (putting digits together).",
+            "formula_misapplication": "Student says 100 (confusing + with ×)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number is 10 less than 18?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "17",
+            "28"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "10 less than 18 means 18 - 10 = 8. When subtracting 10, the tens digit decreases by 1 and the ones digit stays the same. Socratic Hint: Cover the tens digit. What is left?",
+        "failure_modes": {
+            "off_by_one": "Student says 7 (subtracting 11 instead of 10).",
+            "formula_misapplication": "Student adds: 18 + 10 = 28."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Which one does NOT belong: 🐱 🐶 🐟 🍎?",
+        "options": [
+            "🐱 (cat)",
+            "🐶 (dog)",
+            "🐟 (fish)",
+            "🍎 (apple)"
+        ],
+        "correct_answer": "🍎 (apple)",
+        "ideal_solution": "The apple does not belong because it is not an animal. A cat, dog, and fish are all animals. An apple is a fruit. Socratic Hint: What do the first three things have in common?",
+        "failure_modes": {
+            "converse_error": "Student says fish because it lives in water (it's still an animal).",
+            "constraint_neglect": "Student says cat because it has fur (but so does the dog)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 5 + 5?",
+        "options": [
+            "5",
+            "8",
+            "10",
+            "11",
+            "55"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "5 + 5 = 10. This is a doubles fact. Two groups of 5 make 10. Socratic Hint: Think of your two hands. Each has 5 fingers. How many altogether?",
+        "failure_modes": {
+            "arithmetic_slip": "Student writes 55 (putting digits together).",
+            "off_by_one": "Student says 11."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 6 - 0?",
+        "options": [
+            "0",
+            "5",
+            "6",
+            "7",
+            "60"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Subtracting 0 from any number gives the same number. 6 - 0 = 6. Zero means nothing is taken away. Socratic Hint: If you have 6 cookies and nobody takes any, how many do you still have?",
+        "failure_modes": {
+            "formula_misapplication": "Student says 0, thinking subtraction always makes things zero.",
+            "off_by_one": "Student says 5 (subtracting 1 instead of 0)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "How many fingers do you have on both hands?",
+        "options": [
+            "5",
+            "8",
+            "10",
+            "12",
+            "20"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Each hand has 5 fingers. 5 + 5 = 10. You have 10 fingers on both hands. Socratic Hint: Hold up both hands and count every finger.",
+        "failure_modes": {
+            "undercounting": "Student says 5 (counting only one hand).",
+            "overcounting": "Student says 20 (counting fingers and toes)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 7 + 1?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "71"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "7 + 1 = 8. Adding 1 means going to the next number. Socratic Hint: What number comes right after 7?",
+        "failure_modes": {
+            "off_by_one": "Student says 7 (not adding at all).",
+            "arithmetic_slip": "Student writes 71."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A toy costs 8 cents. You have 10 cents. How much change do you get?",
+        "options": [
+            "1 cent",
+            "2 cents",
+            "3 cents",
+            "8 cents",
+            "18 cents"
+        ],
+        "correct_answer": "2 cents",
+        "ideal_solution": "Change = 10 - 8 = 2 cents. Socratic Hint: How many more cents from 8 to 10?",
+        "failure_modes": {
+            "off_by_one": "Student says 3 cents.",
+            "formula_misapplication": "Student adds 10 + 8 = 18 cents."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "What time does the clock show when the big hand is on 12 and the little hand is on 3?",
+        "options": [
+            "12 o'clock",
+            "3 o'clock",
+            "6 o'clock",
+            "9 o'clock",
+            "3:30"
+        ],
+        "correct_answer": "3 o'clock",
+        "ideal_solution": "When the big (minute) hand points to 12 and the little (hour) hand points to 3, it is 3 o'clock. Socratic Hint: The little hand tells the hour. What number is it pointing to?",
+        "failure_modes": {
+            "converse_error": "Student reads the big hand number instead and says 12 o'clock.",
+            "arithmetic_slip": "Student says 3:30."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 15 bigger or smaller than 20?",
+        "options": [
+            "Bigger",
+            "Smaller",
+            "They are the same",
+            "Cannot tell",
+            "15 is zero"
+        ],
+        "correct_answer": "Smaller",
+        "ideal_solution": "15 is smaller than 20. When counting, 15 comes before 20. 15 < 20. Socratic Hint: Count from 15. Do you reach 20 or come from it?",
+        "failure_modes": {
+            "converse_error": "Student confuses bigger/smaller.",
+            "arithmetic_slip": "Student says they are the same."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Count by 10s: 10, 20, 30, ___. What comes next?",
+        "options": [
+            "31",
+            "35",
+            "40",
+            "50",
+            "100"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "Counting by 10s: 10, 20, 30, 40. Each time we add 10 more. Socratic Hint: What is 10 more than 30?",
+        "failure_modes": {
+            "off_by_one": "Student says 31 (adding 1 instead of 10).",
+            "overcounting": "Student says 50 (skipping 40)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many flat faces does a cube have?",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "A cube has 6 flat faces. Think of a die (dice) — it has a top, bottom, front, back, left, and right face. Socratic Hint: Hold a box and try counting every flat side, including the top and bottom.",
+        "failure_modes": {
+            "undercounting": "Student says 4 (only counting the sides they can see).",
+            "overcounting": "Student says 8 (confusing faces with corners)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What number is halfway between 0 and 10?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "10"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Halfway between 0 and 10 is 5. It is the same distance from 0 as from 10. 0 + 5 = 5. 10 - 5 = 5. Socratic Hint: If you count from 0 to 10, where do you stop in the middle?",
+        "failure_modes": {
+            "off_by_one": "Student says 4 or 6.",
+            "arithmetic_slip": "Student says 10 (the endpoint)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "How many legs does a cat have?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6",
+            "8"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "A cat has 4 legs. Socratic Hint: Picture a cat standing. Count each leg touching the ground.",
+        "failure_modes": {
+            "converse_error": "Student says 2 (like a person).",
+            "overcounting": "Student says 6 or 8 (like an insect or spider)."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3 + 4?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "34"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "3 + 4 = 7. Count from 3: 4, 5, 6, 7. Or count from 4: 5, 6, 7. Socratic Hint: Hold up 3 fingers on one hand and 4 on the other. Count them all.",
+        "failure_modes": {
+            "off_by_one": "Student says 6 (counting only 3 more from 3).",
+            "arithmetic_slip": "Student writes 34 instead of adding."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "There are 8 children in a class. 3 are boys. How many are girls?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "11"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Girls = 8 - 3 = 5. Socratic Hint: The total is 8. If 3 are boys, how many are left to be girls?",
+        "failure_modes": {
+            "off_by_one": "Student says 4 or 6.",
+            "formula_misapplication": "Student adds: 8 + 3 = 11."
+        }
+    },
+    {
+        "grade": 1,
+        "level": 1,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which number is even: 3, 5, 6, 9?",
+        "options": [
+            "3",
+            "5",
+            "6",
+            "9",
+            "None of them"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "6 is even because it can be split into two equal groups: 3 and 3. The others (3, 5, 9) are odd because they can't be split evenly. Socratic Hint: Try making pairs. If every item has a partner, the number is even.",
+        "failure_modes": {
+            "converse_error": "Student confuses odd and even.",
+            "constraint_neglect": "Student picks 3 because it is listed first."
+        }
+    }
+]

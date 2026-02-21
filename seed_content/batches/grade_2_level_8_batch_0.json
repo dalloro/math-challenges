@@ -1,0 +1,475 @@
+[
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "If you have 5 hundred-dollar bills, 4 ten-dollar bills, and 12 one-dollar bills, how much money do you have?",
+        "options": [
+            "$542",
+            "$552",
+            "$512",
+            "$912",
+            "$500"
+        ],
+        "correct_answer": "$552",
+        "ideal_solution": "5 hundreds = $500. 4 tens = $40. 12 ones = $12. 500 + 40 + 12 = $552. Socratic Hint: The 12 ones carry over to make another ten. 40 + 12 = 52.",
+        "failure_modes": {
+            "converse_error": "Student mixes place values to get $5412 or $542."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 400 - 199?",
+        "options": [
+            "201",
+            "299",
+            "301",
+            "200",
+            "399"
+        ],
+        "correct_answer": "201",
+        "ideal_solution": "Think: 400 - 200 = 200. Since we wanted to subtract 199, we took 1 too many. 200 + 1 = 201. Socratic Hint: Treat 199 like 200. Subtract 200 then add 1 back.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 301 or 299."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A bus holds exactly 50 kids. There are 120 kids going on a field trip. How many buses are needed so everyone gets a seat?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "1 bus = 50. 2 buses = 100. Still 20 kids left over. 3 buses = 150 seats, which is enough. Socratic Hint: Keep adding 50 until you pass 120. How many buses was that?",
+        "failure_modes": {
+            "premature_calculation": "Student guesses 2 (ignores the remainder)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "If you stack 2 cubes on top of each other, how many flat square faces are visible from the outside?",
+        "options": [
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Each cube has 6 faces. 6 + 6 = 12. 2 faces are glued together in the middle (hidden). 12 - 2 = 10 faces. Socratic Hint: Picture it or draw it. How many sides are hidden where they touch?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 12 (doesn't subtract hidden faces)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Emily saves $3 a day for 10 days. She then spends $15. How much does she have left?",
+        "options": [
+            "$5",
+            "$10",
+            "$15",
+            "$20",
+            "$30"
+        ],
+        "correct_answer": "$15",
+        "ideal_solution": "$3 × 10 = $30. 30 - 15 = $15. Socratic Hint: First figure out how much Emily saved in total over 10 days.",
+        "failure_modes": {
+            "premature_calculation": "Student stops at 30."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Count backward by 25s: 150, 125, 100, ___",
+        "options": [
+            "50",
+            "75",
+            "80",
+            "90",
+            "100"
+        ],
+        "correct_answer": "75",
+        "ideal_solution": "100 - 25 = 75. Socratic Hint: A dollar minus a quarter is 3 quarters (75c).",
+        "failure_modes": {
+            "off_by_one": "Student guesses 50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 450 + 265?",
+        "options": [
+            "615",
+            "700",
+            "715",
+            "750",
+            "815"
+        ],
+        "correct_answer": "715",
+        "ideal_solution": "400 + 200 = 600. 50 + 60 = 110. 5 + 0 = 5. 600 + 110 + 5 = 715. Socratic Hint: 50 + 65 is more than 100!",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 615 (forgets to carry the hundred)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which of these expressions equals 100?",
+        "options": [
+            "45 + 65",
+            "100 - 10 - 10",
+            "20 + 20 + 20 + 20 + 20",
+            "50 + 25 + 15"
+        ],
+        "correct_answer": "20 + 20 + 20 + 20 + 20",
+        "ideal_solution": "5 groups of 20 = 100. The others: 110, 80, 90. Socratic Hint: Count up by twenties.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 45 + 65 (110)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangle is 10 inches long and 5 inches wide. What is the distance all the way around? (Perimeter)",
+        "options": [
+            "15 inches",
+            "20 inches",
+            "30 inches",
+            "40 inches",
+            "50 inches"
+        ],
+        "correct_answer": "30 inches",
+        "ideal_solution": "10 + 10 + 5 + 5 = 20 + 10 = 30. Socratic Hint: Remember a rectangle has two long sides and two short sides.",
+        "failure_modes": {
+            "undercounting": "Student adds 10+5=15."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A sequence goes: $1.00, $1.50, $2.00, $2.50. What is the 7th amount?",
+        "options": [
+            "$3.00",
+            "$3.50",
+            "$4.00",
+            "$4.50",
+            "$5.00"
+        ],
+        "correct_answer": "$4.00",
+        "ideal_solution": "1: $1.00. 2: $1.50. 3: $2.00. 4: $2.50. 5: $3.00. 6: $3.50. 7: $4.00. Socratic Hint: Keep counting by 50 cents.",
+        "failure_modes": {
+            "off_by_one": "Student stops at 6th ($3.50)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is exactly $10.00 - $4.50?",
+        "options": [
+            "$4.50",
+            "$5.00",
+            "$5.50",
+            "$6.00",
+            "$6.50"
+        ],
+        "correct_answer": "$5.50",
+        "ideal_solution": "10.00 - 4.00 = 6.00. 6.00 - 0.50 = 5.50. Socratic Hint: Think: $4.50 + $5.50 = $10.00.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $6.50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "I am thinking of a 3-digit number. The hundreds digit is half of 8. The tens digit is double the hundreds digit. The ones digit is 0. What is it?",
+        "options": [
+            "240",
+            "480",
+            "840",
+            "420",
+            "408"
+        ],
+        "correct_answer": "480",
+        "ideal_solution": "Half of 8 = 4 (hundreds). Double 4 = 8 (tens). Ones = 0. So 480. Socratic Hint: Find the hundreds digit first.",
+        "failure_modes": {
+            "converse_error": "Student mixes them up: 840 or 420."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add: 39 + 39 + 2",
+        "options": [
+            "78",
+            "80",
+            "90",
+            "100",
+            "120"
+        ],
+        "correct_answer": "80",
+        "ideal_solution": "39 + 1 = 40. 39 + 1 = 40. 40 + 40 = 80. Socratic Hint: Move the 2! Give 1 to the first 39. Give the other 1 to the second 39.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds perfectly but gets 78, missing the +2."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 700 - 150.",
+        "options": [
+            "450",
+            "500",
+            "550",
+            "600",
+            "650"
+        ],
+        "correct_answer": "550",
+        "ideal_solution": "700 - 100 = 600. 600 - 50 = 550. Socratic Hint: What is 60 - 15?",
+        "failure_modes": {
+            "off_by_one": "Student says 650."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which of these numbers is odd? 990, 804, 302, 107, 222",
+        "options": [
+            "990",
+            "804",
+            "302",
+            "107",
+            "222"
+        ],
+        "correct_answer": "107",
+        "ideal_solution": "The last digit must be 1, 3, 5, 7, or 9. Only 107 ends in an odd digit (7). Socratic Hint: Look at the very last digit.",
+        "failure_modes": {
+            "constraint_neglect": "Student thinks 990 is odd."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 75 + 25 + 50 + 50?",
+        "options": [
+            "100",
+            "150",
+            "175",
+            "200",
+            "250"
+        ],
+        "correct_answer": "200",
+        "ideal_solution": "75 + 25 = 100. 50 + 50 = 100. 100 + 100 = 200. Socratic Hint: Group dollars!",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 150."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A hexagon has 6 corners. A triangle has 3 corners. How many MORE corners does a hexagon have than a triangle?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6",
+            "9"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "6 - 3 = 3. Socratic Hint: 'How many MORE' means subtract.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 6 + 3 = 9."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you buy 3 books that cost $4 each using a $20 bill, how much change do you receive?",
+        "options": [
+            "$8",
+            "$10",
+            "$12",
+            "$14",
+            "$16"
+        ],
+        "correct_answer": "$8",
+        "ideal_solution": "Cost = 4 + 4 + 4 = $12. Change = 20 - 12 = $8. Socratic Hint: What is the total cost of the books?",
+        "failure_modes": {
+            "premature_calculation": "Student stops at $12."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1000 - 10 - 10?",
+        "options": [
+            "900",
+            "980",
+            "990",
+            "1000",
+            "1020"
+        ],
+        "correct_answer": "980",
+        "ideal_solution": "1000 - 20. Count down: 990, 980. Socratic Hint: Think: 100 - 2 = 98.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 990."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "I have 4 quarters and 5 dimes. My friend gives me 50 cents. How much do I have now?",
+        "options": [
+            "$1.00",
+            "$1.50",
+            "$2.00",
+            "$2.50",
+            "$3.00"
+        ],
+        "correct_answer": "$2.00",
+        "ideal_solution": "4 quarters = $1.00. 5 dimes = 50 cents. $1.00 + 50c = $1.50. Give 50c = $1.50 + 50c = $2.00. Socratic Hint: 5 dimes is 50 cents. 50 cents plus 50 cents is a whole dollar.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says $1.50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add: 25 + 25 + 25 + 25 + 25",
+        "options": [
+            "100",
+            "125",
+            "150",
+            "175",
+            "200"
+        ],
+        "correct_answer": "125",
+        "ideal_solution": "4 quarters = 100. 100 + 25 = 125. Socratic Hint: Count quarters: 25, 50, 75, 100, 125!",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 100."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "At a party, 4 pizzas are ordered. Each pizza is cut into exactly 6 slices. The kids eat 20 slices total. How many slices are left over?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "10",
+            "24"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Total slices = 4 × 6 = 24. Eaten = 20. Left = 24 - 20 = 4. Socratic Hint: Find the total number of slices first.",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 6."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is exactly $5.00 minus $2.25?",
+        "options": [
+            "$2.25",
+            "$2.50",
+            "$2.75",
+            "$3.25",
+            "$3.75"
+        ],
+        "correct_answer": "$2.75",
+        "ideal_solution": "5.00 - 2.00 = 3.00. 3.00 - 0.25 = 2.75. Socratic Hint: Take away two whole dollars. Now you have $3.00. Take away one quarter.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets $3.25."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A train travels 10 miles in 1 hour. It leaves at 2:00 PM and arrives at 5:00 PM. How many miles did it travel?",
+        "options": [
+            "10 miles",
+            "20 miles",
+            "30 miles",
+            "40 miles",
+            "50 miles"
+        ],
+        "correct_answer": "30 miles",
+        "ideal_solution": "Hours = 5 - 2 = 3. Miles = 3 × 10 = 30. Socratic Hint: How many hours was it driving? Multiply that by 10.",
+        "failure_modes": {
+            "formula_misapplication": "Student says 50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 8,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Is 300 + 400 + 250 greater than 1,000?",
+        "options": [
+            "Yes",
+            "No",
+            "Exactly 1,000",
+            "Cannot tell"
+        ],
+        "correct_answer": "No",
+        "ideal_solution": "300 + 400 = 700. 700 + 200 = 900. 900 + 50 = 950. 950 is less than 1,000. Socratic Hint: Add them up first. 3+4+2=9.",
+        "failure_modes": {
+            "converse_error": "Student guesses Yes."
+        }
+    }
+]
