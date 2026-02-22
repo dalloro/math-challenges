@@ -11,9 +11,9 @@
 - [x] **Task: Create a Responsive Logo Component** [471dbc6]
     - [x] Write unit tests for a new `Logo` React component (e.g., verifying it renders and accepts basic style props).
     - [x] Create a `Logo.tsx` component that renders the `logo.svg` and ensures responsiveness.
-- [ ] **Task: Integrate Logo into App Header/Navbar**
-    - [ ] Write integration tests for the App Header/Navbar component to check for the presence of the `Logo` component.
-    - [ ] Update the App Header or main layout component to include the new `Logo`.
+- [x] **Task: Integrate Logo into App Header/Navbar** [21a300c]
+    - [x] Write integration tests for the App Header/Navbar component to check for the presence of the `Logo` component.
+    - [x] Update the App Header or main layout component to include the new `Logo`.
 - [ ] **Task: Conductor - User Manual Verification 'Phase 2: App Navbar/Header Logo' (Protocol in workflow.md)**
 
 ## Phase 3: Final Verification & Optimization
