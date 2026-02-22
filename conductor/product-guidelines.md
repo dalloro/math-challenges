@@ -10,7 +10,7 @@
 - **Adaptive Visualization:** Include a "Progressive Challenge Bar" that visually communicates the current difficulty or "Rank," providing a gamified sense of leveling up as questions become more complex.
 
 ## AI Interaction & Feedback
-- **Socratic Feedback Loop:** In the Open Reasoning modality, the AI should avoid giving direct answers. Instead, it should use inquiry-based prompts to guide students toward discovering their own logical flaws.
+- **Socratic Feedback Loop:** In the Open Reasoning modality, both AI feedback and pre-recorded ideal solutions must prioritize hint-first pedagogy. Direct answers and full derivations are hidden behind toggles or presented only after initial inquiry.
 - **Metacognitive Focus:** Feedback should prioritize *how* a student thinks over simply *what* the final answer is.
 
 ## Learning Intervention (Thematic Shift)
