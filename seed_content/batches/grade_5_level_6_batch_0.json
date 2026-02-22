@@ -1,0 +1,1052 @@
+[
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A baker uses 2 1/4 cups of flour per batch of cookies. She has 15 cups of flour. How many full batches can she make, and how much flour is left over?",
+        "options": [
+            "5 batches, 3/4 cup left",
+            "6 batches, 1 1/2 cups left",
+            "6 batches, 3/4 cup left",
+            "7 batches, 0 cups left",
+            "6 batches, 0 cups left"
+        ],
+        "correct_answer": "6 batches, 1 1/2 cups left",
+        "ideal_solution": "15 ÷ 2 1/4 = 15 ÷ 9/4 = 15 × 4/9 = 60/9 = 6 2/3 batches. She can make 6 full batches. Flour used: 6 × 9/4 = 54/4 = 13 1/2. Left over: 15 - 13.5 = 1.5 = 1 1/2 cups. Socratic Hint: Divide the total flour by the amount per batch. The whole number part is batches; multiply back to find leftover.",
+        "failure_modes": {
+            "off_by_one": "Student rounds 6.67 up to 7, but there's not enough flour for 7 batches.",
+            "arithmetic_slip": "Student computes 6 × 2.25 = 12, then 15 - 12 = 3, getting 3 cups left.",
+            "premature_calculation": "Student divides 15 by 2 = 7.5 (ignoring the 1/4), saying 7 batches."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A swimming pool is shaped like an L. The L is made of two rectangles: one is 8m × 4m and the other is 6m × 4m. If the pool is 2m deep, what is the total volume of water it can hold?",
+        "options": [
+            "56 cu m",
+            "80 cu m",
+            "96 cu m",
+            "112 cu m",
+            "128 cu m"
+        ],
+        "correct_answer": "112 cu m",
+        "ideal_solution": "Total surface area = (8×4) + (6×4) = 32 + 24 = 56 sq m. Volume = 56 × 2 = 112 cu m. Socratic Hint: Find the total floor area of the L-shape, then multiply by depth.",
+        "failure_modes": {
+            "premature_calculation": "Student computes volume of one rectangle only: 8×4×2 = 64.",
+            "arithmetic_slip": "Student computes (32 + 24) × 2 = 96.",
+            "formula_misapplication": "Student adds all dimensions: (8+4+6+4) × 2 = 44."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A store has a 'spend $50, get 20% off your purchase' deal. Jake buys items totaling $65. How much does he save compared to the full price?",
+        "options": [
+            "$10.00",
+            "$12.00",
+            "$13.00",
+            "$15.00",
+            "$20.00"
+        ],
+        "correct_answer": "$13.00",
+        "ideal_solution": "Since Jake spent over $50, he gets 20% off. Savings = 20% × $65 = 0.20 × 65 = $13. Socratic Hint: Check if the condition is met first, then calculate the discount on the full amount.",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 20% of $50 = $10 (wrong base).",
+            "arithmetic_slip": "Student computes 0.20 × 65 = $12.",
+            "constraint_neglect": "Student takes 20% off only the amount over $50: 20% × $15 = $3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 3/4 ÷ 2/3 + 1/2",
+        "options": [
+            "5/8",
+            "1 1/8",
+            "1 5/8",
+            "2 1/8",
+            "13/8"
+        ],
+        "correct_answer": "1 5/8",
+        "ideal_solution": "Division first: 3/4 ÷ 2/3 = 3/4 × 3/2 = 9/8. Then add: 9/8 + 1/2 = 9/8 + 4/8 = 13/8 = 1 5/8. Socratic Hint: Do the division before the addition (order of operations).",
+        "failure_modes": {
+            "formula_misapplication": "Student adds first: 2/3 + 1/2 = 7/6, then 3/4 ÷ 7/6 = 18/28 = 9/14.",
+            "premature_calculation": "Student stops at 9/8 without adding 1/2.",
+            "arithmetic_slip": "Student computes 9/8 + 1/2 = 10/10 = 1."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "The product of three consecutive whole numbers is 120. What is the sum of these three numbers?",
+        "options": [
+            "12",
+            "15",
+            "18",
+            "21",
+            "24"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "Try nearby cube root of 120 ≈ 4.9. Try 4×5×6 = 120. ✓ Sum = 4 + 5 + 6 = 15. Socratic Hint: Estimate the cube root and test the three whole numbers nearest to it.",
+        "failure_modes": {
+            "arithmetic_slip": "Student tries 3×4×5 = 60, then 5×6×7 = 210, and guesses.",
+            "off_by_one": "Student finds 4, 5, 6 but sums as 4+5+6 = 12 (addition error).",
+            "formula_misapplication": "Student divides 120/3 = 40 and checks consecutive numbers around 40."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular garden is 20m long and 15m wide. A diagonal path divides it into two triangles. What is the area of one triangle?",
+        "options": [
+            "35 sq m",
+            "75 sq m",
+            "100 sq m",
+            "150 sq m",
+            "300 sq m"
+        ],
+        "correct_answer": "150 sq m",
+        "ideal_solution": "Rectangle area = 20 × 15 = 300 sq m. A diagonal divides it into two equal triangles. One triangle = 300/2 = 150 sq m. Socratic Hint: A diagonal of a rectangle always creates two congruent triangles.",
+        "failure_modes": {
+            "premature_calculation": "Student computes the full rectangle area (300) and picks that.",
+            "formula_misapplication": "Student uses triangle formula with base=20, height=15: (1/2)(20)(15) = 150 (correct, but might use wrong values: (1/2)(20+15)(1) = 17.5).",
+            "arithmetic_slip": "Student computes 300/2 = 100."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Alice has twice as many stickers as Bob. Carol has 4 stickers. Together the three have 40 stickers. How many does Alice have?",
+        "options": [
+            "12",
+            "16",
+            "18",
+            "20",
+            "24"
+        ],
+        "correct_answer": "24",
+        "ideal_solution": "Alice = 2 × Bob. Total: Alice + Bob + Carol = 40. So 2B + B + 4 = 40. 3B = 36. B = 12. Alice = 2 × 12 = 24. Socratic Hint: Use a variable for Bob, write Alice in terms of Bob, then solve the equation.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides 40 by 3 = 13.3 and guesses.",
+            "arithmetic_slip": "Student computes 3B = 44 (adding 4 instead of subtracting), B = 14.7.",
+            "premature_calculation": "Student finds Bob = 12 and picks that instead of Alice."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A store marks up items by 40% over cost, then offers a 25% discount. If an item costs the store $50, what does a customer pay?",
+        "options": [
+            "$42.50",
+            "$47.50",
+            "$50.00",
+            "$52.50",
+            "$57.50"
+        ],
+        "correct_answer": "$52.50",
+        "ideal_solution": "Marked-up price = $50 × 1.40 = $70. Discount = 25% of $70 = $17.50. Customer pays = $70 - $17.50 = $52.50. Socratic Hint: First add the markup to find the selling price, then apply the discount.",
+        "failure_modes": {
+            "formula_misapplication": "Student nets 40% - 25% = 15% markup: $50 × 1.15 = $57.50.",
+            "premature_calculation": "Student computes markup only: $70.",
+            "arithmetic_slip": "Student computes 25% of $70 = $14, paying $56."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A cylindrical container has a radius of 5 cm and height of 10 cm. How many liters of water can it hold? (Use π ≈ 3.14, 1 liter = 1000 cu cm)",
+        "options": [
+            "0.157 liters",
+            "0.785 liters",
+            "1.57 liters",
+            "7.85 liters",
+            "78.5 liters"
+        ],
+        "correct_answer": "0.785 liters",
+        "ideal_solution": "Volume = π × r² × h = 3.14 × 25 × 10 = 785 cu cm. Convert: 785/1000 = 0.785 liters. Socratic Hint: Find the volume in cubic centimeters first, then convert to liters.",
+        "failure_modes": {
+            "units_mismatch": "Student forgets to convert: leaves answer as 785 cu cm.",
+            "formula_misapplication": "Student uses diameter: 3.14 × 100 × 10 = 3140 cu cm → 3.14 liters.",
+            "arithmetic_slip": "Student computes 3.14 × 25 = 78.5, then 78.5 × 10 = 785 (correct), but converts as 785/100 = 7.85."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the value of 2 + 3 × (4² - 10)?",
+        "options": [
+            "12",
+            "14",
+            "20",
+            "30",
+            "50"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "Exponent: 4² = 16. Parentheses: 16 - 10 = 6. Multiply: 3 × 6 = 18. Add: 2 + 18 = 20. Socratic Hint: Handle the exponent first, then parentheses, then multiplication, then addition.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds first: (2+3) × (16-10) = 5 × 6 = 30.",
+            "arithmetic_slip": "Student computes 4² = 8, then 3 × (8-10) = -6, then 2 + (-6) = -4.",
+            "premature_calculation": "Student computes 2 + 3 = 5, then 5 × 4² - 10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A farmer plants trees in a triangular pattern. Row 1 has 1 tree, row 2 has 2 trees, row 3 has 3, and so on. If he has exactly 55 trees, how many complete rows can he plant?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Sum of 1+2+3+...+n = n(n+1)/2. Try n=10: 10×11/2 = 55. ✓ He can plant 10 complete rows. Socratic Hint: Add up the rows: 1+2+3+... until you reach exactly 55.",
+        "failure_modes": {
+            "off_by_one": "Student tries n=9: 9×10/2 = 45 (not enough), but doesn't try n=10.",
+            "arithmetic_slip": "Student adds 1+2+3+...+10 = 50 (addition error).",
+            "formula_misapplication": "Student divides 55/5 = 11."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the LCM of 12, 15, and 20?",
+        "options": [
+            "30",
+            "60",
+            "120",
+            "180",
+            "360"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "12 = 2² × 3. 15 = 3 × 5. 20 = 2² × 5. LCM = 2² × 3 × 5 = 60. Socratic Hint: Find the prime factorization of each number and take the highest power of each prime.",
+        "failure_modes": {
+            "overcounting": "Student multiplies all: 12 × 15 × 20 = 3600.",
+            "undercounting": "Student finds LCM of just 12 and 15 = 60 (happens to be correct, but process is incomplete).",
+            "arithmetic_slip": "Student computes 2² × 3 × 5 = 30."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A car fuel tank holds 60 liters. The car uses 7.5 liters per 100 km. How far can the car travel on a full tank?",
+        "options": [
+            "450 km",
+            "600 km",
+            "750 km",
+            "800 km",
+            "4500 km"
+        ],
+        "correct_answer": "800 km",
+        "ideal_solution": "Liters available: 60. Per 100 km, uses 7.5L. Number of 100-km segments: 60 ÷ 7.5 = 8. Distance = 8 × 100 = 800 km. Socratic Hint: Divide the tank capacity by the consumption rate to find how many 100-km units you can drive.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies: 60 × 7.5 = 450 km.",
+            "arithmetic_slip": "Student computes 60/7.5 = 7, then 7 × 100 = 700.",
+            "units_mismatch": "Student computes 60 × 100/7.5 = 800 (correct) or 60/7.5 × 10 = 80."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A triangular prism has two triangular faces (base 6 cm, height 4 cm) and three rectangular faces. The prism is 10 cm long. What is its volume?",
+        "options": [
+            "24 cu cm",
+            "60 cu cm",
+            "120 cu cm",
+            "240 cu cm",
+            "360 cu cm"
+        ],
+        "correct_answer": "120 cu cm",
+        "ideal_solution": "Area of triangular base = (1/2) × 6 × 4 = 12 sq cm. Volume = base area × length = 12 × 10 = 120 cu cm. Socratic Hint: Find the area of the triangular cross-section, then multiply by the length of the prism.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses full rectangle: 6 × 4 × 10 = 240.",
+            "premature_calculation": "Student finds triangular area = 12 and stops.",
+            "arithmetic_slip": "Student computes (1/2) × 6 × 4 = 8, then 8 × 10 = 80."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A password must have exactly 4 digits. The first digit cannot be 0, and the last digit must be even. How many valid passwords are possible?",
+        "options": [
+            "3600",
+            "4000",
+            "4500",
+            "5000",
+            "9000"
+        ],
+        "correct_answer": "4500",
+        "ideal_solution": "First digit: 1-9 → 9 choices. Middle two digits: 0-9 → 10 × 10 = 100. Last digit: 0,2,4,6,8 → 5 choices. Total = 9 × 10 × 10 × 5 = 4500. Socratic Hint: Count the choices for each position independently, then multiply.",
+        "failure_modes": {
+            "overcounting": "Student uses 10 for first digit: 10 × 10 × 10 × 5 = 5000.",
+            "undercounting": "Student uses 4 even digits (forgetting 0): 9 × 10 × 10 × 4 = 3600.",
+            "formula_misapplication": "Student computes 9 × 10 × 10 × 10 = 9000 (no constraint on last)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A bakery sells cupcakes for $2.75 each and cookies for $1.25 each. Maria buys 4 cupcakes and 6 cookies. She pays with a $20 bill. How much change does she get?",
+        "options": [
+            "$0.50",
+            "$1.50",
+            "$2.50",
+            "$3.50",
+            "$4.50"
+        ],
+        "correct_answer": "$1.50",
+        "ideal_solution": "Cupcakes: 4 × $2.75 = $11.00. Cookies: 6 × $1.25 = $7.50. Total = $11.00 + $7.50 = $18.50. Change = $20 - $18.50 = $1.50. Socratic Hint: Calculate each item's total cost, add them, then subtract from $20.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 4 × $2.75 = $10.00, total = $17.50, change = $2.50.",
+            "premature_calculation": "Student computes only cupcakes: $11 and stops.",
+            "formula_misapplication": "Student averages the prices: ($2.75 + $1.25)/2 = $2.00 × 10 = $20, change = $0."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the sum of all factors of 28?",
+        "options": [
+            "28",
+            "40",
+            "56",
+            "64",
+            "84"
+        ],
+        "correct_answer": "56",
+        "ideal_solution": "Factors of 28: 1, 2, 4, 7, 14, 28. Sum = 1+2+4+7+14+28 = 56. Note: 28 is a perfect number (sum of proper divisors = 28). Socratic Hint: List all factors, then add them all up.",
+        "failure_modes": {
+            "undercounting": "Student misses factor 4: 1+2+7+14+28 = 52.",
+            "overcounting": "Student includes 28 twice: sum = 84.",
+            "formula_misapplication": "Student sums only proper divisors: 1+2+4+7+14 = 28."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A square garden has a perimeter of 48 meters. A circular flower bed with a radius of 3 meters is placed in the center. What is the area of the garden NOT covered by the flower bed? (Use π ≈ 3.14)",
+        "options": [
+            "115.74 sq m",
+            "119.74 sq m",
+            "127.74 sq m",
+            "135.74 sq m",
+            "144 sq m"
+        ],
+        "correct_answer": "115.74 sq m",
+        "ideal_solution": "Side of square = 48/4 = 12 m. Square area = 12² = 144 sq m. Circle area = π × 3² = 3.14 × 9 = 28.26 sq m. Uncovered = 144 - 28.26 = 115.74 sq m. Socratic Hint: Find the square's area, find the circle's area, then subtract.",
+        "failure_modes": {
+            "premature_calculation": "Student finds square area = 144 and stops.",
+            "arithmetic_slip": "Student computes 3.14 × 9 = 27.26, getting 144 - 27.26 = 116.74.",
+            "formula_misapplication": "Student uses diameter 3 instead of radius: 3.14 × 1.5² = 7.065."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: (1/2)^3 × 8",
+        "options": [
+            "1/2",
+            "1",
+            "3/2",
+            "4",
+            "12"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "(1/2)^3 = 1/8. Then 1/8 × 8 = 8/8 = 1. Socratic Hint: Compute the power first, then multiply.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes (1/2 × 8)^3 = 4^3 = 64.",
+            "arithmetic_slip": "Student computes (1/2)^3 = 3/2 and multiplies: 3/2 × 8 = 12.",
+            "premature_calculation": "Student computes (1/2)^3 = 1/8 and picks 1/2 (misreading the fraction)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A gym membership costs $35 per month. A yearly plan costs $350. How much do you save per month with the yearly plan?",
+        "options": [
+            "$4.17",
+            "$5.00",
+            "$5.83",
+            "$7.50",
+            "$10.00"
+        ],
+        "correct_answer": "$5.83",
+        "ideal_solution": "Monthly cost without plan: $35 × 12 = $420/year. Yearly plan: $350. Savings: $420 - $350 = $70/year. Per month: $70/12 = $5.83 (rounded). Socratic Hint: Compare the annual cost both ways, find the total savings, then divide by 12.",
+        "failure_modes": {
+            "premature_calculation": "Student computes total savings = $70 and picks $7.50 (dividing by something wrong).",
+            "arithmetic_slip": "Student computes $70/12 = $5.00.",
+            "formula_misapplication": "Student subtracts monthly: $35 - $350/12 = $35 - $29.17 = $5.83 (correct, different method)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A cube has edges of 3 cm. If you paint all outer faces, how many square centimeters are painted?",
+        "options": [
+            "18 sq cm",
+            "27 sq cm",
+            "36 sq cm",
+            "54 sq cm",
+            "81 sq cm"
+        ],
+        "correct_answer": "54 sq cm",
+        "ideal_solution": "A cube has 6 faces, each is 3×3 = 9 sq cm. Total = 6 × 9 = 54 sq cm. Socratic Hint: Find the area of one face, then multiply by 6.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes volume: 3^3 = 27.",
+            "premature_calculation": "Student finds one face: 9 and picks 18 (doubling instead of ×6).",
+            "arithmetic_slip": "Student computes 6 × 9 = 36."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A recipe uses sugar at a ratio of 2:3 with flour. If you use 4 1/2 cups of flour, how many cups of sugar do you need?",
+        "options": [
+            "2 cups",
+            "2 1/4 cups",
+            "3 cups",
+            "3 3/4 cups",
+            "6 3/4 cups"
+        ],
+        "correct_answer": "3 cups",
+        "ideal_solution": "Sugar:Flour = 2:3. If flour = 4.5, sugar = (2/3) × 4.5 = 9/3 = 3 cups. Socratic Hint: The ratio means for every 3 parts flour, use 2 parts sugar. Find the scaling factor.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses 3:2 ratio: (3/2) × 4.5 = 6.75.",
+            "arithmetic_slip": "Student computes (2/3) × 4.5 = 2.25.",
+            "converse_error": "Student multiplies 4.5 × 2 = 9."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "If n is a whole number and 2^n = 128, what is n?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "64"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32, 2^6=64, 2^7=128. So n=7. Socratic Hint: Keep doubling: 2, 4, 8, 16, 32, 64, 128.",
+        "failure_modes": {
+            "off_by_one": "Student counts to 64 and picks n=6.",
+            "formula_misapplication": "Student divides 128/2 = 64 and picks 64.",
+            "arithmetic_slip": "Student computes 2^5 = 32, 2^6 = 96 (addition instead of doubling)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A rectangular photo is 6 inches by 4 inches. It is enlarged by a scale factor of 1.5. What is the area of the enlarged photo?",
+        "options": [
+            "24 sq in",
+            "36 sq in",
+            "48 sq in",
+            "54 sq in",
+            "60 sq in"
+        ],
+        "correct_answer": "54 sq in",
+        "ideal_solution": "New dimensions: 6 × 1.5 = 9, 4 × 1.5 = 6. New area = 9 × 6 = 54 sq in. Socratic Hint: Multiply each dimension by the scale factor, then compute the new area.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies area by 1.5: 24 × 1.5 = 36 (should multiply by 1.5² = 2.25).",
+            "premature_calculation": "Student computes original area: 24.",
+            "arithmetic_slip": "Student computes 9 × 6 = 48."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A road crew paints 3/4 of a mile of road per hour. How many hours will it take to paint 6 miles?",
+        "options": [
+            "4",
+            "4.5",
+            "6",
+            "7.5",
+            "8"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "Time = distance ÷ rate = 6 ÷ 3/4 = 6 × 4/3 = 24/3 = 8 hours. Socratic Hint: Dividing by 3/4 is the same as multiplying by 4/3.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies: 6 × 3/4 = 4.5.",
+            "arithmetic_slip": "Student computes 6 × 4/3 = 7.5.",
+            "converse_error": "Student divides 3/4 by 6 = 1/8 hours."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A circle has an area of 78.5 sq cm (π ≈ 3.14). What is its radius?",
+        "options": [
+            "3 cm",
+            "4 cm",
+            "5 cm",
+            "10 cm",
+            "25 cm"
+        ],
+        "correct_answer": "5 cm",
+        "ideal_solution": "Area = πr². 78.5 = 3.14 × r². r² = 78.5/3.14 = 25. r = √25 = 5 cm. Socratic Hint: Divide the area by π to get r², then take the square root.",
+        "failure_modes": {
+            "premature_calculation": "Student finds r² = 25 and picks 25.",
+            "formula_misapplication": "Student divides by 2π instead of π: 78.5/6.28 = 12.5, then √12.5 ≈ 3.5.",
+            "arithmetic_slip": "Student computes 78.5/3.14 = 20, then √20 ≈ 4.5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A jar holds a mixture of red and blue marbles in a 3:5 ratio. If there are 48 marbles total, how many more blue marbles are there than red ones?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "18"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Total parts = 3 + 5 = 8. One part = 48/8 = 6. Red = 3 × 6 = 18. Blue = 5 × 6 = 30. Difference = 30 - 18 = 12. Socratic Hint: Divide the total by the sum of ratio parts to find the value of one part.",
+        "failure_modes": {
+            "premature_calculation": "Student finds one part = 6 and picks that.",
+            "arithmetic_slip": "Student computes 30 - 18 = 8.",
+            "formula_misapplication": "Student divides: 48 × 3/5 = 28.8."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 2.5 × 4 - 3.6 ÷ 0.9",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "10"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Multiply and divide before adding/subtracting. 2.5 × 4 = 10. 3.6 ÷ 0.9 = 4. Then 10 - 4 = 6. Socratic Hint: Handle multiplication and division first (left to right), then subtraction.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts first: 2.5 × (4 - 3.6) ÷ 0.9 = 2.5 × 0.4/0.9.",
+            "arithmetic_slip": "Student computes 3.6 ÷ 0.9 = 3, then 10 - 3 = 7.",
+            "premature_calculation": "Student evaluates left-to-right: 2.5 × 4 = 10, 10 - 3.6 = 6.4, 6.4 ÷ 0.9 = 7.1."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "A number leaves a remainder of 3 when divided by 5 and a remainder of 2 when divided by 3. What is the smallest such positive number?",
+        "options": [
+            "3",
+            "5",
+            "8",
+            "13",
+            "23"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "Numbers with remainder 3 when ÷5: 3, 8, 13, 18, 23... Check remainder when ÷3: 3÷3=R0, 8÷3=R2 ✓. The smallest is 8. Socratic Hint: List numbers that satisfy the first condition, then check them against the second.",
+        "failure_modes": {
+            "off_by_one": "Student finds 3 (R3 when ÷5, but R0 when ÷3, doesn't satisfy both).",
+            "arithmetic_slip": "Student checks 13÷3 = R1 (not R2), so 13 doesn't work, but picks 13 anyway.",
+            "formula_misapplication": "Student adds the remainders: 3 + 2 = 5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular piece of paper is folded in half twice. The final folded piece has dimensions 4 cm by 3 cm. What was the area of the original paper?",
+        "options": [
+            "12 sq cm",
+            "24 sq cm",
+            "36 sq cm",
+            "48 sq cm",
+            "96 sq cm"
+        ],
+        "correct_answer": "48 sq cm",
+        "ideal_solution": "Each fold doubles the paper. Two folds = area is 1/4 of original. Folded area = 4 × 3 = 12 sq cm. Original = 12 × 4 = 48 sq cm. Socratic Hint: Each fold halves the visible area. Two folds means the original was 4 times the folded piece.",
+        "failure_modes": {
+            "undercounting": "Student multiplies by 2 (one fold): 12 × 2 = 24.",
+            "premature_calculation": "Student picks the folded area: 12.",
+            "overcounting": "Student multiplies by 8 (three folds): 96."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Players A, B, C, D, and E are in a tournament where each player plays every other player once. Player A wins all games. Player E loses all games. How many games resulted in a definite outcome (win or loss)?",
+        "options": [
+            "5",
+            "8",
+            "10",
+            "15",
+            "20"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Total games in a round-robin of 5 players = 5×4/2 = 10. Every game has a winner and loser, so all 10 games had a definite outcome. Socratic Hint: Count total pairings — each game has exactly one winner.",
+        "failure_modes": {
+            "formula_misapplication": "Student counts only A's and E's games: 4 + 4 = 8 (but A vs E is double-counted).",
+            "overcounting": "Student computes 5 × 4 = 20 (not divided by 2).",
+            "undercounting": "Student counts only A's 4 wins: 5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2/3 of 3/4 of 120?",
+        "options": [
+            "20",
+            "40",
+            "60",
+            "80",
+            "90"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "Work right to left: 3/4 of 120 = 90. 2/3 of 90 = 60. Or multiply all: 2/3 × 3/4 × 120 = 6/12 × 120 = 1/2 × 120 = 60. Socratic Hint: 'Of' means multiply. Compute one fraction at a time.",
+        "failure_modes": {
+            "premature_calculation": "Student computes 3/4 of 120 = 90 and stops.",
+            "arithmetic_slip": "Student computes 2/3 × 90 = 40.",
+            "formula_misapplication": "Student adds: 2/3 + 3/4 = 17/12, then 17/12 × 120."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A cone has a circular base with radius 4 cm and a height of 9 cm. What is the volume of the cone? (Use π ≈ 3.14, Volume = 1/3 × π × r² × h)",
+        "options": [
+            "37.68 cu cm",
+            "75.36 cu cm",
+            "150.72 cu cm",
+            "301.44 cu cm",
+            "452.16 cu cm"
+        ],
+        "correct_answer": "150.72 cu cm",
+        "ideal_solution": "V = 1/3 × π × r² × h = 1/3 × 3.14 × 16 × 9 = 1/3 × 452.16 = 150.72 cu cm. Socratic Hint: Calculate πr²h first (the cylinder volume), then divide by 3.",
+        "failure_modes": {
+            "formula_misapplication": "Student forgets 1/3: πr²h = 452.16.",
+            "arithmetic_slip": "Student computes 1/3 × 452.16 = 75.36 (halving instead of third).",
+            "premature_calculation": "Student computes πr² = 50.24 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A hiker walks 4 km north, then 3 km east, then 4 km south. How far is the hiker from the starting point?",
+        "options": [
+            "0 km",
+            "3 km",
+            "4 km",
+            "5 km",
+            "11 km"
+        ],
+        "correct_answer": "3 km",
+        "ideal_solution": "The 4 km north and 4 km south cancel out. The hiker is 3 km east of the start. Distance = 3 km. Socratic Hint: Track the north-south and east-west movements separately.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds all: 4 + 3 + 4 = 11 km.",
+            "arithmetic_slip": "Student uses Pythagorean theorem: √(4² + 3²) = 5 (but 4N and 4S cancel!).",
+            "converse_error": "Student thinks north and south movements don't cancel and computes √(8² + 3²)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A decimal number N satisfies: N × 0.4 = 3.6. What is N?",
+        "options": [
+            "1.44",
+            "3.2",
+            "4",
+            "9",
+            "14.4"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "N = 3.6 ÷ 0.4 = 36 ÷ 4 = 9. Socratic Hint: Divide both sides by 0.4. Clear the decimals by multiplying both by 10.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies: 3.6 × 0.4 = 1.44.",
+            "arithmetic_slip": "Student computes 3.6/0.4 = 3.2.",
+            "converse_error": "Student computes 0.4/3.6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Two consecutive odd numbers have a product of 143. What are the two numbers?",
+        "options": [
+            "9 and 11",
+            "11 and 13",
+            "13 and 15",
+            "15 and 17",
+            "17 and 19"
+        ],
+        "correct_answer": "11 and 13",
+        "ideal_solution": "√143 ≈ 12. Try consecutive odd numbers near 12: 11 × 13 = 143. ✓ Socratic Hint: Estimate the square root and test the two odd numbers closest to it.",
+        "failure_modes": {
+            "off_by_one": "Student tries 13 × 15 = 195 (too high).",
+            "arithmetic_slip": "Student computes 11 × 13 = 133.",
+            "formula_misapplication": "Student divides 143/2 = 71.5 and tries 71 and 73."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A semicircle has a diameter of 14 cm. What is the perimeter of the semicircle? (Use π ≈ 3.14)",
+        "options": [
+            "21.98 cm",
+            "28.98 cm",
+            "35.98 cm",
+            "43.96 cm",
+            "50 cm"
+        ],
+        "correct_answer": "35.98 cm",
+        "ideal_solution": "Curved part = half the circumference = (1/2) × π × d = (1/2) × 3.14 × 14 = 21.98 cm. Add the straight diameter: 21.98 + 14 = 35.98 cm. Socratic Hint: The perimeter includes the curved half-circle AND the straight diameter.",
+        "failure_modes": {
+            "premature_calculation": "Student computes only the curved part: 21.98 cm.",
+            "formula_misapplication": "Student computes full circumference: 3.14 × 14 = 43.96.",
+            "arithmetic_slip": "Student computes (1/2) × 3.14 × 14 = 28.98 (using radius instead of diameter)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A train travels 360 km in 4.5 hours. A car travels the same distance but takes 6 hours. How much faster is the train's speed than the car's speed?",
+        "options": [
+            "10 km/h",
+            "15 km/h",
+            "20 km/h",
+            "25 km/h",
+            "30 km/h"
+        ],
+        "correct_answer": "20 km/h",
+        "ideal_solution": "Train speed = 360/4.5 = 80 km/h. Car speed = 360/6 = 60 km/h. Difference = 80 - 60 = 20 km/h. Socratic Hint: Find each speed by dividing distance by time, then subtract.",
+        "failure_modes": {
+            "premature_calculation": "Student finds train speed = 80 and stops.",
+            "arithmetic_slip": "Student computes 360/4.5 = 90.",
+            "formula_misapplication": "Student subtracts times: 6 - 4.5 = 1.5 hours."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A regular hexagon has a perimeter of 42 cm. What is the length of each side?",
+        "options": [
+            "5 cm",
+            "6 cm",
+            "7 cm",
+            "8 cm",
+            "9 cm"
+        ],
+        "correct_answer": "7 cm",
+        "ideal_solution": "A regular hexagon has 6 equal sides. Side = 42/6 = 7 cm. Socratic Hint: 'Regular' means all sides are equal, so divide the perimeter by the number of sides.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides by 4 (treating as square): 42/4 = 10.5.",
+            "arithmetic_slip": "Student computes 42/6 = 6.",
+            "constraint_neglect": "Student forgets 'regular' means equal sides."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A relay team has 4 runners. Their individual times are 12.3s, 11.8s, 13.1s, and 12.8s. What is the team's total time?",
+        "options": [
+            "48.0 s",
+            "49.0 s",
+            "50.0 s",
+            "50.5 s",
+            "52.0 s"
+        ],
+        "correct_answer": "50.0 s",
+        "ideal_solution": "Total = 12.3 + 11.8 + 13.1 + 12.8 = 50.0 s. Socratic Hint: Add all four times carefully, lining up the decimal points.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 12.3 + 11.8 = 23.1 instead of 24.1.",
+            "premature_calculation": "Student adds only three times.",
+            "formula_misapplication": "Student averages instead of adding."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the smallest number divisible by 3, 4, and 5?",
+        "options": [
+            "12",
+            "15",
+            "20",
+            "30",
+            "60"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "LCM(3,4,5): 3 = 3, 4 = 2², 5 = 5. LCM = 2² × 3 × 5 = 60. Socratic Hint: Find the LCM by using prime factorizations.",
+        "failure_modes": {
+            "undercounting": "Student picks 15 (divisible by 3 and 5 but not 4).",
+            "formula_misapplication": "Student multiplies all: 3 × 4 × 5 = 60 (correct by coincidence, but wrong method for other cases).",
+            "arithmetic_slip": "Student picks 30 (divisible by 3 and 5 but not 4)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A bucket loses water at a rate of 1/5 liter per minute. How much water is lost in 2 hours?",
+        "options": [
+            "12 liters",
+            "20 liters",
+            "24 liters",
+            "40 liters",
+            "120 liters"
+        ],
+        "correct_answer": "24 liters",
+        "ideal_solution": "2 hours = 120 minutes. Water lost = 120 × 1/5 = 120/5 = 24 liters. Socratic Hint: Convert hours to minutes first, then multiply by the rate.",
+        "failure_modes": {
+            "units_mismatch": "Student uses 2 hours directly: 2 × 1/5 = 2/5 liters.",
+            "arithmetic_slip": "Student computes 120/5 = 20.",
+            "formula_misapplication": "Student divides: 120 ÷ 1/5 = 600."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular box has dimensions 8 cm × 6 cm × 4 cm. A smaller cube with edge 2 cm is placed inside. What is the remaining volume inside the box?",
+        "options": [
+            "176 cu cm",
+            "180 cu cm",
+            "184 cu cm",
+            "188 cu cm",
+            "192 cu cm"
+        ],
+        "correct_answer": "184 cu cm",
+        "ideal_solution": "Box volume = 8 × 6 × 4 = 192 cu cm. Cube volume = 2³ = 8 cu cm. Remaining = 192 - 8 = 184 cu cm. Socratic Hint: Find each volume, then subtract.",
+        "failure_modes": {
+            "premature_calculation": "Student finds only box volume: 192.",
+            "arithmetic_slip": "Student computes 192 - 8 = 176.",
+            "formula_misapplication": "Student computes cube as 2 × 2 = 4 instead of 2³ = 8."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A pizza has 8 slices. Tom eats 3/8, and Jerry eats 1/4 of the pizza. How many slices are left?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "Tom eats 3/8 of 8 = 3 slices. Jerry eats 1/4 of 8 = 2 slices. Eaten = 3 + 2 = 5. Left = 8 - 5 = 3 slices. Socratic Hint: Convert each fraction to slices, add the eaten slices, then subtract.",
+        "failure_modes": {
+            "premature_calculation": "Student subtracts only Tom's: 8 - 3 = 5 slices.",
+            "arithmetic_slip": "Student computes 1/4 of 8 = 3 slices, total eaten = 6, left = 2.",
+            "formula_misapplication": "Student adds fractions: 3/8 + 1/4 = 4/12 = 1/3, then 8 × 1/3 ≈ 2.7."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 5^2 - 3^2",
+        "options": [
+            "2",
+            "4",
+            "8",
+            "16",
+            "34"
+        ],
+        "correct_answer": "16",
+        "ideal_solution": "5² = 25. 3² = 9. 25 - 9 = 16. Or use difference of squares: (5-3)(5+3) = 2 × 8 = 16. Socratic Hint: Calculate each square first, then subtract.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes (5-3)² = 2² = 4.",
+            "arithmetic_slip": "Student computes 25 - 9 = 34 (adding instead).",
+            "premature_calculation": "Student computes 5² = 25 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many two-digit numbers are divisible by both 3 and 4?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "Divisible by both 3 and 4 means divisible by LCM(3,4) = 12. Two-digit multiples of 12: 12, 24, 36, 48, 60, 72, 84, 96. Count = 8. Socratic Hint: Find the LCM first, then list all two-digit multiples.",
+        "failure_modes": {
+            "undercounting": "Student misses 96: counting only 7.",
+            "overcounting": "Student includes 108: counting 9.",
+            "formula_misapplication": "Student counts multiples of 3 and multiples of 4 separately."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A square and an equilateral triangle have the same perimeter. The square has sides of 9 cm. What is the side length of the triangle?",
+        "options": [
+            "9 cm",
+            "10 cm",
+            "11 cm",
+            "12 cm",
+            "15 cm"
+        ],
+        "correct_answer": "12 cm",
+        "ideal_solution": "Square perimeter = 4 × 9 = 36 cm. Triangle perimeter = 36 cm. Side of equilateral triangle = 36/3 = 12 cm. Socratic Hint: Find the square's perimeter, then divide by 3 for the triangle.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides square side by 3: 9/3 = 3.",
+            "arithmetic_slip": "Student computes 36/3 = 11.",
+            "premature_calculation": "Student picks 9 (same side as the square)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A school sells raffle tickets at $3 each. They also spend $45 on prizes. They need to make a profit of at least $150. What is the minimum number of tickets they must sell?",
+        "options": [
+            "50",
+            "55",
+            "60",
+            "65",
+            "70"
+        ],
+        "correct_answer": "65",
+        "ideal_solution": "Revenue needed = profit + cost = $150 + $45 = $195. Tickets needed = $195 ÷ $3 = 65. Socratic Hint: Total revenue must cover both the costs and the desired profit.",
+        "failure_modes": {
+            "premature_calculation": "Student computes $150 ÷ $3 = 50 (forgetting the cost).",
+            "arithmetic_slip": "Student computes $195 ÷ 3 = 60.",
+            "formula_misapplication": "Student subtracts: $150 - $45 = $105, then $105/3 = 35."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3 2/5 × 2 1/2?",
+        "options": [
+            "6 1/10",
+            "6 1/2",
+            "7 1/2",
+            "8 1/2",
+            "17/2"
+        ],
+        "correct_answer": "8 1/2",
+        "ideal_solution": "Convert: 3 2/5 = 17/5 and 2 1/2 = 5/2. Multiply: 17/5 × 5/2 = 85/10 = 17/2 = 8 1/2. Socratic Hint: Convert mixed numbers to improper fractions, multiply, then simplify.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies wholes and fractions separately: 3×2 = 6, 2/5 × 1/2 = 1/5, getting 6 1/5.",
+            "arithmetic_slip": "Student computes 17/5 × 5/2 = 85/10 = 7.5 = 7 1/2.",
+            "premature_calculation": "Student gets 17/2 but doesn't convert to mixed number."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A trapezoid has parallel sides of 10 cm and 6 cm, and a height of 4 cm. What is its area?",
+        "options": [
+            "16 sq cm",
+            "24 sq cm",
+            "32 sq cm",
+            "40 sq cm",
+            "60 sq cm"
+        ],
+        "correct_answer": "32 sq cm",
+        "ideal_solution": "Area = (1/2) × (b₁ + b₂) × h = (1/2) × (10 + 6) × 4 = (1/2) × 16 × 4 = 32 sq cm. Socratic Hint: Add the two parallel sides, multiply by the height, then divide by 2.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies one base by height: 10 × 4 = 40.",
+            "premature_calculation": "Student adds the bases: 10 + 6 = 16 and picks that.",
+            "arithmetic_slip": "Student computes (1/2) × 16 × 4 = 24."
+        }
+    }
+]

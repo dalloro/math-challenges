@@ -1,0 +1,1052 @@
+[
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the value of 1² + 2² + 3² + ... + 10²?",
+        "options": [
+            "285",
+            "330",
+            "385",
+            "440",
+            "505"
+        ],
+        "correct_answer": "385",
+        "ideal_solution": "Sum of squares formula: n(n+1)(2n+1)/6 = 10×11×21/6 = 2310/6 = 385. Socratic Hint: Use the formula for the sum of the first n perfect squares.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes sum of 1 to 10 = 55 and squares it: 3025.",
+            "arithmetic_slip": "Student computes 10×11×21/6 = 330.",
+            "premature_calculation": "Student computes 10×11×21 = 2310 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A right triangle has a hypotenuse of 17 and one leg of 8. What is the area of the triangle?",
+        "options": [
+            "30 sq units",
+            "45 sq units",
+            "60 sq units",
+            "68 sq units",
+            "120 sq units"
+        ],
+        "correct_answer": "60 sq units",
+        "ideal_solution": "Other leg = √(17² - 8²) = √(289 - 64) = √225 = 15. Area = (1/2)(8)(15) = 60. Socratic Hint: Find the missing leg using the Pythagorean theorem first.",
+        "failure_modes": {
+            "premature_calculation": "Student computes (1/2)(17)(8) = 68.",
+            "arithmetic_slip": "Student computes √225 = 13: area = (1/2)(8)(13) = 52.",
+            "formula_misapplication": "Student computes 8 × 15 = 120 (forgetting 1/2)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "How many numbers from 1 to 1000 contain at least one digit '5'?",
+        "options": [
+            "152",
+            "200",
+            "252",
+            "271",
+            "500"
+        ],
+        "correct_answer": "271",
+        "ideal_solution": "Complement: numbers with NO '5'. For 1-999 (3-digit): each digit has 9 choices (0-9 minus 5). 9³ = 729 numbers without a 5. Numbers with at least one 5 = 1000 - 729 = 271. Socratic Hint: Use the complement — subtract numbers with zero 5s from the total.",
+        "failure_modes": {
+            "formula_misapplication": "Student counts multiples of 5: 200.",
+            "arithmetic_slip": "Student computes 1000 - 9³ = 1000 - 729 = 251.",
+            "overcounting": "Student counts each position separately and double-counts."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the sum of all positive divisors of 72?",
+        "options": [
+            "120",
+            "156",
+            "195",
+            "210",
+            "240"
+        ],
+        "correct_answer": "195",
+        "ideal_solution": "72 = 2³ × 3². σ(72) = (1+2+4+8)(1+3+9) = 15 × 13 = 195. Socratic Hint: Use the divisor sum formula with prime factorization.",
+        "failure_modes": {
+            "undercounting": "Student misses some divisors: sum = 156.",
+            "overcounting": "Student includes non-divisors.",
+            "arithmetic_slip": "Student computes 15 × 13 = 210."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "Simplify: (2³ × 3²) / (2 × 3³)",
+        "options": [
+            "2/3",
+            "3/2",
+            "4/3",
+            "8/3",
+            "12"
+        ],
+        "correct_answer": "4/3",
+        "ideal_solution": "(2³ × 3²)/(2 × 3³) = 2^(3-1) × 3^(2-3) = 2² × 3⁻¹ = 4/3. Socratic Hint: Subtract exponents of like bases.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 8×9/(2×27) = 72/54 = 4/3 (correct but may err).",
+            "arithmetic_slip": "Student computes 72/54 = 8/3.",
+            "premature_calculation": "Student computes numerator = 72 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A circle is inscribed in a square of side 10 cm. What is the area between the square and the circle? (π ≈ 3.14)",
+        "options": [
+            "14.4 sq cm",
+            "21.5 sq cm",
+            "27.32 sq cm",
+            "78.5 sq cm",
+            "100 sq cm"
+        ],
+        "correct_answer": "21.5 sq cm",
+        "ideal_solution": "Square area = 100. Circle radius = 5, area = 3.14 × 25 = 78.5. Difference = 100 - 78.5 = 21.5 sq cm. Socratic Hint: Subtract circle area from square area.",
+        "failure_modes": {
+            "premature_calculation": "Student computes circle area = 78.5 and picks that.",
+            "formula_misapplication": "Student uses diameter as radius: area = 314.",
+            "arithmetic_slip": "Student computes 100 - 78.5 = 14.4."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "A 4×4 grid must be colored using 2 colors so that no 2×2 square is all one color. What is the minimum number of cells that must be the minority color?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "8"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "The 4×4 grid has 9 overlapping 2×2 sub-squares. To break all of them, we need at least 4 cells of the minority color. A checkerboard-like pattern with 4 cells works. Socratic Hint: Consider which cells cover the most 2×2 sub-squares.",
+        "failure_modes": {
+            "undercounting": "Student thinks 2 cells suffice.",
+            "overcounting": "Student uses full checkerboard: 8 cells.",
+            "formula_misapplication": "Student counts 2×2 squares instead of coloring cells."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the remainder when 2²⁰ is divided by 7?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "2¹=2, 2²=4, 2³=1 (mod 7). Cycle length 3. 20 = 3×6+2. So 2²⁰ ≡ 2² = 4 (mod 7). Socratic Hint: Find the repeating pattern of powers of 2 mod 7.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 20 mod 7 = 6.",
+            "arithmetic_slip": "Student finds cycle but miscounts: 2²⁰ ≡ 2¹ = 2.",
+            "premature_calculation": "Student computes 2³ = 8 ≡ 1 (mod 7) and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is 999 × 999?",
+        "options": [
+            "997001",
+            "998001",
+            "998101",
+            "999001",
+            "999999"
+        ],
+        "correct_answer": "998001",
+        "ideal_solution": "999² = (1000-1)² = 1000000 - 2000 + 1 = 998001. Socratic Hint: Use (a-b)² = a² - 2ab + b².",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 1000000 - 2000 + 1 = 997001.",
+            "formula_misapplication": "Student computes 999 × 1000 - 1 = 998999.",
+            "premature_calculation": "Student computes 999 × 1000 = 999000 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "An equilateral triangle is inscribed in a circle of radius 6 cm. What is the side length of the triangle?",
+        "options": [
+            "6 cm",
+            "6√2 cm",
+            "6√3 cm",
+            "9 cm",
+            "12 cm"
+        ],
+        "correct_answer": "6√3 cm",
+        "ideal_solution": "For an equilateral triangle inscribed in a circle: side = R√3. Side = 6√3 cm. Or: using the formula s = 2R sin(60°) = 2(6)(√3/2) = 6√3. Socratic Hint: The relationship between circumradius and side of equilateral triangle is s = R√3.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses s = R: picks 6.",
+            "arithmetic_slip": "Student computes 2×6×sin60 = 12×(√3/2) = 6√2.",
+            "premature_calculation": "Student says R = 6 and picks that."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "How many paths exist from corner A to corner B of a 4×3 grid, moving only right or down?",
+        "options": [
+            "12",
+            "20",
+            "35",
+            "84",
+            "120"
+        ],
+        "correct_answer": "35",
+        "ideal_solution": "Must make 4 right and 3 down moves = 7 moves total. Paths = C(7,3) = 7!/(3!4!) = 35. Socratic Hint: Choose which 3 of 7 moves are 'down' (or which 4 are 'right').",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 4 × 3 = 12.",
+            "arithmetic_slip": "Student computes C(7,3) = 42.",
+            "overcounting": "Student computes 7! = 5040."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the smallest prime number greater than 100 that is also 1 more than a multiple of 4?",
+        "options": [
+            "101",
+            "103",
+            "107",
+            "109",
+            "113"
+        ],
+        "correct_answer": "101",
+        "ideal_solution": "101 is prime. 101 = 4×25 + 1.  ✓ Both conditions met. Socratic Hint: Check primality and divisibility by 4 for each candidate.",
+        "failure_modes": {
+            "premature_calculation": "Student checks only primality: picks 101 (correct!).",
+            "arithmetic_slip": "Student thinks 101/4 = 25 R1 ✓ but mischecks primality.",
+            "formula_misapplication": "Student picks 109: 109 mod 4 = 1 ✓, but 101 is smaller."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the value of 1/1×2 + 1/2×3 + 1/3×4 + ... + 1/9×10?",
+        "options": [
+            "1/10",
+            "9/10",
+            "1/2",
+            "5/6",
+            "9/100"
+        ],
+        "correct_answer": "9/10",
+        "ideal_solution": "Telescoping: 1/(n(n+1)) = 1/n - 1/(n+1). Sum = (1-1/2)+(1/2-1/3)+...+(1/9-1/10) = 1 - 1/10 = 9/10. Socratic Hint: Decompose each fraction using partial fractions — most terms cancel.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds denominators: 1/2+1/6+1/12+...",
+            "arithmetic_slip": "Student computes 1 - 1/10 = 1/10.",
+            "premature_calculation": "Student computes first few terms and tries to guess."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A trapezoid has parallel sides 12 cm and 8 cm, and height 5 cm. What is its area?",
+        "options": [
+            "30 sq cm",
+            "40 sq cm",
+            "48 sq cm",
+            "50 sq cm",
+            "60 sq cm"
+        ],
+        "correct_answer": "50 sq cm",
+        "ideal_solution": "Area = (1/2)(b₁ + b₂)(h) = (1/2)(12 + 8)(5) = (1/2)(20)(5) = 50 sq cm. Socratic Hint: Average the parallel sides and multiply by height.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 12 × 5 = 60 (using one base only).",
+            "arithmetic_slip": "Student computes (1/2)(20)(5) = 40.",
+            "premature_calculation": "Student computes 12 + 8 = 20 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "In how many ways can you make change for $1.00 using only quarters and dimes?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "Quarters: 0,1,2,3,4. Remaining must be divisible by 10: 100¢→✓, 75¢→✗, 50¢→✓, 25¢→✗, 0¢→✓. Valid: 0Q+10D, 2Q+5D, 4Q+0D = 3 ways. Socratic Hint: List all quarter counts and check if the remainder is divisible by 10.",
+        "failure_modes": {
+            "overcounting": "Student counts all 5 quarter options without checking remainder.",
+            "arithmetic_slip": "Student includes 75¢ in dimes = 7.5D.",
+            "premature_calculation": "Student computes 4 quarters only."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "How many trailing zeros does 25! have?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "10"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Trailing zeros = ⌊25/5⌋ + ⌊25/25⌋ = 5 + 1 = 6. Socratic Hint: Count factors of 5 in the prime factorization of 25!.",
+        "failure_modes": {
+            "undercounting": "Student only counts multiples of 5: gets 5.",
+            "overcounting": "Student counts all factors of 2 and 5.",
+            "formula_misapplication": "Student computes 25/5 = 5 and forgets 25/25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the value of (1 + 1/2)(1 + 1/3)(1 + 1/4)...(1 + 1/9)?",
+        "options": [
+            "2",
+            "5",
+            "9/2",
+            "10/2",
+            "5/1"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Each factor: (1+1/n) = (n+1)/n. Product = (3/2)(4/3)(5/4)...(10/9). Telescoping: = 10/2 = 5. Socratic Hint: Write each factor as a fraction and observe the cancellations.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 1.5 × 1.33 × ... (tedious, error-prone).",
+            "arithmetic_slip": "Student gets 10/2 = 4.",
+            "premature_calculation": "Student computes first two terms: (3/2)(4/3) = 2 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A regular hexagon has side 10 cm. What is its area? (√3 ≈ 1.732)",
+        "options": [
+            "150 sq cm",
+            "259.8 sq cm",
+            "300 sq cm",
+            "519.6 sq cm",
+            "600 sq cm"
+        ],
+        "correct_answer": "259.8 sq cm",
+        "ideal_solution": "Area = (3√3/2)s² = (3×1.732/2)(100) = (2.598)(100) = 259.8 sq cm. Or: split into 6 equilateral triangles, each with area (√3/4)(100) = 43.3 sq cm. 6 × 43.3 = 259.8. Socratic Hint: Use the regular hexagon area formula or split into equilateral triangles.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 6 × side² = 600.",
+            "arithmetic_slip": "Student computes (3×1.732/2)(100) = 519.6 (forgetting to divide by 2).",
+            "premature_calculation": "Student computes s² = 100 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "You have a 3-liter jug and a 5-liter jug. How do you measure exactly 4 liters?",
+        "options": [
+            "1 step",
+            "2 steps",
+            "4 steps",
+            "6 steps",
+            "Impossible"
+        ],
+        "correct_answer": "6 steps",
+        "ideal_solution": "Fill 5L. Pour into 3L (5→2,3→3). Empty 3L. Pour 2L into 3L (5→0,3→2). Fill 5L. Pour into 3L (5→4,3→3). 5L jug has 4L! 6 steps total. Socratic Hint: Track the amounts in each jug after each pour.",
+        "failure_modes": {
+            "premature_calculation": "Student says impossible.",
+            "undercounting": "Student counts fewer steps.",
+            "formula_misapplication": "Student says 5-3+5-3=4 (2 fills)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the digital root of 9,876,543?",
+        "options": [
+            "3",
+            "6",
+            "9",
+            "42",
+            "45"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "9+8+7+6+5+4+3 = 42. 4+2 = 6. Digital root = 6. Socratic Hint: Sum all digits repeatedly until you get a single digit.",
+        "failure_modes": {
+            "premature_calculation": "Student computes digit sum = 42 and stops.",
+            "arithmetic_slip": "Student computes 9+8+7+6+5+4+3 = 45.",
+            "formula_misapplication": "Student divides by 9 instead of summing digits."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the harmonic mean of 4 and 12?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "16",
+            "48"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Harmonic mean = 2ab/(a+b) = 2(4)(12)/(4+12) = 96/16 = 6. Socratic Hint: The harmonic mean formula is 2ab/(a+b).",
+        "failure_modes": {
+            "formula_misapplication": "Student computes arithmetic mean: (4+12)/2 = 8.",
+            "arithmetic_slip": "Student computes 96/16 = 4.",
+            "premature_calculation": "Student computes 4×12 = 48 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A sector of a circle has radius 9 cm and central angle 40°. What is its area? (π ≈ 3.14)",
+        "options": [
+            "9.42 sq cm",
+            "14.13 sq cm",
+            "28.26 sq cm",
+            "56.52 sq cm",
+            "254.34 sq cm"
+        ],
+        "correct_answer": "28.26 sq cm",
+        "ideal_solution": "Sector area = (θ/360)πr² = (40/360)(3.14)(81) = (1/9)(254.34) = 28.26 sq cm. Socratic Hint: The sector is a fraction (angle/360) of the full circle.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes full circle area: 254.34.",
+            "arithmetic_slip": "Student computes (40/360)(254.34) = 14.13 (using 20/360).",
+            "premature_calculation": "Student computes πr² = 254.34 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "A number is chosen at random from 1-100. What is the probability it is divisible by 3 or 5?",
+        "options": [
+            "33/100",
+            "47/100",
+            "53/100",
+            "20/100",
+            "67/100"
+        ],
+        "correct_answer": "47/100",
+        "ideal_solution": "Div by 3: 33. Div by 5: 20. Div by 15 (both): 6. By inclusion-exclusion: 33+20-6 = 47. P = 47/100. Socratic Hint: Use inclusion-exclusion to avoid double-counting.",
+        "failure_modes": {
+            "overcounting": "Student computes 33+20 = 53 (double-counts).",
+            "undercounting": "Student only counts div by 3: 33.",
+            "formula_misapplication": "Student computes (33×20)/100."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "Express 0.142857142857... as a fraction.",
+        "options": [
+            "1/7",
+            "1/6",
+            "3/21",
+            "142857/999999",
+            "14/99"
+        ],
+        "correct_answer": "1/7",
+        "ideal_solution": "0.142857... repeating. Let x = 0.142857142857... 1000000x = 142857.142857... 999999x = 142857. x = 142857/999999 = 1/7. Socratic Hint: The repeating block has 6 digits. Multiply by 10⁶ and subtract.",
+        "failure_modes": {
+            "premature_calculation": "Student writes 142857/999999 (correct but unsimplified).",
+            "formula_misapplication": "Student computes 14/99 (truncating the repeat block).",
+            "arithmetic_slip": "Student simplifies 142857/999999 = 1/6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "Evaluate: √(16 + 9) + √16 + √9",
+        "options": [
+            "5",
+            "7",
+            "10",
+            "12",
+            "14"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "√25 + 4 + 3 = 5 + 4 + 3 = 12. Socratic Hint: √(a+b) ≠ √a + √b in general, but compute each term separately.",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks √(16+9) = √16 + √9 = 7: total = 14.",
+            "arithmetic_slip": "Student computes √25 = 4: total = 11.",
+            "premature_calculation": "Student computes √25 = 5 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "Two tangent lines from an external point to a circle of radius 5 cm make a 60° angle at the point. How far is the point from the center?",
+        "options": [
+            "5 cm",
+            "5√2 cm",
+            "5√3 cm",
+            "10 cm",
+            "10√3 cm"
+        ],
+        "correct_answer": "10 cm",
+        "ideal_solution": "The tangent line is perpendicular to the radius at the point of tangency. Half the angle = 30°. sin(30°) = r/d = 5/d. d = 5/sin(30°) = 5/0.5 = 10 cm. Socratic Hint: Draw the right triangle formed by the radius, tangent, and line to center.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses cos: d = 5/cos(30°) = 5√3.",
+            "arithmetic_slip": "Student computes 5/0.5 = 7.5.",
+            "premature_calculation": "Student computes sin(30°) = 0.5 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "A bug starts at vertex A of a cube and walks along edges. What is the minimum number of edges it must traverse to visit all 8 vertices?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "10",
+            "12"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "A Hamiltonian path visits all 8 vertices using exactly 7 edges. A cube graph has a Hamiltonian path. Socratic Hint: You need at least n-1 edges to visit n vertices.",
+        "failure_modes": {
+            "undercounting": "Student says 6 edges.",
+            "overcounting": "Student computes 12 (all edges).",
+            "formula_misapplication": "Student confuses with Euler path: 12 edges."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the value of φ(12)? (Euler's totient — count of numbers 1-12 that are coprime to 12)",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "6",
+            "8"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Numbers 1-12 coprime to 12: 1, 5, 7, 11. φ(12) = 4. Or: 12 = 2²×3. φ(12) = 12(1-1/2)(1-1/3) = 12×1/2×2/3 = 4. Socratic Hint: List numbers 1-12 that share no common factor with 12 (other than 1).",
+        "failure_modes": {
+            "overcounting": "Student includes 2,3,4,6: φ = 8.",
+            "undercounting": "Student misses 1: φ = 3.",
+            "formula_misapplication": "Student computes 12/2 = 6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What value of x satisfies: x + x/2 + x/4 + x/8 = 30?",
+        "options": [
+            "8",
+            "12",
+            "15",
+            "16",
+            "20"
+        ],
+        "correct_answer": "16",
+        "ideal_solution": "x(1 + 1/2 + 1/4 + 1/8) = 30. x(8/8 + 4/8 + 2/8 + 1/8) = 30. x(15/8) = 30. x = 30 × 8/15 = 16. Socratic Hint: Factor out x, combine the fractions, then solve.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 30 × 8/15 = 12.",
+            "formula_misapplication": "Student computes 30/4 = 7.5.",
+            "premature_calculation": "Student computes 1+1/2+1/4+1/8 = 15/8 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "The diagonals of a rhombus are 16 cm and 30 cm. What is the perimeter?",
+        "options": [
+            "46 cm",
+            "52 cm",
+            "60 cm",
+            "68 cm",
+            "92 cm"
+        ],
+        "correct_answer": "68 cm",
+        "ideal_solution": "Half-diagonals: 8 and 15. Side = √(8² + 15²) = √(64 + 225) = √289 = 17 cm. Perimeter = 4 × 17 = 68 cm. Socratic Hint: The diagonals bisect each other at right angles.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds diagonals: 16+30 = 46.",
+            "arithmetic_slip": "Student computes √289 = 15: perimeter = 60.",
+            "premature_calculation": "Student finds side = 17 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "How many subsets does a set with 5 elements have?",
+        "options": [
+            "5",
+            "10",
+            "16",
+            "25",
+            "32"
+        ],
+        "correct_answer": "32",
+        "ideal_solution": "Number of subsets = 2ⁿ = 2⁵ = 32. Socratic Hint: Each element is either in or out of a subset — 2 choices per element.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 5! = 120.",
+            "arithmetic_slip": "Student computes 2⁵ = 16.",
+            "undercounting": "Student forgets empty set: 31."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the last digit of 3²⁰²³?",
+        "options": [
+            "1",
+            "3",
+            "7",
+            "9",
+            "0"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "Units digit cycle of 3: 3,9,7,1,3,9,7,1... Period 4. 2023 mod 4 = 3. Third in cycle: 7. Socratic Hint: Find the repeating cycle of units digits for powers of 3.",
+        "failure_modes": {
+            "off_by_one": "Student picks 4th in cycle: 1.",
+            "arithmetic_slip": "Student computes 2023 mod 4 = 1: picks 3.",
+            "formula_misapplication": "Student computes 3 × 2023 = 6069, picks 9."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "A merchant marks up goods by 60% then offers a 25% discount. What is the actual profit percentage?",
+        "options": [
+            "15%",
+            "20%",
+            "25%",
+            "35%",
+            "85%"
+        ],
+        "correct_answer": "20%",
+        "ideal_solution": "Let cost = 100. Marked price = 160. Selling price = 160 × 0.75 = 120. Profit = 20/100 = 20%. Socratic Hint: Apply markup first, then discount, and compare to original cost.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 60% - 25% = 35%.",
+            "arithmetic_slip": "Student computes 160 × 0.75 = 130: profit = 30%.",
+            "premature_calculation": "Student computes marked price = 160 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "In a circle of radius 10, a chord is 6 cm from the center. What is the length of the chord?",
+        "options": [
+            "8 cm",
+            "12 cm",
+            "14 cm",
+            "16 cm",
+            "20 cm"
+        ],
+        "correct_answer": "16 cm",
+        "ideal_solution": "Half-chord = √(r² - d²) = √(100 - 36) = √64 = 8 cm. Full chord = 2 × 8 = 16 cm. Socratic Hint: Draw a perpendicular from the center to the chord — it bisects the chord.",
+        "failure_modes": {
+            "premature_calculation": "Student computes half-chord = 8 and picks that.",
+            "formula_misapplication": "Student computes √(100+36) = √136.",
+            "arithmetic_slip": "Student computes √64 = 6: chord = 12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "In a round-robin tournament with 6 teams, how many total games are played?",
+        "options": [
+            "6",
+            "12",
+            "15",
+            "30",
+            "36"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "C(6,2) = 6×5/2 = 15. Socratic Hint: Each pair of teams plays exactly once.",
+        "failure_modes": {
+            "overcounting": "Student computes 6 × 5 = 30.",
+            "formula_misapplication": "Student computes 6 × 6 = 36.",
+            "arithmetic_slip": "Student computes 6×5/2 = 12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "Find the number of positive integer solutions to x + y + z = 10.",
+        "options": [
+            "10",
+            "20",
+            "36",
+            "45",
+            "66"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "Stars and bars: C(10-1, 3-1) = C(9,2) = 36. Socratic Hint: Use the stars and bars formula for distributing identical items into distinct groups.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes C(10,3) = 120.",
+            "arithmetic_slip": "Student computes C(9,2) = 45.",
+            "overcounting": "Student includes zero solutions: C(12,2) = 66."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "The average of 5 numbers is 20. When a 6th number is added, the average becomes 25. What is the 6th number?",
+        "options": [
+            "25",
+            "30",
+            "40",
+            "45",
+            "50"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "Sum of 5 = 5 × 20 = 100. Sum of 6 = 6 × 25 = 150. 6th number = 150 - 100 = 50. Socratic Hint: Find total sums, then subtract.",
+        "failure_modes": {
+            "formula_misapplication": "Student picks the new average: 25.",
+            "arithmetic_slip": "Student computes 150-100 = 40.",
+            "premature_calculation": "Student computes sum of 5 = 100 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A triangle has sides 13, 14, 15. What is its area? (Use Heron's formula)",
+        "options": [
+            "42",
+            "56",
+            "84",
+            "91",
+            "105"
+        ],
+        "correct_answer": "84",
+        "ideal_solution": "s = (13+14+15)/2 = 21. Area = √(s(s-a)(s-b)(s-c)) = √(21×8×7×6) = √7056 = 84. Socratic Hint: Compute the semi-perimeter, then apply Heron's formula.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 21×8×7×6 = 7056 but √7056 = 91.",
+            "formula_misapplication": "Student computes (1/2)(14)(15) = 105.",
+            "premature_calculation": "Student computes s = 21 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "How many 3-digit numbers are palindromes?",
+        "options": [
+            "9",
+            "10",
+            "81",
+            "90",
+            "100"
+        ],
+        "correct_answer": "90",
+        "ideal_solution": "A 3-digit palindrome has form ABA. A: 1-9 (9 choices). B: 0-9 (10 choices). Total = 9 × 10 = 90. Socratic Hint: The first digit determines the last; only the first and middle digits are free.",
+        "failure_modes": {
+            "overcounting": "Student allows A=0: 10 × 10 = 100.",
+            "undercounting": "Student computes 9 × 9 = 81 (excluding B=0).",
+            "formula_misapplication": "Student counts 3-digit numbers: 900, divides by 10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the greatest common divisor of 2³ × 3 × 5² and 2 × 3² × 5?",
+        "options": [
+            "6",
+            "15",
+            "30",
+            "60",
+            "120"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "GCD: take minimum power of each prime. min(2³,2¹)=2¹. min(3¹,3²)=3¹. min(5²,5¹)=5¹. GCD = 2×3×5 = 30. Socratic Hint: For GCD, pick the lower exponent of each shared prime.",
+        "failure_modes": {
+            "formula_misapplication": "Student takes max powers (LCM): 2³×3²×5² = 1800.",
+            "arithmetic_slip": "Student computes 2×3×5 = 60.",
+            "premature_calculation": "Student identifies shared primes but doesn't multiply."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the sum of the infinite geometric series 1 + 1/3 + 1/9 + 1/27 + ...?",
+        "options": [
+            "1",
+            "3/2",
+            "2",
+            "3",
+            "∞"
+        ],
+        "correct_answer": "3/2",
+        "ideal_solution": "Sum = a/(1-r) = 1/(1-1/3) = 1/(2/3) = 3/2. Socratic Hint: For |r| < 1, the infinite sum equals a/(1-r).",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks infinite series always diverge: ∞.",
+            "arithmetic_slip": "Student computes 1/(1-1/3) = 1/(-2/3) = -3/2.",
+            "premature_calculation": "Student adds first few terms but doesn't use formula."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "What is the sum of the interior angles of a decagon?",
+        "options": [
+            "1080°",
+            "1260°",
+            "1440°",
+            "1620°",
+            "1800°"
+        ],
+        "correct_answer": "1440°",
+        "ideal_solution": "Sum = (n-2) × 180 = (10-2) × 180 = 8 × 180 = 1440°. Socratic Hint: Use the polygon angle sum formula (n-2) × 180°.",
+        "failure_modes": {
+            "off_by_one": "Student uses (10-1) = 9: 1620°.",
+            "arithmetic_slip": "Student computes 8 × 180 = 1260.",
+            "formula_misapplication": "Student computes 10 × 180 = 1800°."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "In how many zeros does 100! end?",
+        "options": [
+            "10",
+            "15",
+            "20",
+            "24",
+            "25"
+        ],
+        "correct_answer": "24",
+        "ideal_solution": "Trailing zeros = ⌊100/5⌋ + ⌊100/25⌋ + ⌊100/125⌋ = 20 + 4 + 0 = 24. Socratic Hint: Count factors of 5 at each power: 5, 25, 125,...",
+        "failure_modes": {
+            "undercounting": "Student only counts 100/5 = 20.",
+            "overcounting": "Student counts 100/5 + 100/5 = 40.",
+            "off_by_one": "Student adds 100/125 = 0.8 → 1: gets 25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the value of 11 × 11 × 11?",
+        "options": [
+            "1111",
+            "1210",
+            "1221",
+            "1331",
+            "1464"
+        ],
+        "correct_answer": "1331",
+        "ideal_solution": "11³ = 11 × 121 = 1331. Or use (10+1)³ = 1000+300+30+1 = 1331. Socratic Hint: Compute 11² first, then multiply by 11.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 11 × 121 = 1221.",
+            "formula_misapplication": "Student computes 11 × 3 = 33.",
+            "premature_calculation": "Student computes 11² = 121 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A cube has a surface area of 294 sq cm. What is its volume?",
+        "options": [
+            "125 cu cm",
+            "216 cu cm",
+            "343 cu cm",
+            "512 cu cm",
+            "729 cu cm"
+        ],
+        "correct_answer": "343 cu cm",
+        "ideal_solution": "SA = 6s² = 294. s² = 49. s = 7. Volume = 7³ = 343 cu cm. Socratic Hint: Find the side from surface area, then cube it.",
+        "failure_modes": {
+            "premature_calculation": "Student finds s = 7 and picks 7.",
+            "formula_misapplication": "Student computes 294/6 = 49 and picks that.",
+            "arithmetic_slip": "Student computes 7³ = 512."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "How many integers from 1 to 100 are neither perfect squares nor perfect cubes?",
+        "options": [
+            "82",
+            "85",
+            "86",
+            "88",
+            "90"
+        ],
+        "correct_answer": "88",
+        "ideal_solution": "Perfect squares 1-100: 10. Perfect cubes 1-100: 4 (1,8,27,64). Both (6th powers): 1 and 64 = 2. By inclusion-exclusion: squares or cubes = 10+4-2 = 12. Neither = 100-12 = 88. Socratic Hint: Use inclusion-exclusion with squares, cubes, and 6th powers.",
+        "failure_modes": {
+            "overcounting": "Student counts 10+4 = 14 without removing overlap: gets 86.",
+            "undercounting": "Student forgets cubes: gets 90.",
+            "formula_misapplication": "Student only removes squares: 90."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "number_theory",
+        "question": "What is the smallest number that has exactly 6 factors?",
+        "options": [
+            "12",
+            "18",
+            "20",
+            "28",
+            "32"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "12 = 2² × 3. Factors: (2+1)(1+1) = 6. Factors of 12: 1,2,3,4,6,12. Check smaller: 1(1), 2(2), 3(2), 4(3), 5(2), 6(4), 7(2), 8(4), 9(3), 10(4), 11(2). None have 6. 12 is smallest with 6 factors. Socratic Hint: Use the factor count formula τ(n) from prime factorization.",
+        "failure_modes": {
+            "overcounting": "Student picks 18 (also has 6 factors, but larger).",
+            "undercounting": "Student misses 4 or 6 as factors of 12.",
+            "formula_misapplication": "Student finds number with 6 as a factor."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "arithmetic",
+        "question": "What is the value of (10⁴ - 1) / (10² + 1)?",
+        "options": [
+            "9",
+            "99",
+            "101",
+            "999",
+            "9999"
+        ],
+        "correct_answer": "99",
+        "ideal_solution": "10⁴-1 = 9999. 10²+1 = 101. 9999/101. Factor: 9999 = (10²-1)(10²+1) = 99 × 101. So 9999/101 = 99. Socratic Hint: Factor using difference of squares: a⁴-1 = (a²-1)(a²+1).",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 9999/100 = 99.99.",
+            "arithmetic_slip": "Student computes 9999/101 = 9.",
+            "premature_calculation": "Student computes 10⁴-1 = 9999 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "geometry",
+        "question": "A right circular cone has a base circumference of 12π cm and a slant height of 10 cm. What is its lateral surface area?",
+        "options": [
+            "30π sq cm",
+            "36π sq cm",
+            "60π sq cm",
+            "120π sq cm",
+            "360π sq cm"
+        ],
+        "correct_answer": "60π sq cm",
+        "ideal_solution": "Circumference = 2πr = 12π, so r = 6 cm. Lateral SA = πrl = π(6)(10) = 60π sq cm. Socratic Hint: Find the radius from the circumference, then use the lateral surface area formula.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes πr²l = 360π.",
+            "premature_calculation": "Student finds r = 6 and stops.",
+            "arithmetic_slip": "Student computes π(6)(10) = 30π (forgetting one factor)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 10,
+        "difficulty": "competition",
+        "type": "logic",
+        "question": "A password is 3 digits long. Each digit can be 0-9 but no two adjacent digits can be the same. How many passwords are possible?",
+        "options": [
+            "720",
+            "729",
+            "810",
+            "900",
+            "1000"
+        ],
+        "correct_answer": "810",
+        "ideal_solution": "1st digit: 10 choices. 2nd digit: 9 choices (≠ 1st). 3rd digit: 9 choices (≠ 2nd). Total = 10 × 9 × 9 = 810. Socratic Hint: Each digit after the first can be anything except the previous digit.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 10³ = 1000 (no restriction).",
+            "undercounting": "Student computes 10 × 9 × 8 = 720 (no repeats at all).",
+            "arithmetic_slip": "Student computes 10 × 9 × 9 = 900."
+        }
+    }
+]

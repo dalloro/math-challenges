@@ -674,7 +674,324 @@
         "correct_answer": "50",
         "ideal_solution": "1 bag = 6 + 4 = 10 marbles. 5 bags = 5 × 10 = 50. Socratic Hint: How many marbles in ONE bag? Then add that up 5 times.",
         "failure_modes": {
-            "premature_calculation": "Student adds 6+4=10."
+            "premature_calculation": "Student adds 6+4=10.",
+            "formula_misapplication": "Student adds 5+10=15.",
+            "arithmetic_slip": "Student multiplies 6x5=30 without the 4."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "How many centimeters are in 1 meter?",
+        "options": [
+            "10",
+            "12",
+            "50",
+            "100",
+            "1000"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "There are exactly 100 cm in a meter. Socratic Hint: The prefix 'centi-' means one hundredth, like 100 cents in a dollar.",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks 10.",
+            "converse_error": "Student thinks 1000 (millimeter confusion).",
+            "arithmetic_slip": "Student guesses 12."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is a quarter (one fourth) of 20?",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "10",
+            "15"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Half of 20 = 10. Half of 10 = 5. Or 20 / 4 = 5. Socratic Hint: Divide 20 items evenly into 4 boxes.",
+        "failure_modes": {
+            "formula_misapplication": "Student halves instead (10).",
+            "arithmetic_slip": "Student guesses 4.",
+            "converse_error": "Student guesses 15."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "You start with $5.00. You buy 2 toys that cost $2.00 each. How much change do you get?",
+        "options": [
+            "$0.00",
+            "$0.50",
+            "$1.00",
+            "$2.00",
+            "$3.00"
+        ],
+        "correct_answer": "$1.00",
+        "ideal_solution": "2 toys × $2 = $4. $5 - $4 = $1 change. Socratic Hint: Find the total cost of the toys first.",
+        "failure_modes": {
+            "premature_calculation": "Student thinks $3.00 (subtracts only one toy).",
+            "arithmetic_slip": "Student gets $0.00.",
+            "formula_misapplication": "Student adds 5+2+2."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A rope is 20 feet long. You cut it into 4 equal pieces. How long is each piece?",
+        "options": [
+            "2 feet",
+            "4 feet",
+            "5 feet",
+            "10 feet",
+            "16 feet"
+        ],
+        "correct_answer": "5 feet",
+        "ideal_solution": "20 ÷ 4 = 5. Socratic Hint: What number added to itself 4 times equals 20?",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts 20-4=16.",
+            "arithmetic_slip": "Student guesses 4 feet.",
+            "converse_error": "Student guesses 10 feet (half)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "Add: 340 + 60",
+        "options": [
+            "300",
+            "390",
+            "400",
+            "410",
+            "460"
+        ],
+        "correct_answer": "400",
+        "ideal_solution": "40 + 60 = 100. 300 + 100 = 400. Socratic Hint: The 40 and 60 combine perfectly to make a new hundred.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 390.",
+            "formula_misapplication": "Student guesses 460.",
+            "off_by_one": "Student guesses 410."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "Subtract: 1000 - 10",
+        "options": [
+            "900",
+            "980",
+            "990",
+            "999",
+            "1010"
+        ],
+        "correct_answer": "990",
+        "ideal_solution": "Counting back by 10 from 1000 is 990. Socratic Hint: Take away one ten from exactly 10 hundreds.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 900.",
+            "arithmetic_slip": "Student guesses 999.",
+            "converse_error": "Student guesses 1010."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "Complete the pattern: 25, 50, 75, ___",
+        "options": [
+            "80",
+            "85",
+            "90",
+            "100",
+            "125"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "Counting by 25s (like quarters). 75 + 25 = 100. Socratic Hint: Think of adding another quarter!",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 80.",
+            "formula_misapplication": "Student guesses 90.",
+            "overcounting": "Student guesses 125."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "If you have 5 boxes and each box has 4 markers in it, how many markers total?",
+        "options": [
+            "9",
+            "16",
+            "20",
+            "24",
+            "25"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "5 × 4 = 20. Count by 5s four times. Socratic Hint: Add 4+4+4+4+4.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 5 + 4 = 9.",
+            "arithmetic_slip": "Student gets 16.",
+            "converse_error": "Student gets 24."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A shape with 8 sides is called an...",
+        "options": [
+            "Hexagon",
+            "Pentagon",
+            "Decagon",
+            "Octagon",
+            "Square"
+        ],
+        "correct_answer": "Octagon",
+        "ideal_solution": "Octuplets, octopus, octagon all mean 8. Socratic Hint: Think of a stop sign, or an animal with 8 legs.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses Hexagon.",
+            "converse_error": "Student guesses Decagon.",
+            "arithmetic_slip": "Student guesses Pentagon."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "How many minutes are in exactly 2 hours?",
+        "options": [
+            "90",
+            "100",
+            "120",
+            "150",
+            "200"
+        ],
+        "correct_answer": "120",
+        "ideal_solution": "60 + 60 = 120. Socratic Hint: One hour has 60 minutes. Add 60+60.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 100.",
+            "arithmetic_slip": "Student gets 90.",
+            "converse_error": "Student guesses 200."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "Sam is 10 years old. His brother is exactly half his age. How old is his brother?",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "10",
+            "12"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "10 / 2 = 5. Socratic Hint: What number plus the same number equals 10?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 2.",
+            "converse_error": "Student guesses 4.",
+            "arithmetic_slip": "Student guesses 10."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 18 + 18?",
+        "options": [
+            "26",
+            "28",
+            "36",
+            "38",
+            "46"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "10 + 10 = 20. 8 + 8 = 16. 20 + 16 = 36. Socratic Hint: Double the 10s, then double the 8s, and combine.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 28.",
+            "formula_misapplication": "Student gets 38.",
+            "off_by_one": "Student gets 26."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "Subtract: 42 - 17",
+        "options": [
+            "24",
+            "25",
+            "35",
+            "37",
+            "59"
+        ],
+        "correct_answer": "25",
+        "ideal_solution": "42 - 10 = 32. 32 - 7 = 25. Socratic Hint: First take away 10. Then take away 2 to get exactly to 30. How many more do you need to take away?",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts smaller ones from larger ones: 42-17 => 4-1=3, 7-2=5 => 35.",
+            "arithmetic_slip": "Student gets 24.",
+            "overcounting": "Student adds: 59."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "What number has 3 hundreds, 4 tens, and 0 ones?",
+        "options": [
+            "34",
+            "304",
+            "340",
+            "430",
+            "3400"
+        ],
+        "correct_answer": "340",
+        "ideal_solution": "3 in the hundreds place, 4 in the tens place, 0 in the ones place. 340. Socratic Hint: Just read the digits in order.",
+        "failure_modes": {
+            "formula_misapplication": "Student writes 34.",
+            "converse_error": "Student writes 304.",
+            "arithmetic_slip": "Student writes 430."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "master",
+        "type": "logic",
+        "question": "A book has 50 pages. You read 10 pages a day. How many days does it take to finish the book?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "10"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "50 divided by 10 is 5. Socratic Hint: Count by 10s until you reach 50.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 6.",
+            "formula_misapplication": "Student guesses 10.",
+            "converse_error": "Student gets 4."
         }
     }
 ]

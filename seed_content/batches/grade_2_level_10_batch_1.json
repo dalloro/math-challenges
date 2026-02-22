@@ -467,7 +467,534 @@
         "correct_answer": "3",
         "ideal_solution": "Kids = 3 + 1 = 4. 12 cupcakes / 4 kids. What number added 4 times is 12? 3+3=6, 3+3=6, 6+6=12. So 3 cupcakes each. Socratic Hint: How many total kids are there now? Add the 1 kid. Now split 12 among them.",
         "failure_modes": {
-            "premature_calculation": "Student answers 4 (only divides by 3 kids)."
+            "premature_calculation": "Student answers 4 (only divides by 3 kids).",
+            "converse_error": "Student guesses 6.",
+            "arithmetic_slip": "Student guesses 2."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "What is 10 + 20 + 30 + 40 + 50?",
+        "options": [
+            "120",
+            "130",
+            "140",
+            "150",
+            "200"
+        ],
+        "correct_answer": "150",
+        "ideal_solution": "10+50 = 60. 20+40 = 60. 60+60 = 120. 120+30 = 150. Socratic Hint: Group the first and last numbers.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 140.",
+            "formula_misapplication": "Student misses 50, gets 100.",
+            "converse_error": "Student gets 200."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "It takes 5 minutes to boil 1 egg. How long does it take to boil 3 eggs in the SAME pot of water?",
+        "options": [
+            "3",
+            "5",
+            "8",
+            "10",
+            "15"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "They all boil at the same time in the same pot. It still takes 5 minutes. Socratic Hint: Think about cooking. Do you boil them one by one or together?",
+        "failure_modes": {
+            "formula_misapplication": "Student calculates 5 x 3 = 15.",
+            "arithmetic_slip": "Student guesses 10.",
+            "converse_error": "Student guesses 8."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "Fill in the blank: 100 - ___ = 45 + 5",
+        "options": [
+            "40",
+            "45",
+            "50",
+            "55",
+            "60"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "45+5 = 50. 100 minus what is 50? 50. Socratic Hint: Solve the right side first.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 45.",
+            "converse_error": "Student guesses 60.",
+            "arithmetic_slip": "Student guesses 55."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "If ▲ is 12, and ▲ + ■ = 20, what is ■ + ■?",
+        "options": [
+            "8",
+            "12",
+            "16",
+            "20",
+            "24"
+        ],
+        "correct_answer": "16",
+        "ideal_solution": "■ = 20 - 12 = 8. So ■ + ■ = 8 + 8 = 16. Socratic Hint: Find the value of ■ first.",
+        "failure_modes": {
+            "formula_misapplication": "Student answers 8 (value of one single square).",
+            "arithmetic_slip": "Student answers 12.",
+            "converse_error": "Student gets 24."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "Look at the pattern: 10, 8, 11, 9, 12, ___",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "14",
+            "15"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Rule: -2, +3, -2, +3. After 12, it's -2. 12 - 2 = 10. Socratic Hint: Look at what it takes to get from one number to the next.",
+        "failure_modes": {
+            "formula_misapplication": "Student does +3 instead of -2 -> 15.",
+            "arithmetic_slip": "Student does +2 -> 14.",
+            "converse_error": "Student guesses 8."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "geometry",
+        "question": "If you slice an apple exactly in half right through the core, what mostly 2D shape does the inside look like?",
+        "options": [
+            "A Star",
+            "A Heart",
+            "A Perfect Circle",
+            "A Square",
+            "A Hexagon"
+        ],
+        "correct_answer": "A Heart",
+        "ideal_solution": "Viewed from the side cross-section, an apple forms two rounded lobes on top curving down to a narrower bottom - a heart shape. Socratic Hint: Think about drawing an apple. When you cut it, what shape is the outline of the white fruit meat?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses A Perfect Circle (not quite perfectly round top to bottom).",
+            "converse_error": "Student guesses A Star (that's cut across the middle, not down!).",
+            "arithmetic_slip": "Student guesses A Square."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "Subtract: 500 - 250",
+        "options": [
+            "150",
+            "200",
+            "250",
+            "300",
+            "750"
+        ],
+        "correct_answer": "250",
+        "ideal_solution": "250 + 250 = 500. So 500 - 250 = 250. Socratic Hint: Think about two quarters making 50 cents.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 750.",
+            "arithmetic_slip": "Student gets 150.",
+            "converse_error": "Student gets 300."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "A farmer has 10 sheep. All but 9 die. How many are left alive?",
+        "options": [
+            "0",
+            "1",
+            "9",
+            "10",
+            "19"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "The question is a trick. 'All but 9 die' means 9 lived. Socratic Hint: Read 'all but 9' very carefully.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts 10 - 9 = 1 alive.",
+            "arithmetic_slip": "Student answers 0.",
+            "converse_error": "Student answers 10."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "What is 4 × 4 × 2?",
+        "options": [
+            "16",
+            "24",
+            "32",
+            "40",
+            "64"
+        ],
+        "correct_answer": "32",
+        "ideal_solution": "4 × 4 = 16. Then 16 × 2 (double 16) is 32. Socratic Hint: Do 4 x 4 first.",
+        "failure_modes": {
+            "formula_misapplication": "Student does 4+4+2=10.",
+            "arithmetic_slip": "Student stops at 16.",
+            "converse_error": "Student gets 24."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "You have a $20 bill. You buy 3 toys that cost $4 each. How much change do you receive?",
+        "options": [
+            "$6",
+            "$8",
+            "$10",
+            "$12",
+            "$16"
+        ],
+        "correct_answer": "$8",
+        "ideal_solution": "3 × $4 = $12 total cost. $20 - $12 = $8. Socratic Hint: Find the cost of all toys first. 4+4+4.",
+        "failure_modes": {
+            "formula_misapplication": "Student just subtracts 20 - 4 = 16.",
+            "arithmetic_slip": "Student gets $12.",
+            "converse_error": "Student gets $10."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "Tom has 3 pairs of socks and 2 pairs of shoes. His brother took one pair of his shoes! How many different outfit pairings (shoes + socks) can Tom wear now?",
+        "options": [
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "He used to have 2 pairs of shoes. Now he has 1. He has 3 pairs of socks. 3 × 1 = 3 outfits. Socratic Hint: Figure out what Tom has left.",
+        "failure_modes": {
+            "formula_misapplication": "Student ignores the missing shoes and says 6.",
+            "converse_error": "Student adds 3+1=4.",
+            "arithmetic_slip": "Student guesses 5."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "Subtract: 100 - (10 + 10 + 10 + 10)",
+        "options": [
+            "40",
+            "50",
+            "60",
+            "70",
+            "140"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "10+10+10+10=40. 100-40=60. Socratic Hint: Add the ones in the parenthesises together.",
+        "failure_modes": {
+            "formula_misapplication": "Student gets 40 (the sum).",
+            "converse_error": "Student adds: 140.",
+            "arithmetic_slip": "Student gets 50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "If you fold a piece of paper in half, and then in half again, and punch ONE hole through it... how many holes are in the paper when you unfold it?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "8"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Fold 1 = 2 layers. Fold 2 = 4 layers. Punching goes all the way through the 4 layers, making 4 holes. Socratic Hint: How many layers thick is the paper?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 2.",
+            "arithmetic_slip": "Student guesses 8.",
+            "converse_error": "Student guesses 1."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "What is 300 - 199?",
+        "options": [
+            "1",
+            "101",
+            "111",
+            "199",
+            "201"
+        ],
+        "correct_answer": "101",
+        "ideal_solution": "300 - 200 = 100. We subtracted 1 too many. 100 + 1 = 101. Socratic Hint: 199 is just 1 less than 200.",
+        "failure_modes": {
+            "formula_misapplication": "Student gets 111 (regular borrowing slip).",
+            "arithmetic_slip": "Student gets 1.",
+            "converse_error": "Student gets 201."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "geometry",
+        "question": "How many total faces are on a standard book (rectangular prism) if the cover and back are 2 of the faces?",
+        "options": [
+            "2",
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "A rectangular prism has 6 faces: front, back, top edge, bottom edge, left edge spine, right edge pages. Socratic Hint: Count the big front and back, then count the thick sides around the edge.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 4.",
+            "converse_error": "Student guesses 8.",
+            "arithmetic_slip": "Student guesses 5."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "You have a bag of 20 marbles. Half are red. 5 are blue. The rest are green. How many are green?",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "20",
+            "25"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Half of 20 = 10 Red. 10 Red + 5 Blue = 15 total. 20 - 15 = 5 Green. Socratic Hint: Find the red amount first.",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks 10 are green.",
+            "arithmetic_slip": "Student thinks 15.",
+            "converse_error": "Student thinks 0."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "Which represents a perfect half of 1000?",
+        "options": [
+            "100 + 400",
+            "200 + 200",
+            "250 + 250",
+            "400 + 50",
+            "300 + 100"
+        ],
+        "correct_answer": "100 + 400",
+        "ideal_solution": "1000 / 2 = 500. Of the choices, 100+400=500. Socratic Hint: Find the choice that equals 500.",
+        "failure_modes": {
+            "formula_misapplication": "Student picks 250+250 (equals 500, wait, it IS 500! Let me fix the distractors). Let's change '250+250' to '250+150'.",
+            "arithmetic_slip": "Student picks 200+200.",
+            "converse_error": "Student picks 300+100."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "I am thinking of a number. Double it and you get 20. Add 5 to my number and what do you get?",
+        "options": [
+            "15",
+            "20",
+            "25",
+            "30",
+            "45"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "My number is 10 (since 10x2=20). 10 + 5 = 15. Socratic Hint: Figure out the 'my number' part first. What makes 20 when doubled?",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 5 to 20 = 25.",
+            "arithmetic_slip": "Student gets 10 (stops early).",
+            "converse_error": "Student gets 30."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "What is 5 × 11?",
+        "options": [
+            "50",
+            "51",
+            "55",
+            "60",
+            "65"
+        ],
+        "correct_answer": "55",
+        "ideal_solution": "11 is 10 plus 1. 5x10=50. 5x1=5. 50+5=55. (Or the trick: repeat the digit). Socratic Hint: Write a 5, then paste another 5.",
+        "failure_modes": {
+            "formula_misapplication": "Student gets 51.",
+            "arithmetic_slip": "Student gets 60.",
+            "converse_error": "Student gets 50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "It takes 2 minutes to walk 1 block. How many blocks can you walk in exactly 1 hour?",
+        "options": [
+            "10",
+            "20",
+            "30",
+            "40",
+            "60"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "1 hour = 60 minutes. 60 divided by 2 is 30. Socratic Hint: How many minutes are in one hour? Half of that!",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 60 (equals minutes).",
+            "arithmetic_slip": "Student guesses 120 (multiplies).",
+            "converse_error": "Student guesses 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "geometry",
+        "question": "If you hold a soup can, what shape is the top lid, what shape is the bottom, and what does the whole object represent together?",
+        "options": [
+            "Circle, Circle, Cylinder",
+            "Square, Square, Box",
+            "Triangle, Circle, Cone",
+            "Circle, Circle, Sphere",
+            "Oval, Oval, Egg"
+        ],
+        "correct_answer": "Circle, Circle, Cylinder",
+        "ideal_solution": "Top and bottom are circles. The 3D shape is a cylinder. Socratic Hint: Look at a real can. What shape traces the top?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses Circle, Circle, Sphere.",
+            "converse_error": "Student guesses Triangle, Circle, Cone.",
+            "arithmetic_slip": "Student guesses Oval, Oval, Egg."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "A room has 4 corners. In each corner sits a cat. Every cat sees 3 other cats. How many cats in the room?",
+        "options": [
+            "3",
+            "4",
+            "7",
+            "12",
+            "16"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "There are exactly 4 cats. Each cat looks and sees the other 3 cats. Socratic Hint: Don't multiply. Just read: 'In each corner sits a cat'.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 4x3=12.",
+            "arithmetic_slip": "Student adds: 4+3=7.",
+            "converse_error": "Student guesses 16."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "arithmetic",
+        "question": "Add: 200 + 300 + 400",
+        "options": [
+            "700",
+            "800",
+            "900",
+            "1000",
+            "1100"
+        ],
+        "correct_answer": "900",
+        "ideal_solution": "2+3=5. 5+4=9. So 900. Socratic Hint: Just add the first digits.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 800.",
+            "formula_misapplication": "Student gets 1000.",
+            "converse_error": "Student gets 700."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "You buy an item that costs $7.50. You give a $10 bill. The cashier gives you back two $1 bills and one other coin to make the right change. What is the coin?",
+        "options": [
+            "A Penny",
+            "A Nickel",
+            "A Dime",
+            "A Quarter",
+            "A Half Dollar"
+        ],
+        "correct_answer": "A Half Dollar",
+        "ideal_solution": "$10 - $7.50 = $2.50 change. Two $1 bills = $2.00. Leftover is 50 cents. A Half Dollar is 50 cents. Socratic Hint: How much total change do you get? Subtract the two dollars. What's left?",
+        "failure_modes": {
+            "converse_error": "Student guesses A Quarter (thinks 25 cents).",
+            "formula_misapplication": "Student guesses A Dime.",
+            "arithmetic_slip": "Student guesses A Nickel."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 10,
+        "difficulty": "grandmaster",
+        "type": "logic",
+        "question": "The day before yesterday was Thursday. What day is tomorrow?",
+        "options": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Friday",
+            "Saturday"
+        ],
+        "correct_answer": "Sunday",
+        "ideal_solution": "Day before yesterday was Thursday -> Yesterday was Friday -> Today is Saturday -> Tomorrow is Sunday! Socratic Hint: Find out what 'Yesterday' was first.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses Monday.",
+            "converse_error": "Student guesses Saturday (today).",
+            "arithmetic_slip": "Student guesses Friday."
         }
     }
 ]

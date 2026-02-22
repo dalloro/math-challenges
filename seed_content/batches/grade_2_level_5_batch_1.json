@@ -748,5 +748,216 @@
         "failure_modes": {
             "arithmetic_slip": "Student says 100."
         }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "arithmetic",
+        "question": "What is 14 + 16 + 20?",
+        "options": [
+            "40",
+            "45",
+            "50",
+            "60",
+            "70"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "14 + 16 = 30. 30 + 20 = 50. Socratic Hint: Look for pairs that make neat groups of ten. 14 and 16 make 30.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 14 + 16 as 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "arithmetic",
+        "question": "Subtract: 72 - 38",
+        "options": [
+            "34",
+            "36",
+            "44",
+            "46",
+            "38"
+        ],
+        "correct_answer": "34",
+        "ideal_solution": "72 - 30 = 42. 42 - 8 = 34. Socratic Hint: Subtract the tens first, then count back the ones.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts smaller from larger in the ones place: 72 - 38 = 44."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "arithmetic",
+        "question": "You have 2 quarters, 3 dimes, and 2 nickels. How much money do you have?",
+        "options": [
+            "75 cents",
+            "80 cents",
+            "85 cents",
+            "90 cents",
+            "95 cents"
+        ],
+        "correct_answer": "90 cents",
+        "ideal_solution": "2 quarters = 50. 3 dimes = 30. 2 nickels = 10. 50 + 30 + 10 = 90 cents. Socratic Hint: Write down how much each group of coins is worth and add them up.",
+        "failure_modes": {
+            "arithmetic_slip": "Student misses a nickel: 85 cents."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "geometry",
+        "question": "How many faces does a cube have?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "12",
+            "16"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "A cube has 6 square faces (like a standard die). Socratic Hint: Think about a rolling die. What is the highest number on it?",
+        "failure_modes": {
+            "converse_error": "Student guesses 8 (number of corners)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "logic",
+        "question": "What time is exactly 30 minutes after 4:15?",
+        "options": [
+            "4:30",
+            "4:45",
+            "5:00",
+            "5:15",
+            "4:55"
+        ],
+        "correct_answer": "4:45",
+        "ideal_solution": "15 + 30 = 45. The time is 4:45. Socratic Hint: Add 30 minutes to the 15 minutes.",
+        "failure_modes": {
+            "off_by_one": "Student guesses 4:55."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "arithmetic",
+        "question": "Fill in the blank: 120 + ___ = 200",
+        "options": [
+            "60",
+            "70",
+            "80",
+            "90",
+            "100"
+        ],
+        "correct_answer": "80",
+        "ideal_solution": "200 - 120 = 80. Socratic Hint: How much to get from 120 to 200?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 120."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "logic",
+        "question": "A tree had 45 birds. 17 flew away, but then 12 other birds landed on the tree. How many birds are there now?",
+        "options": [
+            "30",
+            "35",
+            "40",
+            "45",
+            "50"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "45 - 17 = 28. 28 + 12 = 40. Socratic Hint: Break it into two steps: first subtract the birds that left, then add the new arrivals.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 17 and 12, then subtracts 29."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "arithmetic",
+        "question": "What is half of 80?",
+        "options": [
+            "20",
+            "30",
+            "40",
+            "50",
+            "60"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "Half of 8 is 4, so half of 80 is 40. Or 40 + 40 = 80. Socratic Hint: Think of 8 tens.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "geometry",
+        "question": "How many edges does a rectangular prism (a box) have?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "16"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Top has 4, bottom has 4, and sides have 4. 4 + 4 + 4 = 12 edges. Socratic Hint: Trace the straight lines around a cereal box. There's 4 on top, 4 on bottom, 4 connecting them.",
+        "failure_modes": {
+            "converse_error": "Student guesses 8 (corners) or 6 (faces)."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "proficient",
+        "type": "logic",
+        "question": "Which of these numbers is the largest?",
+        "options": [
+            "405",
+            "450",
+            "504",
+            "540",
+            "445"
+        ],
+        "correct_answer": "540",
+        "ideal_solution": "Look at hundreds digits: 5 is largest. The numbers starting with 5 are 504 and 540. Compare tens digit: 4 is bigger than 0, so 540 is the largest. Socratic Hint: First check the hundreds place, then the tens place if there is a tie.",
+        "failure_modes": {
+            "converse_error": "Student guesses 504."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 5,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A box holds 12 crayons. You have 2 full boxes and one box with 6 crayons. How many crayons in total?",
+        "options": [
+            "18",
+            "24",
+            "26",
+            "30",
+            "36"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "12 + 12 = 24. 24 + 6 = 30. Socratic Hint: Add the full boxes together first.",
+        "failure_modes": {
+            "formula_misapplication": "Student gets 36 (3 full boxes).",
+            "arithmetic_slip": "Student gets 24.",
+            "converse_error": "Student gets 26."
+        }
     }
 ]

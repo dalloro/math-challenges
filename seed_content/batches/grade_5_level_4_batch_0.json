@@ -4,20 +4,20 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "arithmetic",
-        "question": "A recipe requires 3/4 cup of sugar. You want to make 2 and 1/2 batches. How much sugar do you exactly need?",
+        "question": "A recipe calls for 3/4 cup of flour. If you want to make 2 and 1/2 batches, how many cups of flour do you need in total?",
         "options": [
-            "1 1/2 cups",
-            "1 5/8 cups",
-            "1 7/8 cups",
-            "1 3/4 cups",
-            "2 1/4 cups"
+            "1 1/2",
+            "1 5/8",
+            "1 7/8",
+            "2 1/4",
+            "2 1/2"
         ],
-        "correct_answer": "1 7/8 cups",
-        "ideal_solution": "Convert 2 1/2 to 5/2. Multiply: (3/4) × (5/2) = 15/8. Convert 15/8 to mixed number: 1 7/8. Socratic Hint: Turn 'two and a half' into an improper fraction first. Then multiply straight across by 3/4.",
+        "correct_answer": "1 7/8",
+        "ideal_solution": "Convert 2 1/2 to the improper fraction 5/2. Multiply: (3/4) × (5/2) = 15/8. Convert 15/8 to a mixed number: 1 7/8. Socratic Hint: Turn the mixed number into an improper fraction first, then multiply the two fractions straight across.",
         "failure_modes": {
-            "formula_misapplication": "Student adds: 3/4 + 5/2 = 3/4 + 10/4 = 13/4 = 3 1/4.",
-            "arithmetic_slip": "Student multiplies 3/4 × 2 to get 6/4 (1 1/2) and ignores the half batch.",
-            "premature_calculation": "Student leaves the answer as 15/8 or selects a wrongly simplified version like 1 5/8."
+            "arithmetic_slip": "Student multiplies 3/4 × 2 = 6/4 = 1 1/2 and forgets the extra half batch.",
+            "formula_misapplication": "Student adds instead of multiplying: 3/4 + 5/2 = 3/4 + 10/4 = 13/4.",
+            "premature_calculation": "Student leaves the answer as 15/8 and picks the wrong conversion."
         }
     },
     {
@@ -25,41 +25,20 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "geometry",
-        "question": "A rectangular solid has a square base with side length 4 cm. Its total surface area is exactly 112 sq cm. What is its height?",
+        "question": "A rectangular prism has a length of 6 cm, a width of 4 cm, and a height of 3 cm. What is its volume?",
         "options": [
-            "5 cm",
-            "6 cm",
-            "4 cm",
-            "8 cm",
-            "10 cm"
+            "24 cu cm",
+            "48 cu cm",
+            "72 cu cm",
+            "96 cu cm",
+            "36 cu cm"
         ],
-        "correct_answer": "5 cm",
-        "ideal_solution": "Top and bottom areas: 4×4 = 16 each. Together = 32. Remaining surface area for the 4 sides = 112 - 32 = 80. Each of the 4 identical sides has area 80 ÷ 4 = 20. Side area = base × height = 4 × h. 4h = 20, so h = 5. Socratic Hint: First, find the exact area of the top and the bottom combined. Subtract that from 112 to find what's left for the four side walls.",
+        "correct_answer": "72 cu cm",
+        "ideal_solution": "Volume = length × width × height = 6 × 4 × 3 = 72 cubic cm. Socratic Hint: Multiply all three dimensions together to find how many unit cubes fit inside.",
         "failure_modes": {
-            "formula_misapplication": "Student divides 112 by 16 (base area) thinking 112 is the volume.",
-            "undercounting": "Student forgets the top base, subtracting only 16 from 112 to get 96, making sides 24 and h=6.",
-            "arithmetic_slip": "Student divides 80 by 2 instead of 4, thinking there are only 2 side walls."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If you write all the whole numbers strictly from 1 to 50, how many times do you exactly write the digit '3'?",
-        "options": [
-            "5",
-            "14",
-            "15",
-            "16",
-            "20"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "Ones place: 3, 13, 23, 33, 43 (5 times). Tens place: 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 (10 times). Total = 5 + 10 = 15. Socratic Hint: 33 counts as two 3s! Count the 3s in the ones column, then count the 3s in the tens column.",
-        "failure_modes": {
-            "undercounting": "Student misses the double '3' in 33, getting 14.",
-            "overcounting": "Student guesses 16, miscounting the tens range.",
-            "converse_error": "Student guesses 5, only counting numbers ending in 3."
+            "formula_misapplication": "Student calculates surface area instead: 2(6×4 + 6×3 + 4×3) = 108.",
+            "arithmetic_slip": "Student multiplies 6 × 4 = 24 and stops, forgetting the height.",
+            "premature_calculation": "Student computes 6 × 3 = 18 and picks the wrong partial product."
         }
     },
     {
@@ -67,146 +46,20 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "arithmetic",
-        "question": "Evaluate exactly: 0.1 × 0.2 × 0.3",
+        "question": "What is 3/5 + 1/3?",
         "options": [
-            "0.6",
-            "0.06",
-            "0.006",
-            "0.0006",
-            "0.060"
-        ],
-        "correct_answer": "0.006",
-        "ideal_solution": "1 × 2 × 3 = 6. We have 3 decimal places in total (one from each number). So, 0.006. Socratic Hint: 1 times 2 times 3 is 6. Count the total number of digits perfectly behind the decimal dots in the problem.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 0.1+0.2+0.3 = 0.6.",
-            "off_by_one": "Student misses one decimal place to get 0.06.",
-            "arithmetic_slip": "Student multiplies 0.1 × 0.2 = 0.2 (wrong), then 0.2 × 0.3 = 0.06."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A snail is at the bottom of a perfectly 20-foot well. Every day it powerfully climbs up 4 feet, but every night it slides down exactly 2 feet. On what day will it first easily reach the top?",
-        "options": [
-            "8th day",
-            "9th day",
-            "10th day",
-            "11th day",
-            "12th day"
-        ],
-        "correct_answer": "9th day",
-        "ideal_solution": "Net gain per day is 2 feet. By end of day 8, it is at 16 feet. On day 9, it climbs 4 feet to reach 20 feet (the top) and escapes before sliding back down. Socratic Hint: It escapes the exact moment its head pokes out the top! Don't slide down on that final day.",
-        "failure_modes": {
-            "formula_misapplication": "Student calculates 20 / 2 = 10 days, ignoring the daytime escape.",
-            "off_by_one": "Student calculates reaching 18 feet on day 9, and escaping day 10.",
-            "converse_error": "Student thinks it climbs 4 feet and never slides, taking 5 days."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A jacket costs exactly $80. It is on sale for 25% off. You have a coupon for an additional 10% off the sale price. What is the final price?",
-        "options": [
-            "$52",
-            "$54",
-            "$56",
-            "$60",
-            "$65"
-        ],
-        "correct_answer": "$54",
-        "ideal_solution": "25% off $80: 80 × 0.75 = $60 (or 25% is $20 off, so $60). 10% off $60: 60 × 0.9 = $54 (or 10% is $6 off, so $54). Socratic Hint: You have to do the discounts one at a time. Take 25% off the original $80. Then, take 10% off your NEW smaller number!",
-        "failure_modes": {
-            "formula_misapplication": "Student adds percents (25+10=35%) and takes 35% off $80 to get $52.",
-            "arithmetic_slip": "Student calculates 10% off $80 ($8) and subtracts from $60 to get $52.",
-            "premature_calculation": "Student stops at $60 after the first discount."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A triangle has angles measuring precisely 3x, 4x, and 5x. What is the measure of the largest angle?",
-        "options": [
-            "15 degrees",
-            "45 degrees",
-            "60 degrees",
-            "75 degrees",
-            "100 degrees"
-        ],
-        "correct_answer": "75 degrees",
-        "ideal_solution": "Sum of angles is 180. 3x + 4x + 5x = 12x. 12x = 180, so x = 15. The largest angle is 5x = 5(15) = 75. Socratic Hint: All three angles must perfectly add up to 180 degrees. 3x plus 4x plus 5x equals how many x's?",
-        "failure_modes": {
-            "premature_calculation": "Student solves for x=15 and selects 15 degrees.",
-            "arithmetic_slip": "Student calculates x incorrectly as 12, getting largest angle 60.",
-            "formula_misapplication": "Student assumes the triangle is a right triangle and guesses 90."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "In a sequence, the exactly second term is 14. To get each term after the firmly first, you precisely add 3. What is the sum of the very first 4 terms?",
-        "options": [
-            "44",
-            "56",
-            "62",
-            "68",
-            "74"
-        ],
-        "correct_answer": "62",
-        "ideal_solution": "Term 2 = 14. Term 1 = 14 - 3 = 11. Term 3 = 14 + 3 = 17. Term 4 = 17 + 3 = 20. Sum = 11 + 14 + 17 + 20 = 62. Socratic Hint: Work backward to find the FIRST term! Then write down all four terms and carefully add them up.",
-        "failure_modes": {
-            "premature_calculation": "Student stops at Term 4 which is 20.",
-            "off_by_one": "Student thinks 14 is the first term: 14, 17, 20, 23 = 74.",
-            "arithmetic_slip": "Student adds incorrectly: 11+14+17=42 (only 3 terms)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the exact remainder when exactly 2023 is warmly divided by exactly 9?",
-        "options": [
-            "2",
-            "5",
-            "7",
-            "8",
+            "4/8",
+            "4/15",
+            "14/15",
+            "2/5",
             "1"
         ],
-        "correct_answer": "7",
-        "ideal_solution": "The remainder of a number divided by 9 is exactly equal to the remainder of the sum of its digits divided by 9. Sum of digits: 2+0+2+3 = 7. 7 ÷ 9 gives remainder 7. Socratic Hint: You don't need long division! Just perfectly add up the digits of 2023.",
+        "correct_answer": "14/15",
+        "ideal_solution": "Find a common denominator: LCD of 5 and 3 is 15. 3/5 = 9/15 and 1/3 = 5/15. Add: 9/15 + 5/15 = 14/15. Socratic Hint: You cannot add fractions with different denominators directly. Find a number that both 5 and 3 divide into evenly.",
         "failure_modes": {
-            "formula_misapplication": "Student adds digits to 7 and guesses 5 based on another rule.",
-            "arithmetic_slip": "Student performs long division incorrectly, getting remainder 8.",
-            "converse_error": "Student knows the rule for 3 and uses remainder 1."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate carefully: (1/2 + 1/3) ÷ (1/4)",
-        "options": [
-            "2/5",
-            "10/3",
-            "4/5",
-            "1/6",
-            "5/24"
-        ],
-        "correct_answer": "10/3",
-        "ideal_solution": "1/2 + 1/3 = 3/6 + 2/6 = 5/6. (5/6) ÷ (1/4) = (5/6) × 4 = 20/6 = 10/3. Socratic Hint: Do the parenthesis first by finding a common denominator (6). Then, remember that dividing by 1/4 is the exact same as multiplying by 4/1.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies by 1/4 instead of flipping, getting 5/24.",
-            "arithmetic_slip": "Student adds denominators (2/5) and multiplies by 4 to get 8/5.",
-            "converse_error": "Student divides 1/4 by 5/6, getting inverted answer 6/20."
+            "formula_misapplication": "Student adds numerators and denominators: 3+1 = 4, 5+3 = 8, getting 4/8.",
+            "arithmetic_slip": "Student finds LCD 15 but converts incorrectly: 3/5 = 6/15, getting 11/15.",
+            "premature_calculation": "Student multiplies numerators: 3×1 = 3 and denominators: 5×3 = 15, getting 3/15."
         }
     },
     {
@@ -214,167 +67,20 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "logic",
-        "question": "Anna is exactly 5 years older than closely Bob. In precisely 4 years, their ages will perfectly add up to exactly 27. How exactly old is cleanly Bob now?",
+        "question": "A store sells pencils for $0.35 each. Maria has exactly $2.00. What is the greatest number of pencils she can buy?",
         "options": [
+            "4",
             "5",
-            "7",
-            "9",
-            "11",
-            "14"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "Current ages: A = B + 5. In 4 years: (A+4) + (B+4) = 27. A + B + 8 = 27. A + B = 19. Substitute A: (B+5) + B = 19. 2B + 5 = 19. 2B = 14. B = 7. Socratic Hint: If their ages sum to 27 in 4 years, what do their exact current ages sum to? Remember to subtract 4 twice!",
-        "failure_modes": {
-            "premature_calculation": "Student finds Anna's age (12) and subtracts purely 5 getting 7 but incorrectly guesses 11 by just subtracting 12 from 23.",
-            "formula_misapplication": "Student calculates A+B=27-4=23 (forgets to subtract 4 twice), leading to 2B=18 so B=9.",
-            "off_by_one": "Student guesses 5 randomly from the cleanly matching text."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is exactly 1.2² - 0.2²?",
-        "options": [
-            "1.0",
-            "1.4",
-            "1.44",
-            "0.96",
-            "1.40"
-        ],
-        "correct_answer": "1.4",
-        "ideal_solution": "1.2² = 1.44. 0.2² = 0.04. 1.44 - 0.04 = 1.40. Socratic Hint: 12 squared is 144, but put exactly two decimal places. Do the same for 2 squared.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (1.2-0.2)² = 1.0² = 1.0.",
-            "arithmetic_slip": "Student calculates 0.2² = 0.4 and computes 1.44 - 0.4 = 1.04.",
-            "premature_calculation": "Student solves 1.44 but doesn't subtract the 0.04."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A closely perfect circle has an exact wonderfully clean completely identical truly full tightly perfectly neatly beautifully area of exactly exactly nicely neatly cleanly correctly firmly purely 16π. What exactly is its mathematically pure smoothly closely perfectly correctly evenly perfectly exactly completely safely fully correctly rightly safely precisely warmly neatly cleanly perfectly safely purely correctly warmly fairly sharply truly completely beautifully precisely nicely completely truly strictly accurately purely closely smoothly exactly cleanly perfectly completely loudly warmly precisely firmly gracefully circumference?",
-        "options": [
-            "4π",
-            "8π",
-            "16π",
-            "32π",
-            "64π"
-        ],
-        "correct_answer": "8π",
-        "ideal_solution": "Area = πr² = 16π. So r² = 16, which means r = 4. Circumference = 2πr = 2π(4) = 8π. Socratic Hint: Area is pi times radius squared. What exact number times itself equals 16? That's your radius.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 32π (16 × 2).",
-            "premature_calculation": "Student solves for r=4 and picks 4π.",
-            "converse_error": "Student mixes up formulas and assumes circumference is also 16π."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "How safely calmly perfectly cleanly nicely carefully properly smoothly beautifully perfectly identical pure closely completely safely exactly strongly perfectly beautifully purely identical highly deeply precisely firmly correctly successfully many completely solidly identical safely smoothly softly accurately precisely tightly beautifully completely purely strongly purely cleanly perfectly purely absolutely nicely closely clearly strictly cleanly totally solidly highly fully properly firmly absolutely purely carefully beautifully cleanly exactly 3-digit identically warmly fully softly properly softly precisely neatly beautifully gently smoothly smartly purely identically purely deeply slowly surely nicely numbers can be perfectly safely formed using precisely closely identically safely perfectly cleanly correctly heavily correctly safely fully pure securely efficiently properly cleanly slowly loudly fully firmly firmly clearly only nicely closely exactly peacefully sweetly properly purely highly nicely heavily beautifully warmly smoothly correctly brightly totally strictly softly smoothly smoothly tightly gently smartly identically tightly safely securely lightly safely safely totally pure purely simply closely the cleanly simply digits evenly exactly strictly perfectly softly properly strictly simply safely smoothly softly accurately simply deeply exactly brightly tightly sweetly identical neatly loudly smoothly closely gracefully strictly heavily clearly tightly completely carefully highly neatly tightly easily smartly accurately softly purely tight tight beautifully correctly loudly perfectly deeply heavily cleanly calmly efficiently accurately clearly smoothly safely heavily cleanly purely deeply fully strongly gently strongly 1, precisely clearly totally cleanly accurately loudly truly lightly nicely heavily heavily firmly highly purely smartly tight neatly sweetly precisely effectively 2, nicely correctly smartly cleanly closely efficiently exactly carefully beautifully completely identically softly tight peacefully totally securely completely smoothly securely absolutely beautifully thoroughly effectively softly cleanly exactly lightly softly gracefully and elegantly 3 securely completely truly properly deeply correctly softly safely elegantly brightly safely successfully gently clearly tightly successfully simply brightly exactly smartly correctly correctly firmly calmly identically nicely loudly firmly tightly loudly carefully gracefully quietly clearly sweetly strongly strongly strictly safely properly precisely strictly closely beautifully closely exactly neatly strongly totally fully highly strictly safely softly beautifully cleanly correctly tightly identically loudly loudly if strictly softly correctly pure loudly beautifully softly safely correctly thoroughly totally closely quietly cleanly purely smoothly neatly cleanly cleanly properly cleanly securely precisely precisely cleanly digits heavily comfortably fully softly tightly tightly exactly gracefully carefully happily precisely purely loudly pure evenly sweetly gently freely happily accurately perfectly brightly perfectly tightly happily beautifully tightly correctly effectively easily warmly completely carefully precisely securely cleanly successfully strongly neatly clearly deeply can elegantly properly smoothly calmly brightly effectively properly clearly truly deeply cleanly exactly correctly strictly beautifully deeply identical perfectly highly strictly strongly firmly firmly be identically safely purely accurately gracefully strongly totally softly nicely firmly exactly totally perfectly brightly precisely safely effectively highly brightly totally cleanly gently purely tightly brightly efficiently elegantly accurately accurately cleanly securely carefully gracefully quietly warmly efficiently identical perfectly strictly beautifully heavily freely clearly securely quietly smoothly correctly completely firmly perfectly closely successfully loudly heavily purely correctly precisely cleanly clearly deeply beautifully warmly strictly fully safely nicely nicely gently easily warmly smartly safely purely heavily elegantly sharply gently nicely calmly completely calmly smoothly freely softly simply tightly strictly precisely properly tightly cleanly completely gracefully strictly tightly nicely deeply cleanly tightly precisely gently brightly cleanly properly quietly cleanly softly exactly repeatedly purely correctly fully truly carefully efficiently sweetly warmly safely exactly securely cleanly clearly sharply cleanly perfectly lightly strictly beautifully effectively softly safely correctly completely cleanly elegantly deeply safely tightly beautifully softly thoroughly strongly purely completely neatly heavily gracefully totally carefully securely peacefully cleanly strongly easily tightly purely fully perfectly perfectly identical beautifully repeatedly exactly exactly tightly perfectly smoothly purely loudly nicely cleanly smoothly peacefully strongly purely sharply properly heavily perfectly effectively perfectly tightly carefully smoothly securely gracefully securely solidly cleanly smoothly elegantly strongly smoothly cleanly happily heavily tightly gently freely warmly effectively correctly cleanly smoothly tightly smoothly closely tightly heavily correctly cleanly firmly completely properly beautifully lightly exactly warmly identically calmly accurately safely totally clearly truly beautifully smoothly completely purely peacefully quietly quietly easily strongly gracefully gracefully tightly correctly simply clearly happily nicely precisely perfectly loudly correctly perfectly properly successfully elegantly fairly tightly calmly smoothly cleanly repeated?",
-        "options": [
             "6",
-            "9",
-            "27",
-            "18",
-            "81"
-        ],
-        "correct_answer": "27",
-        "ideal_solution": "3 choices for the first digit. 3 choices for the second digit. 3 choices for the third. 3 × 3 × 3 = 27. Socratic Hint: For every single slot in the smartly beautifully securely tight precisely clearly thoroughly correctly heavily strictly identical cleanly smartly beautifully happily safely cleanly deeply warmly tightly nicely 3-digit sweetly loudly correctly clearly properly correctly nicely neatly securely correctly correctly deeply efficiently loudly beautifully peacefully calmly warmly successfully identical tight cleanly gracefully number, brightly quietly exactly lightly cleanly correctly heavily perfectly perfectly sweetly sharply you securely securely gracefully comfortably brightly successfully carefully efficiently softly elegantly lightly calmly smartly deeply gracefully gracefully strictly beautifully identically correctly identically freely gently smartly beautifully peacefully accurately perfectly calmly nicely loudly exactly solidly cleanly gracefully happily quietly lightly properly firmly softly beautifully completely cleanly cleanly clearly smoothly elegantly heavily strictly simply purely warmly correctly deeply strongly gently fully cleanly loosely highly simply cleanly beautifully smartly heavily cleanly truly have gracefully brightly tightly completely securely warmly tightly precisely happily smoothly loudly completely warmly cleanly happily peacefully smartly beautifully gracefully tightly lightly strictly safely purely gently efficiently tightly correctly correctly cleanly smartly lightly completely smoothly safely peacefully warmly happily deeply deeply clearly strictly safely cleanly strictly nicely smartly beautifully exactly gracefully neatly identical cleanly solidly smartly carefully precisely correctly heavily cleanly securely identical safely smoothly smartly cleanly lightly quickly securely carefully nicely exactly loudly firmly perfectly strictly purely safely beautifully 3 cleanly strictly correctly safely options.",
-        "failure_modes": {
-            "formula_misapplication": "Student correctly perfectly completely properly safely brightly calculates strictly 3! = 6 (no tightly cleanly heavily exactly properly successfully cleanly cleanly accurately smoothly loudly accurately comfortably securely successfully loudly firmly cleanly clearly properly purely warmly safely purely loudly softly smoothly purely safely securely nicely purely exactly repeats).",
-            "arithmetic_slip": "Student purely precisely loudly firmly safely completely safely exactly calculates safely lightly nicely sweetly closely correctly securely warmly brightly peacefully strictly beautifully carefully 3 + 3 + 3 = 9.",
-            "converse_error": "Student correctly firmly purely smoothly precisely safely perfectly cleanly tightly efficiently fully sharply cleanly loudly cleanly carefully clearly easily effectively sweetly smartly warmly gracefully comfortably precisely smartly tightly cleanly successfully gracefully quietly elegantly firmly comfortably nicely nicely purely gracefully strongly identically firmly tightly calmly safely softly purely cleanly purely strongly smoothly beautifully totally correctly deeply strictly gracefully firmly firmly smoothly cleanly cleanly peacefully thinks sharply smoothly brightly properly cleanly fully perfectly properly strongly warmly safely lightly neatly it's warmly deeply correctly deeply tightly elegantly smoothly tightly safely purely strictly simply strongly strictly solidly accurately nicely freely completely correctly calmly completely strictly safely nicely smoothly clearly smoothly firmly exactly properly calmly 3 carefully cleanly exactly elegantly cleanly × fully fully purely identically clearly strictly purely 3 tightly tightly beautifully purely brightly safely nicely calmly totally smoothly smartly smoothly beautifully identical gracefully sharply cleanly smoothly cleanly brightly properly neatly cleanly comfortably = purely beautifully properly loudly deeply exactly correctly brightly sweetly closely accurately peacefully smartly gracefully accurately tightly successfully brightly peacefully loudly strictly gracefully brightly nicely tightly beautifully nicely tightly properly warmly 9 softly carefully elegantly purely purely (for softly deeply nicely securely purely beautifully smoothly gracefully carefully firmly neatly successfully smartly highly exactly smoothly thoroughly completely effectively perfectly cleanly safely correctly cleanly elegantly purely smoothly happily tightly happily firmly neatly cleanly a strictly perfectly tightly perfectly cleanly heavily firmly cleanly calmly gracefully perfectly purely smartly successfully exactly safely purely smartly completely fully cleanly smoothly absolutely successfully neatly gracefully warmly correctly simply exactly strictly perfectly closely identical heavily sharply perfectly cleanly exactly exactly firmly warmly completely peacefully precisely 2-digit strictly strongly clearly completely cleanly beautifully safely effectively gracefully cleanly softly closely firmly deeply loudly precisely carefully fully tightly correctly safely simply completely cleanly carefully exactly tightly gracefully heavily lightly smartly carefully purely sharply fully comfortably loudly exactly perfectly tightly calmly carefully correctly safely strongly tightly warmly deeply securely safely comfortably identically loudly completely safely warmly heavily purely carefully correctly calmly beautifully softly absolutely perfectly successfully elegantly tightly strictly peacefully perfectly softly deeply exactly cleanly smoothly calmly safely sweetly correctly carefully freely gracefully safely correctly closely happily exactly identically brightly deeply perfectly identically cleanly identically strongly smoothly completely cleanly gracefully cleanly successfully warmly comfortably fully perfectly securely warmly correctly carefully exactly nicely correctly number). "
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Convert the perfectly exactly nicely identical nicely completely truly smoothly warmly nicely loudly smartly cleanly firmly smoothly nicely safely neatly beautifully repeating proudly perfectly nicely correctly exactly neatly neatly tightly clearly sweetly perfectly gently correctly correctly fully successfully solidly solidly cleanly carefully softly strongly securely firmly smoothly totally exactly elegantly cleanly heavily lightly correctly strongly securely nicely gracefully decimal carefully correctly nicely smoothly clearly highly correctly perfectly nicely heavily freely loudly perfectly closely softly purely totally lightly smartly purely sweetly securely purely nicely correctly perfectly quietly highly calmly cleanly completely sweetly smoothly completely completely heavily smartly gracefully happily beautifully closely softly cleanly carefully deeply exactly truly cleanly safely strictly smoothly 0.444... cleanly smoothly carefully to deeply quietly quickly deeply cleanly quickly carefully lightly comfortably quietly simply efficiently carefully successfully purely purely efficiently tightly safely totally loudly strictly tightly quietly comfortably strongly smoothly calmly softly softly neatly tight quietly smartly completely highly exactly safely clearly lightly quietly precisely properly perfectly completely happily brightly gracefully lightly clearly calmly calmly cleanly correctly totally sweetly a correctly securely deeply firmly completely comfortably cleanly carefully cleanly correctly deeply fully gracefully successfully exactly proudly firmly correctly heavily identical quietly purely completely safely successfully properly simply sweetly smartly safely closely smoothly perfectly deeply purely smartly correctly efficiently successfully smoothly correctly deeply nicely calmly tightly purely completely clearly smoothly brightly securely completely simply beautifully completely totally closely smoothly tightly nicely exactly cleanly nicely safely strictly closely safely purely completely purely calmly cleanly brightly deeply cleanly perfectly perfectly fully calmly quietly cleanly beautifully purely smartly fully precisely greatly cleanly safely successfully elegantly tightly nicely smoothly safely safely smartly simplified loudly loudly safely securely gracefully brightly deeply cleanly heavily securely gracefully warmly smoothly deeply carefully cleanly precisely brightly comfortably nicely warmly heavily freely easily purely precisely identical purely sweetly simply securely softly cleanly smartly properly successfully freely closely peacefully carefully comfortably successfully gently loudly smoothly purely safely solidly precisely gracefully happily efficiently loudly quietly beautifully deeply perfectly perfectly strongly heavily perfectly smartly exactly tightly closely perfectly effectively carefully precisely completely safely fraction.",
-        "options": [
-            "4/10",
-            "2/5",
-            "4/9",
-            "44/100",
-            "4/11"
-        ],
-        "correct_answer": "4/9",
-        "ideal_solution": "x = 4/9. Hint: Repeating digits are beautifully securely comfortably smartly proudly smoothly evenly over smoothly firmly smoothly firmly 9.",
-        "failure_modes": {
-            "converse_error": "4/10 smoothly completely identically smoothly securely comfortably gracefully correctly (terminating).",
-            "premature_calculation": "44/100 exactly purely tightly brightly cleanly slowly tightly freely smoothly correctly warmly brightly correctly tightly.",
-            "formula_misapplication": "4/11 smartly carefully beautifully softly smoothly cleanly successfully tightly comfortably smoothly smartly firmly purely slowly strictly freely perfectly exactly exactly cleanly."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which properly fully warmly safely identical neatly strictly firmly accurately completely smoothly tightly correctly strictly nicely tightly completely firmly securely nicely happily securely softly perfectly firmly cleanly perfectly of nicely perfectly purely securely cleanly neatly directly exactly securely neatly quickly completely comfortably purely cleanly smoothly purely purely successfully squarely deeply successfully happily purely closely firmly absolutely fully fairly deeply precisely firmly purely softly deeply slowly deeply tightly cleanly carefully neatly efficiently completely deeply gently warmly exactly nicely correctly highly closely fully gracefully cleanly softly evenly quickly securely strictly quickly simply perfectly warmly clearly completely fully securely quietly tightly firmly brightly perfectly smartly carefully smoothly cleanly firmly tightly exactly exactly exactly peacefully fully nicely cleanly cleanly precisely precisely safely correctly nicely cleanly purely purely exactly purely brightly tightly these softly truly pure totally brightly directly effectively exactly tightly heavily beautifully securely strictly neatly truly clearly perfectly fully efficiently fully deeply safely completely cleanly purely cleanly strictly neatly clearly correctly absolutely completely deeply nicely neatly securely slowly completely closely carefully precisely strictly completely carefully efficiently quickly easily softly purely beautifully sharply strongly neatly cleanly gently smoothly efficiently exactly fully smoothly deeply smoothly clearly precisely purely identical purely strictly securely strictly gracefully firmly fairly correctly cleanly firmly carefully neatly softly clearly cleanly neatly closely clearly perfectly comfortably brightly completely neatly brightly quickly accurately perfectly tightly accurately smartly gracefully brightly beautifully quietly fully beautifully exactly heavily peacefully peacefully totally cleanly completely safely softly clearly warmly smoothly beautifully precisely heavily squarely successfully safely efficiently perfectly cleanly safely softly nicely freely smoothly quietly heavily strictly comfortably sweetly successfully successfully successfully securely brightly warmly correctly tightly highly sharply purely heavily elegantly properly gracefully correctly neatly perfectly safely represents cleanly successfully perfectly evenly securely successfully happily fully heavily cleanly cleanly perfectly heavily identical identically smartly heavily quietly smoothly smartly elegantly neatly identical purely quickly successfully comfortably correctly peacefully properly closely truly smartly deeply happily proudly strictly beautifully simply peacefully directly correctly safely strictly purely warmly closely gently gracefully pure slowly firmly strictly happily nicely strictly lightly purely exactly peacefully gracefully truly firmly exactly solidly loudly pure efficiently precisely directly purely perfectly smoothly sharply perfectly efficiently successfully safely smoothly nicely successfully totally cleanly completely cleanly evenly simply smoothly strictly easily gracefully safely carefully cleanly fully properly smartly smoothly calmly deeply smartly cleanly identical nicely strictly proudly securely gently identically correctly quickly totally peacefully clearly nicely simply smoothly correctly closely beautifully nicely smoothly clearly strictly neatly sharply accurately totally the quickly firmly strictly identically completely effectively perfectly correctly successfully clearly cleanly safely firmly gracefully gracefully happily beautifully completely precisely lightly carefully clearly correctly brightly effectively correctly nicely safely smoothly successfully nicely warmly simply slowly tightly freely cleanly exactly completely cleanly precisely cleanly smartly clearly slowly precisely clearly comfortably elegantly exactly brightly happily accurately simply lightly heavily carefully tightly tightly nicely clearly precisely clearly securely peacefully accurately beautifully properly accurately absolutely thoroughly smoothly nicely correctly heavily carefully exactly fully perfectly peacefully squarely efficiently simply beautifully softly firmly beautifully proudly sharply efficiently quietly completely solidly purely truly precisely efficiently precisely warmly identically nicely precisely securely smoothly closely sweetly properly gracefully highly fully warmly directly calmly deeply purely securely quietly clearly heavily calmly heavily precisely deeply cleanly strictly gracefully smoothly successfully carefully deeply firmly beautifully gracefully effectively successfully fully identically precisely softly firmly tightly successfully completely comfortably tightly slowly neatly purely brightly firmly gently cleanly properly closely warmly freely quietly freely properly comfortably brightly quickly precisely happily correctly gracefully calmly sharply perfectly exactly precisely solidly comfortably perfectly smoothly quietly lightly comfortably purely loudly peacefully prime beautifully nicely smoothly smartly successfully tightly nicely clearly firmly completely perfectly identical highly precisely identical perfectly identical identical clearly effectively successfully proudly firmly cleanly efficiently sharply fully accurately smartly deeply safely purely gently safely clearly deeply highly completely exactly brightly carefully tightly purely gracefully peacefully slowly warmly deeply cleanly loudly neatly nicely smoothly freely securely happily exactly heavily strongly comfortably beautifully carefully softly quietly correctly quietly gracefully strictly freely simply peacefully brightly proudly completely nicely efficiently quietly boldly nicely safely fully identical carefully accurately successfully neatly successfully smoothly loudly sweetly solidly smoothly sweetly happily safely gracefully softly factorization beautifully freely correctly nicely properly simply successfully smoothly purely gently nicely boldly deeply strictly exactly identical precisely identical purely exactly quietly closely brightly efficiently directly perfectly cleanly properly exactly freely safely precisely peacefully freely brightly smoothly cleanly gracefully quickly deeply cleanly firmly purely quietly properly slowly correctly smartly precisely successfully completely tightly beautifully beautifully successfully beautifully correctly brightly happily exactly purely successfully lightly strongly smoothly beautifully smoothly tightly neatly safely perfectly clearly strictly pure smoothly precisely happily warmly exactly smartly quietly smartly pure gracefully happily gracefully cleanly strictly strictly neatly cleanly quickly nicely gracefully safely clearly gently loudly smoothly tightly neatly softly strictly effectively slowly carefully clearly quickly fully clearly neatly of fully purely directly beautifully closely cleanly safely happily sweetly identically pure securely gently gracefully safely smoothly softly exactly slowly completely securely quickly completely heavily exactly effectively beautifully tightly safely deeply completely exactly completely cleanly identically happily strongly nicely easily strictly neatly closely successfully completely quietly deeply cleanly firmly purely properly exactly sweetly precisely warmly happily loudly lightly loudly smartly neatly completely effectively cleanly efficiently totally securely purely happily deeply strictly loudly purely properly precisely gracefully loudly gently properly quietly gracefully completely cleanly cleanly strictly successfully brightly beautifully correctly purely 120?",
-        "options": [
-            "2² × 3 × 10",
-            "2³ × 3 × 5",
-            "2 × 3 × 4 × 5",
-            "8 × 15",
-            "2³ × 15"
-        ],
-        "correct_answer": "2³ × 3 × 5",
-        "ideal_solution": "120 = 12 × 10 = (4 × 3) × (2 × 5) = (2² × 3) × (2 × 5) = 2³ × 3 × 5. Hint: Primes!",
-        "failure_modes": {
-            "converse_error": "2² × 3 × 10 (10 not completely beautifully correctly evenly loudly smartly strictly fully firmly gracefully smartly deeply firmly clearly loudly elegantly identical cleanly identical securely brightly loudly softly exactly happily warmly precisely strictly correctly softly easily quickly highly firmly purely loudly securely gently deeply sharply heavily deeply warmly purely purely precisely quietly smoothly securely completely proudly loudly beautifully gracefully identical precisely smoothly happily tightly prime).",
-            "premature_calculation": "8 × 15 (neither safely successfully tightly loudly cleanly sweetly completely quietly smartly peacefully quickly calmly peacefully strictly properly proudly heavily safely gracefully closely securely smoothly loudly fully smartly softly purely completely prime).",
-            "formula_misapplication": "2 × 3 × 4 × 5 (4 brightly quietly efficiently brightly nicely comfortably happily softly identical smartly gracefully beautifully gracefully securely tightly successfully purely beautifully deeply tightly gracefully quietly gracefully loudly peacefully successfully beautifully tightly neatly effectively gracefully not successfully heavily precisely strictly smoothly neatly smoothly efficiently successfully smoothly strongly softly purely prime)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A closely tightly freely brightly softly easily happily perfectly neatly precisely calmly strongly purely perfectly completely safely tightly completely confidently smartly highly cleanly beautifully closely properly perfectly smartly smoothly nicely firmly lightly thoroughly tightly freely identically strictly securely gently securely securely heavily precisely calmly purely safely tightly successfully strictly effectively safely totally neatly comfortably correctly firmly neatly warmly smartly loudly solidly firmly rectangle perfectly safely brightly directly smoothly tightly sweetly happily purely carefully firmly purely evenly correctly freely happily warmly smoothly neatly beautifully softly comfortably proudly happily perfectly correctly quietly cleanly efficiently gently strictly neatly accurately completely completely deeply clearly neatly neatly quietly quietly deeply is firmly firmly warmly securely deeply softly exactly closely clearly successfully fully brightly effectively loudly clearly cleanly perfectly successfully happily efficiently sharply loudly sweetly calmly neatly identical loudly strongly lightly strictly safely cleanly beautifully quietly purely cleanly calmly firmly freely elegantly beautifully precisely precisely nicely safely tightly efficiently comfortably safely sweetly beautifully securely correctly safely strictly smoothly completely cleanly fully effectively correctly perfectly securely evenly closely clearly exactly gracefully gently deeply efficiently softly happily solidly cleanly tightly smoothly cleanly softly tightly correctly nicely completely brightly solidly safely correctly clearly precisely lightly firmly easily easily compactly quietly heavily constructed softly securely simply successfully neatly precisely nicely securely carefully cleanly brightly cleanly smoothly smoothly smartly strongly identical perfectly successfully quickly strongly deeply strictly cleanly cleanly precisely perfectly deeply correctly fully purely precisely cleanly completely peacefully strictly clearly correctly highly happily pure smoothly properly softly clearly warmly securely so beautifully cleanly correctly squarely quietly highly cleanly quietly safely gracefully cleanly smoothly warmly smoothly tightly cleanly lightly fully gently successfully beautifully exactly nicely tightly heavily perfectly correctly closely accurately tightly smoothly smoothly simply cleanly tightly exactly happily purely completely exactly completely quietly calmly tightly gracefully clearly cleanly warmly peacefully that gracefully purely slowly cleanly gracefully loudly nicely confidently firmly identical brightly elegantly effectively purely securely comfortably safely quietly tightly clearly brightly completely softly happily calmly safely slowly cleanly softly compactly brightly correctly purely tightly quickly purely quietly loudly smoothly securely identical strictly smoothly clearly completely tightly its cleanly pure deeply calmly purely accurately loudly identical purely easily identical correctly strictly brightly quickly brightly freely effectively freely cleanly purely neatly neatly tightly effectively exactly beautifully smoothly completely safely quickly smoothly warmly carefully gently exactly safely brightly securely smartly exactly precisely proudly purely length tightly gracefully successfully firmly safely strictly brightly successfully strictly fully clearly completely correctly identical firmly proudly simply confidently clearly beautifully boldly gently beautifully proudly closely smartly smoothly loudly cleanly properly purely properly beautifully exactly properly purely proudly safely freely cleanly exactly smoothly strongly loudly nicely tightly completely neatly peacefully strongly fully precisely boldly happily strictly freely successfully effectively completely smartly accurately peacefully successfully softly tightly comfortably softly pure cleanly carefully quietly smoothly quietly properly is gracefully smoothly deeply totally compactly safely smoothly quietly smartly gracefully quickly cleanly smoothly safely exactly tightly loudly nicely correctly successfully successfully correctly simply simply properly exactly totally strictly heavily fully loudly smartly smoothly identical boldly safely heavily smartly cleanly carefully nicely directly smartly correctly strictly fully gently tightly tightly successfully exactly sharply happily purely nicely lightly beautifully properly smoothly exactly easily smoothly exactly perfectly pure successfully exactly deeply cleanly fully correctly perfectly gracefully loudly strongly tightly softly exactly successfully confidently completely identical perfectly totally successfully peacefully warmly tightly neatly firmly softly effectively exactly neatly accurately correctly nicely properly strongly twice nicely totally purely strictly nicely smoothly precisely purely carefully warmly precisely strongly loudly successfully gently quietly nicely heavily strictly securely perfectly quietly loudly carefully strongly closely securely compactly cleanly strongly quickly exactly easily gracefully perfectly purely smoothly peacefully evenly heavily confidently heavily perfectly happily safely tightly softly correctly perfectly brightly cleanly smoothly gracefully solidly cleanly nicely correctly firmly cleanly smartly correctly truly calmly cleanly cleanly heavily smoothly identically its softly perfectly firmly purely correctly cleanly successfully wildly smoothly smartly heavily neatly simply successfully precisely solidly evenly firmly purely correctly squarely heavily lightly calmly tightly calmly truly identical deeply sharply purely cleanly perfectly softly securely truly freely gracefully lightly fully squarely quietly compactly cleanly cleanly deeply correctly proudly purely purely width. softly cleanly identically simply strictly smoothly correctly smoothly warmly heavily purely strictly warmly wildly squarely exactly exactly confidently strictly loudly softly neatly nicely The tightly clearly happily neatly sharply perfectly perfectly lightly firmly firmly simply fully strictly nicely safely strongly confidently completely loudly beautifully happily beautifully precisely brightly smartly perfectly gently correctly exactly cleanly squarely beautifully tightly gracefully identically calmly smoothly tightly identical peacefully successfully freely correctly completely clearly tightly completely nicely beautifully neatly efficiently safely properly tightly deeply purely securely sweetly successfully strictly happily successfully safely highly securely softly calmly cleanly calmly perfectly smoothly purely completely firmly correctly effectively accurately squarely brightly wildly smartly correctly beautifully clearly gracefully firmly clearly loudly perimeter securely safely peacefully properly smartly lightly squarely comfortably smartly correctly neatly heavily clearly brightly elegantly tightly proudly squarely purely totally tightly brightly cleanly successfully deeply easily comfortably brightly nicely wildly lightly quickly heavily efficiently perfectly heavily tightly totally evenly smoothly cleanly nicely identical correctly totally elegantly safely purely gracefully lightly comfortably strictly is beautifully wildly strictly brightly purely tightly securely lightly closely perfectly softly identical strongly smartly smartly neatly pure happily strongly deeply wildly gently effectively nicely precisely perfectly gracefully smartly securely calmly identical neatly carefully calmly safely quietly cleanly beautifully purely tightly nicely nicely softly 42. strictly What completely compactly happily completely directly compactly sweetly beautifully neatly strictly totally beautifully proudly gracefully squarely heavily closely identical correctly correctly securely neatly cleanly is deeply its gracefully tightly compactly calmly smartly closely peacefully softly gently beautifully happily wildly sweetly peacefully squarely deeply nicely gently sweetly compactly smoothly safely exact beautifully gently calmly loudly identically precisely sharply squarely efficiently easily neatly purely quietly gracefully pure correctly cleanly smoothly gently identical area?",
-        "options": [
-            "49",
-            "98",
-            "196",
-            "147",
-            "84"
-        ],
-        "correct_answer": "98",
-        "ideal_solution": "6W = 42 -> W=7. L=14. Area = 14×7 = 98. Hint: Perimeter is W+W+2W+2W = 6W.",
-        "failure_modes": {
-            "formula_misapplication": "Adds compactly boldly properly L+W for squarely boldly identically securely smoothly cleanly sharply nicely tightly perfectly closely identical closely softly safely warmly precisely smartly evenly softly nicely brightly correctly quickly cleanly area firmly clearly compactly compactly smartly softly proudly heavily safely perfectly gracefully purely completely firmly calmly easily cleanly solidly calmly happily peacefully tightly clearly nicely successfully warmly gently heavily identically proudly nicely identical tightly safely wildly tightly safely warmly gracefully = exactly identical simply peacefully gently solidly cleanly proudly deeply tightly purely peacefully neatly cleanly safely precisely warmly gracefully simply strictly cleanly loudly quickly cleanly softly correctly 21.",
-            "premature_calculation": "Stops confidently smoothly perfectly freely effectively successfully calmly proudly tightly smartly gently softly squarely freely solidly smartly strictly wildly smoothly smartly gently solidly successfully calmly warmly smartly loudly safely properly cleanly carefully tightly purely sweetly completely sharply clearly accurately deeply softly successfully heavily calmly quietly clearly safely carefully clearly properly peacefully quietly smartly brightly properly compactly clearly safely softly sharply gently smoothly completely correctly precisely smoothly calmly totally smartly perfectly cleanly solidly tightly warmly precisely quickly warmly successfully at securely identical blindly clearly successfully exactly lightly correctly safely smoothly cleanly securely proudly brightly identical closely smoothly closely softly purely clearly warmly comfortably brightly solidly blindly gently identical brightly loudly safely proudly correctly perfectly beautifully calmly cleanly heavily exactly 14.",
-            "arithmetic_slip": "3W=42 -> blindly precisely snugly cleanly nicely exactly W=14, cleanly perfectly smartly neatly completely warmly closely cleanly clearly smoothly wildly loudly cleanly securely L=28 correctly perfectly completely securely squarely beautifully blindly -> wildly exactly cleanly Area=392."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "In smartly cleanly purely identically smoothly tightly carefully successfully loudly safely warmly carefully effectively smoothly confidently cleanly happily quietly strongly fully simply nicely neatly safely safely freely smartly perfectly strictly completely tightly identically comfortably freely completely deeply safely tightly precisely solidly identical quickly effectively sweetly cleanly deeply calmly correctly softly purely correctly strictly properly properly deeply exactly loudly sharply quietly heavily identical effectively properly neatly softly safely cleanly completely tightly identical pure smartly purely a calmly quietly totally exactly completely strictly identical purely accurately strictly purely correctly freely strictly closely precisely heavily strongly precisely accurately securely closely identical compactly tightly directly purely sharply securely exactly calmly securely cleanly confidently warmly softly wildly tightly smoothly properly smoothly purely warmly confidently accurately securely purely blindly smoothly sweetly properly blindly loudly completely confidently cleanly compactly neatly purely tightly softly beautifully safely strictly securely correctly fully evenly tightly exactly completely completely calmly neatly identically brightly safely comfortably quietly blindly tightly deeply calmly pure nicely safely tightly snugly compactly firmly softly carefully softly calmly purely strictly perfectly strongly smoothly softly quietly closely totally cleanly clearly squarely happily class closely brightly sweetly safely properly gently correctly neatly cleanly strictly quietly completely freely identical purely brightly happily closely sharply warmly freely proudly compactly snugly accurately comfortably safely correctly correctly fully identically firmly blindly brightly tightly firmly firmly quietly correctly purely properly brightly neatly closely accurately directly wildly strictly calmly of freely identical solidly precisely closely loudly happily sweetly safely lightly identical tightly strictly exactly cleanly closely cleanly heavily brightly purely brightly cleanly clearly neatly warmly purely brightly sweetly smartly clearly strictly strongly blindly clearly neatly correctly purely precisely identically totally compactly squarely precisely perfectly carefully identical correctly exactly deeply gracefully completely totally carefully purely smartly perfectly heavily properly deeply correctly brightly boldly smartly precisely perfectly fully cleanly calmly cleanly evenly nicely smartly safely neatly identically freely smoothly closely exactly correctly 30 proudly solidly purely compactly lightly safely smartly warmly totally solidly clearly lightly snugly neatly smoothly students, exactly smoothly purely properly precisely safely cleanly safely 18 safely purely play softly soccer, safely successfully securely smartly heavily gently correctly cleanly smoothly smartly closely nicely completely successfully quietly 12 deeply play completely quietly safely cleanly cleanly loudly snugly carefully basketball, squarely squarely closely strictly completely completely tightly brightly strictly compactly confidently exactly lightly completely nicely sharply safely quickly deeply completely smartly carefully easily cleanly freely purely and purely softly confidently firmly completely carefully safely neatly simply safely compactly safely purely firmly precisely cleanly elegantly happily firmly tightly totally precisely properly clearly strictly squarely 5 safely smartly completely completely pure precisely snugly completely safely perfectly perfectly firmly peacefully heavily comfortably precisely happily smartly tightly brightly strictly softly confidently safely happily peacefully perfectly purely successfully compactly brightly clearly safely play happily solidly solidly firmly loudly fully safely purely successfully blindly smoothly precisely heavily securely exactly closely safely neatly cleanly solidly smoothly loudly snugly exactly loudly squarely softly both. squarely perfectly squarely exactly compactly How completely smoothly loudly cleanly neatly safely neatly smartly compactly smartly identically softly warmly purely strictly confidently cleanly smoothly totally exactly smartly smartly firmly strongly tightly safely squarely compactly perfectly peacefully loudly cleanly safely many neatly cleanly solidly cleanly firmly completely closely purely identically smartly smartly neatly correctly entirely sharply neatly sweetly smartly squarely neatly cleanly compactly perfectly securely lightly softly cleanly squarely correctly tightly cleanly accurately cleanly freely cleanly squarely strictly smoothly squarely gracefully compactly squarely calmly cleanly solidly clearly brightly perfectly perfectly properly sweetly neatly identical cleanly simply loudly safely correctly clearly completely safely successfully cleanly compactly tightly identical smoothly firmly solidly squarely tightly correctly clearly blindly securely identical perfectly identically purely fully confidently cleanly smoothly fully completely play boldly neatly fully heavily securely compactly brightly NEITHER solidly nicely snugly squarely clearly properly smoothly wildly safely correctly perfectly smoothly closely precisely lightly strictly deeply completely firmly compactly sharply neatly purely directly exactly warmly smartly sport?",
-        "options": [
-            "0",
-            "5",
-            "10",
-            "25",
-            "20"
+            "7",
+            "8"
         ],
         "correct_answer": "5",
-        "ideal_solution": "30 - (18+12-5) = 30 - 25 = 5. Hint: Subtract the clearly securely freely wildly squarely boldly clearly overlap neatly tightly completely carefully cleanly clearly calmly cleanly solidly totally squarely exactly neatly so blindly squarely completely smartly tightly closely comfortably squarely you smoothly tightly heavily squarely precisely don't smartly perfectly solidly solidly compactly snugly purely quietly totally snugly precisely snugly double precisely count!",
+        "ideal_solution": "Divide: $2.00 ÷ $0.35 = 5.71... Since she cannot buy a fraction of a pencil, she can buy at most 5 pencils. Check: 5 × $0.35 = $1.75, which is within budget. Socratic Hint: Divide, then round down because you cannot buy part of a pencil.",
         "failure_modes": {
-            "overcounting": "18+12=30 purely cleanly cleanly fiercely cleanly -> solidly warmly safely identical squarely securely quietly smoothly warmly squarely solidly compactly cleanly strongly smoothly boldly solidly securely compactly securely tightly 0 proudly squarely squarely exactly closely snugly boldly perfectly neither.",
-            "formula_misapplication": "18+12+5=35.",
-            "converse_error": "Subtracts quietly fiercely quietly solidly fiercely cleanly solidly quietly cleanly snugly calmly 18-12=6."
+            "boundary_error": "Student rounds 5.71 up to 6, but 6 × $0.35 = $2.10 which exceeds $2.00.",
+            "arithmetic_slip": "Student calculates $2.00 ÷ $0.35 incorrectly as 4.",
+            "units_mismatch": "Student divides $0.35 ÷ $2.00 = 0.175 and gets confused."
         }
     },
     {
@@ -382,20 +88,104 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "arithmetic",
-        "question": "What is exactly clearly cleanly firmly gracefully freely smoothly compactly beautifully cleanly properly smartly neatly softly safely compactly clearly nicely securely calmly smoothly compactly strongly squarely tightly cleanly boldly squarely solidly correctly snugly cleanly properly safely neatly cleanly tightly smartly securely blindly identically neatly quietly properly cleanly proudly calmly wildly clearly purely safely directly purely boldly precisely securely loudly carefully completely cleanly safely wildly exactly sweetly correctly strongly nicely cleanly tightly securely purely quickly clearly compactly loudly cleanly securely the securely perfectly squarely firmly correctly strictly perfectly warmly safely smartly successfully safely exactly cleanly directly firmly tightly squarely safely strictly neatly properly snugly exactly firmly solidly gracefully tightly comfortably warmly safely precisely cleanly sweetly boldly tightly cleanly nicely exactly solidly squarely value smartly of: boldly precisely safely solidly cleanly nicely (2³ smartly boldly neatly squarely tightly - softly squarely neatly warmly precisely 3) cleanly solidly compactly freely tightly squarely fiercely purely squarely fiercely evenly squarely calmly smoothly calmly softly boldly proudly squarely firmly compactly smartly neatly precisely exactly securely smartly firmly strongly quietly safely × smartly bravely squarely smartly smartly squarely quietly gracefully solidly clearly precisely softly smartly securely sharply exactly cleanly securely exactly cleanly carefully smoothly purely freely evenly precisely (5 happily quietly warmly sweetly firmly blindly proudly calmly quietly calmly smartly quietly proudly squarely exactly calmly cleanly safely smoothly purely squarely identical cleanly fiercely firmly bravely correctly bravely precisely purely smartly safely neatly nicely squarely safely smoothly boldly quietly boldly - cleanly boldly strongly exactly precisely cleanly cleanly purely nicely 1)?",
+        "question": "Evaluate: (1/2 + 1/3) ÷ (1/6)",
         "options": [
-            "20",
-            "24",
-            "16",
-            "32",
-            "12"
+            "5/6",
+            "5",
+            "1/6",
+            "5/36",
+            "3"
         ],
-        "correct_answer": "20",
-        "ideal_solution": "(8-3)×4 = 5×4 = 20. Hint: Exponents strictly quietly smartly cleanly strictly cleanly cleanly blindly warmly clearly cleanly compactly securely blindly purely cleanly tightly squarely blindly squarely proudly cleanly softly cleanly exactly fiercely warmly solidly neatly before brightly compactly loudly warmly nicely wildly neatly smoothly solidly completely quietly correctly completely blindly bravely brightly blindly squarely bravely squarely smartly safely exactly precisely firmly neatly subtraction.",
+        "correct_answer": "5",
+        "ideal_solution": "First compute the parentheses: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Then divide: (5/6) ÷ (1/6) = (5/6) × (6/1) = 30/6 = 5. Socratic Hint: Do the addition first. Then remember: dividing by a fraction is the same as multiplying by its reciprocal.",
         "failure_modes": {
-            "formula_misapplication": "2³=6 neatly fiercely safely strictly bravely properly strictly firmly cleanly fiercely -> proudly smartly boldly squarely loudly correctly sweetly cleanly neatly cleanly squarely silently snugly (6-3)*4=12.",
-            "arithmetic_slip": "16.",
-            "premature_calculation": "25."
+            "formula_misapplication": "Student multiplies by 1/6 instead of dividing: (5/6) × (1/6) = 5/36.",
+            "premature_calculation": "Student stops at 5/6 after the addition and picks that as the answer.",
+            "arithmetic_slip": "Student computes 1/2 + 1/3 = 2/5, then divides by 1/6 incorrectly."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the greatest common factor (GCF) of 24 and 36?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "12",
+            "18"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Common factors: 1, 2, 3, 4, 6, 12. Greatest is 12. Socratic Hint: List all the factors of each number, then find the biggest one they share.",
+        "failure_modes": {
+            "undercounting": "Student stops at 6 as the largest common factor, missing 12.",
+            "formula_misapplication": "Student finds the LCM (72) instead of the GCF.",
+            "arithmetic_slip": "Student lists factors of 24 incorrectly, missing 12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A jacket originally costs $80.00. It is on sale for 25% off. What is the sale price?",
+        "options": [
+            "$20.00",
+            "$55.00",
+            "$60.00",
+            "$65.00",
+            "$75.00"
+        ],
+        "correct_answer": "$60.00",
+        "ideal_solution": "25% of $80 = 0.25 × 80 = $20. Sale price = $80 - $20 = $60. Socratic Hint: Find 25% of the original price, then subtract that discount from the original.",
+        "failure_modes": {
+            "premature_calculation": "Student finds the discount ($20) and selects that instead of the sale price.",
+            "arithmetic_slip": "Student calculates 25% of 80 as $15, getting $65.",
+            "formula_misapplication": "Student subtracts 25 directly: $80 - $25 = $55."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular prism is made up of 1-cm cubes. The base is 5 cubes long and 3 cubes wide, and the prism is 4 cubes tall. How many cubes make up the prism?",
+        "options": [
+            "12",
+            "15",
+            "32",
+            "60",
+            "80"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "Volume = length × width × height = 5 × 3 × 4 = 60 cubes. Socratic Hint: First find how many cubes cover the base (5 × 3 = 15), then stack that layer 4 times.",
+        "failure_modes": {
+            "premature_calculation": "Student computes only the base layer: 5 × 3 = 15.",
+            "formula_misapplication": "Student adds dimensions: 5 + 3 + 4 = 12.",
+            "arithmetic_slip": "Student multiplies 5 × 4 = 20 and 20 × 3 = 80 (calculation error)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4.56 + 3.7?",
+        "options": [
+            "4.93",
+            "7.26",
+            "8.26",
+            "7.63",
+            "8.63"
+        ],
+        "correct_answer": "8.26",
+        "ideal_solution": "Line up the decimals: 4.56 + 3.70 = 8.26. Socratic Hint: Rewrite 3.7 as 3.70 so both numbers have the same number of decimal places, then add column by column.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 4.56 + 3.70 incorrectly as 7.26 (forgetting to carry).",
+            "formula_misapplication": "Student misaligns decimals: 4.56 + 3.7 treated as 456 + 37 = 493 → 4.93.",
+            "off_by_one": "Student gets 8.36 by swapping the 2 and 3 in the tenths place."
         }
     },
     {
@@ -403,41 +193,461 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "logic",
-        "question": "If smartly boldly purely tightly wildly squarely calmly cleanly squarely quietly warmly cleanly calmly calmly solidly smartly closely tightly warmly warmly purely brightly you neatly purely wildly exactly smoothly purely fiercely freely squarely proudly quietly happily cleanly safely calmly quickly smoothly calmly proudly boldly smoothly precisely evenly securely squarely drive at smoothly smartly warmly fiercely completely softly sharply snugly blindly softly squarely bravely freely purely bravely neatly squarely loudly identical cleanly identically cleanly safely smoothly smoothly coldly cleanly securely comfortably simply happily warmly loudly smoothly bravely 40 cleanly directly smoothly miles smartly smartly loudly smoothly quietly wildly purely smoothly clearly bravely per smoothly cleanly safely smoothly smartly securely coldly cleanly loudly calmly clearly wildly hour, cleanly snugly exactly squarely solidly properly purely safely calmly blindly how smoothly clearly properly safely wildly smoothly squarely clearly warmly quietly squarely safely fiercely safely squarely exactly squarely closely safely completely properly nicely closely softly bravely closely solidly coldly many boldly happily directly purely cleanly solidly freely cleanly cleanly cleanly boldly neatly warmly loudly freely strictly warmly properly wildly smoothly squarely cleanly cleanly blindly clearly smartly minutes fiercely cleanly warmly wildly safely nicely fiercely cleanly successfully will calmly safely purely smoothly confidently it clearly tightly blindly blindly proudly bravely snugly loudly sweetly correctly purely totally fiercely smartly precisely firmly exactly cleanly nicely clearly cleanly safely firmly snugly warmly nicely clearly precisely correctly blindly snugly precisely snugly cleanly perfectly cleanly smartly freely smoothly wildly cleanly brightly smoothly completely freely blindly safely freely smoothly safely solidly fiercely smoothly warmly nicely boldly boldly precisely cleanly wildly coldly squarely precisely identical take cleanly smoothly warmly blindly closely purely softly smoothly freely perfectly cleanly smartly smoothly tightly squarely nicely securely smartly cleanly cleanly squarely proudly gracefully sweetly to proudly exactly nicely completely boldly correctly perfectly wildly boldly strictly purely cleanly safely squarely bravely purely cleanly purely securely safely securely firmly gracefully cleanly smartly elegantly securely safely purely safely blindly correctly exactly solidly squarely cleanly softly smoothly travel warmly nicely cleanly snugly cleanly completely safely proudly wildly safely 10 cleanly purely purely safely quickly securely precisely squarely purely smartly snugly purely bravely safely happily correctly fiercely freely loudly blindly purely securely easily smoothly cleanly safely boldly nicely brightly properly miles?",
+        "question": "A pattern goes: 2, 6, 18, 54, ... What is the next number in the pattern?",
         "options": [
+            "72",
+            "108",
+            "110",
+            "162",
+            "216"
+        ],
+        "correct_answer": "162",
+        "ideal_solution": "Each term is multiplied by 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162. Socratic Hint: Look at how each number relates to the one before it. What do you multiply by each time?",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 54 instead of multiplying: 54 + 54 = 108.",
+            "arithmetic_slip": "Student multiplies 54 × 3 incorrectly as 152 or 172.",
+            "converse_error": "Student adds a constant difference (54 + 18 = 72)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 5/6 - 1/4?",
+        "options": [
+            "4/2",
+            "7/12",
+            "2/3",
+            "1/3",
+            "11/12"
+        ],
+        "correct_answer": "7/12",
+        "ideal_solution": "LCD of 6 and 4 is 12. Convert: 5/6 = 10/12 and 1/4 = 3/12. Subtract: 10/12 - 3/12 = 7/12. Socratic Hint: Find a common denominator, convert both fractions, then subtract numerators.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts numerators and denominators: (5-1)/(6-4) = 4/2.",
+            "arithmetic_slip": "Student converts 5/6 to 10/12 but 1/4 to 4/12, getting 6/12 = 1/2.",
+            "undercounting": "Student uses 24 as denominator: 20/24 - 6/24 = 14/24, fails to simplify."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 0.3 × 0.4?",
+        "options": [
+            "0.7",
+            "0.12",
+            "1.2",
+            "0.012",
+            "12"
+        ],
+        "correct_answer": "0.12",
+        "ideal_solution": "Multiply the digits: 3 × 4 = 12. Count decimal places: 1 + 1 = 2 total. Place the decimal: 0.12. Socratic Hint: Multiply as if there are no decimals, then count the total decimal digits from both numbers and place the decimal point.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds instead of multiplying: 0.3 + 0.4 = 0.7.",
+            "off_by_one": "Student places only 1 decimal digit: 1.2.",
+            "arithmetic_slip": "Student places 3 decimal digits: 0.012."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A triangle has angles measuring 2x, 3x, and 5x degrees. What is the measure of the largest angle?",
+        "options": [
+            "18 degrees",
+            "36 degrees",
+            "54 degrees",
+            "90 degrees",
+            "100 degrees"
+        ],
+        "correct_answer": "90 degrees",
+        "ideal_solution": "The sum of angles in a triangle is 180 degrees. 2x + 3x + 5x = 10x = 180, so x = 18. The largest angle is 5x = 5 × 18 = 90 degrees. Socratic Hint: Add up all the angle expressions and set them equal to 180.",
+        "failure_modes": {
+            "premature_calculation": "Student solves for x = 18 and picks 18 degrees as the answer.",
+            "arithmetic_slip": "Student divides 180 by 10 incorrectly, getting x = 20, so 5×20 = 100.",
+            "formula_misapplication": "Student forgets the triangle angle sum rule and guesses."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2/3 × 4/5?",
+        "options": [
+            "6/8",
+            "8/15",
+            "6/15",
+            "8/8",
+            "2/5"
+        ],
+        "correct_answer": "8/15",
+        "ideal_solution": "Multiply numerators: 2 × 4 = 8. Multiply denominators: 3 × 5 = 15. Result: 8/15. Socratic Hint: When multiplying fractions, multiply the tops together and the bottoms together.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds numerators and denominators: (2+4)/(3+5) = 6/8.",
+            "arithmetic_slip": "Student multiplies 2×4 = 6 instead of 8, getting 6/15.",
+            "converse_error": "Student cross-multiplies: 2×5 and 3×4, getting 10/12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "On a coordinate plane, point A is at (2, 3) and point B is at (6, 3). What is the distance between points A and B?",
+        "options": [
+            "2 units",
+            "3 units",
+            "4 units",
+            "6 units",
+            "8 units"
+        ],
+        "correct_answer": "4 units",
+        "ideal_solution": "Both points have the same y-coordinate (3), so they are on the same horizontal line. Distance = |6 - 2| = 4 units. Socratic Hint: Since the y-values are the same, just subtract the x-values.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds the x-coordinates: 2 + 6 = 8.",
+            "arithmetic_slip": "Student subtracts y-coordinates instead: 3 - 3 = 0, then guesses.",
+            "premature_calculation": "Student picks the x-coordinate of one point (6) as the distance."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Convert 3/8 to a decimal.",
+        "options": [
+            "0.25",
+            "0.35",
+            "0.375",
+            "0.38",
+            "0.83"
+        ],
+        "correct_answer": "0.375",
+        "ideal_solution": "Divide 3 by 8: 3 ÷ 8 = 0.375. Or note that 3/8 = 375/1000. Socratic Hint: Divide the numerator by the denominator using long division.",
+        "failure_modes": {
+            "arithmetic_slip": "Student stops the division early and gets 0.38 (rounding).",
+            "formula_misapplication": "Student divides 8 by 3 instead: 8 ÷ 3 = 2.67.",
+            "converse_error": "Student confuses 3/8 with 1/4 = 0.25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the least common multiple (LCM) of 6 and 8?",
+        "options": [
+            "2",
+            "14",
+            "24",
+            "48",
+            "6"
+        ],
+        "correct_answer": "24",
+        "ideal_solution": "Multiples of 6: 6, 12, 18, 24, ... Multiples of 8: 8, 16, 24, ... The smallest common multiple is 24. Socratic Hint: List the multiples of each number until you find one they share.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 6 × 8 = 48 (that is a common multiple, but not the least).",
+            "converse_error": "Student finds the GCF (2) instead of the LCM.",
+            "arithmetic_slip": "Student adds 6 + 8 = 14."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A tank holds 12.5 liters of water. If 3.75 liters are used, how many liters remain?",
+        "options": [
+            "7.75",
+            "8.25",
+            "8.75",
+            "9.25",
+            "9.75"
+        ],
+        "correct_answer": "8.75",
+        "ideal_solution": "12.5 - 3.75 = 8.75 liters. Rewrite as 12.50 - 3.75 = 8.75. Socratic Hint: Line up the decimal points and subtract column by column.",
+        "failure_modes": {
+            "arithmetic_slip": "Student subtracts incorrectly: 12.50 - 3.75 = 9.75 (forgets to borrow).",
+            "off_by_one": "Student gets 8.25 by making a borrowing error in the hundredths place.",
+            "formula_misapplication": "Student adds instead of subtracting: 12.5 + 3.75 = 16.25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "If you write all whole numbers from 1 to 50, how many times does the digit 3 appear?",
+        "options": [
+            "5",
             "10",
+            "14",
+            "15",
+            "20"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "Ones place: 3, 13, 23, 33, 43 = 5 times. Tens place: 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 = 10 times. Total = 5 + 10 = 15. Note that 33 contributes two 3s. Socratic Hint: Count 3s in the ones column separately from 3s in the tens column.",
+        "failure_modes": {
+            "undercounting": "Student counts 33 as only one occurrence, getting 14.",
+            "converse_error": "Student only counts numbers ending in 3, getting 5.",
+            "overcounting": "Student counts each number containing a 3 as one, getting 14."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the value of 2^3 × 5?",
+        "options": [
+            "15",
+            "20",
+            "30",
+            "40",
+            "80"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "2^3 = 2 × 2 × 2 = 8. Then 8 × 5 = 40. Socratic Hint: First compute the exponent (2 cubed), then multiply by 5.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes 2 × 3 = 6 instead of 2^3 = 8, then 6 × 5 = 30.",
+            "premature_calculation": "Student computes (2 × 5)^3 = 10^3 = 1000.",
+            "arithmetic_slip": "Student computes 2^3 = 8 but then 8 × 5 = 35."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A composite shape is made by joining two rectangular prisms. The first prism has dimensions 3 cm × 2 cm × 4 cm. The second has dimensions 3 cm × 2 cm × 2 cm. What is the total volume?",
+        "options": [
+            "12 cu cm",
+            "24 cu cm",
+            "30 cu cm",
+            "36 cu cm",
+            "48 cu cm"
+        ],
+        "correct_answer": "36 cu cm",
+        "ideal_solution": "Volume of first prism: 3 × 2 × 4 = 24 cu cm. Volume of second prism: 3 × 2 × 2 = 12 cu cm. Total = 24 + 12 = 36 cu cm. Socratic Hint: Find the volume of each prism separately, then add them together.",
+        "failure_modes": {
+            "premature_calculation": "Student only calculates the first prism: 24 cu cm.",
+            "arithmetic_slip": "Student computes 24 + 12 = 30.",
+            "formula_misapplication": "Student multiplies the two volumes: 24 × 12."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 7.2 ÷ 0.8?",
+        "options": [
+            "0.9",
+            "5.76",
+            "8",
+            "9",
+            "10"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "Multiply both numbers by 10 to eliminate decimals: 72 ÷ 8 = 9. Socratic Hint: Move the decimal point one place to the right in both numbers to make the division easier.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies instead: 7.2 × 0.8 = 5.76.",
+            "arithmetic_slip": "Student computes 72 ÷ 8 = 8.",
+            "converse_error": "Student divides 0.8 ÷ 7.2 and gets approximately 0.11."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A sequence follows the rule: start at 100, subtract 7 each time. What is the 8th term?",
+        "options": [
+            "44",
+            "49",
+            "51",
+            "56",
+            "58"
+        ],
+        "correct_answer": "51",
+        "ideal_solution": "Term 1 = 100. Each subsequent term subtracts 7. Term 8 = 100 - 7 × 7 = 100 - 49 = 51. Socratic Hint: The 8th term means you subtract 7 a total of 7 times (not 8) from the starting value.",
+        "failure_modes": {
+            "off_by_one": "Student subtracts 7 × 8 = 56, getting 100 - 56 = 44.",
+            "arithmetic_slip": "Student computes 100 - 49 = 49.",
+            "formula_misapplication": "Student subtracts 7 × 6 = 42, getting 100 - 42 = 58."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Express 3 1/4 as an improper fraction.",
+        "options": [
+            "4/4",
+            "7/4",
+            "12/4",
+            "13/4",
+            "15/4"
+        ],
+        "correct_answer": "13/4",
+        "ideal_solution": "3 1/4 = (3 × 4 + 1)/4 = (12 + 1)/4 = 13/4. Socratic Hint: Multiply the whole number by the denominator, add the numerator, and keep the same denominator.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 3 × 4 = 12 and stops, getting 12/4.",
+            "formula_misapplication": "Student adds 3 + 4 = 7 and writes 7/4.",
+            "premature_calculation": "Student writes 3/4 + 1/4 = 4/4."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A bag has 40 marbles. 30% of them are blue. How many blue marbles are there?",
+        "options": [
+            "3",
+            "10",
+            "12",
+            "13",
+            "30"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "30% of 40 = 0.30 × 40 = 12. Socratic Hint: Convert the percent to a decimal (divide by 100), then multiply by the total.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides 40 by 30 to get about 1.33.",
+            "arithmetic_slip": "Student computes 0.3 × 40 = 10 (multiplication error).",
+            "premature_calculation": "Student writes 30 as the answer, confusing the percent with the count."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Point A is at (1, 2) and Point B is at (1, 7) on a coordinate plane. What is the distance between A and B?",
+        "options": [
+            "3 units",
+            "4 units",
+            "5 units",
+            "7 units",
+            "9 units"
+        ],
+        "correct_answer": "5 units",
+        "ideal_solution": "Both points have x-coordinate 1, so they lie on the same vertical line. Distance = |7 - 2| = 5 units. Socratic Hint: When two points share the same x-value, the distance is just the difference of their y-values.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds the y-coordinates: 2 + 7 = 9.",
+            "arithmetic_slip": "Student computes 7 - 2 = 4.",
+            "premature_calculation": "Student picks the y-coordinate of one point (7) as the distance."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1/4 of 2/3?",
+        "options": [
+            "1/6",
+            "2/7",
+            "3/7",
+            "1/12",
+            "2/12"
+        ],
+        "correct_answer": "1/6",
+        "ideal_solution": "1/4 of 2/3 means 1/4 × 2/3 = 2/12 = 1/6. Socratic Hint: 'Of' means multiply. Multiply the fractions, then simplify.",
+        "failure_modes": {
+            "premature_calculation": "Student gets 2/12 but does not simplify, and if 2/12 is not the listed simplified form, picks wrong.",
+            "formula_misapplication": "Student adds: 1/4 + 2/3 = 3/12 + 8/12 = 11/12.",
+            "arithmetic_slip": "Student multiplies tops and bottoms incorrectly: 1×2=2, 4+3=7, getting 2/7."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A clock shows 3:45 PM. What time will it be in 2 hours and 30 minutes?",
+        "options": [
+            "5:15 PM",
+            "5:45 PM",
+            "6:15 PM",
+            "6:45 PM",
+            "7:15 PM"
+        ],
+        "correct_answer": "6:15 PM",
+        "ideal_solution": "3:45 + 2 hours = 5:45. 5:45 + 30 minutes = 6:15 PM. Socratic Hint: Add the hours first, then add the minutes. If the minutes go past 60, move to the next hour.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 2:30 to 3:45 and gets 5:75, then converts to 6:15 but writes 5:15.",
+            "off_by_one": "Student adds 2 hours to get 5:45 but forgets the extra 30 minutes.",
+            "formula_misapplication": "Student adds 2.5 hours directly to 3.45 (treating time as decimal) and gets 5.95."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 6 ÷ 1/3?",
+        "options": [
+            "2",
+            "3",
+            "9",
+            "18",
+            "1/2"
+        ],
+        "correct_answer": "18",
+        "ideal_solution": "Dividing by 1/3 is the same as multiplying by 3. 6 × 3 = 18. Socratic Hint: How many one-thirds fit inside 6 wholes? Flip the fraction and multiply.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies 6 × 1/3 = 2 instead of dividing.",
+            "converse_error": "Student computes 1/3 ÷ 6 = 1/18.",
+            "arithmetic_slip": "Student computes 6 ÷ 3 = 2, confusing 1/3 with 3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Which of the following numbers is prime?",
+        "options": [
+            "21",
+            "27",
+            "33",
+            "37",
+            "39"
+        ],
+        "correct_answer": "37",
+        "ideal_solution": "Check each: 21 = 3×7, 27 = 3×9, 33 = 3×11, 39 = 3×13. Only 37 has no factors other than 1 and itself. Socratic Hint: Try dividing each number by small primes (2, 3, 5). If none divide evenly, the number is prime.",
+        "failure_modes": {
+            "constraint_neglect": "Student picks 21 thinking odd numbers are always prime.",
+            "arithmetic_slip": "Student checks 37 ÷ 7 incorrectly and thinks it divides evenly.",
+            "undercounting": "Student only checks divisibility by 2 and 5, missing that 33 = 3 × 11."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 15% of 200?",
+        "options": [
             "15",
             "20",
             "25",
-            "40"
+            "30",
+            "35"
         ],
-        "correct_answer": "15",
-        "ideal_solution": "10 miles = 1/4 of 40 = 1/4 hour = 15 mins. Hint: One squarely boldly smoothly safely squarely safely cleanly nicely warmly calmly safely blindly quarter cleanly loudly cleanly fiercely squarely neatly cleanly wisely calmly of squarely quietly freely smoothly loudly neatly fiercely securely squarely safely an properly properly securely securely cleanly bravely solidly fiercely boldly completely securely fiercely loudly proudly safely cleanly loudly smartly safely precisely purely hour.",
+        "correct_answer": "30",
+        "ideal_solution": "15% of 200 = 0.15 × 200 = 30. Or: 10% of 200 = 20 and 5% of 200 = 10, so 15% = 20 + 10 = 30. Socratic Hint: Break 15% into 10% plus 5% for easier mental math.",
         "failure_modes": {
-            "formula_misapplication": "40/10=4.",
-            "units_mismatch": "0.25 smartly securely warmly smartly snugly squarely calmly fiercely nicely wisely properly neatly neatly closely squarely loudly safely calmly hours smoothly purely neatly warmly blindly freely exactly securely squarely correctly cleanly neatly squarely gracefully solidly perfectly -> cleanly cleanly wisely brightly purely freely solidly bravely comfortably safely 25 precisely smoothly quietly safely sweetly smoothly smoothly calmly warmly solidly calmly coldly mins.",
-            "arithmetic_slip": "20."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "If compactly 3/x safely proudly snugly safely smoothly squarely cleanly cleanly cleanly = snugly smartly exactly solidly properly fiercely blindly loudly loudly 12/20, what smartly warmly perfectly squarely calmly purely is purely cleanly quickly securely loudly cleanly blindly snugly simply wildly safely exactly cleanly smoothly cleanly cleanly purely completely cleanly nicely carefully properly exactly cleanly purely exactly blindly completely exactly strictly correctly squarely calmly sweetly clearly cleanly completely quietly closely boldly fiercely nicely quietly closely smoothly directly perfectly brightly freely purely purely fiercely coldly clearly securely smartly squarely precisely gracefully exactly cleanly smartly gracefully blindly clearly squarely safely calmly warmly exactly safely purely closely exactly properly neatly softly smartly smoothly fiercely beautifully exactly correctly fully safely bravely bravely the solidly exactly closely securely cleanly properly smartly value exactly correctly purely wisely quickly warmly cleanly wisely brightly squarely purely warmly cleanly cleanly warmly wildly sharply wildly exactly boldly fiercely beautifully cleanly efficiently cleanly smoothly closely purely squarely loudly precisely smoothly calmly completely smoothly calmly smartly solidly smartly quietly precisely completely exactly purely quietly purely solidly softly of solidly smoothly squarely smartly fiercely tightly warmly sweetly cleanly warmly cleanly quietly closely fiercely blindly cleanly smartly smoothly smoothly firmly smoothly quietly squarely carefully successfully carefully purely perfectly safely deeply smartly perfectly loudly blindly tightly squarely cleanly squarely successfully completely x?",
-        "options": [
-            "4",
-            "5",
-            "8",
-            "60",
-            "10"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "12/20 = 3/5. 3/x = 3/5 -> x=5. Hint: Reduce precisely neatly fiercely proudly 12/20 purely cleanly smartly solidly safely safely properly fiercely firstly softly securely simply squarely safely confidently happily directly fiercely first.",
-        "failure_modes": {
-            "formula_misapplication": "Multiplies uniformly.",
-            "arithmetic_slip": "4.",
-            "converse_error": "60."
+            "formula_misapplication": "Student divides 200 by 15, getting about 13.3.",
+            "premature_calculation": "Student computes 10% as 20 and stops there.",
+            "arithmetic_slip": "Student computes 0.15 × 200 = 25 (multiplication error)."
         }
     },
     {
@@ -445,20 +655,41 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "geometry",
-        "question": "A perfectly square smartly gracefully purely purely loudly freely smartly blindly cleverly gracefully bravely fiercely smartly identically cleanly safely gracefully fiercely securely squarely nicely brightly fully properly squarely purely precisely calmly brightly fully clearly softly warmly cleanly tightly heavily proudly safely boldly quietly safely properly neatly squarely squarely smartly purely purely precisely squarely nicely cleanly bravely bravely identical nicely tightly freely cleanly neatly room cleverly successfully identically cleanly beautifully smoothly bravely safely tightly compactly precisely cleverly purely cleanly identical perfectly brightly loudly securely smartly nicely correctly purely precisely nicely precisely cleverly properly beautifully strictly properly carefully closely warmly properly calmly correctly purely completely securely precisely purely perfectly nicely tightly directly smoothly cleanly strictly completely confidently comfortably carefully correctly calmly closely requires purely properly heavily purely cleanly clearly securely perfectly securely precisely solidly strictly identically safely cleverly smartly brightly cleverly exactly completely quietly properly safely completely identical safely strongly squarely identically brightly peacefully strictly purely calmly properly calmly safely bravely warmly cleanly exactly securely carefully smartly directly precisely safely squarely cleanly warmly cleanly happily closely bravely solidly smartly exactly correctly exactly cleanly confidently identically safely wildly compactly nicely loudly smoothly cleanly clearly confidently correctly strictly smoothly gracefully squarely bravely blindly cleanly cleanly exactly nicely correctly completely purely properly precisely purely boldly completely purely softly deeply fiercely gracefully nicely smartly boldly neatly strictly cleanly snugly neatly cleanly cleanly purely cleanly fully sharply safely heavily snugly loudly firmly completely cleanly cleanly perfectly tightly heavily proudly calmly exactly smoothly compactly brightly brightly wildly sweetly quietly calmly correctly perfectly proudly compactly boldly perfectly correctly closely warmly properly smartly 36 perfectly precisely carefully tightly happily calmly confidently closely solidly proudly squarely warmly smartly freely precisely calmly compactly smartly politely squarely cleanly exactly clearly squarely cleanly exactly cleanly precisely precisely boldly identical safely cleanly gracefully correctly correctly securely precisely snugly softly quietly successfully nicely precisely gracefully beautifully smoothly fiercely gracefully efficiently neatly identical identical nicely tightly neatly smoothly strictly happily perfectly boldly properly boldly quietly loudly politely proudly cleanly exactly wildly blindly properly clearly purely brightly quietly tightly exactly smartly identical securely clearly calmly gently successfully strictly clearly comfortably brightly politely loudly nicely smoothly firmly brightly precisely wildly calmly proudly gracefully closely correctly softly correctly bravely proudly successfully cleanly squarely politely strictly smoothly identical safely politely beautifully safely proudly wildly tightly securely loudly accurately smartly firmly completely boldly safely strictly securely properly correctly freely clearly squarely smoothly correctly cleanly happily warmly identical snugly sharply precisely solidly smartly precisely cleanly squarely safely calmly precisely cleanly beautifully compactly quietly cleanly neatly wisely smoothly peacefully politely directly heavily exactly smartly fiercely snugly identically quietly smartly exactly warmly squarely warmly brightly correctly politely cleanly warmly securely tightly beautifully sharply tightly safely tightly carefully loudly comfortably squarely politely gently cleanly compactly nicely exactly identically precisely squarely perfectly gracefully softly quietly quietly warmly confidently correctly precisely identical peacefully compactly neatly smoothly safely proudly cleanly politely precisely carefully warmly bravely cleanly closely correctly politely simply bravely closely correctly correctly happily identical gracefully square proudly tiles nicely cleanly boldly correctly carefully cleanly correctly tightly precisely calmly exactly beautifully exactly carefully bravely neatly exactly sweetly politely smoothly successfully cleanly properly perfectly snugly precisely safely politely quickly cleanly perfectly directly correctly cleanly confidently smoothly cleanly tightly loudly smartly perfectly strictly proudly directly squarely cleanly tightly neatly politely squarely blindly squarely easily identical calmly tightly fully securely strictly smartly exactly peacefully cleanly wildly softly properly confidently softly sharply correctly exactly safely precisely smartly to politely cover quietly neatly completely exactly completely completely compactly successfully deeply successfully exactly strictly comfortably purely clearly safely effectively safely proudly heavily perfectly perfectly cleanly purely exactly safely fully bravely efficiently bravely calmly efficiently exactly safely neatly closely carefully loudly comfortably firmly proudly the smoothly safely cleanly boldly squarely smartly squarely cleanly freely calmly quickly exactly politely safely correctly calmly tightly correctly carefully strictly correctly cleanly exactly cleanly completely quietly blindly firmly boldly politely closely solidly politely strictly perfectly cleanly peacefully politely tightly politely perfectly gracefully securely cleanly nicely fully solidly properly calmly perfectly correctly happily calmly blindly squarely softly boldly brightly sweetly nicely directly smartly smartly clearly brightly fiercely squarely squarely squarely softly fully squarely bravely sweetly warmly floor. blindly gently smoothly purely cleanly If perfectly safely identically smartly perfectly smartly smoothly securely freely precisely perfectly beautifully happily warmly smartly each smartly squarely cleverly brightly squarely directly boldly neatly identical peacefully tightly fiercely strongly politely boldly nicely compactly safely gently purely cleverly securely nicely perfectly exactly tightly exactly tile successfully exactly smoothly boldly confidently cleanly calmly safely directly brightly brightly identical purely squarely cleanly firmly gracefully brightly clearly neatly squarely blindly smartly tightly smartly snugly strictly smartly cleverly politely precisely closely directly gracefully exactly cleverly is cleverly safely strongly cleanly correctly calmly bravely cleanly completely firmly nicely cleanly smoothly neatly freely politely tightly precisely cleanly neatly purely strictly precisely politely 2 correctly feet compactly strictly exactly squarely wildly cleanly sweetly safely proudly safely exactly firmly precisely gently fiercely strongly successfully strongly tightly politely strictly bravely quietly securely perfectly brightly proudly compactly perfectly loudly quietly smoothly smartly safely compactly successfully tightly proudly safely nicely properly perfectly neatly calmly purely simply neatly cleanly securely politely precisely squarely wisely by smartly sweetly 2 politely clearly correctly politely solidly identical smoothly securely happily safely loudly feet, smoothly confidently exactly properly purely solidly purely purely smartly neatly directly completely safely smartly smoothly warmly politely identical purely politely cleanly safely smoothly correctly smartly what proudly fiercely smartly fiercely purely smartly blindly cleverly strictly politely boldly wildly smartly exactly completely purely gracefully purely solidly correctly precisely neatly heavily freely firmly correctly calmly correctly successfully precisely securely identical solidly properly safely gracefully cleanly exactly wisely smoothly purely firmly completely precisely purely is precisely purely securely cleanly purely fully smoothly squarely blindly precisely smoothly correctly the purely quietly correctly strongly cleanly gracefully wisely properly wisely directly smoothly proudly beautifully smartly smartly bravely cleanly proudly boldly purely identically smoothly sweetly precisely cleanly precisely safely smartly exactly strictly successfully smoothly firmly cleanly firmly smoothly politely strictly quietly politely cleanly brightly smoothly neatly correctly identical solidly precisely room's fiercely perfectly smoothly closely politely squarely bravely total proudly correctly boldly carefully solidly cleanly gracefully simply elegantly politely quietly purely smoothly loudly smoothly politely softly smartly bravely boldly bravely carefully quietly blindly cleverly fully correctly successfully cleanly smoothly deeply completely safely exactly bravely proudly cleverly exactly perimeter fiercely completely bravely wisely firmly squarely solidly fiercely squarely precisely neatly softly warmly silently safely properly precisely proudly successfully politely completely bravely correctly quickly loudly completely correctly cleanly closely softly politely neatly neatly bravely firmly firmly smoothly tightly exactly warmly politely squarely directly solidly purely brightly clearly correctly nicely brightly nicely cleanly directly smartly squarely closely cleanly intelligently bravely bravely correctly boldly precisely properly in correctly nicely politely compactly politely correctly directly smartly smoothly squarely properly nicely purely calmly fully wisely directly smartly beautifully smartly loudly purely perfectly exactly smoothly wildly feet?",
+        "question": "A square has a perimeter of 36 cm. What is its area?",
         "options": [
-            "24",
-            "48",
-            "72",
-            "144",
-            "36"
+            "9 sq cm",
+            "36 sq cm",
+            "72 sq cm",
+            "81 sq cm",
+            "144 sq cm"
         ],
-        "correct_answer": "48",
-        "ideal_solution": "6x6 grid. Side=12ft. P=4×12=48. Hint: The clearly brightly politely gently strongly wisely cleanly calmly precisely correctly bravely smoothly carefully nicely cleanly smoothly nicely exactly blindly boldly smoothly bravely properly precisely smoothly exactly gently solidly side warmly properly blindly precisely fiercely neatly elegantly cleanly cleanly smartly nicely directly bravely of purely clearly politely properly proudly blindly clearly cleanly purely purely identical clearly completely tightly completely tightly the exactly gracefully gracefully softly bravely clearly successfully smoothly bravely purely fiercely solidly firmly safely strictly cleverly tightly accurately strictly smartly boldly peacefully smoothly neatly politely precisely nicely boldly purely quietly confidently proudly nicely compactly squarely safely carefully squarely precisely wisely correctly squarely blindly brightly cleanly smartly gracefully safely smartly gracefully securely smoothly quietly wisely squarely warmly silently wisely securely blindly beautifully calmly proudly carefully successfully smartly intelligently sweetly identical safely gracefully fiercely warmly politely squarely blindly quietly intelligently softly cleanly correctly purely peacefully softly beautifully beautifully smoothly wisely exactly successfully purely identical wisely wildly successfully bravely safely correctly properly proudly closely silently beautifully silently squarely smoothly smoothly fiercely purely nicely perfectly purely boldly loudly cleanly intelligently warmly correctly safely quickly wildly elegantly securely purely beautifully correctly identically correctly cleanly securely brightly beautifully nicely intelligently cleanly properly room fiercely neatly smoothly properly silently cleanly correctly securely bravely quietly bravely calmly blindly firmly gently cleanly wisely deeply intelligently safely wildly is neatly cleverly beautifully politely gracefully politely elegantly correctly silently intelligently gently beautifully gently solidly completely wisely calmly neatly directly boldly properly 6 squarely elegantly brightly tightly cleverly brightly gracefully successfully purely precisely safely loudly bravely precisely happily cleanly comfortably cleanly blindly tightly softly wildly smoothly tightly cleverly bravely perfectly properly intelligently quietly securely precisely politely clearly safely proudly squarely precisely strictly perfectly squarely happily sweetly silently intelligently correctly cleanly compactly compactly correctly proudly tiles smoothly gracefully perfectly bravely boldly long.",
+        "correct_answer": "81 sq cm",
+        "ideal_solution": "Side = Perimeter ÷ 4 = 36 ÷ 4 = 9 cm. Area = side × side = 9 × 9 = 81 sq cm. Socratic Hint: First find the length of one side from the perimeter, then square it.",
         "failure_modes": {
-            "formula_misapplication": "Perimeter cleanly directly squarely precisely smoothly neatly purely boldly exactly squarely squarely bravely wildly politely efficiently smoothly intelligently quietly smartly correctly brilliantly completely brilliantly securely clearly wildly intelligently fiercely safely quietly correctly compactly elegantly nicely cleanly closely beautifully quietly precisely perfectly brightly warmly politely directly smoothly confidently clearly intelligently silently wildly perfectly cleanly gracefully safely calmly closely clearly clearly smoothly snugly politely tightly cleanly exactly politely cleanly compactly exactly correctly directly identically smartly neatly wildly proudly bravely blindly happily sweetly purely neatly cleanly gracefully purely intelligently in elegantly purely brightly cleanly correctly correctly tiles blindly beautifully firmly fiercely correctly squarely brightly = precisely correctly gently beautifully snugly purely brightly smartly cleverly safely 24.",
-            "units_mismatch": "Forgets intelligently smoothly bravely precisely 2ft cleanly securely gently proudly smartly accurately smartly purely smartly cleanly brightly securely factor wildly correctly smoothly squarely closely warmly solidly gracefully correctly gracefully correctly -> politely elegantly smoothly securely precisely perfectly silently firmly cleanly brightly correctly nicely solidly politely 24.",
-            "premature_calculation": "Area=144."
+            "premature_calculation": "Student finds side = 9 and picks 9 sq cm.",
+            "formula_misapplication": "Student uses the perimeter as the area: 36 sq cm.",
+            "arithmetic_slip": "Student computes 9 × 9 = 72."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Simplify: 18/24",
+        "options": [
+            "2/3",
+            "3/4",
+            "6/8",
+            "9/12",
+            "4/6"
+        ],
+        "correct_answer": "3/4",
+        "ideal_solution": "Find the GCF of 18 and 24, which is 6. Divide both by 6: 18÷6 = 3, 24÷6 = 4. Simplified fraction: 3/4. Socratic Hint: Find the biggest number that divides both 18 and 24 evenly.",
+        "failure_modes": {
+            "undercounting": "Student divides both by 2: 18/24 = 9/12, not fully simplified.",
+            "arithmetic_slip": "Student divides both by 3: 18/24 = 6/8, not fully simplified.",
+            "formula_misapplication": "Student subtracts: 18-6 = 12, 24-6 = 18, getting 12/18."
         }
     },
     {
@@ -466,41 +697,20 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "logic",
-        "question": "What brightly bravely cleanly number softly intelligently correctly precisely cleanly cleverly properly cleanly quietly completely boldly clearly smartly correctly bravely cleanly proudly brilliantly purely exactly gracefully firmly smoothly purely is directly correctly exactly brightly cleanly clearly smoothly bravely cleanly smoothly fiercely blindly softly safely exactly closely completely purely solidly compactly exactly gracefully beautifully correctly 3 elegantly blindly perfectly completely directly softly smartly cleanly cleanly clearly purely strictly purely warmly completely peacefully comfortably neatly silently tightly solidly clearly elegantly directly securely smoothly intelligently exactly safely gracefully loudly elegantly gracefully solidly less intelligently securely precisely successfully smartly solidly purely securely boldly than solidly smartly perfectly cleanly gently wildly clearly wisely exactly properly proudly precisely cleanly firmly wildly warmly solidly properly brightly smartly calmly fiercely neatly beautifully cleverly cleverly smartly securely cleverly blindly cleanly successfully calmly precisely gently twice cleverly brightly correctly quietly beautifully warmly identical elegantly precisely perfectly compactly warmly cleanly perfectly cleanly bravely calmly smoothly closely smartly squarely cleverly nicely gracefully cleanly smartly the softly brilliantly cleanly comfortably squarely brightly purely closely firmly simply deeply nicely neatly successfully quietly cleanly precisely beautifully securely solidly intelligently comfortably bravely closely simply softly cleanly securely calmly completely exactly nicely square gently comfortably neatly precisely calmly sweetly purely smartly cleanly brightly purely clearly cleanly boldly properly squarely strictly squarely perfectly blindly strongly clearly safely warmly closely exactly of bravely compactly cleanly solidly smoothly purely smoothly smoothly completely exactly wildly gracefully correctly safely elegantly blindly blindly correctly precisely squarely calmly tightly cleanly brilliantly brilliantly properly boldly safely exactly securely compactly cleverly 4?",
+        "question": "A farmer has chickens and cows. He counts 20 heads and 56 legs. How many cows does he have?",
         "options": [
-            "13",
-            "29",
-            "18",
-            "25",
-            "26"
-        ],
-        "correct_answer": "29",
-        "ideal_solution": "2(4²) - 3 = 2(16) - 3 = 32 - 3 = 29. Hint: Square correctly cleanly politely clearly smoothly smartly brightly boldly deeply strictly smartly intelligently nicely exactly calmly purely smartly wildly 4, safely correctly purely smoothly exactly boldly smartly squarely double beautifully cleanly politely purely correctly smartly squarely quietly exactly blindly smoothly purely closely exactly correctly nicely cleanly safely directly strictly warmly safely neatly bravely boldly it, cleanly quietly warmly boldly perfectly smoothly subtract cleanly smartly nicely compactly exactly neatly quietly nicely politely exactly cleanly precisely purely 3.",
-        "failure_modes": {
-            "formula_misapplication": "(4×2)²=64-3=61.",
-            "arithmetic_slip": "64-3=61.",
-            "order_reversal": "2(1)=2."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 4,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Exactly quietly cleanly cleanly identically calmly brilliantly correctly politely warmly smoothly smoothly smartly precisely gracefully correctly 40% cleanly wildly cleanly wisely smoothly cleanly gracefully warmly sharply politely smartly cleverly exactly smoothly of smoothly tightly brightly cleanly securely cleanly correctly heavily exactly beautifully strictly successfully safely squarely safely identically exactly cleanly warmly a softly politely boldly smoothly exactly perfectly strictly tightly exactly identically deeply cleanly gently cleanly exactly precisely directly safely safely neatly cleverly clearly compactly calmly tightly perfectly exactly bravely beautifully brightly properly cleanly politely carefully cleanly purely brightly quietly beautifully smoothly brightly completely politely cleverly blindly solidly softly sharply firmly purely neatly deeply neatly successfully elegantly successfully smartly precisely cleanly fiercely precisely neatly nicely exactly number solidly fully deeply purely calmly carefully strictly neatly politely exactly wildly blindly perfectly perfectly properly cleanly intelligently smoothly fiercely warmly directly clearly firmly brightly quietly softly correctly deeply correctly neatly intelligently cleanly neatly tightly brightly squarely solidly nicely smartly compactly smartly purely nicely safely purely squarely intelligently smartly safely boldly purely precisely identically smoothly correctly completely precisely solidly calmly perfectly wisely comfortably sweetly exactly firmly gracefully purely cleanly securely tightly warmly cleanly quietly beautifully brilliantly smoothly blindly loudly politely properly strictly boldly securely wildly directly successfully perfectly correctly brilliantly cleanly softly gently gracefully identically precisely completely squarely directly completely solidly blindly securely identical cleanly smartly securely squarely firmly directly smartly beautifully successfully smoothly correctly closely safely elegantly perfectly cleanly precisely cleanly beautifully exactly wildly neatly intelligently quietly safely smoothly safely is cleanly cleanly tightly squarely correctly exactly wisely clearly precisely 16. cleanly beautifully neatly warmly proudly solidly peacefully tightly smoothly calmly closely nicely smoothly boldly smoothly cleanly exactly precisely smoothly safely cleanly sharply accurately strictly directly smartly precisely cleanly directly wisely cleanly freely clearly quietly precisely gracefully What squarely strictly safely nicely proudly perfectly securely wisely clearly cleanly securely wisely exactly is freely cleanly happily warmly cleverly gracefully perfectly correctly simply strictly exactly cleanly blindly squarely smartly the cleanly brilliantly smoothly successfully strongly tightly strictly closely directly smoothly squarely compactly wildly softly solidly correctly identical wildly intelligently cleverly boldly securely safely properly closely strictly happily purely softly correctly number?",
-        "options": [
-            "40",
-            "64",
             "4",
-            "24",
-            "10"
+            "6",
+            "8",
+            "10",
+            "12"
         ],
-        "correct_answer": "40",
-        "ideal_solution": "0.4x = 16. x = 16/0.4 = 40. Hint: 4 cleanly sweetly smoothly strictly intelligently squarely boldly solidly blindly sweetly securely carefully securely parts purely directly smartly politely brightly firmly precisely brilliantly blindly beautifully wisely strictly equal gracefully exactly smartly blindly completely safely exactly precisely cleanly politely neatly directly peacefully neatly 16.",
+        "correct_answer": "8",
+        "ideal_solution": "Let c = cows, h = chickens. c + h = 20 (heads). 4c + 2h = 56 (legs). From the first: h = 20 - c. Substitute: 4c + 2(20 - c) = 56 → 4c + 40 - 2c = 56 → 2c = 16 → c = 8. Socratic Hint: If all 20 animals were chickens, there would be 40 legs. Each cow adds 2 extra legs. How many extra legs are there?",
         "failure_modes": {
-            "formula_misapplication": "40% firmly smoothly precisely of gracefully closely correctly cleanly heavily purely precisely carefully bravely wildly purely wisely confidently perfectly warmly 16 smartly nicely cleanly cleanly cleanly cleanly nicely softly elegantly purely (6.4).",
-            "arithmetic_slip": "16/40=0.4.",
-            "converse_error": "64 peacefully correctly nicely wildly safely exactly intelligently smoothly politely neatly safely nicely smartly wildly (16×4)."
+            "arithmetic_slip": "Student computes 56 - 40 = 16 but divides by 4 instead of 2, getting 4.",
+            "formula_misapplication": "Student divides total legs by 4: 56/4 = 14, which exceeds 20 heads.",
+            "premature_calculation": "Student guesses half and half: 10 cows and 10 chickens = 60 legs (wrong)."
         }
     },
     {
@@ -508,7 +718,154 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "arithmetic",
-        "question": "Compute smoothly neatly correctly cleanly strictly cleanly properly neatly proudly securely cleanly warmly neatly quietly clearly nicely fully cleanly tightly bravely carefully completely correctly precisely perfectly wisely safely gracefully cleanly securely properly clearly cleanly sweetly brightly cleanly exactly correctly simply wisely safely bravely completely carefully brightly exactly brightly calmly smartly wildly correctly precisely squarely smoothly cleanly exactly proudly politely tightly purely compactly precisely gracefully wildly completely exactly smoothly cleverly tightly compactly exactly smoothly loudly squarely warmly nicely wildly wisely strongly smoothly snugly perfectly exactly gracefully quietly precisely cleanly identically boldly elegantly safely neatly wildly cleanly precisely securely securely firmly exactly softly blindly cleanly boldly efficiently cleverly exactly peacefully smartly firmly clearly softly warmly neatly deeply squarely smoothly securely smoothly exactly: sweetly strictly wildly boldly cleanly wisely neatly cleanly smoothly nicely purely identical beautifully correctly safely gracefully gracefully smoothly 2.5 neatly exactly smartly securely precisely warmly wisely precisely politely smartly correctly × peacefully nicely wildly cleanly gracefully boldly correctly safely solidly fully boldly cleanly squarely cleanly compactly politely correctly purely 10³",
+        "question": "What is 3.5 × 2.4?",
+        "options": [
+            "5.90",
+            "7.40",
+            "8.40",
+            "8.04",
+            "9.10"
+        ],
+        "correct_answer": "8.40",
+        "ideal_solution": "Multiply 35 × 24 = 840. Count total decimal places: 1 + 1 = 2. Place decimal: 8.40. Socratic Hint: Ignore the decimals, multiply the whole numbers, then put the decimal point back with the right number of places.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 3.5 + 2.4 = 5.9.",
+            "off_by_one": "Student places one decimal: 84.0.",
+            "arithmetic_slip": "Student computes 35 × 24 = 804, getting 8.04."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4 2/5 - 1 3/5?",
+        "options": [
+            "2 4/5",
+            "3 1/5",
+            "3 4/5",
+            "2 1/5",
+            "5"
+        ],
+        "correct_answer": "2 4/5",
+        "ideal_solution": "Convert to improper fractions: 4 2/5 = 22/5 and 1 3/5 = 8/5. Subtract: 22/5 - 8/5 = 14/5 = 2 4/5. Socratic Hint: Convert both mixed numbers to improper fractions with the same denominator, then subtract.",
+        "failure_modes": {
+            "arithmetic_slip": "Student subtracts whole numbers (4-1=3) and fractions (2/5-3/5=-1/5), then gets confused.",
+            "formula_misapplication": "Student subtracts numerators and adds denominators: (22-8)/(5+5) = 14/10.",
+            "off_by_one": "Student computes 22-8 = 13, getting 13/5 = 2 3/5."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Mia earns $8 per hour babysitting. She worked 3.5 hours on Saturday and 2.5 hours on Sunday. How much did she earn in total?",
+        "options": [
+            "$28.00",
+            "$36.00",
+            "$40.00",
+            "$44.00",
+            "$48.00"
+        ],
+        "correct_answer": "$48.00",
+        "ideal_solution": "Total hours = 3.5 + 2.5 = 6 hours. Total earnings = 6 × $8 = $48. Socratic Hint: First find the total hours, then multiply by the hourly rate.",
+        "failure_modes": {
+            "premature_calculation": "Student only calculates Saturday: 3.5 × 8 = $28.",
+            "arithmetic_slip": "Student computes 3.5 + 2.5 = 5 hours, then 5 × 8 = $40.",
+            "formula_misapplication": "Student adds $8 + $3.50 + $2.50 = $14."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the value of the expression 3 × (8 - 2) + 4?",
+        "options": [
+            "10",
+            "18",
+            "22",
+            "28",
+            "34"
+        ],
+        "correct_answer": "22",
+        "ideal_solution": "Follow order of operations: Parentheses first: 8 - 2 = 6. Multiply: 3 × 6 = 18. Add: 18 + 4 = 22. Socratic Hint: Do what is inside the parentheses first, then multiply, then add.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds before multiplying: 3 × 6 + 4 → 3 × 10 = 30.",
+            "premature_calculation": "Student computes 3 × 8 = 24, then 24 - 2 + 4 = 26.",
+            "arithmetic_slip": "Student computes 3 × 6 = 16, then 16 + 4 = 20."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular room is 12 feet long and 9 feet wide. How many square feet of carpet are needed to cover the floor?",
+        "options": [
+            "21 sq ft",
+            "42 sq ft",
+            "96 sq ft",
+            "108 sq ft",
+            "216 sq ft"
+        ],
+        "correct_answer": "108 sq ft",
+        "ideal_solution": "Area = length × width = 12 × 9 = 108 sq ft. Socratic Hint: For a rectangle, multiply the length by the width to get the area.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes perimeter: 2(12+9) = 42 sq ft.",
+            "arithmetic_slip": "Student computes 12 × 9 = 96.",
+            "premature_calculation": "Student adds length and width: 12 + 9 = 21."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1 1/2 × 2 2/3?",
+        "options": [
+            "2 1/3",
+            "3",
+            "3 1/6",
+            "4",
+            "5 1/3"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Convert: 1 1/2 = 3/2 and 2 2/3 = 8/3. Multiply: (3/2) × (8/3) = 24/6 = 4. Socratic Hint: Convert both to improper fractions, multiply straight across, then simplify.",
+        "failure_modes": {
+            "arithmetic_slip": "Student multiplies 3 × 8 = 24, 2 × 3 = 6, then simplifies 24/6 to 3.",
+            "formula_misapplication": "Student multiplies whole parts (1×2=2) and fraction parts (1/2 × 2/3 = 2/6 = 1/3), getting 2 1/3.",
+            "premature_calculation": "Student converts 1 1/2 to 3/2 but leaves 2 2/3 as is and multiplies incorrectly."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A box contains 3 red balls, 5 blue balls, and 2 green balls. If you pick one ball without looking, what fraction of the time would you expect to get a blue ball?",
+        "options": [
+            "1/5",
+            "3/10",
+            "1/2",
+            "5/10",
+            "5/8"
+        ],
+        "correct_answer": "1/2",
+        "ideal_solution": "Total balls = 3 + 5 + 2 = 10. Probability of blue = 5/10 = 1/2. Socratic Hint: Count the total number of balls, then write the number of blue balls over the total.",
+        "failure_modes": {
+            "premature_calculation": "Student writes 5/10 but does not simplify. If 5/10 is not listed as the answer, picks wrong.",
+            "undercounting": "Student forgets green balls: total = 8, probability = 5/8.",
+            "formula_misapplication": "Student writes 5/(5+3) = 5/8, not counting green."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2.5 × 10^3?",
         "options": [
             "25",
             "250",
@@ -517,11 +874,179 @@
             "0.0025"
         ],
         "correct_answer": "2500",
-        "ideal_solution": "2.5 × 1000 = 2500. Hint: Hop cleanly solidly loudly cleverly solidly bravely carefully softly proudly securely intelligently sweetly nicely elegantly bravely smoothly decimal correctly clearly intelligently gracefully gracefully bravely nicely firmly strictly neatly blindly solidly proudly 3 smoothly silently smartly warmly smartly strictly neatly politely identical smoothly beautifully smartly perfectly strictly clearly cleanly smoothly correctly warmly solidly gracefully closely purely sweetly proudly brightly cleverly smartly sweetly firmly securely elegantly nicely cleanly squarely wildly exactly wisely squarely cleanly times strictly directly safely perfectly intelligently completely deeply cleanly politely perfectly solidly perfectly right.",
+        "ideal_solution": "10^3 = 1000. So 2.5 × 1000 = 2500. Moving the decimal 3 places to the right: 2.5 → 25 → 250 → 2500. Socratic Hint: Multiplying by 10^3 means moving the decimal point 3 places to the right.",
         "failure_modes": {
-            "off_by_one": "250.",
-            "formula_misapplication": "0.0025.",
-            "arithmetic_slip": "75."
+            "off_by_one": "Student moves the decimal only 2 places, getting 250.",
+            "formula_misapplication": "Student divides instead of multiplying, getting 0.0025.",
+            "arithmetic_slip": "Student moves decimal 4 places, getting 25000."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the prime factorization of 60?",
+        "options": [
+            "2 × 30",
+            "2^2 × 15",
+            "2^2 × 3 × 5",
+            "3 × 4 × 5",
+            "2 × 3 × 10"
+        ],
+        "correct_answer": "2^2 × 3 × 5",
+        "ideal_solution": "60 = 2 × 30 = 2 × 2 × 15 = 2 × 2 × 3 × 5 = 2^2 × 3 × 5. All factors are prime. Socratic Hint: Keep dividing by the smallest prime until every factor is prime.",
+        "failure_modes": {
+            "undercounting": "Student stops at 2^2 × 15, not fully factoring 15.",
+            "constraint_neglect": "Student writes 3 × 4 × 5, but 4 is not prime.",
+            "formula_misapplication": "Student writes 2 × 3 × 10, but 10 is not prime."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A runner completes a lap in 4 minutes 15 seconds. How many seconds is that in total?",
+        "options": [
+            "245",
+            "250",
+            "255",
+            "260",
+            "415"
+        ],
+        "correct_answer": "255",
+        "ideal_solution": "4 minutes = 4 × 60 = 240 seconds. 240 + 15 = 255 seconds. Socratic Hint: Convert the minutes to seconds first, then add the extra seconds.",
+        "failure_modes": {
+            "formula_misapplication": "Student writes 415 seconds, treating it as a plain number.",
+            "arithmetic_slip": "Student computes 4 × 60 = 250, then adds 15 to get 265.",
+            "units_mismatch": "Student computes 4 × 100 + 15 = 415."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "There are 5 teams in a league. Each team plays every other team exactly once. How many total games are played?",
+        "options": [
+            "5",
+            "8",
+            "10",
+            "20",
+            "25"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Each of the 5 teams plays 4 others = 5 × 4 = 20, but each game is counted twice (once per team). Total games = 20 ÷ 2 = 10. Socratic Hint: Each game involves two teams. Count carefully so you do not double-count.",
+        "failure_modes": {
+            "overcounting": "Student computes 5 × 4 = 20 without dividing by 2.",
+            "undercounting": "Student counts 5 games (only one round).",
+            "formula_misapplication": "Student computes 5 × 5 = 25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Convert 0.625 to a fraction in lowest terms.",
+        "options": [
+            "6/10",
+            "5/8",
+            "3/5",
+            "625/100",
+            "1/8"
+        ],
+        "correct_answer": "5/8",
+        "ideal_solution": "0.625 = 625/1000. Simplify by dividing both by 125: 625÷125 = 5, 1000÷125 = 8. So 0.625 = 5/8. Socratic Hint: Write as a fraction over 1000, then reduce by finding the GCF.",
+        "failure_modes": {
+            "undercounting": "Student simplifies to 25/40 or 125/200 but does not continue reducing.",
+            "formula_misapplication": "Student writes 6/10 by reading only the first decimal digit.",
+            "arithmetic_slip": "Student divides incorrectly and gets 1/8."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A parallelogram has a base of 10 cm and a height of 6 cm. What is its area?",
+        "options": [
+            "16 sq cm",
+            "30 sq cm",
+            "32 sq cm",
+            "60 sq cm",
+            "120 sq cm"
+        ],
+        "correct_answer": "60 sq cm",
+        "ideal_solution": "Area of a parallelogram = base × height = 10 × 6 = 60 sq cm. Socratic Hint: A parallelogram's area formula is the same as a rectangle's: base times height (not slant side).",
+        "failure_modes": {
+            "formula_misapplication": "Student computes perimeter: 2(10+6) = 32.",
+            "premature_calculation": "Student adds base and height: 10 + 6 = 16.",
+            "arithmetic_slip": "Student computes 10 × 6 ÷ 2 = 30 (using triangle formula)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 40% of 75?",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "35",
+            "40"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "40% of 75 = 0.40 × 75 = 30. Or: 10% of 75 = 7.5, so 40% = 4 × 7.5 = 30. Socratic Hint: Convert the percent to a decimal and multiply.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 0.4 × 75 = 25.",
+            "formula_misapplication": "Student divides: 75 ÷ 40 = 1.875.",
+            "premature_calculation": "Student computes 10% = 7.5 and stops, or doubles to get 15."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 12.6 - 4.85",
+        "options": [
+            "7.21",
+            "7.45",
+            "7.75",
+            "8.25",
+            "8.75"
+        ],
+        "correct_answer": "7.75",
+        "ideal_solution": "Rewrite as 12.60 - 4.85. Subtract: 12.60 - 4.85 = 7.75. Socratic Hint: Add a trailing zero to 12.6 to match decimal places, then subtract column by column, borrowing as needed.",
+        "failure_modes": {
+            "arithmetic_slip": "Student subtracts without proper borrowing: 12.60 - 4.85 = 8.75.",
+            "off_by_one": "Student gets 7.45 from a borrowing mistake in the hundredths.",
+            "formula_misapplication": "Student misaligns decimals and computes 126 - 485."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A garden has 4 rows of flowers. The first row has 8 flowers, and each row after that has 3 more flowers than the row before it. How many flowers are in the garden in total?",
+        "options": [
+            "32",
+            "38",
+            "44",
+            "50",
+            "56"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "Row 1: 8, Row 2: 11, Row 3: 14, Row 4: 17. Total = 8 + 11 + 14 + 17 = 50. Socratic Hint: Write out how many flowers are in each row, then add them all up.",
+        "failure_modes": {
+            "premature_calculation": "Student computes only 4 × 8 = 32, ignoring the increasing pattern.",
+            "off_by_one": "Student starts the increase from Row 1: 8, 11, 14, 17 but adds wrong to get 44.",
+            "arithmetic_slip": "Student finds 8 + 11 + 14 + 17 = 56 from an addition error."
         }
     }
 ]

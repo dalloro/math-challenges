@@ -751,5 +751,256 @@
         "failure_modes": {
             "arithmetic_slip": "Student says 90."
         }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4 × 4?",
+        "options": [
+            "8",
+            "12",
+            "16",
+            "20",
+            "24"
+        ],
+        "correct_answer": "16",
+        "ideal_solution": "4 + 4 + 4 + 4 = 16. Socratic Hint: Count by 4s four times.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 4+4=8.",
+            "arithmetic_slip": "Student says 12.",
+            "overcounting": "Student says 20."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "How much money is 10 dimes and 4 nickels?",
+        "options": [
+            "$1.00",
+            "$1.10",
+            "$1.20",
+            "$1.40",
+            "$1.50"
+        ],
+        "correct_answer": "$1.20",
+        "ideal_solution": "10 dimes = 100 cents = $1.00. 4 nickels = 4 × 5 = 20 cents. Total $1.20. Socratic Hint: 10 dimes make a whole dollar.",
+        "failure_modes": {
+            "formula_misapplication": "Student thinks 4 nickels = 40 cents: $1.40.",
+            "arithmetic_slip": "Student thinks 10 dimes = 10 cents: $0.30.",
+            "converse_error": "Student guesses $1.50."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Complete the pattern: 9, 18, 27, ___",
+        "options": [
+            "30",
+            "36",
+            "45",
+            "54",
+            "63"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "Counting by 9s. 27 + 9 = 36. Socratic Hint: Add 10 to 27 and then take away 1.",
+        "failure_modes": {
+            "off_by_one": "Student guesses 35.",
+            "formula_misapplication": "Student guesses 45 (skips one).",
+            "arithmetic_slip": "Student guesses 30."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "How many minutes is 90 minutes?",
+        "options": [
+            "1 hour",
+            "1 hour 30 minutes",
+            "1 hour 45 minutes",
+            "2 hours",
+            "2 hours 30 minutes"
+        ],
+        "correct_answer": "1 hour 30 minutes",
+        "ideal_solution": "60 minutes = 1 hour. 90 - 60 = 30 minutes. So 1 hour and 30 minutes. Socratic Hint: Take away 60 minutes for the first hour.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 2 hours.",
+            "arithmetic_slip": "Student says 1 hour 40 mins.",
+            "converse_error": "Student guesses 1 hour 15 mins."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A book has 125 pages. You read 45 pages. How many pages are left?",
+        "options": [
+            "70",
+            "75",
+            "80",
+            "85",
+            "90"
+        ],
+        "correct_answer": "80",
+        "ideal_solution": "125 - 25 = 100. You still need to subtract 20. 100 - 20 = 80. Socratic Hint: Subtract the 25 first to land cleanly on 100.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 70.",
+            "formula_misapplication": "Student adds 125 + 45 = 170.",
+            "off_by_one": "Student guesses 85."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Subtract: 80 - 24",
+        "options": [
+            "54",
+            "56",
+            "64",
+            "66",
+            "76"
+        ],
+        "correct_answer": "56",
+        "ideal_solution": "80 - 20 = 60. 60 - 4 = 56. Socratic Hint: Take away the 2 tens. Then take away the 4 ones.",
+        "failure_modes": {
+            "formula_misapplication": "Student does 80 - 20 = 64.",
+            "arithmetic_slip": "Student says 54.",
+            "off_by_one": "Student says 66."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Add: 240 + 160",
+        "options": [
+            "300",
+            "340",
+            "400",
+            "440",
+            "500"
+        ],
+        "correct_answer": "400",
+        "ideal_solution": "40 + 60 = 100. 200 + 100 = 300. 300 + 100 = 400. Socratic Hint: 40 and 60 make a crisp 100.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 300.",
+            "off_by_one": "Student gets 340.",
+            "formula_misapplication": "Student forgets to carry: 300."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "How many corners (vertices) does a cube have?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "4 corners on the top face, 4 corners on the bottom face. Total 8. Socratic Hint: Think of a square box. How many pointy corners does it have?",
+        "failure_modes": {
+            "converse_error": "Student guesses 6 (faces).",
+            "formula_misapplication": "Student guesses 12 (edges).",
+            "arithmetic_slip": "Student guesses 4."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Which is heavier: 2 pounds of feathers or 1 pound of rocks?",
+        "options": [
+            "2 pounds of feathers",
+            "1 pound of rocks",
+            "They weigh the same",
+            "Cannot tell"
+        ],
+        "correct_answer": "2 pounds of feathers",
+        "ideal_solution": "2 pounds is heavier than 1 pound, no matter what it is made of! Socratic Hint: Don't get tricked! Compare the numbers, not the materials.",
+        "failure_modes": {
+            "converse_error": "Student guesses 1 pound of rocks because rocks are heavy.",
+            "formula_misapplication": "Student guesses They weigh the same.",
+            "arithmetic_slip": "Student guesses Cannot tell."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is half of 100?",
+        "options": [
+            "20",
+            "25",
+            "40",
+            "50",
+            "60"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "50 + 50 = 100. Exactly half is 50. Socratic Hint: Half of a dollar is 50 cents.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 25 (quarter).",
+            "converse_error": "Student guesses 20.",
+            "arithmetic_slip": "Student guesses 40."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A class has 10 boys and 12 girls. 4 students are absent. How many students are IN class today?",
+        "options": [
+            "18",
+            "20",
+            "22",
+            "24",
+            "26"
+        ],
+        "correct_answer": "18",
+        "ideal_solution": "10 + 12 = 22 total. 22 - 4 = 18. Socratic Hint: Find the total number of students first.",
+        "failure_modes": {
+            "arithmetic_slip": "Student guesses 20.",
+            "formula_misapplication": "Student adds: 26.",
+            "converse_error": "Student guesses 22."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "Which object is like a sphere?",
+        "options": [
+            "A Book",
+            "A Block",
+            "An Orange",
+            "A Stop Sign",
+            "A Pencil"
+        ],
+        "correct_answer": "An Orange",
+        "ideal_solution": "An orange is perfectly round in 3D, like a sphere. Socratic Hint: What is perfectly round?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses A Block.",
+            "converse_error": "Student guesses A Stop Sign.",
+            "arithmetic_slip": "Student guesses A Book."
+        }
     }
 ]

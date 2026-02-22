@@ -753,7 +753,219 @@
         "correct_answer": "Greater than",
         "ideal_solution": "5 × 10 = 50. 10 × 4 = 40. 50 > 40. So greater. Socratic Hint: Calculate 5 groups of 10. Then calculate 4 groups of 10.",
         "failure_modes": {
-            "converse_error": "Student guesses Less than."
+            "converse_error": "Student guesses Less than.",
+            "formula_misapplication": "Student thinks they are Equal.",
+            "arithmetic_slip": "Student guesses Cannot tell."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "If there are 4 rows and each row has 3 chairs, how many chairs are there in total?",
+        "options": [
+            "7",
+            "10",
+            "12",
+            "14",
+            "15"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "4 × 3 = 12. Or 3 + 3 + 3 + 3 = 12. Socratic Hint: Draw 4 rows with 3 dots in each row, then count them.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 4 + 3 = 7.",
+            "arithmetic_slip": "Student counts 10.",
+            "overcounting": "Student counts 14."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is half of 12?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "8",
+            "24"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "6 + 6 = 12. Socratic Hint: If you have 12 cookies and share equally with a friend, how many do each get?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 24 (doubling instead of halving).",
+            "arithmetic_slip": "Student guesses 5.",
+            "converse_error": "Student guesses 4."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "How many feet are in 1 yard?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "10",
+            "12"
+        ],
+        "correct_answer": "3",
+        "ideal_solution": "A yard is exactly 3 feet. Socratic Hint: Think of a yardstick. It has 36 inches, and a foot has 12 inches.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 12 (inches in a foot).",
+            "converse_error": "Student guesses 4 (quarts in a gallon).",
+            "arithmetic_slip": "Student guesses 10."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "I have exactly 3 same coins that make 30 cents. What are they?",
+        "options": [
+            "Pennies",
+            "Nickels",
+            "Dimes",
+            "Quarters",
+            "Half-dollars"
+        ],
+        "correct_answer": "Dimes",
+        "ideal_solution": "10 + 10 + 10 = 30. A dime is 10 cents. Socratic Hint: What coin is worth 10 cents?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses Nickels (5+5+5=15).",
+            "converse_error": "Student guesses Quarters.",
+            "arithmetic_slip": "Student guesses Pennies."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "Subtract: 500 - 25",
+        "options": [
+            "425",
+            "450",
+            "475",
+            "525",
+            "575"
+        ],
+        "correct_answer": "475",
+        "ideal_solution": "Think of $5.00 minus one quarter ($0.25). You have $4.75 left. So 475. Socratic Hint: 100 - 25 = 75. So 500 - 25 drops to the 400s.",
+        "failure_modes": {
+            "arithmetic_slip": "Student says 425.",
+            "formula_misapplication": "Student adds to get 525.",
+            "off_by_one": "Student says 450."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "Complete the pattern: 12, 16, 20, ___",
+        "options": [
+            "22",
+            "24",
+            "26",
+            "28",
+            "30"
+        ],
+        "correct_answer": "24",
+        "ideal_solution": "Counting by 4s. 12+4=16. 16+4=20. 20+4=24. Socratic Hint: How much do you add to 12 to get to 16?",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 22 (adding 2).",
+            "arithmetic_slip": "Student guesses 26.",
+            "overcounting": "Student guesses 30."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "Add: 125 + 125",
+        "options": [
+            "200",
+            "225",
+            "250",
+            "300",
+            "350"
+        ],
+        "correct_answer": "250",
+        "ideal_solution": "100 + 100 = 200. 25 + 25 = 50. Total = 250. Socratic Hint: Break it into hundreds and quarters.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 200.",
+            "formula_misapplication": "Student gets 225.",
+            "converse_error": "Student gets 300."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "If you have 2 squares and 1 triangle not touching, how many total sides are there?",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "correct_answer": "11",
+        "ideal_solution": "Square = 4 sides. 4 + 4 = 8. Triangle = 3 sides. 8 + 3 = 11. Socratic Hint: 4 plus 4 plus 3.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds 4+3 = 7.",
+            "arithmetic_slip": "Student guesses 10.",
+            "overcounting": "Student guesses 12."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "You have 15 jelly beans. You eat 3. You give exactly half of what's left to a friend. How many do you keep?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "15 - 3 = 12. Half of 12 = 6. Socratic Hint: Subtract the 3 you eat first to find out what's left to share.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 5.",
+            "formula_misapplication": "Student tries to halve 15 first.",
+            "converse_error": "Student gets 8."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 7,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 9 × 2? (Or 9 + 9)",
+        "options": [
+            "11",
+            "16",
+            "17",
+            "18",
+            "20"
+        ],
+        "correct_answer": "18",
+        "ideal_solution": "9 + 9 = 18. Socratic Hint: Add 9 and 9.",
+        "failure_modes": {
+            "formula_misapplication": "Student guesses 11 (adds 9+2).",
+            "arithmetic_slip": "Student guesses 17.",
+            "converse_error": "Student guesses 20."
         }
     }
 ]

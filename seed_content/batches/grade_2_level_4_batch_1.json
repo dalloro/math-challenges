@@ -947,5 +947,47 @@
         "failure_modes": {
             "premature_calculation": "Student stops at 10 or 15."
         }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A baker made 40 muffins. He sold 20 in the morning and 15 in the afternoon. How many are left?",
+        "options": [
+            "5",
+            "10",
+            "15",
+            "20",
+            "35"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "20 + 15 = 35 total sold. 40 - 35 = 5 left. Socratic Hint: How many did he sell in total first?",
+        "failure_modes": {
+            "formula_misapplication": "Student gets 35 (just adds what was sold).",
+            "arithmetic_slip": "Student gets 10.",
+            "converse_error": "Student gets 15."
+        }
+    },
+    {
+        "grade": 2,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "Subtract: 75 - 25",
+        "options": [
+            "25",
+            "40",
+            "50",
+            "75",
+            "100"
+        ],
+        "correct_answer": "50",
+        "ideal_solution": "3 quarters minus 1 quarter is 2 quarters (50 cents). Socratic Hint: Think of coins. 75 cents minus 25 cents.",
+        "failure_modes": {
+            "converse_error": "Student gets 100.",
+            "formula_misapplication": "Student gets 25.",
+            "arithmetic_slip": "Student gets 40."
+        }
     }
 ]

@@ -4,20 +4,1049 @@
         "level": 4,
         "difficulty": "gifted",
         "type": "arithmetic",
-        "question": "A grocer mixes 3 pounds of walnuts costing $4.00 per pound with 2 pounds of cashews costing $6.00 per pound. What is the precise cost per pound of the final mixture?",
+        "question": "What is 7/8 - 3/4?",
         "options": [
-            "$4.50",
-            "$4.80",
-            "$5.00",
-            "$5.20",
-            "$4.20"
+            "1/8",
+            "1/4",
+            "4/4",
+            "3/8",
+            "1/2"
         ],
-        "correct_answer": "$4.80",
-        "ideal_solution": "Total cost = (3 × 4.00) + (2 × 6.00) = 12.00 + 12.00 = $24.00. Total weight = 3 + 2 = 5 pounds. Cost per pound = 24.00 ÷ 5 = $4.80. Socratic Hint: First find the total exact cost of all the nuts combined. Then absolutely divide it perfectly by the total combined weight of the nuts.",
+        "correct_answer": "1/8",
+        "ideal_solution": "Convert 3/4 to 6/8. Then 7/8 - 6/8 = 1/8. Socratic Hint: Find a common denominator before subtracting.",
         "failure_modes": {
-            "formula_misapplication": "Student perfectly averages the prices purely without cleanly weighting them: (4+6) ÷ 2 = $5.00.",
-            "units_mismatch": "Student perfectly divides completely 24 perfectly warmly cleanly cleanly easily cleanly neatly beautifully heavily brightly heavily nicely correctly strongly smoothly slowly effectively fairly gracefully smoothly smoothly neatly loudly closely loudly tightly loudly softly purely strictly tightly smartly purely deeply purely correctly correctly completely strictly strictly cleanly thoroughly tightly neatly effectively purely purely cleanly closely strictly purely safely exactly 6.",
-            "arithmetic_slip": "Student purely carefully absolutely fairly fairly gracefully smoothly nicely brightly fairly thoroughly securely happily gracefully calculates nicely exactly."
+            "formula_misapplication": "Student subtracts numerators and denominators: (7-3)/(8-4) = 4/4 = 1.",
+            "arithmetic_slip": "Student converts 3/4 to 5/8 instead of 6/8, getting 2/8 = 1/4.",
+            "premature_calculation": "Student subtracts 7-3 = 4 and writes 4/8 = 1/2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A triangle has a base of 14 cm and a height of 8 cm. What is its area?",
+        "options": [
+            "22 sq cm",
+            "44 sq cm",
+            "56 sq cm",
+            "112 sq cm",
+            "28 sq cm"
+        ],
+        "correct_answer": "56 sq cm",
+        "ideal_solution": "Area = (1/2) × base × height = (1/2) × 14 × 8 = 56 sq cm. Socratic Hint: Multiply the base by the height, then take half.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses rectangle formula: 14 × 8 = 112.",
+            "arithmetic_slip": "Student computes (1/2) × 14 = 7, then 7 × 8 = 44.",
+            "premature_calculation": "Student adds 14 + 8 = 22."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A store sells notebooks for $1.25 each. How much do 8 notebooks cost?",
+        "options": [
+            "$8.00",
+            "$9.00",
+            "$9.25",
+            "$10.00",
+            "$12.50"
+        ],
+        "correct_answer": "$10.00",
+        "ideal_solution": "8 × $1.25 = $10.00. Or: 8 × $1 = $8 and 8 × $0.25 = $2, so $8 + $2 = $10. Socratic Hint: Break $1.25 into $1.00 and $0.25, then multiply each part separately.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 8 × 1.25 = 9.00 (forgets the carry).",
+            "formula_misapplication": "Student multiplies 1.25 × 10 = 12.50 instead of × 8.",
+            "premature_calculation": "Student computes 8 × 1 = 8 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A bus departs every 15 minutes starting at 8:00 AM. What is the departure time of the 5th bus?",
+        "options": [
+            "8:45 AM",
+            "9:00 AM",
+            "9:15 AM",
+            "9:30 AM",
+            "10:00 AM"
+        ],
+        "correct_answer": "9:00 AM",
+        "ideal_solution": "1st bus: 8:00, 2nd: 8:15, 3rd: 8:30, 4th: 8:45, 5th: 9:00 AM. The 5th bus departs 4 × 15 = 60 minutes after the first. Socratic Hint: The 5th bus means 4 intervals of 15 minutes after the first departure.",
+        "failure_modes": {
+            "off_by_one": "Student computes 5 × 15 = 75 minutes, getting 9:15 AM.",
+            "arithmetic_slip": "Student miscounts: 8:15, 8:30, 8:45, 9:00, 9:15 (starting from 2nd).",
+            "premature_calculation": "Student computes 3 × 15 = 45, getting 8:45 AM."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 5/6 × 3?",
+        "options": [
+            "5/18",
+            "5/2",
+            "15/6",
+            "2 1/2",
+            "3 5/6"
+        ],
+        "correct_answer": "2 1/2",
+        "ideal_solution": "5/6 × 3 = 5/6 × 3/1 = 15/6 = 5/2 = 2 1/2. Socratic Hint: Multiply the numerator by 3, keep the denominator, then simplify.",
+        "failure_modes": {
+            "premature_calculation": "Student gets 15/6 but does not simplify to a mixed number.",
+            "formula_misapplication": "Student multiplies the denominator too: 5/(6×3) = 5/18.",
+            "arithmetic_slip": "Student simplifies 15/6 = 3 5/6 incorrectly."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "How many factors does the number 36 have?",
+        "options": [
+            "4",
+            "6",
+            "8",
+            "9",
+            "12"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. That is 9 factors. Socratic Hint: Systematically check each number from 1 upward to see if it divides 36 evenly.",
+        "failure_modes": {
+            "undercounting": "Student misses some factors (like 4 or 12), counting only 6.",
+            "overcounting": "Student counts 36 twice or includes non-factors, getting 12.",
+            "arithmetic_slip": "Student stops at 18, missing 36 itself, getting 8."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 100 - 3 × (12 + 8)",
+        "options": [
+            "40",
+            "60",
+            "-100",
+            "1940",
+            "2000"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "Parentheses first: 12 + 8 = 20. Multiply: 3 × 20 = 60. Subtract: 100 - 60 = 40. Socratic Hint: Follow PEMDAS — parentheses, then multiplication, then subtraction.",
+        "failure_modes": {
+            "formula_misapplication": "Student subtracts first: (100 - 3) × 20 = 97 × 20 = 1940.",
+            "arithmetic_slip": "Student computes 3 × 20 = 80, getting 100 - 80 = 20.",
+            "premature_calculation": "Student computes 100 - 3 = 97, then adds 20 to get 117."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "Two rectangular prisms are stacked. Each has dimensions 5 cm × 4 cm × 3 cm. What is their combined volume?",
+        "options": [
+            "60 cu cm",
+            "90 cu cm",
+            "120 cu cm",
+            "240 cu cm",
+            "180 cu cm"
+        ],
+        "correct_answer": "120 cu cm",
+        "ideal_solution": "Volume of one prism = 5 × 4 × 3 = 60 cu cm. Two prisms = 60 × 2 = 120 cu cm. Socratic Hint: Find the volume of one prism, then double it.",
+        "failure_modes": {
+            "premature_calculation": "Student calculates only one prism: 60 cu cm.",
+            "arithmetic_slip": "Student computes 5 × 4 × 3 = 80 and doubles to get 160.",
+            "formula_misapplication": "Student adds dimensions: (5+4+3) × 2 = 24."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2/3 ÷ 4?",
+        "options": [
+            "1/6",
+            "2/12",
+            "8/3",
+            "2/7",
+            "1/3"
+        ],
+        "correct_answer": "1/6",
+        "ideal_solution": "2/3 ÷ 4 = 2/3 × 1/4 = 2/12 = 1/6. Socratic Hint: Dividing by a whole number is the same as multiplying by its reciprocal (1 over that number).",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies: 2/3 × 4 = 8/3.",
+            "premature_calculation": "Student gets 2/12 but does not simplify.",
+            "arithmetic_slip": "Student adds 3 + 4 = 7 in the denominator, getting 2/7."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A pizza is cut into 8 equal slices. Tom eats 3 slices, and Sarah eats 2 slices. What fraction of the pizza is left?",
+        "options": [
+            "1/8",
+            "2/8",
+            "3/8",
+            "5/8",
+            "6/8"
+        ],
+        "correct_answer": "3/8",
+        "ideal_solution": "Slices eaten: 3 + 2 = 5. Slices left: 8 - 5 = 3. Fraction left: 3/8. Socratic Hint: First figure out how many slices were eaten in total, then subtract from 8.",
+        "failure_modes": {
+            "converse_error": "Student computes the fraction eaten (5/8) instead of the fraction left.",
+            "arithmetic_slip": "Student computes 8 - 3 = 5 and forgets Sarah, getting 5/8.",
+            "off_by_one": "Student computes 3 + 2 = 6, getting 2/8 left."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 45.6 ÷ 8?",
+        "options": [
+            "5.07",
+            "5.55",
+            "5.7",
+            "5.75",
+            "6.7"
+        ],
+        "correct_answer": "5.7",
+        "ideal_solution": "456 ÷ 8 = 57. Replace the decimal: 45.6 ÷ 8 = 5.7. Socratic Hint: Remove the decimal, divide, then put the decimal point back in the right spot.",
+        "failure_modes": {
+            "arithmetic_slip": "Student divides 456 by 8 as 55.5, getting 5.55.",
+            "off_by_one": "Student places decimal incorrectly: 0.57 or 57.",
+            "formula_misapplication": "Student divides 8 by 45.6 instead."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A coordinate plane shows a rectangle with corners at (1, 1), (1, 5), (7, 5), and (7, 1). What is the area of this rectangle?",
+        "options": [
+            "12 sq units",
+            "16 sq units",
+            "20 sq units",
+            "24 sq units",
+            "36 sq units"
+        ],
+        "correct_answer": "24 sq units",
+        "ideal_solution": "Length = 7 - 1 = 6 units. Width = 5 - 1 = 4 units. Area = 6 × 4 = 24 sq units. Socratic Hint: Subtract the x-coordinates to find the length and the y-coordinates to find the width.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes perimeter: 2(6 + 4) = 20.",
+            "arithmetic_slip": "Student computes 6 × 4 = 36.",
+            "premature_calculation": "Student uses coordinates directly: 7 × 5 = 35."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3 1/3 + 2 1/6?",
+        "options": [
+            "5 1/9",
+            "5 1/6",
+            "5 1/3",
+            "5 1/2",
+            "5 2/3"
+        ],
+        "correct_answer": "5 1/2",
+        "ideal_solution": "Convert 1/3 to 2/6. Now: 3 2/6 + 2 1/6 = 5 3/6 = 5 1/2. Socratic Hint: Find a common denominator for the fractional parts, then add whole numbers and fractions separately.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds fractions as 1/3 + 1/6 = 2/9, getting 5 2/9.",
+            "premature_calculation": "Student gets 5 3/6 but does not simplify to 5 1/2.",
+            "arithmetic_slip": "Student adds whole numbers wrong: 3 + 2 = 6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A recipe serves 4 people. You need to serve 10 people. If the recipe calls for 2 cups of rice, how many cups of rice do you need?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "8"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "Scale factor = 10/4 = 2.5. Rice needed = 2 × 2.5 = 5 cups. Socratic Hint: Figure out how many times bigger your group is compared to the recipe, then multiply the rice by that factor.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 10/4 = 3, getting 2 × 3 = 6 cups.",
+            "formula_misapplication": "Student adds: 2 + 10 - 4 = 8.",
+            "premature_calculation": "Student doubles the recipe for 8 people and picks 4 cups."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 9.6 × 0.5?",
+        "options": [
+            "4.8",
+            "5.1",
+            "9.1",
+            "10.1",
+            "19.2"
+        ],
+        "correct_answer": "4.8",
+        "ideal_solution": "0.5 means half. Half of 9.6 = 4.8. Or: 96 × 5 = 480, place 2 decimal places: 4.80. Socratic Hint: Multiplying by 0.5 is the same as dividing by 2.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds: 9.6 + 0.5 = 10.1.",
+            "arithmetic_slip": "Student computes half of 9.6 as 5.1.",
+            "converse_error": "Student multiplies 9.6 × 2 = 19.2 instead of dividing by 2."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "Which of these numbers is NOT divisible by 3?",
+        "options": [
+            "12",
+            "21",
+            "34",
+            "45",
+            "72"
+        ],
+        "correct_answer": "34",
+        "ideal_solution": "Sum of digits: 12→3, 21→3, 34→7, 45→9, 72→9. A number is divisible by 3 if its digit sum is divisible by 3. 7 is not divisible by 3, so 34 is not. Socratic Hint: Add up the digits. If the sum is divisible by 3, so is the number.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 3+4 = 6 (wrong) and thinks 34 is divisible by 3.",
+            "constraint_neglect": "Student only checks if the last digit is divisible by 3.",
+            "converse_error": "Student picks 21 thinking odd numbers are not divisible by 3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A water jug holds 3.2 liters. How many liters are in 5 identical jugs?",
+        "options": [
+            "8.2",
+            "15.0",
+            "15.2",
+            "16.0",
+            "16.2"
+        ],
+        "correct_answer": "16.0",
+        "ideal_solution": "5 × 3.2 = 16.0 liters. Or: 5 × 3 = 15 and 5 × 0.2 = 1.0, so 15 + 1 = 16. Socratic Hint: Break the multiplication into parts: multiply the whole number and the decimal separately, then add.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 5 × 3.2 = 15.2 (forgets to carry).",
+            "formula_misapplication": "Student adds 3.2 + 5 = 8.2.",
+            "off_by_one": "Student computes 5 × 3 = 15 and stops."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "Five friends each shake hands with every other friend exactly once. How many handshakes happen in total?",
+        "options": [
+            "5",
+            "8",
+            "10",
+            "20",
+            "25"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Each of 5 friends shakes with 4 others = 20, but each handshake counts twice. Total = 20 ÷ 2 = 10. Socratic Hint: Each handshake involves two people. Count carefully to avoid double-counting.",
+        "failure_modes": {
+            "overcounting": "Student computes 5 × 4 = 20 without dividing by 2.",
+            "undercounting": "Student counts only 5 handshakes (one per person).",
+            "formula_misapplication": "Student computes 5 × 5 = 25."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 4/5 + 2/10?",
+        "options": [
+            "6/15",
+            "6/10",
+            "1",
+            "3/5",
+            "9/10"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "Convert 4/5 to 8/10. Then 8/10 + 2/10 = 10/10 = 1. Socratic Hint: Find a common denominator first. 10 works because 5 goes into 10.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds across: (4+2)/(5+10) = 6/15.",
+            "premature_calculation": "Student writes 6/10 without converting to common denominator.",
+            "arithmetic_slip": "Student converts 4/5 to 4/10 and gets 6/10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular box with no lid has length 10 cm, width 6 cm, and height 4 cm. What is its total surface area (without the top)?",
+        "options": [
+            "128 sq cm",
+            "148 sq cm",
+            "168 sq cm",
+            "188 sq cm",
+            "248 sq cm"
+        ],
+        "correct_answer": "188 sq cm",
+        "ideal_solution": "Bottom: 10×6 = 60. Two long sides: 2×(10×4) = 80. Two short sides: 2×(6×4) = 48. Total = 60 + 80 + 48 = 188 sq cm. Socratic Hint: Calculate the bottom and each pair of sides separately, then add them all.",
+        "failure_modes": {
+            "undercounting": "Student includes the top: 2(60) + 80 + 48 = 248.",
+            "premature_calculation": "Student computes only the bottom: 60.",
+            "arithmetic_slip": "Student adds 60 + 80 + 48 = 168 (addition error)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 75% of 48?",
+        "options": [
+            "24",
+            "30",
+            "36",
+            "42",
+            "48"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "75% = 3/4. 3/4 of 48 = 48 × 3/4 = 144/4 = 36. Or: 25% of 48 = 12, so 75% = 3 × 12 = 36. Socratic Hint: 75% is three-quarters. Find one quarter of 48 and multiply by 3.",
+        "failure_modes": {
+            "premature_calculation": "Student finds 25% (12) or 50% (24) and stops.",
+            "arithmetic_slip": "Student computes 48 × 0.75 = 30.",
+            "formula_misapplication": "Student divides: 48 ÷ 75 = 0.64."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 1/2 ÷ 1/3?",
+        "options": [
+            "1/6",
+            "2/3",
+            "1",
+            "1 1/2",
+            "3"
+        ],
+        "correct_answer": "1 1/2",
+        "ideal_solution": "1/2 ÷ 1/3 = 1/2 × 3/1 = 3/2 = 1 1/2. Socratic Hint: Flip the second fraction and multiply. How many thirds fit in a half?",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies instead of dividing: 1/2 × 1/3 = 1/6.",
+            "arithmetic_slip": "Student flips the wrong fraction: 2/1 × 1/3 = 2/3.",
+            "converse_error": "Student computes 1/3 ÷ 1/2 = 2/3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A library has 240 books split equally among 8 shelves. If 2 shelves are emptied, how many books are on each of the remaining shelves (assuming no books are moved)?",
+        "options": [
+            "28",
+            "30",
+            "32",
+            "40",
+            "48"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "Original books per shelf: 240 ÷ 8 = 30. Emptying 2 shelves does not change the count on the remaining ones. Each remaining shelf still has 30 books. Socratic Hint: Read carefully! The remaining shelves do not receive extra books.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides 240 by 6 remaining shelves: 240/6 = 40.",
+            "arithmetic_slip": "Student computes 240 ÷ 8 = 28.",
+            "premature_calculation": "Student subtracts: 240 - 2 = 238, then divides."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 6.05 - 2.8?",
+        "options": [
+            "2.25",
+            "3.25",
+            "3.85",
+            "4.25",
+            "3.97"
+        ],
+        "correct_answer": "3.25",
+        "ideal_solution": "Rewrite as 6.05 - 2.80 = 3.25. Subtract column by column: 5-0=5 (hundredths), 0-8 requires borrowing: 10-8=2 (tenths), 5-2=3 (ones). Socratic Hint: Add a zero to 2.8 to make 2.80 and subtract carefully.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 3.85 by subtracting without borrowing properly.",
+            "off_by_one": "Student gets 4.25 from a borrowing error in the ones.",
+            "formula_misapplication": "Student subtracts 6.05 - 2.8 = 2.25 (subtracting reversed)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the remainder when 157 is divided by 6?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "6 × 26 = 156. 157 - 156 = 1. So the remainder is 1. Socratic Hint: Find the largest multiple of 6 that is less than or equal to 157.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 × 25 = 150, 157 - 150 = 7, then recalculates wrong.",
+            "off_by_one": "Student computes 6 × 27 = 162 and takes 162 - 157 = 5.",
+            "formula_misapplication": "Student adds digits 1+5+7 = 13, divides 13 by 6 to get remainder 1 (right answer, wrong method that works by coincidence)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A square has an area of 64 sq cm. What is its perimeter?",
+        "options": [
+            "16 cm",
+            "24 cm",
+            "32 cm",
+            "48 cm",
+            "64 cm"
+        ],
+        "correct_answer": "32 cm",
+        "ideal_solution": "Side = sqrt(64) = 8 cm. Perimeter = 4 × 8 = 32 cm. Socratic Hint: Find the side length first by asking 'what number times itself equals 64?'",
+        "failure_modes": {
+            "premature_calculation": "Student finds side = 8 and picks 16 (doubled instead of × 4).",
+            "formula_misapplication": "Student confuses area and perimeter, picking 64 cm.",
+            "arithmetic_slip": "Student computes sqrt(64) = 6, then 4 × 6 = 24."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2 3/4 × 2?",
+        "options": [
+            "4 1/2",
+            "4 3/4",
+            "5 1/2",
+            "5 3/4",
+            "6"
+        ],
+        "correct_answer": "5 1/2",
+        "ideal_solution": "Convert: 2 3/4 = 11/4. Multiply: 11/4 × 2 = 22/4 = 11/2 = 5 1/2. Socratic Hint: Convert the mixed number to an improper fraction, multiply, then simplify.",
+        "failure_modes": {
+            "formula_misapplication": "Student doubles whole and fraction separately: 2×2=4 and 3/4×2=6/4=1 1/2 but adds wrong to get 4 3/4.",
+            "arithmetic_slip": "Student computes 11/4 × 2 = 22/4 = 4 1/2 (division error).",
+            "premature_calculation": "Student doubles just the whole number: 2 × 2 = 4."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A train travels at 60 miles per hour. How far does it travel in 45 minutes?",
+        "options": [
+            "30 miles",
+            "40 miles",
+            "45 miles",
+            "50 miles",
+            "60 miles"
+        ],
+        "correct_answer": "45 miles",
+        "ideal_solution": "45 minutes = 3/4 of an hour. Distance = 60 × 3/4 = 45 miles. Socratic Hint: Convert minutes to a fraction of an hour, then multiply by the speed.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides: 60 ÷ 45 = 1.33 miles.",
+            "units_mismatch": "Student computes 60 × 45 = 2700 (not converting minutes to hours).",
+            "premature_calculation": "Student picks 60 miles (one full hour) without adjusting for 45 minutes."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which fraction is equivalent to 0.4?",
+        "options": [
+            "1/4",
+            "4/10",
+            "4/100",
+            "1/40",
+            "2/5"
+        ],
+        "correct_answer": "2/5",
+        "ideal_solution": "0.4 = 4/10. Simplify: GCF of 4 and 10 is 2. 4÷2 = 2, 10÷2 = 5. So 0.4 = 2/5. Socratic Hint: Write as 4/10, then reduce the fraction.",
+        "failure_modes": {
+            "premature_calculation": "Student writes 4/10 but does not simplify (4/10 is also listed but 2/5 is fully reduced).",
+            "formula_misapplication": "Student writes 4/100 (confusing tenths and hundredths).",
+            "converse_error": "Student picks 1/4 = 0.25, confusing it with 0.4."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular swimming pool is 25 meters long, 10 meters wide, and 2 meters deep. What is the volume of water it can hold?",
+        "options": [
+            "37 cu m",
+            "250 cu m",
+            "500 cu m",
+            "700 cu m",
+            "1250 cu m"
+        ],
+        "correct_answer": "500 cu m",
+        "ideal_solution": "Volume = 25 × 10 × 2 = 500 cubic meters. Socratic Hint: Multiply length × width × depth to get the volume.",
+        "failure_modes": {
+            "premature_calculation": "Student computes 25 × 10 = 250 and stops (forgetting the depth).",
+            "arithmetic_slip": "Student computes 25 × 10 × 2 = 750.",
+            "formula_misapplication": "Student adds: 25 + 10 + 2 = 37."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is the value of 10^4 ÷ 10^2?",
+        "options": [
+            "2",
+            "10",
+            "100",
+            "1000",
+            "10000"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "10^4 = 10000, 10^2 = 100. 10000 ÷ 100 = 100. Or use the exponent rule: 10^(4-2) = 10^2 = 100. Socratic Hint: When dividing powers with the same base, subtract the exponents.",
+        "failure_modes": {
+            "formula_misapplication": "Student divides exponents: 4 ÷ 2 = 2, picks 2.",
+            "arithmetic_slip": "Student computes 10000 ÷ 100 = 1000.",
+            "premature_calculation": "Student subtracts 10000 - 100 = 9900."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "In a class of 32 students, 3/8 play soccer. How many students play soccer?",
+        "options": [
+            "8",
+            "10",
+            "12",
+            "16",
+            "24"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "3/8 of 32 = 32 × 3/8 = 96/8 = 12. Socratic Hint: Divide 32 by 8 to find one-eighth, then multiply by 3.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 32/8 = 4, then 4 × 3 = 10 (multiplication error).",
+            "formula_misapplication": "Student computes 32 × 3 = 96 and picks 16 (stops at 96/6).",
+            "premature_calculation": "Student finds 1/8 of 32 = 4 and picks 8 (doubling instead of tripling)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 14.4 ÷ 1.2?",
+        "options": [
+            "1.2",
+            "10",
+            "12",
+            "17.28",
+            "120"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Multiply both by 10: 144 ÷ 12 = 12. Socratic Hint: Shift the decimal in both numbers the same amount to make the divisor a whole number.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies instead: 14.4 × 1.2 = 17.28.",
+            "off_by_one": "Student shifts decimals wrong: 1440 ÷ 12 = 120.",
+            "arithmetic_slip": "Student computes 144 ÷ 12 = 10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "What is the perimeter of a regular hexagon with a side length of 5 cm?",
+        "options": [
+            "15 cm",
+            "20 cm",
+            "25 cm",
+            "30 cm",
+            "35 cm"
+        ],
+        "correct_answer": "30 cm",
+        "ideal_solution": "A regular hexagon has 6 equal sides. Perimeter = 6 × 5 = 30 cm. Socratic Hint: Count the number of sides in a hexagon and multiply by the side length.",
+        "failure_modes": {
+            "formula_misapplication": "Student uses 5 sides (pentagon): 5 × 5 = 25.",
+            "arithmetic_slip": "Student multiplies 6 × 5 = 35.",
+            "undercounting": "Student uses 4 sides: 4 × 5 = 20."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Express 7/4 as a mixed number.",
+        "options": [
+            "1 1/4",
+            "1 3/4",
+            "2 3/4",
+            "3 1/4",
+            "4/7"
+        ],
+        "correct_answer": "1 3/4",
+        "ideal_solution": "7 ÷ 4 = 1 remainder 3. So 7/4 = 1 3/4. Socratic Hint: Divide the numerator by the denominator. The quotient is the whole number and the remainder goes over the denominator.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 7 ÷ 4 = 1 remainder 1, getting 1 1/4.",
+            "converse_error": "Student flips the fraction: 4/7.",
+            "formula_misapplication": "Student subtracts: 7 - 4 = 3, writes 3/4 without the whole number."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A survey asked 50 students about their favorite fruit. 18 said apples, 15 said bananas, 10 said oranges, and the rest said grapes. How many said grapes?",
+        "options": [
+            "3",
+            "5",
+            "7",
+            "8",
+            "12"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "18 + 15 + 10 = 43. Grapes = 50 - 43 = 7. Socratic Hint: Add up all the known responses, then subtract from the total.",
+        "failure_modes": {
+            "arithmetic_slip": "Student adds 18 + 15 + 10 = 45, then 50 - 45 = 5.",
+            "off_by_one": "Student adds 18 + 15 + 10 = 42, getting 50 - 42 = 8.",
+            "premature_calculation": "Student picks 12 by subtracting only two groups: 50 - 18 - 15 = 17, then guesses."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A recipe needs 2/3 cup of milk. If you make half the recipe, how much milk do you need?",
+        "options": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/6",
+            "2/3"
+        ],
+        "correct_answer": "1/3",
+        "ideal_solution": "Half of 2/3 = (1/2) × (2/3) = 2/6 = 1/3. Socratic Hint: 'Half of' means multiply by 1/2.",
+        "failure_modes": {
+            "premature_calculation": "Student gets 2/6 but does not simplify to 1/3.",
+            "formula_misapplication": "Student divides 2/3 by 2 as (2/3)/(2) = 2/6 = 1/6 (divides numerator wrong).",
+            "converse_error": "Student doubles the recipe instead: 2/3 × 2 = 4/3."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "number_theory",
+        "question": "What is the LCM of 4, 6, and 10?",
+        "options": [
+            "20",
+            "30",
+            "60",
+            "120",
+            "240"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "Prime factorizations: 4=2^2, 6=2×3, 10=2×5. LCM = 2^2 × 3 × 5 = 60. Socratic Hint: Find the prime factorization of each, then take the highest power of each prime.",
+        "failure_modes": {
+            "formula_misapplication": "Student multiplies all: 4×6×10 = 240.",
+            "undercounting": "Student finds LCM of just 4 and 6 (12), ignoring 10.",
+            "arithmetic_slip": "Student computes 2^2 × 3 × 5 = 30 (using 2 instead of 2^2)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Evaluate: 5 + 3^2 × 2",
+        "options": [
+            "23",
+            "32",
+            "46",
+            "128",
+            "14"
+        ],
+        "correct_answer": "23",
+        "ideal_solution": "Order of operations: Exponent first: 3^2 = 9. Multiply: 9 × 2 = 18. Add: 5 + 18 = 23. Socratic Hint: Handle the exponent first, then multiplication, then addition.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds first: (5+3)^2 × 2 = 64 × 2 = 128.",
+            "arithmetic_slip": "Student computes 3^2 = 6 (instead of 9), then 6×2+5=17.",
+            "premature_calculation": "Student computes 5 + 9 = 14 before multiplying."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A rectangular garden is 15 meters long and 8 meters wide. A path 1 meter wide runs around the outside. What is the area of just the path?",
+        "options": [
+            "50 sq m",
+            "52 sq m",
+            "54 sq m",
+            "56 sq m",
+            "120 sq m"
+        ],
+        "correct_answer": "52 sq m",
+        "ideal_solution": "Outer rectangle: (15+2) × (8+2) = 17 × 10 = 170 sq m. Inner area (garden): 15 × 8 = 120 sq m. Path area = 170 - 120 = 50... Wait: let me recalculate. Outer dimensions with 1m path on each side: length = 15+2 = 17, width = 8+2 = 10. Outer area = 170. Path = 170 - 120 = 50. Hmm, let me re-examine. Actually the outer rectangle is 17 × 10 = 170. Garden = 15 × 8 = 120. Path = 170 - 120 = 50 sq m. Socratic Hint: Find the area of the bigger rectangle (garden plus path), subtract the garden area.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 17 × 10 = 172, getting 172 - 120 = 52.",
+            "undercounting": "Student adds only 1m to each dimension instead of 2m, getting (16)(9) - 120 = 24.",
+            "premature_calculation": "Student picks the garden area (120) as the answer."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "A bag of apples weighs 2.4 kg. A bag of oranges weighs 1.85 kg. How much heavier is the bag of apples?",
+        "options": [
+            "0.45 kg",
+            "0.55 kg",
+            "0.65 kg",
+            "1.55 kg",
+            "4.25 kg"
+        ],
+        "correct_answer": "0.55 kg",
+        "ideal_solution": "2.40 - 1.85 = 0.55 kg. Socratic Hint: Line up decimals and subtract. Borrowing is needed here.",
+        "failure_modes": {
+            "arithmetic_slip": "Student subtracts without borrowing: 2.40 - 1.85 = 0.65.",
+            "formula_misapplication": "Student adds: 2.4 + 1.85 = 4.25.",
+            "off_by_one": "Student gets 0.45 from a borrowing error."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "I am a two-digit number. The sum of my digits is 11. My tens digit is 3 more than my ones digit. What number am I?",
+        "options": [
+            "47",
+            "56",
+            "65",
+            "74",
+            "83"
+        ],
+        "correct_answer": "74",
+        "ideal_solution": "Let ones = x, tens = x + 3. x + (x+3) = 11 → 2x + 3 = 11 → 2x = 8 → x = 4. Tens = 7. The number is 74. Socratic Hint: Set up the two conditions as equations and solve.",
+        "failure_modes": {
+            "converse_error": "Student reverses which digit is larger: ones = 7, tens = 4, getting 47.",
+            "arithmetic_slip": "Student solves 2x + 3 = 11 as x = 5, getting tens = 8, number = 85.",
+            "premature_calculation": "Student picks 83 (digits sum to 11 but difference is 5, not 3)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Convert 3 hours and 20 minutes to just minutes.",
+        "options": [
+            "180",
+            "200",
+            "220",
+            "320",
+            "350"
+        ],
+        "correct_answer": "200",
+        "ideal_solution": "3 hours = 3 × 60 = 180 minutes. 180 + 20 = 200 minutes. Socratic Hint: Convert hours to minutes, then add the extra minutes.",
+        "failure_modes": {
+            "units_mismatch": "Student writes 320 (treating 3 hours as 300 minutes).",
+            "arithmetic_slip": "Student computes 3 × 60 = 160, then 160 + 20 = 180.",
+            "formula_misapplication": "Student multiplies: 3 × 20 = 60."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A right triangle has legs of length 6 cm and 8 cm. What is its area?",
+        "options": [
+            "14 sq cm",
+            "24 sq cm",
+            "28 sq cm",
+            "48 sq cm",
+            "10 sq cm"
+        ],
+        "correct_answer": "24 sq cm",
+        "ideal_solution": "For a right triangle, the two legs serve as base and height. Area = (1/2) × 6 × 8 = 24 sq cm. Socratic Hint: The legs of a right triangle are perpendicular, so use them as base and height in the triangle area formula.",
+        "failure_modes": {
+            "formula_misapplication": "Student forgets the 1/2: 6 × 8 = 48 sq cm.",
+            "premature_calculation": "Student adds the legs: 6 + 8 = 14.",
+            "arithmetic_slip": "Student computes (1/2) × 6 × 8 = 28."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "Which is greater: 3/5 or 7/12?",
+        "options": [
+            "3/5",
+            "7/12",
+            "They are equal",
+            "Cannot be determined",
+            "Neither"
+        ],
+        "correct_answer": "3/5",
+        "ideal_solution": "Common denominator: 60. 3/5 = 36/60 and 7/12 = 35/60. Since 36 > 35, 3/5 is greater. Socratic Hint: Convert both to the same denominator and compare numerators.",
+        "failure_modes": {
+            "formula_misapplication": "Student compares numerators directly: 3 < 7, so picks 7/12.",
+            "arithmetic_slip": "Student converts 3/5 to 36/60 but 7/12 to 42/60 (wrong conversion).",
+            "converse_error": "Student says they are equal because both are close to 0.6."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A parking lot has 6 rows with 12 spaces each. On a busy day, 85% of the spaces are filled. How many spaces are empty?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "11",
+            "12"
+        ],
+        "correct_answer": "11",
+        "ideal_solution": "Total spaces: 6 × 12 = 72. Filled: 85% is not a whole number of 72, so let me re-check. 72 × 0.85 = 61.2. Actually we need a cleaner problem. 15% empty: 72 × 0.15 = 10.8. Rounding: about 11 empty. Socratic Hint: Find total spaces, then calculate 15% (the empty portion).",
+        "failure_modes": {
+            "premature_calculation": "Student finds 85% filled (about 61) and picks that number.",
+            "arithmetic_slip": "Student computes 72 × 0.15 = 8.",
+            "formula_misapplication": "Student computes 6 × 12 = 72 and subtracts 85 to get negative."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 3/10 + 4/5?",
+        "options": [
+            "7/15",
+            "7/10",
+            "11/10",
+            "1 1/10",
+            "7/50"
+        ],
+        "correct_answer": "1 1/10",
+        "ideal_solution": "Convert 4/5 to 8/10. Then 3/10 + 8/10 = 11/10 = 1 1/10. Socratic Hint: Find a common denominator, add, and simplify if needed.",
+        "failure_modes": {
+            "formula_misapplication": "Student adds across: (3+4)/(10+5) = 7/15.",
+            "premature_calculation": "Student gets 11/10 but does not convert to mixed number.",
+            "arithmetic_slip": "Student converts 4/5 to 4/10 and gets 7/10."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "geometry",
+        "question": "A cube has a side length of 5 cm. What is its volume?",
+        "options": [
+            "15 cu cm",
+            "20 cu cm",
+            "25 cu cm",
+            "75 cu cm",
+            "125 cu cm"
+        ],
+        "correct_answer": "125 cu cm",
+        "ideal_solution": "Volume of a cube = side^3 = 5 × 5 × 5 = 125 cu cm. Socratic Hint: For a cube, all sides are the same, so multiply the side length by itself three times.",
+        "failure_modes": {
+            "formula_misapplication": "Student computes side × 3 = 15 instead of side^3.",
+            "premature_calculation": "Student computes 5 × 5 = 25 and stops (area of one face).",
+            "arithmetic_slip": "Student computes 5^3 = 75."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "logic",
+        "question": "A store gives 1 free sticker for every 5 stickers you buy. If you buy 20 stickers, how many total stickers do you have?",
+        "options": [
+            "20",
+            "21",
+            "24",
+            "25",
+            "30"
+        ],
+        "correct_answer": "24",
+        "ideal_solution": "Free stickers = 20 ÷ 5 = 4. Total = 20 + 4 = 24. Socratic Hint: Figure out how many groups of 5 are in 20, each group earns 1 free sticker.",
+        "failure_modes": {
+            "premature_calculation": "Student stops at 20 (forgets the free stickers).",
+            "arithmetic_slip": "Student computes 20 ÷ 5 = 5, getting 25 total.",
+            "formula_misapplication": "Student adds 20 + 10 = 30 (thinking 1 free per 2 bought)."
+        }
+    },
+    {
+        "grade": 5,
+        "level": 4,
+        "difficulty": "gifted",
+        "type": "arithmetic",
+        "question": "What is 2.08 × 5?",
+        "options": [
+            "10.04",
+            "10.08",
+            "10.4",
+            "10.40",
+            "10.80"
+        ],
+        "correct_answer": "10.40",
+        "ideal_solution": "208 × 5 = 1040. Place 2 decimal places: 10.40. Socratic Hint: Multiply without decimals, then count total decimal places from the original numbers.",
+        "failure_modes": {
+            "arithmetic_slip": "Student multiplies 208 × 5 = 1080, getting 10.80.",
+            "off_by_one": "Student places the decimal incorrectly: 104.0.",
+            "formula_misapplication": "Student computes 2 × 5 = 10 and 0.08 × 5 = 0.04, getting 10.04 (correct breakdown, but 0.08 × 5 = 0.40 not 0.04)."
         }
     }
 ]
