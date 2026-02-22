@@ -293,8 +293,8 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
         </div>
       </header>
 
-      <main className="flex-1 max-w-4xl w-full mx-auto py-4 sm:py-8 flex flex-col space-y-8 scale-[0.9] sm:scale-100 origin-top transition-transform">
-        <div className="bg-white rounded-[2.5rem] shadow-sm border border-gray-100 p-6 md:p-12">
+      <main className="flex-1 max-w-4xl w-full mx-auto py-2 sm:py-8 flex flex-col space-y-4 sm:space-y-8 transition-all">
+        <div className="bg-white rounded-3xl sm:rounded-[2.5rem] shadow-sm border border-gray-100 p-5 sm:p-12">
           <div className="mb-10">
             <div className="flex justify-between items-start">
               <div className="flex items-center space-x-3 mb-4">
