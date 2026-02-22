@@ -262,7 +262,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
               </h2>
               {isStaticMode && (
                 <span className="px-1.5 py-0.5 bg-gray-100 text-gray-400 text-[7px] sm:text-[8px] font-black uppercase tracking-widest rounded border border-gray-200">
-                  Static
+                  Static Mode
                 </span>
               )}
             </div>
@@ -283,7 +283,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
           >
             {timerVisible ? formatTime(timer) : (
               <span className="text-[8px] sm:text-[10px] uppercase tracking-widest flex items-center">
-                Show
+                Show Timer
               </span>
             )}
           </div>
