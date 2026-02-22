@@ -116,6 +116,10 @@ describe('Open Reasoning UI & Integration', () => {
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
     fireEvent.click(screen.getByText(/Show Ideal Solution/i));
 
+    // Expand the collapsible solution box (SolutionDisplay)
+    const expandBtn = await screen.findByText(/Show Ideal Solution/i);
+    fireEvent.click(expandBtn);
+
     await waitFor(() => {
       expect(aiService.evaluateReasoning).not.toHaveBeenCalled();
       const elements = screen.getAllByText(/Ideal Solution/i);
