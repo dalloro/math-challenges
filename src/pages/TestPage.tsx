@@ -249,40 +249,45 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   if (!currentQuestion) return null;
 
   return (
-    <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-4 ${
+    <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
     }`}>
-      <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-4">
-        <div className="flex items-center space-x-4">
-          <Logo className="h-10 w-auto" />
+      <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-2 sm:py-4">
+        <div className="flex items-center space-x-2 sm:space-x-4">
+          <Logo className="h-7 sm:h-10 w-auto" />
           <div className="flex flex-col">
             <div className="flex items-center space-x-2">
-              <h2 className="text-xl font-semibold text-gray-900 tracking-tight">Grade {grade} Adaptive Challenge</h2>
+              <h2 className="text-sm sm:text-xl font-semibold text-gray-900 tracking-tight">
+                Grade {grade} <span className="hidden sm:inline">Adaptive Challenge</span>
+              </h2>
               {isStaticMode && (
-                <span className="px-2 py-0.5 bg-gray-100 text-gray-400 text-[8px] font-black uppercase tracking-widest rounded border border-gray-200">
-                  Static Mode
+                <span className="px-1.5 py-0.5 bg-gray-100 text-gray-400 text-[7px] sm:text-[8px] font-black uppercase tracking-widest rounded border border-gray-200">
+                  Static
                 </span>
               )}
             </div>
-            <p className="text-sm text-gray-500 font-medium">Room: <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span></p>
+            <p className="text-[10px] sm:text-sm text-gray-500 font-medium">
+              <span className="hidden sm:inline">Room: </span>
+              <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span>
+            </p>
           </div>
         </div>
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-3 sm:space-x-6">
           <div 
             onClick={() => {
               const newState = !timerVisible;
               setTimerVisible(newState);
               localStorage.setItem('math_timer_visible', String(newState));
             }}
-            className="text-lg font-mono font-bold text-blue-600 bg-white border border-blue-100 px-3 py-1 rounded-lg shadow-sm cursor-pointer hover:bg-blue-50 transition-colors"
+            className="text-sm sm:text-lg font-mono font-bold text-blue-600 bg-white border border-blue-100 px-2 sm:px-3 py-1 rounded-lg shadow-sm cursor-pointer hover:bg-blue-50 transition-colors"
           >
             {timerVisible ? formatTime(timer) : (
-              <span className="text-[10px] uppercase tracking-widest flex items-center">
-                Show Timer
+              <span className="text-[8px] sm:text-[10px] uppercase tracking-widest flex items-center">
+                Show
               </span>
             )}
           </div>
-          <button onClick={() => navigate('/')} className="text-sm font-bold text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest">
+          <button onClick={() => navigate('/')} className="text-[10px] sm:text-sm font-bold text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest">
             EXIT
           </button>
         </div>

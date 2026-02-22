@@ -33,24 +33,24 @@ export function AdminPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <Logo className="h-8 w-auto" />
-          <h1 className="text-2xl font-bold text-gray-900 tracking-tight">Admin Dashboard</h1>
-          <span className="px-2 py-1 bg-red-50 text-red-600 text-[10px] font-black uppercase tracking-widest rounded-md border border-red-100">
-            Authenticated
+      <header className="bg-white border-b border-gray-200 px-4 sm:px-8 py-3 sm:py-4 flex justify-between items-center">
+        <div className="flex items-center space-x-2 sm:space-x-4">
+          <Logo className="h-6 sm:h-8 w-auto" />
+          <h1 className="text-lg sm:text-2xl font-bold text-gray-900 tracking-tight">Admin<span className="hidden sm:inline"> Dashboard</span></h1>
+          <span className="hidden sm:inline px-2 py-1 bg-red-50 text-red-600 text-[10px] font-black uppercase tracking-widest rounded-md border border-red-100">
+            Auth
           </span>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-3 sm:space-x-4">
           <button 
             onClick={() => navigate('/')}
-            className="text-sm font-bold text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest"
+            className="hidden sm:block text-sm font-bold text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest"
           >
             Site Home
           </button>
           <button 
             onClick={handleLogout}
-            className="px-4 py-2 bg-gray-900 text-white rounded-lg text-sm font-bold hover:bg-black transition-all"
+            className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-bold hover:bg-black transition-all"
           >
             Logout
           </button>

@@ -64,11 +64,11 @@ describe('TestPage Timer Toggle', () => {
     // Click to hide
     fireEvent.click(timerContainer!);
     expect(screen.queryByText(/60:00/i)).not.toBeInTheDocument();
-    expect(screen.getByText(/Show Timer/i)).toBeInTheDocument();
+    expect(screen.getByText(/Show/i)).toBeInTheDocument();
 
     // Click to show again
-    fireEvent.click(screen.getByText(/Show Timer/i).closest('div')!);
+    fireEvent.click(screen.getByText(/Show/i).closest('div')!);
     expect(screen.getByText(/60:00/i)).toBeInTheDocument();
-    expect(screen.queryByText(/Show Timer/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Show/i)).not.toBeInTheDocument();
   });
 });

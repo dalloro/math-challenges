@@ -110,7 +110,7 @@ describe('Open Reasoning UI & Integration', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText(/Static Mode/i)).toBeInTheDocument();
+    expect(screen.getByText(/Static/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getByText(/Switch to Reasoning/i));
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
