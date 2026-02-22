@@ -9,7 +9,7 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: UX Improvements: Landing Page, Timer, Admin Tooltip, Socratic Hint Parser**
+- [x] **Track: UX Improvements: Landing Page, Timer, Admin Tooltip, Socratic Hint Parser**
 *Link: [./tracks/ux_improvements_20260221/](./tracks/ux_improvements_20260221/)*
 
 ---
