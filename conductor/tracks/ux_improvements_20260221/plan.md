@@ -9,12 +9,12 @@
     - [x] Adjust the tooltip styles in the Admin Page to prevent overlap with the top toolbar.
 - [x] **Task: Conductor - User Manual Verification 'Phase 1: Landing Page & Admin UI Adjustments' (Protocol in workflow.md)** [a2058df]
 
-## Phase 2: Timer Low-Pressure Mode
-- [ ] **Task: Implement Timer Toggle Component/State**
-    - [ ] Write tests for the timer's visibility toggle (hidden/shown states).
-    - [ ] Implement the toggle functionality in the timer component (clicking/touching numbers hides/shows them).
-    - [ ] Add the "Show Timer" icon/placeholder for the hidden state.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 2: Timer Low-Pressure Mode' (Protocol in workflow.md)**
+## Phase 2: Timer Low-Pressure Mode [checkpoint: fe2c0df]
+- [x] **Task: Implement Timer Toggle Component/State** [3bea563]
+    - [x] Write tests for the timer's visibility toggle (hidden/shown states).
+    - [x] Implement the toggle functionality in the timer component (clicking/touching numbers hides/shows them).
+    - [x] Add the "Show Timer" icon/placeholder for the hidden state.
+- [x] **Task: Conductor - User Manual Verification 'Phase 2: Timer Low-Pressure Mode' (Protocol in workflow.md)** [fe2c0df]
 
 ## Phase 3: Socratic Hint Parsing & Display
 - [ ] **Task: Implement `ideal_solution` Parser Utility**
