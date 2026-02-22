@@ -57,7 +57,7 @@ export function LandingPage() {
       <div className="max-w-md w-full text-center space-y-12">
         <header>
           <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest mb-4">
-            Alpha v{packageJson.version}
+            v{packageJson.version}
           </div>
           <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Math Challenges
