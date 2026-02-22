@@ -1,10 +1,10 @@
 # Implementation Plan - UX & UI Enhancements (Track: ux_improvements_20260221)
 
 ## Phase 1: Landing Page & Admin UI Adjustments
-- [ ] **Task: Improve Landing Page Grade Selection**
-    - [ ] Write tests to verify the "Select Your Grade" header visibility.
-    - [ ] Implement the "Select Your Grade" header above the grade selection grid on the landing page.
-- [ ] **Task: Fix Admin Refresh Mode Tooltip Positioning**
+- [x] **Task: Improve Landing Page Grade Selection** [a28becf]
+    - [x] Write tests to verify the "Select Your Grade" header visibility.
+    - [x] Implement the "Select Your Grade" header above the grade selection grid on the landing page.
+- [~] **Task: Fix Admin Refresh Mode Tooltip Positioning**
     - [ ] Write tests to check the tooltip's positioning logic/styles.
     - [ ] Adjust the tooltip styles in the Admin Page to prevent overlap with the top toolbar.
 - [ ] **Task: Conductor - User Manual Verification 'Phase 1: Landing Page & Admin UI Adjustments' (Protocol in workflow.md)**
