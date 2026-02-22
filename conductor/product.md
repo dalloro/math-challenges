@@ -32,6 +32,9 @@ A gifted-level math testing and learning web application designed for students a
   - Secure, admin-only interface for managing the question bank.
   - Support for single question entry via wizard, bulk JSON imports, and data export for backups.
   - Real-time question explorer with deletion capabilities.
+- **Branded Webapp Experience:**
+  - Custom application logo integrated across all user and admin interfaces.
+  - Browser favicon and Apple Touch Icon support for a native-like experience when added to mobile home screens.
 
 ## Deployment & Tech Goals
 - Fully functional and deployed web application.

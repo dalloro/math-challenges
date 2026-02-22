@@ -6,6 +6,7 @@
 
 ## Visual Identity
 - **Clean & Focused Aesthetic:** A minimalist, distraction-free interface designed to maximize concentration during 100+ question sessions.
+- **Distinctive Branding:** Incorporate the official "Math Challenges" logo consistently in headers and as a webapp icon to establish professional credibility.
 - **High Readability:** Prioritize professional typography and generous whitespace. Use a neutral palette with intentional accent colors for key interactions.
 - **Adaptive Visualization:** Include a "Progressive Challenge Bar" that visually communicates the current difficulty or "Rank," providing a gamified sense of leveling up as questions become more complex.
 
