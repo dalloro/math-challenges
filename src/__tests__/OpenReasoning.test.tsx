@@ -114,16 +114,23 @@ describe('Open Reasoning UI & Integration', () => {
 
     fireEvent.click(screen.getByText(/Switch to Reasoning/i));
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
-    fireEvent.click(screen.getByText(/Show Ideal Solution/i));
+    
+    // 1. Submit the reasoning form
+    const submitBtn = screen.getByRole('button', { name: /Show Ideal Solution/i });
+    fireEvent.click(submitBtn);
 
-    // Expand the collapsible solution box (SolutionDisplay)
-    const expandBtn = await screen.findByText(/Show Ideal Solution/i);
+    // 2. Wait for the collapsible SolutionDisplay component to appear
+    // The button text is the same, but it's now part of the feedback view
+    const expandBtn = await screen.findByRole('button', { name: /Show Ideal Solution/i });
+    
+    // Verify the solution is initially hidden (collapsed)
+    expect(screen.queryByText('Ideal Solution Content')).not.toBeInTheDocument();
+    
+    // 3. Click to expand the solution
     fireEvent.click(expandBtn);
 
     await waitFor(() => {
       expect(aiService.evaluateReasoning).not.toHaveBeenCalled();
-      const elements = screen.getAllByText(/Ideal Solution/i);
-      expect(elements.length).toBeGreaterThan(0);
       expect(screen.getByText('Ideal Solution Content')).toBeInTheDocument();
     }, { timeout: 3000 });
   });
