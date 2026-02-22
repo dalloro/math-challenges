@@ -10,6 +10,7 @@ import { evaluateReasoning } from '../services/ai';
 import { getApiKey } from '../services/storage';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
+import { Logo } from '../components/Logo';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -252,16 +253,19 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
     }`}>
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-4">
-        <div className="flex flex-col">
-          <div className="flex items-center space-x-2">
-            <h2 className="text-xl font-semibold text-gray-900 tracking-tight">Grade {grade} Adaptive Challenge</h2>
-            {isStaticMode && (
-              <span className="px-2 py-0.5 bg-gray-100 text-gray-400 text-[8px] font-black uppercase tracking-widest rounded border border-gray-200">
-                Static Mode
-              </span>
-            )}
+        <div className="flex items-center space-x-4">
+          <Logo className="h-10 w-auto" />
+          <div className="flex flex-col">
+            <div className="flex items-center space-x-2">
+              <h2 className="text-xl font-semibold text-gray-900 tracking-tight">Grade {grade} Adaptive Challenge</h2>
+              {isStaticMode && (
+                <span className="px-2 py-0.5 bg-gray-100 text-gray-400 text-[8px] font-black uppercase tracking-widest rounded border border-gray-200">
+                  Static Mode
+                </span>
+              )}
+            </div>
+            <p className="text-sm text-gray-500 font-medium">Room: <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span></p>
           </div>
-          <p className="text-sm text-gray-500 font-medium">Room: <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span></p>
         </div>
         <div className="flex items-center space-x-6">
           <div 

@@ -4,6 +4,7 @@ import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 import { QuestionWizard } from '../components/QuestionWizard';
 import { BulkUpload, QuestionExplorer, QuestionExporter } from '../components/AdminComponents';
+import { Logo } from '../components/Logo';
 
 export function AdminPage() {
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ export function AdminPage() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
+          <Logo className="h-8 w-auto" />
           <h1 className="text-2xl font-bold text-gray-900 tracking-tight">Admin Dashboard</h1>
           <span className="px-2 py-1 bg-red-50 text-red-600 text-[10px] font-black uppercase tracking-widest rounded-md border border-red-100">
             Authenticated

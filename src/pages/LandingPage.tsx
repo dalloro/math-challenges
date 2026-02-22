@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
 import packageJson from '../../package.json';
+import { Logo } from '../components/Logo';
 
 export function LandingPage() {
   const navigate = useNavigate();
@@ -55,7 +56,8 @@ export function LandingPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50">
       <div className="max-w-md w-full text-center space-y-12">
-        <header>
+        <header className="flex flex-col items-center">
+          <Logo className="h-16 w-auto mb-6" />
           <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest mb-4">
             v{packageJson.version}
           </div>

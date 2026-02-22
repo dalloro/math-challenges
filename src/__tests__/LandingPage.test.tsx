@@ -19,4 +19,13 @@ describe('LandingPage', () => {
     );
     expect(screen.getByText(/Select Your Grade/i)).toBeInTheDocument();
   });
+
+  it('renders the application logo', () => {
+    render(
+      <BrowserRouter>
+        <LandingPage />
+      </BrowserRouter>
+    );
+    expect(screen.getByAltText(/Math Challenges Logo/i)).toBeInTheDocument();
+  });
 });
