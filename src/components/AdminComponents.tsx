@@ -106,7 +106,7 @@ export function BulkUpload() {
           <p className="text-sm text-gray-500">Paste an array of question objects here.</p>
         </div>
         <div className="flex items-center space-x-3 bg-gray-50 p-2 pl-4 rounded-xl border border-gray-200 group relative">
-          <div className="absolute bottom-full right-0 mb-2 w-64 p-3 bg-gray-900 text-white text-[10px] rounded-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl z-50">
+          <div className="absolute top-full right-0 mt-2 w-64 p-3 bg-gray-900 text-white text-[10px] rounded-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl z-50">
             <p className="font-bold mb-1">Refresh Mode Logic:</p>
             <p className="leading-relaxed">
               <span className="text-blue-400">ON:</span> Deletes all existing questions for the Grades/Levels in your JSON before adding new ones. (Clean Replace)
