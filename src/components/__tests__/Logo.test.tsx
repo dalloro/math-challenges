@@ -7,7 +7,7 @@ describe('Logo Component', () => {
     render(<Logo />);
     const logoImg = screen.getByAltText(/Math Challenges Logo/i);
     expect(logoImg).toBeInTheDocument();
-    expect(logoImg).toHaveAttribute('src', '/logo.svg');
+    expect(logoImg).toHaveAttribute('src', expect.stringContaining('logo.svg'));
   });
 
   it('applies custom className', () => {

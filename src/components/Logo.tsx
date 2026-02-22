@@ -1,3 +1,5 @@
+import logoUrl from '../assets/logo.svg';
+
 interface LogoProps {
   className?: string;
 }
@@ -5,7 +7,7 @@ interface LogoProps {
 export function Logo({ className = "h-8 w-auto" }: LogoProps) {
   return (
     <img 
-      src="/logo.svg" 
+      src={logoUrl} 
       alt="Math Challenges Logo" 
       className={`transition-opacity duration-300 ${className}`}
     />
