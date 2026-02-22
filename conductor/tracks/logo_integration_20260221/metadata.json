@@ -1,0 +1,8 @@
+{
+  "track_id": "logo_integration_20260221",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-21T14:40:00Z",
+  "updated_at": "2026-02-21T14:40:00Z",
+  "description": "WebApp does not have a logo, nor a little icon to be displayed on iPhone home screen. Use the 'logo.svg' provided."
+}
