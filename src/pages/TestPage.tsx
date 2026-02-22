@@ -56,6 +56,10 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   
   const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
   const [lastActivity, setLastActivity] = useState(Date.now());
+  const [timerVisible, setTimerVisible] = useState(() => {
+    const stored = localStorage.getItem('math_timer_visible');
+    return stored === null ? true : stored === 'true';
+  });
 
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
@@ -258,8 +262,19 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
           <p className="text-sm text-gray-500 font-medium">Room: <span className="font-mono text-blue-600 font-bold uppercase">{roomCode}</span></p>
         </div>
         <div className="flex items-center space-x-6">
-          <div className="text-lg font-mono font-bold text-blue-600 bg-white border border-blue-100 px-3 py-1 rounded-lg shadow-sm">
-            {formatTime(timer)}
+          <div 
+            onClick={() => {
+              const newState = !timerVisible;
+              setTimerVisible(newState);
+              localStorage.setItem('math_timer_visible', String(newState));
+            }}
+            className="text-lg font-mono font-bold text-blue-600 bg-white border border-blue-100 px-3 py-1 rounded-lg shadow-sm cursor-pointer hover:bg-blue-50 transition-colors"
+          >
+            {timerVisible ? formatTime(timer) : (
+              <span className="text-[10px] uppercase tracking-widest flex items-center">
+                Show Timer
+              </span>
+            )}
           </div>
           <button onClick={() => navigate('/')} className="text-sm font-bold text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest">
             EXIT
