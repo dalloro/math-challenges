@@ -71,9 +71,14 @@ export function LandingPage() {
           {/* New Test Section */}
           <section className="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 space-y-6">
             <div className="space-y-4">
-              <label className="block text-sm font-semibold text-gray-700 uppercase tracking-wider">
-                Start a New Challenge
-              </label>
+              <div className="space-y-2">
+                <h3 className="text-sm font-black uppercase tracking-[0.2em] text-blue-600">
+                  Select Your Grade
+                </h3>
+                <p className="text-xs font-medium text-gray-500">
+                  Choose your school grade to start a tailored challenge.
+                </p>
+              </div>
               <div className="grid grid-cols-4 gap-2">
                 {Array.from({ length: 12 }, (_, i) => i + 1).map((grade) => (
                   <button
