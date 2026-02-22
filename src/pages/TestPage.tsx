@@ -293,8 +293,8 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
         </div>
       </header>
 
-      <main className="flex-1 max-w-4xl w-full mx-auto py-8 flex flex-col space-y-8">
-        <div className="bg-white rounded-[2.5rem] shadow-sm border border-gray-100 p-8 md:p-12">
+      <main className="flex-1 max-w-4xl w-full mx-auto py-4 sm:py-8 flex flex-col space-y-8 scale-[0.9] sm:scale-100 origin-top transition-transform">
+        <div className="bg-white rounded-[2.5rem] shadow-sm border border-gray-100 p-6 md:p-12">
           <div className="mb-10">
             <div className="flex justify-between items-start">
               <div className="flex items-center space-x-3 mb-4">
@@ -313,7 +313,8 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                   onClick={() => setModality(modality === 'mcq' ? 'reasoning' : 'mcq')}
                   className="text-[10px] font-black uppercase tracking-widest text-blue-600 hover:text-blue-800 transition-colors"
                 >
-                  {modality === 'mcq' ? 'Switch to Reasoning' : 'Switch to Multiple Choice'}
+                  <span className="sm:hidden">{modality === 'mcq' ? 'Reasoning' : 'MCQ'}</span>
+                  <span className="hidden sm:inline">{modality === 'mcq' ? 'Switch to Reasoning' : 'Switch to Multiple Choice'}</span>
                 </button>
               )}
             </div>
@@ -371,11 +372,11 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                   </div>
                 )}
 
-                <div className="flex justify-end">
+                <div className="flex justify-center sm:justify-end">
                   <button
                     onClick={handleSubmitReasoning}
                     disabled={!reasoning || isSubmitting}
-                    className="px-10 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-blue-100"
+                    className="w-full sm:w-auto px-10 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-blue-100"
                   >
                     {isSubmitting ? 'Analyzing...' : isStaticMode ? 'Show Ideal Solution' : 'Submit for Review'}
                   </button>
@@ -443,8 +444,8 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
           )}
 
           {(!modality || modality === 'mcq' || aiFeedback) && (
-            <div className="mt-12 flex items-center justify-between">
-              <div className="text-sm text-gray-400 font-medium">
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div className="text-sm text-gray-400 font-medium order-2 sm:order-1">
                 {theme === 'focus' && (
                   <span className="text-blue-500 flex items-center italic">
                     <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse mr-2"></span>
@@ -455,7 +456,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
               <button
                 onClick={handleNext}
                 disabled={!selectedOption}
-                className="px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg hover:bg-black disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-gray-200"
+                className="w-full sm:w-auto px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg hover:bg-black disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-gray-200 order-1 sm:order-2"
               >
                 Confirm Selection
               </button>

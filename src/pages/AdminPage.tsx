@@ -81,7 +81,7 @@ export function AdminPage() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 overflow-y-auto p-8">
+        <main className="flex-1 overflow-y-auto p-4 sm:p-8 scale-[0.9] sm:scale-100 origin-top transition-transform">
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Tabs */}
             <div className="flex space-x-1 bg-gray-200 p-1 rounded-xl w-fit">

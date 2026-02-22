@@ -54,8 +54,8 @@ export function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50">
-      <div className="max-w-md w-full text-center space-y-12">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50 overflow-x-hidden">
+      <div className="max-w-md w-full text-center space-y-12 scale-[0.9] sm:scale-100 origin-top transition-transform">
         <header className="flex flex-col items-center">
           <Logo className="h-16 w-auto mb-6" />
           <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest mb-4">
