@@ -16,14 +16,14 @@
     - [x] Add the "Show Timer" icon/placeholder for the hidden state.
 - [x] **Task: Conductor - User Manual Verification 'Phase 2: Timer Low-Pressure Mode' (Protocol in workflow.md)** [fe2c0df]
 
-## Phase 3: Socratic Hint Parsing & Display
-- [ ] **Task: Implement `ideal_solution` Parser Utility**
-    - [ ] Write unit tests for the Socratic hint parser (case-insensitive "Socratic Hint:" delimiter, no hint scenarios).
-    - [ ] Implement the `parseIdealSolution` utility function to separate the hint from the solution.
-- [ ] **Task: Implement Collapsible Solution Display Component**
-    - [ ] Write tests for the `SolutionDisplay` component (initial collapsed state, toggle expansion).
-    - [ ] Implement the `SolutionDisplay` component to render the Socratic hint box and the collapsible ideal solution box.
-- [ ] **Task: Update Test Session Page for Displaying Parsed Solutions**
-    - [ ] Write integration tests for the new solution display flow in the test session.
-    - [ ] Integrate the `SolutionDisplay` component into the test session UI.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 3: Socratic Hint Parsing & Display' (Protocol in workflow.md)**
+## Phase 3: Socratic Hint Parsing & Display [checkpoint: 083bc27]
+- [x] **Task: Implement `ideal_solution` Parser Utility** [61a297c]
+    - [x] Write unit tests for the Socratic hint parser (case-insensitive "Socratic Hint:" delimiter, no hint scenarios).
+    - [x] Implement the `parseIdealSolution` utility function to separate the hint from the solution.
+- [x] **Task: Implement Collapsible Solution Display Component** [020d695]
+    - [x] Write tests for the `SolutionDisplay` component (initial collapsed state, toggle expansion).
+    - [x] Implement the `SolutionDisplay` component to render the Socratic hint box and the collapsible ideal solution box.
+- [x] **Task: Update Test Session Page for Displaying Parsed Solutions** [3c1d291]
+    - [x] Write integration tests for the new solution display flow in the test session.
+    - [x] Integrate the `SolutionDisplay` component into the test session UI.
+- [x] **Task: Conductor - User Manual Verification 'Phase 3: Socratic Hint Parsing & Display' (Protocol in workflow.md)** [083bc27]
