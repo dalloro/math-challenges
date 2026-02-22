@@ -28,7 +28,7 @@ vi.mock('../hooks/useRoom', () => ({
 }));
 
 vi.mock('../hooks/useSession', () => ({
-  useSession: (initialState: any) => ({
+  useSession: (initialState?: { answers?: unknown[], score?: number, currentQuestionIndex?: number }) => ({
     session: { 
       answers: initialState?.answers || [], 
       score: initialState?.score || 0,

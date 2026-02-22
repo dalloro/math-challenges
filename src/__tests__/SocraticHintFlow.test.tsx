@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { TestPage } from '../pages/TestPage';
 import { BrowserRouter } from 'react-router-dom';
@@ -32,7 +32,7 @@ vi.mock('../hooks/useRoom', () => ({
 }));
 
 vi.mock('../hooks/useSession', () => ({
-  useSession: (initialState: any) => ({
+  useSession: (initialState?: { answers?: unknown[], score?: number, currentQuestionIndex?: number }) => ({
     session: { 
       answers: initialState?.answers || [], 
       score: initialState?.score || 0,
