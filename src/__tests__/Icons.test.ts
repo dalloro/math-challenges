@@ -7,8 +7,13 @@ describe('App Icons and Favicon', () => {
     expect(html).toContain('<link rel="icon" type="image/svg+xml" href="/logo.svg?v=1" />');
   });
 
-  it('should have an apple-touch-icon link pointing to logo.svg', () => {
+  it('should have an apple-touch-icon link pointing to apple-touch-icon.png', () => {
     const html = fs.readFileSync('index.html', 'utf-8');
-    expect(html).toContain('<link rel="apple-touch-icon" href="/logo.svg?v=1" />');
+    expect(html).toContain('<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />');
+  });
+
+  it('should have a link to the web manifest', () => {
+    const html = fs.readFileSync('index.html', 'utf-8');
+    expect(html).toContain('<link rel="manifest" href="/manifest.webmanifest" />');
   });
 });
