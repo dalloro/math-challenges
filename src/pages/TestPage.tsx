@@ -8,6 +8,8 @@ import { useRoom } from '../hooks/useRoom';
 import type { RoomState } from '../hooks/useRoom';
 import { evaluateReasoning } from '../services/ai';
 import { getApiKey } from '../services/storage';
+import { SolutionDisplay } from '../components/SolutionDisplay';
+import { parseIdealSolution } from '../utils/solutionParser';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -384,20 +386,20 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
               </div>
 
               {/* AI/Ideal Feedback */}
-              <div className={`p-8 rounded-3xl border ${
-                feedbackType === 'ai' ? 'bg-purple-50 border-purple-100' : 'bg-blue-50 border-blue-100'
-              }`}>
-                <h4 className={`text-xs font-black uppercase tracking-[0.2em] mb-4 ${
-                  feedbackType === 'ai' ? 'text-purple-500' : 'text-blue-500'
-                }`}>
-                  {feedbackType === 'ai' ? 'AI Feedback' : 'Ideal Solution'}
-                </h4>
-                <div className={`text-xl leading-relaxed whitespace-pre-wrap font-medium ${
-                  feedbackType === 'ai' ? 'text-purple-900' : 'text-blue-900'
-                }`}>
-                  {aiFeedback}
+              {feedbackType === 'ai' ? (
+                <div className="p-8 rounded-3xl border bg-purple-50 border-purple-100 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                  <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-purple-500">
+                    AI Feedback
+                  </h4>
+                  <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
+                    {aiFeedback}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <SolutionDisplay 
+                  {...parseIdealSolution(aiFeedback || '')} 
+                />
+              )}
               
               <div className="flex flex-col space-y-4">
                 {feedbackType !== 'ai' && (
