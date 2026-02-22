@@ -21,3 +21,6 @@
     - [x] Manually verify responsiveness on different screen sizes and devices (especially iPhone).
     - [x] Confirm that Vite's asset handling properly manages hashing for the logo to allow for future "cache busting" as requested.
 - [x] **Task: Conductor - User Manual Verification 'Phase 3: Final Verification & Optimization' (Protocol in workflow.md)** [8dd8ddb]
+
+## Phase: Review Fixes
+- [x] Task: Apply review suggestions [ba8f0b4]
