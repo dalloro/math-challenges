@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import * as storage from '../services/storage';
 import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useRoomHook from '../hooks/useRoom';
+import { FieldValue } from 'firebase/firestore';
 
 // Mock dependencies
 vi.mock('../services/storage');
@@ -42,7 +43,7 @@ describe('Blind Mode & Mandatory Reasoning', () => {
         remainingSeconds: 3600,
         currentQuestionId: null,
         lastInteractionAt: Date.now(),
-        createdAt: {} as any
+        createdAt: {} as unknown as FieldValue
       },
       loading: false,
       error: null,
