@@ -44,7 +44,7 @@ describe('AI Service', () => {
       const genAI = new GoogleGenerativeAI('fake-key');
       const model = genAI.getGenerativeModel({ model: 'gemini-3-flash-preview' });
       
-      vi.mocked(model.generateContent).mockRejectedValueOnce({ message: '503 high demand' });
+      vi.mocked(model.generateContent).mockRejectedValueOnce(new Error('503 high demand'));
       
       await expect(evaluateReasoning('Q', 'Input', 'Solution', 'fake-key'))
         .rejects.toThrow(/AI service is currently overloaded/);
