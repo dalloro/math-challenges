@@ -11,7 +11,7 @@ import { getApiKey, getTestModality } from '../services/storage';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, CheckCircle2, XCircle, MessageSquare } from 'lucide-react';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -268,6 +268,8 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
 
   if (!currentQuestion) return null;
 
+  const isCorrect = selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
+
   return (
     <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
@@ -413,56 +415,74 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
             </div>
           ) : (
             <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-              {/* Comparison Section */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-8 rounded-3xl border border-gray-100 bg-gray-50/50">
-                  <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-gray-400">
-                    Your Answer
-                  </h4>
-                  <div className="text-3xl font-black text-gray-900 mb-6">
-                    {selectedOption}
-                  </div>
-                  <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-gray-400">
-                    Your Reasoning
-                  </h4>
-                  <div className="text-lg leading-relaxed whitespace-pre-wrap font-medium text-gray-700 italic">
-                    "{reasoning}"
-                  </div>
+              {/* 1. Correctness Header Banner */}
+              <div className={`p-6 rounded-[2rem] border-2 flex items-center space-x-4 ${
+                isCorrect ? 'bg-green-50 border-green-100 text-green-700' : 'bg-red-50 border-red-100 text-red-700'
+              }`}>
+                <div className={`p-2 rounded-full ${isCorrect ? 'bg-green-100' : 'bg-red-100'}`}>
+                  {isCorrect ? <CheckCircle2 size={24} /> : <XCircle size={24} />}
                 </div>
+                <div>
+                  <h4 className="text-xl font-black tracking-tight">
+                    {isCorrect ? "Great job! That's correct." : "Not exactly! Let's review."}
+                  </h4>
+                  <p className="text-sm opacity-80 font-medium">
+                    {isCorrect ? "Your reasoning was sound." : "Don't worry, every mistake is a learning opportunity."}
+                  </p>
+                </div>
+              </div>
 
-                <div className="flex flex-col space-y-6">
-                  {feedbackType === 'ai' ? (
-                    <div className="p-8 rounded-3xl border bg-purple-50 border-purple-100 h-full">
-                      <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-purple-500">
-                        AI Feedback
-                      </h4>
-                      <div className="text-lg leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
+              {/* 2. Tutor Review / Feedback Section (Primary) */}
+              <div className="space-y-4">
+                <div className="flex items-center space-x-2 ml-4">
+                  <MessageSquare size={16} className="text-purple-500" />
+                  <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">
+                    Tutor Review
+                  </h4>
+                </div>
+                
+                {feedbackType === 'ai' ? (
+                  <div className="p-8 rounded-[2rem] border-2 bg-purple-50 border-purple-100 shadow-sm shadow-purple-50">
+                    <div className="prose prose-purple max-w-none">
+                      <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
                         {aiFeedback}
                       </div>
                     </div>
-                  ) : (
-                    <div className="space-y-6">
-                      <div className={`p-6 rounded-3xl border font-bold text-xl ${
-                        selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase()
-                          ? 'bg-green-50 border-green-100 text-green-700'
-                          : 'bg-red-50 border-red-100 text-red-700'
-                      }`}>
-                        {selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase()
-                          ? 'Great job! That\'s correct.'
-                          : 'Not exactly! Let\'s review.'}
-                      </div>
-                      <SolutionDisplay 
-                        {...parseIdealSolution(aiFeedback || '')} 
-                      />
+                  </div>
+                ) : (
+                  <SolutionDisplay 
+                    {...parseIdealSolution(aiFeedback || '')} 
+                  />
+                )}
+              </div>
+
+              {/* 3. Your Submission Summary (Secondary) */}
+              <div className="p-8 rounded-[2rem] border border-gray-100 bg-gray-50/30">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
+                  <div className="md:col-span-1">
+                    <h4 className="text-[10px] font-black uppercase tracking-widest mb-2 text-gray-400">
+                      Your Answer
+                    </h4>
+                    <div className={`text-2xl font-black ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+                      {selectedOption}
                     </div>
-                  )}
+                  </div>
+                  <div className="md:col-span-3">
+                    <h4 className="text-[10px] font-black uppercase tracking-widest mb-2 text-gray-400">
+                      Your Reasoning
+                    </h4>
+                    <div className="text-gray-600 leading-relaxed italic font-medium">
+                      "{reasoning}"
+                    </div>
+                  </div>
                 </div>
               </div>
               
+              {/* 4. Action Area */}
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-end gap-6 pt-8 border-t border-gray-100">
                 <button
                   onClick={handleNext}
-                  className="w-full sm:w-auto px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg hover:bg-black transition-all shadow-xl shadow-gray-200"
+                  className="w-full sm:w-auto px-12 py-5 bg-gray-900 text-white rounded-2xl font-bold text-xl hover:bg-black transition-all shadow-xl shadow-gray-200 active:scale-95"
                 >
                   Continue to Next Challenge
                 </button>

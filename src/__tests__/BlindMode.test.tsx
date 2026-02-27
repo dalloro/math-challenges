@@ -95,6 +95,6 @@ describe('Blind Mode & Mandatory Reasoning', () => {
     fireEvent.click(submitBtn);
 
     // Should now show feedback
-    expect(await screen.findByText(/Your Reasoning/i)).toBeDefined();
+    expect((await screen.findAllByText(/Your Reasoning/i)).length).toBeGreaterThan(0);
   });
 });
