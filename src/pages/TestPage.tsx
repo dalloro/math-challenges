@@ -321,7 +321,7 @@ function TestEngine({
     <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
     }`}>
-      <OutcomeOverlay type={outcomeType} onComplete={handleOutcomeComplete} />
+      <OutcomeOverlay key={outcomeType} type={outcomeType} onComplete={handleOutcomeComplete} />
       
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-2 sm:py-4">
         <div className="flex items-center space-x-2 sm:space-x-4">
