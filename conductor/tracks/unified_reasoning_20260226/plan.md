@@ -1,8 +1,8 @@
 # Implementation Plan - Unified Reasoning Modality
 
 ## Phase 1: Configuration & State Management
-- [ ] Task: Create Prompt Asset
-    - [ ] Create `TEST-REASONING.md` in the project root with the provided prompt
+- [x] Task: Create Prompt Asset [cb719e4]
+    - [x] Create `TEST-REASONING.md` in the project root with the provided prompt
 - [ ] Task: Update State Management for New Modality
     - [ ] Update `src/services/storage.ts` to support saving/loading `testModality` (combined vs blind)
     - [ ] Write unit tests for the updated storage utility
