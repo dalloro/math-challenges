@@ -38,6 +38,17 @@ describe('AI Service', () => {
       await expect(evaluateReasoning('Q', 'Input', 'Solution', ''))
         .rejects.toThrow('API Key is required');
     });
+
+    it('should throw specific error message for 503 high demand', async () => {
+      const { GoogleGenerativeAI } = await import('@google/generative-ai');
+      const genAI = new GoogleGenerativeAI('fake-key');
+      const model = genAI.getGenerativeModel({ model: 'gemini-3-flash-preview' });
+      
+      vi.mocked(model.generateContent).mockRejectedValueOnce({ message: '503 high demand' });
+      
+      await expect(evaluateReasoning('Q', 'Input', 'Solution', 'fake-key'))
+        .rejects.toThrow(/AI service is currently overloaded/);
+    });
   });
 
   describe('validateApiKey', () => {

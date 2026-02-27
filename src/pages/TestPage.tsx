@@ -441,21 +441,25 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                       </div>
                     </div>
                   ) : (
-                    <SolutionDisplay 
-                      {...parseIdealSolution(aiFeedback || '')} 
-                    />
+                    <div className="space-y-6">
+                      <div className={`p-6 rounded-3xl border font-bold text-xl ${
+                        selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase()
+                          ? 'bg-green-50 border-green-100 text-green-700'
+                          : 'bg-red-50 border-red-100 text-red-700'
+                      }`}>
+                        {selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase()
+                          ? 'Great job! That\'s correct.'
+                          : 'Not exactly! Let\'s review.'}
+                      </div>
+                      <SolutionDisplay 
+                        {...parseIdealSolution(aiFeedback || '')} 
+                      />
+                    </div>
                   )}
                 </div>
               </div>
               
-              <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-gray-100">
-                <div className="text-sm font-bold flex items-center">
-                  {selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase() ? (
-                    <span className="text-green-600 bg-green-50 px-4 py-2 rounded-full">Great job! That's correct.</span>
-                  ) : (
-                    <span className="text-red-600 bg-red-50 px-4 py-2 rounded-full">Not exactly! Review the solution above.</span>
-                  )}
-                </div>
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-end gap-6 pt-8 border-t border-gray-100">
                 <button
                   onClick={handleNext}
                   className="w-full sm:w-auto px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg hover:bg-black transition-all shadow-xl shadow-gray-200"
