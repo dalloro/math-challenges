@@ -23,17 +23,17 @@
     - [x] Write integration tests to verify LaTeX rendering (e.g., checking for specific KaTeX classes). [9eccaf4]
 - [x] Task: Conductor - User Manual Verification 'Phase 3: LaTeX Math Rendering' (Protocol in workflow.md) [9eccaf4]
 
-## Phase 4: Delayed Review Flow
-- [~] Task: Implement "Next" Button Delay
-    - [ ] Add logic in `TestPage.tsx` to disable the "Next" button for 5s in Static Mode.
-    - [ ] Implement the countdown timer for the delay.
-- [ ] Task: Add Delay Tooltip
-    - [ ] Integrate a tooltip component (or custom logic) to show the "Take a moment..." message.
-    - [ ] Write unit tests for the button state and tooltip visibility.
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: Delayed Review Flow' (Protocol in workflow.md)
+## Phase 4: Delayed Review Flow [checkpoint: fba0fb1]
+- [x] Task: Implement "Next" Button Delay [fba0fb1]
+    - [x] Add logic in `TestPage.tsx` to disable the "Next" button for 5s in Static Mode. [fba0fb1]
+    - [x] Implement the countdown timer for the delay. [fba0fb1]
+- [x] Task: Add Delay Tooltip [fba0fb1]
+    - [x] Integrate a tooltip component (or custom logic) to show the "Take a moment..." message. [fba0fb1]
+    - [x] Write unit tests for the button state and tooltip visibility. [fba0fb1]
+- [x] Task: Conductor - User Manual Verification 'Phase 4: Delayed Review Flow' (Protocol in workflow.md) [fba0fb1]
 
 ## Phase 5: Heart-Beat Animations
-- [ ] Task: Create Heart-Beat Component
+- [~] Task: Create Heart-Beat Component
     - [ ] Implement a reusable `OutcomeOverlay` component.
     - [ ] Define the heart-beat CSS keyframes.
 - [ ] Task: Trigger Animations in Test Engine
