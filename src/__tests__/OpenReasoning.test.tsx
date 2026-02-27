@@ -14,7 +14,11 @@ vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
-vi.mock('../services/storage');
+vi.mock('../services/storage', () => ({
+  getApiKey: vi.fn(),
+  getTestModality: vi.fn(() => 'combined'),
+  saveTestModality: vi.fn(),
+}));
 
 const mockQuestion: useQuestionsHook.Question = {
   id: '1',
@@ -43,6 +47,7 @@ function StatefulSessionMock() {
 describe('Open Reasoning UI & Integration', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(storageService.getTestModality).mockReturnValue('combined');
     vi.mocked(useQuestionsHook.useQuestions).mockReturnValue({
       questions: [mockQuestion],
       loading: false,
@@ -84,7 +89,7 @@ describe('Open Reasoning UI & Integration', () => {
       </MemoryRouter>
     );
 
-    fireEvent.click(screen.getByText(/Switch to Reasoning/i));
+    fireEvent.click(screen.getByText('A'));
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
     fireEvent.click(screen.getByText(/Submit for Review/i));
 
@@ -112,7 +117,7 @@ describe('Open Reasoning UI & Integration', () => {
 
     expect(screen.getByText(/Static Mode/i)).toBeInTheDocument();
 
-    fireEvent.click(screen.getByText(/Switch to Reasoning/i));
+    fireEvent.click(screen.getByText('A'));
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
     
     // 1. Submit the reasoning form
@@ -120,7 +125,6 @@ describe('Open Reasoning UI & Integration', () => {
     fireEvent.click(submitBtn);
 
     // 2. Wait for the collapsible SolutionDisplay component to appear
-    // The button text is the same, but it's now part of the feedback view
     const expandBtn = await screen.findByRole('button', { name: /Show Ideal Solution/i });
     
     // Verify the solution is initially hidden (collapsed)
@@ -147,7 +151,7 @@ describe('Open Reasoning UI & Integration', () => {
       </MemoryRouter>
     );
 
-    fireEvent.click(screen.getByText(/Switch to Reasoning/i));
+    fireEvent.click(screen.getByText('A'));
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My logic' } });
     fireEvent.click(screen.getByText(/Submit for Review/i));
 

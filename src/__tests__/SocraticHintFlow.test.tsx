@@ -11,6 +11,7 @@ vi.mock('../firebase', () => ({
 
 vi.mock('../services/storage', () => ({
   getApiKey: vi.fn(() => null), // Force static mode
+  getTestModality: vi.fn(() => 'combined'),
 }));
 
 vi.mock('../hooks/useRoom', () => ({
@@ -68,9 +69,9 @@ describe('TestPage Integration - Socratic Hint', () => {
       </BrowserRouter>
     );
 
-    // Switch to reasoning modality
-    const switchBtn = screen.getByText(/Switch to Reasoning/i);
-    fireEvent.click(switchBtn);
+    // Select an option
+    const option = screen.getByText('4');
+    fireEvent.click(option);
 
     // Enter some reasoning
     const textarea = screen.getByPlaceholderText(/Explain your reasoning/i);
@@ -85,6 +86,8 @@ describe('TestPage Integration - Socratic Hint', () => {
     expect(screen.getByText(/Count on your fingers/i)).toBeInTheDocument();
 
     // Verify Ideal Solution box is present but collapsed
+    // Note: There are now TWO 'Show Ideal Solution' text matches: one was the submit button, one is the collapsible trigger.
+    // The collapsible trigger should be the one remaining.
     expect(screen.getByText(/Show Ideal Solution/i)).toBeInTheDocument();
     expect(screen.queryByText(/The answer is 4/i)).not.toBeInTheDocument();
 

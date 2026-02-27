@@ -5,6 +5,7 @@ import { TestPage } from '../pages/TestPage';
 import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useSessionHook from '../hooks/useSession';
 import * as useRoomHook from '../hooks/useRoom';
+import * as storage from '../services/storage';
 import { useState, useCallback } from 'react';
 import { FieldValue } from 'firebase/firestore';
 
@@ -12,11 +13,16 @@ import { FieldValue } from 'firebase/firestore';
 vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
 vi.mock('../hooks/useRoom');
+vi.mock('../services/storage', () => ({
+  getApiKey: vi.fn(),
+  getTestModality: vi.fn(() => 'combined'),
+  saveTestModality: vi.fn(),
+}));
 
 const mockQuestions: useQuestionsHook.Question[] = [
-  { id: '1', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q1 L1', options: ['A'], correct_answer: 'A', ideal_solution: '', failure_modes: {} },
-  { id: '2', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q2 L1', options: ['A'], correct_answer: 'A', ideal_solution: '', failure_modes: {} },
-  { id: '3', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q3 L1', options: ['A'], correct_answer: 'A', ideal_solution: '', failure_modes: {} }
+  { id: '1', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q1 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 1', failure_modes: {} },
+  { id: '2', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q2 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 2', failure_modes: {} },
+  { id: '3', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q3 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 3', failure_modes: {} }
 ];
 
 function StatefulSessionMock() {
@@ -46,6 +52,8 @@ function StatefulSessionMock() {
 describe('Adaptive Engine Logic', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(storage.getTestModality).mockReturnValue('combined');
+    vi.mocked(storage.getApiKey).mockReturnValue(null);
     vi.mocked(useRoomHook.useRoom).mockReturnValue({
       roomCode: 'TEST01',
       roomData: {
@@ -66,6 +74,17 @@ describe('Adaptive Engine Logic', () => {
     });
   });
 
+  async function submitQuestion() {
+    // 1. Select option
+    fireEvent.click(screen.getByText('A'));
+    // 2. Type reasoning
+    fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My reasoning' } });
+    // 3. Submit for review
+    fireEvent.click(screen.getByText(/Show Ideal Solution/i));
+    // 4. Confirm selection (which now appears in the feedback view)
+    fireEvent.click(await screen.findByText(/Continue to Next Challenge/i));
+  }
+
   it('should stay at level 1 if level 2 questions do not exist', async () => {
     vi.mocked(useQuestionsHook.useQuestions).mockReturnValue({
       questions: mockQuestions,
@@ -85,8 +104,7 @@ describe('Adaptive Engine Logic', () => {
 
     // Initial question (randomized, but we know it's one of the 3)
     const q1 = await screen.findByText(/Q\d L1/);
-    fireEvent.click(screen.getByText('A'));
-    fireEvent.click(screen.getByText(/Confirm Selection/i));
+    await submitQuestion();
 
     // Wait for the NEXT question (should be one of the remaining two)
     await waitFor(() => {
@@ -95,8 +113,7 @@ describe('Adaptive Engine Logic', () => {
     });
     
     // Answer second question correctly (Streak = 2)
-    fireEvent.click(screen.getByText('A'));
-    fireEvent.click(screen.getByText(/Confirm Selection/i));
+    await submitQuestion();
 
     // Wait for the THIRD question
     await waitFor(() => {
