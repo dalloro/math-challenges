@@ -379,9 +379,17 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
 
               {/* Mandatory Reasoning Section */}
               <div className="space-y-4">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">
-                  Step-by-Step Reasoning
-                </label>
+                <div className="flex items-center space-x-2 ml-1">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">
+                    Step-by-Step Reasoning
+                  </label>
+                  <div className="group relative">
+                    <AlertCircle size={12} className="text-blue-400 cursor-help" />
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2 bg-gray-900 text-white text-[10px] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                      Explain how you arrived at your answer. This helps the AI Tutor provide better feedback!
+                    </div>
+                  </div>
+                </div>
                 <textarea
                   value={reasoning}
                   onChange={(e) => setReasoning(e.target.value)}
