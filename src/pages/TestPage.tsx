@@ -11,6 +11,7 @@ import { getApiKey, getTestModality, isAiEnabled } from '../services/storage';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
+import { OutcomeOverlay } from '../components/OutcomeOverlay';
 import { AlertCircle, CheckCircle2, XCircle, MessageSquare } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
@@ -61,6 +62,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   const [feedbackType, setFeedbackType] = useState<'ai' | 'ideal' | null>(null);
   const [feedbackError, setFeedbackError] = useState<string | null>(null);
   const [validationError, setValidationError] = useState<string | null>(null);
+  const [outcomeType, setOutcomeType] = useState<'happy' | 'sad' | 'completed' | null>(null);
   
   const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
   const [lastActivity, setLastActivity] = useState(Date.now());
@@ -237,6 +239,10 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       setSelectedOption(blindAnswer);
     }
 
+    // Trigger animation immediately on submit
+    const isCorrectValue = (testModality === 'blind' ? blindAnswer : selectedOption)?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
+    setOutcomeType(isCorrectValue ? 'happy' : 'sad');
+
     setIsSubmitting(true);
     setFeedbackError(null);
     
@@ -284,6 +290,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   if (!currentQuestion && totalUnanswered === 0 && session.answers.length > 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen space-y-6">
+        <OutcomeOverlay type="completed" onComplete={() => {}} />
         <div className="text-center">
           <h2 className="text-4xl font-bold text-gray-900">Challenge Complete!</h2>
           <p className="text-xl text-gray-500 mt-2">Final Rank: {currentRank}</p>
@@ -304,6 +311,8 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
     }`}>
+      <OutcomeOverlay type={outcomeType} onComplete={() => setOutcomeType(null)} />
+      
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-2 sm:py-4">
         <div className="flex items-center space-x-2 sm:space-x-4">
           <Logo className="h-7 sm:h-10 w-auto" />
