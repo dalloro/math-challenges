@@ -3,8 +3,9 @@
 ## Frontend
 - **Framework:** React (Vite-based for speed)
 - **Styling:** Tailwind CSS (Minimalist, "Clean & Focused" utility-first styling)
-- **Markdown Rendering:** `react-markdown` with `@tailwindcss/typography`
+- **Markdown Rendering:** `react-markdown` with `@tailwindcss/typography`, `remark-math`, and `rehype-katex`
 - **State Management:** React Context/Hooks (Managing adaptive testing state and modality transitions)
+- **Math Rendering:** `katex` (High-performance LaTeX rendering)
 
 ## Backend & Infrastructure (Zero-Cost / Firebase Spark Plan)
 - **Hosting:** Firebase Hosting (Static asset delivery)

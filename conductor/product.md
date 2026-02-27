@@ -29,6 +29,9 @@ A gifted-level math testing and learning web application designed for students a
   - **Combined Mode:** Multiple-choice options are visible alongside the reasoning input.
   - **Blind Mode:** Multiple-choice options are hidden; users must provide both reasoning and a manual final answer.
 - **AI-Powered Evaluation:** Integration with `gemini-3-flash-preview` to provide real-time, qualitative feedback on the student's reasoning, identifying strengths and flaws in their logic.
+  - **LaTeX Math Rendering:** Support for complex mathematical notation (fractions, roots, etc.) in both AI feedback and static solutions via KaTeX.
+  - **Visual Progressive Feedback:** "Heart-beat" animations and overlays celebrating correct answers, correcting mistakes, and honoring test completion.
+  - **Focused Review Period:** A mandatory 5-second reading delay for static "Ideal Solutions" to ensure pedagogical absorption before proceeding.
 - **Content Management Dashboard:** 
   - Secure, admin-only interface for managing the question bank.
   - Support for single question entry via wizard, bulk JSON imports, and data export for backups.
