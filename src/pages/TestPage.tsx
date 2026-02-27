@@ -452,7 +452,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                 
                 {feedbackType === 'ai' ? (
                   <div className="p-8 rounded-[2rem] border-2 bg-purple-50 border-purple-100 shadow-sm shadow-purple-50">
-                    <div className="prose prose-purple max-w-none">
+                    <div className="prose prose-purple prose-lg max-w-none">
                       {/* Simple check: If it contains common markdown chars, render as markdown */}
                       {aiFeedback && /[#*\[|]/.test(aiFeedback) ? (
                         <ReactMarkdown>{aiFeedback}</ReactMarkdown>
