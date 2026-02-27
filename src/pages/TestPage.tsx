@@ -12,6 +12,7 @@ import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
 import { AlertCircle, CheckCircle2, XCircle, MessageSquare } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -452,9 +453,14 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                 {feedbackType === 'ai' ? (
                   <div className="p-8 rounded-[2rem] border-2 bg-purple-50 border-purple-100 shadow-sm shadow-purple-50">
                     <div className="prose prose-purple max-w-none">
-                      <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
-                        {aiFeedback}
-                      </div>
+                      {/* Simple check: If it contains common markdown chars, render as markdown */}
+                      {aiFeedback && /[#*\[|]/.test(aiFeedback) ? (
+                        <ReactMarkdown>{aiFeedback}</ReactMarkdown>
+                      ) : (
+                        <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
+                          {aiFeedback}
+                        </div>
+                      )}
                     </div>
                   </div>
                 ) : (

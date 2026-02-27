@@ -39,6 +39,10 @@ Format your final response to the user using the following markdown structure:
 
 ### 3. Complete Walkthrough
 [Your clear, step-by-step explanation of the correct methodology and process to solve the problem].
+
+***
+
+**IMPORTANT:** Always return your final response in valid Markdown format. Use clear headings (H3), bullet points, and bold text to make the review highly readable.
 `;
 
 export async function evaluateReasoning(

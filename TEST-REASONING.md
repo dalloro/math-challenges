@@ -44,6 +44,10 @@ Format your final response to the user using the following markdown structure:
 
 ***
 
+**IMPORTANT:** Always return your final response in valid Markdown format. Use clear headings (H3), bullet points, and bold text to make the review highly readable.
+
+***
+
 # INPUT DATA
 <MATH_QUESTION>:
 [Insert Math Question Here]
