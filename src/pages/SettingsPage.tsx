@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getApiKey, saveApiKey, deleteApiKey, getTestModality, saveTestModality, TestModality } from '../services/storage';
+import { getApiKey, saveApiKey, deleteApiKey, getTestModality, saveTestModality } from '../services/storage';
+import type { TestModality } from '../services/storage';
 import { validateApiKey } from '../services/ai';
 import { Shield, Key, CheckCircle, AlertCircle, Trash2, RefreshCw, Info, Layout, EyeOff } from 'lucide-react';
 
