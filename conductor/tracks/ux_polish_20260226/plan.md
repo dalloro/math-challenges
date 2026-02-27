@@ -1,10 +1,10 @@
 # Implementation Plan - Enhanced Feedback & UX Polish
 
 ## Phase 1: Setup & State Management
-- [ ] Task: Update Storage for Gemini Toggle
-    - [ ] Update `src/services/storage.ts` to include `isAiEnabled` functions.
-    - [ ] Write unit tests for the new storage keys.
-- [ ] Task: Install Math Dependencies
+- [x] Task: Update Storage for Gemini Toggle [36cd27b]
+    - [x] Update `src/services/storage.ts` to include `isAiEnabled` functions. [36cd27b]
+    - [x] Write unit tests for the new storage keys. [36cd27b]
+- [~] Task: Install Math Dependencies
     - [ ] Install `remark-math` and `rehype-katex`.
     - [ ] Install `katex` and its CSS.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Setup & State Management' (Protocol in workflow.md)
