@@ -1,0 +1,8 @@
+{
+  "track_id": "ux_polish_20260226",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-26T23:00:00Z",
+  "updated_at": "2026-02-26T23:00:00Z",
+  "description": "Implement heart-beat animations for feedback, LaTeX math rendering with KaTeX, 5s delay for static solutions, and an AI toggle in settings."
+}
