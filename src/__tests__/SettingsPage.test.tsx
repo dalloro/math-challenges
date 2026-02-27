@@ -11,12 +11,15 @@ vi.mock('../services/storage', () => ({
   deleteApiKey: vi.fn(),
   getTestModality: vi.fn(),
   saveTestModality: vi.fn(),
+  isAiEnabled: vi.fn(),
+  saveAiEnabled: vi.fn(),
 }));
 
 describe('SettingsPage', () => {
   beforeEach(() => {
     vi.clearAllMocks();
     cleanup();
+    vi.mocked(storage.isAiEnabled).mockReturnValue(true);
   });
 
   it('should render the modality toggle with default "combined"', () => {
@@ -31,9 +34,6 @@ describe('SettingsPage', () => {
     // Check if both options are present
     expect(screen.getByText(/Combined Mode/i)).toBeDefined();
     expect(screen.getByText(/Blind Mode/i)).toBeDefined();
-    
-    // Check if combined is the active one (we can check by class or role depending on implementation)
-    // For now, let's just ensure the text is there
   });
 
   it('should save the new modality when changed', () => {
@@ -51,8 +51,18 @@ describe('SettingsPage', () => {
     expect(storage.saveTestModality).toHaveBeenCalledWith('blind');
   });
 
-  it('should persist modality across renders', () => {
-    vi.mocked(storage.getTestModality).mockReturnValue('blind');
+  it('should render the AI enable toggle', () => {
+    render(
+      <BrowserRouter>
+        <SettingsPage />
+      </BrowserRouter>
+    );
+
+    expect(screen.getByText(/Enable Gemini AI/i)).toBeDefined();
+  });
+
+  it('should toggle AI enabled state and save it', () => {
+    vi.mocked(storage.isAiEnabled).mockReturnValue(true);
     
     render(
       <BrowserRouter>
@@ -60,7 +70,23 @@ describe('SettingsPage', () => {
       </BrowserRouter>
     );
 
-    // Verify it shows blind mode as active
-    // We'll refine this once the UI structure is implemented
+    const toggle = screen.getByRole('button', { name: /Enable Gemini AI/i });
+    fireEvent.click(toggle);
+
+    expect(storage.saveAiEnabled).toHaveBeenCalledWith(false);
+    expect(screen.getByText(/Gemini AI features disabled/i)).toBeDefined();
+  });
+
+  it('should disable API key fields when AI is disabled', () => {
+    vi.mocked(storage.isAiEnabled).mockReturnValue(false);
+    
+    render(
+      <BrowserRouter>
+        <SettingsPage />
+      </BrowserRouter>
+    );
+
+    const apiKeyInput = screen.getByPlaceholderText(/Enter your Google AI API Key/i);
+    expect(apiKeyInput).toBeDisabled();
   });
 });
