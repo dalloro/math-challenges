@@ -20,15 +20,13 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: UI & Settings Implementation' (Protocol in workflow.md) [fe6ff7d]
 
 ## Phase 3: Enhanced Feedback Logic
-- [ ] Task: Refactor Feedback Service
-    - [ ] Update `src/services/ai.ts` (or relevant service) to use the prompt from `TEST-REASONING.md`
-    - [ ] Implement conditional feedback logic:
-        - [ ] IF No API Key -> Show static "Great job!"/ "Not exactly!" + Socratic hints + Collapsible answer
-        - [ ] IF API Key -> Call Gemini for reasoning review and tips
-    - [ ] Write unit tests for the feedback routing and prompt construction
-- [ ] Task: Update Solution Display Component
-    - [ ] Refactor `src/components/SolutionDisplay.tsx` to support inline AI reviews and collapsible static answers
-    - [ ] Write tests for the updated solution presentation
+- [x] Task: Refactor Feedback Service [965bca9]
+    - [x] Update `src/services/ai.ts` (or relevant service) to use the prompt from `TEST-REASONING.md` [965bca9]
+    - [x] Implement conditional feedback logic [965bca9]
+    - [x] Write unit tests for the feedback routing and prompt construction [965bca9]
+- [x] Task: Update Solution Display Component [965bca9]
+    - [x] Refactor `src/components/SolutionDisplay.tsx` to support inline AI reviews and collapsible static answers [965bca9]
+    - [x] Write tests for the updated solution presentation [965bca9]
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Enhanced Feedback Logic' (Protocol in workflow.md)
 
 ## Phase 4: Final Polish & Verification
