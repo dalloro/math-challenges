@@ -3,9 +3,9 @@
 ## Phase 1: Configuration & State Management
 - [x] Task: Create Prompt Asset [cb719e4]
     - [x] Create `TEST-REASONING.md` in the project root with the provided prompt
-- [ ] Task: Update State Management for New Modality
-    - [ ] Update `src/services/storage.ts` to support saving/loading `testModality` (combined vs blind)
-    - [ ] Write unit tests for the updated storage utility
+- [x] Task: Update State Management for New Modality [0c4563b]
+    - [x] Update `src/services/storage.ts` to support saving/loading `testModality` (combined vs blind) [0c4563b]
+    - [x] Write unit tests for the updated storage utility [0c4563b]
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Configuration & State Management' (Protocol in workflow.md)
 
 ## Phase 2: UI & Settings Implementation
