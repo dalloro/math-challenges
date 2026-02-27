@@ -2,38 +2,26 @@
 
 ## Phase 1: Configuration & State Management [checkpoint: 5c9e485]
 - [x] Task: Create Prompt Asset [cb719e4]
-    - [x] Create `TEST-REASONING.md` in the project root with the provided prompt
 - [x] Task: Update State Management for New Modality [0c4563b]
-    - [x] Update `src/services/storage.ts` to support saving/loading `testModality` (combined vs blind) [0c4563b]
-    - [x] Write unit tests for the updated storage utility [0c4563b]
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Configuration & State Management' (Protocol in workflow.md) [5c9e485]
 
 ## Phase 2: UI & Settings Implementation [checkpoint: fe6ff7d]
 - [x] Task: Implement New Settings UI [a7b0f8e]
-    - [x] Update `src/pages/SettingsPage.tsx` to include the Modality toggle [a7b0f8e]
-    - [x] Write tests to verify setting persistence [a7b0f8e]
 - [x] Task: Refactor Question Wizard for Mandatory Reasoning [e8f3ba4]
-    - [x] Update `src/pages/TestPage.tsx` to require reasoning text [e8f3ba4]
-    - [x] Add "Blind Mode" conditional rendering (hiding choices, adding final answer field) [e8f3ba4]
-    - [x] Implement validation message when "Submit" is clicked without reasoning [e8f3ba4]
-    - [x] Write unit tests for the new validation logic and mode-specific rendering [e8f3ba4]
 - [x] Task: Conductor - User Manual Verification 'Phase 2: UI & Settings Implementation' (Protocol in workflow.md) [fe6ff7d]
 
-## Phase 3: Enhanced Feedback Logic
+## Phase 3: Enhanced Feedback Logic [checkpoint: 965bca9]
 - [x] Task: Refactor Feedback Service [965bca9]
-    - [x] Update `src/services/ai.ts` (or relevant service) to use the prompt from `TEST-REASONING.md` [965bca9]
-    - [x] Implement conditional feedback logic [965bca9]
-    - [x] Write unit tests for the feedback routing and prompt construction [965bca9]
 - [x] Task: Update Solution Display Component [965bca9]
-    - [x] Refactor `src/components/SolutionDisplay.tsx` to support inline AI reviews and collapsible static answers [965bca9]
-    - [x] Write tests for the updated solution presentation [965bca9]
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Enhanced Feedback Logic' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Enhanced Feedback Logic' (Protocol in workflow.md) [965bca9]
 
-## Phase 4: Final Polish & Verification
-- [ ] Task: UX Refinement
-    - [ ] Ensure smooth transitions between input and feedback states
+## Phase 4: Final Polish & UI Refinement
+- [ ] Task: Redesign Feedback UI to Row-Based Stack
+    - [ ] Move Correctness message to the top as a full-width banner
+    - [ ] Create a compact 'Your Submission' card (full width)
+    - [ ] Make AI Feedback / Ideal Solution the primary full-width section
+    - [ ] Ensure responsive behavior for mobile and desktop
+- [ ] Task: UX Refinement & Final Build
     - [ ] Final styling pass for the "Blind Mode" UI
-- [ ] Task: Full Integration Testing
-    - [ ] Verify the end-to-end flow in both "Combined" and "Blind" modes
     - [ ] Verify behavior with and without API keys
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Polish & Verification' (Protocol in workflow.md)
+- [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Polish & UI Refinement' (Protocol in workflow.md)
