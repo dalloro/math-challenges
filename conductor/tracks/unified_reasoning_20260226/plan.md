@@ -9,10 +9,10 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Configuration & State Management' (Protocol in workflow.md) [5c9e485]
 
 ## Phase 2: UI & Settings Implementation
-- [ ] Task: Implement New Settings UI
-    - [ ] Update `src/pages/SettingsPage.tsx` to include the Modality toggle
-    - [ ] Write tests to verify setting persistence
-- [ ] Task: Refactor Question Wizard for Mandatory Reasoning
+- [x] Task: Implement New Settings UI [a7b0f8e]
+    - [x] Update `src/pages/SettingsPage.tsx` to include the Modality toggle [a7b0f8e]
+    - [x] Write tests to verify setting persistence [a7b0f8e]
+- [~] Task: Refactor Question Wizard for Mandatory Reasoning
     - [ ] Update `src/components/QuestionWizard.tsx` to require reasoning text
     - [ ] Add "Blind Mode" conditional rendering (hiding choices, adding final answer field)
     - [ ] Implement validation message when "Submit" is clicked without reasoning
