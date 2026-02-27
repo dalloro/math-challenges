@@ -1,13 +1,13 @@
 # Implementation Plan - Enhanced Feedback & UX Polish
 
-## Phase 1: Setup & State Management
+## Phase 1: Setup & State Management [checkpoint: c4fa138]
 - [x] Task: Update Storage for Gemini Toggle [36cd27b]
     - [x] Update `src/services/storage.ts` to include `isAiEnabled` functions. [36cd27b]
     - [x] Write unit tests for the new storage keys. [36cd27b]
 - [x] Task: Install Math Dependencies [b0e8e63]
     - [x] Install `remark-math` and `rehype-katex`. [b0e8e63]
     - [x] Install `katex` and its CSS. [b0e8e63]
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Setup & State Management' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Setup & State Management' (Protocol in workflow.md) [c4fa138]
 
 ## Phase 2: Settings UI Enhancements
 - [ ] Task: Implement AI Toggle Switch
