@@ -82,3 +82,4 @@ The project uses strict Firestore Security Rules.
 npm run build
 firebase deploy
 ```
+\n## Versioning\nThis project follows automated semantic versioning.
