@@ -13,6 +13,9 @@ import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
 import { AlertCircle, CheckCircle2, XCircle, MessageSquare } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -205,7 +208,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       return;
     }
 
-    // Set the "selectedOption" for the session from blindAnswer if in blind mode
+    // Set the \"selectedOption\" for the session from blindAnswer if in blind mode
     if (testModality === 'blind') {
       setSelectedOption(blindAnswer);
     }
@@ -453,7 +456,12 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                 {feedbackType === 'ai' ? (
                   <div className="p-8 rounded-[2rem] border-2 bg-purple-50 border-purple-100 shadow-sm shadow-purple-50">
                     <div className="prose prose-purple prose-lg max-w-none">
-                      <ReactMarkdown>{aiFeedback || ''}</ReactMarkdown>
+                      <ReactMarkdown 
+                        remarkPlugins={[remarkMath]} 
+                        rehypePlugins={[rehypeKatex]}
+                      >
+                        {aiFeedback || ''}
+                      </ReactMarkdown>
                     </div>
                   </div>
                 ) : (

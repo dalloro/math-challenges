@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, Lightbulb, CheckCircle2 } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 interface SolutionDisplayProps {
   socraticHint: string | null;
@@ -17,9 +20,14 @@ export function SolutionDisplay({ socraticHint, finalIdealSolution }: SolutionDi
             <Lightbulb size={18} className="text-blue-500" />
             <h4 className="text-[10px] font-black uppercase tracking-widest text-blue-400">Socratic Hint</h4>
           </div>
-          <p className="text-blue-900 font-medium leading-relaxed italic text-lg">
-            {socraticHint}
-          </p>
+          <div className="prose prose-blue max-w-none italic text-lg text-blue-900 leading-relaxed font-medium">
+            <ReactMarkdown 
+              remarkPlugins={[remarkMath]} 
+              rehypePlugins={[rehypeKatex]}
+            >
+              {socraticHint}
+            </ReactMarkdown>
+          </div>
         </div>
       )}
 
@@ -51,9 +59,12 @@ export function SolutionDisplay({ socraticHint, finalIdealSolution }: SolutionDi
           <div className="px-6 pb-8 animate-in fade-in zoom-in-95 duration-300">
             <div className="h-px bg-gray-100 mb-6" />
             <div className="prose prose-blue max-w-none">
-              <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-wrap font-medium">
+              <ReactMarkdown 
+                remarkPlugins={[remarkMath]} 
+                rehypePlugins={[rehypeKatex]}
+              >
                 {finalIdealSolution}
-              </p>
+              </ReactMarkdown>
             </div>
           </div>
         )}
