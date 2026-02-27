@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuestions } from '../hooks/useQuestions';
 import type { Question } from '../hooks/useQuestions';
@@ -70,6 +70,10 @@ function TestEngine({
   const [validationError, setValidationError] = useState<string | null>(null);
   const [outcomeType, setOutcomeType] = useState<'happy' | 'sad' | 'completed' | null>(null);
   
+  const handleOutcomeComplete = useCallback(() => {
+    setOutcomeType(null);
+  }, []);
+
   const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
   const [lastActivity, setLastActivity] = useState(Date.now());
   const [timerVisible, setTimerVisible] = useState(() => {
@@ -317,7 +321,7 @@ function TestEngine({
     <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${
       theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
     }`}>
-      <OutcomeOverlay type={outcomeType} onComplete={() => setOutcomeType(null)} />
+      <OutcomeOverlay type={outcomeType} onComplete={handleOutcomeComplete} />
       
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-2 sm:py-4">
         <div className="flex items-center space-x-2 sm:space-x-4">
