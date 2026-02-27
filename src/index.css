@@ -32,5 +32,5 @@
 }
 
 .animate-heart-beat {
-  animation: heart-beat 1s ease-in-out infinite;
+  animation: heart-beat 1s ease-in-out 2;
 }
