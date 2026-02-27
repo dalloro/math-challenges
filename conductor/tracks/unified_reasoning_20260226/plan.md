@@ -16,12 +16,12 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Enhanced Feedback Logic' (Protocol in workflow.md) [965bca9]
 
 ## Phase 4: Final Polish & UI Refinement
-- [ ] Task: Redesign Feedback UI to Row-Based Stack
-    - [ ] Move Correctness message to the top as a full-width banner
-    - [ ] Create a compact 'Your Submission' card (full width)
-    - [ ] Make AI Feedback / Ideal Solution the primary full-width section
-    - [ ] Ensure responsive behavior for mobile and desktop
-- [ ] Task: UX Refinement & Final Build
-    - [ ] Final styling pass for the "Blind Mode" UI
-    - [ ] Verify behavior with and without API keys
+- [x] Task: Redesign Feedback UI to Row-Based Stack [bc8e150]
+    - [x] Move Correctness message to the top as a full-width banner [bc8e150]
+    - [x] Create a compact 'Your Submission' card (full width) [bc8e150]
+    - [x] Make AI Feedback / Ideal Solution the primary full-width section [bc8e150]
+    - [x] Ensure responsive behavior for mobile and desktop [bc8e150]
+- [x] Task: UX Refinement & Final Build [3c8af99]
+    - [x] Final styling pass for the "Blind Mode" UI [3c8af99]
+    - [x] Verify behavior with and without API keys [3c8af99]
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Polish & UI Refinement' (Protocol in workflow.md)
