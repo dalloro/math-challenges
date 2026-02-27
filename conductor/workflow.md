@@ -232,15 +232,17 @@ Before requesting review:
    - Performance acceptable on mobile
    - Interactions feel native
 
-## Commit Guidelines
+### Commit Guidelines
 
-### Message Format
+This project uses **Automated Semantic Versioning** via GitHub Actions. **Do not manually update the version in `package.json`.** Version bumps are triggered by commit message prefixes:
+
+- `major:` or `BREAKING CHANGE:` - Triggers a **MAJOR** version bump (e.g., 1.x.x -> 2.0.0)
+- `feat:` - Triggers a **MINOR** version bump (e.g., 1.0.x -> 1.1.0)
+- Any other prefix (e.g., `fix:`, `chore:`, `docs:`) - Triggers a **PATCH** version bump (e.g., 1.0.0 -> 1.0.1)
+
+#### Message Format
 ```
 <type>(<scope>): <description>
-
-[optional body]
-
-[optional footer]
 ```
 
 ### Types
