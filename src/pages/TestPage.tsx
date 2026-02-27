@@ -7,7 +7,7 @@ import { useAdaptiveEngine } from '../hooks/useAdaptiveEngine';
 import { useRoom } from '../hooks/useRoom';
 import type { RoomState } from '../hooks/useRoom';
 import { evaluateReasoning } from '../services/ai';
-import { getApiKey, getTestModality } from '../services/storage';
+import { getApiKey, getTestModality, isAiEnabled } from '../services/storage';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
@@ -26,6 +26,7 @@ const RANKS = [
 ];
 
 const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
+const NEXT_BUTTON_DELAY_SECONDS = 5;
 
 interface TestEngineProps {
   grade: number;
@@ -68,11 +69,15 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     return stored === null ? true : stored === 'true';
   });
 
+  // Delay logic
+  const [nextButtonDelay, setNextButtonDelay] = useState(0);
+  const delayIntervalRef = useRef<number | null>(null);
+
   const testModality = useMemo(() => getTestModality(), []);
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
   const isActive = useMemo(() => Date.now() - lastActivity < INACTIVITY_THRESHOLD_MS, [lastActivity]);
-  const isStaticMode = useMemo(() => !getApiKey(), []);
+  const isStaticMode = useMemo(() => !getApiKey() || !isAiEnabled(), []);
 
   // Track user activity
   useEffect(() => {
@@ -88,6 +93,24 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       window.removeEventListener('click', updateActivity);
     };
   }, []);
+
+  // Handle delay countdown
+  useEffect(() => {
+    if (nextButtonDelay > 0) {
+      delayIntervalRef.current = window.setInterval(() => {
+        setNextButtonDelay(prev => {
+          if (prev <= 1) {
+            if (delayIntervalRef.current) clearInterval(delayIntervalRef.current);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+    return () => {
+      if (delayIntervalRef.current) clearInterval(delayIntervalRef.current);
+    };
+  }, [nextButtonDelay]);
 
   // Derive available pool for current level
   const availablePool = useMemo(() => {
@@ -161,7 +184,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   };
 
   const handleNext = () => {
-    if (!selectedOption || !currentQuestion) return;
+    if (!selectedOption || !currentQuestion || nextButtonDelay > 0) return;
 
     const isCorrect = selectedOption.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
     recordAnswer(currentQuestion.id, selectedOption, isCorrect);
@@ -187,6 +210,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     setFeedbackType(null);
     setFeedbackError(null);
     setValidationError(null);
+    setNextButtonDelay(0);
   };
 
   const handleSubmitReasoning = async () => {
@@ -217,11 +241,13 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     setFeedbackError(null);
     
     const apiKey = getApiKey();
+    const aiEnabled = isAiEnabled();
     
-    if (!apiKey) {
+    if (!apiKey || !aiEnabled) {
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
       setIsSubmitting(false);
+      setNextButtonDelay(NEXT_BUTTON_DELAY_SECONDS);
       return;
     }
 
@@ -495,12 +521,20 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
               
               {/* 4. Action Area */}
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-end gap-6 pt-8 border-t border-gray-100">
-                <button
-                  onClick={handleNext}
-                  className="w-full sm:w-auto px-12 py-5 bg-gray-900 text-white rounded-2xl font-bold text-xl hover:bg-black transition-all shadow-xl shadow-gray-200 active:scale-95"
-                >
-                  Continue to Next Challenge
-                </button>
+                <div className="relative group flex-1 sm:flex-initial">
+                  {nextButtonDelay > 0 && (
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max p-2 bg-gray-900 text-white text-[10px] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50 font-bold">
+                      Take a moment to read the solution! ({nextButtonDelay}s)
+                    </div>
+                  )}
+                  <button
+                    onClick={handleNext}
+                    disabled={nextButtonDelay > 0}
+                    className="w-full sm:w-auto px-12 py-5 bg-gray-900 text-white rounded-2xl font-bold text-xl hover:bg-black transition-all shadow-xl shadow-gray-200 active:scale-95 disabled:opacity-20 disabled:cursor-not-allowed"
+                  >
+                    {nextButtonDelay > 0 ? `Wait ${nextButtonDelay}s...` : "Continue to Next Challenge"}
+                  </button>
+                </div>
               </div>
             </div>
           )}
