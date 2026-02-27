@@ -15,17 +15,15 @@
 - [x] Task: Update Solution Display Component [965bca9]
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Enhanced Feedback Logic' (Protocol in workflow.md) [965bca9]
 
-## Phase 4: Final Polish & UI Refinement
+## Phase 4: Final Polish & UI Refinement [checkpoint: cb4ce9e]
 - [x] Task: Redesign Feedback UI to Row-Based Stack [bc8e150]
-    - [x] Move Correctness message to the top as a full-width banner [bc8e150]
-    - [x] Create a compact 'Your Submission' card (full width) [bc8e150]
-    - [x] Make AI Feedback / Ideal Solution the primary full-width section [bc8e150]
-    - [x] Ensure responsive behavior for mobile and desktop [bc8e150]
 - [x] Task: UX Refinement & Final Build [3c8af99]
-    - [x] Final styling pass for the "Blind Mode" UI [3c8af99]
-    - [x] Verify behavior with and without API keys [3c8af99]
 - [x] Task: Implement Markdown Rendering for AI Feedback [f427b93]
-    - [x] Install `react-markdown` dependency [f427b93]
-    - [x] Update `TEST-REASONING.md` and `src/services/ai.ts` to strictly enforce Markdown output [f427b93]
-    - [x] Update `src/pages/TestPage.tsx` to render feedback via `ReactMarkdown` with a format validation check [f427b93]
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Polish & UI Refinement' (Protocol in workflow.md)
+
+## Phase 5: Markdown Spacing & Typography Fix [checkpoint: 3947cde]
+- [x] Task: Fix Markdown Formatting and Spacing [3947cde]
+    - [x] Install `@tailwindcss/typography` dependency [3947cde]
+    - [x] Update `src/index.css` to import the typography plugin [3947cde]
+    - [x] Update `TEST-REASONING.md` and `src/services/ai.ts` to ensure explicit newlines between sections and use proper heading levels (H2 or H3) [3947cde]
+    - [x] Refactor `src/pages/TestPage.tsx` to ensure `prose` classes are correctly applied and adding `prose-lg` for better readability [3947cde]
+- [x] Task: Conductor - User Manual Verification 'Phase 5: Markdown Spacing & Typography Fix' (Protocol in workflow.md) [3947cde]
