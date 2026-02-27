@@ -24,4 +24,8 @@
 - [x] Task: UX Refinement & Final Build [3c8af99]
     - [x] Final styling pass for the "Blind Mode" UI [3c8af99]
     - [x] Verify behavior with and without API keys [3c8af99]
+- [x] Task: Implement Markdown Rendering for AI Feedback [f427b93]
+    - [x] Install `react-markdown` dependency [f427b93]
+    - [x] Update `TEST-REASONING.md` and `src/services/ai.ts` to strictly enforce Markdown output [f427b93]
+    - [x] Update `src/pages/TestPage.tsx` to render feedback via `ReactMarkdown` with a format validation check [f427b93]
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Polish & UI Refinement' (Protocol in workflow.md)
