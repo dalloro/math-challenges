@@ -16,15 +16,15 @@
     - [x] Update tests for `SettingsPage`. [fced7cf]
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Settings UI Enhancements' (Protocol in workflow.md) [fced7cf]
 
-## Phase 3: LaTeX Math Rendering
-- [~] Task: Integrate KaTeX with Markdown
-    - [ ] Update `TestPage.tsx` (and any other Markdown consumers) to use `remark-math` and `rehype-katex`.
-    - [ ] Import KaTeX CSS globally in `main.tsx` or `index.css`.
-    - [ ] Write integration tests to verify LaTeX rendering (e.g., checking for specific KaTeX classes).
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: LaTeX Math Rendering' (Protocol in workflow.md)
+## Phase 3: LaTeX Math Rendering [checkpoint: 9eccaf4]
+- [x] Task: Integrate KaTeX with Markdown [9eccaf4]
+    - [x] Update `TestPage.tsx` (and any other Markdown consumers) to use `remark-math` and `rehype-katex`. [9eccaf4]
+    - [x] Import KaTeX CSS globally in `main.tsx` or `index.css`. [9eccaf4]
+    - [x] Write integration tests to verify LaTeX rendering (e.g., checking for specific KaTeX classes). [9eccaf4]
+- [x] Task: Conductor - User Manual Verification 'Phase 3: LaTeX Math Rendering' (Protocol in workflow.md) [9eccaf4]
 
 ## Phase 4: Delayed Review Flow
-- [ ] Task: Implement "Next" Button Delay
+- [~] Task: Implement "Next" Button Delay
     - [ ] Add logic in `TestPage.tsx` to disable the "Next" button for 5s in Static Mode.
     - [ ] Implement the countdown timer for the delay.
 - [ ] Task: Add Delay Tooltip
