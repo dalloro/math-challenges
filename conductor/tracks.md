@@ -9,5 +9,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Unified Reasoning Modality & Enhanced Feedback**
+- [~] **Track: Unified Reasoning Modality & Enhanced Feedback**
 *Link: [./tracks/unified_reasoning_20260226/](./tracks/unified_reasoning_20260226/)*
