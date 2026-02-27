@@ -32,12 +32,12 @@
     - [x] Write unit tests for the button state and tooltip visibility. [fba0fb1]
 - [x] Task: Conductor - User Manual Verification 'Phase 4: Delayed Review Flow' (Protocol in workflow.md) [fba0fb1]
 
-## Phase 5: Heart-Beat Animations
-- [~] Task: Create Heart-Beat Component
-    - [ ] Implement a reusable `OutcomeOverlay` component.
-    - [ ] Define the heart-beat CSS keyframes.
-- [ ] Task: Trigger Animations in Test Engine
-    - [ ] Update `TestPage.tsx` to show the overlay on correct/incorrect answers and test completion.
-    - [ ] Ensure assets `happy.png`, `sad.png`, and `completed.png` are correctly referenced.
-    - [ ] Verify timing (2 beats, 2 seconds total).
-- [ ] Task: Conductor - User Manual Verification 'Phase 5: Heart-Beat Animations' (Protocol in workflow.md)
+## Phase 5: Heart-Beat Animations [checkpoint: 0651694]
+- [x] Task: Create Heart-Beat Component [0651694]
+    - [x] Implement a reusable `OutcomeOverlay` component. [0651694]
+    - [x] Define the heart-beat CSS keyframes. [0651694]
+- [x] Task: Trigger Animations in Test Engine [0651694]
+    - [x] Update `TestPage.tsx` to show the overlay on correct/incorrect answers and test completion. [0651694]
+    - [x] Ensure assets `happy.png`, `sad.png`, and `completed.png` are correctly referenced. [0651694]
+    - [x] Verify timing (2 beats, 2 seconds total). [0651694]
+- [x] Task: Conductor - User Manual Verification 'Phase 5: Heart-Beat Animations' (Protocol in workflow.md) [0651694]
