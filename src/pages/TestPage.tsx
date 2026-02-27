@@ -7,10 +7,11 @@ import { useAdaptiveEngine } from '../hooks/useAdaptiveEngine';
 import { useRoom } from '../hooks/useRoom';
 import type { RoomState } from '../hooks/useRoom';
 import { evaluateReasoning } from '../services/ai';
-import { getApiKey } from '../services/storage';
+import { getApiKey, getTestModality } from '../services/storage';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
+import { AlertCircle } from 'lucide-react';
 
 const RANKS = [
   'Apprentice',    // Level 1-2
@@ -21,8 +22,6 @@ const RANKS = [
 ];
 
 const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
-
-type Modality = 'mcq' | 'reasoning';
 
 interface TestEngineProps {
   grade: number;
@@ -49,13 +48,14 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     initialRoomState.streak
   );
   
-  const [modality, setModality] = useState<Modality>('mcq');
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [reasoning, setReasoning] = useState('');
+  const [blindAnswer, setBlindAnswer] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [feedbackType, setFeedbackType] = useState<'ai' | 'ideal' | null>(null);
   const [feedbackError, setFeedbackError] = useState<string | null>(null);
+  const [validationError, setValidationError] = useState<string | null>(null);
   
   const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
   const [lastActivity, setLastActivity] = useState(Date.now());
@@ -64,12 +64,13 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     return stored === null ? true : stored === 'true';
   });
 
+  const testModality = useMemo(() => getTestModality(), []);
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
   const isActive = useMemo(() => Date.now() - lastActivity < INACTIVITY_THRESHOLD_MS, [lastActivity]);
   const isStaticMode = useMemo(() => !getApiKey(), []);
 
-  // Track user activity (mouse, touch, keyboard)
+  // Track user activity
   useEffect(() => {
     const updateActivity = () => setLastActivity(Date.now());
     window.addEventListener('mousemove', updateActivity);
@@ -109,7 +110,6 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   useEffect(() => {
     if (questions.length === 0 || currentQuestion) return;
 
-    // 1. Try to restore the question from the room state ONCE
     if (!initializedFromRoom.current && initialRoomState.currentQuestionId) {
       const restored = questions.find(q => q.id === initialRoomState.currentQuestionId);
       const isAlreadyAnswered = session.answers.some(a => a.questionId === initialRoomState.currentQuestionId);
@@ -121,7 +121,6 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       }
     }
 
-    // 2. Otherwise pick randomly from the pool
     if (availablePool.length > 0) {
       const randomIndex = Math.floor(Math.random() * availablePool.length);
       const picked = availablePool[randomIndex];
@@ -131,7 +130,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     }
   }, [availablePool, currentQuestion, questions, initialRoomState.currentQuestionId, session.answers, onSync]);
 
-  // Timer Countdown Logic: Only if active
+  // Timer Countdown Logic
   useEffect(() => {
     const interval = setInterval(() => {
       if (isActive) {
@@ -141,7 +140,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
     return () => clearInterval(interval);
   }, [isActive]);
 
-  // Periodic Timer Sync: Every 30s
+  // Periodic Timer Sync
   useEffect(() => {
     const interval = setInterval(() => {
       if (isActive) {
@@ -160,11 +159,10 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
   const handleNext = () => {
     if (!selectedOption || !currentQuestion) return;
 
-    const isCorrect = selectedOption === currentQuestion.correct_answer;
+    const isCorrect = selectedOption.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
     recordAnswer(currentQuestion.id, selectedOption, isCorrect);
     handleAnswer(isCorrect);
 
-    // Sync all state changes back to room immediately on confirm
     onSync({ 
       currentLevel, 
       streak, 
@@ -174,27 +172,49 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
         { questionId: currentQuestion.id, answer: selectedOption, isCorrect, timestamp: Date.now() }
       ],
       remainingSeconds: timer,
-      currentQuestionId: null // Clear so next effect picks a new one
+      currentQuestionId: null 
     });
 
     setSelectedOption(null);
     setCurrentQuestion(null);
     setReasoning('');
-    setModality('mcq');
+    setBlindAnswer('');
     setAiFeedback(null);
     setFeedbackType(null);
     setFeedbackError(null);
+    setValidationError(null);
   };
 
   const handleSubmitReasoning = async () => {
-    if (!reasoning || !currentQuestion) return;
+    if (!currentQuestion) return;
+    
+    setValidationError(null);
+    if (!reasoning.trim()) {
+      setValidationError("Please provide your reasoning before submitting.");
+      return;
+    }
+
+    if (testModality === 'blind' && !blindAnswer.trim()) {
+      setValidationError("Please provide a final answer.");
+      return;
+    }
+
+    if (testModality === 'combined' && !selectedOption) {
+      setValidationError("Please select one of the options.");
+      return;
+    }
+
+    // Set the "selectedOption" for the session from blindAnswer if in blind mode
+    if (testModality === 'blind') {
+      setSelectedOption(blindAnswer);
+    }
+
     setIsSubmitting(true);
     setFeedbackError(null);
     
     const apiKey = getApiKey();
     
     if (!apiKey) {
-      // STATIC MODE: No API key found in localStorage
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
       setIsSubmitting(false);
@@ -307,16 +327,6 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                   Level {currentQuestion.level} / 10
                 </span>
               </div>
-              
-              {!aiFeedback && (
-                <button 
-                  onClick={() => setModality(modality === 'mcq' ? 'reasoning' : 'mcq')}
-                  className="text-[10px] font-black uppercase tracking-widest text-blue-600 hover:text-blue-800 transition-colors"
-                >
-                  <span className="sm:hidden">{modality === 'mcq' ? 'Reasoning' : 'MCQ'}</span>
-                  <span className="hidden sm:inline">{modality === 'mcq' ? 'Switch to Reasoning' : 'Switch to Multiple Choice'}</span>
-                </button>
-              )}
             </div>
             
             <h3 className="text-2xl md:text-4xl font-semibold text-gray-900 leading-tight tracking-tight">
@@ -325,107 +335,18 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
           </div>
 
           {!aiFeedback ? (
-            modality === 'mcq' ? (
-              <div className="grid grid-cols-1 gap-4">
-                {currentQuestion.options.map((option: string) => (
-                  <button
-                    key={option}
-                    onClick={() => setSelectedOption(option)}
-                    className={`flex items-center p-6 rounded-2xl border-2 transition-all text-left ${
-                      selectedOption === option 
-                        ? 'border-blue-600 bg-blue-50/30' 
-                        : 'border-transparent hover:border-gray-200 bg-gray-50/50'
-                    }`}
-                  >
-                    <div className={`w-6 h-6 rounded-full border-2 mr-4 flex items-center justify-center transition-colors ${
-                      selectedOption === option ? 'border-blue-600 bg-blue-600' : 'border-gray-300'
-                    }`}>
-                      {selectedOption === option && <div className="w-2 h-2 rounded-full bg-white"></div>}
-                    </div>
-                    <span className={`text-xl ${selectedOption === option ? 'text-blue-900 font-bold' : 'text-gray-700 font-medium'}`}>
-                      {option}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-6">
-                <div className="flex flex-wrap gap-2 pb-4 border-b border-gray-100">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 w-full mb-1">Available Options:</span>
-                  {currentQuestion.options.map((option: string, idx: number) => (
-                    <span key={option} className="px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-xl text-sm text-gray-500 font-bold">
-                      {String.fromCharCode(65 + idx)}) {option}
-                    </span>
-                  ))}
-                </div>
-
-                <textarea
-                  value={reasoning}
-                  onChange={(e) => setReasoning(e.target.value)}
-                  placeholder="Explain your reasoning step-by-step..."
-                  className="w-full h-64 p-6 rounded-2xl border-2 border-gray-100 focus:border-blue-500 focus:ring-0 outline-none text-xl text-gray-800 placeholder-gray-300 resize-none transition-all bg-gray-50/30"
-                />
-                
-                {feedbackError && (
-                  <div className="p-4 bg-red-50 border border-red-100 rounded-xl text-red-600 text-sm font-medium animate-in fade-in slide-in-from-top-2">
-                    {feedbackError}
-                  </div>
-                )}
-
-                <div className="flex justify-center sm:justify-end">
-                  <button
-                    onClick={handleSubmitReasoning}
-                    disabled={!reasoning || isSubmitting}
-                    className="w-full sm:w-auto px-10 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-blue-100"
-                  >
-                    {isSubmitting ? 'Analyzing...' : isStaticMode ? 'Show Ideal Solution' : 'Submit for Review'}
-                  </button>
-                </div>
-              </div>
-            )
-          ) : (
-            <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-              {/* Student's Original Reasoning */}
-              <div className="p-8 rounded-3xl border border-gray-100 bg-gray-50/50">
-                <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-gray-400">
-                  Your Reasoning
-                </h4>
-                <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-gray-700">
-                  {reasoning}
-                </div>
-              </div>
-
-              {/* AI/Ideal Feedback */}
-              {feedbackType === 'ai' ? (
-                <div className="p-8 rounded-3xl border bg-purple-50 border-purple-100 animate-in fade-in slide-in-from-bottom-4 duration-700">
-                  <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-purple-500">
-                    AI Feedback
-                  </h4>
-                  <div className="text-xl leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
-                    {aiFeedback}
-                  </div>
-                </div>
-              ) : (
-                <SolutionDisplay 
-                  {...parseIdealSolution(aiFeedback || '')} 
-                />
-              )}
-              
-              <div className="flex flex-col space-y-4">
-                {feedbackType !== 'ai' && (
-                  <p className="text-center text-gray-400 text-sm font-medium">
-                    Now that you've reviewed the solution, select the correct answer:
-                  </p>
-                )}
-                <div className="grid grid-cols-1 gap-4">
+            <div className="space-y-8">
+              {/* Answer Input Section */}
+              {testModality === 'combined' ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {currentQuestion.options.map((option: string) => (
                     <button
                       key={option}
                       onClick={() => setSelectedOption(option)}
                       className={`flex items-center p-6 rounded-2xl border-2 transition-all text-left ${
                         selectedOption === option 
-                          ? 'border-blue-600 bg-white shadow-lg' 
-                          : 'border-transparent bg-white/50 hover:border-gray-200'
+                          ? 'border-blue-600 bg-blue-50/30' 
+                          : 'border-transparent hover:border-gray-200 bg-gray-50/50'
                       }`}
                     >
                       <div className={`w-6 h-6 rounded-full border-2 mr-4 flex items-center justify-center transition-colors ${
@@ -439,27 +360,109 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
                     </button>
                   ))}
                 </div>
+              ) : (
+                <div className="space-y-4">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">
+                    Your Final Answer
+                  </label>
+                  <input
+                    type="text"
+                    value={blindAnswer}
+                    onChange={(e) => setBlindAnswer(e.target.value)}
+                    placeholder="Enter your final answer..."
+                    className="w-full p-6 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:border-blue-500 focus:ring-0 outline-hidden transition-all text-xl font-bold"
+                  />
+                </div>
+              )}
+
+              {/* Mandatory Reasoning Section */}
+              <div className="space-y-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-1">
+                  Step-by-Step Reasoning
+                </label>
+                <textarea
+                  value={reasoning}
+                  onChange={(e) => setReasoning(e.target.value)}
+                  placeholder="Explain your reasoning step-by-step..."
+                  className="w-full h-64 p-6 rounded-2xl border-2 border-gray-100 focus:border-blue-500 focus:ring-0 outline-none text-xl text-gray-800 placeholder-gray-300 resize-none transition-all bg-gray-50/30"
+                />
+              </div>
+              
+              {validationError && (
+                <div className="p-4 bg-amber-50 border border-amber-100 rounded-xl text-amber-700 text-sm font-bold flex items-center space-x-3 animate-in fade-in slide-in-from-top-2">
+                  <AlertCircle size={18} />
+                  <span>{validationError}</span>
+                </div>
+              )}
+
+              {feedbackError && (
+                <div className="p-4 bg-red-50 border border-red-100 rounded-xl text-red-600 text-sm font-medium animate-in fade-in slide-in-from-top-2">
+                  {feedbackError}
+                </div>
+              )}
+
+              <div className="flex justify-center sm:justify-end pt-4 border-t border-gray-50">
+                <button
+                  onClick={handleSubmitReasoning}
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto px-10 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-blue-100"
+                >
+                  {isSubmitting ? 'Analyzing...' : isStaticMode ? 'Show Ideal Solution' : 'Submit for Review'}
+                </button>
               </div>
             </div>
-          )}
+          ) : (
+            <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              {/* Comparison Section */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-8 rounded-3xl border border-gray-100 bg-gray-50/50">
+                  <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-gray-400">
+                    Your Answer
+                  </h4>
+                  <div className="text-3xl font-black text-gray-900 mb-6">
+                    {selectedOption}
+                  </div>
+                  <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-gray-400">
+                    Your Reasoning
+                  </h4>
+                  <div className="text-lg leading-relaxed whitespace-pre-wrap font-medium text-gray-700 italic">
+                    "{reasoning}"
+                  </div>
+                </div>
 
-          {(!modality || modality === 'mcq' || aiFeedback) && (
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6">
-              <div className="text-sm text-gray-400 font-medium order-2 sm:order-1">
-                {theme === 'focus' && (
-                  <span className="text-blue-500 flex items-center italic">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse mr-2"></span>
-                    Thematic Shift: Take your time.
-                  </span>
-                )}
+                <div className="flex flex-col space-y-6">
+                  {feedbackType === 'ai' ? (
+                    <div className="p-8 rounded-3xl border bg-purple-50 border-purple-100 h-full">
+                      <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-purple-500">
+                        AI Feedback
+                      </h4>
+                      <div className="text-lg leading-relaxed whitespace-pre-wrap font-medium text-purple-900">
+                        {aiFeedback}
+                      </div>
+                    </div>
+                  ) : (
+                    <SolutionDisplay 
+                      {...parseIdealSolution(aiFeedback || '')} 
+                    />
+                  )}
+                </div>
               </div>
-              <button
-                onClick={handleNext}
-                disabled={!selectedOption}
-                className="w-full sm:w-auto px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg hover:bg-black disabled:opacity-20 disabled:cursor-not-allowed transition-all shadow-xl shadow-gray-200 order-1 sm:order-2"
-              >
-                Confirm Selection
-              </button>
+              
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-gray-100">
+                <div className="text-sm font-bold flex items-center">
+                  {selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase() ? (
+                    <span className="text-green-600 bg-green-50 px-4 py-2 rounded-full">Great job! That's correct.</span>
+                  ) : (
+                    <span className="text-red-600 bg-red-50 px-4 py-2 rounded-full">Not exactly! Review the solution above.</span>
+                  )}
+                </div>
+                <button
+                  onClick={handleNext}
+                  className="w-full sm:w-auto px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-lg hover:bg-black transition-all shadow-xl shadow-gray-200"
+                >
+                  Continue to Next Challenge
+                </button>
+              </div>
             </div>
           )}
         </div>
