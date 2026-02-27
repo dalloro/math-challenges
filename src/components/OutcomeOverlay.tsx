@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface OutcomeOverlayProps {
   type: 'happy' | 'sad' | 'completed' | null;
@@ -6,18 +6,20 @@ interface OutcomeOverlayProps {
 }
 
 export function OutcomeOverlay({ type, onComplete }: OutcomeOverlayProps) {
+  const [internalVisible, setInternalVisible] = useState(false);
+
   useEffect(() => {
     if (type) {
-      // 2 beats of 1s each = 2000ms.
-      // We use slightly more to ensure the final animation frame finishes.
+      setInternalVisible(true);
       const timer = setTimeout(() => {
+        setInternalVisible(false);
         onComplete();
       }, 2100); 
       return () => clearTimeout(timer);
     }
   }, [type, onComplete]);
 
-  if (!type) return null;
+  if (!type || !internalVisible) return null;
 
   const imageSrc = `/${type}.png`;
 
