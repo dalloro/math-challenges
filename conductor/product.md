@@ -24,9 +24,10 @@ A gifted-level math testing and learning web application designed for students a
   - Difficulty adjusts dynamically based on student performance.
 - **Learning Intervention:** An automated learning mode that activates after two consecutive failures on similar problem types, providing step-by-step walkthroughs and simplified foundational exercises.
   - **Socratic Hinting:** All ideal solutions are parsed to separate pedagogy from derivation, displaying a hint-first interface to encourage discovery.
-- **Dual Modalities:**
-  - **Closed Choice:** 5-option multiple-choice questions.
-  - **Open Reasoning:** A text area for the final answer and a detailed explanation of the process.
+- **Unified Reasoning Modality:**
+  - **Exclusive Reasoning Mode:** All questions now require step-by-step reasoning process before submission.
+  - **Combined Mode:** Multiple-choice options are visible alongside the reasoning input.
+  - **Blind Mode:** Multiple-choice options are hidden; users must provide both reasoning and a manual final answer.
 - **AI-Powered Evaluation:** Integration with `gemini-3-flash-preview` to provide real-time, qualitative feedback on the student's reasoning, identifying strengths and flaws in their logic.
 - **Content Management Dashboard:** 
   - Secure, admin-only interface for managing the question bank.
