@@ -14,7 +14,7 @@ export function OutcomeOverlay({ type, onComplete }: OutcomeOverlayProps) {
       const timer = setTimeout(() => {
         setInternalVisible(false);
         onComplete();
-      }, 2100); 
+      }, 2000); 
       return () => clearTimeout(timer);
     }
   }, [type, onComplete]);
