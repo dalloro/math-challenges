@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { getTestModality, saveTestModality, TestModality } from '../storage';
+import { getTestModality, saveTestModality } from '../storage';
 
 describe('Modality Storage', () => {
   beforeEach(() => {

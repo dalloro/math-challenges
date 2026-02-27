@@ -72,9 +72,9 @@ ${studentInput}
     const result = await model.generateContent(prompt);
     const response = await result.response;
     return response.text();
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Gemini API Error:", error);
-    if (error?.message?.includes("503") || error?.message?.includes("high demand")) {
+    if (error instanceof Error && (error.message.includes("503") || error.message.includes("high demand"))) {
       throw new Error("The AI service is currently overloaded. Please try again in a few moments or use Static Mode.");
     }
     throw new Error("Failed to get AI feedback");
