@@ -1,5 +1,6 @@
 const API_KEY_STORAGE_NAME = 'gemini_api_key';
 const TEST_MODALITY_STORAGE_NAME = 'test_modality';
+const AI_ENABLED_STORAGE_NAME = 'ai_enabled';
 
 export type TestModality = 'combined' | 'blind';
 
@@ -41,4 +42,21 @@ export function getTestModality(): TestModality {
  */
 export function saveTestModality(modality: TestModality): void {
   localStorage.setItem(TEST_MODALITY_STORAGE_NAME, modality);
+}
+
+/**
+ * Checks if Gemini AI features are enabled in localStorage.
+ * @returns true if enabled or not set, false otherwise.
+ */
+export function isAiEnabled(): boolean {
+  const enabled = localStorage.getItem(AI_ENABLED_STORAGE_NAME);
+  return enabled === null ? true : enabled === 'true';
+}
+
+/**
+ * Saves the Gemini AI enabled state to localStorage.
+ * @param enabled The enabled state to save.
+ */
+export function saveAiEnabled(enabled: boolean): void {
+  localStorage.setItem(AI_ENABLED_STORAGE_NAME, String(enabled));
 }
