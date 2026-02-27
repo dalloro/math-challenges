@@ -12,6 +12,7 @@ vi.mock('../firebase', () => ({
 vi.mock('../services/storage', () => ({
   getApiKey: vi.fn(() => null), // Force static mode
   getTestModality: vi.fn(() => 'combined'),
+  isAiEnabled: vi.fn(() => true),
 }));
 
 vi.mock('../hooks/useRoom', () => ({

@@ -27,16 +27,22 @@ const RANKS = [
 ];
 
 const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
-const NEXT_BUTTON_DELAY_SECONDS = 5;
 
 interface TestEngineProps {
   grade: number;
   initialRoomState: RoomState;
   onSync: (updates: Partial<RoomState>) => void;
   roomCode: string;
+  nextButtonDelaySeconds?: number;
 }
 
-function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEngineProps) {
+function TestEngine({ 
+  grade, 
+  initialRoomState, 
+  onSync, 
+  roomCode, 
+  nextButtonDelaySeconds = 5 
+}: TestEngineProps) {
   const navigate = useNavigate();
   const { questions, loading, error } = useQuestions(grade);
   
@@ -253,7 +259,7 @@ function TestEngine({ grade, initialRoomState, onSync, roomCode }: TestEnginePro
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
       setIsSubmitting(false);
-      setNextButtonDelay(NEXT_BUTTON_DELAY_SECONDS);
+      setNextButtonDelay(nextButtonDelaySeconds);
       return;
     }
 
@@ -593,6 +599,7 @@ export function TestPage() {
       initialRoomState={roomData} 
       roomCode={roomCode}
       onSync={syncRoom} 
+      nextButtonDelaySeconds={import.meta.env.MODE === 'test' ? 0 : 5}
     />
   );
 }
