@@ -9,15 +9,15 @@
     - [x] Install `katex` and its CSS. [b0e8e63]
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Setup & State Management' (Protocol in workflow.md) [c4fa138]
 
-## Phase 2: Settings UI Enhancements
-- [ ] Task: Implement AI Toggle Switch
-    - [ ] Add a "Enable Gemini AI" toggle switch in `SettingsPage.tsx`.
-    - [ ] Ensure it persists state without affecting the stored API key.
-    - [ ] Update tests for `SettingsPage`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Settings UI Enhancements' (Protocol in workflow.md)
+## Phase 2: Settings UI Enhancements [checkpoint: fced7cf]
+- [x] Task: Implement AI Toggle Switch [fced7cf]
+    - [x] Add a "Enable Gemini AI" toggle switch in `SettingsPage.tsx`. [fced7cf]
+    - [x] Ensure it persists state without affecting the stored API key. [fced7cf]
+    - [x] Update tests for `SettingsPage`. [fced7cf]
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Settings UI Enhancements' (Protocol in workflow.md) [fced7cf]
 
 ## Phase 3: LaTeX Math Rendering
-- [ ] Task: Integrate KaTeX with Markdown
+- [~] Task: Integrate KaTeX with Markdown
     - [ ] Update `TestPage.tsx` (and any other Markdown consumers) to use `remark-math` and `rehype-katex`.
     - [ ] Import KaTeX CSS globally in `main.tsx` or `index.css`.
     - [ ] Write integration tests to verify LaTeX rendering (e.g., checking for specific KaTeX classes).
