@@ -12,14 +12,17 @@ vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
 
-const mockQuestion = {
+const mockQuestion: useQuestionsHook.Question = {
   id: 'q1',
+  grade: 5,
   question: 'What is 2+2?',
   options: ['3', '4', '5'],
   correct_answer: '4',
   level: 1,
+  difficulty: 'gifted',
   type: 'Arithmetic',
-  ideal_solution: 'Step 1: Add 2 and 2. Result is 4.'
+  ideal_solution: 'Step 1: Add 2 and 2. Result is 4.',
+  failure_modes: {}
 };
 
 describe('Blind Mode & Mandatory Reasoning', () => {
@@ -29,7 +32,18 @@ describe('Blind Mode & Mandatory Reasoning', () => {
     // Mock useRoom
     vi.mocked(useRoomHook.useRoom).mockReturnValue({
       roomCode: 'TEST-ROOM',
-      roomData: { grade: 5, answers: [], score: 0, currentLevel: 1, streak: 0, remainingSeconds: 3600 },
+      roomData: { 
+        roomCode: 'TEST-ROOM',
+        grade: 5, 
+        answers: [], 
+        score: 0, 
+        currentLevel: 1, 
+        streak: 0, 
+        remainingSeconds: 3600,
+        currentQuestionId: null,
+        lastInteractionAt: Date.now(),
+        createdAt: {} as any
+      },
       loading: false,
       error: null,
       syncRoom: vi.fn()
