@@ -12,11 +12,11 @@
 - [x] Task: Implement New Settings UI [a7b0f8e]
     - [x] Update `src/pages/SettingsPage.tsx` to include the Modality toggle [a7b0f8e]
     - [x] Write tests to verify setting persistence [a7b0f8e]
-- [~] Task: Refactor Question Wizard for Mandatory Reasoning
-    - [ ] Update `src/components/QuestionWizard.tsx` to require reasoning text
-    - [ ] Add "Blind Mode" conditional rendering (hiding choices, adding final answer field)
-    - [ ] Implement validation message when "Submit" is clicked without reasoning
-    - [ ] Write unit tests for the new validation logic and mode-specific rendering
+- [x] Task: Refactor Question Wizard for Mandatory Reasoning [e8f3ba4]
+    - [x] Update `src/pages/TestPage.tsx` to require reasoning text [e8f3ba4]
+    - [x] Add "Blind Mode" conditional rendering (hiding choices, adding final answer field) [e8f3ba4]
+    - [x] Implement validation message when "Submit" is clicked without reasoning [e8f3ba4]
+    - [x] Write unit tests for the new validation logic and mode-specific rendering [e8f3ba4]
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: UI & Settings Implementation' (Protocol in workflow.md)
 
 ## Phase 3: Enhanced Feedback Logic
