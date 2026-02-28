@@ -11,3 +11,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 - [ ] **Track: Robust Question Randomization & Selection**
 *Link: [./tracks/question_randomization_20260226/](./tracks/question_randomization_20260226/)*
+
+---
+
+- [ ] **Track: Admin Question Analytics Dashboard**
+*Link: [./tracks/admin_analytics_20260226/](./tracks/admin_analytics_20260226/)*
