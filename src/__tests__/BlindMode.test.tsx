@@ -13,7 +13,7 @@ vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
 vi.mock('../hooks/useQuestionSelection', () => ({
-  useQuestionSelection: vi.fn((questions) => ({
+  useQuestionSelection: vi.fn((questions: useQuestionsHook.Question[]) => ({
     selectQuestion: vi.fn(() => questions[0] || null),
     markAsSeen: vi.fn(),
   })),

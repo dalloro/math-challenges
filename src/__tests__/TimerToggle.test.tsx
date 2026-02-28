@@ -56,7 +56,7 @@ vi.mock('../hooks/useQuestions', () => ({
 }));
 
 vi.mock('../hooks/useQuestionSelection', () => ({
-  useQuestionSelection: vi.fn((questions) => ({
+  useQuestionSelection: vi.fn((questions: any[]) => ({
     selectQuestion: vi.fn(() => questions[0] || null),
     markAsSeen: vi.fn(),
   })),

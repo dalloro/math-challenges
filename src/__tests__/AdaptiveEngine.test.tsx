@@ -24,9 +24,9 @@ vi.mock('../services/storage', () => ({
 }));
 
 vi.mock('../hooks/useQuestionSelection', () => ({
-  useQuestionSelection: vi.fn((questions) => ({
-    selectQuestion: vi.fn(({ level }) => {
-      const pool = questions.filter(q => q.level === level);
+  useQuestionSelection: vi.fn((questions: useQuestionsHook.Question[]) => ({
+    selectQuestion: vi.fn(({ level }: { level: number }) => {
+      const pool = questions.filter((q: useQuestionsHook.Question) => q.level === level);
       // Return a random one from the filtered pool to satisfy 'not to be' checks
       // Fallback to first question if filtered pool is empty (e.g. metadata test)
       return pool[Math.floor(Math.random() * pool.length)] || questions[0] || null;
