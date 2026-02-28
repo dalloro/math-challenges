@@ -6,6 +6,7 @@ import { useSession } from '../hooks/useSession';
 import { useAdaptiveEngine } from '../hooks/useAdaptiveEngine';
 import { useRoom } from '../hooks/useRoom';
 import type { RoomState } from '../hooks/useRoom';
+import { useQuestionSelection } from '../hooks/useQuestionSelection';
 import { evaluateReasoning } from '../services/ai';
 import { getApiKey, getTestModality, isAiEnabled } from '../services/storage';
 import { SolutionDisplay } from '../components/SolutionDisplay';
@@ -59,6 +60,8 @@ function TestEngine({
     initialRoomState.currentLevel,
     initialRoomState.streak
   );
+
+  const { selectQuestion, markAsSeen } = useQuestionSelection(questions, roomCode);
   
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [reasoning, setReasoning] = useState('');
@@ -124,24 +127,6 @@ function TestEngine({
     };
   }, [nextButtonDelay]);
 
-  // Derive available pool for current level
-  const availablePool = useMemo(() => {
-    const answeredIds = session.answers.map(a => a.questionId);
-    let pool = questions.filter(q => q.level === currentLevel && !answeredIds.includes(q.id));
-    
-    if (pool.length === 0 && questions.length > 0) {
-      const anyUnanswered = questions.filter(q => !answeredIds.includes(q.id));
-      if (anyUnanswered.length > 0) {
-        const levels = anyUnanswered.map(q => q.level);
-        const closest = levels.reduce((prev, curr) => 
-          Math.abs(curr - currentLevel) < Math.abs(prev - currentLevel) ? curr : prev
-        );
-        pool = anyUnanswered.filter(q => q.level === closest);
-      }
-    }
-    return pool;
-  }, [questions, currentLevel, session.answers]);
-
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const initializedFromRoom = useRef(false);
 
@@ -160,14 +145,25 @@ function TestEngine({
       }
     }
 
-    if (availablePool.length > 0) {
-      const randomIndex = Math.floor(Math.random() * availablePool.length);
-      const picked = availablePool[randomIndex];
+    // Use robust selection logic
+    // We try to pick a question of the same type as the last one if possible, 
+    // or fallback to the first question's type in the pool
+    const lastType = session.answers.length > 0 
+      ? questions.find(q => q.id === session.answers[session.answers.length - 1].questionId)?.type 
+      : questions[0]?.type;
+
+    const picked = selectQuestion({ 
+      grade, 
+      level: currentLevel, 
+      type: lastType || 'Arithmetic' 
+    });
+
+    if (picked) {
       setCurrentQuestion(picked);
       onSync({ currentQuestionId: picked.id });
       initializedFromRoom.current = true;
     }
-  }, [availablePool, currentQuestion, questions, initialRoomState.currentQuestionId, session.answers, onSync]);
+  }, [questions, currentQuestion, initialRoomState.currentQuestionId, session.answers, onSync, selectQuestion, grade, currentLevel]);
 
   // Timer Countdown Logic
   useEffect(() => {
@@ -201,6 +197,7 @@ function TestEngine({
     const isCorrect = selectedOption.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
     recordAnswer(currentQuestion.id, selectedOption, isCorrect);
     handleAnswer(isCorrect);
+    markAsSeen(currentQuestion.id);
 
     onSync({ 
       currentLevel, 
