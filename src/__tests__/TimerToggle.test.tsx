@@ -2,6 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { TestPage } from '../pages/TestPage';
 import { BrowserRouter } from 'react-router-dom';
+import type { Question } from '../hooks/useQuestions';
 
 // Mock dependencies
 vi.mock('../firebase', () => ({
@@ -56,7 +57,7 @@ vi.mock('../hooks/useQuestions', () => ({
 }));
 
 vi.mock('../hooks/useQuestionSelection', () => ({
-  useQuestionSelection: vi.fn((questions: any[]) => ({
+  useQuestionSelection: vi.fn((questions: Question[]) => ({
     selectQuestion: vi.fn(() => questions[0] || null),
     markAsSeen: vi.fn(),
   })),
