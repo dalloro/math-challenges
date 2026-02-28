@@ -1,12 +1,12 @@
 # Implementation Plan - Robust Question Randomization & Selection
 
 ## Phase 1: Audit & Recently Seen Infrastructure
-- [ ] Task: Locate and Audit Current Selection Logic
-    - [ ] Inspect `src/pages/TestPage.tsx` and `src/hooks/useQuestions.ts` to identify the exact random picking mechanism.
-- [ ] Task: Implement 'Seen Questions' Persistence
-    - [ ] Update `src/services/storage.ts` to support tracking `seenQuestionIds` per room/grade.
-    - [ ] **Write failing tests** for Seen Questions tracking.
-    - [ ] **Implement** Seen Questions tracking.
+- [x] Task: Locate and Audit Current Selection Logic [9352738]
+    - [x] Inspect `src/pages/TestPage.tsx` and `src/hooks/useQuestions.ts` to identify the exact random picking mechanism. [9352738]
+- [x] Task: Implement 'Seen Questions' Persistence [9352738]
+    - [x] Update `src/services/storage.ts` to support tracking `seenQuestionIds` per room/grade. [9352738]
+    - [x] **Write failing tests** for Seen Questions tracking. [9352738]
+    - [x] **Implement** Seen Questions tracking. [9352738]
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Audit & Recently Seen Infrastructure' (Protocol in workflow.md)
 
 ## Phase 2: Multi-Tier Selection Logic
