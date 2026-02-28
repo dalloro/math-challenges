@@ -19,8 +19,10 @@ A gifted-level math testing and learning web application designed for students a
   - **Smart Timer Recovery:** Inactivity-aware timer that pauses after 5 minutes of no interaction and resumes accurately upon return.
   - **Low-Pressure Mode:** Users can toggle the timer's numeric countdown to reduce testing anxiety, replacing it with a "Show Timer" prompt.
 - **Adaptive Testing Engine:** 
-  - Starts with 100 questions.
-  - Adds 50 additional questions if the first 100 are completed in under 60 minutes.
+  - **Intelligent Selection:** Multi-tier logic that prioritizes un-seen questions by grade, level, and type.
+  - **Robust Randomization:** Seeded Fisher-Yates shuffle ensures uniform distribution and variety across sessions.
+  - **Fallback Mechanism:** Automatically switches question types within a level to prevent repetition until the entire cohort pool is exhausted.
+  - **Dynamic Scaling:** Starts with 100 questions; adds 50 if completed efficiently.
   - Difficulty adjusts dynamically based on student performance.
 - **Learning Intervention:** An automated learning mode that activates after two consecutive failures on similar problem types, providing step-by-step walkthroughs and simplified foundational exercises.
   - **Socratic Hinting:** All ideal solutions are parsed to separate pedagogy from derivation, displaying a hint-first interface to encourage discovery.
