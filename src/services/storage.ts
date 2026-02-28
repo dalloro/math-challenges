@@ -1,6 +1,7 @@
 const API_KEY_STORAGE_NAME = 'gemini_api_key';
 const TEST_MODALITY_STORAGE_NAME = 'test_modality';
 const AI_ENABLED_STORAGE_NAME = 'ai_enabled';
+const SEEN_QUESTIONS_PREFIX = 'seen_questions_';
 
 export type TestModality = 'combined' | 'blind';
 
@@ -59,4 +60,40 @@ export function isAiEnabled(): boolean {
  */
 export function saveAiEnabled(enabled: boolean): void {
   localStorage.setItem(AI_ENABLED_STORAGE_NAME, String(enabled));
+}
+
+/**
+ * Retrieves the list of seen question IDs for a specific room.
+ * @param roomCode The room code to look up.
+ * @returns An array of question IDs.
+ */
+export function getSeenQuestions(roomCode: string): string[] {
+  const seen = localStorage.getItem(`${SEEN_QUESTIONS_PREFIX}${roomCode}`);
+  try {
+    return seen ? JSON.parse(seen) : [];
+  } catch (e) {
+    console.error('Failed to parse seen questions', e);
+    return [];
+  }
+}
+
+/**
+ * Adds a question ID to the seen list for a specific room.
+ * @param roomCode The room code.
+ * @param questionId The ID of the question.
+ */
+export function addSeenQuestion(roomCode: string, questionId: string): void {
+  const seen = getSeenQuestions(roomCode);
+  if (!seen.includes(questionId)) {
+    seen.push(questionId);
+    localStorage.setItem(`${SEEN_QUESTIONS_PREFIX}${roomCode}`, JSON.stringify(seen));
+  }
+}
+
+/**
+ * Clears the seen questions list for a specific room.
+ * @param roomCode The room code.
+ */
+export function clearSeenQuestions(roomCode: string): void {
+  localStorage.removeItem(`${SEEN_QUESTIONS_PREFIX}${roomCode}`);
 }
