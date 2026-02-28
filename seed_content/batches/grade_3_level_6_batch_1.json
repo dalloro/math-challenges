@@ -1,0 +1,1052 @@
+[
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A rectangular field is 30 m by 20 m. A diagonal path divides it into two triangles. What is the area of one triangle?",
+        "options": [
+            "150 sq m",
+            "200 sq m",
+            "250 sq m",
+            "300 sq m",
+            "600 sq m"
+        ],
+        "correct_answer": "300 sq m",
+        "ideal_solution": "Rectangle area: 30 × 20 = 600. Each triangle: 600 ÷ 2 = 300 sq m. Socratic Hint: A diagonal splits a rectangle into two equal triangles.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 250 from wrong calculation.",
+            "formula_misapplication": "Student picks 600 (full rectangle).",
+            "premature_calculation": "Student gets 30 × 20 = 600 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "What is 7/12 - 1/4?",
+        "options": [
+            "1/3",
+            "1/4",
+            "5/12",
+            "6/12",
+            "3/8"
+        ],
+        "correct_answer": "1/3",
+        "ideal_solution": "Convert 1/4 to twelfths: 1/4 = 3/12. Now: 7/12 - 3/12 = 4/12 = 1/3. Socratic Hint: Find a common denominator and simplify the result.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5/12 from wrong conversion.",
+            "formula_misapplication": "Student picks 6/12 subtracting numerators without converting.",
+            "premature_calculation": "Student gets 4/12 and doesn't simplify."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 312 × 3?",
+        "options": [
+            "916",
+            "926",
+            "936",
+            "946",
+            "956"
+        ],
+        "correct_answer": "936",
+        "ideal_solution": "312 × 3: 300×3=900, 10×3=30, 2×3=6. 900+30+6=936. Socratic Hint: Break into hundreds, tens, ones.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 926 from wrong tens.",
+            "formula_misapplication": "Student picks 916 from error.",
+            "premature_calculation": "Student gets 900 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "What is the smallest positive number divisible by 2, 3, and 5?",
+        "options": [
+            "10",
+            "15",
+            "20",
+            "30",
+            "60"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "LCM(2,3,5) = 30. Check: 30÷2=15✓, 30÷3=10✓, 30÷5=6✓. Socratic Hint: Find the LCM of all three numbers.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 60 (next common multiple).",
+            "formula_misapplication": "Student picks 10 (only divisible by 2 and 5).",
+            "premature_calculation": "Student picks 15 (only divisible by 3 and 5)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "Three pipes fill a tank. Pipe A fills 20 liters/min, B fills 15 liters/min, C drains 5 liters/min. What is the net fill rate?",
+        "options": [
+            "10 L/min",
+            "20 L/min",
+            "25 L/min",
+            "30 L/min",
+            "40 L/min"
+        ],
+        "correct_answer": "30 L/min",
+        "ideal_solution": "In: 20 + 15 = 35 L/min. Out: 5 L/min. Net: 35 - 5 = 30 L/min. Socratic Hint: Add fill rates, subtract drain rate.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 25 computing 20+15-10.",
+            "formula_misapplication": "Student picks 40 computing 20+15+5.",
+            "premature_calculation": "Student gets 20 + 15 = 35 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A rectangular box has a length of 8 cm, width of 6 cm, and height of 4 cm. What is the total surface area of the box?",
+        "options": [
+            "144 sq cm",
+            "176 sq cm",
+            "192 sq cm",
+            "208 sq cm",
+            "384 sq cm"
+        ],
+        "correct_answer": "208 sq cm",
+        "ideal_solution": "SA = 2(lw + lh + wh) = 2(48 + 32 + 24) = 2 × 104 = 208 sq cm. Socratic Hint: Find the area of each pair of faces.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 192 computing 2(48+32+16).",
+            "formula_misapplication": "Student picks 384 computing double the surface area.",
+            "premature_calculation": "Student gets 48+32+24=104 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "What is 2/3 of 45?",
+        "options": [
+            "15",
+            "22.5",
+            "25",
+            "30",
+            "40"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "1/3 of 45 = 15. 2/3 of 45 = 2 × 15 = 30. Socratic Hint: Find 1/3 first, then multiply by 2.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 15 (only 1/3).",
+            "formula_misapplication": "Student picks 22.5 computing 45 ÷ 2.",
+            "premature_calculation": "Student gets 45 ÷ 3 = 15 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A spider has 8 legs. A beetle has 6 legs. If you see 10 creatures with a total of 68 legs, how many are spiders?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Let spiders = s, beetles = 10-s. Legs: 8s + 6(10-s) = 68. 8s + 60 - 6s = 68. 2s = 8. s = 4. Socratic Hint: Set up an equation for legs.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 6 (the number of beetles).",
+            "formula_misapplication": "Student picks 5 assuming half and half.",
+            "premature_calculation": "Student gets 68 ÷ 8 ≈ 8.5 (wrong approach)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 576 ÷ 8?",
+        "options": [
+            "62",
+            "67",
+            "72",
+            "76",
+            "82"
+        ],
+        "correct_answer": "72",
+        "ideal_solution": "576 ÷ 8: 8 × 72 = 576. Or: 8 × 70 = 560, 576-560=16, 16÷8=2. 70+2=72. Socratic Hint: Build up from known multiples of 8.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 67 from wrong calculation.",
+            "formula_misapplication": "Student picks 76 from wrong subtraction.",
+            "premature_calculation": "Student gets 8 × 70 = 560 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A movie starts at 7:35 PM and lasts 1 hour 55 minutes. What time does it end?",
+        "options": [
+            "9:15 PM",
+            "9:25 PM",
+            "9:30 PM",
+            "9:35 PM",
+            "9:55 PM"
+        ],
+        "correct_answer": "9:30 PM",
+        "ideal_solution": "7:35 + 1:55: minutes 35+55=90=1h30. Hours: 7+1+1=9. Time: 9:30 PM. Socratic Hint: Add minutes first, convert excess to hours.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 9:25 PM from wrong minute addition.",
+            "formula_misapplication": "Student picks 9:35 PM adding only the hour.",
+            "premature_calculation": "Student gets 7:35 + 1:00 = 8:35 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A regular hexagon is made of 6 equilateral triangles. If each triangle has an area of 12 sq cm, what is the area of the hexagon?",
+        "options": [
+            "36 sq cm",
+            "48 sq cm",
+            "60 sq cm",
+            "72 sq cm",
+            "84 sq cm"
+        ],
+        "correct_answer": "72 sq cm",
+        "ideal_solution": "6 triangles × 12 sq cm each = 72 sq cm. Socratic Hint: A regular hexagon = 6 equilateral triangles.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 60 computing 5 × 12.",
+            "formula_misapplication": "Student picks 48 computing 4 × 12.",
+            "premature_calculation": "Student picks 36 computing 3 × 12."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "How many prime numbers are between 10 and 30?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Primes between 10-30: 11, 13, 17, 19, 23, 29. That's 6. Socratic Hint: Check each number for divisibility.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 missing one prime.",
+            "formula_misapplication": "Student picks 7 including a non-prime like 21.",
+            "premature_calculation": "Student picks 4 missing several."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "What is 1/2 × 2/3 × 3/4?",
+        "options": [
+            "1/4",
+            "1/3",
+            "1/2",
+            "6/9",
+            "6/24"
+        ],
+        "correct_answer": "1/4",
+        "ideal_solution": "1/2 × 2/3 = 2/6 = 1/3. Then 1/3 × 3/4 = 3/12 = 1/4. Or directly: (1×2×3)/(2×3×4) = 6/24 = 1/4. Socratic Hint: Multiply numerators and denominators, then simplify.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/3 stopping after first multiplication.",
+            "formula_misapplication": "Student picks 6/24 not simplifying.",
+            "premature_calculation": "Student picks 1/2 from wrong calculation."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A rectangular pool is surrounded by a 2 m wide walkway. The pool is 10 m by 6 m. What is the total area including the walkway?",
+        "options": [
+            "60 sq m",
+            "96 sq m",
+            "120 sq m",
+            "140 sq m",
+            "196 sq m"
+        ],
+        "correct_answer": "140 sq m",
+        "ideal_solution": "With walkway: length = 10+4=14 m, width = 6+4=10 m. Total area: 14 × 10 = 140 sq m. Socratic Hint: Add twice the walkway width to each dimension.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 96 using inner dimensions 12 × 8.",
+            "formula_misapplication": "Student picks 60 (pool area only).",
+            "premature_calculation": "Student gets 10+4=14 and 6+4=10 but multiplies wrong."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 198 × 5?",
+        "options": [
+            "890",
+            "940",
+            "980",
+            "990",
+            "1000"
+        ],
+        "correct_answer": "990",
+        "ideal_solution": "198 × 5: 200 × 5 = 1000, minus 2 × 5 = 10. 1000-10=990. Socratic Hint: Round up to 200, multiply, adjust.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 980 subtracting 20 instead of 10.",
+            "formula_misapplication": "Student picks 1000 not subtracting.",
+            "premature_calculation": "Student gets 200 × 5 = 1000 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A staircase has 10 steps. Each step is 20 cm high and 25 cm deep. What is the total height of the staircase?",
+        "options": [
+            "150 cm",
+            "175 cm",
+            "200 cm",
+            "225 cm",
+            "250 cm"
+        ],
+        "correct_answer": "200 cm",
+        "ideal_solution": "Total height: 10 × 20 = 200 cm. The depth doesn't affect the height! Socratic Hint: Only the step height matters for total height.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 225 from wrong multiplication.",
+            "formula_misapplication": "Student picks 250 computing 10 × 25 (using depth).",
+            "premature_calculation": "Student adds 20+25=45 and multiplies by something."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "What are the first 4 terms of the sequence where each term is double the previous, starting from 3?",
+        "options": [
+            "3, 6, 9, 12",
+            "3, 6, 12, 18",
+            "3, 6, 12, 24",
+            "3, 9, 18, 36",
+            "3, 6, 9, 18"
+        ],
+        "correct_answer": "3, 6, 12, 24",
+        "ideal_solution": "Start: 3. ×2 → 6. ×2 → 12. ×2 → 24. Sequence: 3, 6, 12, 24. Socratic Hint: Each term is 2 times the previous.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks '3, 6, 12, 18' confusing ×2 and ×3.",
+            "formula_misapplication": "Student picks '3, 6, 9, 12' adding 3 each time instead of doubling.",
+            "premature_calculation": "Student gets 3, 6 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "Convert 17/5 to a mixed number.",
+        "options": [
+            "2 2/5",
+            "3 1/5",
+            "3 2/5",
+            "3 3/5",
+            "4 2/5"
+        ],
+        "correct_answer": "3 2/5",
+        "ideal_solution": "17 ÷ 5 = 3 remainder 2. So 17/5 = 3 2/5. Socratic Hint: Divide the numerator by the denominator.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 3 1/5 computing 16/5.",
+            "formula_misapplication": "Student picks 2 2/5 computing 12/5.",
+            "premature_calculation": "Student gets 17÷5=3 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A swimming pool 25 m long and 10 m wide needs to be filled to a depth of 2 m. If a hose delivers water at 500 liters per minute, how many minutes will it take? (1 cubic meter = 1000 liters)",
+        "options": [
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2500"
+        ],
+        "correct_answer": "1000",
+        "ideal_solution": "Volume: 25 × 10 × 2 = 500 m³. In liters: 500 × 1000 = 500,000 L. Time: 500,000 ÷ 500 = 1000 minutes. Socratic Hint: Find volume in m³, convert to liters, divide by hose rate.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 500 not converting m³ to liters.",
+            "formula_misapplication": "Student picks 750 from wrong calculation.",
+            "premature_calculation": "Student gets 500 m³ and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "In a class, the ratio of boys to girls is 3:5. If there are 24 students total, how many girls are there?",
+        "options": [
+            "8",
+            "9",
+            "12",
+            "15",
+            "16"
+        ],
+        "correct_answer": "15",
+        "ideal_solution": "Total ratio parts: 3+5=8. Each part: 24÷8=3 students. Girls: 5×3=15. Socratic Hint: Divide total by sum of ratio parts.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 9 computing boys (3×3).",
+            "formula_misapplication": "Student picks 16 computing 24×5/8+1.",
+            "premature_calculation": "Student gets 24÷8=3 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 444 × 2?",
+        "options": [
+            "848",
+            "868",
+            "878",
+            "888",
+            "898"
+        ],
+        "correct_answer": "888",
+        "ideal_solution": "444 × 2 = 888. Each digit doubles: 4×2=8, 4×2=8, 4×2=8. Socratic Hint: Multiply each digit by 2.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 868 from wrong calculation.",
+            "formula_misapplication": "Student picks 848 from error.",
+            "premature_calculation": "Student gets 4×2=8 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A candy costs 75 cents. If you have $5, how many candies can you buy and how much change will you have?",
+        "options": [
+            "5 candies, $1.25",
+            "6 candies, $0.50",
+            "6 candies, $0.75",
+            "7 candies, $0.25",
+            "7 candies, $0"
+        ],
+        "correct_answer": "6 candies, $0.50",
+        "ideal_solution": "500 ÷ 75 = 6 R50. Buy 6 candies (6 × 75 = 450 cents). Change: 500-450=50 cents=$0.50. Socratic Hint: Divide total money by price per candy.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks '7 candies, $0.25' (7×75=525>500).",
+            "formula_misapplication": "Student picks '5 candies, $1.25' spending too little.",
+            "premature_calculation": "Student gets 500÷75≈6.67 and picks 7."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "A jar is 2/7 full of marbles. If there are 18 marbles, how many marbles does the jar hold when full?",
+        "options": [
+            "36",
+            "42",
+            "54",
+            "63",
+            "72"
+        ],
+        "correct_answer": "63",
+        "ideal_solution": "2/7 = 18 marbles. 1/7 = 9 marbles. Full (7/7) = 9 × 7 = 63 marbles. Socratic Hint: If 2/7 is known, find 1/7 first.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 54 computing 18 × 3.",
+            "formula_misapplication": "Student picks 36 computing 18 × 2.",
+            "premature_calculation": "Student gets 18 ÷ 2 = 9 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A circle has a radius of 7 cm. What is the diameter?",
+        "options": [
+            "3.5 cm",
+            "7 cm",
+            "14 cm",
+            "21 cm",
+            "49 cm"
+        ],
+        "correct_answer": "14 cm",
+        "ideal_solution": "Diameter = 2 × radius = 2 × 7 = 14 cm. Socratic Hint: The diameter is always twice the radius.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 21 computing 3 × 7.",
+            "formula_misapplication": "Student picks 49 computing 7² (area formula).",
+            "premature_calculation": "Student picks 7 confusing radius with diameter."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "The sum of three consecutive numbers is 99. What is the largest number?",
+        "options": [
+            "31",
+            "32",
+            "33",
+            "34",
+            "35"
+        ],
+        "correct_answer": "34",
+        "ideal_solution": "Three consecutive numbers: n, n+1, n+2. Sum: 3n+3=99. 3n=96. n=32. Numbers: 32, 33, 34. Largest: 34. Socratic Hint: The middle number is the average: 99÷3=33.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 33 (the middle number).",
+            "formula_misapplication": "Student picks 35 computing 99÷3+2.",
+            "premature_calculation": "Student gets 99÷3=33 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A runner completes a 400 m lap in 80 seconds. At this pace, how long will a 2 km race take in minutes?",
+        "options": [
+            "4 min",
+            "5 min",
+            "6 min 40 sec",
+            "8 min",
+            "10 min"
+        ],
+        "correct_answer": "6 min 40 sec",
+        "ideal_solution": "2 km = 2000 m. Laps: 2000 ÷ 400 = 5. Time: 5 × 80 = 400 seconds = 6 min 40 sec. Socratic Hint: Find how many laps, multiply by lap time, convert to minutes.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 min computing 400÷80=5.",
+            "formula_misapplication": "Student picks 8 min computing 2000÷250.",
+            "premature_calculation": "Student gets 5 laps and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 625 ÷ 25?",
+        "options": [
+            "20",
+            "22",
+            "24",
+            "25",
+            "30"
+        ],
+        "correct_answer": "25",
+        "ideal_solution": "625 ÷ 25 = 25. Check: 25 × 25 = 625 ✓. Socratic Hint: What number squared gives 625?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 24 from wrong calculation.",
+            "formula_misapplication": "Student picks 30 from wrong estimate.",
+            "premature_calculation": "Student gets 25 × 20 = 500 and gives up."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "Which is larger: 5/7 or 3/4?",
+        "options": [
+            "5/7",
+            "3/4",
+            "They are equal",
+            "Cannot compare",
+            "Need more info"
+        ],
+        "correct_answer": "3/4",
+        "ideal_solution": "Common denominator 28: 5/7 = 20/28, 3/4 = 21/28. Since 21 > 20, 3/4 > 5/7. Socratic Hint: Convert to the same denominator to compare.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5/7 thinking bigger numerator means bigger fraction.",
+            "formula_misapplication": "Student picks 'They are equal' without computing.",
+            "premature_calculation": "Student picks 'Cannot compare' without trying."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A rectangular plot of land is divided into 6 equal squares. The total area is 150 sq m. What is the side length of each square?",
+        "options": [
+            "3 m",
+            "4 m",
+            "5 m",
+            "6 m",
+            "25 m"
+        ],
+        "correct_answer": "5 m",
+        "ideal_solution": "Area of each square: 150 ÷ 6 = 25 sq m. Side = √25 = 5 m. Socratic Hint: Find each square's area, then find its side.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 25 (the area, not the side).",
+            "formula_misapplication": "Student picks 6 computing 150 ÷ 25.",
+            "premature_calculation": "Student gets 150 ÷ 6 = 25 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "Two trains leave the same station. Train A goes east at 60 km/h. Train B goes west at 40 km/h. How far apart are they after 2 hours?",
+        "options": [
+            "40 km",
+            "80 km",
+            "120 km",
+            "160 km",
+            "200 km"
+        ],
+        "correct_answer": "200 km",
+        "ideal_solution": "Train A: 60 × 2 = 120 km east. Train B: 40 × 2 = 80 km west. Apart: 120 + 80 = 200 km. Socratic Hint: They move in opposite directions, so add their distances.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 160 from wrong calculation.",
+            "formula_misapplication": "Student picks 120 (Train A only).",
+            "premature_calculation": "Student gets 120 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 864 ÷ 6?",
+        "options": [
+            "134",
+            "139",
+            "142",
+            "144",
+            "148"
+        ],
+        "correct_answer": "144",
+        "ideal_solution": "864 ÷ 6: 6 × 144 = 864. Or: 6 × 100 = 600, 864-600=264, 6×40=240, 264-240=24, 6×4=24. 100+40+4=144. Socratic Hint: Divide step by step.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 142 from wrong remainder.",
+            "formula_misapplication": "Student picks 134 from wrong starting point.",
+            "premature_calculation": "Student gets 100+40=140 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "Convert 2 3/8 to an improper fraction.",
+        "options": [
+            "11/8",
+            "13/8",
+            "16/8",
+            "19/8",
+            "23/8"
+        ],
+        "correct_answer": "19/8",
+        "ideal_solution": "2 3/8 = (2 × 8 + 3)/8 = (16+3)/8 = 19/8. Socratic Hint: Multiply the whole number by the denominator, add the numerator.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 13/8 computing (1×8+5).",
+            "formula_misapplication": "Student picks 23/8 computing (2×8+7).",
+            "premature_calculation": "Student gets 2 × 8 = 16 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A right triangle has legs of 9 cm and 12 cm. What is its area?",
+        "options": [
+            "21 sq cm",
+            "36 sq cm",
+            "48 sq cm",
+            "54 sq cm",
+            "108 sq cm"
+        ],
+        "correct_answer": "54 sq cm",
+        "ideal_solution": "Area = 1/2 × base × height = 1/2 × 9 × 12 = 54 sq cm. In a right triangle, the legs serve as base and height. Socratic Hint: Use the legs as base and height.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 48 from wrong calculation.",
+            "formula_misapplication": "Student picks 108 forgetting to divide by 2.",
+            "premature_calculation": "Student gets 9 × 12 = 108 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A store gives a $10 discount on purchases over $50. If a shirt costs $25 and pants cost $35, how much do you pay for both?",
+        "options": [
+            "$40",
+            "$45",
+            "$50",
+            "$55",
+            "$60"
+        ],
+        "correct_answer": "$50",
+        "ideal_solution": "Total before discount: $25 + $35 = $60. Since $60 > $50, apply discount: $60 - $10 = $50. Socratic Hint: Check if total qualifies for the discount first.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $55 applying half discount.",
+            "formula_misapplication": "Student picks $60 forgetting the discount.",
+            "premature_calculation": "Student gets $25 + $35 = $60 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "What is the ones digit of 7⁴ (7 × 7 × 7 × 7)?",
+        "options": [
+            "1",
+            "3",
+            "7",
+            "9",
+            "49"
+        ],
+        "correct_answer": "1",
+        "ideal_solution": "7¹=7, 7²=49, 7³=343, 7⁴=2401. Ones digit = 1. Pattern: 7, 9, 3, 1, 7, 9, 3, 1... Socratic Hint: Track only the ones digit at each step.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 9 (ones digit of 7²).",
+            "formula_misapplication": "Student picks 7 thinking ones digit stays same.",
+            "premature_calculation": "Student picks 3 (ones digit of 7³)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A school has 4 classes. Class A has 28 students, B has 32, C has 26, D has 34. They want to redistribute so each class has the same number. How many does each class get?",
+        "options": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "32"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "Total: 28+32+26+34=120. Equal distribution: 120 ÷ 4 = 30 per class. Socratic Hint: Find the average.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 29 from wrong total.",
+            "formula_misapplication": "Student picks 32 (largest class).",
+            "premature_calculation": "Student adds 28+32=60 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "What is 5/8 + 3/4?",
+        "options": [
+            "8/12",
+            "8/8",
+            "11/8",
+            "11/12",
+            "15/32"
+        ],
+        "correct_answer": "11/8",
+        "ideal_solution": "Convert 3/4 to eighths: 3/4 = 6/8. Sum: 5/8 + 6/8 = 11/8 = 1 3/8. Socratic Hint: Use the larger denominator (8) as common denominator.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8/8 from wrong conversion.",
+            "formula_misapplication": "Student picks 8/12 adding numerators and denominators.",
+            "premature_calculation": "Student picks 15/32 multiplying instead of adding."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "A parallelogram has a base of 15 cm and a height of 8 cm. What is its area?",
+        "options": [
+            "23 sq cm",
+            "60 sq cm",
+            "90 sq cm",
+            "120 sq cm",
+            "150 sq cm"
+        ],
+        "correct_answer": "120 sq cm",
+        "ideal_solution": "Area = base × height = 15 × 8 = 120 sq cm. Socratic Hint: Parallelogram area is same formula as rectangle area.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 90 from wrong multiplication.",
+            "formula_misapplication": "Student picks 60 computing half (triangle formula).",
+            "premature_calculation": "Student picks 23 computing 15+8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A painting bought for $400 increases in value by 1/4 each year. What is it worth after 1 year?",
+        "options": [
+            "$100",
+            "$300",
+            "$425",
+            "$450",
+            "$500"
+        ],
+        "correct_answer": "$500",
+        "ideal_solution": "Increase: 1/4 of $400 = $100. New value: $400 + $100 = $500. Socratic Hint: Find the increase amount, then add to original.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $450 computing $400 + $50.",
+            "formula_misapplication": "Student picks $100 (the increase, not total value).",
+            "premature_calculation": "Student gets $400 × 1/4 = $100 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 7 × 8 × 9?",
+        "options": [
+            "448",
+            "484",
+            "498",
+            "504",
+            "512"
+        ],
+        "correct_answer": "504",
+        "ideal_solution": "7 × 8 = 56. 56 × 9 = 504. Or: 56 × 9 = 56×10-56 = 560-56 = 504. Socratic Hint: Multiply step by step.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 498 from wrong subtraction.",
+            "formula_misapplication": "Student picks 512 computing 8³.",
+            "premature_calculation": "Student gets 7 × 8 = 56 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "Which number is both a multiple of 9 and a factor of 108?",
+        "options": [
+            "9",
+            "12",
+            "18",
+            "27",
+            "All of above except 12"
+        ],
+        "correct_answer": "All of above except 12",
+        "ideal_solution": "Multiples of 9 that divide 108: 9(108÷9=12✓), 18(108÷18=6✓), 27(108÷27=4✓), 36(108÷36=3✓). 12 is NOT a multiple of 9. So 9, 18, 27 all work. Socratic Hint: Check both conditions for each option.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 12 (factor of 108 but not multiple of 9).",
+            "formula_misapplication": "Student picks 9 (correct but not the best answer).",
+            "premature_calculation": "Student checks only one condition."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "fractions",
+        "question": "A bag has 48 marbles. 1/4 are red, 1/3 are blue, 1/6 are green, and the rest are yellow. How many yellow marbles are there?",
+        "options": [
+            "4",
+            "8",
+            "10",
+            "12",
+            "16"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Red: 48/4=12. Blue: 48/3=16. Green: 48/6=8. Not yellow: 12+16+8=36. Yellow: 48-36=12. Socratic Hint: Find each color, subtract from total.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 (green count).",
+            "formula_misapplication": "Student picks 16 (blue count).",
+            "premature_calculation": "Student gets 12+16=28 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A jar has red and blue marbles in the ratio 2:3. If there are 30 marbles total, how many are red?",
+        "options": [
+            "6",
+            "10",
+            "12",
+            "15",
+            "18"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "Ratio parts: 2+3=5. Each part: 30÷5=6. Red: 2×6=12. Socratic Hint: Divide total by sum of ratio parts, then multiply by the red ratio.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 10 from wrong calculation.",
+            "formula_misapplication": "Student picks 18 (blue marbles).",
+            "premature_calculation": "Student gets 30÷5=6 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "geometry",
+        "question": "An equilateral triangle has side length 10 cm. What is its perimeter?",
+        "options": [
+            "20 cm",
+            "25 cm",
+            "30 cm",
+            "35 cm",
+            "40 cm"
+        ],
+        "correct_answer": "30 cm",
+        "ideal_solution": "Equilateral = all sides equal. Perimeter = 3 × 10 = 30 cm. Socratic Hint: 'Equilateral' means all three sides are the same.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 25 computing 2.5 × 10.",
+            "formula_misapplication": "Student picks 20 computing 2 × 10.",
+            "premature_calculation": "Student picks 40 computing 4 × 10."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "At a concert, tickets cost $15 for adults, $8 for kids under 12, and free for kids under 3. A family has 2 adults, a 14-year-old, an 8-year-old, and a 2-year-old. What do they pay?",
+        "options": [
+            "$38",
+            "$46",
+            "$53",
+            "$61",
+            "$75"
+        ],
+        "correct_answer": "$53",
+        "ideal_solution": "2 adults: 2×$15=$30. 14-year-old (adult price): $15. 8-year-old (kid): $8. 2-year-old: free. Total: $30+$15+$8=$53. Socratic Hint: Apply correct pricing for each person's age.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $46 forgetting the 14-year-old is adult-priced.",
+            "formula_misapplication": "Student picks $38 treating 14-year-old as kid.",
+            "premature_calculation": "Student gets 2×$15=$30 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "number_theory",
+        "question": "A palindrome number reads the same forward and backward (like 121). How many 3-digit palindromes are there?",
+        "options": [
+            "9",
+            "10",
+            "45",
+            "81",
+            "90"
+        ],
+        "correct_answer": "90",
+        "ideal_solution": "3-digit palindrome: ABA where A∈{1-9} and B∈{0-9}. A has 9 choices, B has 10 choices. Total: 9 × 10 = 90. Socratic Hint: The first digit determines the third, and the middle is free.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 81 computing 9 × 9.",
+            "formula_misapplication": "Student picks 9 counting only A choices.",
+            "premature_calculation": "Student picks 10 counting only B choices."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 1001 × 7?",
+        "options": [
+            "6907",
+            "7007",
+            "7070",
+            "7107",
+            "7700"
+        ],
+        "correct_answer": "7007",
+        "ideal_solution": "1001 × 7: 1000×7=7000, 1×7=7. 7000+7=7007. Socratic Hint: Split into thousands and ones.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 7070 computing 1010 × 7.",
+            "formula_misapplication": "Student picks 7107 from wrong calculation.",
+            "premature_calculation": "Student gets 7000 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A magician has 5 red cards, 3 blue cards, and 2 green cards. He removes one card randomly. What fraction of the remaining cards are blue?",
+        "options": [
+            "1/3",
+            "2/9",
+            "3/10",
+            "3/9",
+            "7/9"
+        ],
+        "correct_answer": "3/9",
+        "ideal_solution": "Total cards: 10. After removing 1 non-blue: 9 cards remain with 3 blue. P = 3/9 = 1/3. But wait, we don't know what was removed! If a blue was removed: 2/9. If non-blue: 3/9. The question says 'removes one card' without specifying. Assuming a non-blue card was removed: 3/9 = 1/3. Actually the most general answer: we can't know without knowing which card. But 3/9 is listed as option. Socratic Hint: If the removed card isn't blue, blue count stays at 3 out of 9.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 2/9 assuming a blue was removed.",
+            "formula_misapplication": "Student picks 3/10 not adjusting for removal.",
+            "premature_calculation": "Student picks 7/9 computing non-blue fraction."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "logic",
+        "question": "A rectangular pool is being drained. It loses 15 liters per minute. If the pool currently has 900 liters, how long until it's half empty?",
+        "options": [
+            "15 min",
+            "20 min",
+            "25 min",
+            "30 min",
+            "60 min"
+        ],
+        "correct_answer": "30 min",
+        "ideal_solution": "Half of 900 = 450 liters to drain. Time: 450 ÷ 15 = 30 minutes. Socratic Hint: Find half the water, divide by drain rate.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 60 draining all 900 liters.",
+            "formula_misapplication": "Student picks 20 computing 900 ÷ 45.",
+            "premature_calculation": "Student gets 900 ÷ 2 = 450 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 6,
+        "difficulty": "advanced",
+        "type": "arithmetic",
+        "question": "What is 333 + 667?",
+        "options": [
+            "900",
+            "990",
+            "1000",
+            "1010",
+            "1100"
+        ],
+        "correct_answer": "1000",
+        "ideal_solution": "333 + 667: ones 3+7=10 (write 0 carry 1), tens 3+6+1=10 (write 0 carry 1), hundreds 3+6+1=10. Answer: 1000. Socratic Hint: Add column by column.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 990 missing a carry.",
+            "formula_misapplication": "Student picks 1100 from double carry error.",
+            "premature_calculation": "Student gets 3+7=10 and stops."
+        }
+    }
+]

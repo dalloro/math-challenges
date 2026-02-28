@@ -1,0 +1,1052 @@
+[
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 6 × 8?",
+        "options": [
+            "14",
+            "42",
+            "46",
+            "48",
+            "54"
+        ],
+        "correct_answer": "48",
+        "ideal_solution": "6 × 8 = 48. Think 6 × 8 = (5 × 8) + 8 = 40 + 8 = 48. Socratic Hint: Break one factor into smaller parts.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 8 = 14.",
+            "formula_misapplication": "Student picks 42 confusing with 6 × 7.",
+            "premature_calculation": "Student picks 54 confusing with 6 × 9."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 7 × 6?",
+        "options": [
+            "13",
+            "36",
+            "42",
+            "48",
+            "49"
+        ],
+        "correct_answer": "42",
+        "ideal_solution": "7 × 6 = 42. Same as 6 × 7. Socratic Hint: You can swap the order of multiplication.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 7 + 6 = 13.",
+            "formula_misapplication": "Student picks 36 confusing with 6 × 6.",
+            "premature_calculation": "Student picks 49 confusing with 7 × 7."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 8 × 9?",
+        "options": [
+            "17",
+            "64",
+            "70",
+            "72",
+            "81"
+        ],
+        "correct_answer": "72",
+        "ideal_solution": "8 × 9 = 72. Think: 8 × 10 = 80, minus 8 = 72. Socratic Hint: Multiply by 10, then subtract one group.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 8 + 9 = 17.",
+            "formula_misapplication": "Student picks 64 confusing with 8 × 8.",
+            "premature_calculation": "Student picks 81 confusing with 9 × 9."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 9 × 7?",
+        "options": [
+            "16",
+            "56",
+            "63",
+            "70",
+            "72"
+        ],
+        "correct_answer": "63",
+        "ideal_solution": "9 × 7 = 63. Use the 9s trick: 10 × 7 = 70, minus 7 = 63. Socratic Hint: Multiply by 10 and subtract one group.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 9 + 7 = 16.",
+            "formula_misapplication": "Student picks 56 confusing with 8 × 7.",
+            "premature_calculation": "Student picks 72 confusing with 9 × 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 6 × 9?",
+        "options": [
+            "15",
+            "48",
+            "54",
+            "56",
+            "63"
+        ],
+        "correct_answer": "54",
+        "ideal_solution": "6 × 9 = 54. Think: 6 × 10 = 60, minus 6 = 54. Socratic Hint: Multiply by 10 and subtract one group.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 9 = 15.",
+            "formula_misapplication": "Student picks 48 confusing with 6 × 8.",
+            "premature_calculation": "Student picks 63 confusing with 7 × 9."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 81 ÷ 9?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "72"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "81 ÷ 9 = 9 because 9 × 9 = 81. Socratic Hint: What number times 9 gives 81?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 confusing with 72 ÷ 9.",
+            "formula_misapplication": "Student picks 72 computing 81 - 9.",
+            "premature_calculation": "Student picks 10 from incorrect calculation."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 56 ÷ 8?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "48"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "56 ÷ 8 = 7 because 8 × 7 = 56. Socratic Hint: How many eights make 56?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 6 confusing with 48 ÷ 8.",
+            "formula_misapplication": "Student picks 48 computing 56 - 8.",
+            "premature_calculation": "Student picks 8 confusing with 64 ÷ 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 48 ÷ 8?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "40"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "48 ÷ 8 = 6 because 8 × 6 = 48. Socratic Hint: How many eights are in 48?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 confusing with 40 ÷ 8.",
+            "formula_misapplication": "Student picks 40 computing 48 - 8.",
+            "premature_calculation": "Student picks 7 confusing with 56 ÷ 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 35 ÷ 7?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "28"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "35 ÷ 7 = 5 because 7 × 5 = 35. Socratic Hint: How many sevens make 35?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 4 confusing with 28 ÷ 7.",
+            "formula_misapplication": "Student picks 28 computing 35 - 7.",
+            "premature_calculation": "Student picks 6 confusing with 42 ÷ 7."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 49 ÷ 7?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "42"
+        ],
+        "correct_answer": "7",
+        "ideal_solution": "49 ÷ 7 = 7 because 7 × 7 = 49. Socratic Hint: What number times 7 gives 49?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 6 confusing with 42 ÷ 7.",
+            "formula_misapplication": "Student picks 42 computing 49 - 7.",
+            "premature_calculation": "Student picks 8 confusing with 56 ÷ 7."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 387 + 425?",
+        "options": [
+            "712",
+            "802",
+            "812",
+            "822",
+            "912"
+        ],
+        "correct_answer": "812",
+        "ideal_solution": "387 + 425: ones 7+5=12 (write 2 carry 1), tens 8+2+1=11 (write 1 carry 1), hundreds 3+4+1=8. Answer: 812. Socratic Hint: Add column by column with carries.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 802 forgetting the carry from ones.",
+            "formula_misapplication": "Student gets 712 computing hundreds as 3+4=7.",
+            "premature_calculation": "Student gets 822 from a tens carry error."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 604 - 278?",
+        "options": [
+            "226",
+            "326",
+            "336",
+            "376",
+            "426"
+        ],
+        "correct_answer": "326",
+        "ideal_solution": "604 - 278: borrow from tens/hundreds. 14-8=6, 9-7=2 (after borrows), 5-2=3. Answer: 326. Socratic Hint: When you can't subtract, borrow from the next column.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 336 from a borrowing error.",
+            "formula_misapplication": "Student gets 426 by not borrowing at all.",
+            "premature_calculation": "Student gets 226 by computing 6-2=2 in hundreds."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "Round 867 to the nearest hundred.",
+        "options": [
+            "800",
+            "860",
+            "870",
+            "900",
+            "1000"
+        ],
+        "correct_answer": "900",
+        "ideal_solution": "867 is between 800 and 900. The tens digit is 6, which is 5 or more, so round up. Answer: 900. Socratic Hint: Look at the tens digit.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 800 rounding down.",
+            "formula_misapplication": "Student picks 870 rounding to nearest ten.",
+            "premature_calculation": "Student picks 1000 rounding too far up."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "Round 254 to the nearest ten.",
+        "options": [
+            "250",
+            "254",
+            "255",
+            "260",
+            "300"
+        ],
+        "correct_answer": "250",
+        "ideal_solution": "254 is between 250 and 260. The ones digit is 4, less than 5, so round down. Answer: 250. Socratic Hint: Is the ones digit 5 or more?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 260 rounding up.",
+            "formula_misapplication": "Student picks 300 rounding to nearest hundred.",
+            "premature_calculation": "Student picks 255 rounding to nearest 5."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "A rectangle is 11 cm long and 4 cm wide. What is its area?",
+        "options": [
+            "15 sq cm",
+            "30 sq cm",
+            "40 sq cm",
+            "44 sq cm",
+            "48 sq cm"
+        ],
+        "correct_answer": "44 sq cm",
+        "ideal_solution": "Area = 11 × 4 = 44 sq cm. Socratic Hint: Multiply the two sides.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 11 + 4 = 15.",
+            "formula_misapplication": "Student computes perimeter: 2(11+4) = 30.",
+            "premature_calculation": "Student picks 40 confusing with 10 × 4."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "A rectangle is 7 cm long and 6 cm wide. What is its perimeter?",
+        "options": [
+            "13 cm",
+            "24 cm",
+            "26 cm",
+            "28 cm",
+            "42 cm"
+        ],
+        "correct_answer": "26 cm",
+        "ideal_solution": "Perimeter = 2 × (7 + 6) = 2 × 13 = 26 cm. Socratic Hint: Add all four sides.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 7 + 6 = 13 (only two sides).",
+            "formula_misapplication": "Student computes 7 × 6 = 42 (area).",
+            "premature_calculation": "Student picks 28 from incorrect doubling."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "A square has sides of 9 cm. What is its area?",
+        "options": [
+            "18 sq cm",
+            "36 sq cm",
+            "72 sq cm",
+            "81 sq cm",
+            "90 sq cm"
+        ],
+        "correct_answer": "81 sq cm",
+        "ideal_solution": "Area = 9 × 9 = 81 sq cm. Socratic Hint: Multiply one side by itself.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 9 + 9 = 18.",
+            "formula_misapplication": "Student computes perimeter: 4 × 9 = 36.",
+            "premature_calculation": "Student picks 72 confusing with 8 × 9."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "A triangle has sides of 6 cm, 8 cm, and 10 cm. What is its perimeter?",
+        "options": [
+            "14 cm",
+            "18 cm",
+            "20 cm",
+            "24 cm",
+            "48 cm"
+        ],
+        "correct_answer": "24 cm",
+        "ideal_solution": "Perimeter = 6 + 8 + 10 = 24 cm. Socratic Hint: Add all three sides.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 8 = 14 (forgets third side).",
+            "formula_misapplication": "Student picks 48 computing 6 × 8.",
+            "premature_calculation": "Student picks 18 computing 8 + 10."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "How many edges does a rectangular prism (box shape) have?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "A rectangular prism has 12 edges. Socratic Hint: Count the edges on a shoebox.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 confusing with the number of vertices.",
+            "formula_misapplication": "Student picks 6 confusing with the number of faces.",
+            "premature_calculation": "Student picks 10 from incorrect counting."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A train has 8 cars. Each car carries 9 passengers. How many passengers can the train carry?",
+        "options": [
+            "17",
+            "63",
+            "72",
+            "80",
+            "81"
+        ],
+        "correct_answer": "72",
+        "ideal_solution": "8 × 9 = 72 passengers. Socratic Hint: Multiply the number of cars by the passengers per car.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 8 + 9 = 17.",
+            "formula_misapplication": "Student picks 63 confusing with 7 × 9.",
+            "premature_calculation": "Student picks 81 confusing with 9 × 9."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "Maya practices piano for 6 minutes each day. How many minutes does she practice in a week (7 days)?",
+        "options": [
+            "13",
+            "36",
+            "42",
+            "48",
+            "49"
+        ],
+        "correct_answer": "42",
+        "ideal_solution": "6 × 7 = 42 minutes. Socratic Hint: Multiply daily minutes by the number of days.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 7 = 13.",
+            "formula_misapplication": "Student picks 36 confusing with 6 × 6.",
+            "premature_calculation": "Student picks 48 confusing with 6 × 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A library has 72 books on a shelf. The books are arranged in 9 equal stacks. How many books are in each stack?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "63"
+        ],
+        "correct_answer": "8",
+        "ideal_solution": "72 ÷ 9 = 8 books per stack. Socratic Hint: Split 72 into 9 equal groups.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 63 computing 72 - 9.",
+            "formula_misapplication": "Student picks 7 confusing with 63 ÷ 9.",
+            "premature_calculation": "Student picks 9 confusing divisor with answer."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A teacher buys 7 boxes of markers. Each box has 8 markers. How many markers did the teacher buy?",
+        "options": [
+            "15",
+            "48",
+            "54",
+            "56",
+            "63"
+        ],
+        "correct_answer": "56",
+        "ideal_solution": "7 × 8 = 56 markers. Socratic Hint: Multiply boxes by markers per box.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 7 + 8 = 15.",
+            "formula_misapplication": "Student picks 48 confusing with 6 × 8.",
+            "premature_calculation": "Student picks 63 confusing with 7 × 9."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A recipe calls for 4 eggs. If you want to make 9 batches, how many eggs do you need?",
+        "options": [
+            "13",
+            "28",
+            "32",
+            "36",
+            "40"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "9 × 4 = 36 eggs. Socratic Hint: Multiply the number of batches by the eggs per batch.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 9 + 4 = 13.",
+            "formula_misapplication": "Student picks 32 confusing with 8 × 4.",
+            "premature_calculation": "Student picks 40 confusing with 10 × 4."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "Dad drove 80 miles in 2 hours at a steady speed. How many miles did he drive each hour?",
+        "options": [
+            "20",
+            "30",
+            "40",
+            "60",
+            "78"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "80 ÷ 2 = 40 miles per hour. Socratic Hint: Split 80 equally into 2 parts.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 78 computing 80 - 2.",
+            "formula_misapplication": "Student picks 20 from incorrect division.",
+            "premature_calculation": "Student picks 60 from guessing."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 80 × 9?",
+        "options": [
+            "89",
+            "640",
+            "700",
+            "720",
+            "810"
+        ],
+        "correct_answer": "720",
+        "ideal_solution": "80 × 9 = 720. Think: 8 × 9 = 72, then add a zero: 720. Socratic Hint: Multiply the digits and attach the zero.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 80 + 9 = 89.",
+            "formula_misapplication": "Student picks 640 confusing with 80 × 8.",
+            "premature_calculation": "Student picks 810 confusing with 81 × 10."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 90 × 6?",
+        "options": [
+            "96",
+            "480",
+            "540",
+            "600",
+            "630"
+        ],
+        "correct_answer": "540",
+        "ideal_solution": "90 × 6 = 540. Think: 9 × 6 = 54, then add a zero: 540. Socratic Hint: Multiply the digits and attach the zero.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 90 + 6 = 96.",
+            "formula_misapplication": "Student picks 480 confusing with 80 × 6.",
+            "premature_calculation": "Student picks 630 confusing with 90 × 7."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A clock shows 10:45 AM. What time will it be in 30 minutes?",
+        "options": [
+            "10:75 AM",
+            "11:00 AM",
+            "11:15 AM",
+            "11:30 AM",
+            "11:45 AM"
+        ],
+        "correct_answer": "11:15 AM",
+        "ideal_solution": "10:45 + 30 minutes: 45 + 30 = 75 minutes = 1 hour 15 minutes. So 10:45 + 1:15 = 11:15 AM. Socratic Hint: 45 + 15 = 60, which is a full hour, then you still have 15 more minutes.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 10:75 AM (impossible time).",
+            "formula_misapplication": "Student picks 11:00 AM adding only 15 minutes.",
+            "premature_calculation": "Student picks 11:30 AM adding 45 minutes."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A game starts at 4:20 PM and lasts for 50 minutes. What time does the game end?",
+        "options": [
+            "4:70 PM",
+            "5:00 PM",
+            "5:10 PM",
+            "5:20 PM",
+            "5:30 PM"
+        ],
+        "correct_answer": "5:10 PM",
+        "ideal_solution": "4:20 + 50 minutes: 20 + 50 = 70 minutes = 1 hour 10 minutes. So 4:20 + 1:10 = 5:10 PM. Socratic Hint: 20 + 40 = 60 (one hour), then you have 10 more minutes.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 4:70 PM (impossible time).",
+            "formula_misapplication": "Student picks 5:20 PM adding a full hour.",
+            "premature_calculation": "Student picks 5:00 PM subtracting 20 from 50 instead of adding."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 736 - 418?",
+        "options": [
+            "218",
+            "308",
+            "318",
+            "328",
+            "418"
+        ],
+        "correct_answer": "318",
+        "ideal_solution": "736 - 418: ones 6-8, borrow: 16-8=8, tens 2-1=1 (after borrow), hundreds 7-4=3. Wait, let me recompute. 736-418: ones 6-8 need borrow: 16-8=8, tens 3-1-1(borrow)=1, no wait: tens 3-1=2 but we borrowed so 2-1=1: actually tens column 3-1=2, borrow from hundreds not needed. Let me be precise: 6<8 so borrow from tens: 16-8=8, tens becomes 2, 2-1=1, hundreds 7-4=3. Answer: 318. Socratic Hint: Borrow from the next column when needed.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 328 from a tens error.",
+            "formula_misapplication": "Student gets 218 computing 7-4=2 in hundreds.",
+            "premature_calculation": "Student gets 308 from an ones error."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 529 + 367?",
+        "options": [
+            "796",
+            "886",
+            "896",
+            "906",
+            "996"
+        ],
+        "correct_answer": "896",
+        "ideal_solution": "529 + 367: ones 9+7=16 (write 6 carry 1), tens 2+6+1=9, hundreds 5+3=8. Answer: 896. Socratic Hint: Add column by column, carrying when the sum is 10 or more.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 886 forgetting the carry from ones.",
+            "formula_misapplication": "Student gets 796 computing hundreds as 5+3-1=7.",
+            "premature_calculation": "Student gets 906 from an incorrect carry."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A container holds 5 liters of juice. How many liters are in 9 containers?",
+        "options": [
+            "14",
+            "35",
+            "40",
+            "45",
+            "50"
+        ],
+        "correct_answer": "45",
+        "ideal_solution": "9 × 5 = 45 liters. Socratic Hint: Multiply the number of containers by liters per container.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 9 + 5 = 14.",
+            "formula_misapplication": "Student picks 40 confusing with 8 × 5.",
+            "premature_calculation": "Student picks 50 confusing with 10 × 5."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A box weighs 7 kilograms. How much do 6 boxes weigh?",
+        "options": [
+            "13",
+            "35",
+            "36",
+            "42",
+            "49"
+        ],
+        "correct_answer": "42",
+        "ideal_solution": "6 × 7 = 42 kilograms. Socratic Hint: Multiply the number of boxes by the weight of each box.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 7 = 13.",
+            "formula_misapplication": "Student picks 36 confusing with 6 × 6.",
+            "premature_calculation": "Student picks 49 confusing with 7 × 7."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "A rectangular garden is 8 m long and 6 m wide. What is its perimeter?",
+        "options": [
+            "14 m",
+            "24 m",
+            "28 m",
+            "30 m",
+            "48 m"
+        ],
+        "correct_answer": "28 m",
+        "ideal_solution": "Perimeter = 2 × (8 + 6) = 2 × 14 = 28 m. Socratic Hint: Add all four sides.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 8 + 6 = 14 (only two sides).",
+            "formula_misapplication": "Student computes 8 × 6 = 48 (area).",
+            "premature_calculation": "Student picks 24 doubling only one side."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "What is the area of a rectangle that is 12 cm long and 3 cm wide?",
+        "options": [
+            "15 sq cm",
+            "30 sq cm",
+            "36 sq cm",
+            "39 sq cm",
+            "42 sq cm"
+        ],
+        "correct_answer": "36 sq cm",
+        "ideal_solution": "Area = 12 × 3 = 36 sq cm. Socratic Hint: Multiply length by width.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 12 + 3 = 15.",
+            "formula_misapplication": "Student computes perimeter: 2(12+3) = 30.",
+            "premature_calculation": "Student picks 39 from an incorrect multiplication."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A classroom has 6 tables. Each table has 7 students. How many students are in the classroom?",
+        "options": [
+            "13",
+            "35",
+            "36",
+            "42",
+            "48"
+        ],
+        "correct_answer": "42",
+        "ideal_solution": "6 × 7 = 42 students. Socratic Hint: Multiply the number of tables by students per table.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 7 = 13.",
+            "formula_misapplication": "Student picks 36 confusing with 6 × 6.",
+            "premature_calculation": "Student picks 48 confusing with 6 × 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A rope is 64 cm long. It is cut into 8 equal pieces. How long is each piece?",
+        "options": [
+            "6 cm",
+            "7 cm",
+            "8 cm",
+            "9 cm",
+            "56 cm"
+        ],
+        "correct_answer": "8 cm",
+        "ideal_solution": "64 ÷ 8 = 8 cm. Socratic Hint: Divide the total length by the number of pieces.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 56 computing 64 - 8.",
+            "formula_misapplication": "Student picks 7 confusing with 56 ÷ 8.",
+            "premature_calculation": "Student picks 9 from an incorrect fact."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 3 × 10?",
+        "options": [
+            "13",
+            "20",
+            "30",
+            "33",
+            "300"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "3 × 10 = 30. When you multiply by 10, add a zero to the number. Socratic Hint: What do you get when you put a 0 after 3?",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 3 + 10 = 13.",
+            "formula_misapplication": "Student picks 300 adding two zeros.",
+            "premature_calculation": "Student picks 33 placing digits together."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What number times 7 equals 63?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "56"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "? × 7 = 63. Since 7 × 9 = 63, the answer is 9. Socratic Hint: Think of your 7 times table.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 confusing with 7 × 8 = 56.",
+            "formula_misapplication": "Student picks 56 computing 63 - 7.",
+            "premature_calculation": "Student picks 7 confusing with 7 × 7 = 49."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What number times 8 equals 48?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "40"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "? × 8 = 48. Since 8 × 6 = 48, the answer is 6. Socratic Hint: Think of your 8 times table.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 confusing with 8 × 5 = 40.",
+            "formula_misapplication": "Student picks 40 computing 48 - 8.",
+            "premature_calculation": "Student picks 7 confusing with 8 × 7 = 56."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "There are 54 apples shared equally into 6 baskets. How many apples are in each basket?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "48"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "54 ÷ 6 = 9 apples per basket. Socratic Hint: How many sixes make 54?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 48 computing 54 - 6.",
+            "formula_misapplication": "Student picks 8 confusing with 48 ÷ 6.",
+            "premature_calculation": "Student picks 6 confusing divisor with quotient."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A spider has 8 legs. How many legs do 7 spiders have?",
+        "options": [
+            "15",
+            "48",
+            "54",
+            "56",
+            "64"
+        ],
+        "correct_answer": "56",
+        "ideal_solution": "7 × 8 = 56 legs. Socratic Hint: Multiply the number of spiders by legs per spider.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 7 + 8 = 15.",
+            "formula_misapplication": "Student picks 48 confusing with 6 × 8.",
+            "premature_calculation": "Student picks 64 confusing with 8 × 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 5 × 8?",
+        "options": [
+            "13",
+            "35",
+            "40",
+            "45",
+            "48"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "5 × 8 = 40. Count by 5s eight times: 5, 10, 15, 20, 25, 30, 35, 40. Socratic Hint: Skip-count by 5 eight times.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 5 + 8 = 13.",
+            "formula_misapplication": "Student picks 35 confusing with 5 × 7.",
+            "premature_calculation": "Student picks 48 confusing with 6 × 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 4 × 9?",
+        "options": [
+            "13",
+            "32",
+            "36",
+            "40",
+            "45"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "4 × 9 = 36. Use the 9s trick: 4 × 10 = 40, minus 4 = 36. Socratic Hint: Multiply by 10, then subtract one group of 4.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 4 + 9 = 13.",
+            "formula_misapplication": "Student picks 32 confusing with 4 × 8.",
+            "premature_calculation": "Student picks 40 not subtracting."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "Grandma baked 36 muffins for 4 grandchildren, shared equally. How many muffins does each child get?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "32"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "36 ÷ 4 = 9 muffins each. Socratic Hint: How many groups of 4 are in 36?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 32 computing 36 - 4.",
+            "formula_misapplication": "Student picks 8 confusing with 32 ÷ 4.",
+            "premature_calculation": "Student picks 6 confusing with 36 ÷ 6."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "Each table at a party seats 6 people. There are 54 guests. How many tables are needed?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "48"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "54 ÷ 6 = 9 tables. Socratic Hint: How many groups of 6 make 54?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 48 computing 54 - 6.",
+            "formula_misapplication": "Student picks 8 confusing with 48 ÷ 6.",
+            "premature_calculation": "Student picks 6 confusing divisor with quotient."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "geometry",
+        "question": "A rectangle is 5 cm long and 5 cm wide. What is its area?",
+        "options": [
+            "10 sq cm",
+            "15 sq cm",
+            "20 sq cm",
+            "25 sq cm",
+            "30 sq cm"
+        ],
+        "correct_answer": "25 sq cm",
+        "ideal_solution": "Area = 5 × 5 = 25 sq cm. A rectangle with equal sides is also a square! Socratic Hint: Multiply length by width.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 5 + 5 = 10.",
+            "formula_misapplication": "Student computes perimeter: 4 × 5 = 20.",
+            "premature_calculation": "Student picks 15 from an incorrect calculation."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 7 × 4?",
+        "options": [
+            "11",
+            "21",
+            "24",
+            "28",
+            "35"
+        ],
+        "correct_answer": "28",
+        "ideal_solution": "7 × 4 = 28. Think of 7 + 7 + 7 + 7 = 28. Socratic Hint: Add 7 four times.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 7 + 4 = 11.",
+            "formula_misapplication": "Student picks 21 confusing with 7 × 3.",
+            "premature_calculation": "Student picks 35 confusing with 7 × 5."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "logic",
+        "question": "A pizza is cut into 8 slices. If 3 people share it equally, can each person get the same number of whole slices?",
+        "options": [
+            "Yes, 2 each",
+            "Yes, 3 each",
+            "No, there are leftovers",
+            "Yes, 4 each",
+            "Yes, 8 each"
+        ],
+        "correct_answer": "No, there are leftovers",
+        "ideal_solution": "8 ÷ 3 = 2 remainder 2. Each person gets 2 slices with 2 left over. Socratic Hint: Does 3 go into 8 evenly?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 'Yes, 3 each' thinking 3 × 3 = 9 ≈ 8.",
+            "formula_misapplication": "Student picks 'Yes, 2 each' ignoring the leftover.",
+            "premature_calculation": "Student picks 'Yes, 4 each' computing 8 ÷ 2."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 2,
+        "difficulty": "beginner",
+        "type": "arithmetic",
+        "question": "What is 405 + 396?",
+        "options": [
+            "701",
+            "791",
+            "801",
+            "811",
+            "901"
+        ],
+        "correct_answer": "801",
+        "ideal_solution": "405 + 396: ones 5+6=11 (write 1 carry 1), tens 0+9+1=10 (write 0 carry 1), hundreds 4+3+1=8. Answer: 801. Socratic Hint: Add column by column with carries.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 791 forgetting a carry.",
+            "formula_misapplication": "Student gets 701 from incorrect hundreds calculation.",
+            "premature_calculation": "Student gets 811 from a tens error."
+        }
+    }
+]

@@ -1,0 +1,1052 @@
+[
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A store has a 'buy 3 get 1 free' deal on notebooks that cost $4 each. How much do 12 notebooks cost?",
+        "options": [
+            "$32",
+            "$36",
+            "$40",
+            "$44",
+            "$48"
+        ],
+        "correct_answer": "$36",
+        "ideal_solution": "For every 4 notebooks, you pay for 3. Groups of 4: 12 ÷ 4 = 3 groups. Paid notebooks: 3 × 3 = 9. Cost: 9 × $4 = $36. Socratic Hint: How many free ones do you get in 12?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $32 computing 8 × $4.",
+            "formula_misapplication": "Student picks $48 paying for all 12.",
+            "premature_calculation": "Student picks $40 computing 10 × $4."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "What is 3/4 × 2/5?",
+        "options": [
+            "5/9",
+            "6/20",
+            "5/20",
+            "3/10",
+            "6/9"
+        ],
+        "correct_answer": "3/10",
+        "ideal_solution": "3/4 × 2/5 = (3×2)/(4×5) = 6/20 = 3/10. Socratic Hint: Multiply numerators, multiply denominators, then simplify.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 6/20 not simplifying.",
+            "formula_misapplication": "Student picks 5/9 adding numerators and denominators.",
+            "premature_calculation": "Student picks 5/20 from wrong multiplication."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 246 × 8?",
+        "options": [
+            "1868",
+            "1928",
+            "1948",
+            "1968",
+            "1988"
+        ],
+        "correct_answer": "1968",
+        "ideal_solution": "246 × 8: 200×8=1600, 40×8=320, 6×8=48. 1600+320+48=1968. Socratic Hint: Break into hundreds, tens, ones.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1948 from wrong addition.",
+            "formula_misapplication": "Student picks 1928 from wrong tens.",
+            "premature_calculation": "Student gets 1600+320=1920 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A trapezoid has parallel sides of 10 cm and 14 cm, and a height of 6 cm. What is its area?",
+        "options": [
+            "36 sq cm",
+            "48 sq cm",
+            "60 sq cm",
+            "72 sq cm",
+            "84 sq cm"
+        ],
+        "correct_answer": "72 sq cm",
+        "ideal_solution": "Area = ½ × (b1 + b2) × h = ½ × (10+14) × 6 = ½ × 24 × 6 = 72 sq cm. Socratic Hint: Average the two parallel sides, then multiply by height.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 60 from wrong sum.",
+            "formula_misapplication": "Student picks 84 computing 14 × 6.",
+            "premature_calculation": "Student gets (10+14)=24 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "What is the sum of all odd numbers from 1 to 19?",
+        "options": [
+            "81",
+            "90",
+            "95",
+            "100",
+            "110"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "Odd numbers: 1,3,5,7,9,11,13,15,17,19. There are 10 of them. Sum = 10² = 100. Or add: 1+19=20, 3+17=20, 5+15=20, 7+13=20, 9+11=20. 5 pairs × 20 = 100. Socratic Hint: Pair the first and last odd numbers.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 95 from wrong addition.",
+            "formula_misapplication": "Student picks 90 computing 9 × 10.",
+            "premature_calculation": "Student adds a few and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A rectangular tank is 40 cm long, 30 cm wide, and 25 cm tall. It is filled with water to 3/5 of its height. How many liters of water are in it? (1 liter = 1000 cm³)",
+        "options": [
+            "12 L",
+            "15 L",
+            "18 L",
+            "24 L",
+            "30 L"
+        ],
+        "correct_answer": "18 L",
+        "ideal_solution": "Water height: 3/5 × 25 = 15 cm. Volume: 40 × 30 × 15 = 18000 cm³. In liters: 18000 ÷ 1000 = 18 L. Socratic Hint: Find the water height first, then compute volume.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 15 computing volume wrong.",
+            "formula_misapplication": "Student picks 30 using full height (25).",
+            "premature_calculation": "Student gets 40 × 30 = 1200 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "What is 5/6 ÷ 2/3?",
+        "options": [
+            "5/9",
+            "10/18",
+            "5/4",
+            "10/6",
+            "3/4"
+        ],
+        "correct_answer": "5/4",
+        "ideal_solution": "5/6 ÷ 2/3 = 5/6 × 3/2 = 15/12 = 5/4. Socratic Hint: Flip the second fraction and multiply.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 10/18 multiplying without flipping.",
+            "formula_misapplication": "Student picks 5/9 dividing numerators and denominators.",
+            "premature_calculation": "Student picks 3/4 from wrong simplification."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A farmer sells eggs in cartons of 12. He collects 85 eggs on Monday, 92 on Tuesday, and 73 on Wednesday. How many full cartons can he fill, and how many eggs are left over?",
+        "options": [
+            "20 cartons, 10 left",
+            "20 cartons, 0 left",
+            "21 cartons, 2 left",
+            "20 cartons, 8 left",
+            "21 cartons, 10 left"
+        ],
+        "correct_answer": "20 cartons, 10 left",
+        "ideal_solution": "Total: 85 + 92 + 73 = 250 eggs. 250 ÷ 12 = 20 R10. So 20 full cartons and 10 left over. Socratic Hint: Add all eggs, then divide by 12.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks '20 cartons, 8 left' from wrong total.",
+            "formula_misapplication": "Student picks '21 cartons, 2 left' computing 252÷12.",
+            "premature_calculation": "Student gets 250 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 375 × 4?",
+        "options": [
+            "1400",
+            "1450",
+            "1475",
+            "1500",
+            "1550"
+        ],
+        "correct_answer": "1500",
+        "ideal_solution": "375 × 4: 400×4=1600, minus 25×4=100. 1600-100=1500. Or: 375×4=1500 (since 375=3/8 of 1000, and 3/8×4=3/2, so 1.5×1000=1500).",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1475 from wrong subtraction.",
+            "formula_misapplication": "Student picks 1400 computing 350×4.",
+            "premature_calculation": "Student gets 400×4=1600 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A room is 5 m × 4 m. Square tiles of side 50 cm are used to cover the floor. How many tiles are needed?",
+        "options": [
+            "20",
+            "40",
+            "80",
+            "160",
+            "200"
+        ],
+        "correct_answer": "80",
+        "ideal_solution": "Room: 500 cm × 400 cm. Tiles per length: 500÷50=10. Tiles per width: 400÷50=8. Total: 10 × 8 = 80 tiles. Socratic Hint: Convert to the same units, then divide each dimension by tile size.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 40 computing 5×4×2.",
+            "formula_misapplication": "Student picks 20 computing 5×4 (area in m²) without converting.",
+            "premature_calculation": "Student gets 10 tiles per row and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "What is the remainder when 1000 is divided by 7?",
+        "options": [
+            "0",
+            "1",
+            "3",
+            "5",
+            "6"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "1000 ÷ 7 = 142 R6. Check: 142 × 7 = 994. 1000 - 994 = 6. Socratic Hint: Multiply the quotient by 7 and subtract from 1000.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 from wrong multiplication.",
+            "formula_misapplication": "Student picks 3 from wrong calculation.",
+            "premature_calculation": "Student gets 142 × 7 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A car travels 450 km on a full tank of 50 liters. How many liters does it use per 100 km?",
+        "options": [
+            "8 L",
+            "9 L",
+            "10 L",
+            "11 L",
+            "12 L"
+        ],
+        "correct_answer": "11 L",
+        "ideal_solution": "Per km: 50 ÷ 450 ≈ 0.111 L. Per 100 km: 50 × 100 ÷ 450 = 5000 ÷ 450 = 11.1 ≈ 11 L. Socratic Hint: Use the ratio (liters/km) × 100.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 9 computing 450÷50.",
+            "formula_misapplication": "Student picks 10 using rough estimate.",
+            "premature_calculation": "Student gets 50÷450 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "A recipe for 6 cookies uses 1/2 cup of butter. How much butter is needed for 15 cookies?",
+        "options": [
+            "3/4 cup",
+            "1 cup",
+            "1 1/4 cups",
+            "1 1/2 cups",
+            "2 cups"
+        ],
+        "correct_answer": "1 1/4 cups",
+        "ideal_solution": "Butter per cookie: 1/2 ÷ 6 = 1/12 cup. For 15: 15/12 = 5/4 = 1 1/4 cups. Or: 15/6 × 1/2 = 5/2 × 1/2 = 5/4 = 1 1/4. Socratic Hint: Find how many batches of 6 fit in 15, then multiply.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1 1/2 from wrong ratio.",
+            "formula_misapplication": "Student picks 1 cup from rough estimate.",
+            "premature_calculation": "Student gets 15/6=2.5 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "In a class of 36 students, the ratio of boys to girls is 5:4. How many more boys are there than girls?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "9"
+        ],
+        "correct_answer": "4",
+        "ideal_solution": "Total parts: 5+4=9. Each part: 36÷9=4. Boys: 5×4=20. Girls: 4×4=16. Difference: 20-16=4. Socratic Hint: Find each part's value, then compute the difference.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 (the ratio number, not the difference).",
+            "formula_misapplication": "Student picks 9 computing 5-4=1 then 1×9.",
+            "premature_calculation": "Student gets 36÷9=4 and picks that (correct but for wrong reason)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 1234 - 567?",
+        "options": [
+            "657",
+            "663",
+            "667",
+            "677",
+            "687"
+        ],
+        "correct_answer": "667",
+        "ideal_solution": "1234-567: ones 4-7(borrow)=14-7=7. Tens 2-6(borrow)=12-6=6. Hundreds 1-5(borrow)=11-5=6. Thousands: 0. Answer: 667. Socratic Hint: Borrow step by step.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 677 from wrong tens.",
+            "formula_misapplication": "Student picks 663 from multiple errors.",
+            "premature_calculation": "Student gets 7 in ones and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A cube has edges of 5 cm. What is its total surface area?",
+        "options": [
+            "25 sq cm",
+            "75 sq cm",
+            "100 sq cm",
+            "125 sq cm",
+            "150 sq cm"
+        ],
+        "correct_answer": "150 sq cm",
+        "ideal_solution": "Each face: 5 × 5 = 25 sq cm. A cube has 6 faces. Total: 6 × 25 = 150 sq cm. Socratic Hint: How many faces does a cube have?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 100 computing 4 faces.",
+            "formula_misapplication": "Student picks 125 computing volume (5³).",
+            "premature_calculation": "Student gets 25 (one face) and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "What is the product of the first 4 prime numbers?",
+        "options": [
+            "30",
+            "60",
+            "120",
+            "210",
+            "330"
+        ],
+        "correct_answer": "210",
+        "ideal_solution": "First 4 primes: 2, 3, 5, 7. Product: 2×3=6, 6×5=30, 30×7=210. Socratic Hint: List the first 4 primes, then multiply step by step.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 120 computing 2×3×4×5 (4 is not prime).",
+            "formula_misapplication": "Student picks 30 using only first 3 primes.",
+            "premature_calculation": "Student gets 2×3×5=30 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A clock strikes once at 1:00, twice at 2:00, three times at 3:00, etc. How many total strikes from 1:00 to 12:00?",
+        "options": [
+            "66",
+            "72",
+            "78",
+            "84",
+            "90"
+        ],
+        "correct_answer": "78",
+        "ideal_solution": "Sum: 1+2+3+...+12 = 12×13/2 = 78. Or pair: (1+12)+(2+11)+...+(6+7) = 6×13=78. Socratic Hint: Use the formula n(n+1)/2.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 72 from wrong addition.",
+            "formula_misapplication": "Student picks 66 computing 11×12/2 (forgetting 12th hour).",
+            "premature_calculation": "Student adds 1+2+3+4+5=15 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "Simplify: 24/36.",
+        "options": [
+            "1/2",
+            "2/3",
+            "3/4",
+            "4/6",
+            "12/18"
+        ],
+        "correct_answer": "2/3",
+        "ideal_solution": "GCF(24,36)=12. 24÷12=2, 36÷12=3. So 24/36=2/3. Socratic Hint: Find the GCF and divide both.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 4/6 dividing by 6 (not fully simplified).",
+            "formula_misapplication": "Student picks 12/18 dividing by 2.",
+            "premature_calculation": "Student picks 3/4 from wrong simplification."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A rectangular field is 60 m by 40 m. A fence costs $5 per meter. A gate (3 m wide) is installed on one side — the gate costs $100. What is the total fencing cost?",
+        "options": [
+            "$985",
+            "$1000",
+            "$1070",
+            "$1085",
+            "$1100"
+        ],
+        "correct_answer": "$1085",
+        "ideal_solution": "Perimeter: 2(60+40)=200 m. Fence length (minus gate): 200-3=197 m. Fence cost: 197×$5=$985. Gate: $100. Total: $985+$100=$1085. Socratic Hint: Subtract the gate width from perimeter, then add gate cost separately.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $1000 computing 200×$5.",
+            "formula_misapplication": "Student picks $1100 not subtracting gate from perimeter.",
+            "premature_calculation": "Student gets 200 m perimeter and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 999 + 888 + 777?",
+        "options": [
+            "2554",
+            "2624",
+            "2644",
+            "2664",
+            "2774"
+        ],
+        "correct_answer": "2664",
+        "ideal_solution": "999+888: ones 9+8=17(carry 1), tens 9+8+1=18(carry 1), hundreds 9+8+1=18. =1887. 1887+777: ones 7+7=14(carry 1), tens 8+7+1=16(carry 1), hundreds 8+7+1=16. =2664. Socratic Hint: Add step by step with carries.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 2644 from wrong carry.",
+            "formula_misapplication": "Student picks 2554 from multiple errors.",
+            "premature_calculation": "Student gets 999+888=1887 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A cylinder has a circular base with radius 3 cm and height 7 cm. What is the volume? (Use π ≈ 3.14)",
+        "options": [
+            "65.94 cm³",
+            "131.88 cm³",
+            "197.82 cm³",
+            "263.76 cm³",
+            "395.64 cm³"
+        ],
+        "correct_answer": "197.82 cm³",
+        "ideal_solution": "V = π × r² × h = 3.14 × 9 × 7 = 3.14 × 63 = 197.82 cm³. Socratic Hint: Find the base area (πr²) first, then multiply by height.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 131.88 computing π×r²×h with r=3,h=14÷2.",
+            "formula_misapplication": "Student picks 65.94 computing π×r×h (forgetting to square r).",
+            "premature_calculation": "Student gets π×9=28.26 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A school trip has 3 buses. Bus A has 45 seats, Bus B has 38 seats, Bus C has 42 seats. 110 students and 8 teachers need to go. Can they all fit?",
+        "options": [
+            "Yes, with 7 seats spare",
+            "Yes, with 5 seats spare",
+            "No, 3 people can't fit",
+            "Yes, with 0 seats spare",
+            "No, need 1 more bus"
+        ],
+        "correct_answer": "Yes, with 7 seats spare",
+        "ideal_solution": "Total seats: 45+38+42=125. People: 110+8=118. Spare: 125-118=7. Socratic Hint: Compare total seats with total people.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 'Yes, with 5 seats spare' from wrong total.",
+            "formula_misapplication": "Student picks 'No, 3 people can't fit' forgetting Bus C.",
+            "premature_calculation": "Student gets 125 seats and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "A number n satisfies: n × n = 196. What is n?",
+        "options": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+        ],
+        "correct_answer": "14",
+        "ideal_solution": "√196 = 14. Check: 14 × 14 = 196 ✓. Socratic Hint: Try squaring numbers near 13-15.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 13 computing 13²=169 (wrong).",
+            "formula_misapplication": "Student picks 16 confusing with 256.",
+            "premature_calculation": "Student tries 12²=144 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "What is 2/3 + 3/4 - 1/6?",
+        "options": [
+            "5/12",
+            "7/12",
+            "11/12",
+            "13/12",
+            "15/12"
+        ],
+        "correct_answer": "15/12",
+        "ideal_solution": "LCD=12: 2/3=8/12, 3/4=9/12, 1/6=2/12. Sum: 8+9-2=15. Answer: 15/12=1 3/12=1 1/4. Socratic Hint: Convert all to twelfths first.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 13/12 from wrong conversion.",
+            "formula_misapplication": "Student picks 5/12 from wrong operation order.",
+            "premature_calculation": "Student gets 8/12+9/12=17/12 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A painter paints 3 walls per day. Each wall takes 2 cans of paint. Paint costs $15 per can. How much does a 5-day job cost in paint?",
+        "options": [
+            "$150",
+            "$225",
+            "$300",
+            "$375",
+            "$450"
+        ],
+        "correct_answer": "$450",
+        "ideal_solution": "Walls in 5 days: 5 × 3 = 15 walls. Cans: 15 × 2 = 30 cans. Cost: 30 × $15 = $450. Socratic Hint: Chain the rates: days → walls → cans → cost.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $375 from wrong count.",
+            "formula_misapplication": "Student picks $150 computing 5×2×$15.",
+            "premature_calculation": "Student gets 15 walls and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 504 ÷ 7?",
+        "options": [
+            "62",
+            "68",
+            "70",
+            "72",
+            "78"
+        ],
+        "correct_answer": "72",
+        "ideal_solution": "504 ÷ 7 = 72. Check: 72 × 7 = 504 ✓. Or: 7×70=490, 504-490=14, 14÷7=2. 70+2=72. Socratic Hint: Build from 7×70.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 68 from wrong calculation.",
+            "formula_misapplication": "Student picks 78 computing 546÷7.",
+            "premature_calculation": "Student gets 7×70=490 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A path goes around the outside of a square garden. The garden has sides of 12 m. The path is 2 m wide. What is the area of just the path (not including the garden)?",
+        "options": [
+            "56 sq m",
+            "96 sq m",
+            "112 sq m",
+            "144 sq m",
+            "256 sq m"
+        ],
+        "correct_answer": "112 sq m",
+        "ideal_solution": "Outer square: (12+2+2)² = 16² = 256. Inner (garden): 12² = 144. Path: 256 - 144 = 112 sq m. Socratic Hint: Subtract garden area from total area.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 96 computing 14²-12²=196-144.",
+            "formula_misapplication": "Student picks 56 computing perimeter×2.",
+            "premature_calculation": "Student gets 16²=256 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "How many factors does 36 have?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. That's 9. Socratic Hint: Systematically check divisibility from 1 upward.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 missing one factor.",
+            "formula_misapplication": "Student picks 6 listing only 1,2,3,4,6,36.",
+            "premature_calculation": "Student lists a few and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A sequence doubles each term: 3, 6, 12, 24, ... What is the sum of the first 6 terms?",
+        "options": [
+            "63",
+            "93",
+            "126",
+            "189",
+            "252"
+        ],
+        "correct_answer": "189",
+        "ideal_solution": "Terms: 3, 6, 12, 24, 48, 96. Sum: 3+6+12+24+48+96 = 189. Socratic Hint: List all 6 terms first, then add.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 126 missing the 6th term.",
+            "formula_misapplication": "Student picks 93 computing 3+6+12+24+48.",
+            "premature_calculation": "Student gets terms but adds wrong."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "Convert 2.75 to a fraction.",
+        "options": [
+            "11/4",
+            "23/8",
+            "25/10",
+            "27/10",
+            "13/5"
+        ],
+        "correct_answer": "11/4",
+        "ideal_solution": "2.75 = 2 + 0.75 = 2 + 3/4 = 11/4. Or: 275/100 = 11/4. Socratic Hint: 0.75 = 3/4.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 27/10 computing 2.7 as 27/10.",
+            "formula_misapplication": "Student picks 25/10 computing 2.5.",
+            "premature_calculation": "Student gets 2 3/4 and doesn't convert to improper."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A rectangular yard is 30 m × 20 m. Trees are planted every 5 m along the border (including corners). How many trees total?",
+        "options": [
+            "18",
+            "19",
+            "20",
+            "21",
+            "100"
+        ],
+        "correct_answer": "20",
+        "ideal_solution": "Perimeter: 2(30+20)=100 m. Trees: 100÷5=20 trees. (No double-counting since the last position coincides with the first.) Socratic Hint: Divide perimeter by spacing.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 21 adding 1 extra.",
+            "formula_misapplication": "Student picks 100 (perimeter, not tree count).",
+            "premature_calculation": "Student gets 100÷5=20 and picks 18 (subtracting corners)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 15 × 15?",
+        "options": [
+            "200",
+            "215",
+            "220",
+            "225",
+            "230"
+        ],
+        "correct_answer": "225",
+        "ideal_solution": "15² = 225. Trick: 15×15 = (10+5)² = 100+100+25 = 225. Or: 15×10=150, 15×5=75, 150+75=225. Socratic Hint: Split one 15 into 10+5.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 220 from wrong addition.",
+            "formula_misapplication": "Student picks 200 computing 10×20.",
+            "premature_calculation": "Student gets 150 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A rectangular piece of paper is 20 cm × 15 cm. A 3 cm square is cut from each corner. What is the remaining area?",
+        "options": [
+            "228 sq cm",
+            "246 sq cm",
+            "254 sq cm",
+            "264 sq cm",
+            "300 sq cm"
+        ],
+        "correct_answer": "264 sq cm",
+        "ideal_solution": "Paper: 20×15=300 sq cm. Cut corners: 4 squares of 3×3=9 each = 36 sq cm. Remaining: 300-36=264 sq cm. Socratic Hint: Subtract the 4 corner areas from the total.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 246 computing 300-54.",
+            "formula_misapplication": "Student picks 228 computing more complex cuts.",
+            "premature_calculation": "Student gets 300 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "What is the GCF of 48 and 72?",
+        "options": [
+            "6",
+            "8",
+            "12",
+            "16",
+            "24"
+        ],
+        "correct_answer": "24",
+        "ideal_solution": "Factors of 48: 1,2,3,4,6,8,12,16,24,48. Factors of 72: 1,2,3,4,6,8,9,12,18,24,36,72. GCF=24. Socratic Hint: Find common factors and pick the greatest.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 12 (a common factor but not greatest).",
+            "formula_misapplication": "Student picks 8 (another common factor).",
+            "premature_calculation": "Student picks 6 (a smaller common factor)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A shop sells juice in 250 ml bottles and 1 L cartons. A family needs 3.5 L of juice for a party. What is the minimum cost if bottles are $2 each and cartons are $5 each?",
+        "options": [
+            "$15",
+            "$17",
+            "$18",
+            "$19",
+            "$28"
+        ],
+        "correct_answer": "$19",
+        "ideal_solution": "3 cartons (3 L) = $15. Still need 0.5 L = 500 ml = 2 bottles of 250 ml. 2 × $2 = $4. Total: $15 + $4 = $19. Socratic Hint: Maximize cartons (cheaper per liter), then fill the rest with bottles.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $15 buying only cartons (not enough).",
+            "formula_misapplication": "Student picks $28 buying all bottles.",
+            "premature_calculation": "Student gets 3.5 L and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "What is 7/8 - 2/5?",
+        "options": [
+            "5/3",
+            "5/40",
+            "11/40",
+            "19/40",
+            "27/40"
+        ],
+        "correct_answer": "19/40",
+        "ideal_solution": "LCD=40: 7/8=35/40, 2/5=16/40. 35/40-16/40=19/40. Socratic Hint: Find the LCD of 8 and 5.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 27/40 from wrong conversion.",
+            "formula_misapplication": "Student picks 5/3 subtracting numerators and denominators.",
+            "premature_calculation": "Student gets 35/40 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "An ant walks along the edges of a cube with side 4 cm. It walks along exactly 3 edges to go from one corner to the diagonally opposite corner. How far does it walk?",
+        "options": [
+            "4 cm",
+            "8 cm",
+            "12 cm",
+            "16 cm",
+            "20 cm"
+        ],
+        "correct_answer": "12 cm",
+        "ideal_solution": "Along 3 edges (one in each direction: length, width, height): 3 × 4 = 12 cm. Socratic Hint: To reach the opposite corner, you must traverse one edge in each dimension.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 computing 2 edges.",
+            "formula_misapplication": "Student picks 16 computing 4 edges.",
+            "premature_calculation": "Student picks 4 (one edge only)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 999 × 9?",
+        "options": [
+            "8891",
+            "8901",
+            "8911",
+            "8991",
+            "9001"
+        ],
+        "correct_answer": "8991",
+        "ideal_solution": "999 × 9: 1000×9=9000, minus 1×9=9. 9000-9=8991. Socratic Hint: Multiply by 1000 and subtract.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8901 from wrong subtraction.",
+            "formula_misapplication": "Student picks 9001 adding instead of subtracting.",
+            "premature_calculation": "Student gets 9000 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A triangle has vertices at (0,0), (8,0), and (4,6) on a grid. What is its area?",
+        "options": [
+            "12 sq units",
+            "18 sq units",
+            "24 sq units",
+            "32 sq units",
+            "48 sq units"
+        ],
+        "correct_answer": "24 sq units",
+        "ideal_solution": "Base = 8 (along x-axis). Height = 6 (perpendicular distance from (4,6) to x-axis). Area = ½ × 8 × 6 = 24 sq units. Socratic Hint: The base lies on the x-axis; the height is the y-coordinate of the third point.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 18 from wrong calculation.",
+            "formula_misapplication": "Student picks 48 computing 8×6 without halving.",
+            "premature_calculation": "Student gets 8×6=48 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A video is 4 minutes 30 seconds long. If it plays on repeat, how many times will it play completely in 1 hour?",
+        "options": [
+            "10",
+            "12",
+            "13",
+            "14",
+            "15"
+        ],
+        "correct_answer": "13",
+        "ideal_solution": "1 hour = 3600 seconds. Video = 4×60+30 = 270 seconds. Times: 3600÷270 = 13.33. So 13 complete plays (can't do a partial play). Socratic Hint: Convert to seconds, then divide.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 12 from wrong division.",
+            "formula_misapplication": "Student picks 15 computing 60÷4.",
+            "premature_calculation": "Student gets 3600÷270 and rounds up to 14."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "How many two-digit numbers have digits that sum to 10?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "Pairs (tens,ones) summing to 10: (1,9),(2,8),(3,7),(4,6),(5,5),(6,4),(7,3),(8,2),(9,1). That's 9 numbers: 19,28,37,46,55,64,73,82,91. Socratic Hint: List all pairs where tens+ones=10.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 missing one pair.",
+            "formula_misapplication": "Student picks 10 including (0,10) which isn't 2-digit.",
+            "premature_calculation": "Student picks 7 skipping some."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "A tank can be filled by pipe A in 6 hours and by pipe B in 12 hours. If both pipes work together, how long to fill the tank?",
+        "options": [
+            "3 hours",
+            "4 hours",
+            "5 hours",
+            "9 hours",
+            "18 hours"
+        ],
+        "correct_answer": "4 hours",
+        "ideal_solution": "Rate A: 1/6 per hour. Rate B: 1/12 per hour. Combined: 1/6+1/12 = 2/12+1/12 = 3/12 = 1/4 per hour. Time: 4 hours. Socratic Hint: Add the rates, then find the reciprocal.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 3 from wrong rate addition.",
+            "formula_misapplication": "Student picks 9 averaging 6 and 12.",
+            "premature_calculation": "Student gets 1/6+1/12=3/12 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "In a tournament, every player plays every other player once. If there are 45 games total, how many players are there?",
+        "options": [
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "correct_answer": "10",
+        "ideal_solution": "Games = n(n-1)/2 = 45. n(n-1)=90. 10×9=90 ✓. So n=10 players. Socratic Hint: Try n values until n(n-1)/2=45.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 9 computing 9×8/2=36 (wrong).",
+            "formula_misapplication": "Student picks 11 computing 45÷4≈11.",
+            "premature_calculation": "Student gets n(n-1)=90 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "arithmetic",
+        "question": "What is 876 - 389?",
+        "options": [
+            "477",
+            "483",
+            "487",
+            "493",
+            "497"
+        ],
+        "correct_answer": "487",
+        "ideal_solution": "876-389: ones 6-9(borrow)=16-9=7. Tens 6-8(borrow)=16-8=8. Hundreds 7-3=4. Answer: 487. Socratic Hint: Borrow from the next column when needed.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 483 from wrong borrowing.",
+            "formula_misapplication": "Student picks 493 from wrong tens.",
+            "premature_calculation": "Student gets 7 in ones and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "geometry",
+        "question": "A rectangular field is 50 m long and 30 m wide. If fencing costs $8 per meter but each corner post costs an additional $20, what is the total cost?",
+        "options": [
+            "$1200",
+            "$1280",
+            "$1320",
+            "$1360",
+            "$1440"
+        ],
+        "correct_answer": "$1360",
+        "ideal_solution": "Perimeter: 2(50+30)=160 m. Fence: 160×$8=$1280. Corner posts: 4×$20=$80. Total: $1280+$80=$1360. Socratic Hint: Add corner post costs to fencing cost.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $1320 computing 3 corners.",
+            "formula_misapplication": "Student picks $1280 forgetting corner posts.",
+            "premature_calculation": "Student gets 160 m and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "number_theory",
+        "question": "What is the LCM of 9 and 15?",
+        "options": [
+            "3",
+            "15",
+            "30",
+            "45",
+            "135"
+        ],
+        "correct_answer": "45",
+        "ideal_solution": "Multiples of 15: 15, 30, 45... Check: 45÷9=5✓, 45÷15=3✓. LCM=45. Socratic Hint: List multiples of the larger number until one is divisible by the smaller.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 30 (not divisible by 9).",
+            "formula_misapplication": "Student picks 135 computing 9×15.",
+            "premature_calculation": "Student picks 15 (LCM must include 9)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "fractions",
+        "question": "What is 3/5 × 5/9?",
+        "options": [
+            "1/3",
+            "8/14",
+            "15/45",
+            "8/45",
+            "3/9"
+        ],
+        "correct_answer": "1/3",
+        "ideal_solution": "3/5 × 5/9 = 15/45 = 1/3. Or cancel: 3/5 × 5/9 = (3×5)/(5×9) cancel 5s = 3/9 = 1/3. Socratic Hint: Cancel common factors before multiplying.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 15/45 not simplifying.",
+            "formula_misapplication": "Student picks 8/14 adding instead of multiplying.",
+            "premature_calculation": "Student picks 3/9 not simplifying fully."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A library fines $0.25 per day for overdue books. Maria had 3 books overdue for 8 days each, and 1 book overdue for 5 days. How much does she owe?",
+        "options": [
+            "$5.25",
+            "$6.25",
+            "$7.25",
+            "$8.25",
+            "$9.25"
+        ],
+        "correct_answer": "$7.25",
+        "ideal_solution": "3 books × 8 days × $0.25 = $6.00. 1 book × 5 days × $0.25 = $1.25. Total: $6.00+$1.25=$7.25. Socratic Hint: Calculate fines for each set of books separately, then add.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks $6.25 from wrong addition.",
+            "formula_misapplication": "Student picks $5.25 missing some days.",
+            "premature_calculation": "Student gets $6.00 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 7,
+        "difficulty": "expert",
+        "type": "logic",
+        "question": "A water tank holds 500 liters. A tap fills it at 20 liters per minute but has a leak of 5 liters per minute. How long to fill an empty tank?",
+        "options": [
+            "20 min",
+            "25 min",
+            "30 min",
+            "33 min 20 sec",
+            "100 min"
+        ],
+        "correct_answer": "33 min 20 sec",
+        "ideal_solution": "Net rate: 20-5=15 L/min. Time: 500÷15=33.33 min = 33 min 20 sec. Socratic Hint: Subtract the leak rate from fill rate.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 25 computing 500÷20.",
+            "formula_misapplication": "Student picks 100 computing 500÷5.",
+            "premature_calculation": "Student gets net rate 15 and stops."
+        }
+    }
+]

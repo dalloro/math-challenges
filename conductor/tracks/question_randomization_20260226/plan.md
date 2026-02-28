@@ -7,7 +7,7 @@
     - [x] Update `src/services/storage.ts` to support tracking `seenQuestionIds` per room/grade. [9352738]
     - [x] **Write failing tests** for Seen Questions tracking. [9352738]
     - [x] **Implement** Seen Questions tracking. [9352738]
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Audit & Recently Seen Infrastructure' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Phase 1: Audit & Recently Seen Infrastructure' (Protocol in workflow.md)
 
 ## Phase 2: Multi-Tier Selection Logic
 - [ ] Task: Create Randomization Utility

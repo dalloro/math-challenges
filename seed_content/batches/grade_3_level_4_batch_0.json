@@ -1,0 +1,1052 @@
+[
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "What fraction of this shape is shaded if 3 out of 4 equal parts are shaded?",
+        "options": [
+            "1/4",
+            "1/3",
+            "2/4",
+            "3/4",
+            "4/3"
+        ],
+        "correct_answer": "3/4",
+        "ideal_solution": "3 parts out of 4 equal parts are shaded, so the fraction is 3/4. Socratic Hint: The numerator is the shaded parts; the denominator is the total parts.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/3 confusing numerator and denominator.",
+            "formula_misapplication": "Student picks 4/3 inverting the fraction.",
+            "premature_calculation": "Student picks 1/4 giving only the unshaded portion."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "Which fraction is greater: 1/3 or 1/4?",
+        "options": [
+            "1/3",
+            "1/4",
+            "They are equal",
+            "Cannot tell",
+            "Neither"
+        ],
+        "correct_answer": "1/3",
+        "ideal_solution": "When comparing unit fractions, the smaller denominator gives a larger piece. 1/3 means pieces are bigger than 1/4 pieces. Socratic Hint: Think of a pie: fewer slices means bigger slices.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/4 thinking bigger denominator = bigger fraction.",
+            "formula_misapplication": "Student picks 'They are equal' thinking all unit fractions are the same.",
+            "premature_calculation": "Student picks 'Cannot tell' without comparing."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "What fraction is equivalent to 2/4?",
+        "options": [
+            "1/4",
+            "1/3",
+            "1/2",
+            "2/3",
+            "3/4"
+        ],
+        "correct_answer": "1/2",
+        "ideal_solution": "2/4 simplified: divide both numerator and denominator by 2. 2÷2=1, 4÷2=2. So 2/4 = 1/2. Socratic Hint: Can you divide top and bottom by the same number?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/4 dividing only the numerator.",
+            "formula_misapplication": "Student picks 2/3 subtracting 1 from each.",
+            "premature_calculation": "Student picks 3/4 adding 1 to numerator."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "Where does the fraction 3/4 go on a number line from 0 to 1?",
+        "options": [
+            "Before 1/4",
+            "At 1/4",
+            "Between 1/2 and 1",
+            "At 1",
+            "After 1"
+        ],
+        "correct_answer": "Between 1/2 and 1",
+        "ideal_solution": "3/4 = 0.75. Since 1/2 = 0.5 and 3/4 > 1/2, it goes between 1/2 and 1. Socratic Hint: 3/4 is more than half but less than the whole.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 'At 1/4' confusing 3/4 with 1/4.",
+            "formula_misapplication": "Student picks 'At 1' thinking 3/4 = 1.",
+            "premature_calculation": "Student picks 'Before 1/4' not understanding fractions."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "Which fraction is greater: 2/3 or 3/5?",
+        "options": [
+            "2/3",
+            "3/5",
+            "They are equal",
+            "Cannot compare",
+            "Neither"
+        ],
+        "correct_answer": "2/3",
+        "ideal_solution": "Find a common denominator: 2/3 = 10/15, 3/5 = 9/15. Since 10/15 > 9/15, 2/3 is greater. Socratic Hint: Make the denominators the same to compare.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 3/5 because 3 > 2 in numerators.",
+            "formula_misapplication": "Student picks 'They are equal' computing incorrectly.",
+            "premature_calculation": "Student picks 'Cannot compare' without trying."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A baker makes 8 trays of muffins. Each tray has 6 muffins. He sells 3/4 of all the muffins. How many muffins does he sell?",
+        "options": [
+            "12",
+            "24",
+            "36",
+            "42",
+            "48"
+        ],
+        "correct_answer": "36",
+        "ideal_solution": "Total muffins: 8 × 6 = 48. Sold: 3/4 of 48 = 48 ÷ 4 × 3 = 12 × 3 = 36. Socratic Hint: Find the total first, then take 3/4 of it.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 48 ÷ 4 = 12 and stops (only 1/4).",
+            "formula_misapplication": "Student computes 8 × 3 = 24.",
+            "premature_calculation": "Student gets 48 and picks that."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "There are 24 students. 1/3 of them are boys. How many are girls?",
+        "options": [
+            "8",
+            "12",
+            "14",
+            "16",
+            "18"
+        ],
+        "correct_answer": "16",
+        "ideal_solution": "Boys: 1/3 of 24 = 24 ÷ 3 = 8. Girls: 24 - 8 = 16. Socratic Hint: Find the boys first, then subtract from total.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 24 ÷ 3 = 8 and picks 8 (boys, not girls).",
+            "formula_misapplication": "Student computes 2/3 of 24 = 18 (wrong: 24 × 2/3 would be 16).",
+            "premature_calculation": "Student picks 12 = 24/2."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 12 × 5 + 15 × 3?",
+        "options": [
+            "60",
+            "75",
+            "95",
+            "105",
+            "120"
+        ],
+        "correct_answer": "105",
+        "ideal_solution": "12 × 5 = 60. 15 × 3 = 45. 60 + 45 = 105. Socratic Hint: Do both multiplications, then add.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 60 + 45 = 95 (wrong).",
+            "formula_misapplication": "Student computes (12+15) × (5+3) = 216.",
+            "premature_calculation": "Student stops at 60."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 15 × 4?",
+        "options": [
+            "45",
+            "55",
+            "60",
+            "64",
+            "75"
+        ],
+        "correct_answer": "60",
+        "ideal_solution": "15 × 4: break it up. 10 × 4 = 40, 5 × 4 = 20. 40 + 20 = 60. Socratic Hint: Split 15 into 10 + 5 and multiply each by 4.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 55 from a wrong calculation.",
+            "formula_misapplication": "Student computes 15 + 4 = 19.",
+            "premature_calculation": "Student computes 10 × 4 = 40 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 23 × 3?",
+        "options": [
+            "63",
+            "66",
+            "69",
+            "72",
+            "79"
+        ],
+        "correct_answer": "69",
+        "ideal_solution": "23 × 3: 20 × 3 = 60, 3 × 3 = 9. 60 + 9 = 69. Socratic Hint: Break 23 into 20 + 3.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 66 from a wrong calculation.",
+            "formula_misapplication": "Student computes 23 + 3 = 26.",
+            "premature_calculation": "Student computes 20 × 3 = 60 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 34 × 2?",
+        "options": [
+            "36",
+            "58",
+            "64",
+            "68",
+            "72"
+        ],
+        "correct_answer": "68",
+        "ideal_solution": "34 × 2: 30 × 2 = 60, 4 × 2 = 8. 60 + 8 = 68. Socratic Hint: Break 34 into 30 + 4.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 64 from wrong calculation.",
+            "formula_misapplication": "Student computes 34 + 2 = 36.",
+            "premature_calculation": "Student computes 30 × 2 = 60 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A farmer has 3 fields. The first field has 45 cows, the second has 38, and the third has 27. How many cows in total?",
+        "options": [
+            "100",
+            "105",
+            "110",
+            "115",
+            "120"
+        ],
+        "correct_answer": "110",
+        "ideal_solution": "45 + 38 = 83. 83 + 27 = 110. Socratic Hint: Add two numbers first, then add the third.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 105 from an addition error.",
+            "formula_misapplication": "Student computes 45 + 38 = 83 and stops.",
+            "premature_calculation": "Student picks 100 rounding."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A movie theater has 12 rows with 9 seats each. On Saturday, 78 seats were filled. How many seats were empty?",
+        "options": [
+            "18",
+            "24",
+            "28",
+            "30",
+            "42"
+        ],
+        "correct_answer": "30",
+        "ideal_solution": "Total seats: 12 × 9 = 108. Empty: 108 - 78 = 30. Socratic Hint: Find total seats first, then subtract filled seats.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 108 - 78 = 28 (wrong).",
+            "formula_misapplication": "Student computes 78 - 12 = 66.",
+            "premature_calculation": "Student gets 12 × 9 = 108 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Sophia buys 3 notebooks for $4 each and 2 pens for $3 each. She pays with a $20 bill. How much change does she get?",
+        "options": [
+            "$1",
+            "$2",
+            "$3",
+            "$5",
+            "$8"
+        ],
+        "correct_answer": "$2",
+        "ideal_solution": "Notebooks: 3 × 4 = $12. Pens: 2 × 3 = $6. Total: 12 + 6 = $18. Change: 20 - 18 = $2. Socratic Hint: Find the total cost, then subtract from amount paid.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets $18 total then 20 - 18 = $3 (wrong).",
+            "formula_misapplication": "Student computes 20 - 12 = $8 (forgets pens).",
+            "premature_calculation": "Student gets $12 + $6 = $18 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "geometry",
+        "question": "A rectangular pool is 12 m long and 8 m wide. A path 1 m wide goes around the entire pool. What are the outer dimensions of the path?",
+        "options": [
+            "13 m × 9 m",
+            "14 m × 10 m",
+            "13 m × 10 m",
+            "14 m × 9 m",
+            "12 m × 8 m"
+        ],
+        "correct_answer": "14 m × 10 m",
+        "ideal_solution": "Path adds 1 m on each side. Length: 12 + 1 + 1 = 14 m. Width: 8 + 1 + 1 = 10 m. Socratic Hint: The path extends 1 m on both ends of each dimension.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 13 × 9 adding only 1 instead of 2.",
+            "formula_misapplication": "Student picks 12 × 8 (the pool, not the outer edge).",
+            "premature_calculation": "Student adds only to length: 14 × 8."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "geometry",
+        "question": "A room is 5 m long and 4 m wide. Tiles cost $3 per square meter. How much will it cost to tile the room?",
+        "options": [
+            "$20",
+            "$27",
+            "$45",
+            "$60",
+            "$80"
+        ],
+        "correct_answer": "$60",
+        "ideal_solution": "Area: 5 × 4 = 20 sq m. Cost: 20 × 3 = $60. Socratic Hint: Find the area first, then multiply by the cost per square meter.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 5 × 4 = 20 and picks $20 (forgets the cost).",
+            "formula_misapplication": "Student computes perimeter: 2(5+4) = 18, then 18 × 3 = 54.",
+            "premature_calculation": "Student computes 5 × 3 = 15 then 4 × 3 = 12, total 27."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "Which number line shows 1/2 correctly? Point A is at 0.25, B is at 0.5, C is at 0.75, D is at 1.0.",
+        "options": [
+            "Point A",
+            "Point B",
+            "Point C",
+            "Point D",
+            "None of these"
+        ],
+        "correct_answer": "Point B",
+        "ideal_solution": "1/2 = 0.5, which is Point B. Socratic Hint: 1/2 means halfway between 0 and 1.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks Point A (1/4, not 1/2).",
+            "formula_misapplication": "Student picks Point D (confusing 1/2 with 1).",
+            "premature_calculation": "Student picks Point C (3/4, not 1/2)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "What is 1/4 of 20?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "10",
+            "15"
+        ],
+        "correct_answer": "5",
+        "ideal_solution": "1/4 of 20 = 20 ÷ 4 = 5. Socratic Hint: Divide by the denominator.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 4 confusing 20 ÷ 5.",
+            "formula_misapplication": "Student picks 10 computing 1/2 of 20.",
+            "premature_calculation": "Student picks 15 computing 3/4 of 20."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "What is 2/5 of 30?",
+        "options": [
+            "6",
+            "10",
+            "12",
+            "15",
+            "20"
+        ],
+        "correct_answer": "12",
+        "ideal_solution": "1/5 of 30 = 6. 2/5 of 30 = 2 × 6 = 12. Socratic Hint: First find 1/5, then multiply by 2.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 6 computing only 1/5.",
+            "formula_misapplication": "Student picks 15 computing 1/2 of 30.",
+            "premature_calculation": "Student picks 10 from wrong fraction."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A zookeeper feeds each monkey 4 bananas in the morning and 3 bananas in the afternoon. There are 6 monkeys. How many bananas does she need per day?",
+        "options": [
+            "13",
+            "24",
+            "36",
+            "42",
+            "48"
+        ],
+        "correct_answer": "42",
+        "ideal_solution": "Per monkey: 4 + 3 = 7. Total: 6 × 7 = 42. Socratic Hint: Find daily per monkey, then multiply by number of monkeys.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 × 4 = 24 (morning only).",
+            "formula_misapplication": "Student computes 4 + 3 + 6 = 13.",
+            "premature_calculation": "Student computes 4 + 3 = 7 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A picnic table seats 6 people. For a party of 50 people, how many tables are needed?",
+        "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "44"
+        ],
+        "correct_answer": "9",
+        "ideal_solution": "50 ÷ 6 = 8 remainder 2. Need an extra table for 2 people. So 9 tables. Socratic Hint: If there's a remainder, you need one more table.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 ignoring the 2 remaining people.",
+            "formula_misapplication": "Student picks 44 computing 50 - 6.",
+            "premature_calculation": "Student picks 10 rounding up too much."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 47 × 2?",
+        "options": [
+            "84",
+            "90",
+            "92",
+            "94",
+            "97"
+        ],
+        "correct_answer": "94",
+        "ideal_solution": "47 × 2: 40 × 2 = 80, 7 × 2 = 14. 80 + 14 = 94. Socratic Hint: Break 47 into 40 + 7.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 84 computing 40 × 2 = 80 + 4 = 84.",
+            "formula_misapplication": "Student computes 47 + 2 = 49.",
+            "premature_calculation": "Student computes 40 × 2 = 80 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 25 × 4?",
+        "options": [
+            "75",
+            "90",
+            "100",
+            "104",
+            "125"
+        ],
+        "correct_answer": "100",
+        "ideal_solution": "25 × 4 = 100. Four quarters make a dollar! Or: 25 × 4 = (20 × 4) + (5 × 4) = 80 + 20 = 100. Socratic Hint: Think of quarters.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 90 from wrong calculation.",
+            "formula_misapplication": "Student computes 25 + 4 = 29.",
+            "premature_calculation": "Student computes 20 × 4 = 80 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Every day Jake reads for 25 minutes. He has been reading for 7 days. How many total minutes has he read?",
+        "options": [
+            "32",
+            "125",
+            "150",
+            "175",
+            "200"
+        ],
+        "correct_answer": "175",
+        "ideal_solution": "25 × 7 = 175. Or: 25 × 7 = (20 × 7) + (5 × 7) = 140 + 35 = 175. Socratic Hint: Break 25 into 20 + 5 and multiply each part.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 25 + 7 = 32.",
+            "formula_misapplication": "Student computes 25 × 5 = 125.",
+            "premature_calculation": "Student computes 20 × 7 = 140 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A set of 3 books costs $15. How much would 5 sets cost?",
+        "options": [
+            "$20",
+            "$45",
+            "$50",
+            "$60",
+            "$75"
+        ],
+        "correct_answer": "$75",
+        "ideal_solution": "5 sets × $15 = $75. Or: 5 × 15 = (5 × 10) + (5 × 5) = 50 + 25 = 75. Socratic Hint: Multiply the number of sets by the price per set.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 5 × 15 = 60 (wrong).",
+            "formula_misapplication": "Student computes 3 × $15 = $45 (wrong number of sets).",
+            "premature_calculation": "Student computes 5 × 10 = 50 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "A pizza has 8 slices. Kim eats 3 slices. What fraction of the pizza is left?",
+        "options": [
+            "3/8",
+            "4/8",
+            "5/8",
+            "6/8",
+            "8/3"
+        ],
+        "correct_answer": "5/8",
+        "ideal_solution": "Eaten: 3/8. Left: 8/8 - 3/8 = 5/8. Socratic Hint: Subtract the eaten fraction from the whole.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 3/8 (the eaten part, not what's left).",
+            "formula_misapplication": "Student picks 8/3 inverting the fraction.",
+            "premature_calculation": "Student picks 4/8 from wrong subtraction."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "Are 2/6 and 1/3 equivalent fractions?",
+        "options": [
+            "Yes",
+            "No, 2/6 is larger",
+            "No, 1/3 is larger",
+            "Cannot tell",
+            "Neither is a fraction"
+        ],
+        "correct_answer": "Yes",
+        "ideal_solution": "2/6 simplified: 2÷2=1, 6÷2=3. So 2/6 = 1/3. They are equivalent. Socratic Hint: Simplify 2/6 by dividing top and bottom by 2.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 'No, 2/6 is larger' because 2 > 1 and 6 > 3.",
+            "formula_misapplication": "Student picks 'No, 1/3 is larger' thinking smaller denominator means larger fraction but not checking.",
+            "premature_calculation": "Student picks 'Cannot tell' without simplifying."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "geometry",
+        "question": "A square playground has an area of 81 sq m. What is the length of one side?",
+        "options": [
+            "7 m",
+            "8 m",
+            "9 m",
+            "10 m",
+            "81 m"
+        ],
+        "correct_answer": "9 m",
+        "ideal_solution": "Area = side × side. side × side = 81. Since 9 × 9 = 81, each side is 9 m. Socratic Hint: What number multiplied by itself gives 81?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 8 thinking 8 × 8 = 81.",
+            "formula_misapplication": "Student picks 81 thinking the side equals the area.",
+            "premature_calculation": "Student picks 10 rounding up."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "geometry",
+        "question": "A rectangular yard has a perimeter of 40 m. The length is 12 m. What is the width?",
+        "options": [
+            "6 m",
+            "8 m",
+            "10 m",
+            "14 m",
+            "28 m"
+        ],
+        "correct_answer": "8 m",
+        "ideal_solution": "P = 2(L + W). 40 = 2(12 + W). 20 = 12 + W. W = 8 m. Socratic Hint: Half the perimeter = length + width.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 40 - 12 = 28 (forgets to halve).",
+            "formula_misapplication": "Student computes 40 ÷ 12 ≈ 3.",
+            "premature_calculation": "Student computes 40/2 = 20 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Sarah has $45. She buys 3 books at $8 each. Then she buys a pen for $5. How much money does she have left?",
+        "options": [
+            "$6",
+            "$12",
+            "$16",
+            "$21",
+            "$37"
+        ],
+        "correct_answer": "$16",
+        "ideal_solution": "Books: 3 × 8 = $24. Pen: $5. Total spent: 24 + 5 = $29. Left: 45 - 29 = $16. Socratic Hint: Find total spending, then subtract from $45.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 45 - 24 = 21 (forgets the pen).",
+            "formula_misapplication": "Student computes 45 - 8 - 5 = 32 (only one book).",
+            "premature_calculation": "Student gets 3 × 8 = 24 then 45 - 24 = 21 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A train travels at 60 km per hour. How far does it travel in 3 hours?",
+        "options": [
+            "20 km",
+            "63 km",
+            "120 km",
+            "180 km",
+            "360 km"
+        ],
+        "correct_answer": "180 km",
+        "ideal_solution": "Distance = speed × time = 60 × 3 = 180 km. Socratic Hint: Multiply speed by time to get distance.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 60 + 3 = 63.",
+            "formula_misapplication": "Student computes 60 × 2 = 120.",
+            "premature_calculation": "Student computes 60 ÷ 3 = 20."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "number_theory",
+        "question": "What is the rule for this pattern: 80, 72, 64, 56, __?",
+        "options": [
+            "44",
+            "46",
+            "48",
+            "50",
+            "52"
+        ],
+        "correct_answer": "48",
+        "ideal_solution": "Each term decreases by 8: 80, 72, 64, 56, 48. Socratic Hint: What is the difference between each pair?",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 50 subtracting 6.",
+            "formula_misapplication": "Student picks 44 subtracting 12.",
+            "premature_calculation": "Student picks 52 subtracting 4."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Ella earns $6 per hour babysitting. She worked 4 hours on Friday and 5 hours on Saturday. How much did she earn in total?",
+        "options": [
+            "$15",
+            "$30",
+            "$36",
+            "$54",
+            "$60"
+        ],
+        "correct_answer": "$54",
+        "ideal_solution": "Total hours: 4 + 5 = 9. Earnings: 9 × 6 = $54. Socratic Hint: First find total hours, then multiply by the hourly rate.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 4 × 6 = 24 (Friday only).",
+            "formula_misapplication": "Student computes 5 × 6 = 30 (Saturday only).",
+            "premature_calculation": "Student gets 4 + 5 = 9 and picks $15 (adding $6)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 18 × 5?",
+        "options": [
+            "23",
+            "85",
+            "88",
+            "90",
+            "95"
+        ],
+        "correct_answer": "90",
+        "ideal_solution": "18 × 5: 10 × 5 = 50, 8 × 5 = 40. 50 + 40 = 90. Socratic Hint: Break 18 into 10 + 8.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 85 from wrong calculation.",
+            "formula_misapplication": "Student computes 18 + 5 = 23.",
+            "premature_calculation": "Student computes 10 × 5 = 50 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "Order these fractions from least to greatest: 1/2, 1/4, 3/4.",
+        "options": [
+            "1/4, 1/2, 3/4",
+            "1/2, 1/4, 3/4",
+            "3/4, 1/2, 1/4",
+            "1/4, 3/4, 1/2",
+            "1/2, 3/4, 1/4"
+        ],
+        "correct_answer": "1/4, 1/2, 3/4",
+        "ideal_solution": "1/4 = 0.25 < 1/2 = 0.50 < 3/4 = 0.75. Order: 1/4, 1/2, 3/4. Socratic Hint: Convert to a common denominator of 4: 1/4, 2/4, 3/4.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/2, 1/4, 3/4 (puts 1/2 before 1/4).",
+            "formula_misapplication": "Student picks 3/4, 1/2, 1/4 (greatest to least).",
+            "premature_calculation": "Student picks 1/4, 3/4, 1/2."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A school has 5 classrooms. Each classroom has 4 tables. Each table has 6 chairs. How many chairs are in the school?",
+        "options": [
+            "15",
+            "20",
+            "24",
+            "30",
+            "120"
+        ],
+        "correct_answer": "120",
+        "ideal_solution": "Tables: 5 × 4 = 20. Chairs: 20 × 6 = 120. Socratic Hint: First find total tables, then multiply by chairs per table.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 4 × 6 = 24 (one classroom only).",
+            "formula_misapplication": "Student computes 5 + 4 + 6 = 15.",
+            "premature_calculation": "Student gets 5 × 4 = 20 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "number_theory",
+        "question": "Is 87 divisible by 3?",
+        "options": [
+            "Yes, because 8+7=15 and 15 is divisible by 3",
+            "No, because 87 is odd",
+            "Yes, because 87 ends in 7",
+            "No, because 87 is not even",
+            "Cannot tell"
+        ],
+        "correct_answer": "Yes, because 8+7=15 and 15 is divisible by 3",
+        "ideal_solution": "Divisibility by 3: add the digits. 8 + 7 = 15. 15 ÷ 3 = 5. Yes, 87 is divisible by 3. Check: 87 ÷ 3 = 29. Socratic Hint: A number is divisible by 3 if the sum of its digits is divisible by 3.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 'No, because 87 is odd' (odd numbers can be divisible by 3).",
+            "formula_misapplication": "Student picks 'Yes, because 87 ends in 7' (wrong rule).",
+            "premature_calculation": "Student picks 'No, because 87 is not even' (confusing with divisibility by 2)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "geometry",
+        "question": "A triangle has two sides of 6 cm each and one side of 10 cm. What is its perimeter?",
+        "options": [
+            "16 cm",
+            "18 cm",
+            "20 cm",
+            "22 cm",
+            "26 cm"
+        ],
+        "correct_answer": "22 cm",
+        "ideal_solution": "Perimeter = 6 + 6 + 10 = 22 cm. Socratic Hint: Add all three sides.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 6 + 10 = 16 (forgets one side of 6).",
+            "formula_misapplication": "Student computes 2 × 6 = 12 and stops.",
+            "premature_calculation": "Student picks 20 from wrong addition."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Dad is 3 times as old as his son. His son is 9 years old. How old is Dad?",
+        "options": [
+            "12",
+            "18",
+            "24",
+            "27",
+            "36"
+        ],
+        "correct_answer": "27",
+        "ideal_solution": "Dad's age = 3 × 9 = 27. Socratic Hint: 'Three times as old' means multiply by 3.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 3 + 9 = 12.",
+            "formula_misapplication": "Student computes 9 × 4 = 36.",
+            "premature_calculation": "Student picks 18 computing 9 × 2."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "What is 3/8 + 2/8?",
+        "options": [
+            "1/8",
+            "3/16",
+            "5/8",
+            "5/16",
+            "6/8"
+        ],
+        "correct_answer": "5/8",
+        "ideal_solution": "When denominators are the same, add numerators: 3 + 2 = 5. Answer: 5/8. Socratic Hint: If the bottom numbers are the same, just add the top numbers.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5/16 adding the denominators too.",
+            "formula_misapplication": "Student picks 6/8 multiplying numerators.",
+            "premature_calculation": "Student picks 1/8 subtracting instead of adding."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "What is 7/10 - 3/10?",
+        "options": [
+            "3/10",
+            "4/10",
+            "4/20",
+            "10/10",
+            "21/10"
+        ],
+        "correct_answer": "4/10",
+        "ideal_solution": "When denominators match, subtract numerators: 7 - 3 = 4. Answer: 4/10. Socratic Hint: Same denominators? Just subtract the top numbers.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 4/20 subtracting denominators too.",
+            "formula_misapplication": "Student picks 21/10 multiplying instead.",
+            "premature_calculation": "Student picks 3/10 (the subtrahend, not the answer)."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A box has 48 chocolates. Mom takes 1/6 of them. How many chocolates are left?",
+        "options": [
+            "6",
+            "8",
+            "32",
+            "40",
+            "42"
+        ],
+        "correct_answer": "40",
+        "ideal_solution": "Mom takes: 1/6 of 48 = 48 ÷ 6 = 8. Left: 48 - 8 = 40. Socratic Hint: Find how many are taken, then subtract.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 42 computing 48 - 6.",
+            "formula_misapplication": "Student picks 8 (how many taken, not how many left).",
+            "premature_calculation": "Student picks 6 confusing 1/6 with 6."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 16 × 3?",
+        "options": [
+            "19",
+            "39",
+            "42",
+            "48",
+            "51"
+        ],
+        "correct_answer": "48",
+        "ideal_solution": "16 × 3: 10 × 3 = 30, 6 × 3 = 18. 30 + 18 = 48. Socratic Hint: Split 16 into 10 + 6.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 42 from wrong calculation.",
+            "formula_misapplication": "Student computes 16 + 3 = 19.",
+            "premature_calculation": "Student computes 10 × 3 = 30 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Amy has some pennies. She gives 5 pennies to each of 7 friends and has 10 left. How many pennies did Amy start with?",
+        "options": [
+            "22",
+            "35",
+            "40",
+            "45",
+            "52"
+        ],
+        "correct_answer": "45",
+        "ideal_solution": "Given: 5 × 7 = 35. Started with: 35 + 10 = 45. Socratic Hint: Find how many were given away, then add what's left.",
+        "failure_modes": {
+            "arithmetic_slip": "Student computes 35 + 10 = 40 (wrong).",
+            "formula_misapplication": "Student computes 5 + 7 + 10 = 22.",
+            "premature_calculation": "Student gets 35 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "arithmetic",
+        "question": "What is 11 × 7?",
+        "options": [
+            "70",
+            "71",
+            "77",
+            "78",
+            "84"
+        ],
+        "correct_answer": "77",
+        "ideal_solution": "11 × 7: 10 × 7 = 70, 1 × 7 = 7. 70 + 7 = 77. Socratic Hint: 11 times any number = that number × 10 + that number.",
+        "failure_modes": {
+            "arithmetic_slip": "Student gets 78 from wrong addition.",
+            "formula_misapplication": "Student computes 11 + 7 = 18.",
+            "premature_calculation": "Student computes 10 × 7 = 70 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "fractions",
+        "question": "If 1/5 of a ribbon is 4 cm, how long is the whole ribbon?",
+        "options": [
+            "9 cm",
+            "16 cm",
+            "20 cm",
+            "24 cm",
+            "25 cm"
+        ],
+        "correct_answer": "20 cm",
+        "ideal_solution": "If 1/5 = 4 cm, then the whole = 5 × 4 = 20 cm. Socratic Hint: If 1/5 is known, multiply by 5 to get the whole.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 24 computing 6 × 4.",
+            "formula_misapplication": "Student picks 9 computing 5 + 4.",
+            "premature_calculation": "Student picks 16 computing 4 × 4."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "Ben has twice as many stickers as Lily. Lily has 14 stickers. How many stickers do they have together?",
+        "options": [
+            "16",
+            "28",
+            "30",
+            "42",
+            "56"
+        ],
+        "correct_answer": "42",
+        "ideal_solution": "Ben: 2 × 14 = 28. Together: 14 + 28 = 42. Socratic Hint: Find Ben's amount first, then add both.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 28 (Ben's amount, not combined).",
+            "formula_misapplication": "Student picks 16 computing 14 + 2.",
+            "premature_calculation": "Student picks 56 computing 14 × 4."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "geometry",
+        "question": "A rectangle with length 8 cm and width 5 cm is cut into two equal triangles. What is the area of one triangle?",
+        "options": [
+            "13 sq cm",
+            "16 sq cm",
+            "20 sq cm",
+            "26 sq cm",
+            "40 sq cm"
+        ],
+        "correct_answer": "20 sq cm",
+        "ideal_solution": "Rectangle area = 8 × 5 = 40. Each triangle = 40 ÷ 2 = 20 sq cm. Socratic Hint: A diagonal splits a rectangle into 2 equal triangles.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 40 (the whole rectangle, not half).",
+            "formula_misapplication": "Student picks 13 computing 8 + 5.",
+            "premature_calculation": "Student picks 26 computing perimeter/2."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "number_theory",
+        "question": "How many numbers between 1 and 30 are divisible by 5?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "10"
+        ],
+        "correct_answer": "6",
+        "ideal_solution": "Multiples of 5 between 1 and 30: 5, 10, 15, 20, 25, 30. That's 6 numbers. Socratic Hint: List the multiples of 5 up to 30.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 5 forgetting to count 30.",
+            "formula_misapplication": "Student picks 3 counting only 10, 20, 30.",
+            "premature_calculation": "Student picks 10 from wrong reasoning."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 4,
+        "difficulty": "intermediate",
+        "type": "logic",
+        "question": "A lizard is 3 times longer than a worm. The worm is 8 cm long. A snake is twice as long as the lizard. How long is the snake?",
+        "options": [
+            "16 cm",
+            "19 cm",
+            "24 cm",
+            "32 cm",
+            "48 cm"
+        ],
+        "correct_answer": "48 cm",
+        "ideal_solution": "Lizard: 3 × 8 = 24 cm. Snake: 2 × 24 = 48 cm. Socratic Hint: Work step by step — first find the lizard's length, then the snake's.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 32 computing 8 × 4.",
+            "formula_misapplication": "Student picks 24 (the lizard, not the snake).",
+            "premature_calculation": "Student picks 16 computing 2 × 8."
+        }
+    }
+]
