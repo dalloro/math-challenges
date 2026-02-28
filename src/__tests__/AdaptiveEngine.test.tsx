@@ -18,6 +18,21 @@ vi.mock('../services/storage', () => ({
   getTestModality: vi.fn(() => 'combined'),
   saveTestModality: vi.fn(),
   isAiEnabled: vi.fn(() => true),
+  getGlobalSeenQuestions: vi.fn(() => []),
+  addSeenQuestion: vi.fn(),
+  clearGlobalSeenQuestions: vi.fn(),
+}));
+
+vi.mock('../hooks/useQuestionSelection', () => ({
+  useQuestionSelection: vi.fn((questions) => ({
+    selectQuestion: vi.fn(({ level }) => {
+      const pool = questions.filter(q => q.level === level);
+      // Return a random one from the filtered pool to satisfy 'not to be' checks
+      // Fallback to first question if filtered pool is empty (e.g. metadata test)
+      return pool[Math.floor(Math.random() * pool.length)] || questions[0] || null;
+    }),
+    markAsSeen: vi.fn(),
+  })),
 }));
 
 const mockQuestions: useQuestionsHook.Question[] = [

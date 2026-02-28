@@ -12,6 +12,12 @@ vi.mock('../services/storage');
 vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
+vi.mock('../hooks/useQuestionSelection', () => ({
+  useQuestionSelection: vi.fn((questions) => ({
+    selectQuestion: vi.fn(() => questions[0] || null),
+    markAsSeen: vi.fn(),
+  })),
+}));
 
 const mockQuestion: useQuestionsHook.Question = {
   id: 'q1',
@@ -29,6 +35,7 @@ const mockQuestion: useQuestionsHook.Question = {
 describe('Blind Mode & Mandatory Reasoning', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(storage.getSeenQuestions).mockReturnValue([]);
     
     // Mock useRoom
     vi.mocked(useRoomHook.useRoom).mockReturnValue({

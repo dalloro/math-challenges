@@ -197,7 +197,7 @@ function TestEngine({
     const isCorrect = selectedOption.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
     recordAnswer(currentQuestion.id, selectedOption, isCorrect);
     handleAnswer(isCorrect);
-    markAsSeen(currentQuestion.id);
+    markAsSeen(currentQuestion.id, grade);
 
     onSync({ 
       currentLevel, 

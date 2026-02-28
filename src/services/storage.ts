@@ -2,6 +2,7 @@ const API_KEY_STORAGE_NAME = 'gemini_api_key';
 const TEST_MODALITY_STORAGE_NAME = 'test_modality';
 const AI_ENABLED_STORAGE_NAME = 'ai_enabled';
 const SEEN_QUESTIONS_PREFIX = 'seen_questions_';
+const GLOBAL_SEEN_PREFIX = 'global_seen_questions_';
 
 export type TestModality = 'combined' | 'blind';
 
@@ -78,16 +79,48 @@ export function getSeenQuestions(roomCode: string): string[] {
 }
 
 /**
- * Adds a question ID to the seen list for a specific room.
+ * Retrieves the global list of seen question IDs for a specific grade on this device.
+ * @param grade The grade level.
+ * @returns An array of question IDs.
+ */
+export function getGlobalSeenQuestions(grade: number): string[] {
+  const seen = localStorage.getItem(`${GLOBAL_SEEN_PREFIX}${grade}`);
+  try {
+    return seen ? JSON.parse(seen) : [];
+  } catch (e) {
+    console.error('Failed to parse global seen questions', e);
+    return [];
+  }
+}
+
+/**
+ * Adds a question ID to the seen list for a specific room AND the global device list.
  * @param roomCode The room code.
  * @param questionId The ID of the question.
+ * @param grade The grade level of the question.
  */
-export function addSeenQuestion(roomCode: string, questionId: string): void {
+export function addSeenQuestion(roomCode: string, questionId: string, grade: number): void {
+  // 1. Room-specific tracking (used for resetting within a long session)
   const seen = getSeenQuestions(roomCode);
   if (!seen.includes(questionId)) {
     seen.push(questionId);
     localStorage.setItem(`${SEEN_QUESTIONS_PREFIX}${roomCode}`, JSON.stringify(seen));
   }
+
+  // 2. Device-wide global tracking (used to prevent repeats across new tests)
+  const globalSeen = getGlobalSeenQuestions(grade);
+  if (!globalSeen.includes(questionId)) {
+    globalSeen.push(questionId);
+    localStorage.setItem(`${GLOBAL_SEEN_PREFIX}${grade}`, JSON.stringify(globalSeen));
+  }
+}
+
+/**
+ * Clears the global seen questions for a grade (resetting the device history).
+ * @param grade The grade level.
+ */
+export function clearGlobalSeenQuestions(grade: number): void {
+  localStorage.removeItem(`${GLOBAL_SEEN_PREFIX}${grade}`);
 }
 
 /**

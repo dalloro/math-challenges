@@ -14,11 +14,20 @@ vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
+vi.mock('../hooks/useQuestionSelection', () => ({
+  useQuestionSelection: vi.fn((questions) => ({
+    selectQuestion: vi.fn(() => questions[0] || null),
+    markAsSeen: vi.fn(),
+  })),
+}));
 vi.mock('../services/storage', () => ({
   getApiKey: vi.fn(),
   getTestModality: vi.fn(() => 'combined'),
   saveTestModality: vi.fn(),
   isAiEnabled: vi.fn(() => true),
+  getGlobalSeenQuestions: vi.fn(() => []),
+  addSeenQuestion: vi.fn(),
+  clearGlobalSeenQuestions: vi.fn(),
 }));
 
 const mockQuestion: useQuestionsHook.Question = {

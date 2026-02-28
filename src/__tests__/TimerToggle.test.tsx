@@ -9,6 +9,13 @@ vi.mock('../firebase', () => ({
   db: {},
 }));
 
+vi.mock('../services/storage', () => ({
+  getApiKey: vi.fn(() => null),
+  isAiEnabled: vi.fn(() => true),
+  getGlobalSeenQuestions: vi.fn(() => []),
+  getTestModality: vi.fn(() => 'combined'),
+}));
+
 vi.mock('../hooks/useRoom', () => ({
   useRoom: () => ({
     roomCode: 'TEST-ROOM',
@@ -46,6 +53,13 @@ vi.mock('../hooks/useQuestions', () => ({
     ],
     loading: false,
   }),
+}));
+
+vi.mock('../hooks/useQuestionSelection', () => ({
+  useQuestionSelection: vi.fn((questions) => ({
+    selectQuestion: vi.fn(() => questions[0] || null),
+    markAsSeen: vi.fn(),
+  })),
 }));
 
 describe('TestPage Timer Toggle', () => {

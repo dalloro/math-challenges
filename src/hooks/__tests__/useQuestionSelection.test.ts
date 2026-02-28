@@ -18,7 +18,7 @@ describe('useQuestionSelection', () => {
 
   beforeEach(() => {
     vi.clearAllMocks();
-    vi.mocked(storage.getSeenQuestions).mockReturnValue([]);
+    vi.mocked(storage.getGlobalSeenQuestions).mockReturnValue([]);
   });
 
   it('should pick a question matching grade, level, and type', () => {
@@ -29,7 +29,7 @@ describe('useQuestionSelection', () => {
   });
 
   it('should exclude seen questions from the primary tier', () => {
-    vi.mocked(storage.getSeenQuestions).mockReturnValue(['1']);
+    vi.mocked(storage.getGlobalSeenQuestions).mockReturnValue(['1']);
     
     const { result } = renderHook(() => useQuestionSelection(mockQuestions, roomCode));
     const selection = result.current.selectQuestion({ grade: 1, level: 1, type: 'Arithmetic' });
@@ -38,7 +38,7 @@ describe('useQuestionSelection', () => {
   });
 
   it('should fall back to the same level regardless of type if primary tier is exhausted', () => {
-    vi.mocked(storage.getSeenQuestions).mockReturnValue(['1', '2']);
+    vi.mocked(storage.getGlobalSeenQuestions).mockReturnValue(['1', '2']);
     
     const { result } = renderHook(() => useQuestionSelection(mockQuestions, roomCode));
     // Requesting Arithmetic but both Arithmetic are seen. Should pick Logic (id: 3)
@@ -47,15 +47,15 @@ describe('useQuestionSelection', () => {
     expect(selection?.id).toBe('3');
   });
 
-  it('should reset seen questions for the grade/level if the entire pool is exhausted', () => {
-    vi.mocked(storage.getSeenQuestions).mockReturnValue(['1', '2', '3']);
+  it('should reset global seen questions for the grade if the entire level pool is exhausted', () => {
+    vi.mocked(storage.getGlobalSeenQuestions).mockReturnValue(['1', '2', '3']);
     
     const { result } = renderHook(() => useQuestionSelection(mockQuestions, roomCode));
     const selection = result.current.selectQuestion({ grade: 1, level: 1, type: 'Arithmetic' });
     
     // Should have picked something from 1, 2, or 3 after reset
     expect(['1', '2', '3']).toContain(selection?.id);
-    expect(storage.clearSeenQuestions).toHaveBeenCalledWith(roomCode);
+    expect(storage.clearGlobalSeenQuestions).toHaveBeenCalledWith(1);
   });
 
   it('should produce consistent results for the same state/seed', () => {

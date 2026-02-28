@@ -154,11 +154,16 @@
             "grade": 3,
             "level": 8,
             "count": 100
+        },
+        {
+            "grade": 3,
+            "level": 9,
+            "count": 100
         }
     ],
     "current": {
         "grade": 3,
-        "level": 9,
+        "level": 10,
         "count": 0
     }
 }

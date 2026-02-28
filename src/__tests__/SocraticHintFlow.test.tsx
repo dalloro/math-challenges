@@ -13,6 +13,9 @@ vi.mock('../services/storage', () => ({
   getApiKey: vi.fn(() => null), // Force static mode
   getTestModality: vi.fn(() => 'combined'),
   isAiEnabled: vi.fn(() => true),
+  getGlobalSeenQuestions: vi.fn(() => []),
+  addSeenQuestion: vi.fn(),
+  clearGlobalSeenQuestions: vi.fn(),
 }));
 
 vi.mock('../hooks/useRoom', () => ({
@@ -60,6 +63,13 @@ vi.mock('../hooks/useQuestions', () => ({
     questions: [mockQuestion],
     loading: false,
   }),
+}));
+
+vi.mock('../hooks/useQuestionSelection', () => ({
+  useQuestionSelection: vi.fn((questions) => ({
+    selectQuestion: vi.fn(() => questions[0] || null),
+    markAsSeen: vi.fn(),
+  })),
 }));
 
 describe('TestPage Integration - Socratic Hint', () => {
