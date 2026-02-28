@@ -6,3 +6,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 - [x] **Track: User-Specific API Keys and Enhanced Static Fallback**
 *Link: [./tracks/user_api_keys_20260218/](./tracks/user_api_keys_20260218/)*
+
+---
+
+- [ ] **Track: Robust Question Randomization & Selection**
+*Link: [./tracks/question_randomization_20260226/](./tracks/question_randomization_20260226/)*
