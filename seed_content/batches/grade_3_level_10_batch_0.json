@@ -508,20 +508,20 @@
         "level": 10,
         "difficulty": "genius",
         "type": "number_theory",
-        "question": "What is the sum of all factors of 28?",
+        "question": "What is the smallest prime that is the sum of 3 consecutive primes?",
         "options": [
-            "28",
-            "42",
-            "56",
-            "63",
-            "84"
+            "5",
+            "7",
+            "13",
+            "23",
+            "29"
         ],
-        "correct_answer": "56",
-        "ideal_solution": "28 = 2^2 x 7. Sum of divisors: (1+2+4)(1+7) = 7 x 8 = 56. Factors: 1,2,4,7,14,28. Sum: 56. Note: 28 is a perfect number (sum of proper divisors = 28). Socratic Hint: Use the divisor sum formula.",
+        "correct_answer": "23",
+        "ideal_solution": "2+3+5=10 (not prime). 3+5+7=15 (not prime). 5+7+11=23 (prime!). So 23. Socratic Hint: Try consecutive prime triples starting from smallest.",
         "failure_modes": {
-            "arithmetic_slip": "Student picks 42 computing wrong.",
-            "formula_misapplication": "Student picks 28 computing only proper divisors sum.",
-            "premature_calculation": "Student gets (1+2+4)=7 and stops."
+            "arithmetic_slip": "Student picks 13 from wrong triple.",
+            "formula_misapplication": "Student picks 29 from wrong set.",
+            "premature_calculation": "Student gets 2+3+5=10 and stops."
         }
     },
     {

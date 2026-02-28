@@ -28,7 +28,7 @@ export function useQuestions(grade: number) {
           collection(db, 'questions'),
           where('grade', '==', grade),
           where('difficulty', '==', 'gifted'),
-          limit(100) // Fetch a pool of 100 questions to start
+          limit(1000) // Fetch a larger pool to cover all questions per grade
         );
 
         const querySnapshot = await getDocs(q);

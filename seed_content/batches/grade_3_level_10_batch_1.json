@@ -838,5 +838,215 @@
             "formula_misapplication": "Student picks 9 (2nd in cycle).",
             "premature_calculation": "Student picks 7 (3rd in cycle)."
         }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "logic",
+        "question": "A frog starts at 0 on a number line. Each jump goes +1 or -1 with equal probability. After 4 jumps, what is the probability of returning to 0?",
+        "options": [
+            "1/4",
+            "3/8",
+            "1/2",
+            "5/8",
+            "3/4"
+        ],
+        "correct_answer": "3/8",
+        "ideal_solution": "Need equal ups and downs: 2 of each. C(4,2)=6 favorable out of 16 total. P=6/16=3/8. Socratic Hint: Count paths with 2 ups and 2 downs.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/4 computing wrong.",
+            "formula_misapplication": "Student picks 1/2 thinking symmetric.",
+            "premature_calculation": "Student gets 16 total outcomes and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "fractions",
+        "question": "What is 7/8 - 5/12 + 1/6?",
+        "options": [
+            "11/24",
+            "13/24",
+            "15/24",
+            "17/24",
+            "19/24"
+        ],
+        "correct_answer": "15/24",
+        "ideal_solution": "LCD=24: 7/8=21/24. 5/12=10/24. 1/6=4/24. 21-10+4=15. Answer: 15/24=5/8. Socratic Hint: Convert to common denominator 24.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 13/24 from wrong subtraction.",
+            "formula_misapplication": "Student picks 17/24 adding instead of subtracting.",
+            "premature_calculation": "Student gets 21/24-10/24=11/24 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "arithmetic",
+        "question": "What is 37^2?",
+        "options": [
+            "1269",
+            "1329",
+            "1369",
+            "1419",
+            "1469"
+        ],
+        "correct_answer": "1369",
+        "ideal_solution": "37^2 = (40-3)^2 = 1600-240+9 = 1369. Socratic Hint: Use (a-b)^2 = a^2 - 2ab + b^2.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1329 from wrong subtraction.",
+            "formula_misapplication": "Student picks 1269 from wrong square.",
+            "premature_calculation": "Student gets 40^2=1600 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "geometry",
+        "question": "A sphere is perfectly inscribed in a cube of side 10. What is the volume of the sphere? (pi=3.14)",
+        "options": [
+            "261.67 cu cm",
+            "392.50 cu cm",
+            "523.33 cu cm",
+            "785.00 cu cm",
+            "1000 cu cm"
+        ],
+        "correct_answer": "523.33 cu cm",
+        "ideal_solution": "Radius = 10/2 = 5. V = 4/3 x 3.14 x 125 = 4/3 x 392.5 = 523.33 cu cm. Socratic Hint: Inscribed sphere has diameter = cube side.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 392.50 forgetting x4/3.",
+            "formula_misapplication": "Student picks 785 computing 4 x pi x r^2.",
+            "premature_calculation": "Student gets r=5 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "number_theory",
+        "question": "What is the LCM of 15, 20, and 35?",
+        "options": [
+            "60",
+            "105",
+            "140",
+            "210",
+            "420"
+        ],
+        "correct_answer": "420",
+        "ideal_solution": "15=3x5. 20=2^2x5. 35=5x7. LCM: 2^2 x 3 x 5 x 7 = 4 x 3 x 5 x 7 = 420. Socratic Hint: Take highest power of each prime.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 210 missing 2^2.",
+            "formula_misapplication": "Student picks 105 computing 3x5x7.",
+            "premature_calculation": "Student gets 2^2 x 3 x 5=60 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "logic",
+        "question": "How many distinct ways can 8 be written as an ordered sum of positive integers? (e.g., 3+5 and 5+3 count as different)",
+        "options": [
+            "64",
+            "128",
+            "256",
+            "512",
+            "1024"
+        ],
+        "correct_answer": "128",
+        "ideal_solution": "This is the composition of 8. Compositions of n = 2^(n-1). 2^7 = 128. Socratic Hint: Place dividers in the n-1 gaps between units.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 64 computing 2^6.",
+            "formula_misapplication": "Student picks 256 computing 2^8.",
+            "premature_calculation": "Student gets n-1=7 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "fractions",
+        "question": "What is (1/2)^6?",
+        "options": [
+            "1/12",
+            "1/32",
+            "1/64",
+            "1/128",
+            "1/256"
+        ],
+        "correct_answer": "1/64",
+        "ideal_solution": "(1/2)^6 = 1/2^6 = 1/64. Socratic Hint: 2^6 = 64.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 1/32 computing 2^5.",
+            "formula_misapplication": "Student picks 1/12 computing 1/(2x6).",
+            "premature_calculation": "Student gets 2^4=16 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "arithmetic",
+        "question": "What is 25 x 32 x 125?",
+        "options": [
+            "50000",
+            "80000",
+            "100000",
+            "125000",
+            "200000"
+        ],
+        "correct_answer": "100000",
+        "ideal_solution": "25 x 32 = 800. 800 x 125 = 100000. Or: 5^2 x 2^5 x 5^3 = 2^5 x 5^5 = 32 x 3125 = 100000. Or 10^5 = 100000. Socratic Hint: Recognize powers of 2 and 5.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 80000 from wrong product.",
+            "formula_misapplication": "Student picks 125000 computing 1000x125.",
+            "premature_calculation": "Student gets 25 x 32=800 and stops."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "geometry",
+        "question": "A 3-4-5 right triangle is rotated 360 degrees around its hypotenuse. What solid is formed?",
+        "options": [
+            "A cone",
+            "A cylinder",
+            "Two cones joined at base",
+            "A sphere",
+            "A torus"
+        ],
+        "correct_answer": "Two cones joined at base",
+        "ideal_solution": "Rotating around the hypotenuse creates two cones joined at their bases. The altitude to the hypotenuse becomes the common radius. Socratic Hint: Each leg traces a cone; they share a base where the altitude meets the hypotenuse.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 'A cone' thinking one cone forms.",
+            "formula_misapplication": "Student picks 'A cylinder' wrong solid.",
+            "premature_calculation": "Student picks 'A sphere' wrong shape."
+        }
+    },
+    {
+        "grade": 3,
+        "level": 10,
+        "difficulty": "genius",
+        "type": "number_theory",
+        "question": "What is the remainder when 7^7 is divided by 100? (Find the last 2 digits.)",
+        "options": [
+            "07",
+            "43",
+            "49",
+            "01",
+            "43"
+        ],
+        "correct_answer": "43",
+        "ideal_solution": "7^1=7. 7^2=49. 7^3=343→43. 7^4=43x7=301→01. 7^5=01x7=07. 7^6=07x7=49. 7^7=49x7=343→43. So remainder=43. Socratic Hint: Track only last 2 digits; pattern cycles.",
+        "failure_modes": {
+            "arithmetic_slip": "Student picks 49 computing 7^2.",
+            "formula_misapplication": "Student picks 07 computing 7^5.",
+            "premature_calculation": "Student gets 7^4=01 and stops."
+        }
     }
 ]

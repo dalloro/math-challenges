@@ -193,20 +193,20 @@
         "level": 8,
         "difficulty": "competition",
         "type": "number_theory",
-        "question": "What is the sum of all odd numbers from 1 to 19?",
+        "question": "What is 47 x 53?",
         "options": [
-            "81",
-            "90",
-            "95",
-            "100",
-            "110"
+            "2391",
+            "2441",
+            "2491",
+            "2541",
+            "2591"
         ],
-        "correct_answer": "100",
-        "ideal_solution": "Odd numbers: 1,3,5,7,9,11,13,15,17,19. Count=10. Sum = 10 squared = 100. (Sum of first n odd numbers = n squared.) Socratic Hint: Count the odd numbers, then square that count.",
+        "correct_answer": "2491",
+        "ideal_solution": "47 x 53 = (50-3)(50+3) = 2500-9 = 2491. Socratic Hint: Use difference of squares a^2-b^2.",
         "failure_modes": {
-            "arithmetic_slip": "Student picks 95 from wrong addition.",
-            "formula_misapplication": "Student picks 81 computing 9 squared.",
-            "premature_calculation": "Student adds a few and stops."
+            "arithmetic_slip": "Student picks 2441 from wrong subtraction.",
+            "formula_misapplication": "Student picks 2541 from wrong product.",
+            "premature_calculation": "Student gets 50^2=2500 and stops."
         }
     },
     {
@@ -949,20 +949,20 @@
         "level": 8,
         "difficulty": "competition",
         "type": "number_theory",
-        "question": "What is the sum of all prime numbers less than 20?",
+        "question": "A group of people stand in a circle. The 5th person is directly opposite the 19th person. How many people are in the circle?",
         "options": [
-            "58",
-            "67",
-            "72",
-            "77",
-            "83"
+            "24",
+            "26",
+            "28",
+            "30",
+            "32"
         ],
-        "correct_answer": "77",
-        "ideal_solution": "Primes < 20: 2,3,5,7,11,13,17,19. Sum: 2+3+5+7+11+13+17+19=77. Socratic Hint: List all primes, then add.",
+        "correct_answer": "28",
+        "ideal_solution": "Opposite means half the circle apart. Distance: 19-5=14 positions. Full circle: 2 x 14 = 28. Socratic Hint: Opposite = half the total around.",
         "failure_modes": {
-            "arithmetic_slip": "Student picks 72 missing one prime.",
-            "formula_misapplication": "Student picks 58 including only up to 13.",
-            "premature_calculation": "Student adds 2+3+5+7=17 and stops."
+            "arithmetic_slip": "Student picks 24 computing 19+5.",
+            "formula_misapplication": "Student picks 30 adding wrong.",
+            "premature_calculation": "Student gets 19-5=14 and stops."
         }
     },
     {

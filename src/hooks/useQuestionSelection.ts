@@ -30,7 +30,7 @@ export function useQuestionSelection(questions: Question[], roomCode: string) {
     );
     let available = getAvailable(tier1Pool);
 
-    // Tier 2: Fallback to Grade + Level (Any Type)
+    // Tier 2: Fallback to Grade + Level (Any Type) if Type is exhausted or doesn't exist
     if (available.length === 0) {
       const tier2Pool = questions.filter(q => 
         q.grade === criteria.grade && 
@@ -38,7 +38,8 @@ export function useQuestionSelection(questions: Question[], roomCode: string) {
       );
       available = getAvailable(tier2Pool);
 
-      // Tier 3: Exhausted! Reset global seen list for this grade and try Tier 2 again
+      // Tier 3: Exhausted the entire Grade+Level pool! 
+      // Reset global seen list for this grade so we can start over.
       if (available.length === 0 && tier2Pool.length > 0) {
         clearGlobalSeenQuestions(criteria.grade);
         available = tier2Pool;
@@ -47,9 +48,9 @@ export function useQuestionSelection(questions: Question[], roomCode: string) {
 
     if (available.length === 0) return null;
 
-    // Robust Randomization: Use a seed based on roomCode + current progress
-    // This ensures that for a specific room attempt, the sequence is stable
-    const seed = `${roomCode}-${seenIds.length}`;
+    // Robust Randomization: Use a seed based on roomCode + current grade progress + level
+    // This ensures that the sequence is unique per room but stable during re-renders.
+    const seed = `${roomCode}-${criteria.grade}-${criteria.level}-${seenIds.length}`;
     const shuffled = seededShuffle(available, seed);
     
     return shuffled[0];

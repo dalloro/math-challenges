@@ -92,7 +92,9 @@ function TestEngine({
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
   const isActive = useMemo(() => Date.now() - lastActivity < INACTIVITY_THRESHOLD_MS, [lastActivity]);
-  const isStaticMode = useMemo(() => !getApiKey() || !isAiEnabled(), []);
+  
+  // Re-evaluate static mode if settings might have changed (simplified check)
+  const isStaticMode = !getApiKey() || !isAiEnabled();
 
   // Track user activity
   useEffect(() => {
