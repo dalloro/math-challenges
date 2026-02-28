@@ -15943,20 +15943,20 @@
     "level": 8,
     "difficulty": "competition",
     "type": "number_theory",
-    "question": "What is 47 x 53?",
+    "question": "What is 63 x 57?",
     "options": [
-      "2391",
-      "2441",
-      "2491",
-      "2541",
-      "2591"
+      "3491",
+      "3541",
+      "3591",
+      "3641",
+      "3691"
     ],
-    "correct_answer": "2491",
-    "ideal_solution": "47 x 53 = (50-3)(50+3) = 2500-9 = 2491. Socratic Hint: Use difference of squares a^2-b^2.",
+    "correct_answer": "3591",
+    "ideal_solution": "63 x 57 = (60+3)(60-3) = 3600-9 = 3591. Socratic Hint: Use difference of squares a^2-b^2.",
     "failure_modes": {
-      "arithmetic_slip": "Student picks 2441 from wrong subtraction.",
-      "formula_misapplication": "Student picks 2541 from wrong product.",
-      "premature_calculation": "Student gets 50^2=2500 and stops."
+      "arithmetic_slip": "Student picks 3541 from wrong subtraction.",
+      "formula_misapplication": "Student picks 3641 from wrong product.",
+      "premature_calculation": "Student gets 60^2=3600 and stops."
     }
   },
   {
@@ -16839,6 +16839,27 @@
       "arithmetic_slip": "Student picks 47/60 from wrong arithmetic.",
       "formula_misapplication": "Student picks 49/60 missing a term.",
       "premature_calculation": "Student gets 60-30=30 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 9,
+    "difficulty": "olympiad",
+    "type": "arithmetic",
+    "question": "What is 47 x 53?",
+    "options": [
+      "2481",
+      "2491",
+      "2501",
+      "2511",
+      "2521"
+    ],
+    "correct_answer": "2491",
+    "ideal_solution": "47 x 53 = (50-3)(50+3) = 2500-9 = 2491. Socratic Hint: Difference of squares: a squared minus b squared.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2481 from wrong subtraction.",
+      "formula_misapplication": "Student picks 2501 computing 50 squared + 1.",
+      "premature_calculation": "Student gets 2500 and stops."
     }
   },
   {
