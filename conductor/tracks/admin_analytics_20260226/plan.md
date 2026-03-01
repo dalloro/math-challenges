@@ -30,3 +30,6 @@
     - [x] Implement "Question Detail" view with Line Chart for 30-day performance trends. [145968f]
     - [x] Add "Discrimination Index" calculation logic. [145968f]
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Historical Trends & Calibration' (Protocol in workflow.md) [2ccd472]
+
+## Phase: Review Fixes
+- [x] Task: Apply review suggestions [ea6cea0]
