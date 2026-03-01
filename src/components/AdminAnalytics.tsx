@@ -181,8 +181,8 @@ export function AdminAnalytics() {
             </div>
             <h3 className="font-bold text-gray-900 uppercase tracking-widest text-xs">Global Performance Distribution</h3>
           </div>
-          <div className="h-64 w-full">
-            <ResponsiveContainer width="100%" height="100%">
+          <div className="h-64 w-full min-h-[256px]">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
               <BarChart data={performanceData}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                 <XAxis dataKey="name" axisLine={false} tickLine={false} fontSize={10} fontWeight="bold" />
@@ -206,9 +206,9 @@ export function AdminAnalytics() {
             </div>
             <h3 className="font-bold text-gray-900 uppercase tracking-widest text-xs">Historical Performance Trends</h3>
           </div>
-          <div className="h-64 w-full">
+          <div className="h-64 w-full min-h-[256px]">
             {trendData.length > 0 ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
                 <LineChart data={trendData}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                   <XAxis dataKey="date" axisLine={false} tickLine={false} fontSize={10} fontWeight="bold" />
@@ -237,8 +237,8 @@ export function AdminAnalytics() {
             </div>
             <h3 className="font-bold text-gray-900 uppercase tracking-widest text-xs">Cohort Composition</h3>
           </div>
-          <div className="h-64 w-full">
-            <ResponsiveContainer width="100%" height="100%">
+          <div className="h-64 w-full min-h-[256px]">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
               <PieChart>
                 <Pie
                   data={compositionData}

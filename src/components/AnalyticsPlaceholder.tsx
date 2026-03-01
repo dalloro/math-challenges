@@ -10,8 +10,8 @@ const data = [
 
 export function AnalyticsPlaceholder() {
   return (
-    <div className="h-64 w-full bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
-      <ResponsiveContainer width="100%" height="100%">
+    <div className="h-64 w-full bg-white p-4 rounded-2xl border border-gray-100 shadow-sm min-h-[256px]">
+      <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="name" axisLine={false} tickLine={false} fontSize={12} />
