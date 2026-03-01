@@ -4,11 +4,12 @@ import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 import { QuestionWizard } from '../components/QuestionWizard';
 import { BulkUpload, QuestionExplorer, QuestionExporter } from '../components/AdminComponents';
+import { AdminAnalytics } from '../components/AdminAnalytics';
 import { Logo } from '../components/Logo';
 
 export function AdminPage() {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'wizard' | 'bulk'>('wizard');
+  const [activeTab, setActiveTab] = useState<'wizard' | 'bulk' | 'analytics'>('analytics');
 
   const handleLogout = async () => {
     await signOut(auth);
@@ -86,6 +87,13 @@ export function AdminPage() {
             {/* Tabs */}
             <div className="flex space-x-1 bg-gray-200 p-1 rounded-xl w-fit">
               <button
+                onClick={() => setActiveTab('analytics')}
+                className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${activeTab === 'analytics' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                  }`}
+              >
+                Dashboard
+              </button>
+              <button
                 onClick={() => setActiveTab('wizard')}
                 className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${activeTab === 'wizard' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
                   }`}
@@ -102,16 +110,15 @@ export function AdminPage() {
             </div>
 
             {/* Tab Panels */}
-            <div className="bg-white rounded-3xl border border-gray-200 shadow-sm p-8 min-h-[600px]">
-              {activeTab === 'wizard' ? (
+            <div className={`${activeTab === 'analytics' ? '' : 'bg-white rounded-3xl border border-gray-200 shadow-sm p-8'} min-h-[600px]`}>
+              {activeTab === 'analytics' ? (
+                <AdminAnalytics />
+              ) : activeTab === 'wizard' ? (
                 <QuestionWizard />
               ) : (
                 <BulkUpload />
               )}
             </div>
-
-            {/* Question List / Explorer */}
-            <QuestionExplorer />
           </div>
         </main>
       </div>
