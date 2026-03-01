@@ -15,12 +15,12 @@
 - [x] Task: Install & Setup Recharts [5d67c9a]
     - [x] Run `npm install recharts`. [5d67c9a]
     - [x] Verify setup with a simple placeholder chart. [5d67c9a]
-- [~] Task: Build Admin Analytics Components
-    - [ ] Create `src/components/AdminAnalytics.tsx`.
-    - [ ] Implement "Global Distribution" Bar Chart (Success Rate per Grade/Level).
-    - [ ] Implement "Cohort Composition" Pie/Bar Chart (Question Types per Grade+Level).
-    - [ ] Implement "Question Performance Table" with type filters.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Analytics UI & Cohort Visualization' (Protocol in workflow.md)
+- [x] Task: Build Admin Analytics Components [57c33ec]
+    - [x] Create `src/components/AdminAnalytics.tsx`. [57c33ec]
+    - [x] Implement "Global Distribution" Bar Chart (Success Rate per Grade/Level). [57c33ec]
+    - [x] Implement "Cohort Composition" Pie/Bar Chart (Question Types per Grade+Level). [57c33ec]
+    - [x] Implement "Question Performance Table" with type filters. [57c33ec]
+- [~] Task: Conductor - User Manual Verification 'Phase 2: Analytics UI & Cohort Visualization' (Protocol in workflow.md)
 
 ## Phase 3: Historical Trends & Calibration
 - [ ] Task: Implement Time-Series Tracking
