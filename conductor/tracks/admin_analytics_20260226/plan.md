@@ -26,7 +26,7 @@
 - [x] Task: Implement Time-Series Tracking [1a0a069]
     - [x] Add `incrementDailyStats` logic. [1a0a069]
     - [x] Update submission flow to record daily data points. [1a0a069]
-- [~] Task: Build Trend Visualization
-    - [ ] Implement "Question Detail" view with Line Chart for 30-day performance trends.
-    - [ ] Add "Discrimination Index" calculation logic.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Historical Trends & Calibration' (Protocol in workflow.md)
+- [x] Task: Build Trend Visualization [145968f]
+    - [x] Implement "Question Detail" view with Line Chart for 30-day performance trends. [145968f]
+    - [x] Add "Discrimination Index" calculation logic. [145968f]
+- [~] Task: Conductor - User Manual Verification 'Phase 3: Historical Trends & Calibration' (Protocol in workflow.md)
