@@ -1,11 +1,11 @@
 # Implementation Plan - Admin Question Analytics Dashboard
 
 ## Phase 1: Performance Tracking Infrastructure
-- [ ] Task: Create Analytics Storage Service
-    - [ ] Update `src/services/storage.ts` or create `src/services/analytics.ts`.
-    - [ ] Implement `incrementQuestionStats` using Firestore `increment()`.
-    - [ ] **Write failing tests** for counter increments.
-    - [ ] **Implement** and verify counters.
+- [x] Task: Create Analytics Storage Service [7fc801d]
+    - [x] Update `src/services/storage.ts` or create `src/services/analytics.ts`. [7fc801d]
+    - [x] Implement `incrementQuestionStats` using Firestore `increment()`. [7fc801d]
+    - [x] **Write failing tests** for counter increments. [7fc801d]
+    - [x] **Implement** and verify counters. [7fc801d]
 - [ ] Task: Integrate Tracking into Submission Flow
     - [ ] Update `src/pages/TestPage.tsx` to call the increment logic on answer submission.
     - [ ] Ensure tracking handles both Combined and Blind modes.
