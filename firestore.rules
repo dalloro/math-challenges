@@ -18,5 +18,11 @@ service cloud.firestore {
     match /rooms/{roomCode} {
       allow read, create, update: if true;
     }
+
+    // Allow anyone to increment question performance stats
+    match /question_stats/{questionId} {
+      allow read: if true;
+      allow create, update: if true;
+    }
   }
 }
