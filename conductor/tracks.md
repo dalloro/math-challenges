@@ -9,5 +9,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [~] **Track: Admin Question Analytics Dashboard**
+- [x] **Track: Admin Question Analytics Dashboard**
 *Link: [./tracks/admin_analytics_20260226/](./tracks/admin_analytics_20260226/)*
