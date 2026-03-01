@@ -3,6 +3,7 @@
 ## Frontend
 - **Framework:** React (Vite-based for speed)
 - **Styling:** Tailwind CSS (Minimalist, "Clean & Focused" utility-first styling)
+- **Data Visualization:** `recharts` (Composable charting library for analytics dashboards)
 - **Markdown Rendering:** `react-markdown` with `@tailwindcss/typography`, `remark-math`, and `rehype-katex`
 - **State Management:** React Context/Hooks (Managing adaptive testing state and modality transitions)
 - **Math Rendering:** `katex` (High-performance LaTeX rendering)

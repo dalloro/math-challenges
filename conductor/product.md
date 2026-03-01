@@ -41,6 +41,11 @@ A gifted-level math testing and learning web application designed for students a
 - **Branded Webapp Experience:**
   - Custom application logo integrated across all user and admin interfaces.
   - Browser favicon and Apple Touch Icon support for a native-like experience when added to mobile home screens.
+- **Admin Analytics Dashboard:**
+  - **Real-time Performance Tracking:** Global success rates per level and grade visualized via dynamic bar charts.
+  - **Cohort Composition:** Pie charts showing the distribution of question types (Geometry, Logic, Arithmetic) within each cohort.
+  - **Historical Trends:** 7-day performance trend lines for high-level calibration monitoring.
+  - **Statistical Calibration:** Automated identification of "Too Easy" or "Too Hard" questions based on live success rates and attempt volume.
 
 ## Deployment & Tech Goals
 - Fully functional and deployed web application.
