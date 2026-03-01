@@ -17,6 +17,8 @@ vi.mock('../services/storage', () => ({
   getTestModality: vi.fn(() => 'combined'),
 }));
 
+vi.mock('../services/analytics');
+
 vi.mock('../hooks/useRoom', () => ({
   useRoom: () => ({
     roomCode: 'TEST-ROOM',

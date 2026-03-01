@@ -14,6 +14,7 @@ vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
 vi.mock('../hooks/useRoom');
 vi.mock('../services/ai');
+vi.mock('../services/analytics');
 vi.mock('../hooks/useQuestionSelection', () => ({
   useQuestionSelection: vi.fn((questions: useQuestionsHook.Question[]) => ({
     selectQuestion: vi.fn(() => questions[0] || null),

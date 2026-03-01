@@ -13,6 +13,7 @@ import { FieldValue } from 'firebase/firestore';
 vi.mock('../hooks/useQuestions');
 vi.mock('../hooks/useSession');
 vi.mock('../hooks/useRoom');
+vi.mock('../services/analytics');
 vi.mock('../services/storage', () => ({
   getApiKey: vi.fn(),
   getTestModality: vi.fn(() => 'combined'),

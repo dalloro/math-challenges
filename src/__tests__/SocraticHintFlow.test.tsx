@@ -19,6 +19,8 @@ vi.mock('../services/storage', () => ({
   clearGlobalSeenQuestions: vi.fn(),
 }));
 
+vi.mock('../services/analytics');
+
 vi.mock('../hooks/useRoom', () => ({
   useRoom: () => ({
     roomCode: 'TEST-ROOM',
