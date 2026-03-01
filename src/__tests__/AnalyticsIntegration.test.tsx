@@ -104,6 +104,11 @@ describe('Analytics Integration', () => {
         true, // 'A' is correct
         expect.any(Number) // timeSpentMs
       );
+      expect(analyticsService.incrementDailyStats).toHaveBeenCalledWith(
+        'test-q-id',
+        true,
+        expect.any(Number)
+      );
     });
   });
 });

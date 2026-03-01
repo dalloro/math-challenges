@@ -16,6 +16,8 @@ vi.mock('firebase/firestore', () => ({
   collection: vi.fn(),
   query: vi.fn(),
   where: vi.fn(),
+  orderBy: vi.fn(),
+  limit: vi.fn(),
   getDocs: vi.fn(),
   getFirestore: vi.fn(),
 }));
@@ -48,19 +50,29 @@ describe('AdminAnalytics Component', () => {
       { id: 'q1', total_attempts: 10, total_correct: 8, total_time_ms: 50000 },
     ];
 
+    // Mock daily stats
+    const mockDailyStats = [
+      { id: 'ds1', questionId: 'q1', date: '2026-02-28', attempts: 5, correct: 4, time_ms: 25000 }
+    ];
+
     vi.mocked(firebaseFirestore.getDocs)
       .mockResolvedValueOnce({
         docs: mockQuestions.map(q => ({ id: q.id, data: () => q }))
       } as any)
       .mockResolvedValueOnce({
         docs: mockStats.map(s => ({ id: s.id, data: () => s }))
+      } as any)
+      .mockResolvedValueOnce({
+        docs: mockDailyStats.map(ds => ({ id: ds.id, data: () => ds }))
       } as any);
 
     render(<AdminAnalytics />);
 
     await waitFor(() => {
       expect(screen.getByText(/Global Performance Distribution/i)).toBeInTheDocument();
+      expect(screen.getByText(/Historical Performance Trends/i)).toBeInTheDocument();
       expect(screen.getByText(/Cohort Composition/i)).toBeInTheDocument();
+      expect(screen.getByText(/Calibration Summary/i)).toBeInTheDocument();
     });
   });
 });

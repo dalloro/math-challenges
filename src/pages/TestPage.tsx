@@ -9,7 +9,7 @@ import type { RoomState } from '../hooks/useRoom';
 import { useQuestionSelection } from '../hooks/useQuestionSelection';
 import { evaluateReasoning } from '../services/ai';
 import { getApiKey, getTestModality, isAiEnabled } from '../services/storage';
-import { incrementQuestionStats } from '../services/analytics';
+import { incrementQuestionStats, incrementDailyStats } from '../services/analytics';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
