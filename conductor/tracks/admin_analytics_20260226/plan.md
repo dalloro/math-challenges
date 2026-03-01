@@ -23,10 +23,10 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Analytics UI & Cohort Visualization' (Protocol in workflow.md) [359746f]
 
 ## Phase 3: Historical Trends & Calibration
-- [ ] Task: Implement Time-Series Tracking
-    - [ ] Add `incrementDailyStats` logic.
-    - [ ] Update submission flow to record daily data points.
-- [ ] Task: Build Trend Visualization
+- [x] Task: Implement Time-Series Tracking [1a0a069]
+    - [x] Add `incrementDailyStats` logic. [1a0a069]
+    - [x] Update submission flow to record daily data points. [1a0a069]
+- [~] Task: Build Trend Visualization
     - [ ] Implement "Question Detail" view with Line Chart for 30-day performance trends.
     - [ ] Add "Discrimination Index" calculation logic.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Historical Trends & Calibration' (Protocol in workflow.md)
