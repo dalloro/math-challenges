@@ -22,11 +22,11 @@
     - [x] Implement "Question Performance Table" with type filters. [57c33ec]
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Analytics UI & Cohort Visualization' (Protocol in workflow.md) [359746f]
 
-## Phase 3: Historical Trends & Calibration
+## Phase 3: Historical Trends & Calibration [checkpoint: 2ccd472]
 - [x] Task: Implement Time-Series Tracking [1a0a069]
     - [x] Add `incrementDailyStats` logic. [1a0a069]
     - [x] Update submission flow to record daily data points. [1a0a069]
 - [x] Task: Build Trend Visualization [145968f]
     - [x] Implement "Question Detail" view with Line Chart for 30-day performance trends. [145968f]
     - [x] Add "Discrimination Index" calculation logic. [145968f]
-- [~] Task: Conductor - User Manual Verification 'Phase 3: Historical Trends & Calibration' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Historical Trends & Calibration' (Protocol in workflow.md) [2ccd472]
