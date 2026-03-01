@@ -9,6 +9,18 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 const PROGRESS_FILE = 'generate_content_ts_progress.json';
 const PROMPT_TEMPLATE_PATH = 'CONTENT-GENERATOR-PROMPT.md';
 
+interface Question {
+  grade: number;
+  level: number;
+  difficulty: string;
+  type: string;
+  question: string;
+  options: string[];
+  correct_answer: string;
+  ideal_solution: string;
+  failure_modes: Record<string, string>;
+}
+
 const schema = {
   description: "A list of math challenge questions",
   type: SchemaType.ARRAY,
@@ -68,7 +80,7 @@ async function generateBatch(grade: number, level: number, count: number) {
     const questions = JSON.parse(result.response.text());
     
     // Safety check: Ensure difficulty field matches level-based tiers
-    return questions.map((q: any) => ({
+    return questions.map((q: Question) => ({
       ...q,
       difficulty: getDifficultyTier(q.level)
     }));

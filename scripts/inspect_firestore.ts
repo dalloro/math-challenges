@@ -3,7 +3,7 @@
  * Uses the client SDK. Does NOT modify any data.
  */
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
     projectId: "math-challenges-gifted",
