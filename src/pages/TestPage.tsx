@@ -9,6 +9,7 @@ import type { RoomState } from '../hooks/useRoom';
 import { useQuestionSelection } from '../hooks/useQuestionSelection';
 import { evaluateReasoning } from '../services/ai';
 import { getApiKey, getTestModality, isAiEnabled } from '../services/storage';
+import { incrementQuestionStats } from '../services/analytics';
 import { SolutionDisplay } from '../components/SolutionDisplay';
 import { parseIdealSolution } from '../utils/solutionParser';
 import { Logo } from '../components/Logo';
@@ -70,11 +71,12 @@ function TestEngine({
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   const [feedbackType, setFeedbackType] = useState<'ai' | 'ideal' | null>(null);
   const [feedbackError, setFeedbackError] = useState<string | null>(null);
-  const [validationError, setValidationError] = useState<string | null>(null);
-  const [outcomeType, setOutcomeType] = useState<'happy' | 'sad' | 'completed' | null>(null);
-
-  const handleOutcomeComplete = useCallback(() => {
-    setOutcomeType(null);
+    const [validationError, setValidationError] = useState<string | null>(null);
+    const [outcomeType, setOutcomeType] = useState<'happy' | 'sad' | 'completed' | null>(null);
+    
+    const questionStartTime = useRef(Date.now());
+  
+    const handleOutcomeComplete = useCallback(() => {    setOutcomeType(null);
   }, []);
 
   const [timer, setTimer] = useState(initialRoomState.remainingSeconds);
@@ -142,6 +144,7 @@ function TestEngine({
 
       if (restored && !isAlreadyAnswered) {
         setCurrentQuestion(restored);
+        questionStartTime.current = Date.now();
         initializedFromRoom.current = true;
         return;
       }
@@ -162,6 +165,7 @@ function TestEngine({
 
     if (picked) {
       setCurrentQuestion(picked);
+      questionStartTime.current = Date.now();
       onSync({ currentQuestionId: picked.id });
       initializedFromRoom.current = true;
     }
@@ -251,6 +255,10 @@ function TestEngine({
     // Trigger animation immediately on submit
     const isCorrectValue = (testModality === 'blind' ? blindAnswer : selectedOption)?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
     setOutcomeType(isCorrectValue ? 'happy' : 'sad');
+
+    // 1. Log Analytics (Real-time tracking)
+    const timeSpentMs = Date.now() - questionStartTime.current;
+    incrementQuestionStats(currentQuestion.id, isCorrectValue, timeSpentMs);
 
     setIsSubmitting(true);
     setFeedbackError(null);
