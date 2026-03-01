@@ -4,6 +4,10 @@ import { doc, setDoc, increment } from 'firebase/firestore';
 /**
  * Increments global performance counters for a specific question in Firestore.
  * This is a zero-cost implementation using client-side atomic increments.
+ * 
+ * @param questionId The unique ID of the question.
+ * @param isCorrect Whether the student answered correctly.
+ * @param timeSpentMs Time spent on the question in milliseconds.
  */
 export async function incrementQuestionStats(
   questionId: string, 
