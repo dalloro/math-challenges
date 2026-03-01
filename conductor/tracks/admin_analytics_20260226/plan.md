@@ -12,10 +12,10 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Performance Tracking Infrastructure' (Protocol in workflow.md) [dd4eac2]
 
 ## Phase 2: Analytics UI & Cohort Visualization
-- [ ] Task: Install & Setup Recharts
-    - [ ] Run `npm install recharts`.
-    - [ ] Verify setup with a simple placeholder chart.
-- [ ] Task: Build Admin Analytics Components
+- [x] Task: Install & Setup Recharts [5d67c9a]
+    - [x] Run `npm install recharts`. [5d67c9a]
+    - [x] Verify setup with a simple placeholder chart. [5d67c9a]
+- [~] Task: Build Admin Analytics Components
     - [ ] Create `src/components/AdminAnalytics.tsx`.
     - [ ] Implement "Global Distribution" Bar Chart (Success Rate per Grade/Level).
     - [ ] Implement "Cohort Composition" Pie/Bar Chart (Question Types per Grade+Level).
