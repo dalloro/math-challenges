@@ -9,14 +9,14 @@ class MockResizeObserver {
   disconnect = vi.fn();
 }
 
-global.ResizeObserver = MockResizeObserver as any;
+global.ResizeObserver = MockResizeObserver as unknown as typeof ResizeObserver;
 
 // Mock ResponsiveContainer to avoid width/height warnings in tests
 vi.mock('recharts', async () => {
-  const original = await vi.importActual('recharts') as any;
+  const original = await vi.importActual('recharts') as object;
   return {
     ...original,
-    ResponsiveContainer: ({ children }: any) => (
+    ResponsiveContainer: ({ children }: { children: React.ReactNode }) => (
       <div style={{ width: '100%', height: '100%', minWidth: '100px', minHeight: '100px' }}>
         {children}
       </div>

@@ -5,7 +5,6 @@ import { TestPage } from '../pages/TestPage';
 import * as useQuestionsHook from '../hooks/useQuestions';
 import * as useSessionHook from '../hooks/useSession';
 import * as useRoomHook from '../hooks/useRoom';
-import * as storageService from '../services/storage';
 import * as analyticsService from '../services/analytics';
 import { useState } from 'react';
 import { FieldValue } from 'firebase/firestore';

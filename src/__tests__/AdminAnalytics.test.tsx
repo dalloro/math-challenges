@@ -9,14 +9,14 @@ class MockResizeObserver {
   unobserve = vi.fn();
   disconnect = vi.fn();
 }
-global.ResizeObserver = MockResizeObserver as any;
+global.ResizeObserver = MockResizeObserver as unknown as typeof ResizeObserver;
 
 // Mock ResponsiveContainer to avoid width/height warnings in tests
 vi.mock('recharts', async () => {
-  const original = await vi.importActual('recharts') as any;
+  const original = await vi.importActual('recharts') as object;
   return {
     ...original,
-    ResponsiveContainer: ({ children }: any) => (
+    ResponsiveContainer: ({ children }: { children: React.ReactNode }) => (
       <div style={{ width: '100%', height: '100%', minWidth: '100px', minHeight: '100px' }}>
         {children}
       </div>
@@ -71,13 +71,13 @@ describe('AdminAnalytics Component', () => {
     vi.mocked(firebaseFirestore.getDocs)
       .mockResolvedValueOnce({
         docs: mockQuestions.map(q => ({ id: q.id, data: () => q }))
-      } as any)
+      } as unknown as firebaseFirestore.QuerySnapshot)
       .mockResolvedValueOnce({
         docs: mockStats.map(s => ({ id: s.id, data: () => s }))
-      } as any)
+      } as unknown as firebaseFirestore.QuerySnapshot)
       .mockResolvedValueOnce({
         docs: mockDailyStats.map(ds => ({ id: ds.id, data: () => ds }))
-      } as any);
+      } as unknown as firebaseFirestore.QuerySnapshot);
 
     render(<AdminAnalytics />);
 

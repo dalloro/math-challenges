@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
 import { QuestionWizard } from '../components/QuestionWizard';
-import { BulkUpload, QuestionExplorer, QuestionExporter } from '../components/AdminComponents';
+import { BulkUpload, QuestionExporter } from '../components/AdminComponents';
 import { AdminAnalytics } from '../components/AdminAnalytics';
 import { Logo } from '../components/Logo';
 
