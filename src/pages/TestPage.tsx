@@ -259,6 +259,7 @@ function TestEngine({
     // 1. Log Analytics (Real-time tracking)
     const timeSpentMs = Date.now() - questionStartTime.current;
     incrementQuestionStats(currentQuestion.id, isCorrectValue, timeSpentMs);
+    incrementDailyStats(currentQuestion.id, isCorrectValue, timeSpentMs);
 
     setIsSubmitting(true);
     setFeedbackError(null);
