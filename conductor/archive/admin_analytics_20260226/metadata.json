@@ -1,0 +1,8 @@
+{
+  "track_id": "admin_analytics_20260226",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-26T10:00:00Z",
+  "updated_at": "2026-02-26T10:00:00Z",
+  "description": "Admin Analytics Dashboard for tracking question performance and cohort composition."
+}
