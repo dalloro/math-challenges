@@ -1,1073 +1,1073 @@
 [
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 5/12 + 3/8?",
-        "options": [
-            "8/20",
-            "19/24",
-            "15/96",
-            "1 1/24",
-            "2/5"
-        ],
-        "correct_answer": "19/24",
-        "ideal_solution": "LCD = 24. 5/12 = 10/24 and 3/8 = 9/24. Add: 10/24 + 9/24 = 19/24. Socratic Hint: Find the least common denominator, convert each fraction, then add numerators.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds numerators and denominators: (5+3)/(12+8) = 8/20.",
-            "arithmetic_slip": "Student converts 5/12 = 10/24 but 3/8 = 6/24 (wrong), getting 16/24.",
-            "premature_calculation": "Student multiplies: 5/12 × 3/8 = 15/96."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rectangular prism has volume 240 cu cm. Its base area is 40 sq cm. What is its height?",
-        "options": [
-            "4 cm",
-            "5 cm",
-            "6 cm",
-            "8 cm",
-            "10 cm"
-        ],
-        "correct_answer": "6 cm",
-        "ideal_solution": "Volume = base area × height. 240 = 40 × h. h = 240/40 = 6 cm. Socratic Hint: Divide the volume by the base area to find the height.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 240 × 40 = 9600.",
-            "arithmetic_slip": "Student computes 240/40 = 8.",
-            "converse_error": "Student divides 40/240."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A palindrome reads the same forwards and backwards. How many 3-digit palindromes exist?",
-        "options": [
-            "9",
-            "10",
-            "81",
-            "90",
-            "100"
-        ],
-        "correct_answer": "90",
-        "ideal_solution": "A 3-digit palindrome has the form ABA. A can be 1-9 (9 choices, since A≠0). B can be 0-9 (10 choices). Total = 9 × 10 = 90. Socratic Hint: The first and last digit must match, and the first digit cannot be 0.",
-        "failure_modes": {
-            "overcounting": "Student allows A=0: 10 × 10 = 100.",
-            "undercounting": "Student counts only 9 × 9 = 81 (restricting B to 1-9).",
-            "formula_misapplication": "Student counts 10 palindromes by listing a few."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A mason lays 45 bricks per hour. How many bricks does he lay in 3 hours and 20 minutes?",
-        "options": [
-            "135",
-            "140",
-            "150",
-            "155",
-            "165"
-        ],
-        "correct_answer": "150",
-        "ideal_solution": "3 hours 20 minutes = 3 1/3 hours = 10/3 hours. Bricks = 45 × 10/3 = 450/3 = 150. Socratic Hint: Convert 20 minutes to a fraction of an hour (20/60 = 1/3), then multiply.",
-        "failure_modes": {
-            "premature_calculation": "Student computes 45 × 3 = 135 and stops.",
-            "arithmetic_slip": "Student computes 45 × 3.2 = 144 (treating 20 min as 0.2 hours).",
-            "formula_misapplication": "Student adds 45 + 3 + 20 = 68."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the sum of all prime numbers less than 20?",
-        "options": [
-            "58",
-            "60",
-            "72",
-            "77",
-            "80"
-        ],
-        "correct_answer": "77",
-        "ideal_solution": "Primes < 20: 2, 3, 5, 7, 11, 13, 17, 19. Sum = 2+3+5+7+11+13+17+19 = 77. Socratic Hint: First list all primes under 20, then add them up.",
-        "failure_modes": {
-            "undercounting": "Student forgets 2 (the only even prime): sum = 75.",
-            "overcounting": "Student includes 1 as prime: 1+2+3+...+19 with 1 = 78.",
-            "arithmetic_slip": "Student adds correctly up to 17 but skips 19, getting 58."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A parallelogram has a base of 12 cm and a height of 5 cm. A triangle is cut from it with the same base and height. What is the area of the remaining shape?",
-        "options": [
-            "20 sq cm",
-            "25 sq cm",
-            "30 sq cm",
-            "40 sq cm",
-            "60 sq cm"
-        ],
-        "correct_answer": "30 sq cm",
-        "ideal_solution": "Parallelogram area = 12 × 5 = 60. Triangle area = (1/2) × 12 × 5 = 30. Remaining = 60 - 30 = 30 sq cm. Socratic Hint: The triangle is exactly half the parallelogram.",
-        "failure_modes": {
-            "premature_calculation": "Student computes only the parallelogram: 60.",
-            "formula_misapplication": "Student computes triangle: 30 and picks 30 (correct but for wrong reason if they think it is the triangle).",
-            "arithmetic_slip": "Student computes 60 - 30 = 20."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 2.4 × 0.5 + 1.8 × 0.5",
-        "options": [
-            "1.2",
-            "2.1",
-            "2.4",
-            "3.0",
-            "4.2"
-        ],
-        "correct_answer": "2.1",
-        "ideal_solution": "Factor out 0.5: 0.5 × (2.4 + 1.8) = 0.5 × 4.2 = 2.1. Or compute each: 2.4×0.5 = 1.2 and 1.8×0.5 = 0.9. Total = 1.2 + 0.9 = 2.1. Socratic Hint: You can factor out the common 0.5 to simplify.",
-        "failure_modes": {
-            "premature_calculation": "Student computes only the first product: 1.2.",
-            "arithmetic_slip": "Student computes 1.2 + 0.9 = 2.4.",
-            "formula_misapplication": "Student adds first: (2.4 + 1.8) × (0.5 + 0.5) = 4.2."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If today is Wednesday, what day of the week will it be 100 days from now?",
-        "options": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "correct_answer": "Friday",
-        "ideal_solution": "100 ÷ 7 = 14 remainder 2. So 100 days from Wednesday means 2 days after Wednesday = Friday. Socratic Hint: Divide 100 by 7 and use the remainder to count forward.",
-        "failure_modes": {
-            "off_by_one": "Student counts Wednesday as day 1: Wed(1), Thu(2) = Thursday.",
-            "arithmetic_slip": "Student computes 100 ÷ 7 = 14 R 4, getting Sunday.",
-            "formula_misapplication": "Student counts 100 days sequentially and loses track."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 3 1/5 - 1 4/5?",
-        "options": [
-            "1 2/5",
-            "1 3/5",
-            "2 2/5",
-            "1 1/5",
-            "2 1/5"
-        ],
-        "correct_answer": "1 2/5",
-        "ideal_solution": "Convert: 3 1/5 = 16/5, 1 4/5 = 9/5. Subtract: 16/5 - 9/5 = 7/5 = 1 2/5. Socratic Hint: Convert to improper fractions first since 1/5 < 4/5 makes borrowing tricky.",
-        "failure_modes": {
-            "arithmetic_slip": "Student subtracts whole numbers 3-1=2 and fractions 1/5-4/5=-3/5, getting confused.",
-            "formula_misapplication": "Student subtracts 3-1=2 and 4/5-1/5=3/5, getting 2 3/5.",
-            "off_by_one": "Student computes 16-9=6, writing 6/5 = 1 1/5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A room is 4 meters long, 3 meters wide, and 3 meters tall. What is the total area of the four walls?",
-        "options": [
-            "12 sq m",
-            "24 sq m",
-            "36 sq m",
-            "42 sq m",
-            "48 sq m"
-        ],
-        "correct_answer": "42 sq m",
-        "ideal_solution": "Two long walls: 2 × (4 × 3) = 24. Two short walls: 2 × (3 × 3) = 18. Total = 24 + 18 = 42 sq m. Socratic Hint: Calculate each pair of opposite walls separately, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes floor area: 4 × 3 = 12.",
-            "premature_calculation": "Student computes only the two long walls: 24.",
-            "arithmetic_slip": "Student computes 24 + 18 = 48."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 125% of 64?",
-        "options": [
-            "48",
-            "64",
-            "72",
-            "80",
-            "128"
-        ],
-        "correct_answer": "80",
-        "ideal_solution": "125% = 1.25. 1.25 × 64 = 80. Or: 100% = 64, 25% = 16, so 125% = 64 + 16 = 80. Socratic Hint: 125% is more than 100%. Find 25% and add it to the original.",
-        "failure_modes": {
-            "premature_calculation": "Student picks 64 (that is 100%, not 125%).",
-            "formula_misapplication": "Student computes 64/1.25 = 51.2.",
-            "arithmetic_slip": "Student computes 25% of 64 = 18, getting 64+18 = 82."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A shop offers 'buy 3 get 1 free.' Pencils cost $2 each. What is the total cost for 8 pencils?",
-        "options": [
-            "$10",
-            "$12",
-            "$14",
-            "$16",
-            "$20"
-        ],
-        "correct_answer": "$12",
-        "ideal_solution": "For every 4 pencils, you pay for 3. With 8 pencils: 2 groups of 4. You pay for 6 pencils. Cost = 6 × $2 = $12. Socratic Hint: Group the pencils into sets of 4 (buy 3, get 1 free per group).",
-        "failure_modes": {
-            "formula_misapplication": "Student pays for all 8: 8 × $2 = $16.",
-            "arithmetic_slip": "Student pays for 7: 7 × $2 = $14 (only 1 free).",
-            "undercounting": "Student pays for 5: 5 × $2 = $10 (thinking 3 are free)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: (3/5)^2",
-        "options": [
-            "6/10",
-            "6/25",
-            "9/25",
-            "9/10",
-            "3/25"
-        ],
-        "correct_answer": "9/25",
-        "ideal_solution": "(3/5)^2 = (3/5) × (3/5) = 9/25. Socratic Hint: Square both the numerator and the denominator.",
-        "failure_modes": {
-            "formula_misapplication": "Student doubles: 3/5 × 2 = 6/10.",
-            "arithmetic_slip": "Student squares numerator only: 9/5.",
-            "premature_calculation": "Student computes 3^2 = 9 and 5 × 2 = 10, writing 9/10."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "Which number is both a perfect square and a perfect cube?",
-        "options": [
-            "8",
-            "16",
-            "27",
-            "36",
-            "64"
-        ],
-        "correct_answer": "64",
-        "ideal_solution": "64 = 8^2 and 64 = 4^3, so it is both. Check others: 8=2^3 (cube but not square), 16=4^2 (square but not cube), 27=3^3 (cube but not square), 36=6^2 (square but not cube). Socratic Hint: A number that is both a perfect square and perfect cube must be a perfect 6th power.",
-        "failure_modes": {
-            "constraint_neglect": "Student picks 8 (perfect cube but not perfect square).",
-            "converse_error": "Student picks 36 (perfect square but not perfect cube).",
-            "arithmetic_slip": "Student checks 27: sqrt(27) ≈ 5.2, not a perfect square, but picks it anyway."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rectangular prism is 12 cm long, 8 cm wide, and 5 cm tall. What is its surface area?",
-        "options": [
-            "240 sq cm",
-            "296 sq cm",
-            "392 sq cm",
-            "480 sq cm",
-            "592 sq cm"
-        ],
-        "correct_answer": "392 sq cm",
-        "ideal_solution": "SA = 2(lw + lh + wh) = 2(12×8 + 12×5 + 8×5) = 2(96 + 60 + 40) = 2(196) = 392 sq cm. Socratic Hint: Find the area of each pair of faces (top/bottom, front/back, left/right) and add them all.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes volume: 12×8×5 = 480.",
-            "premature_calculation": "Student computes only one pair: 2×96 = 192.",
-            "arithmetic_slip": "Student adds 96+60+40 = 186, then 2×186 = 372."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A container holds exactly 3/4 of a gallon. How many full containers can be filled from a 6-gallon tank?",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "9",
-            "12"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "6 ÷ 3/4 = 6 × 4/3 = 24/3 = 8. Socratic Hint: Dividing by 3/4 means multiplying by 4/3.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 6 × 3/4 = 4.5, rounds to 4.",
-            "arithmetic_slip": "Student computes 6 × 4/3 = 12.",
-            "converse_error": "Student divides 3/4 by 6 = 1/8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A rectangular pool is being filled with water at a rate of 50 liters per minute. The pool has dimensions 5m × 4m × 1.5m. How many minutes will it take to fill the pool? (1 cubic meter = 1000 liters)",
-        "options": [
-            "300",
-            "400",
-            "500",
-            "600",
-            "750"
-        ],
-        "correct_answer": "600",
-        "ideal_solution": "Volume = 5 × 4 × 1.5 = 30 cu m = 30,000 liters. Time = 30,000 ÷ 50 = 600 minutes. Socratic Hint: Find the volume in cubic meters first, convert to liters, then divide by the rate.",
-        "failure_modes": {
-            "units_mismatch": "Student computes 30 ÷ 50 = 0.6 (forgetting to convert to liters).",
-            "arithmetic_slip": "Student computes 30,000 ÷ 50 = 500.",
-            "premature_calculation": "Student computes volume = 30 and picks 300."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 7/8 of 240?",
-        "options": [
-            "30",
-            "175",
-            "200",
-            "210",
-            "230"
-        ],
-        "correct_answer": "210",
-        "ideal_solution": "7/8 of 240 = 240 × 7/8 = 240/8 × 7 = 30 × 7 = 210. Socratic Hint: Divide 240 by 8 first, then multiply by 7.",
-        "failure_modes": {
-            "premature_calculation": "Student divides 240/8 = 30 and stops.",
-            "arithmetic_slip": "Student computes 30 × 7 = 200.",
-            "formula_misapplication": "Student subtracts: 240 - 7/8 = 239.125."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "An L-shaped room consists of two rectangles. Rectangle 1 is 6m × 4m and Rectangle 2 is 3m × 4m. What is the floor area of the room?",
-        "options": [
-            "24 sq m",
-            "30 sq m",
-            "36 sq m",
-            "48 sq m",
-            "72 sq m"
-        ],
-        "correct_answer": "36 sq m",
-        "ideal_solution": "Area 1 = 6 × 4 = 24. Area 2 = 3 × 4 = 12. Total = 24 + 12 = 36 sq m. Socratic Hint: Break the L-shape into two rectangles, find each area, and add.",
-        "failure_modes": {
-            "premature_calculation": "Student computes only one rectangle: 24.",
-            "formula_misapplication": "Student multiplies all: 6 × 4 × 3 × 4 = 288.",
-            "arithmetic_slip": "Student adds 24 + 12 = 30."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the smallest number that has exactly 6 factors?",
-        "options": [
-            "8",
-            "12",
-            "16",
-            "18",
-            "24"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Factors of 12: 1, 2, 3, 4, 6, 12. That is exactly 6 factors. Check smaller numbers: 8 has 4 factors (1,2,4,8), 10 has 4 factors, 11 has 2 factors. 12 is the smallest with exactly 6. Socratic Hint: List factors of each number starting from 1 until you find one with exactly 6.",
-        "failure_modes": {
-            "undercounting": "Student counts factors of 12 as 4 (missing some) and moves to 18.",
-            "overcounting": "Student counts factors of 8 as 6.",
-            "converse_error": "Student picks 24 (which has 8 factors, not 6)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 0.6 × 0.3 + 0.4 × 0.3",
-        "options": [
-            "0.12",
-            "0.18",
-            "0.30",
-            "0.42",
-            "0.72"
-        ],
-        "correct_answer": "0.30",
-        "ideal_solution": "Factor out 0.3: (0.6 + 0.4) × 0.3 = 1.0 × 0.3 = 0.30. Or: 0.18 + 0.12 = 0.30. Socratic Hint: Notice both terms have 0.3 as a factor — you can combine them.",
-        "failure_modes": {
-            "premature_calculation": "Student computes only 0.6 × 0.3 = 0.18 and stops.",
-            "arithmetic_slip": "Student computes 0.18 + 0.12 = 0.42.",
-            "formula_misapplication": "Student multiplies all: 0.6 × 0.3 × 0.4 × 0.3 = 0.0216."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A scale is balanced with 5 identical blocks on one side and a 2 kg weight plus 1 block on the other side. What is the weight of one block?",
-        "options": [
-            "0.4 kg",
-            "0.5 kg",
-            "1 kg",
-            "2 kg",
-            "2.5 kg"
-        ],
-        "correct_answer": "0.5 kg",
-        "ideal_solution": "5 blocks = 2 kg + 1 block. Subtract 1 block from each side: 4 blocks = 2 kg. One block = 2/4 = 0.5 kg. Socratic Hint: Use the balance to set up an equation and eliminate blocks from both sides.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides 2 by 5: 0.4 kg.",
-            "arithmetic_slip": "Student computes 2/4 = 1 kg.",
-            "converse_error": "Student sets up 5b = 2 + b as 5b - b = 2, solving 4b = 2, b = 0.5 (correct, but many students set it up wrong)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cube has a surface area of 150 sq cm. What is the length of one edge?",
-        "options": [
-            "3 cm",
-            "5 cm",
-            "6 cm",
-            "10 cm",
-            "25 cm"
-        ],
-        "correct_answer": "5 cm",
-        "ideal_solution": "A cube has 6 faces. Area of one face = 150/6 = 25 sq cm. Edge = sqrt(25) = 5 cm. Socratic Hint: A cube has 6 equal square faces. Divide the total surface area by 6 to get one face's area.",
-        "failure_modes": {
-            "premature_calculation": "Student divides 150/6 = 25 and picks 25 cm.",
-            "formula_misapplication": "Student takes sqrt(150) ≈ 12.2.",
-            "arithmetic_slip": "Student computes 150/6 = 20, sqrt(20) ≈ 4.5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 4/7 + 2/7 + 3/7?",
-        "options": [
-            "9/7",
-            "1 2/7",
-            "9/21",
-            "3/7",
-            "1"
-        ],
-        "correct_answer": "1 2/7",
-        "ideal_solution": "Same denominator: (4+2+3)/7 = 9/7 = 1 2/7. Socratic Hint: Since all fractions have the same denominator, just add the numerators, then convert to a mixed number.",
-        "failure_modes": {
-            "premature_calculation": "Student gets 9/7 but does not convert to 1 2/7.",
-            "formula_misapplication": "Student adds denominators: 9/21 = 3/7.",
-            "arithmetic_slip": "Student adds 4+2+3 = 7, getting 7/7 = 1."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A clock loses 5 minutes every hour. If it is set correctly at noon, what time does it show at 4:00 PM actual time?",
-        "options": [
-            "3:20 PM",
-            "3:40 PM",
-            "3:45 PM",
-            "3:48 PM",
-            "3:55 PM"
-        ],
-        "correct_answer": "3:40 PM",
-        "ideal_solution": "In 4 actual hours, the clock loses 4 × 5 = 20 minutes. It shows 4:00 PM - 20 minutes = 3:40 PM. Socratic Hint: Calculate the total minutes lost over 4 hours, then subtract from the actual time.",
-        "failure_modes": {
-            "off_by_one": "Student computes 3 × 5 = 15 minutes lost, showing 3:45.",
-            "arithmetic_slip": "Student computes 4 × 5 = 25, showing 3:35.",
-            "formula_misapplication": "Student subtracts 5 minutes once: 3:55."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "If 3/n = 0.75, what is n?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "0.75 = 3/4. So 3/n = 3/4, meaning n = 4. Socratic Hint: Convert 0.75 to a fraction and compare.",
-        "failure_modes": {
-            "converse_error": "Student computes n = 3/0.75 = 4 (correct method, same answer).",
-            "formula_misapplication": "Student computes 3 × 0.75 = 2.25 and guesses n = 2.",
-            "arithmetic_slip": "Student thinks 0.75 = 3/5 and picks 5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rhombus has diagonals of 10 cm and 8 cm. What is its area?",
-        "options": [
-            "18 sq cm",
-            "36 sq cm",
-            "40 sq cm",
-            "60 sq cm",
-            "80 sq cm"
-        ],
-        "correct_answer": "40 sq cm",
-        "ideal_solution": "Area of a rhombus = (1/2) × d1 × d2 = (1/2) × 10 × 8 = 40 sq cm. Socratic Hint: The area of a rhombus is half the product of its diagonals.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies without halving: 10 × 8 = 80.",
-            "premature_calculation": "Student adds diagonals: 10 + 8 = 18.",
-            "arithmetic_slip": "Student computes (1/2) × 10 × 8 = 36."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 36 ÷ (3 + 1) × 2?",
-        "options": [
-            "6",
-            "9",
-            "12",
-            "18",
-            "24"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "Parentheses: 3 + 1 = 4. Divide: 36 ÷ 4 = 9. Multiply: 9 × 2 = 18. Socratic Hint: Do the parentheses first, then work left to right for division and multiplication.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies first: 36 ÷ (3 + 2) = 36 ÷ 5.",
-            "arithmetic_slip": "Student computes 36 ÷ 4 = 12, then 12 × 2 = 24.",
-            "premature_calculation": "Student computes 36 ÷ 3 = 12, then 12 + 1 × 2 = 14."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Three friends split a pizza equally. Then each person gives away 1/4 of their share. What fraction of the whole pizza does each person have left?",
-        "options": [
-            "1/12",
-            "1/7",
-            "1/4",
-            "3/12",
-            "3/4"
-        ],
-        "correct_answer": "1/4",
-        "ideal_solution": "Each gets 1/3 of the pizza. Each gives away 1/4 of their 1/3 = 1/12. Each has 1/3 - 1/12 = 4/12 - 1/12 = 3/12 = 1/4 left. Socratic Hint: Find each person's share, then subtract the portion they gave away.",
-        "failure_modes": {
-            "premature_calculation": "Student computes 1/4 of 1/3 = 1/12 and picks that (the given-away portion).",
-            "formula_misapplication": "Student computes 1/3 × 3/4 = 3/12 but does not simplify to 1/4.",
-            "arithmetic_slip": "Student subtracts 1/3 - 1/4 = 1/12 (subtracting wrong fractions)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "The product of two consecutive whole numbers is 132. What are the two numbers?",
-        "options": [
-            "10 and 11",
-            "11 and 12",
-            "12 and 13",
-            "13 and 14",
-            "14 and 15"
-        ],
-        "correct_answer": "11 and 12",
-        "ideal_solution": "Try: 11 × 12 = 132 ✓. Check: 10 × 11 = 110 ✗, 12 × 13 = 156 ✗. Socratic Hint: Estimate the square root of 132 (≈ 11.5), then test the two whole numbers around it.",
-        "failure_modes": {
-            "off_by_one": "Student tries 12 × 13 = 156 and picks that.",
-            "arithmetic_slip": "Student computes 11 × 12 = 122 and moves to 12 × 13.",
-            "formula_misapplication": "Student divides 132/2 = 66 and tries 65 and 66."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A train ticket costs $12.50. If a family of 4 buys tickets and pays with a $100 bill, how much change do they get?",
-        "options": [
-            "$37.50",
-            "$42.00",
-            "$48.00",
-            "$50.00",
-            "$87.50"
-        ],
-        "correct_answer": "$50.00",
-        "ideal_solution": "Total cost = 4 × $12.50 = $50.00. Change = $100 - $50 = $50.00. Socratic Hint: Multiply the ticket price by 4, then subtract from $100.",
-        "failure_modes": {
-            "premature_calculation": "Student computes cost = $50 and picks that as the change (correct here, but could confuse cost with change).",
-            "arithmetic_slip": "Student computes 4 × $12.50 = $62.50, change = $37.50.",
-            "formula_misapplication": "Student computes $100 - $12.50 = $87.50 (only one ticket)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A circle has a diameter of 10 cm. What is its circumference? (Use π ≈ 3.14)",
-        "options": [
-            "15.7 cm",
-            "25.12 cm",
-            "31.4 cm",
-            "62.8 cm",
-            "78.5 cm"
-        ],
-        "correct_answer": "31.4 cm",
-        "ideal_solution": "Circumference = π × d = 3.14 × 10 = 31.4 cm. Socratic Hint: The circumference formula uses the diameter: C = πd.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses C = πr: 3.14 × 5 = 15.7.",
-            "converse_error": "Student computes area: π × r^2 = 3.14 × 25 = 78.5.",
-            "arithmetic_slip": "Student computes 3.14 × 10 = 25.12."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A water tank is 1/3 full. After pouring out 10 liters, it is 1/4 full. What is the tank's full capacity?",
-        "options": [
-            "40 liters",
-            "60 liters",
-            "80 liters",
-            "100 liters",
-            "120 liters"
-        ],
-        "correct_answer": "120 liters",
-        "ideal_solution": "1/3 - 1/4 = 4/12 - 3/12 = 1/12 of the tank = 10 liters. Full capacity = 10 × 12 = 120 liters. Socratic Hint: The difference between 1/3 and 1/4 of the tank is the 10 liters that were poured out.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides 10 by 1/4 = 40 liters.",
-            "arithmetic_slip": "Student computes 1/3 - 1/4 = 1/7 (subtracting denominators).",
-            "premature_calculation": "Student computes 10 × 4 = 40 or 10 × 3 = 30."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 2.4 ÷ 0.06?",
-        "options": [
-            "0.04",
-            "4",
-            "40",
-            "400",
-            "2400"
-        ],
-        "correct_answer": "40",
-        "ideal_solution": "Multiply both by 100: 240 ÷ 6 = 40. Socratic Hint: Move the decimal two places right in both numbers to make the divisor a whole number.",
-        "failure_modes": {
-            "off_by_one": "Student moves decimal only once: 24 ÷ 0.6 = 40 (correct by accident) or 24 ÷ 6 = 4.",
-            "formula_misapplication": "Student multiplies: 2.4 × 0.06 = 0.144.",
-            "arithmetic_slip": "Student computes 240 ÷ 6 = 400."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the value of 3! + 4! (where ! means factorial)?",
-        "options": [
-            "7",
-            "12",
-            "24",
-            "30",
-            "5040"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "3! = 3 × 2 × 1 = 6. 4! = 4 × 3 × 2 × 1 = 24. Sum = 6 + 24 = 30. Socratic Hint: Calculate each factorial separately, then add them.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (3+4)! = 7! = 5040.",
-            "premature_calculation": "Student finds 4! = 24 and stops.",
-            "arithmetic_slip": "Student computes 3! = 9 (squaring instead of factorial)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A triangle has sides of 5 cm, 12 cm, and 13 cm. Is this a right triangle?",
-        "options": [
-            "Yes, because 5 + 12 = 17 > 13",
-            "Yes, because 5² + 12² = 13²",
-            "No, because 5 + 12 ≠ 13",
-            "No, because the sides are not equal",
-            "Cannot determine"
-        ],
-        "correct_answer": "Yes, because 5² + 12² = 13²",
-        "ideal_solution": "Check: 5² + 12² = 25 + 144 = 169 = 13². Since a² + b² = c², it is a right triangle. Socratic Hint: Use the Pythagorean theorem: if the sum of the squares of the two shorter sides equals the square of the longest side, it's a right triangle.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds sides: 5 + 12 = 17, and since 17 > 13 concludes yes (triangle inequality, not Pythagorean).",
-            "arithmetic_slip": "Student computes 5² + 12² = 25 + 144 = 159 ≠ 169.",
-            "converse_error": "Student checks if sides are equal (equilateral test) and says no."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "At a farm, 3/8 of the animals are cows, 1/4 are chickens, and the rest are pigs. If there are 48 animals total, how many are pigs?",
-        "options": [
-            "6",
-            "12",
-            "15",
-            "18",
-            "24"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "Cows: 3/8. Chickens: 1/4 = 2/8. Total non-pigs: 3/8 + 2/8 = 5/8. Pigs: 1 - 5/8 = 3/8. Number of pigs: 3/8 × 48 = 18. Socratic Hint: Add the known fractions, subtract from 1 to find the pig fraction, then multiply by total.",
-        "failure_modes": {
-            "premature_calculation": "Student finds cows: 3/8 × 48 = 18 and picks that (those are cows, not pigs).",
-            "arithmetic_slip": "Student converts 1/4 to 1/8, getting 4/8 non-pigs, and 4/8 × 48 = 24 pigs.",
-            "formula_misapplication": "Student subtracts: 48 - 3 - 1 = 44."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "You have 3 identical dice. How many different totals can you roll? (Each die shows 1-6.)",
-        "options": [
-            "6",
-            "11",
-            "16",
-            "18",
-            "216"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "Minimum total = 1+1+1 = 3. Maximum total = 6+6+6 = 18. All integers from 3 to 18 are achievable. Count = 18 - 3 + 1 = 16 different totals. Socratic Hint: Find the minimum and maximum possible totals, then count all integers in between.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 6^3 = 216 (number of outcomes, not totals).",
-            "off_by_one": "Student computes 18 - 3 = 15 (forgetting to add 1).",
-            "undercounting": "Student counts only 6 (one die's range)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the average of 3.5, 4.2, and 7.3?",
-        "options": [
-            "4.5",
-            "5.0",
-            "5.3",
-            "7.5",
-            "15.0"
-        ],
-        "correct_answer": "5.0",
-        "ideal_solution": "Sum = 3.5 + 4.2 + 7.3 = 15.0. Average = 15.0 ÷ 3 = 5.0. Socratic Hint: Add all the numbers, then divide by how many numbers there are.",
-        "failure_modes": {
-            "premature_calculation": "Student adds to get 15.0  and picks that as the answer.",
-            "arithmetic_slip": "Student adds 3.5 + 4.2 + 7.3 = 14.0, then 14/3 ≈ 4.7.",
-            "formula_misapplication": "Student divides 7.3 by 3 only."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A right triangle has a hypotenuse of 10 cm and one leg of 6 cm. What is the length of the other leg?",
-        "options": [
-            "4 cm",
-            "6 cm",
-            "8 cm",
-            "10 cm",
-            "12 cm"
-        ],
-        "correct_answer": "8 cm",
-        "ideal_solution": "a² + b² = c². 6² + b² = 10². 36 + b² = 100. b² = 64. b = 8 cm. Socratic Hint: Rearrange the Pythagorean theorem to solve for the missing leg.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 10 - 6 = 4 cm.",
-            "arithmetic_slip": "Student computes 100 - 36 = 54, sqrt(54) ≈ 7.3.",
-            "converse_error": "Student computes 6² + 10² = 136, sqrt(136) ≈ 11.7."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A movie theater has 15 rows with 20 seats each. On a showing, 7/10 of the seats are filled. How many seats are empty?",
-        "options": [
-            "21",
-            "30",
-            "60",
-            "90",
-            "210"
-        ],
-        "correct_answer": "90",
-        "ideal_solution": "Total seats = 15 × 20 = 300. Filled: 7/10 × 300 = 210. Empty: 300 - 210 = 90. Or: 3/10 × 300 = 90 empty. Socratic Hint: Find total seats, then calculate the empty fraction (3/10).",
-        "failure_modes": {
-            "premature_calculation": "Student computes filled seats (210) and picks that.",
-            "arithmetic_slip": "Student computes 15 × 20 = 200, then 3/10 × 200 = 60.",
-            "formula_misapplication": "Student computes 7/10 × 15 = 10.5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 11/3 as a decimal (rounded to the nearest hundredth)?",
-        "options": [
-            "0.27",
-            "0.33",
-            "3.33",
-            "3.67",
-            "3.63"
-        ],
-        "correct_answer": "3.67",
-        "ideal_solution": "11 ÷ 3 = 3.666... Rounded to nearest hundredth = 3.67. Socratic Hint: Divide 11 by 3 using long division and round when you have enough decimal places.",
-        "failure_modes": {
-            "converse_error": "Student computes 3/11 = 0.27.",
-            "arithmetic_slip": "Student rounds 3.666... to 3.63.",
-            "formula_misapplication": "Student computes 1/3 = 0.33 and picks that."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many perfect squares are there between 1 and 100 (inclusive)?",
-        "options": [
-            "5",
-            "8",
-            "9",
-            "10",
-            "50"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "Perfect squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. Count = 10. Socratic Hint: List all numbers whose square root is a whole number from 1 to 10.",
-        "failure_modes": {
-            "off_by_one": "Student excludes 1 or 100, getting 8 or 9.",
-            "overcounting": "Student counts 50 (half of 100).",
-            "arithmetic_slip": "Student starts listing: 4, 9, 16... and misses 1."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cone-shaped hat has a circular base with diameter 8 cm. What is the area of the base? (Use π ≈ 3.14)",
-        "options": [
-            "12.56 sq cm",
-            "25.12 sq cm",
-            "50.24 sq cm",
-            "100.48 sq cm",
-            "200.96 sq cm"
-        ],
-        "correct_answer": "50.24 sq cm",
-        "ideal_solution": "Radius = 8/2 = 4 cm. Area = π × r² = 3.14 × 16 = 50.24 sq cm. Socratic Hint: Remember to use the radius (half the diameter) in the area formula.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses diameter in formula: 3.14 × 64 = 200.96.",
-            "premature_calculation": "Student computes circumference: 3.14 × 8 = 25.12.",
-            "arithmetic_slip": "Student computes 3.14 × 4 = 12.56 (forgetting to square)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 3/4 of 5/6?",
-        "options": [
-            "5/8",
-            "8/10",
-            "15/24",
-            "4/5",
-            "8/24"
-        ],
-        "correct_answer": "5/8",
-        "ideal_solution": "3/4 × 5/6 = 15/24. Simplify: divide both by 3 → 5/8. Socratic Hint: Multiply the fractions, then simplify the result.",
-        "failure_modes": {
-            "premature_calculation": "Student gets 15/24 but does not simplify.",
-            "formula_misapplication": "Student adds: 3/4 + 5/6 = 9/12 + 10/12 = 19/12.",
-            "arithmetic_slip": "Student simplifies 15/24 as 8/24."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A bookshelf has 5 shelves. If you have 9 different books and want to place at least 1 book on each shelf, what is the maximum number of books that can be on any one shelf?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "9"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "Place 1 book on each of 4 shelves (4 books used). The remaining 9 - 4 = 5 books go on the 5th shelf. Maximum on one shelf = 5. Socratic Hint: Minimize the number on 4 shelves (1 each) to maximize the 5th.",
-        "failure_modes": {
-            "off_by_one": "Student computes 9 - 5 = 4 (subtracting all shelves instead of 4).",
-            "formula_misapplication": "Student divides: 9/5 = 1.8, picks 3 (rounding up).",
-            "constraint_neglect": "Student ignores the constraint and puts all 9 on one shelf."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 100 × 0.01 + 10 × 0.1 + 1 × 1",
-        "options": [
-            "1",
-            "1.11",
-            "3",
-            "111",
-            "100.101"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "100 × 0.01 = 1. 10 × 0.1 = 1. 1 × 1 = 1. Sum = 1 + 1 + 1 = 3. Socratic Hint: Evaluate each product separately, then add them.",
-        "failure_modes": {
-            "premature_calculation": "Student computes only the first term: 1.",
-            "arithmetic_slip": "Student concatenates: 1.11.",
-            "formula_misapplication": "Student adds without multiplying: 100 + 0.01 + 10 + 0.1 + 1 + 1 = 112.11."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Two congruent right triangles with legs 3 cm and 4 cm are joined along their hypotenuses to form a rectangle. What is the area of the rectangle?",
-        "options": [
-            "6 sq cm",
-            "12 sq cm",
-            "14 sq cm",
-            "20 sq cm",
-            "24 sq cm"
-        ],
-        "correct_answer": "12 sq cm",
-        "ideal_solution": "Each right triangle has area = (1/2) × 3 × 4 = 6 sq cm. Two triangles = 12 sq cm. Socratic Hint: Two identical right triangles joined along the hypotenuse form a rectangle with the same total area.",
-        "failure_modes": {
-            "premature_calculation": "Student computes one triangle: 6 sq cm.",
-            "formula_misapplication": "Student computes 3 × 4 = 12 (rectangle formula directly, gets right answer but reasoning may be off).",
-            "arithmetic_slip": "Student computes 2 × 6 = 14."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the GCF of 48 and 180?",
-        "options": [
-            "4",
-            "6",
-            "12",
-            "24",
-            "36"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "48 = 2^4 × 3. 180 = 2^2 × 3^2 × 5. GCF = 2^2 × 3 = 12. Socratic Hint: Find the prime factorization of each and take the lowest power of each shared prime.",
-        "failure_modes": {
-            "undercounting": "Student finds only 6 as a common factor, missing the extra factor of 2.",
-            "overcounting": "Student finds 36, but 48/36 is not a whole number.",
-            "arithmetic_slip": "Student computes 180 = 2^2 × 3 × 15 (not fully factored) and gets GCF = 6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A store has a sale: all prices are reduced by 1/5. A jacket originally costs $75. After the sale, a 6% sales tax is added. What is the final price?",
-        "options": [
-            "$60.00",
-            "$63.00",
-            "$63.60",
-            "$66.00",
-            "$79.50"
-        ],
-        "correct_answer": "$63.60",
-        "ideal_solution": "Discount: 1/5 of $75 = $15. Sale price = $75 - $15 = $60. Tax: 6% of $60 = $3.60. Final = $60 + $3.60 = $63.60. Socratic Hint: Apply the discount first, then add tax to the discounted price.",
-        "failure_modes": {
-            "premature_calculation": "Student stops at sale price: $60.",
-            "formula_misapplication": "Student adds tax to original: 6% of $75 = $4.50, then $75 - $15 + $4.50 = $64.50.",
-            "arithmetic_slip": "Student computes 6% of $60 = $3, getting $63."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "advanced",
-        "type": "logic",
-        "question": "A rectangle has a perimeter of 40 cm. The length is 3 times the width. What is the area of the rectangle?",
-        "options": [
-            "75 sq cm",
-            "100 sq cm",
-            "150 sq cm",
-            "300 sq cm",
-            "400 sq cm"
-        ],
-        "correct_answer": "75 sq cm",
-        "ideal_solution": "P = 2L + 2W. 40 = 2(3W) + 2W = 6W + 2W = 8W. 8W = 40, so W = 5. L = 15. Area = L x W = 15 x 5 = 75. Socratic Hint: Let width be W. Length is 3W. The perimeter is W + 3W + W + 3W = 40.",
-        "failure_modes": {
-            "premature_calculation": "Student stops at L=15 and selects an option like 15 if present, or multiplies 15x10=150.",
-            "formula_misapplication": "Student writes Area = 3W x W = 3W^2 = Perimeter. Gets confused and guesses 100.",
-            "arithmetic_slip": "Student guesses 150 sq cm (using a random width/length combination that sums to 40 instead of 20)."
-        }
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 5/12 + 3/8?",
+    "options": [
+      "8/20",
+      "19/24",
+      "15/96",
+      "1 1/24",
+      "2/5"
+    ],
+    "correct_answer": "19/24",
+    "ideal_solution": "LCD = 24. 5/12 = 10/24 and 3/8 = 9/24. Add: 10/24 + 9/24 = 19/24. Socratic Hint: Find the least common denominator, convert each fraction, then add numerators.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds numerators and denominators: (5+3)/(12+8) = 8/20.",
+      "arithmetic_slip": "Student converts 5/12 = 10/24 but 3/8 = 6/24 (wrong), getting 16/24.",
+      "premature_calculation": "Student multiplies: 5/12 × 3/8 = 15/96."
     }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangular prism has volume 240 cu cm. Its base area is 40 sq cm. What is its height?",
+    "options": [
+      "4 cm",
+      "5 cm",
+      "6 cm",
+      "8 cm",
+      "10 cm"
+    ],
+    "correct_answer": "6 cm",
+    "ideal_solution": "Volume = base area × height. 240 = 40 × h. h = 240/40 = 6 cm. Socratic Hint: Divide the volume by the base area to find the height.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 240 × 40 = 9600.",
+      "arithmetic_slip": "Student computes 240/40 = 8.",
+      "converse_error": "Student divides 40/240."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A palindrome reads the same forwards and backwards. How many 3-digit palindromes exist?",
+    "options": [
+      "9",
+      "10",
+      "81",
+      "90",
+      "100"
+    ],
+    "correct_answer": "90",
+    "ideal_solution": "A 3-digit palindrome has the form ABA. A can be 1-9 (9 choices, since A≠0). B can be 0-9 (10 choices). Total = 9 × 10 = 90. Socratic Hint: The first and last digit must match, and the first digit cannot be 0.",
+    "failure_modes": {
+      "overcounting": "Student allows A=0: 10 × 10 = 100.",
+      "undercounting": "Student counts only 9 × 9 = 81 (restricting B to 1-9).",
+      "formula_misapplication": "Student counts 10 palindromes by listing a few."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A mason lays 45 bricks per hour. How many bricks does he lay in 3 hours and 20 minutes?",
+    "options": [
+      "135",
+      "140",
+      "150",
+      "155",
+      "165"
+    ],
+    "correct_answer": "150",
+    "ideal_solution": "3 hours 20 minutes = 3 1/3 hours = 10/3 hours. Bricks = 45 × 10/3 = 450/3 = 150. Socratic Hint: Convert 20 minutes to a fraction of an hour (20/60 = 1/3), then multiply.",
+    "failure_modes": {
+      "premature_calculation": "Student computes 45 × 3 = 135 and stops.",
+      "arithmetic_slip": "Student computes 45 × 3.2 = 144 (treating 20 min as 0.2 hours).",
+      "formula_misapplication": "Student adds 45 + 3 + 20 = 68."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the sum of all prime numbers less than 20?",
+    "options": [
+      "58",
+      "60",
+      "72",
+      "77",
+      "80"
+    ],
+    "correct_answer": "77",
+    "ideal_solution": "Primes < 20: 2, 3, 5, 7, 11, 13, 17, 19. Sum = 2+3+5+7+11+13+17+19 = 77. Socratic Hint: First list all primes under 20, then add them up.",
+    "failure_modes": {
+      "undercounting": "Student forgets 2 (the only even prime): sum = 75.",
+      "overcounting": "Student includes 1 as prime: 1+2+3+...+19 with 1 = 78.",
+      "arithmetic_slip": "Student adds correctly up to 17 but skips 19, getting 58."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A parallelogram has a base of 12 cm and a height of 5 cm. A triangle is cut from it with the same base and height. What is the area of the remaining shape?",
+    "options": [
+      "20 sq cm",
+      "25 sq cm",
+      "30 sq cm",
+      "40 sq cm",
+      "60 sq cm"
+    ],
+    "correct_answer": "30 sq cm",
+    "ideal_solution": "Parallelogram area = 12 × 5 = 60. Triangle area = (1/2) × 12 × 5 = 30. Remaining = 60 - 30 = 30 sq cm. Socratic Hint: The triangle is exactly half the parallelogram.",
+    "failure_modes": {
+      "premature_calculation": "Student computes only the parallelogram: 60.",
+      "formula_misapplication": "Student computes triangle: 30 and picks 30 (correct but for wrong reason if they think it is the triangle).",
+      "arithmetic_slip": "Student computes 60 - 30 = 20."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 2.4 × 0.5 + 1.8 × 0.5",
+    "options": [
+      "1.2",
+      "2.1",
+      "2.4",
+      "3.0",
+      "4.2"
+    ],
+    "correct_answer": "2.1",
+    "ideal_solution": "Factor out 0.5: 0.5 × (2.4 + 1.8) = 0.5 × 4.2 = 2.1. Or compute each: 2.4×0.5 = 1.2 and 1.8×0.5 = 0.9. Total = 1.2 + 0.9 = 2.1. Socratic Hint: You can factor out the common 0.5 to simplify.",
+    "failure_modes": {
+      "premature_calculation": "Student computes only the first product: 1.2.",
+      "arithmetic_slip": "Student computes 1.2 + 0.9 = 2.4.",
+      "formula_misapplication": "Student adds first: (2.4 + 1.8) × (0.5 + 0.5) = 4.2."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "If today is Wednesday, what day of the week will it be 100 days from now?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "correct_answer": "Friday",
+    "ideal_solution": "100 ÷ 7 = 14 remainder 2. So 100 days from Wednesday means 2 days after Wednesday = Friday. Socratic Hint: Divide 100 by 7 and use the remainder to count forward.",
+    "failure_modes": {
+      "off_by_one": "Student counts Wednesday as day 1: Wed(1), Thu(2) = Thursday.",
+      "arithmetic_slip": "Student computes 100 ÷ 7 = 14 R 4, getting Sunday.",
+      "formula_misapplication": "Student counts 100 days sequentially and loses track."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 3 1/5 - 1 4/5?",
+    "options": [
+      "1 2/5",
+      "1 3/5",
+      "2 2/5",
+      "1 1/5",
+      "2 1/5"
+    ],
+    "correct_answer": "1 2/5",
+    "ideal_solution": "Convert: 3 1/5 = 16/5, 1 4/5 = 9/5. Subtract: 16/5 - 9/5 = 7/5 = 1 2/5. Socratic Hint: Convert to improper fractions first since 1/5 < 4/5 makes borrowing tricky.",
+    "failure_modes": {
+      "arithmetic_slip": "Student subtracts whole numbers 3-1=2 and fractions 1/5-4/5=-3/5, getting confused.",
+      "formula_misapplication": "Student subtracts 3-1=2 and 4/5-1/5=3/5, getting 2 3/5.",
+      "off_by_one": "Student computes 16-9=6, writing 6/5 = 1 1/5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A room is 4 meters long, 3 meters wide, and 3 meters tall. What is the total area of the four walls?",
+    "options": [
+      "12 sq m",
+      "24 sq m",
+      "36 sq m",
+      "42 sq m",
+      "48 sq m"
+    ],
+    "correct_answer": "42 sq m",
+    "ideal_solution": "Two long walls: 2 × (4 × 3) = 24. Two short walls: 2 × (3 × 3) = 18. Total = 24 + 18 = 42 sq m. Socratic Hint: Calculate each pair of opposite walls separately, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes floor area: 4 × 3 = 12.",
+      "premature_calculation": "Student computes only the two long walls: 24.",
+      "arithmetic_slip": "Student computes 24 + 18 = 48."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 125% of 64?",
+    "options": [
+      "48",
+      "64",
+      "72",
+      "80",
+      "128"
+    ],
+    "correct_answer": "80",
+    "ideal_solution": "125% = 1.25. 1.25 × 64 = 80. Or: 100% = 64, 25% = 16, so 125% = 64 + 16 = 80. Socratic Hint: 125% is more than 100%. Find 25% and add it to the original.",
+    "failure_modes": {
+      "premature_calculation": "Student picks 64 (that is 100%, not 125%).",
+      "formula_misapplication": "Student computes 64/1.25 = 51.2.",
+      "arithmetic_slip": "Student computes 25% of 64 = 18, getting 64+18 = 82."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A shop offers 'buy 3 get 1 free.' Pencils cost $2 each. What is the total cost for 8 pencils?",
+    "options": [
+      "$10",
+      "$12",
+      "$14",
+      "$16",
+      "$20"
+    ],
+    "correct_answer": "$12",
+    "ideal_solution": "For every 4 pencils, you pay for 3. With 8 pencils: 2 groups of 4. You pay for 6 pencils. Cost = 6 × $2 = $12. Socratic Hint: Group the pencils into sets of 4 (buy 3, get 1 free per group).",
+    "failure_modes": {
+      "formula_misapplication": "Student pays for all 8: 8 × $2 = $16.",
+      "arithmetic_slip": "Student pays for 7: 7 × $2 = $14 (only 1 free).",
+      "undercounting": "Student pays for 5: 5 × $2 = $10 (thinking 3 are free)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: (3/5)^2",
+    "options": [
+      "6/10",
+      "6/25",
+      "9/25",
+      "9/10",
+      "3/25"
+    ],
+    "correct_answer": "9/25",
+    "ideal_solution": "(3/5)^2 = (3/5) × (3/5) = 9/25. Socratic Hint: Square both the numerator and the denominator.",
+    "failure_modes": {
+      "formula_misapplication": "Student doubles: 3/5 × 2 = 6/10.",
+      "arithmetic_slip": "Student squares numerator only: 9/5.",
+      "premature_calculation": "Student computes 3^2 = 9 and 5 × 2 = 10, writing 9/10."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "Which number is both a perfect square and a perfect cube?",
+    "options": [
+      "8",
+      "16",
+      "27",
+      "36",
+      "64"
+    ],
+    "correct_answer": "64",
+    "ideal_solution": "64 = 8^2 and 64 = 4^3, so it is both. Check others: 8=2^3 (cube but not square), 16=4^2 (square but not cube), 27=3^3 (cube but not square), 36=6^2 (square but not cube). Socratic Hint: A number that is both a perfect square and perfect cube must be a perfect 6th power.",
+    "failure_modes": {
+      "constraint_neglect": "Student picks 8 (perfect cube but not perfect square).",
+      "converse_error": "Student picks 36 (perfect square but not perfect cube).",
+      "arithmetic_slip": "Student checks 27: sqrt(27) ≈ 5.2, not a perfect square, but picks it anyway."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangular prism is 12 cm long, 8 cm wide, and 5 cm tall. What is its surface area?",
+    "options": [
+      "240 sq cm",
+      "296 sq cm",
+      "392 sq cm",
+      "480 sq cm",
+      "592 sq cm"
+    ],
+    "correct_answer": "392 sq cm",
+    "ideal_solution": "SA = 2(lw + lh + wh) = 2(12×8 + 12×5 + 8×5) = 2(96 + 60 + 40) = 2(196) = 392 sq cm. Socratic Hint: Find the area of each pair of faces (top/bottom, front/back, left/right) and add them all.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes volume: 12×8×5 = 480.",
+      "premature_calculation": "Student computes only one pair: 2×96 = 192.",
+      "arithmetic_slip": "Student adds 96+60+40 = 186, then 2×186 = 372."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A container holds exactly 3/4 of a gallon. How many full containers can be filled from a 6-gallon tank?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "6 ÷ 3/4 = 6 × 4/3 = 24/3 = 8. Socratic Hint: Dividing by 3/4 means multiplying by 4/3.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 6 × 3/4 = 4.5, rounds to 4.",
+      "arithmetic_slip": "Student computes 6 × 4/3 = 12.",
+      "converse_error": "Student divides 3/4 by 6 = 1/8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A rectangular pool is being filled with water at a rate of 50 liters per minute. The pool has dimensions 5m × 4m × 1.5m. How many minutes will it take to fill the pool? (1 cubic meter = 1000 liters)",
+    "options": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "750"
+    ],
+    "correct_answer": "600",
+    "ideal_solution": "Volume = 5 × 4 × 1.5 = 30 cu m = 30,000 liters. Time = 30,000 ÷ 50 = 600 minutes. Socratic Hint: Find the volume in cubic meters first, convert to liters, then divide by the rate.",
+    "failure_modes": {
+      "units_mismatch": "Student computes 30 ÷ 50 = 0.6 (forgetting to convert to liters).",
+      "arithmetic_slip": "Student computes 30,000 ÷ 50 = 500.",
+      "premature_calculation": "Student computes volume = 30 and picks 300."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 7/8 of 240?",
+    "options": [
+      "30",
+      "175",
+      "200",
+      "210",
+      "230"
+    ],
+    "correct_answer": "210",
+    "ideal_solution": "7/8 of 240 = 240 × 7/8 = 240/8 × 7 = 30 × 7 = 210. Socratic Hint: Divide 240 by 8 first, then multiply by 7.",
+    "failure_modes": {
+      "premature_calculation": "Student divides 240/8 = 30 and stops.",
+      "arithmetic_slip": "Student computes 30 × 7 = 200.",
+      "formula_misapplication": "Student subtracts: 240 - 7/8 = 239.125."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "An L-shaped room consists of two rectangles. Rectangle 1 is 6m × 4m and Rectangle 2 is 3m × 4m. What is the floor area of the room?",
+    "options": [
+      "24 sq m",
+      "30 sq m",
+      "36 sq m",
+      "48 sq m",
+      "72 sq m"
+    ],
+    "correct_answer": "36 sq m",
+    "ideal_solution": "Area 1 = 6 × 4 = 24. Area 2 = 3 × 4 = 12. Total = 24 + 12 = 36 sq m. Socratic Hint: Break the L-shape into two rectangles, find each area, and add.",
+    "failure_modes": {
+      "premature_calculation": "Student computes only one rectangle: 24.",
+      "formula_misapplication": "Student multiplies all: 6 × 4 × 3 × 4 = 288.",
+      "arithmetic_slip": "Student adds 24 + 12 = 30."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the smallest number that has exactly 6 factors?",
+    "options": [
+      "8",
+      "12",
+      "16",
+      "18",
+      "24"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Factors of 12: 1, 2, 3, 4, 6, 12. That is exactly 6 factors. Check smaller numbers: 8 has 4 factors (1,2,4,8), 10 has 4 factors, 11 has 2 factors. 12 is the smallest with exactly 6. Socratic Hint: List factors of each number starting from 1 until you find one with exactly 6.",
+    "failure_modes": {
+      "undercounting": "Student counts factors of 12 as 4 (missing some) and moves to 18.",
+      "overcounting": "Student counts factors of 8 as 6.",
+      "converse_error": "Student picks 24 (which has 8 factors, not 6)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 0.6 × 0.3 + 0.4 × 0.3",
+    "options": [
+      "0.12",
+      "0.18",
+      "0.30",
+      "0.42",
+      "0.72"
+    ],
+    "correct_answer": "0.30",
+    "ideal_solution": "Factor out 0.3: (0.6 + 0.4) × 0.3 = 1.0 × 0.3 = 0.30. Or: 0.18 + 0.12 = 0.30. Socratic Hint: Notice both terms have 0.3 as a factor — you can combine them.",
+    "failure_modes": {
+      "premature_calculation": "Student computes only 0.6 × 0.3 = 0.18 and stops.",
+      "arithmetic_slip": "Student computes 0.18 + 0.12 = 0.42.",
+      "formula_misapplication": "Student multiplies all: 0.6 × 0.3 × 0.4 × 0.3 = 0.0216."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A scale is balanced with 5 identical blocks on one side and a 2 kg weight plus 1 block on the other side. What is the weight of one block?",
+    "options": [
+      "0.4 kg",
+      "0.5 kg",
+      "1 kg",
+      "2 kg",
+      "2.5 kg"
+    ],
+    "correct_answer": "0.5 kg",
+    "ideal_solution": "5 blocks = 2 kg + 1 block. Subtract 1 block from each side: 4 blocks = 2 kg. One block = 2/4 = 0.5 kg. Socratic Hint: Use the balance to set up an equation and eliminate blocks from both sides.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides 2 by 5: 0.4 kg.",
+      "arithmetic_slip": "Student computes 2/4 = 1 kg.",
+      "converse_error": "Student sets up 5b = 2 + b as 5b - b = 2, solving 4b = 2, b = 0.5 (correct, but many students set it up wrong)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A cube has a surface area of 150 sq cm. What is the length of one edge?",
+    "options": [
+      "3 cm",
+      "5 cm",
+      "6 cm",
+      "10 cm",
+      "25 cm"
+    ],
+    "correct_answer": "5 cm",
+    "ideal_solution": "A cube has 6 faces. Area of one face = 150/6 = 25 sq cm. Edge = sqrt(25) = 5 cm. Socratic Hint: A cube has 6 equal square faces. Divide the total surface area by 6 to get one face's area.",
+    "failure_modes": {
+      "premature_calculation": "Student divides 150/6 = 25 and picks 25 cm.",
+      "formula_misapplication": "Student takes sqrt(150) ≈ 12.2.",
+      "arithmetic_slip": "Student computes 150/6 = 20, sqrt(20) ≈ 4.5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 4/7 + 2/7 + 3/7?",
+    "options": [
+      "9/7",
+      "1 2/7",
+      "9/21",
+      "3/7",
+      "1"
+    ],
+    "correct_answer": "1 2/7",
+    "ideal_solution": "Same denominator: (4+2+3)/7 = 9/7 = 1 2/7. Socratic Hint: Since all fractions have the same denominator, just add the numerators, then convert to a mixed number.",
+    "failure_modes": {
+      "premature_calculation": "Student gets 9/7 but does not convert to 1 2/7.",
+      "formula_misapplication": "Student adds denominators: 9/21 = 3/7.",
+      "arithmetic_slip": "Student adds 4+2+3 = 7, getting 7/7 = 1."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A clock loses 5 minutes every hour. If it is set correctly at noon, what time does it show at 4:00 PM actual time?",
+    "options": [
+      "3:20 PM",
+      "3:40 PM",
+      "3:45 PM",
+      "3:48 PM",
+      "3:55 PM"
+    ],
+    "correct_answer": "3:40 PM",
+    "ideal_solution": "In 4 actual hours, the clock loses 4 × 5 = 20 minutes. It shows 4:00 PM - 20 minutes = 3:40 PM. Socratic Hint: Calculate the total minutes lost over 4 hours, then subtract from the actual time.",
+    "failure_modes": {
+      "off_by_one": "Student computes 3 × 5 = 15 minutes lost, showing 3:45.",
+      "arithmetic_slip": "Student computes 4 × 5 = 25, showing 3:35.",
+      "formula_misapplication": "Student subtracts 5 minutes once: 3:55."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "If 3/n = 0.75, what is n?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "0.75 = 3/4. So 3/n = 3/4, meaning n = 4. Socratic Hint: Convert 0.75 to a fraction and compare.",
+    "failure_modes": {
+      "converse_error": "Student computes n = 3/0.75 = 4 (correct method, same answer).",
+      "formula_misapplication": "Student computes 3 × 0.75 = 2.25 and guesses n = 2.",
+      "arithmetic_slip": "Student thinks 0.75 = 3/5 and picks 5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rhombus has diagonals of 10 cm and 8 cm. What is its area?",
+    "options": [
+      "18 sq cm",
+      "36 sq cm",
+      "40 sq cm",
+      "60 sq cm",
+      "80 sq cm"
+    ],
+    "correct_answer": "40 sq cm",
+    "ideal_solution": "Area of a rhombus = (1/2) × d1 × d2 = (1/2) × 10 × 8 = 40 sq cm. Socratic Hint: The area of a rhombus is half the product of its diagonals.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies without halving: 10 × 8 = 80.",
+      "premature_calculation": "Student adds diagonals: 10 + 8 = 18.",
+      "arithmetic_slip": "Student computes (1/2) × 10 × 8 = 36."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 36 ÷ (3 + 1) × 2?",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "18",
+      "24"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "Parentheses: 3 + 1 = 4. Divide: 36 ÷ 4 = 9. Multiply: 9 × 2 = 18. Socratic Hint: Do the parentheses first, then work left to right for division and multiplication.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies first: 36 ÷ (3 + 2) = 36 ÷ 5.",
+      "arithmetic_slip": "Student computes 36 ÷ 4 = 12, then 12 × 2 = 24.",
+      "premature_calculation": "Student computes 36 ÷ 3 = 12, then 12 + 1 × 2 = 14."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Three friends split a pizza equally. Then each person gives away 1/4 of their share. What fraction of the whole pizza does each person have left?",
+    "options": [
+      "1/12",
+      "1/7",
+      "1/4",
+      "3/12",
+      "3/4"
+    ],
+    "correct_answer": "1/4",
+    "ideal_solution": "Each gets 1/3 of the pizza. Each gives away 1/4 of their 1/3 = 1/12. Each has 1/3 - 1/12 = 4/12 - 1/12 = 3/12 = 1/4 left. Socratic Hint: Find each person's share, then subtract the portion they gave away.",
+    "failure_modes": {
+      "premature_calculation": "Student computes 1/4 of 1/3 = 1/12 and picks that (the given-away portion).",
+      "formula_misapplication": "Student computes 1/3 × 3/4 = 3/12 but does not simplify to 1/4.",
+      "arithmetic_slip": "Student subtracts 1/3 - 1/4 = 1/12 (subtracting wrong fractions)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "The product of two consecutive whole numbers is 132. What are the two numbers?",
+    "options": [
+      "10 and 11",
+      "11 and 12",
+      "12 and 13",
+      "13 and 14",
+      "14 and 15"
+    ],
+    "correct_answer": "11 and 12",
+    "ideal_solution": "Try: 11 × 12 = 132 ✓. Check: 10 × 11 = 110 ✗, 12 × 13 = 156 ✗. Socratic Hint: Estimate the square root of 132 (≈ 11.5), then test the two whole numbers around it.",
+    "failure_modes": {
+      "off_by_one": "Student tries 12 × 13 = 156 and picks that.",
+      "arithmetic_slip": "Student computes 11 × 12 = 122 and moves to 12 × 13.",
+      "formula_misapplication": "Student divides 132/2 = 66 and tries 65 and 66."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A train ticket costs $12.50. If a family of 4 buys tickets and pays with a $100 bill, how much change do they get?",
+    "options": [
+      "$37.50",
+      "$42.00",
+      "$48.00",
+      "$50.00",
+      "$87.50"
+    ],
+    "correct_answer": "$50.00",
+    "ideal_solution": "Total cost = 4 × $12.50 = $50.00. Change = $100 - $50 = $50.00. Socratic Hint: Multiply the ticket price by 4, then subtract from $100.",
+    "failure_modes": {
+      "premature_calculation": "Student computes cost = $50 and picks that as the change (correct here, but could confuse cost with change).",
+      "arithmetic_slip": "Student computes 4 × $12.50 = $62.50, change = $37.50.",
+      "formula_misapplication": "Student computes $100 - $12.50 = $87.50 (only one ticket)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A circle has a diameter of 10 cm. What is its circumference? (Use π ≈ 3.14)",
+    "options": [
+      "15.7 cm",
+      "25.12 cm",
+      "31.4 cm",
+      "62.8 cm",
+      "78.5 cm"
+    ],
+    "correct_answer": "31.4 cm",
+    "ideal_solution": "Circumference = π × d = 3.14 × 10 = 31.4 cm. Socratic Hint: The circumference formula uses the diameter: C = πd.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses C = πr: 3.14 × 5 = 15.7.",
+      "converse_error": "Student computes area: π × r^2 = 3.14 × 25 = 78.5.",
+      "arithmetic_slip": "Student computes 3.14 × 10 = 25.12."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A water tank is 1/3 full. After pouring out 10 liters, it is 1/4 full. What is the tank's full capacity?",
+    "options": [
+      "40 liters",
+      "60 liters",
+      "80 liters",
+      "100 liters",
+      "120 liters"
+    ],
+    "correct_answer": "120 liters",
+    "ideal_solution": "1/3 - 1/4 = 4/12 - 3/12 = 1/12 of the tank = 10 liters. Full capacity = 10 × 12 = 120 liters. Socratic Hint: The difference between 1/3 and 1/4 of the tank is the 10 liters that were poured out.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides 10 by 1/4 = 40 liters.",
+      "arithmetic_slip": "Student computes 1/3 - 1/4 = 1/7 (subtracting denominators).",
+      "premature_calculation": "Student computes 10 × 4 = 40 or 10 × 3 = 30."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 2.4 ÷ 0.06?",
+    "options": [
+      "0.04",
+      "4",
+      "40",
+      "400",
+      "2400"
+    ],
+    "correct_answer": "40",
+    "ideal_solution": "Multiply both by 100: 240 ÷ 6 = 40. Socratic Hint: Move the decimal two places right in both numbers to make the divisor a whole number.",
+    "failure_modes": {
+      "off_by_one": "Student moves decimal only once: 24 ÷ 0.6 = 40 (correct by accident) or 24 ÷ 6 = 4.",
+      "formula_misapplication": "Student multiplies: 2.4 × 0.06 = 0.144.",
+      "arithmetic_slip": "Student computes 240 ÷ 6 = 400."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the value of 3! + 4! (where ! means factorial)?",
+    "options": [
+      "7",
+      "12",
+      "24",
+      "30",
+      "5040"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "3! = 3 × 2 × 1 = 6. 4! = 4 × 3 × 2 × 1 = 24. Sum = 6 + 24 = 30. Socratic Hint: Calculate each factorial separately, then add them.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (3+4)! = 7! = 5040.",
+      "premature_calculation": "Student finds 4! = 24 and stops.",
+      "arithmetic_slip": "Student computes 3! = 9 (squaring instead of factorial)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A triangle has sides of 5 cm, 12 cm, and 13 cm. Is this a right triangle?",
+    "options": [
+      "Yes, because 5 + 12 = 17 > 13",
+      "Yes, because 5² + 12² = 13²",
+      "No, because 5 + 12 ≠ 13",
+      "No, because the sides are not equal",
+      "Cannot determine"
+    ],
+    "correct_answer": "Yes, because 5² + 12² = 13²",
+    "ideal_solution": "Check: 5² + 12² = 25 + 144 = 169 = 13². Since a² + b² = c², it is a right triangle. Socratic Hint: Use the Pythagorean theorem: if the sum of the squares of the two shorter sides equals the square of the longest side, it's a right triangle.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds sides: 5 + 12 = 17, and since 17 > 13 concludes yes (triangle inequality, not Pythagorean).",
+      "arithmetic_slip": "Student computes 5² + 12² = 25 + 144 = 159 ≠ 169.",
+      "converse_error": "Student checks if sides are equal (equilateral test) and says no."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "At a farm, 3/8 of the animals are cows, 1/4 are chickens, and the rest are pigs. If there are 48 animals total, how many are pigs?",
+    "options": [
+      "6",
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "Cows: 3/8. Chickens: 1/4 = 2/8. Total non-pigs: 3/8 + 2/8 = 5/8. Pigs: 1 - 5/8 = 3/8. Number of pigs: 3/8 × 48 = 18. Socratic Hint: Add the known fractions, subtract from 1 to find the pig fraction, then multiply by total.",
+    "failure_modes": {
+      "premature_calculation": "Student finds cows: 3/8 × 48 = 18 and picks that (those are cows, not pigs).",
+      "arithmetic_slip": "Student converts 1/4 to 1/8, getting 4/8 non-pigs, and 4/8 × 48 = 24 pigs.",
+      "formula_misapplication": "Student subtracts: 48 - 3 - 1 = 44."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "You have 3 identical dice. How many different totals can you roll? (Each die shows 1-6.)",
+    "options": [
+      "6",
+      "11",
+      "16",
+      "18",
+      "216"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "Minimum total = 1+1+1 = 3. Maximum total = 6+6+6 = 18. All integers from 3 to 18 are achievable. Count = 18 - 3 + 1 = 16 different totals. Socratic Hint: Find the minimum and maximum possible totals, then count all integers in between.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 6^3 = 216 (number of outcomes, not totals).",
+      "off_by_one": "Student computes 18 - 3 = 15 (forgetting to add 1).",
+      "undercounting": "Student counts only 6 (one die's range)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is the average of 3.5, 4.2, and 7.3?",
+    "options": [
+      "4.5",
+      "5.0",
+      "5.3",
+      "7.5",
+      "15.0"
+    ],
+    "correct_answer": "5.0",
+    "ideal_solution": "Sum = 3.5 + 4.2 + 7.3 = 15.0. Average = 15.0 ÷ 3 = 5.0. Socratic Hint: Add all the numbers, then divide by how many numbers there are.",
+    "failure_modes": {
+      "premature_calculation": "Student adds to get 15.0  and picks that as the answer.",
+      "arithmetic_slip": "Student adds 3.5 + 4.2 + 7.3 = 14.0, then 14/3 ≈ 4.7.",
+      "formula_misapplication": "Student divides 7.3 by 3 only."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A right triangle has a hypotenuse of 10 cm and one leg of 6 cm. What is the length of the other leg?",
+    "options": [
+      "4 cm",
+      "6 cm",
+      "8 cm",
+      "10 cm",
+      "12 cm"
+    ],
+    "correct_answer": "8 cm",
+    "ideal_solution": "a² + b² = c². 6² + b² = 10². 36 + b² = 100. b² = 64. b = 8 cm. Socratic Hint: Rearrange the Pythagorean theorem to solve for the missing leg.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 10 - 6 = 4 cm.",
+      "arithmetic_slip": "Student computes 100 - 36 = 54, sqrt(54) ≈ 7.3.",
+      "converse_error": "Student computes 6² + 10² = 136, sqrt(136) ≈ 11.7."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A movie theater has 15 rows with 20 seats each. On a showing, 7/10 of the seats are filled. How many seats are empty?",
+    "options": [
+      "21",
+      "30",
+      "60",
+      "90",
+      "210"
+    ],
+    "correct_answer": "90",
+    "ideal_solution": "Total seats = 15 × 20 = 300. Filled: 7/10 × 300 = 210. Empty: 300 - 210 = 90. Or: 3/10 × 300 = 90 empty. Socratic Hint: Find total seats, then calculate the empty fraction (3/10).",
+    "failure_modes": {
+      "premature_calculation": "Student computes filled seats (210) and picks that.",
+      "arithmetic_slip": "Student computes 15 × 20 = 200, then 3/10 × 200 = 60.",
+      "formula_misapplication": "Student computes 7/10 × 15 = 10.5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 11/3 as a decimal (rounded to the nearest hundredth)?",
+    "options": [
+      "0.27",
+      "0.33",
+      "3.33",
+      "3.67",
+      "3.63"
+    ],
+    "correct_answer": "3.67",
+    "ideal_solution": "11 ÷ 3 = 3.666... Rounded to nearest hundredth = 3.67. Socratic Hint: Divide 11 by 3 using long division and round when you have enough decimal places.",
+    "failure_modes": {
+      "converse_error": "Student computes 3/11 = 0.27.",
+      "arithmetic_slip": "Student rounds 3.666... to 3.63.",
+      "formula_misapplication": "Student computes 1/3 = 0.33 and picks that."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "How many perfect squares are there between 1 and 100 (inclusive)?",
+    "options": [
+      "5",
+      "8",
+      "9",
+      "10",
+      "50"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "Perfect squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. Count = 10. Socratic Hint: List all numbers whose square root is a whole number from 1 to 10.",
+    "failure_modes": {
+      "off_by_one": "Student excludes 1 or 100, getting 8 or 9.",
+      "overcounting": "Student counts 50 (half of 100).",
+      "arithmetic_slip": "Student starts listing: 4, 9, 16... and misses 1."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A cone-shaped hat has a circular base with diameter 8 cm. What is the area of the base? (Use π ≈ 3.14)",
+    "options": [
+      "12.56 sq cm",
+      "25.12 sq cm",
+      "50.24 sq cm",
+      "100.48 sq cm",
+      "200.96 sq cm"
+    ],
+    "correct_answer": "50.24 sq cm",
+    "ideal_solution": "Radius = 8/2 = 4 cm. Area = π × r² = 3.14 × 16 = 50.24 sq cm. Socratic Hint: Remember to use the radius (half the diameter) in the area formula.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses diameter in formula: 3.14 × 64 = 200.96.",
+      "premature_calculation": "Student computes circumference: 3.14 × 8 = 25.12.",
+      "arithmetic_slip": "Student computes 3.14 × 4 = 12.56 (forgetting to square)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 3/4 of 5/6?",
+    "options": [
+      "5/8",
+      "8/10",
+      "15/24",
+      "4/5",
+      "8/24"
+    ],
+    "correct_answer": "5/8",
+    "ideal_solution": "3/4 × 5/6 = 15/24. Simplify: divide both by 3 → 5/8. Socratic Hint: Multiply the fractions, then simplify the result.",
+    "failure_modes": {
+      "premature_calculation": "Student gets 15/24 but does not simplify.",
+      "formula_misapplication": "Student adds: 3/4 + 5/6 = 9/12 + 10/12 = 19/12.",
+      "arithmetic_slip": "Student simplifies 15/24 as 8/24."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A bookshelf has 5 shelves. If you have 9 different books and want to place at least 1 book on each shelf, what is the maximum number of books that can be on any one shelf?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "Place 1 book on each of 4 shelves (4 books used). The remaining 9 - 4 = 5 books go on the 5th shelf. Maximum on one shelf = 5. Socratic Hint: Minimize the number on 4 shelves (1 each) to maximize the 5th.",
+    "failure_modes": {
+      "off_by_one": "Student computes 9 - 5 = 4 (subtracting all shelves instead of 4).",
+      "formula_misapplication": "Student divides: 9/5 = 1.8, picks 3 (rounding up).",
+      "constraint_neglect": "Student ignores the constraint and puts all 9 on one shelf."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 100 × 0.01 + 10 × 0.1 + 1 × 1",
+    "options": [
+      "1",
+      "1.11",
+      "3",
+      "111",
+      "100.101"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "100 × 0.01 = 1. 10 × 0.1 = 1. 1 × 1 = 1. Sum = 1 + 1 + 1 = 3. Socratic Hint: Evaluate each product separately, then add them.",
+    "failure_modes": {
+      "premature_calculation": "Student computes only the first term: 1.",
+      "arithmetic_slip": "Student concatenates: 1.11.",
+      "formula_misapplication": "Student adds without multiplying: 100 + 0.01 + 10 + 0.1 + 1 + 1 = 112.11."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "Two congruent right triangles with legs 3 cm and 4 cm are joined along their hypotenuses to form a rectangle. What is the area of the rectangle?",
+    "options": [
+      "6 sq cm",
+      "12 sq cm",
+      "14 sq cm",
+      "20 sq cm",
+      "24 sq cm"
+    ],
+    "correct_answer": "12 sq cm",
+    "ideal_solution": "Each right triangle has area = (1/2) × 3 × 4 = 6 sq cm. Two triangles = 12 sq cm. Socratic Hint: Two identical right triangles joined along the hypotenuse form a rectangle with the same total area.",
+    "failure_modes": {
+      "premature_calculation": "Student computes one triangle: 6 sq cm.",
+      "formula_misapplication": "Student computes 3 × 4 = 12 (rectangle formula directly, gets right answer but reasoning may be off).",
+      "arithmetic_slip": "Student computes 2 × 6 = 14."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the GCF of 48 and 180?",
+    "options": [
+      "4",
+      "6",
+      "12",
+      "24",
+      "36"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "48 = 2^4 × 3. 180 = 2^2 × 3^2 × 5. GCF = 2^2 × 3 = 12. Socratic Hint: Find the prime factorization of each and take the lowest power of each shared prime.",
+    "failure_modes": {
+      "undercounting": "Student finds only 6 as a common factor, missing the extra factor of 2.",
+      "overcounting": "Student finds 36, but 48/36 is not a whole number.",
+      "arithmetic_slip": "Student computes 180 = 2^2 × 3 × 15 (not fully factored) and gets GCF = 6."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A store has a sale: all prices are reduced by 1/5. A jacket originally costs $75. After the sale, a 6% sales tax is added. What is the final price?",
+    "options": [
+      "$60.00",
+      "$63.00",
+      "$63.60",
+      "$66.00",
+      "$79.50"
+    ],
+    "correct_answer": "$63.60",
+    "ideal_solution": "Discount: 1/5 of $75 = $15. Sale price = $75 - $15 = $60. Tax: 6% of $60 = $3.60. Final = $60 + $3.60 = $63.60. Socratic Hint: Apply the discount first, then add tax to the discounted price.",
+    "failure_modes": {
+      "premature_calculation": "Student stops at sale price: $60.",
+      "formula_misapplication": "Student adds tax to original: 6% of $75 = $4.50, then $75 - $15 + $4.50 = $64.50.",
+      "arithmetic_slip": "Student computes 6% of $60 = $3, getting $63."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A rectangle has a perimeter of 40 cm. The length is 3 times the width. What is the area of the rectangle?",
+    "options": [
+      "75 sq cm",
+      "100 sq cm",
+      "150 sq cm",
+      "300 sq cm",
+      "400 sq cm"
+    ],
+    "correct_answer": "75 sq cm",
+    "ideal_solution": "P = 2L + 2W. 40 = 2(3W) + 2W = 6W + 2W = 8W. 8W = 40, so W = 5. L = 15. Area = L x W = 15 x 5 = 75. Socratic Hint: Let width be W. Length is 3W. The perimeter is W + 3W + W + 3W = 40.",
+    "failure_modes": {
+      "premature_calculation": "Student stops at L=15 and selects an option like 15 if present, or multiplies 15x10=150.",
+      "formula_misapplication": "Student writes Area = 3W x W = 3W^2 = Perimeter. Gets confused and guesses 100.",
+      "arithmetic_slip": "Student guesses 150 sq cm (using a random width/length combination that sums to 40 instead of 20)."
+    }
+  }
 ]

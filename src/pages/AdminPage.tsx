@@ -18,7 +18,7 @@ export function AdminPage() {
   const jsonSchema = `{
   "grade": number (1-12),
   "level": number (1-10),
-  "difficulty": "gifted",
+  "difficulty": "beginner" | "intermediate" | "advanced" | "expert" | "master",
   "type": "logic" | "arithmetic" | "geometry",
   "question": "string",
   "options": ["A", "B", "C", "D", "E"],
@@ -42,13 +42,13 @@ export function AdminPage() {
           </span>
         </div>
         <div className="flex items-center space-x-3 sm:space-x-4">
-          <button 
+          <button
             onClick={() => navigate('/')}
             className="text-xs sm:text-sm font-bold text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest"
           >
             Site Home
           </button>
-          <button 
+          <button
             onClick={handleLogout}
             className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-900 text-white rounded-lg text-xs sm:text-sm font-bold hover:bg-black transition-all"
           >
@@ -87,17 +87,15 @@ export function AdminPage() {
             <div className="flex space-x-1 bg-gray-200 p-1 rounded-xl w-fit">
               <button
                 onClick={() => setActiveTab('wizard')}
-                className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${
-                  activeTab === 'wizard' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
-                }`}
+                className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${activeTab === 'wizard' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                  }`}
               >
                 Question Wizard
               </button>
               <button
                 onClick={() => setActiveTab('bulk')}
-                className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${
-                  activeTab === 'bulk' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
-                }`}
+                className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${activeTab === 'bulk' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                  }`}
               >
                 Bulk JSON Upload
               </button>

@@ -6,6 +6,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+const PROGRESS_FILE = 'generate_content_ts_progress.json';
+const PROMPT_TEMPLATE_PATH = 'CONTENT-GENERATOR-PROMPT.md';
 
 const schema = {
   description: "A list of math challenge questions",
@@ -43,71 +45,101 @@ const model = genAI.getGenerativeModel({
   },
 });
 
+function getDifficultyTier(level: number): string {
+  if (level <= 2) return "beginner";
+  if (level <= 4) return "intermediate";
+  if (level <= 6) return "advanced";
+  if (level <= 8) return "expert";
+  return "master";
+}
+
 async function generateBatch(grade: number, level: number, count: number) {
-  const prompt = `Generate ${count} "gifted-level" mathematics challenge questions for Grade ${grade} at Difficulty Level ${level} out of 10. 
-  
-  Difficulty Calibration:
-  - Level 1-2 (Apprentice): Foundations of gifted logic, requiring clear but multi-step reasoning.
-  - Level 3-5 (Scholar): Intermediate synthesis, requiring spatial visualization or multiple branches of logic.
-  - Level 6-8 (Master): Complex reasoning, involving advanced number theory or geometry with subtle traps.
-  - Level 9-10 (Grandmaster): Extreme difficulty, requires deep creative synthesis and avoids standard "plug-and-chug" solutions.
-  
-  Requirements:
-  1. Grade: ${grade}
-  2. Level: ${level}
-  3. Difficulty: Always "gifted"
-  4. Type: Rotate between logic, geometry, number theory, and algebraic thinking.
-  5. Options: Exactly 5 distinct choices (MC5).
-  6. Correct Answer: Must exactly match one of the options.
-  7. Ideal Solution: A step-by-step Socratic walkthrough explaining the logical path.
-  8. Failure Modes: Identify 2-3 logical traps and provide a supportive hint for each.`;
+  if (!fs.existsSync(PROMPT_TEMPLATE_PATH)) {
+    throw new Error(`Prompt template not found at ${PROMPT_TEMPLATE_PATH}`);
+  }
+
+  let prompt = fs.readFileSync(PROMPT_TEMPLATE_PATH, 'utf8');
+  prompt = prompt.replace(/{grade}/g, grade.toString())
+                 .replace(/{level}/g, level.toString())
+                 .replace(/{count}/g, count.toString());
 
   try {
     const result = await model.generateContent(prompt);
-    return JSON.parse(result.response.text());
+    const questions = JSON.parse(result.response.text());
+    
+    // Safety check: Ensure difficulty field matches level-based tiers
+    return questions.map((q: any) => ({
+      ...q,
+      difficulty: getDifficultyTier(q.level)
+    }));
   } catch (error) {
     console.error(`Error generating batch for Grade ${grade} Level ${level}:`, error);
     return [];
   }
 }
 
-interface Question {
-  grade: number;
-  level: number;
-  difficulty: string;
-  type: string;
-  question: string;
-  options: string[];
-  correct_answer: string;
-  ideal_solution: string;
-  failure_modes: Record<string, string>;
+interface Progress {
+  completed_levels: { grade: number; level: number; count: number }[];
+}
+
+function loadProgress(): Progress {
+  if (fs.existsSync(PROGRESS_FILE)) {
+    return JSON.parse(fs.readFileSync(PROGRESS_FILE, 'utf8'));
+  }
+  return { completed_levels: [] };
+}
+
+function saveProgress(progress: Progress) {
+  fs.writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2));
 }
 
 async function run(grade: number, totalTarget: number) {
-  const outputDir = path.join(process.cwd(), 'content_bank');
-  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+  const outputDir = path.join(process.cwd(), 'seed_content', 'batches');
+  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
-  const filePath = path.join(outputDir, `grade_${grade}.json`);
-  let existingData: Question[] = [];
-  
-  if (fs.existsSync(filePath)) {
-    existingData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  }
-
+  const progress = loadProgress();
   const targetPerLevel = Math.ceil(totalTarget / 10);
+  
   console.log(`Starting generation for Grade ${grade}. Total Target: ${totalTarget} (${targetPerLevel} per level).`);
 
   for (let level = 1; level <= 10; level++) {
-    while (existingData.filter(q => q.level === level).length < targetPerLevel) {
-      const remainingForLevel = targetPerLevel - existingData.filter(q => q.level === level).length;
-      const batchSize = Math.min(5, remainingForLevel);
-      
-      console.log(`Level ${level}: Generating batch of ${batchSize}... (${existingData.filter(q => q.level === level).length}/${targetPerLevel})`);
+    const levelProgress = progress.completed_levels.find(p => p.grade === grade && p.level === level);
+    let currentCount = levelProgress ? levelProgress.count : 0;
+
+    if (currentCount >= targetPerLevel) {
+      console.log(`Grade ${grade} Level ${level} already complete (${currentCount}/${targetPerLevel}). Skipping.`);
+      continue;
+    }
+
+    while (currentCount < targetPerLevel) {
+      const remaining = targetPerLevel - currentCount;
+      const batchSize = Math.min(50, remaining);
+      const batchNum = Math.floor(currentCount / 50);
+      const batchFilePath = path.join(outputDir, `grade_${grade}_level_${level}_batch_${batchNum}.json`);
+
+      console.log(`Level ${level}: Generating batch ${batchNum} (size ${batchSize})...`);
       
       const batch = await generateBatch(grade, level, batchSize);
-      existingData.push(...batch);
+      if (batch.length === 0) {
+        console.error("Batch generation failed. Retrying in 5 seconds...");
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        continue;
+      }
+
+      fs.writeFileSync(batchFilePath, JSON.stringify(batch, null, 2));
       
-      fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2));
+      currentCount += batch.length;
+      
+      // Update Progress
+      const idx = progress.completed_levels.findIndex(p => p.grade === grade && p.level === level);
+      if (idx >= 0) {
+        progress.completed_levels[idx].count = currentCount;
+      } else {
+        progress.completed_levels.push({ grade, level, count: currentCount });
+      }
+      saveProgress(progress);
+
+      console.log(`Level ${level} Progress: ${currentCount}/${targetPerLevel}`);
       
       // Rate limiting
       await new Promise(resolve => setTimeout(resolve, 2000));
@@ -116,12 +148,12 @@ async function run(grade: number, totalTarget: number) {
   console.log(`Generation complete for Grade ${grade}.`);
 }
 
-const grade = parseInt(process.argv[2]) || 5;
-const target = parseInt(process.argv[3]) || 50;
+const gradeArg = parseInt(process.argv[2]) || 5;
+const targetArg = parseInt(process.argv[3]) || 1000;
 
 if (!process.env.GEMINI_API_KEY) {
   console.error("Missing GEMINI_API_KEY in .env file");
   process.exit(1);
 }
 
-run(grade, target).catch(console.error);
+run(gradeArg, targetArg).catch(console.error);

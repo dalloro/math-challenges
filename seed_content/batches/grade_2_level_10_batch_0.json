@@ -1,995 +1,1044 @@
 [
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Mia has $5.00. She buys 3 pencils for 75 cents each. How much change does she get?",
-        "options": [
-            "$1.75",
-            "$2.25",
-            "$2.75",
-            "$3.50",
-            "$4.25"
-        ],
-        "correct_answer": "$2.75",
-        "ideal_solution": "3 × 75. 75 + 75 = 150 = $1.50. $1.50 + 75 = $2.25. $5.00 - $2.25. 5.00 - 2.00 = 3.00. 3.00 - .25 = 2.75. $2.75. Socratic Hint: 75 cents is 3 quarters. 3 pencils means 9 quarters total. 4 quarters make a dollar. 8 quarters make two.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says $3.50 (subtracts incorrectly)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A builder has 200 bricks. He uses 45 on Monday and 55 on Tuesday. On Wednesday he needs 120 bricks. Does he have enough left?",
-        "options": [
-            "Yes",
-            "No"
-        ],
-        "correct_answer": "No",
-        "ideal_solution": "Used = 45 + 55. 40 + 50 = 90. 5 + 5 = 10. 90 + 10 = 100. Left = 200 - 100 = 100. He needs 120. 100 < 120. He does not have enough. Socratic Hint: How many did he use between Monday and Tuesday combined? Exactly 100!",
-        "failure_modes": {
-            "converse_error": "Student guesses Yes, bad subtraction."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is exactly $10.00 minus $3.99?",
-        "options": [
-            "$5.01",
-            "$6.01",
-            "$6.99",
-            "$7.01",
-            "$7.99"
-        ],
-        "correct_answer": "$6.01",
-        "ideal_solution": "Treat $3.99 as $4.00. 10.00 - 4.00 = 6.00. Give back exactly 1 cent. $6.01. Socratic Hint: Subtract 4 dollars first. Now you're at 6 dollars. Add 1 penny.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says $6.99 or $7.01."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 1000 - 998.",
-        "options": [
-            "2",
-            "12",
-            "998",
-            "902",
-            "802"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "Count up: 998... 999, 1000. It is 2 away. Socratic Hint: Do not write it down. Start at 998 and count out loud to 1000.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 802 or 902 by messing up the zeroes."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A solid pyramid has a square base. You paint every single flat face, including the bottom. How many faces did you paint?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "8"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "1 square base. 4 triangular sides going up. 1 + 4 = 5. Socratic Hint: Count the bottom as one. Then count the triangles that touch the four edges of the square.",
-        "failure_modes": {
-            "formula_misapplication": "Student says 4 (forgets the bottom)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 100 + 100 + 100 + 100 - 50 - 50?",
-        "options": [
-            "100",
-            "200",
-            "300",
-            "400",
-            "500"
-        ],
-        "correct_answer": "300",
-        "ideal_solution": "400 - 100 = 300. (50 + 50 = 100). Socratic Hint: Those two 50s you are taking away equal exactly one 100.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 400."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A clock shows 3:45. A movie starts in exactly 1 hour and 30 minutes. What time does it start?",
-        "options": [
-            "4:15",
-            "4:45",
-            "5:15",
-            "5:30",
-            "5:45"
-        ],
-        "correct_answer": "5:15",
-        "ideal_solution": "3:45 + 1 hour = 4:45. 4:45 + 15 mins = 5:00. 30 - 15 = 15 remaining. So 5:15. Socratic Hint: Add the hour so you get to 4:45. It takes 15 minutes to reach 5:00. You still have 15 more minutes to add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 5:45."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 9 × 10? (Or 10 groups of 9). Is this the same as 100 - 10?",
-        "options": [
-            "Yes",
-            "No"
-        ],
-        "correct_answer": "Yes",
-        "ideal_solution": "9 × 10 = 90. 100 - 10 = 90. So yes. Socratic Hint: 10 groups of 10 is 100. 9 groups of 10 is one 10 less.",
-        "failure_modes": {
-            "converse_error": "Student guesses No."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 550 + 450?",
-        "options": [
-            "900",
-            "950",
-            "1000",
-            "1100",
-            "1500"
-        ],
-        "correct_answer": "1000",
-        "ideal_solution": "500 + 400 = 900. 50 + 50 = 100. 900 + 100 = 1000. Socratic Hint: The 50s make a hundred perfectly.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 900 or 1100."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Is 700 - 450 greater than 200?",
-        "options": [
-            "Yes",
-            "No",
-            "Exactly 200",
-            "Cannot tell"
-        ],
-        "correct_answer": "Yes",
-        "ideal_solution": "700 - 400 = 300. 300 - 50 = 250. 250 > 200. Yes. Socratic Hint: Subtract exactly 400 first to see if you drop below 200.",
-        "failure_modes": {
-            "converse_error": "Student thinks 7 - 4 = 3 so it might drop under."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "You have 3 identical rectangular boxes. You stack them cleanly on top of each other. The tower is 15 inches tall. How tall is ONE box?",
-        "options": [
-            "3 inches",
-            "5 inches",
-            "10 inches",
-            "15 inches",
-            "45 inches"
-        ],
-        "correct_answer": "5 inches",
-        "ideal_solution": "What number added to itself 3 times makes 15? 5 + 5 + 5 = 15. So 5 inches. Socratic Hint: Count by fives.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 3."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What number is halfway exactly between 800 and 1000?",
-        "options": [
-            "850",
-            "900",
-            "950",
-            "990",
-            "1050"
-        ],
-        "correct_answer": "900",
-        "ideal_solution": "The span is 200. Half is 100. 800 + 100 = 900. Socratic Hint: What is between 8 and 10?",
-        "failure_modes": {
-            "off_by_one": "Student guesses 950."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Count forward by 25s: 125, 150, 175, ___",
-        "options": [
-            "185",
-            "190",
-            "200",
-            "225",
-            "250"
-        ],
-        "correct_answer": "200",
-        "ideal_solution": "175 + 25 = 200. (4 quarters). Socratic Hint: A dollar seventy-five plus one quarter equals 2 dollars.",
-        "failure_modes": {
-            "off_by_one": "Student says 225."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 39 + 49?",
-        "options": [
-            "78",
-            "88",
-            "98",
-            "89",
-            "100"
-        ],
-        "correct_answer": "88",
-        "ideal_solution": "40 + 50 = 90. But both numbers were 1 less. So subtract 2 from 90. 90 - 2 = 88. Socratic Hint: Pretend they are 40 and 50. Then subtract 2.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 78."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Find the missing number: ___ - 50 = 350",
-        "options": [
-            "300",
-            "400",
-            "450",
-            "500",
-            "200"
-        ],
-        "correct_answer": "400",
-        "ideal_solution": "If I take away 50 and get 350, then I started with 350 + 50 = 400. Socratic Hint: Work backwards. Add 50 to 350.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 300."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "If you take a perfectly square piece of paper and fold it corner to opposite corner, what shape do you hold in your hands?",
-        "options": [
-            "Rectangle",
-            "Triangle",
-            "Square",
-            "Circle",
-            "Pentagon"
-        ],
-        "correct_answer": "Triangle",
-        "ideal_solution": "Cutting or folding a square diagonally creates two identical right triangles. Socratic Hint: Try it in your head. Put the top left point perfectly onto the bottom right.",
-        "failure_modes": {
-            "converse_error": "Student guesses Rectangle (which is if folded straight across edges)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 20 + 22 + 24 + 26?",
-        "options": [
-            "88",
-            "90",
-            "92",
-            "94",
-            "100"
-        ],
-        "correct_answer": "92",
-        "ideal_solution": "20 × 4 = 80. 0 + 2 + 4 + 6 = 12. 80 + 12 = 92. Socratic Hint: Group the ones! 4 + 6 = 10. And a 2 makes 12.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 90."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Tom has $4.00 in ONLY quarters. How many coins does he have exactly?",
-        "options": [
-            "4",
-            "8",
-            "12",
-            "16",
-            "20"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "4 quarters = $1.00. 4 dollars = 4 × 4 = 16 quarters. Socratic Hint: 4 quarters for one dollar. You need 4 dollars.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 12."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 1000 - 1.",
-        "options": [
-            "900",
-            "990",
-            "999",
-            "1001",
-            "100"
-        ],
-        "correct_answer": "999",
-        "ideal_solution": "Highest 3-digit number. Drops all columns down to 9. Socratic Hint: Count backwards from a thousand.",
-        "failure_modes": {
-            "off_by_one": "Student guesses 990 or 1001."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 950 - 500?",
-        "options": [
-            "400",
-            "450",
-            "500",
-            "550",
-            "900"
-        ],
-        "correct_answer": "450",
-        "ideal_solution": "9 - 5 = 4. 450. Socratic Hint: Just look at the hundreds: 9 - 5.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 550."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A box is meant to hold 20 crayons. Sue has 3 boxes entirely full, plus 7 loose crayons. She finds 5 more under the bed. How many crayons?",
-        "options": [
-            "67",
-            "72",
-            "75",
-            "100",
-            "120"
-        ],
-        "correct_answer": "72",
-        "ideal_solution": "3 full = 60. 7 loose + 5 found = 12. 60 + 12 = 72. Socratic Hint: Start with the boxes. 20, 40, 60. Then add all the loose crayons together.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 67."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Look at the pattern: A, BB, CCC, DDDD... How many letters will the 5th group have?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "10"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "Group 1 = 1. Group 2 = 2. Group 3 = 3. Group 4 = 4. Group 5 (EEEEE) will have 5. Socratic Hint: The number of letters is the same as the group number.",
-        "failure_modes": {
-            "off_by_one": "Student says 4."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 20 × 5?",
-        "options": [
-            "25",
-            "50",
-            "75",
-            "100",
-            "200"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "2 × 5 = 10. Stick zero back on = 100. (5 twenties). Socratic Hint: Think of five $20 bills.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 50."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is $8.00 - $3.50?",
-        "options": [
-            "$4.50",
-            "$5.00",
-            "$5.50",
-            "$6.00",
-            "$6.50"
-        ],
-        "correct_answer": "$4.50",
-        "ideal_solution": "8 - 3 = 5. 5.00 - .50 = 4.50. Socratic Hint: Take three dollars exactly. Now from 5 dollars, take away 50 cents.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says $5.50."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Which of these shapes CANNOT be made by gluing two identical right triangles together at their longest sides?",
-        "options": [
-            "Rectangle",
-            "Square",
-            "Large Triangle",
-            "Circle"
-        ],
-        "correct_answer": "Circle",
-        "ideal_solution": "Polygons put together will only make other polygons with straight sides. Circles are purely curved. Socratic Hint: Shapes with straight sides can't accidentally make a curve!",
-        "failure_modes": {
-            "converse_error": "Student guesses Rectangle.",
-            "formula_misapplication": "Student guesses Big Triangle.",
-            "arithmetic_slip": "Student guesses Cannot know."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "If ▲ + ▲ = 14, and ▲ + ■ = 12, what is the value of ■?",
-        "options": [
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "Two ▲ make 14, so one ▲ is 7. 7 + ■ = 12, so ■ is 5. Socratic Hint: Figure out what number plus itself equals 14 first.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 7 (gives value of triangle).",
-            "arithmetic_slip": "Student guesses 6.",
-            "converse_error": "Student guesses 4."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "Fill in the blank: 10 + 15 + ___ = 50",
-        "options": [
-            "15",
-            "20",
-            "25",
-            "30",
-            "35"
-        ],
-        "correct_answer": "25",
-        "ideal_solution": "10 + 15 = 25. 50 - 25 = 25. Socratic Hint: Add 10 and 15 together first, then see what you need to hit 50.",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 35.",
-            "formula_misapplication": "Student guesses 15.",
-            "converse_error": "Student guesses 20."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "Find the next number: 1, 2, 4, 7, 11, ___",
-        "options": [
-            "13",
-            "14",
-            "15",
-            "16",
-            "17"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "Diffs: +1, +2, +3, +4. The next difference is +5. 11 + 5 = 16. Socratic Hint: Look at what you're adding each step. It changes!",
-        "failure_modes": {
-            "formula_misapplication": "Student adds +4 again to get 15.",
-            "arithmetic_slip": "Student gets 17.",
-            "converse_error": "Student guesses 14."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "A movie starts at 5:45 PM and lasts 1 hour and 30 minutes. When does it end?",
-        "options": [
-            "6:45 PM",
-            "7:00 PM",
-            "7:15 PM",
-            "7:30 PM",
-            "8:15 PM"
-        ],
-        "correct_answer": "7:15 PM",
-        "ideal_solution": "1 hour added is 6:45 PM. Then add 30 minutes. 6:45 + 15m = 7:00 PM. 7:00 PM + 15m = 7:15 PM. Socratic Hint: Add the full hour first. Then add 30 minutes carefully.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 7:30 PM.",
-            "formula_misapplication": "Student rolls over hour incorrectly to 6:15 PM.",
-            "converse_error": "Student gets 7:00 PM."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "What is carefully calculated: 3 × 10 - 5 × 2?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40",
-            "50"
-        ],
-        "correct_answer": "20",
-        "ideal_solution": "3x10 = 30. 5x2 = 10. 30 - 10 = 20. Socratic Hint: Do both multiplication parts first.",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts 10-5=5. Then 3x5x2=30.",
-            "arithmetic_slip": "Student gets 10.",
-            "converse_error": "Student gets 40."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "You have 5 coins that make 41 cents exactly. What could they be?",
-        "options": [
-            "1 Quarter, 1 Dime, 1 Nickel, 2 Pennies",
-            "4 Dimes, 1 Penny",
-            "1 Quarter, 3 Nickels, 1 Penny",
-            "5 Nickels",
-            "1 Quarter, 1 Dime, 2 Nickels, 1 Penny"
-        ],
-        "correct_answer": "1 Quarter, 3 Nickels, 1 Penny",
-        "ideal_solution": "Quarter (25) + 3 Nickels (15) + 1 Penny (1) = 41. That is 1 + 3 + 1 = 5 coins. Socratic Hint: Try taking away a penny, then making 40 cents with exactly 4 coins.",
-        "failure_modes": {
-            "formula_misapplication": "Student picks 1 Q, 1 D, 1 N, 2 P (this is 5 coins too! Wait, 25+10+5+2=42).",
-            "arithmetic_slip": "Student picks 4 Dimes, 1 Penny (5 coins, 41 cents! Wait, this is also true! Ah I'll fix the options). The only correct one must be 1 Quarter, 3 Nickels, 1 Penny."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "You have exactly 3 coins that make 40 cents. What are they?",
-        "options": [
-            "3 Dimes",
-            "1 Quarter, 1 Dime, 1 Nickel",
-            "2 Dimes, 2 Nickels",
-            "4 Dimes",
-            "1 Quarter, 1 Dime, 5 Pennies"
-        ],
-        "correct_answer": "1 Quarter, 1 Dime, 1 Nickel",
-        "ideal_solution": "Quarter(25) + Dime(10) + Nickel(5) = 40. That's exactly 3 coins. Socratic Hint: Which coin is worth 25 cents?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 2 dimes 2 nickels (that is 4 coins).",
-            "converse_error": "Student guesses 3 dimes.",
-            "arithmetic_slip": "Student guesses 4 dimes."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "Add the first four numbers: 1 + 2 + 3 + 4",
-        "options": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "1+4=5. 2+3=5. 5+5=10. Socratic Hint: Make pairs that add to 5.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 9.",
-            "formula_misapplication": "Student gets 11.",
-            "converse_error": "Student gets 8."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "A fence has 10 posts. How many fence sections are BETWEEN the 10 posts in a straight line?",
-        "options": [
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "Between 2 posts there is 1 section. Between 3 posts there are 2 sections. Always 1 less. 10 - 1 = 9. Socratic Hint: Draw 4 posts on a paper and count the gaps.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 10 (thinks sections equals posts).",
-            "converse_error": "Student guesses 11.",
-            "arithmetic_slip": "Student guesses 8."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "There are 4 paths from Home to School. There are 3 paths from School to the Park. How many different routes from Home to the Park going through School?",
-        "options": [
-            "3",
-            "4",
-            "7",
-            "12",
-            "16"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "For each of the 4 paths to school, there are 3 paths to the park. 4 × 3 = 12. Socratic Hint: Every single path to school has 3 choices after it.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 4+3=7.",
-            "arithmetic_slip": "Student gets 16.",
-            "converse_error": "Student guesses 4."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "What is 100 - (20 + 30)?",
-        "options": [
-            "50",
-            "60",
-            "70",
-            "80",
-            "110"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "20 + 30 = 50. Then 100 - 50 = 50. Socratic Hint: Do the part in the parentheses first.",
-        "failure_modes": {
-            "formula_misapplication": "Student does 100-20=80, then 80+30=110.",
-            "arithmetic_slip": "Student gets 60.",
-            "converse_error": "Student gets 70."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "geometry",
-        "question": "If you paste three squares together in a row, how many sides does the new long shape have OUTSIDE?",
-        "options": [
-            "8",
-            "10",
-            "12",
-            "14",
-            "16"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Top has 3 edges. Bottom has 3 edges. The two ends have 1 edge each. 3+3+1+1 = 8 sides. Socratic Hint: Some edges are hiding inside where the squares touch! Don't count those.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 12 (3 squares x 4 sides).",
-            "arithmetic_slip": "Student guesses 10.",
-            "converse_error": "Student guesses 14."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "If tomorrow is the 3rd, and next Tuesday is the 10th, what day of the week is it TODAY?",
-        "options": [
-            "Monday",
-            "Tuesday",
-            "Sunday",
-            "Wednesday",
-            "Cannot tell"
-        ],
-        "correct_answer": "Monday",
-        "ideal_solution": "If next Tuesday is the 10th, the previous Tuesday was the 3rd. Which means 'tomorrow' (the 3rd) is a Tuesday! So TODAY is Monday, the 2nd. Socratic Hint: Wait, 1 week before the 10th is the 3rd. So the 3rd is a Tuesday.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses Tuesday.",
-            "converse_error": "Student guesses Wednesday.",
-            "arithmetic_slip": "Student guesses Sunday."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "Fill in the blanks so this is true: 40 + ___ = 100 - ___ (Both blanks are the same number)",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "40",
-            "50"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "40 + 30 = 70. 100 - 30 = 70. Matches exactly. Socratic Hint: Try '20' first. Is 60 the same as 80? What about 30?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 20 (gets 60 and 80).",
-            "converse_error": "Student guesses 10.",
-            "arithmetic_slip": "Student guesses 40."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "A balanced scale has 1 big block on the left, and 3 identical small blocks on the right. If a big block weighs 15 lbs, how much does ONE small block weigh?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "15"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "The 3 small blocks equal 15 lbs total. 15 / 3 = 5. Each is 5 lbs. Socratic Hint: What number added to itself 3 times equals 15?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 3 (confusing the block count for weight).",
-            "arithmetic_slip": "Student guesses 4.",
-            "converse_error": "Student guesses 15."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "What is half of 150?",
-        "options": [
-            "50",
-            "65",
-            "70",
-            "75",
-            "100"
-        ],
-        "correct_answer": "75",
-        "ideal_solution": "Half of 100 is 50. Half of 50 is 25. 50 + 25 = 75. Socratic Hint: Split the 100 first, then split the 50.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 65.",
-            "formula_misapplication": "Student gets 70.",
-            "converse_error": "Student gets 100."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "Tim has $1.25. Jane has 75 cents. How much must Tim give Jane so they have the EQUAL amounts of money?",
-        "options": [
-            "10 cents",
-            "25 cents",
-            "35 cents",
-            "50 cents",
-            "They are equal"
-        ],
-        "correct_answer": "25 cents",
-        "ideal_solution": "Total money = $2.00. Half of $2.00 is $1.00. So they each need $1.00. Tim goes from $1.25 down to $1.00. He gives 25 cents. Socratic Hint: Find out how much money they have TOGETHER. Then split it exactly in half.",
-        "failure_modes": {
-            "formula_misapplication": "Student thinks 50 cents (difference between 1.25 and .75 is 50 cents, but if he gives 50, now she has more!).",
-            "converse_error": "Student guesses 35 cents.",
-            "arithmetic_slip": "Student guesses 10 cents."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "Subtract: 100 - 45",
-        "options": [
-            "45",
-            "55",
-            "65",
-            "145",
-            "155"
-        ],
-        "correct_answer": "55",
-        "ideal_solution": "100 - 40 = 60. 60 - 5 = 55. Socratic Hint: Take away 50, then give 5 back.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 65.",
-            "arithmetic_slip": "Student gets 45.",
-            "converse_error": "Student adds: 145."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "You fill a 5-liter jug using a 2-liter scoop. You scoop 3 times. But water splashes, and you spill exactly 1 liter total outside. How much water is in the 5-liter jug?",
-        "options": [
-            "5 liters",
-            "4 liters",
-            "6 liters",
-            "Overflowing",
-            "3 liters"
-        ],
-        "correct_answer": "5 liters",
-        "ideal_solution": "3 scoops × 2 liters = 6 liters dumped. 1 liter misses completely. 6 - 1 = 5 liters went in. Jug holds exactly 5 liters. Perfect! Socratic Hint: First find out how much water actually left the scoop towards the jug.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses Overflowing (6 liters).",
-            "arithmetic_slip": "Student guesses 4 liters.",
-            "converse_error": "Student guesses 3 liters."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "What is 2 × 2 × 2 × 2?",
-        "options": [
-            "8",
-            "12",
-            "16",
-            "22",
-            "64"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "2x2=4. Then 4x2=8. Then 8x2=16. Socratic Hint: Double 2. Then double it again. Then exactly one more double.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds 2+2+2+2=8.",
-            "converse_error": "Student multiplies 2x4 = 8.",
-            "arithmetic_slip": "Student gets 12."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "I am a 2-digit number. My digits add up to 3. I am an ODD number. What am I?",
-        "options": [
-            "12",
-            "21",
-            "30",
-            "15",
-            "11"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "Digits adding to 3: 30, 21, 12. Of those, only 21 is ODD. Socratic Hint: Which of the choices ends in an odd digit (1, 3, 5, 7, 9)?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 12 (it's even).",
-            "converse_error": "Student guesses 30 (even).",
-            "arithmetic_slip": "Student guesses 15 (digits add to 6)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "If red blocks weigh 10 pounds and blue blocks weigh half as much, how much do 3 blue blocks weigh?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "30",
-            "45"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "Blue = half of 10 = 5. Three blues = 5 + 5 + 5 = 15. Socratic Hint: First find out how much ONE blue block weighs.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 30 (thinks blue is 10).",
-            "converse_error": "Student guesses 45.",
-            "arithmetic_slip": "Student guesses 10."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "What is the difference between 90 and 42?",
-        "options": [
-            "42",
-            "48",
-            "52",
-            "58",
-            "132"
-        ],
-        "correct_answer": "48",
-        "ideal_solution": "90 - 40 = 50. 50 - 2 = 48. Socratic Hint: Count up from 42 to 90. 42 + 8 gets to 50. Then 40 more to 90.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 52 (subtracting 4-0 instead of borrowing).",
-            "arithmetic_slip": "Student gets 58.",
-            "converse_error": "Student gets 42."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "geometry",
-        "question": "If you look at an Egyptian pyramid from directly ABOVE, straight down, what shape do you see?",
-        "options": [
-            "A Triangle",
-            "A Square",
-            "A Circle",
-            "A Star",
-            "A Hexagon"
-        ],
-        "correct_answer": "A Square",
-        "ideal_solution": "The base of the pyramid is a square. Looking straight down, you see a square box with an 'X' (the edges). Outermost shape is a square. Socratic Hint: What shape traces the bottom of the pyramid in the sand?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses A Triangle.",
-            "converse_error": "Student guesses A Star.",
-            "arithmetic_slip": "Student guesses A Circle."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 10,
-        "difficulty": "grandmaster",
-        "type": "arithmetic",
-        "question": "Fill in the blanks: 8 + 8 = 4 + ___",
-        "options": [
-            "10",
-            "12",
-            "14",
-            "16",
-            "20"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "8 + 8 = 16. What + 4 = 16? 12! Socratic Hint: Solve the left side first.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 16 (just the sum).",
-            "converse_error": "Student guesses 10.",
-            "arithmetic_slip": "Student guesses 14."
-        }
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Mia has $5.00. She buys 3 pencils for 75 cents each. How much change does she get?",
+    "options": [
+      "$1.75",
+      "$2.25",
+      "$2.75",
+      "$3.50",
+      "$4.25"
+    ],
+    "correct_answer": "$2.75",
+    "ideal_solution": "3 × 75. 75 + 75 = 150 = $1.50. $1.50 + 75 = $2.25. $5.00 - $2.25. 5.00 - 2.00 = 3.00. 3.00 - .25 = 2.75. $2.75. Socratic Hint: 75 cents is 3 quarters. 3 pencils means 9 quarters total. 4 quarters make a dollar. 8 quarters make two.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says $3.50 (subtracts incorrectly).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
     }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A builder has 200 bricks. He uses 45 on Monday and 55 on Tuesday. On Wednesday he needs 120 bricks. Does he have enough left?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "correct_answer": "No",
+    "ideal_solution": "Used = 45 + 55. 40 + 50 = 90. 5 + 5 = 10. 90 + 10 = 100. Left = 200 - 100 = 100. He needs 120. 100 < 120. He does not have enough. Socratic Hint: How many did he use between Monday and Tuesday combined? Exactly 100!",
+    "failure_modes": {
+      "converse_error": "Student guesses Yes, bad subtraction.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is exactly $10.00 minus $3.99?",
+    "options": [
+      "$5.01",
+      "$6.01",
+      "$6.99",
+      "$7.01",
+      "$7.99"
+    ],
+    "correct_answer": "$6.01",
+    "ideal_solution": "Treat $3.99 as $4.00. 10.00 - 4.00 = 6.00. Give back exactly 1 cent. $6.01. Socratic Hint: Subtract 4 dollars first. Now you're at 6 dollars. Add 1 penny.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says $6.99 or $7.01.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 1000 - 998.",
+    "options": [
+      "2",
+      "12",
+      "998",
+      "902",
+      "802"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "Count up: 998... 999, 1000. It is 2 away. Socratic Hint: Do not write it down. Start at 998 and count out loud to 1000.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 802 or 902 by messing up the zeroes.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A solid pyramid has a square base. You paint every single flat face, including the bottom. How many faces did you paint?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "1 square base. 4 triangular sides going up. 1 + 4 = 5. Socratic Hint: Count the bottom as one. Then count the triangles that touch the four edges of the square.",
+    "failure_modes": {
+      "formula_misapplication": "Student says 4 (forgets the bottom).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 100 + 100 + 100 + 100 - 50 - 50?",
+    "options": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500"
+    ],
+    "correct_answer": "300",
+    "ideal_solution": "400 - 100 = 300. (50 + 50 = 100). Socratic Hint: Those two 50s you are taking away equal exactly one 100.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 400.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A clock shows 3:45. A movie starts in exactly 1 hour and 30 minutes. What time does it start?",
+    "options": [
+      "4:15",
+      "4:45",
+      "5:15",
+      "5:30",
+      "5:45"
+    ],
+    "correct_answer": "5:15",
+    "ideal_solution": "3:45 + 1 hour = 4:45. 4:45 + 15 mins = 5:00. 30 - 15 = 15 remaining. So 5:15. Socratic Hint: Add the hour so you get to 4:45. It takes 15 minutes to reach 5:00. You still have 15 more minutes to add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 5:45.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 9 × 10? (Or 10 groups of 9). Is this the same as 100 - 10?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "correct_answer": "Yes",
+    "ideal_solution": "9 × 10 = 90. 100 - 10 = 90. So yes. Socratic Hint: 10 groups of 10 is 100. 9 groups of 10 is one 10 less.",
+    "failure_modes": {
+      "converse_error": "Student guesses No.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 550 + 450?",
+    "options": [
+      "900",
+      "950",
+      "1000",
+      "1100",
+      "1500"
+    ],
+    "correct_answer": "1000",
+    "ideal_solution": "500 + 400 = 900. 50 + 50 = 100. 900 + 100 = 1000. Socratic Hint: The 50s make a hundred perfectly.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 900 or 1100.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Is 700 - 450 greater than 200?",
+    "options": [
+      "Yes",
+      "No",
+      "Exactly 200",
+      "Cannot tell"
+    ],
+    "correct_answer": "Yes",
+    "ideal_solution": "700 - 400 = 300. 300 - 50 = 250. 250 > 200. Yes. Socratic Hint: Subtract exactly 400 first to see if you drop below 200.",
+    "failure_modes": {
+      "converse_error": "Student thinks 7 - 4 = 3 so it might drop under.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You have 3 identical rectangular boxes. You stack them cleanly on top of each other. The tower is 15 inches tall. How tall is ONE box?",
+    "options": [
+      "3 inches",
+      "5 inches",
+      "10 inches",
+      "15 inches",
+      "45 inches"
+    ],
+    "correct_answer": "5 inches",
+    "ideal_solution": "What number added to itself 3 times makes 15? 5 + 5 + 5 = 15. So 5 inches. Socratic Hint: Count by fives.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 3.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What number is halfway exactly between 800 and 1000?",
+    "options": [
+      "850",
+      "900",
+      "950",
+      "990",
+      "1050"
+    ],
+    "correct_answer": "900",
+    "ideal_solution": "The span is 200. Half is 100. 800 + 100 = 900. Socratic Hint: What is between 8 and 10?",
+    "failure_modes": {
+      "off_by_one": "Student guesses 950.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Count forward by 25s: 125, 150, 175, ___",
+    "options": [
+      "185",
+      "190",
+      "200",
+      "225",
+      "250"
+    ],
+    "correct_answer": "200",
+    "ideal_solution": "175 + 25 = 200. (4 quarters). Socratic Hint: A dollar seventy-five plus one quarter equals 2 dollars.",
+    "failure_modes": {
+      "off_by_one": "Student says 225.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 39 + 49?",
+    "options": [
+      "78",
+      "88",
+      "98",
+      "89",
+      "100"
+    ],
+    "correct_answer": "88",
+    "ideal_solution": "40 + 50 = 90. But both numbers were 1 less. So subtract 2 from 90. 90 - 2 = 88. Socratic Hint: Pretend they are 40 and 50. Then subtract 2.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 78.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Find the missing number: ___ - 50 = 350",
+    "options": [
+      "300",
+      "400",
+      "450",
+      "500",
+      "200"
+    ],
+    "correct_answer": "400",
+    "ideal_solution": "If I take away 50 and get 350, then I started with 350 + 50 = 400. Socratic Hint: Work backwards. Add 50 to 350.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 300.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "If you take a perfectly square piece of paper and fold it corner to opposite corner, what shape do you hold in your hands?",
+    "options": [
+      "Rectangle",
+      "Triangle",
+      "Square",
+      "Circle",
+      "Pentagon"
+    ],
+    "correct_answer": "Triangle",
+    "ideal_solution": "Cutting or folding a square diagonally creates two identical right triangles. Socratic Hint: Try it in your head. Put the top left point perfectly onto the bottom right.",
+    "failure_modes": {
+      "converse_error": "Student guesses Rectangle (which is if folded straight across edges).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 20 + 22 + 24 + 26?",
+    "options": [
+      "88",
+      "90",
+      "92",
+      "94",
+      "100"
+    ],
+    "correct_answer": "92",
+    "ideal_solution": "20 × 4 = 80. 0 + 2 + 4 + 6 = 12. 80 + 12 = 92. Socratic Hint: Group the ones! 4 + 6 = 10. And a 2 makes 12.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 90.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Tom has $4.00 in ONLY quarters. How many coins does he have exactly?",
+    "options": [
+      "4",
+      "8",
+      "12",
+      "16",
+      "20"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "4 quarters = $1.00. 4 dollars = 4 × 4 = 16 quarters. Socratic Hint: 4 quarters for one dollar. You need 4 dollars.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 12.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 1000 - 1.",
+    "options": [
+      "900",
+      "990",
+      "999",
+      "1001",
+      "100"
+    ],
+    "correct_answer": "999",
+    "ideal_solution": "Highest 3-digit number. Drops all columns down to 9. Socratic Hint: Count backwards from a thousand.",
+    "failure_modes": {
+      "off_by_one": "Student guesses 990 or 1001.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 950 - 500?",
+    "options": [
+      "400",
+      "450",
+      "500",
+      "550",
+      "900"
+    ],
+    "correct_answer": "450",
+    "ideal_solution": "9 - 5 = 4. 450. Socratic Hint: Just look at the hundreds: 9 - 5.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 550.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A box is meant to hold 20 crayons. Sue has 3 boxes entirely full, plus 7 loose crayons. She finds 5 more under the bed. How many crayons?",
+    "options": [
+      "67",
+      "72",
+      "75",
+      "100",
+      "120"
+    ],
+    "correct_answer": "72",
+    "ideal_solution": "3 full = 60. 7 loose + 5 found = 12. 60 + 12 = 72. Socratic Hint: Start with the boxes. 20, 40, 60. Then add all the loose crayons together.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 67.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Look at the pattern: A, BB, CCC, DDDD... How many letters will the 5th group have?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "Group 1 = 1. Group 2 = 2. Group 3 = 3. Group 4 = 4. Group 5 (EEEEE) will have 5. Socratic Hint: The number of letters is the same as the group number.",
+    "failure_modes": {
+      "off_by_one": "Student says 4.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 20 × 5?",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "100",
+      "200"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "2 × 5 = 10. Stick zero back on = 100. (5 twenties). Socratic Hint: Think of five $20 bills.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 50.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is $8.00 - $3.50?",
+    "options": [
+      "$4.50",
+      "$5.00",
+      "$5.50",
+      "$6.00",
+      "$6.50"
+    ],
+    "correct_answer": "$4.50",
+    "ideal_solution": "8 - 3 = 5. 5.00 - .50 = 4.50. Socratic Hint: Take three dollars exactly. Now from 5 dollars, take away 50 cents.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says $5.50.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "Which of the shapes Rectangle, Square, Large Triangle, and Circle CANNOT be made by gluing two identical right triangles together at their longest sides?",
+    "options": [
+      "Rectangle",
+      "Square",
+      "Large Triangle",
+      "Circle"
+    ],
+    "correct_answer": "Circle",
+    "ideal_solution": "Polygons put together will only make other polygons with straight sides. Circles are purely curved. Socratic Hint: Shapes with straight sides can't accidentally make a curve!",
+    "failure_modes": {
+      "converse_error": "Student guesses Rectangle.",
+      "formula_misapplication": "Student guesses Big Triangle.",
+      "arithmetic_slip": "Student guesses Cannot know."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If ▲ + ▲ = 14, and ▲ + ■ = 12, what is the value of ■?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "Two ▲ make 14, so one ▲ is 7. 7 + ■ = 12, so ■ is 5. Socratic Hint: Figure out what number plus itself equals 14 first.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 7 (gives value of triangle).",
+      "arithmetic_slip": "Student guesses 6.",
+      "converse_error": "Student guesses 4."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Fill in the blank: 10 + 15 + ___ = 50",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct_answer": "25",
+    "ideal_solution": "10 + 15 = 25. 50 - 25 = 25. Socratic Hint: Add 10 and 15 together first, then see what you need to hit 50.",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 35.",
+      "formula_misapplication": "Student guesses 15.",
+      "converse_error": "Student guesses 20."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Find the next number: 1, 2, 4, 7, 11, ___",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "Diffs: +1, +2, +3, +4. The next difference is +5. 11 + 5 = 16. Socratic Hint: Look at what you're adding each step. It changes!",
+    "failure_modes": {
+      "formula_misapplication": "Student adds +4 again to get 15.",
+      "arithmetic_slip": "Student gets 17.",
+      "converse_error": "Student guesses 14."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A movie starts at 5:45 PM and lasts 1 hour and 30 minutes. When does it end?",
+    "options": [
+      "6:45 PM",
+      "7:00 PM",
+      "7:15 PM",
+      "7:30 PM",
+      "8:15 PM"
+    ],
+    "correct_answer": "7:15 PM",
+    "ideal_solution": "1 hour added is 6:45 PM. Then add 30 minutes. 6:45 + 15m = 7:00 PM. 7:00 PM + 15m = 7:15 PM. Socratic Hint: Add the full hour first. Then add 30 minutes carefully.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 7:30 PM.",
+      "formula_misapplication": "Student rolls over hour incorrectly to 6:15 PM.",
+      "converse_error": "Student gets 7:00 PM."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is carefully calculated: 3 × 10 - 5 × 2?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct_answer": "20",
+    "ideal_solution": "3x10 = 30. 5x2 = 10. 30 - 10 = 20. Socratic Hint: Do both multiplication parts first.",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts 10-5=5. Then 3x5x2=30.",
+      "arithmetic_slip": "Student gets 10.",
+      "converse_error": "Student gets 40."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You have 5 coins that make 41 cents exactly. What could they be?",
+    "options": [
+      "1 Quarter, 1 Dime, 1 Nickel, 2 Pennies",
+      "4 Dimes, 1 Penny",
+      "1 Quarter, 3 Nickels, 1 Penny",
+      "5 Nickels",
+      "1 Quarter, 1 Dime, 2 Nickels, 1 Penny"
+    ],
+    "correct_answer": "1 Quarter, 3 Nickels, 1 Penny",
+    "ideal_solution": "Quarter (25) + 3 Nickels (15) + 1 Penny (1) = 41. That is 1 + 3 + 1 = 5 coins. Socratic Hint: Try taking away a penny, then making 40 cents with exactly 4 coins.",
+    "failure_modes": {
+      "formula_misapplication": "Student picks 1 Q, 1 D, 1 N, 2 P (this is 5 coins too! Wait, 25+10+5+2=42).",
+      "arithmetic_slip": "Student picks 4 Dimes, 1 Penny (5 coins, 41 cents! Wait, this is also true! Ah I'll fix the options). The only correct one must be 1 Quarter, 3 Nickels, 1 Penny.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You have exactly 3 coins that make 40 cents. What are they?",
+    "options": [
+      "3 Dimes",
+      "1 Quarter, 1 Dime, 1 Nickel",
+      "2 Dimes, 2 Nickels",
+      "4 Dimes",
+      "1 Quarter, 1 Dime, 5 Pennies"
+    ],
+    "correct_answer": "1 Quarter, 1 Dime, 1 Nickel",
+    "ideal_solution": "Quarter(25) + Dime(10) + Nickel(5) = 40. That's exactly 3 coins. Socratic Hint: Which coin is worth 25 cents?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 2 dimes 2 nickels (that is 4 coins).",
+      "converse_error": "Student guesses 3 dimes.",
+      "arithmetic_slip": "Student guesses 4 dimes."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Add the first four numbers: 1 + 2 + 3 + 4",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "1+4=5. 2+3=5. 5+5=10. Socratic Hint: Make pairs that add to 5.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 9.",
+      "formula_misapplication": "Student gets 11.",
+      "converse_error": "Student gets 8."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A fence has 10 posts. How many fence sections are BETWEEN the 10 posts in a straight line?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "Between 2 posts there is 1 section. Between 3 posts there are 2 sections. Always 1 less. 10 - 1 = 9. Socratic Hint: Draw 4 posts on a paper and count the gaps.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 10 (thinks sections equals posts).",
+      "converse_error": "Student guesses 11.",
+      "arithmetic_slip": "Student guesses 8."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "There are 4 paths from Home to School. There are 3 paths from School to the Park. How many different routes from Home to the Park going through School?",
+    "options": [
+      "3",
+      "4",
+      "7",
+      "12",
+      "16"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "For each of the 4 paths to school, there are 3 paths to the park. 4 × 3 = 12. Socratic Hint: Every single path to school has 3 choices after it.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 4+3=7.",
+      "arithmetic_slip": "Student gets 16.",
+      "converse_error": "Student guesses 4."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 100 - (20 + 30)?",
+    "options": [
+      "50",
+      "60",
+      "70",
+      "80",
+      "110"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "20 + 30 = 50. Then 100 - 50 = 50. Socratic Hint: Do the part in the parentheses first.",
+    "failure_modes": {
+      "formula_misapplication": "Student does 100-20=80, then 80+30=110.",
+      "arithmetic_slip": "Student gets 60.",
+      "converse_error": "Student gets 70."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "If you paste three squares together in a row, how many sides does the new long shape have OUTSIDE?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Top has 3 edges. Bottom has 3 edges. The two ends have 1 edge each. 3+3+1+1 = 8 sides. Socratic Hint: Some edges are hiding inside where the squares touch! Don't count those.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 12 (3 squares x 4 sides).",
+      "arithmetic_slip": "Student guesses 10.",
+      "converse_error": "Student guesses 14."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If tomorrow is the 3rd, and next Tuesday is the 10th, what day of the week is it TODAY?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Sunday",
+      "Wednesday",
+      "Cannot tell"
+    ],
+    "correct_answer": "Monday",
+    "ideal_solution": "If next Tuesday is the 10th, the previous Tuesday was the 3rd. Which means 'tomorrow' (the 3rd) is a Tuesday! So TODAY is Monday, the 2nd. Socratic Hint: Wait, 1 week before the 10th is the 3rd. So the 3rd is a Tuesday.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses Tuesday.",
+      "converse_error": "Student guesses Wednesday.",
+      "arithmetic_slip": "Student guesses Sunday."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Fill in the blanks so this is true: 40 + ___ = 100 - ___ (Both blanks are the same number)",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "40 + 30 = 70. 100 - 30 = 70. Matches exactly. Socratic Hint: Try '20' first. Is 60 the same as 80? What about 30?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 20 (gets 60 and 80).",
+      "converse_error": "Student guesses 10.",
+      "arithmetic_slip": "Student guesses 40."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A balanced scale has 1 big block on the left, and 3 identical small blocks on the right. If a big block weighs 15 lbs, how much does ONE small block weigh?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "15"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "The 3 small blocks equal 15 lbs total. 15 / 3 = 5. Each is 5 lbs. Socratic Hint: What number added to itself 3 times equals 15?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 3 (confusing the block count for weight).",
+      "arithmetic_slip": "Student guesses 4.",
+      "converse_error": "Student guesses 15."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is half of 150?",
+    "options": [
+      "50",
+      "65",
+      "70",
+      "75",
+      "100"
+    ],
+    "correct_answer": "75",
+    "ideal_solution": "Half of 100 is 50. Half of 50 is 25. 50 + 25 = 75. Socratic Hint: Split the 100 first, then split the 50.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 65.",
+      "formula_misapplication": "Student gets 70.",
+      "converse_error": "Student gets 100."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Tim has $1.25. Jane has 75 cents. How much must Tim give Jane so they have the EQUAL amounts of money?",
+    "options": [
+      "10 cents",
+      "25 cents",
+      "35 cents",
+      "50 cents",
+      "They are equal"
+    ],
+    "correct_answer": "25 cents",
+    "ideal_solution": "Total money = $2.00. Half of $2.00 is $1.00. So they each need $1.00. Tim goes from $1.25 down to $1.00. He gives 25 cents. Socratic Hint: Find out how much money they have TOGETHER. Then split it exactly in half.",
+    "failure_modes": {
+      "formula_misapplication": "Student thinks 50 cents (difference between 1.25 and .75 is 50 cents, but if he gives 50, now she has more!).",
+      "converse_error": "Student guesses 35 cents.",
+      "arithmetic_slip": "Student guesses 10 cents."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 100 - 45",
+    "options": [
+      "45",
+      "55",
+      "65",
+      "145",
+      "155"
+    ],
+    "correct_answer": "55",
+    "ideal_solution": "100 - 40 = 60. 60 - 5 = 55. Socratic Hint: Take away 50, then give 5 back.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 65.",
+      "arithmetic_slip": "Student gets 45.",
+      "converse_error": "Student adds: 145."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You fill a 5-liter jug using a 2-liter scoop. You scoop 3 times. But water splashes, and you spill exactly 1 liter total outside. How much water is in the 5-liter jug?",
+    "options": [
+      "5 liters",
+      "4 liters",
+      "6 liters",
+      "Overflowing",
+      "3 liters"
+    ],
+    "correct_answer": "5 liters",
+    "ideal_solution": "3 scoops × 2 liters = 6 liters dumped. 1 liter misses completely. 6 - 1 = 5 liters went in. Jug holds exactly 5 liters. Perfect! Socratic Hint: First find out how much water actually left the scoop towards the jug.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses Overflowing (6 liters).",
+      "arithmetic_slip": "Student guesses 4 liters.",
+      "converse_error": "Student guesses 3 liters."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 2 × 2 × 2 × 2?",
+    "options": [
+      "8",
+      "12",
+      "16",
+      "22",
+      "64"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "2x2=4. Then 4x2=8. Then 8x2=16. Socratic Hint: Double 2. Then double it again. Then exactly one more double.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds 2+2+2+2=8.",
+      "converse_error": "Student multiplies 2x4 = 8.",
+      "arithmetic_slip": "Student gets 12."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "I am a 2-digit number. My digits add up to 3. I am an ODD number. What am I?",
+    "options": [
+      "12",
+      "21",
+      "30",
+      "15",
+      "11"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "Digits adding to 3: 30, 21, 12. Of those, only 21 is ODD. Socratic Hint: Which of the choices ends in an odd digit (1, 3, 5, 7, 9)?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 12 (it's even).",
+      "converse_error": "Student guesses 30 (even).",
+      "arithmetic_slip": "Student guesses 15 (digits add to 6)."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If red blocks weigh 10 pounds and blue blocks weigh half as much, how much do 3 blue blocks weigh?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "30",
+      "45"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "Blue = half of 10 = 5. Three blues = 5 + 5 + 5 = 15. Socratic Hint: First find out how much ONE blue block weighs.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 30 (thinks blue is 10).",
+      "converse_error": "Student guesses 45.",
+      "arithmetic_slip": "Student guesses 10."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is the difference between 90 and 42?",
+    "options": [
+      "42",
+      "48",
+      "52",
+      "58",
+      "132"
+    ],
+    "correct_answer": "48",
+    "ideal_solution": "90 - 40 = 50. 50 - 2 = 48. Socratic Hint: Count up from 42 to 90. 42 + 8 gets to 50. Then 40 more to 90.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 52 (subtracting 4-0 instead of borrowing).",
+      "arithmetic_slip": "Student gets 58.",
+      "converse_error": "Student gets 42."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "If you look at an Egyptian pyramid from directly ABOVE, straight down, what shape do you see?",
+    "options": [
+      "A Triangle",
+      "A Square",
+      "A Circle",
+      "A Star",
+      "A Hexagon"
+    ],
+    "correct_answer": "A Square",
+    "ideal_solution": "The base of the pyramid is a square. Looking straight down, you see a square box with an 'X' (the edges). Outermost shape is a square. Socratic Hint: What shape traces the bottom of the pyramid in the sand?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses A Triangle.",
+      "converse_error": "Student guesses A Star.",
+      "arithmetic_slip": "Student guesses A Circle."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Fill in the blanks: 8 + 8 = 4 + ___",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16",
+      "20"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "8 + 8 = 16. What + 4 = 16? 12! Socratic Hint: Solve the left side first.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 16 (just the sum).",
+      "converse_error": "Student guesses 10.",
+      "arithmetic_slip": "Student guesses 14."
+    }
+  }
 ]

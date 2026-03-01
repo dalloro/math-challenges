@@ -1,7 +1,8 @@
 import json
 import sys
+import argparse
 
-def validate_file(filepath):
+def validate_file(filepath, target_count):
     try:
         with open(filepath, 'r') as f:
             data = json.load(f)
@@ -12,15 +13,43 @@ def validate_file(filepath):
     if not isinstance(data, list):
         print(f"❌ Root of '{filepath}' must be a JSON array.")
         return False
+
+    # Deduplicate
+    seen_questions = set()
+    deduped_data = []
+    duplicates_removed = 0
+    
+    for q in data:
+        if isinstance(q, dict) and 'question' in q:
+            q_text = q['question'].strip()
+            if q_text in seen_questions:
+                duplicates_removed += 1
+                continue
+            seen_questions.add(q_text)
+        deduped_data.append(q)
         
-    if len(data) != 50:
-        print(f"❌ Batch '{filepath}' must have exactly 50 questions, found {len(data)}.")
-        return False
+    if duplicates_removed > 0:
+        print(f"⚠️ Removed {duplicates_removed} duplicate questions from '{filepath}'.")
+        data = deduped_data
+        # Rewrite the file with duplicates removed
+        with open(filepath, 'w') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.write('\n')
+        
+    valid = True
+
+    if target_count is not None and len(data) != target_count:
+        print(f"❌ Batch '{filepath}' must have exactly {target_count} questions, found {len(data)}.")
+        valid = False
         
     required_keys = {"grade", "level", "difficulty", "type", "question", "options", "correct_answer", "ideal_solution", "failure_modes"}
-    valid = True
     
     for i, q in enumerate(data):
+        if not isinstance(q, dict):
+            print(f"❌ Item {i} is not a JSON object.")
+            valid = False
+            continue
+
         missing = required_keys - set(q.keys())
         if missing:
             print(f"❌ Item {i} missing keys: {missing}")
@@ -48,13 +77,15 @@ def validate_file(filepath):
     return valid
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python validate_batch.py <path_to_json>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Validate JSON question batches.")
+    parser.add_argument("--target", type=int, default=50, help="Target number of questions per batch (default: 50)")
+    parser.add_argument("files", nargs="+", help="JSON files to validate")
+    
+    args = parser.parse_args()
         
     all_passed = True
-    for fp in sys.argv[1:]:
-        if not validate_file(fp):
+    for fp in args.files:
+        if not validate_file(fp, args.target):
             all_passed = False
             
     if not all_passed:

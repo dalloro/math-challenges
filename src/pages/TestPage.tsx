@@ -20,11 +20,11 @@ import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 
 const RANKS = [
-  'Apprentice',    // Level 1-2
-  'Scholar',       // Level 3-4
-  'Expert',        // Level 5-6
-  'Master',        // Level 7-8
-  'Grandmaster'    // Level 9-10
+  'Beginner',      // Level 1-2
+  'Intermediate',  // Level 3-4
+  'Advanced',      // Level 5-6
+  'Expert',        // Level 7-8
+  'Master'         // Level 9-10
 ];
 
 const INACTIVITY_THRESHOLD_MS = 5 * 60 * 1000; // 5 minutes
@@ -37,32 +37,32 @@ interface TestEngineProps {
   nextButtonDelaySeconds?: number;
 }
 
-function TestEngine({ 
-  grade, 
-  initialRoomState, 
-  onSync, 
-  roomCode, 
-  nextButtonDelaySeconds = 5 
+function TestEngine({
+  grade,
+  initialRoomState,
+  onSync,
+  roomCode,
+  nextButtonDelaySeconds = 5
 }: TestEngineProps) {
   const navigate = useNavigate();
   const { questions, loading, error } = useQuestions(grade);
-  
+
   // Initialize session with restored state
   const { session, recordAnswer } = useSession({
     score: initialRoomState.score,
     answers: initialRoomState.answers,
     currentQuestionIndex: initialRoomState.answers.length
   });
-  
+
   // Initialize adaptive engine with restored level and streak
   const { currentLevel, theme, handleAnswer, streak } = useAdaptiveEngine(
-    questions, 
+    questions,
     initialRoomState.currentLevel,
     initialRoomState.streak
   );
 
   const { selectQuestion, markAsSeen } = useQuestionSelection(questions, roomCode);
-  
+
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [reasoning, setReasoning] = useState('');
   const [blindAnswer, setBlindAnswer] = useState('');
@@ -72,7 +72,7 @@ function TestEngine({
   const [feedbackError, setFeedbackError] = useState<string | null>(null);
   const [validationError, setValidationError] = useState<string | null>(null);
   const [outcomeType, setOutcomeType] = useState<'happy' | 'sad' | 'completed' | null>(null);
-  
+
   const handleOutcomeComplete = useCallback(() => {
     setOutcomeType(null);
   }, []);
@@ -92,7 +92,7 @@ function TestEngine({
   const currentRank = RANKS[Math.floor((currentLevel - 1) / 2)];
 
   const isActive = useMemo(() => Date.now() - lastActivity < INACTIVITY_THRESHOLD_MS, [lastActivity]);
-  
+
   // Re-evaluate static mode if settings might have changed (simplified check)
   const isStaticMode = !getApiKey() || !isAiEnabled();
 
@@ -139,7 +139,7 @@ function TestEngine({
     if (!initializedFromRoom.current && initialRoomState.currentQuestionId) {
       const restored = questions.find(q => q.id === initialRoomState.currentQuestionId);
       const isAlreadyAnswered = session.answers.some(a => a.questionId === initialRoomState.currentQuestionId);
-      
+
       if (restored && !isAlreadyAnswered) {
         setCurrentQuestion(restored);
         initializedFromRoom.current = true;
@@ -150,14 +150,14 @@ function TestEngine({
     // Use robust selection logic
     // We try to pick a question of the same type as the last one if possible, 
     // or fallback to the first question's type in the pool
-    const lastType = session.answers.length > 0 
-      ? questions.find(q => q.id === session.answers[session.answers.length - 1].questionId)?.type 
+    const lastType = session.answers.length > 0
+      ? questions.find(q => q.id === session.answers[session.answers.length - 1].questionId)?.type
       : questions[0]?.type;
 
-    const picked = selectQuestion({ 
-      grade, 
-      level: currentLevel, 
-      type: lastType || 'Arithmetic' 
+    const picked = selectQuestion({
+      grade,
+      level: currentLevel,
+      type: lastType || 'Arithmetic'
     });
 
     if (picked) {
@@ -201,16 +201,16 @@ function TestEngine({
     handleAnswer(isCorrect);
     markAsSeen(currentQuestion.id, grade);
 
-    onSync({ 
-      currentLevel, 
-      streak, 
-      score: session.score + (isCorrect ? 1 : 0), 
+    onSync({
+      currentLevel,
+      streak,
+      score: session.score + (isCorrect ? 1 : 0),
       answers: [
         ...session.answers,
         { questionId: currentQuestion.id, answer: selectedOption, isCorrect, timestamp: Date.now() }
       ],
       remainingSeconds: timer,
-      currentQuestionId: null 
+      currentQuestionId: null
     });
 
     setSelectedOption(null);
@@ -226,7 +226,7 @@ function TestEngine({
 
   const handleSubmitReasoning = async () => {
     if (!currentQuestion) return;
-    
+
     setValidationError(null);
     if (!reasoning.trim()) {
       setValidationError("Please provide your reasoning before submitting.");
@@ -254,10 +254,10 @@ function TestEngine({
 
     setIsSubmitting(true);
     setFeedbackError(null);
-    
+
     const apiKey = getApiKey();
     const aiEnabled = isAiEnabled();
-    
+
     if (!apiKey || !aiEnabled) {
       setAiFeedback(currentQuestion.ideal_solution);
       setFeedbackType('ideal');
@@ -299,7 +299,7 @@ function TestEngine({
   if (!currentQuestion && totalUnanswered === 0 && session.answers.length > 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen space-y-6">
-        <OutcomeOverlay type="completed" onComplete={() => {}} />
+        <OutcomeOverlay type="completed" onComplete={() => { }} />
         <div className="text-center">
           <h2 className="text-4xl font-bold text-gray-900">Challenge Complete!</h2>
           <p className="text-xl text-gray-500 mt-2">Final Rank: {currentRank}</p>
@@ -317,11 +317,10 @@ function TestEngine({
   const isCorrect = selectedOption?.trim().toLowerCase() === currentQuestion.correct_answer.trim().toLowerCase();
 
   return (
-    <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${
-      theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
-    }`}>
+    <div className={`min-h-screen transition-colors duration-1000 flex flex-col p-2 sm:p-4 ${theme === 'focus' ? 'bg-blue-50/50' : 'bg-gray-50'
+      }`}>
       <OutcomeOverlay key={outcomeType} type={outcomeType} onComplete={handleOutcomeComplete} />
-      
+
       <header className="max-w-4xl w-full mx-auto flex justify-between items-center py-2 sm:py-4">
         <div className="flex items-center space-x-2 sm:space-x-4">
           <Logo className="h-7 sm:h-10 w-auto" />
@@ -343,7 +342,7 @@ function TestEngine({
           </div>
         </div>
         <div className="flex items-center space-x-3 sm:space-x-6">
-          <div 
+          <div
             onClick={() => {
               const newState = !timerVisible;
               setTimerVisible(newState);
@@ -371,14 +370,13 @@ function TestEngine({
                 <span className="px-3 py-1 rounded-lg bg-gray-100 text-gray-500 text-[10px] font-black uppercase tracking-widest">
                   {currentQuestion.type}
                 </span>
-                <span className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest ${
-                  currentLevel > 7 ? 'bg-purple-50 text-purple-600' : currentLevel > 4 ? 'bg-blue-50 text-blue-600' : 'bg-green-50 text-green-600'
-                }`}>
+                <span className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest ${currentLevel > 7 ? 'bg-purple-50 text-purple-600' : currentLevel > 4 ? 'bg-blue-50 text-blue-600' : 'bg-green-50 text-green-600'
+                  }`}>
                   Level {currentQuestion.level} / 10
                 </span>
               </div>
             </div>
-            
+
             <h3 className="text-2xl md:text-4xl font-semibold text-gray-900 leading-tight tracking-tight">
               {currentQuestion.question}
             </h3>
@@ -393,15 +391,13 @@ function TestEngine({
                     <button
                       key={option}
                       onClick={() => setSelectedOption(option)}
-                      className={`flex items-center p-6 rounded-2xl border-2 transition-all text-left ${
-                        selectedOption === option 
-                          ? 'border-blue-600 bg-blue-50/30' 
+                      className={`flex items-center p-6 rounded-2xl border-2 transition-all text-left ${selectedOption === option
+                          ? 'border-blue-600 bg-blue-50/30'
                           : 'border-transparent hover:border-gray-200 bg-gray-50/50'
-                      }`}
+                        }`}
                     >
-                      <div className={`w-6 h-6 rounded-full border-2 mr-4 flex items-center justify-center transition-colors ${
-                        selectedOption === option ? 'border-blue-600 bg-blue-600' : 'border-gray-300'
-                      }`}>
+                      <div className={`w-6 h-6 rounded-full border-2 mr-4 flex items-center justify-center transition-colors ${selectedOption === option ? 'border-blue-600 bg-blue-600' : 'border-gray-300'
+                        }`}>
                         {selectedOption === option && <div className="w-2 h-2 rounded-full bg-white"></div>}
                       </div>
                       <span className={`text-xl ${selectedOption === option ? 'text-blue-900 font-bold' : 'text-gray-700 font-medium'}`}>
@@ -445,7 +441,7 @@ function TestEngine({
                   className="w-full h-64 p-6 rounded-2xl border-2 border-gray-100 focus:border-blue-500 focus:ring-0 outline-none text-xl text-gray-800 placeholder-gray-300 resize-none transition-all bg-gray-50/30"
                 />
               </div>
-              
+
               {validationError && (
                 <div className="p-4 bg-amber-50 border border-amber-100 rounded-xl text-amber-700 text-sm font-bold flex items-center space-x-3 animate-in fade-in slide-in-from-top-2">
                   <AlertCircle size={18} />
@@ -472,9 +468,8 @@ function TestEngine({
           ) : (
             <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
               {/* 1. Correctness Header Banner */}
-              <div className={`p-6 rounded-[2rem] border-2 flex items-center space-x-4 ${
-                isCorrect ? 'bg-green-50 border-green-100 text-green-700' : 'bg-red-50 border-red-100 text-red-700'
-              }`}>
+              <div className={`p-6 rounded-[2rem] border-2 flex items-center space-x-4 ${isCorrect ? 'bg-green-50 border-green-100 text-green-700' : 'bg-red-50 border-red-100 text-red-700'
+                }`}>
                 <div className={`p-2 rounded-full ${isCorrect ? 'bg-green-100' : 'bg-red-100'}`}>
                   {isCorrect ? <CheckCircle2 size={24} /> : <XCircle size={24} />}
                 </div>
@@ -496,12 +491,12 @@ function TestEngine({
                     Tutor Review
                   </h4>
                 </div>
-                
+
                 {feedbackType === 'ai' ? (
                   <div className="p-8 rounded-[2rem] border-2 bg-purple-50 border-purple-100 shadow-sm shadow-purple-50">
                     <div className="prose prose-purple prose-lg max-w-none">
-                      <ReactMarkdown 
-                        remarkPlugins={[remarkMath]} 
+                      <ReactMarkdown
+                        remarkPlugins={[remarkMath]}
                         rehypePlugins={[rehypeKatex]}
                       >
                         {aiFeedback || ''}
@@ -509,8 +504,8 @@ function TestEngine({
                     </div>
                   </div>
                 ) : (
-                  <SolutionDisplay 
-                    {...parseIdealSolution(aiFeedback || '')} 
+                  <SolutionDisplay
+                    {...parseIdealSolution(aiFeedback || '')}
                   />
                 )}
               </div>
@@ -536,7 +531,7 @@ function TestEngine({
                   </div>
                 </div>
               </div>
-              
+
               {/* 4. Action Area */}
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-end gap-6 pt-8 border-t border-gray-100">
                 <div className="relative group flex-1 sm:flex-initial">
@@ -564,8 +559,8 @@ function TestEngine({
             <span>Accuracy: {session.answers.length > 0 ? Math.round((session.score / session.answers.length) * 100) : 0}%</span>
           </div>
           <div className="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-blue-500 transition-all duration-1000 ease-in-out" 
+            <div
+              className="h-full bg-blue-500 transition-all duration-1000 ease-in-out"
               style={{ width: `${(currentLevel / 10) * 100}%` }}
             ></div>
           </div>
@@ -579,14 +574,14 @@ export function TestPage() {
   const [searchParams] = useSearchParams();
   const roomParam = searchParams.get('room');
   const gradeParam = parseInt(searchParams.get('grade') || '');
-  
+
   const { roomCode, roomData, loading, error, syncRoom } = useRoom({
     grade: isNaN(gradeParam) ? undefined : gradeParam,
     initialRoomCode: roomParam
   });
 
   if (loading) return <div className="flex items-center justify-center min-h-screen font-medium text-gray-500">Initializing your room...</div>;
-  
+
   if (error) return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
       <p className="text-xl text-red-500 font-medium">{error}</p>
@@ -597,11 +592,11 @@ export function TestPage() {
   if (!roomData || !roomCode) return null;
 
   return (
-    <TestEngine 
-      grade={roomData.grade} 
-      initialRoomState={roomData} 
+    <TestEngine
+      grade={roomData.grade}
+      initialRoomState={roomData}
       roomCode={roomCode}
-      onSync={syncRoom} 
+      onSync={syncRoom}
       nextButtonDelaySeconds={import.meta.env.MODE === 'test' ? 0 : 5}
     />
   );

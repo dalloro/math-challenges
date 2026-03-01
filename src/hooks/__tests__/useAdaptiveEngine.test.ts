@@ -4,9 +4,9 @@ import { useAdaptiveEngine } from '../useAdaptiveEngine';
 import type { Question } from '../useQuestions';
 
 const mockQuestions: Question[] = [
-  { id: '1', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'L1', options: [], correct_answer: '', ideal_solution: '', failure_modes: {} },
-  { id: '2', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'L1', options: [], correct_answer: '', ideal_solution: '', failure_modes: {} },
-  { id: '3', level: 2, grade: 1, difficulty: 'gifted', type: 'logic', question: 'L2', options: [], correct_answer: '', ideal_solution: '', failure_modes: {} }
+  { id: '1', level: 1, grade: 1, difficulty: 'beginner', type: 'logic', question: 'L1', options: [], correct_answer: '', ideal_solution: '', failure_modes: {} },
+  { id: '2', level: 1, grade: 1, difficulty: 'beginner', type: 'logic', question: 'L1', options: [], correct_answer: '', ideal_solution: '', failure_modes: {} },
+  { id: '3', level: 2, grade: 1, difficulty: 'beginner', type: 'logic', question: 'L2', options: [], correct_answer: '', ideal_solution: '', failure_modes: {} }
 ];
 
 describe('useAdaptiveEngine', () => {

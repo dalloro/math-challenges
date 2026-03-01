@@ -1,1052 +1,1052 @@
 [
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 2 + 3 × (8 - 2²) ÷ 2",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "10",
-            "14"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Exponent: 2²=4. Parentheses: 8-4=4. Multiply: 3×4=12. Divide: 12÷2=6. Add: 2+6=8. Socratic Hint: Follow PEMDAS strictly — exponents first, then parentheses, then multiplication/division left to right, then addition.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (2+3)×(8-4)÷2 = 10.",
-            "arithmetic_slip": "Student computes 3×4÷2 = 4, then 2+4=6.",
-            "premature_calculation": "Student computes 2+3=5 first."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A regular pentagon has a side length of 8 cm. What is its perimeter?",
-        "options": [
-            "32 cm",
-            "40 cm",
-            "48 cm",
-            "56 cm",
-            "64 cm"
-        ],
-        "correct_answer": "40 cm",
-        "ideal_solution": "Perimeter = 5 × 8 = 40 cm. Socratic Hint: A regular pentagon has 5 equal sides.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 4 × 8 = 32 (square).",
-            "arithmetic_slip": "Student computes 5 × 8 = 48.",
-            "constraint_neglect": "Student confuses pentagon (5 sides) with hexagon (6 sides): 48."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A farmer has chickens and cows. He counts 20 heads and 56 legs. How many chickens does he have?",
-        "options": [
-            "8",
-            "10",
-            "12",
-            "14",
-            "16"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Let c = chickens, w = cows. c + w = 20. 2c + 4w = 56. From first: w = 20-c. Substitute: 2c + 4(20-c) = 56. 2c + 80 - 4c = 56. -2c = -24. c = 12. Socratic Hint: Set up two equations — one for heads, one for legs.",
-        "failure_modes": {
-            "converse_error": "Student finds cows = 8 and picks that.",
-            "arithmetic_slip": "Student solves -2c = -24 and gets c = 14.",
-            "formula_misapplication": "Student divides 56/20 = 2.8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the sum of all divisors of 36?",
-        "options": [
-            "55",
-            "78",
-            "91",
-            "96",
-            "108"
-        ],
-        "correct_answer": "91",
-        "ideal_solution": "Divisors of 36: 1,2,3,4,6,9,12,18,36. Sum = 1+2+3+4+6+9+12+18+36 = 91. Socratic Hint: List all divisors systematically, then add.",
-        "failure_modes": {
-            "undercounting": "Student misses 4 or 9: sum = 82 or 78.",
-            "overcounting": "Student includes 8: sum = 99.",
-            "premature_calculation": "Student sums proper divisors only: 55."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A store has a 'buy 2 get 1 free' deal on $9 items. How much do you pay for 7 items?",
-        "options": [
-            "$36",
-            "$45",
-            "$54",
-            "$63",
-            "$72"
-        ],
-        "correct_answer": "$45",
-        "ideal_solution": "For every 3 items, pay for 2: 7 items = 2 groups of 3 + 1 extra. Free items: 2. Paid items: 5. Cost = 5 × $9 = $45. Socratic Hint: Find how many free items you get from groups of 3.",
-        "failure_modes": {
-            "formula_misapplication": "Student pays for all 7: 7 × $9 = $63.",
-            "arithmetic_slip": "Student computes 6 paid: 6 × $9 = $54.",
-            "premature_calculation": "Student computes 2 groups = 4 paid: $36."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cone has base radius 6 cm and height 8 cm. What is its slant height?",
-        "options": [
-            "7 cm",
-            "8 cm",
-            "10 cm",
-            "12 cm",
-            "14 cm"
-        ],
-        "correct_answer": "10 cm",
-        "ideal_solution": "Slant height = √(r² + h²) = √(36 + 64) = √100 = 10 cm. Socratic Hint: The radius, height, and slant height form a right triangle.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 6 + 8 = 14.",
-            "arithmetic_slip": "Student computes √100 = 12.",
-            "premature_calculation": "Student computes r² + h² = 100 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "How many rectangles (including squares) can be formed on a 3×3 grid of dots?",
-        "options": [
-            "9",
-            "16",
-            "24",
-            "36",
-            "45"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "Choose 2 horizontal lines from 4: C(4,2)=6. Choose 2 vertical lines from 4: C(4,2)=6. Total rectangles = 6 × 6 = 36. Socratic Hint: Each rectangle is defined by choosing 2 horizontal and 2 vertical lines.",
-        "failure_modes": {
-            "undercounting": "Student counts only squares: 9.",
-            "arithmetic_slip": "Student computes C(3,2) × C(3,2) = 9.",
-            "formula_misapplication": "Student computes 3 × 3 = 9."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the smallest number that when divided by 3, 4, and 5 leaves a remainder of 2 in each case?",
-        "options": [
-            "22",
-            "32",
-            "42",
-            "52",
-            "62"
-        ],
-        "correct_answer": "62",
-        "ideal_solution": "LCM(3,4,5) = 60. Number = 60 + 2 = 62. Check: 62/3 = 20 R2 ✓. 62/4 = 15 R2 ✓. 62/5 = 12 R2 ✓. Socratic Hint: Find the LCM of the divisors, then add the common remainder.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 3×4×5 + 2 = 62 (correct by coincidence).",
-            "arithmetic_slip": "Student computes LCM = 30: answer = 32.",
-            "off_by_one": "Student picks 60 (forgetting to add remainder)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What percentage of 250 is 45?",
-        "options": [
-            "14%",
-            "16%",
-            "18%",
-            "20%",
-            "22.5%"
-        ],
-        "correct_answer": "18%",
-        "ideal_solution": "Percentage = (45/250) × 100 = 0.18 × 100 = 18%. Socratic Hint: Divide the part by the whole, then multiply by 100.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 250/45 = 5.56.",
-            "arithmetic_slip": "Student computes 45/250 = 0.20 → 20%.",
-            "premature_calculation": "Student computes 45/250 = 0.18 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Two concentric circles have radii 5 cm and 8 cm. What is the area of the ring between them? (π ≈ 3.14)",
-        "options": [
-            "28.26 sq cm",
-            "78.5 sq cm",
-            "122.46 sq cm",
-            "200.96 sq cm",
-            "282.6 sq cm"
-        ],
-        "correct_answer": "122.46 sq cm",
-        "ideal_solution": "Ring area = π(R² - r²) = 3.14(64 - 25) = 3.14 × 39 = 122.46 sq cm. Socratic Hint: Subtract the smaller circle's area from the larger one's.",
-        "failure_modes": {
-            "premature_calculation": "Student computes outer area only: 200.96.",
-            "arithmetic_slip": "Student computes 64-25 = 29: 3.14 × 29 = 91.06.",
-            "formula_misapplication": "Student computes π(8-5)² = 28.26."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If you write all integers from 1 to 100, how many times does the digit '1' appear?",
-        "options": [
-            "10",
-            "11",
-            "19",
-            "20",
-            "21"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "Ones place: 1,11,21,...,91 → 10 times. Tens place: 10,11,...,19 → 10 times. 100: 1 time. Total = 10 + 10 + 1 = 21. Socratic Hint: Count the digit in each position separately.",
-        "failure_modes": {
-            "undercounting": "Student counts numbers containing 1: 19 (forgetting 11 has two 1s).",
-            "overcounting": "Student counts 100 as two 1s.",
-            "formula_misapplication": "Student counts only ones digit: 10."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is 17 mod 5?",
-        "options": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "17 ÷ 5 = 3 remainder 2. So 17 mod 5 = 2. Socratic Hint: Divide and find the remainder.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 17/5 = 3.4 and picks 3.",
-            "arithmetic_slip": "Student computes 17 - 15 = 3.",
-            "off_by_one": "Student computes 17 - 5×3 = 2 (correct) but picks 3."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A recipe requires a 2:3 ratio of sugar to flour. If you have 5 cups of sugar, how many cups of flour do you need?",
-        "options": [
-            "3.33 cups",
-            "5 cups",
-            "7.5 cups",
-            "10 cups",
-            "15 cups"
-        ],
-        "correct_answer": "7.5 cups",
-        "ideal_solution": "Sugar/Flour = 2/3. 5/F = 2/3. F = 5 × 3/2 = 7.5 cups. Socratic Hint: Set up a proportion and cross-multiply.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 5 × 2/3 = 3.33.",
-            "arithmetic_slip": "Student computes 5 × 3 = 15.",
-            "converse_error": "Student thinks 2:3 means flour:sugar."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cylinder is inscribed in a cube of side 6 cm (base circle touches all 4 sides). What is the cylinder's volume? (π ≈ 3.14)",
-        "options": [
-            "56.52 cu cm",
-            "113.04 cu cm",
-            "169.56 cu cm",
-            "216 cu cm",
-            "339.12 cu cm"
-        ],
-        "correct_answer": "169.56 cu cm",
-        "ideal_solution": "Cylinder radius = 6/2 = 3 cm. Height = 6 cm. V = πr²h = 3.14 × 9 × 6 = 169.56 cu cm. Socratic Hint: The cylinder's diameter equals the cube's side.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses side as radius: 3.14 × 36 × 6 = 678.",
-            "premature_calculation": "Student computes cube volume: 216.",
-            "arithmetic_slip": "Student computes 3.14 × 9 × 6 = 113.04."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A clock strikes once at 1:00, twice at 2:00, etc. How many total strikes from 1:00 to 12:00 inclusive?",
-        "options": [
-            "66",
-            "72",
-            "78",
-            "84",
-            "144"
-        ],
-        "correct_answer": "78",
-        "ideal_solution": "Sum = 1+2+3+...+12 = 12×13/2 = 78. Socratic Hint: Use Gauss's formula for the sum of 1 to 12.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 12×13/2 = 72.",
-            "formula_misapplication": "Student computes 12 × 12 = 144.",
-            "off_by_one": "Student sums 1 to 11 = 66."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many numbers from 1 to 100 are divisible by both 3 and 7?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "5",
-            "14"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "LCM(3,7) = 21. Multiples of 21 up to 100: 21, 42, 63, 84. Count = 4. Socratic Hint: Find the LCM first, then count its multiples up to 100.",
-        "failure_modes": {
-            "overcounting": "Student counts multiples of 3 and 7 separately.",
-            "arithmetic_slip": "Student includes 105: count = 5.",
-            "formula_misapplication": "Student computes 100/3 + 100/7 = 47."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A ship sails 40 km north, 30 km east, then 10 km south. How far is it from the starting point?",
-        "options": [
-            "30 km",
-            "40 km",
-            "42.43 km",
-            "50 km",
-            "80 km"
-        ],
-        "correct_answer": "42.43 km",
-        "ideal_solution": "Net north = 40-10 = 30 km. East = 30 km. Distance = √(30² + 30²) = √1800 = 30√2 ≈ 42.43 km. Socratic Hint: Find net displacement in each direction, then use Pythagorean theorem.",
-        "failure_modes": {
-            "premature_calculation": "Student uses 40 north: √(1600+900) = 50.",
-            "formula_misapplication": "Student adds all: 40+30+10 = 80.",
-            "arithmetic_slip": "Student computes √1800 = 40."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A triangle has vertices at (0,0), (6,0), and (3,4). What is its area?",
-        "options": [
-            "6 sq units",
-            "8 sq units",
-            "10 sq units",
-            "12 sq units",
-            "24 sq units"
-        ],
-        "correct_answer": "12 sq units",
-        "ideal_solution": "Base = 6 (along x-axis). Height = 4 (perpendicular from (3,4) to x-axis). Area = (1/2)(6)(4) = 12 sq units. Socratic Hint: Use the base along the x-axis and the height as the y-coordinate of the apex.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes base × height = 24 (forgetting 1/2).",
-            "arithmetic_slip": "Student computes (1/2)(6)(4) = 8.",
-            "premature_calculation": "Student finds base = 6 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A box contains cards numbered 1-20. If you draw one card, what is the probability it is a prime number?",
-        "options": [
-            "1/4",
-            "2/5",
-            "3/10",
-            "7/20",
-            "8/20"
-        ],
-        "correct_answer": "8/20",
-        "ideal_solution": "Primes 1-20: 2,3,5,7,11,13,17,19 = 8 primes. P = 8/20 = 2/5. Socratic Hint: List all primes up to 20, then divide by total.",
-        "failure_modes": {
-            "overcounting": "Student includes 1: 9/20.",
-            "undercounting": "Student misses 19: 7/20.",
-            "formula_misapplication": "Student computes 20/8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the smallest perfect square greater than 200?",
-        "options": [
-            "196",
-            "210",
-            "225",
-            "256",
-            "289"
-        ],
-        "correct_answer": "225",
-        "ideal_solution": "√200 ≈ 14.14. Next integer = 15. 15² = 225. Check: 14² = 196 < 200. 15² = 225 > 200. Socratic Hint: Find √200 and round up to the next integer.",
-        "failure_modes": {
-            "off_by_one": "Student picks 196 (which is < 200).",
-            "overcounting": "Student picks 256 = 16².",
-            "arithmetic_slip": "Student computes 15² = 210."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A palindromic time reads the same forwards and backwards (e.g., 12:21). How many palindromic times exist on a 12-hour clock?",
-        "options": [
-            "16",
-            "38",
-            "57",
-            "95",
-            "143"
-        ],
-        "correct_answer": "57",
-        "ideal_solution": "Format H:MM or HH:MM. 1:01-1:51 (6), 2:02-2:52 (6), ..., 9:09-9:59 (6) = 54. 10:01 (1), 11:11 (1), 12:21 (1) = 3. Total = 57. Socratic Hint: For single-digit hours, the tens digit of minutes equals the hour and ones digit ranges 0-5. For two-digit hours, restrict to valid times.",
-        "failure_modes": {
-            "overcounting": "Student includes invalid times like 1:61.",
-            "undercounting": "Student forgets two-digit hours.",
-            "arithmetic_slip": "Student computes 9 × 6 = 54 but misses 10:01, 11:11, 12:21."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "What is the volume of a hemisphere with radius 6 cm? (V = 2/3 πr³, π ≈ 3.14)",
-        "options": [
-            "113.04 cu cm",
-            "226.08 cu cm",
-            "339.12 cu cm",
-            "452.16 cu cm",
-            "904.32 cu cm"
-        ],
-        "correct_answer": "452.16 cu cm",
-        "ideal_solution": "V = (2/3)πr³ = (2/3)(3.14)(216) = (2/3)(678.24) = 452.16 cu cm. Socratic Hint: Compute r³ first, then multiply by 2π/3.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses full sphere: (4/3)(3.14)(216) = 904.32.",
-            "arithmetic_slip": "Student computes (2/3)(678.24) = 226.08 (dividing by 3 only).",
-            "premature_calculation": "Student computes πr³ = 678.24 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "In a race, Dave finishes before Amy. Amy finishes before Carol. Carol finishes before Bob. Who finishes last?",
-        "options": [
-            "Amy",
-            "Bob",
-            "Carol",
-            "Dave",
-            "Cannot determine"
-        ],
-        "correct_answer": "Bob",
-        "ideal_solution": "Order: Dave > Amy > Carol > Bob. Bob finishes last. Socratic Hint: Chain the clues together to build the full ordering.",
-        "failure_modes": {
-            "converse_error": "Student reverses the order and picks Dave.",
-            "premature_calculation": "Student picks Carol (second to last).",
-            "formula_misapplication": "Student picks Amy."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many numbers from 1 to 1000 are perfect cubes?",
-        "options": [
-            "3",
-            "5",
-            "8",
-            "10",
-            "31"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "∛1000 = 10. So perfect cubes are 1³=1, 2³=8, ..., 10³=1000. Count = 10. Socratic Hint: Find the cube root of 1000 to determine the count.",
-        "failure_modes": {
-            "off_by_one": "Student excludes 1000: count = 9.",
-            "overcounting": "Student computes √1000 ≈ 31.",
-            "formula_misapplication": "Student counts 1000/8 = 125."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Express 7/11 as a decimal (to 4 decimal places).",
-        "options": [
-            "0.6363",
-            "0.6364",
-            "0.6667",
-            "0.7000",
-            "0.7778"
-        ],
-        "correct_answer": "0.6364",
-        "ideal_solution": "7 ÷ 11 = 0.636363... ≈ 0.6364 (rounded to 4 places). Socratic Hint: Perform the long division of 7 by 11.",
-        "failure_modes": {
-            "premature_calculation": "Student writes 0.6363 (truncating instead of rounding).",
-            "formula_misapplication": "Student computes 7/10 = 0.7.",
-            "arithmetic_slip": "Student confuses with 2/3 = 0.6667."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A running track is a rectangle with semicircles on each short end. The rectangle is 100m × 40m. What is the track's total perimeter? (π ≈ 3.14)",
-        "options": [
-            "225.6 m",
-            "280 m",
-            "325.6 m",
-            "380 m",
-            "451.2 m"
-        ],
-        "correct_answer": "325.6 m",
-        "ideal_solution": "Two straight sides: 2 × 100 = 200 m. Two semicircles = one full circle with diameter 40m: C = πd = 3.14 × 40 = 125.6 m. Total = 200 + 125.6 = 325.6 m. Socratic Hint: The two semicircles form a full circle with diameter equal to the width.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds all 4 sides + circle: 280 + 125.6 = 405.6.",
-            "premature_calculation": "Student computes rectangle perimeter only: 280.",
-            "arithmetic_slip": "Student computes πd = 3.14 × 40 = 251.2."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A square number is also a triangular number. Which of these is both?",
-        "options": [
-            "9",
-            "16",
-            "25",
-            "36",
-            "49"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "Triangular numbers: 1,3,6,10,15,21,28,36,45,... Square numbers: 1,4,9,16,25,36,49,... 36 appears in both lists (T₈ = 36, 6² = 36). Socratic Hint: List triangular numbers and check which are perfect squares.",
-        "failure_modes": {
-            "premature_calculation": "Student picks 1 (too small, but technically correct).",
-            "formula_misapplication": "Student confuses triangular with square: picks 25.",
-            "arithmetic_slip": "Student computes T₈ = 28 instead of 36."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the GCF of 84, 126, and 210?",
-        "options": [
-            "6",
-            "7",
-            "14",
-            "21",
-            "42"
-        ],
-        "correct_answer": "42",
-        "ideal_solution": "84 = 2² × 3 × 7. 126 = 2 × 3² × 7. 210 = 2 × 3 × 5 × 7. GCF = 2 × 3 × 7 = 42. Socratic Hint: Find prime factorizations, take the minimum power of each shared prime.",
-        "failure_modes": {
-            "undercounting": "Student finds GCF(84,126) = 42 but doesn't verify with 210.",
-            "arithmetic_slip": "Student computes GCF = 21 (missing the factor of 2).",
-            "overcounting": "Student computes LCM instead of GCF."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: |(-3)² - 4 × 5|",
-        "options": [
-            "1",
-            "5",
-            "11",
-            "29",
-            "31"
-        ],
-        "correct_answer": "11",
-        "ideal_solution": "(-3)² = 9. 4 × 5 = 20. 9 - 20 = -11. |−11| = 11. Socratic Hint: Compute inside the absolute value first, then take the positive value.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes |-3|² - |4×5| = 9 - 20 = -11, forgets absolute value.",
-            "arithmetic_slip": "Student computes (-3)² = -9: |-9-20| = 29.",
-            "premature_calculation": "Student computes 9 - 20 = -11 and picks that."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A square has its corners at (0,0), (4,0), (4,4), and (0,4). What is the length of a diagonal?",
-        "options": [
-            "4",
-            "4√2",
-            "5.66",
-            "6",
-            "8"
-        ],
-        "correct_answer": "5.66",
-        "ideal_solution": "Diagonal = √(4² + 4²) = √32 = 4√2 ≈ 5.66. Socratic Hint: Use the distance formula between opposite corners.",
-        "failure_modes": {
-            "premature_calculation": "Student picks 4√2 (exact form, but question expects decimal).",
-            "formula_misapplication": "Student adds sides: 4 + 4 = 8.",
-            "arithmetic_slip": "Student computes √32 = 6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A bag has 4 red and 6 blue marbles. You draw 2 marbles without replacement. What is the probability both are red?",
-        "options": [
-            "2/15",
-            "4/25",
-            "4/15",
-            "16/100",
-            "2/5"
-        ],
-        "correct_answer": "2/15",
-        "ideal_solution": "P(1st red) = 4/10. P(2nd red | 1st red) = 3/9. P(both) = 4/10 × 3/9 = 12/90 = 2/15. Socratic Hint: After drawing the first red marble, there are fewer reds and fewer total marbles.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses replacement: (4/10)² = 16/100.",
-            "arithmetic_slip": "Student computes 12/90 = 4/15 (wrong simplification).",
-            "premature_calculation": "Student computes 4/10 = 2/5 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is 5! - 4!?",
-        "options": [
-            "1",
-            "20",
-            "24",
-            "96",
-            "120"
-        ],
-        "correct_answer": "96",
-        "ideal_solution": "5! = 120. 4! = 24. 120 - 24 = 96. Or: 5! - 4! = 4!(5-1) = 24 × 4 = 96. Socratic Hint: Compute each factorial, then subtract.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (5-4)! = 1! = 1.",
-            "arithmetic_slip": "Student computes 120 - 24 = 86.",
-            "premature_calculation": "Student computes 5! = 120 and picks that."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the weighted average if Test 1 (weight 30%) = 80 and Test 2 (weight 70%) = 90?",
-        "options": [
-            "84",
-            "85",
-            "86",
-            "87",
-            "88"
-        ],
-        "correct_answer": "87",
-        "ideal_solution": "Weighted avg = 0.30 × 80 + 0.70 × 90 = 24 + 63 = 87. Socratic Hint: Multiply each score by its weight, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes simple average: (80+90)/2 = 85.",
-            "arithmetic_slip": "Student computes 0.30 × 80 = 30: total = 93.",
-            "premature_calculation": "Student computes 0.30 × 80 = 24 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rectangular box is 10 cm × 6 cm × 4 cm. What is the length of the space diagonal?",
-        "options": [
-            "10 cm",
-            "12 cm",
-            "√152 cm",
-            "√200 cm",
-            "20 cm"
-        ],
-        "correct_answer": "√152 cm",
-        "ideal_solution": "Space diagonal = √(10² + 6² + 4²) = √(100 + 36 + 16) = √152 ≈ 12.33 cm. Socratic Hint: Use the 3D distance formula: √(l² + w² + h²).",
-        "failure_modes": {
-            "formula_misapplication": "Student uses 2D: √(100+36) = √136.",
-            "arithmetic_slip": "Student computes 100+36+16 = 200.",
-            "premature_calculation": "Student computes 10+6+4 = 20."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "How many ways can you arrange the letters in the word MATH?",
-        "options": [
-            "4",
-            "8",
-            "16",
-            "24",
-            "256"
-        ],
-        "correct_answer": "24",
-        "ideal_solution": "4 distinct letters. Arrangements = 4! = 4 × 3 × 2 × 1 = 24. Socratic Hint: The number of arrangements of n distinct items is n!.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 4⁴ = 256.",
-            "arithmetic_slip": "Student computes 4 × 3 × 2 = 24 (forgetting ×1, but correct).",
-            "undercounting": "Student computes 4 × 4 = 16."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the largest prime factor of 210?",
-        "options": [
-            "2",
-            "3",
-            "5",
-            "7",
-            "42"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "210 = 2 × 105 = 2 × 3 × 35 = 2 × 3 × 5 × 7. Largest prime factor = 7. Socratic Hint: Factor completely into primes.",
-        "failure_modes": {
-            "premature_calculation": "Student finds 210/2 = 105 and picks 105.",
-            "undercounting": "Student stops at 210 = 2 × 3 × 35: picks 35.",
-            "formula_misapplication": "Student computes 210/5 = 42 and picks that."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A shopkeeper mixes 5 kg of coffee at $12/kg with 3 kg at $8/kg. What is the cost per kg of the mixture?",
-        "options": [
-            "$9.50",
-            "$10.00",
-            "$10.50",
-            "$11.00",
-            "$20.00"
-        ],
-        "correct_answer": "$10.50",
-        "ideal_solution": "Total cost = 5×$12 + 3×$8 = $60 + $24 = $84. Total weight = 8 kg. Cost/kg = $84/8 = $10.50. Socratic Hint: Find total cost and total weight, then divide.",
-        "failure_modes": {
-            "formula_misapplication": "Student averages prices: ($12+$8)/2 = $10.",
-            "arithmetic_slip": "Student computes $84/8 = $11.",
-            "premature_calculation": "Student computes total cost = $84 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "The area of a rhombus is 120 sq cm. One diagonal is 10 cm. What is the other diagonal?",
-        "options": [
-            "12 cm",
-            "16 cm",
-            "20 cm",
-            "24 cm",
-            "30 cm"
-        ],
-        "correct_answer": "24 cm",
-        "ideal_solution": "Area = (d₁ × d₂)/2. 120 = (10 × d₂)/2. 240 = 10 × d₂. d₂ = 24 cm. Socratic Hint: Rearrange the rhombus area formula to solve for the unknown diagonal.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 120/10 = 12 (forgetting to double the area first).",
-            "formula_misapplication": "Student computes 120/10 = 12 (not doubling area).",
-            "premature_calculation": "Student computes d₁ × d₂ = 240 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If the pattern continues: 1, 4, 9, 16, 25, ..., what is the 12th term?",
-        "options": [
-            "121",
-            "132",
-            "144",
-            "156",
-            "169"
-        ],
-        "correct_answer": "144",
-        "ideal_solution": "Pattern is n²: 1², 2², 3², ... 12th term = 12² = 144. Socratic Hint: Recognize the pattern of perfect squares.",
-        "failure_modes": {
-            "off_by_one": "Student computes 11² = 121.",
-            "overcounting": "Student computes 13² = 169.",
-            "formula_misapplication": "Student computes 12 × 11 = 132."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many two-digit multiples of 7 are there?",
-        "options": [
-            "10",
-            "11",
-            "12",
-            "13",
-            "14"
-        ],
-        "correct_answer": "13",
-        "ideal_solution": "Smallest: 7 × 2 = 14. Largest: 7 × 14 = 98. Count = 14 - 2 + 1 = 13. Socratic Hint: Find the first and last multiplier that gives a two-digit result.",
-        "failure_modes": {
-            "off_by_one": "Student computes 14 - 2 = 12.",
-            "overcounting": "Student includes 7: count = 14.",
-            "arithmetic_slip": "Student computes 98/7 = 14, picks that."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 3.75 × 0.4?",
-        "options": [
-            "0.15",
-            "1.5",
-            "1.50",
-            "15",
-            "150"
-        ],
-        "correct_answer": "1.5",
-        "ideal_solution": "3.75 × 0.4 = 375 × 4 / 1000 = 1500/1000 = 1.5. Socratic Hint: Remove decimals, multiply, then place the decimal point.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 375 × 4 = 1500, places decimal wrong: 15.",
-            "formula_misapplication": "Student computes 3.75/0.4 = 9.375.",
-            "premature_calculation": "Student computes 3 × 0.4 = 1.2 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A hexagonal prism has a regular hexagonal base with side 4 cm and a height of 10 cm. What is the lateral surface area?",
-        "options": [
-            "120 sq cm",
-            "160 sq cm",
-            "200 sq cm",
-            "240 sq cm",
-            "960 sq cm"
-        ],
-        "correct_answer": "240 sq cm",
-        "ideal_solution": "Lateral SA = perimeter × height = (6 × 4) × 10 = 24 × 10 = 240 sq cm. Socratic Hint: The lateral surface area of any prism is base perimeter × height.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses base area × height = volume.",
-            "arithmetic_slip": "Student computes 6 × 4 × 10 = 200 (using 5 sides).",
-            "premature_calculation": "Student computes perimeter = 24 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A bat and ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?",
-        "options": [
-            "$0.05",
-            "$0.10",
-            "$0.15",
-            "$0.50",
-            "$1.00"
-        ],
-        "correct_answer": "$0.05",
-        "ideal_solution": "Let ball = x. Bat = x + 1. x + (x + 1) = 1.10. 2x = 0.10. x = $0.05. Socratic Hint: 'More than' means difference, not the bat's price. Set up an equation.",
-        "failure_modes": {
-            "premature_calculation": "Student assumes ball = $0.10 (the classic trap): bat = $1, total = $1.10, but bat is only $0.90 more.",
-            "arithmetic_slip": "Student computes 2x = 0.10, x = $0.10.",
-            "formula_misapplication": "Student computes $1.10 - $1.00 = $0.10."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the product of the first 4 prime numbers?",
-        "options": [
-            "24",
-            "30",
-            "120",
-            "210",
-            "2310"
-        ],
-        "correct_answer": "210",
-        "ideal_solution": "First 4 primes: 2, 3, 5, 7. Product = 2 × 3 × 5 × 7 = 210. Socratic Hint: List the first four prime numbers, then multiply.",
-        "failure_modes": {
-            "overcounting": "Student includes 1: 1×2×3×5 = 30.",
-            "undercounting": "Student uses 2×3×5 = 30 (only 3 primes).",
-            "arithmetic_slip": "Student computes 2×3×5×7 = 180."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A tank is 3/8 full. After pumping in 45 liters, it is 7/8 full. What is the tank's capacity?",
-        "options": [
-            "72 L",
-            "80 L",
-            "90 L",
-            "100 L",
-            "120 L"
-        ],
-        "correct_answer": "90 L",
-        "ideal_solution": "45 liters fills 7/8 - 3/8 = 4/8 = 1/2 of the tank. Full capacity = 45 × 2 = 90 L. Socratic Hint: Find what fraction 45 liters represents, then scale up.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 45/(3/8) = 120.",
-            "arithmetic_slip": "Student computes 7/8 - 3/8 = 3/8: capacity = 120.",
-            "premature_calculation": "Student computes 45/0.5 = 90 (correct shortcut)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A circle passes through the vertices of a square with side 10 cm. What is the circle's area? (π ≈ 3.14)",
-        "options": [
-            "78.5 sq cm",
-            "157 sq cm",
-            "200 sq cm",
-            "314 sq cm",
-            "628 sq cm"
-        ],
-        "correct_answer": "157 sq cm",
-        "ideal_solution": "Square diagonal = 10√2. Circle diameter = 10√2, radius = 5√2. Area = π(5√2)² = 3.14 × 50 = 157 sq cm. Socratic Hint: The circle's diameter equals the square's diagonal.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses side as diameter: π(5²) = 78.5.",
-            "arithmetic_slip": "Student computes π × 50 = 314.",
-            "premature_calculation": "Student finds diagonal = 10√2 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "In a knockout tournament with 32 teams, how many games are needed to determine a winner?",
-        "options": [
-            "16",
-            "24",
-            "31",
-            "32",
-            "64"
-        ],
-        "correct_answer": "31",
-        "ideal_solution": "Each game eliminates 1 team. To go from 32 to 1 winner: 31 eliminations = 31 games. Socratic Hint: Every team except the winner loses exactly once.",
-        "failure_modes": {
-            "off_by_one": "Student computes 32 games.",
-            "formula_misapplication": "Student computes 32/2 = 16.",
-            "overcounting": "Student computes 16+8+4+2+1 = 31 (correct by rounds)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A savings account has $2,000. It earns 4% compound interest annually. What is the balance after 2 years?",
-        "options": [
-            "$2,080",
-            "$2,160",
-            "$2,163.20",
-            "$2,240",
-            "$2,400"
-        ],
-        "correct_answer": "$2,163.20",
-        "ideal_solution": "After 1 year: $2,000 × 1.04 = $2,080. After 2 years: $2,080 × 1.04 = $2,163.20. Socratic Hint: Apply the interest to the new balance each year.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses simple interest: $2,000 + $160 = $2,160.",
-            "premature_calculation": "Student computes 1 year = $2,080 and stops.",
-            "arithmetic_slip": "Student computes $2,080 × 1.04 = $2,240."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A regular dodecagon (12 sides) has a perimeter of 60 cm. What is its side length?",
-        "options": [
-            "4 cm",
-            "5 cm",
-            "6 cm",
-            "10 cm",
-            "12 cm"
-        ],
-        "correct_answer": "5 cm",
-        "ideal_solution": "Side = 60/12 = 5 cm. Socratic Hint: Divide the perimeter by the number of sides.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides by 10: 60/10 = 6.",
-            "arithmetic_slip": "Student computes 60/12 = 4.",
-            "constraint_neglect": "Student confuses 12-gon with decagon: 60/10 = 6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the value of 2⁶ + 3³?",
-        "options": [
-            "35",
-            "72",
-            "91",
-            "100",
-            "127"
-        ],
-        "correct_answer": "91",
-        "ideal_solution": "2⁶ = 64. 3³ = 27. 64 + 27 = 91. Socratic Hint: Compute each power separately, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (2+3)⁶ = way too large.",
-            "arithmetic_slip": "Student computes 2⁶ = 32 (confusing with 2⁵): 32+27 = 59.",
-            "premature_calculation": "Student computes 2⁶ = 64 and stops."
-        }
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Evaluate: 2 + 3 × (8 - 2²) ÷ 2",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "14"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Exponent: 2²=4. Parentheses: 8-4=4. Multiply: 3×4=12. Divide: 12÷2=6. Add: 2+6=8. Socratic Hint: Follow PEMDAS strictly — exponents first, then parentheses, then multiplication/division left to right, then addition.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (2+3)×(8-4)÷2 = 10.",
+      "arithmetic_slip": "Student computes 3×4÷2 = 4, then 2+4=6.",
+      "premature_calculation": "Student computes 2+3=5 first."
     }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A regular pentagon has a side length of 8 cm. What is its perimeter?",
+    "options": [
+      "32 cm",
+      "40 cm",
+      "48 cm",
+      "56 cm",
+      "64 cm"
+    ],
+    "correct_answer": "40 cm",
+    "ideal_solution": "Perimeter = 5 × 8 = 40 cm. Socratic Hint: A regular pentagon has 5 equal sides.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 4 × 8 = 32 (square).",
+      "arithmetic_slip": "Student computes 5 × 8 = 48.",
+      "constraint_neglect": "Student confuses pentagon (5 sides) with hexagon (6 sides): 48."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A farmer has chickens and cows. He counts 20 heads and 56 legs. How many chickens does he have?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Let c = chickens, w = cows. c + w = 20. 2c + 4w = 56. From first: w = 20-c. Substitute: 2c + 4(20-c) = 56. 2c + 80 - 4c = 56. -2c = -24. c = 12. Socratic Hint: Set up two equations — one for heads, one for legs.",
+    "failure_modes": {
+      "converse_error": "Student finds cows = 8 and picks that.",
+      "arithmetic_slip": "Student solves -2c = -24 and gets c = 14.",
+      "formula_misapplication": "Student divides 56/20 = 2.8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the sum of all divisors of 36?",
+    "options": [
+      "55",
+      "78",
+      "91",
+      "96",
+      "108"
+    ],
+    "correct_answer": "91",
+    "ideal_solution": "Divisors of 36: 1,2,3,4,6,9,12,18,36. Sum = 1+2+3+4+6+9+12+18+36 = 91. Socratic Hint: List all divisors systematically, then add.",
+    "failure_modes": {
+      "undercounting": "Student misses 4 or 9: sum = 82 or 78.",
+      "overcounting": "Student includes 8: sum = 99.",
+      "premature_calculation": "Student sums proper divisors only: 55."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A store has a 'buy 2 get 1 free' deal on $9 items. How much do you pay for 7 items?",
+    "options": [
+      "$36",
+      "$45",
+      "$54",
+      "$63",
+      "$72"
+    ],
+    "correct_answer": "$45",
+    "ideal_solution": "For every 3 items, pay for 2: 7 items = 2 groups of 3 + 1 extra. Free items: 2. Paid items: 5. Cost = 5 × $9 = $45. Socratic Hint: Find how many free items you get from groups of 3.",
+    "failure_modes": {
+      "formula_misapplication": "Student pays for all 7: 7 × $9 = $63.",
+      "arithmetic_slip": "Student computes 6 paid: 6 × $9 = $54.",
+      "premature_calculation": "Student computes 2 groups = 4 paid: $36."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A cone has base radius 6 cm and height 8 cm. What is its slant height?",
+    "options": [
+      "7 cm",
+      "8 cm",
+      "10 cm",
+      "12 cm",
+      "14 cm"
+    ],
+    "correct_answer": "10 cm",
+    "ideal_solution": "Slant height = √(r² + h²) = √(36 + 64) = √100 = 10 cm. Socratic Hint: The radius, height, and slant height form a right triangle.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 6 + 8 = 14.",
+      "arithmetic_slip": "Student computes √100 = 12.",
+      "premature_calculation": "Student computes r² + h² = 100 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "How many rectangles (including squares) can be formed on a 3×3 grid of dots?",
+    "options": [
+      "9",
+      "16",
+      "24",
+      "36",
+      "45"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "Choose 2 horizontal lines from 4: C(4,2)=6. Choose 2 vertical lines from 4: C(4,2)=6. Total rectangles = 6 × 6 = 36. Socratic Hint: Each rectangle is defined by choosing 2 horizontal and 2 vertical lines.",
+    "failure_modes": {
+      "undercounting": "Student counts only squares: 9.",
+      "arithmetic_slip": "Student computes C(3,2) × C(3,2) = 9.",
+      "formula_misapplication": "Student computes 3 × 3 = 9."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the smallest number that when divided by 3, 4, and 5 leaves a remainder of 2 in each case?",
+    "options": [
+      "22",
+      "32",
+      "42",
+      "52",
+      "62"
+    ],
+    "correct_answer": "62",
+    "ideal_solution": "LCM(3,4,5) = 60. Number = 60 + 2 = 62. Check: 62/3 = 20 R2 ✓. 62/4 = 15 R2 ✓. 62/5 = 12 R2 ✓. Socratic Hint: Find the LCM of the divisors, then add the common remainder.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 3×4×5 + 2 = 62 (correct by coincidence).",
+      "arithmetic_slip": "Student computes LCM = 30: answer = 32.",
+      "off_by_one": "Student picks 60 (forgetting to add remainder)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What percentage of 250 is 45?",
+    "options": [
+      "14%",
+      "16%",
+      "18%",
+      "20%",
+      "22.5%"
+    ],
+    "correct_answer": "18%",
+    "ideal_solution": "Percentage = (45/250) × 100 = 0.18 × 100 = 18%. Socratic Hint: Divide the part by the whole, then multiply by 100.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 250/45 = 5.56.",
+      "arithmetic_slip": "Student computes 45/250 = 0.20 → 20%.",
+      "premature_calculation": "Student computes 45/250 = 0.18 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "Two concentric circles have radii 5 cm and 8 cm. What is the area of the ring between them? (π ≈ 3.14)",
+    "options": [
+      "28.26 sq cm",
+      "78.5 sq cm",
+      "122.46 sq cm",
+      "200.96 sq cm",
+      "282.6 sq cm"
+    ],
+    "correct_answer": "122.46 sq cm",
+    "ideal_solution": "Ring area = π(R² - r²) = 3.14(64 - 25) = 3.14 × 39 = 122.46 sq cm. Socratic Hint: Subtract the smaller circle's area from the larger one's.",
+    "failure_modes": {
+      "premature_calculation": "Student computes outer area only: 200.96.",
+      "arithmetic_slip": "Student computes 64-25 = 29: 3.14 × 29 = 91.06.",
+      "formula_misapplication": "Student computes π(8-5)² = 28.26."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If you write all integers from 1 to 100, how many times does the digit '1' appear?",
+    "options": [
+      "10",
+      "11",
+      "19",
+      "20",
+      "21"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "Ones place: 1,11,21,...,91 → 10 times. Tens place: 10,11,...,19 → 10 times. 100: 1 time. Total = 10 + 10 + 1 = 21. Socratic Hint: Count the digit in each position separately.",
+    "failure_modes": {
+      "undercounting": "Student counts numbers containing 1: 19 (forgetting 11 has two 1s).",
+      "overcounting": "Student counts 100 as two 1s.",
+      "formula_misapplication": "Student counts only ones digit: 10."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is 17 mod 5?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "17 ÷ 5 = 3 remainder 2. So 17 mod 5 = 2. Socratic Hint: Divide and find the remainder.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 17/5 = 3.4 and picks 3.",
+      "arithmetic_slip": "Student computes 17 - 15 = 3.",
+      "off_by_one": "Student computes 17 - 5×3 = 2 (correct) but picks 3."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A recipe requires a 2:3 ratio of sugar to flour. If you have 5 cups of sugar, how many cups of flour do you need?",
+    "options": [
+      "3.33 cups",
+      "5 cups",
+      "7.5 cups",
+      "10 cups",
+      "15 cups"
+    ],
+    "correct_answer": "7.5 cups",
+    "ideal_solution": "Sugar/Flour = 2/3. 5/F = 2/3. F = 5 × 3/2 = 7.5 cups. Socratic Hint: Set up a proportion and cross-multiply.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 5 × 2/3 = 3.33.",
+      "arithmetic_slip": "Student computes 5 × 3 = 15.",
+      "converse_error": "Student thinks 2:3 means flour:sugar."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A cylinder is inscribed in a cube of side 6 cm (base circle touches all 4 sides). What is the cylinder's volume? (π ≈ 3.14)",
+    "options": [
+      "56.52 cu cm",
+      "113.04 cu cm",
+      "169.56 cu cm",
+      "216 cu cm",
+      "339.12 cu cm"
+    ],
+    "correct_answer": "169.56 cu cm",
+    "ideal_solution": "Cylinder radius = 6/2 = 3 cm. Height = 6 cm. V = πr²h = 3.14 × 9 × 6 = 169.56 cu cm. Socratic Hint: The cylinder's diameter equals the cube's side.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses side as radius: 3.14 × 36 × 6 = 678.",
+      "premature_calculation": "Student computes cube volume: 216.",
+      "arithmetic_slip": "Student computes 3.14 × 9 × 6 = 113.04."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A clock strikes once at 1:00, twice at 2:00, etc. How many total strikes from 1:00 to 12:00 inclusive?",
+    "options": [
+      "66",
+      "72",
+      "78",
+      "84",
+      "144"
+    ],
+    "correct_answer": "78",
+    "ideal_solution": "Sum = 1+2+3+...+12 = 12×13/2 = 78. Socratic Hint: Use Gauss's formula for the sum of 1 to 12.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 12×13/2 = 72.",
+      "formula_misapplication": "Student computes 12 × 12 = 144.",
+      "off_by_one": "Student sums 1 to 11 = 66."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many numbers from 1 to 100 are divisible by both 3 and 7?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "14"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "LCM(3,7) = 21. Multiples of 21 up to 100: 21, 42, 63, 84. Count = 4. Socratic Hint: Find the LCM first, then count its multiples up to 100.",
+    "failure_modes": {
+      "overcounting": "Student counts multiples of 3 and 7 separately.",
+      "arithmetic_slip": "Student includes 105: count = 5.",
+      "formula_misapplication": "Student computes 100/3 + 100/7 = 47."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A ship sails 40 km north, 30 km east, then 10 km south. How far is it from the starting point?",
+    "options": [
+      "30 km",
+      "40 km",
+      "42.43 km",
+      "50 km",
+      "80 km"
+    ],
+    "correct_answer": "42.43 km",
+    "ideal_solution": "Net north = 40-10 = 30 km. East = 30 km. Distance = √(30² + 30²) = √1800 = 30√2 ≈ 42.43 km. Socratic Hint: Find net displacement in each direction, then use Pythagorean theorem.",
+    "failure_modes": {
+      "premature_calculation": "Student uses 40 north: √(1600+900) = 50.",
+      "formula_misapplication": "Student adds all: 40+30+10 = 80.",
+      "arithmetic_slip": "Student computes √1800 = 40."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A triangle has vertices at (0,0), (6,0), and (3,4). What is its area?",
+    "options": [
+      "6 sq units",
+      "8 sq units",
+      "10 sq units",
+      "12 sq units",
+      "24 sq units"
+    ],
+    "correct_answer": "12 sq units",
+    "ideal_solution": "Base = 6 (along x-axis). Height = 4 (perpendicular from (3,4) to x-axis). Area = (1/2)(6)(4) = 12 sq units. Socratic Hint: Use the base along the x-axis and the height as the y-coordinate of the apex.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes base × height = 24 (forgetting 1/2).",
+      "arithmetic_slip": "Student computes (1/2)(6)(4) = 8.",
+      "premature_calculation": "Student finds base = 6 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A box contains cards numbered 1-20. If you draw one card, what is the probability it is a prime number?",
+    "options": [
+      "1/4",
+      "2/5",
+      "3/10",
+      "7/20",
+      "8/20"
+    ],
+    "correct_answer": "8/20",
+    "ideal_solution": "Primes 1-20: 2,3,5,7,11,13,17,19 = 8 primes. P = 8/20 = 2/5. Socratic Hint: List all primes up to 20, then divide by total.",
+    "failure_modes": {
+      "overcounting": "Student includes 1: 9/20.",
+      "undercounting": "Student misses 19: 7/20.",
+      "formula_misapplication": "Student computes 20/8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the smallest perfect square greater than 200?",
+    "options": [
+      "196",
+      "210",
+      "225",
+      "256",
+      "289"
+    ],
+    "correct_answer": "225",
+    "ideal_solution": "√200 ≈ 14.14. Next integer = 15. 15² = 225. Check: 14² = 196 < 200. 15² = 225 > 200. Socratic Hint: Find √200 and round up to the next integer.",
+    "failure_modes": {
+      "off_by_one": "Student picks 196 (which is < 200).",
+      "overcounting": "Student picks 256 = 16².",
+      "arithmetic_slip": "Student computes 15² = 210."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A palindromic time reads the same forwards and backwards (e.g., 12:21). How many palindromic times exist on a 12-hour clock?",
+    "options": [
+      "16",
+      "38",
+      "57",
+      "95",
+      "143"
+    ],
+    "correct_answer": "57",
+    "ideal_solution": "Format H:MM or HH:MM. 1:01-1:51 (6), 2:02-2:52 (6), ..., 9:09-9:59 (6) = 54. 10:01 (1), 11:11 (1), 12:21 (1) = 3. Total = 57. Socratic Hint: For single-digit hours, the tens digit of minutes equals the hour and ones digit ranges 0-5. For two-digit hours, restrict to valid times.",
+    "failure_modes": {
+      "overcounting": "Student includes invalid times like 1:61.",
+      "undercounting": "Student forgets two-digit hours.",
+      "arithmetic_slip": "Student computes 9 × 6 = 54 but misses 10:01, 11:11, 12:21."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "What is the volume of a hemisphere with radius 6 cm? (V = 2/3 πr³, π ≈ 3.14)",
+    "options": [
+      "113.04 cu cm",
+      "226.08 cu cm",
+      "339.12 cu cm",
+      "452.16 cu cm",
+      "904.32 cu cm"
+    ],
+    "correct_answer": "452.16 cu cm",
+    "ideal_solution": "V = (2/3)πr³ = (2/3)(3.14)(216) = (2/3)(678.24) = 452.16 cu cm. Socratic Hint: Compute r³ first, then multiply by 2π/3.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses full sphere: (4/3)(3.14)(216) = 904.32.",
+      "arithmetic_slip": "Student computes (2/3)(678.24) = 226.08 (dividing by 3 only).",
+      "premature_calculation": "Student computes πr³ = 678.24 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "In a race, Dave finishes before Amy. Amy finishes before Carol. Carol finishes before Bob. Who finishes last?",
+    "options": [
+      "Amy",
+      "Bob",
+      "Carol",
+      "Dave",
+      "Cannot determine"
+    ],
+    "correct_answer": "Bob",
+    "ideal_solution": "Order: Dave > Amy > Carol > Bob. Bob finishes last. Socratic Hint: Chain the clues together to build the full ordering.",
+    "failure_modes": {
+      "converse_error": "Student reverses the order and picks Dave.",
+      "premature_calculation": "Student picks Carol (second to last).",
+      "formula_misapplication": "Student picks Amy."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many numbers from 1 to 1000 are perfect cubes?",
+    "options": [
+      "3",
+      "5",
+      "8",
+      "10",
+      "31"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "∛1000 = 10. So perfect cubes are 1³=1, 2³=8, ..., 10³=1000. Count = 10. Socratic Hint: Find the cube root of 1000 to determine the count.",
+    "failure_modes": {
+      "off_by_one": "Student excludes 1000: count = 9.",
+      "overcounting": "Student computes √1000 ≈ 31.",
+      "formula_misapplication": "Student counts 1000/8 = 125."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Express 7/11 as a decimal (to 4 decimal places).",
+    "options": [
+      "0.6363",
+      "0.6364",
+      "0.6667",
+      "0.7000",
+      "0.7778"
+    ],
+    "correct_answer": "0.6364",
+    "ideal_solution": "7 ÷ 11 = 0.636363... ≈ 0.6364 (rounded to 4 places). Socratic Hint: Perform the long division of 7 by 11.",
+    "failure_modes": {
+      "premature_calculation": "Student writes 0.6363 (truncating instead of rounding).",
+      "formula_misapplication": "Student computes 7/10 = 0.7.",
+      "arithmetic_slip": "Student confuses with 2/3 = 0.6667."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A running track is a rectangle with semicircles on each short end. The rectangle is 100m × 40m. What is the track's total perimeter? (π ≈ 3.14)",
+    "options": [
+      "225.6 m",
+      "280 m",
+      "325.6 m",
+      "380 m",
+      "451.2 m"
+    ],
+    "correct_answer": "325.6 m",
+    "ideal_solution": "Two straight sides: 2 × 100 = 200 m. Two semicircles = one full circle with diameter 40m: C = πd = 3.14 × 40 = 125.6 m. Total = 200 + 125.6 = 325.6 m. Socratic Hint: The two semicircles form a full circle with diameter equal to the width.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds all 4 sides + circle: 280 + 125.6 = 405.6.",
+      "premature_calculation": "Student computes rectangle perimeter only: 280.",
+      "arithmetic_slip": "Student computes πd = 3.14 × 40 = 251.2."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A square number is also a triangular number. Which of 9, 16, 25, 36, and 49 is both?",
+    "options": [
+      "9",
+      "16",
+      "25",
+      "36",
+      "49"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "Triangular numbers: 1,3,6,10,15,21,28,36,45,... Square numbers: 1,4,9,16,25,36,49,... 36 appears in both lists (T₈ = 36, 6² = 36). Socratic Hint: List triangular numbers and check which are perfect squares.",
+    "failure_modes": {
+      "premature_calculation": "Student picks 1 (too small, but technically correct).",
+      "formula_misapplication": "Student confuses triangular with square: picks 25.",
+      "arithmetic_slip": "Student computes T₈ = 28 instead of 36."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the GCF of 84, 126, and 210?",
+    "options": [
+      "6",
+      "7",
+      "14",
+      "21",
+      "42"
+    ],
+    "correct_answer": "42",
+    "ideal_solution": "84 = 2² × 3 × 7. 126 = 2 × 3² × 7. 210 = 2 × 3 × 5 × 7. GCF = 2 × 3 × 7 = 42. Socratic Hint: Find prime factorizations, take the minimum power of each shared prime.",
+    "failure_modes": {
+      "undercounting": "Student finds GCF(84,126) = 42 but doesn't verify with 210.",
+      "arithmetic_slip": "Student computes GCF = 21 (missing the factor of 2).",
+      "overcounting": "Student computes LCM instead of GCF."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Evaluate: |(-3)² - 4 × 5|",
+    "options": [
+      "1",
+      "5",
+      "11",
+      "29",
+      "31"
+    ],
+    "correct_answer": "11",
+    "ideal_solution": "(-3)² = 9. 4 × 5 = 20. 9 - 20 = -11. |−11| = 11. Socratic Hint: Compute inside the absolute value first, then take the positive value.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes |-3|² - |4×5| = 9 - 20 = -11, forgets absolute value.",
+      "arithmetic_slip": "Student computes (-3)² = -9: |-9-20| = 29.",
+      "premature_calculation": "Student computes 9 - 20 = -11 and picks that."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A square has its corners at (0,0), (4,0), (4,4), and (0,4). What is the length of a diagonal?",
+    "options": [
+      "4",
+      "4√2",
+      "5.66",
+      "6",
+      "8"
+    ],
+    "correct_answer": "5.66",
+    "ideal_solution": "Diagonal = √(4² + 4²) = √32 = 4√2 ≈ 5.66. Socratic Hint: Use the distance formula between opposite corners.",
+    "failure_modes": {
+      "premature_calculation": "Student picks 4√2 (exact form, but question expects decimal).",
+      "formula_misapplication": "Student adds sides: 4 + 4 = 8.",
+      "arithmetic_slip": "Student computes √32 = 6."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A bag has 4 red and 6 blue marbles. You draw 2 marbles without replacement. What is the probability both are red?",
+    "options": [
+      "2/15",
+      "4/25",
+      "4/15",
+      "16/100",
+      "2/5"
+    ],
+    "correct_answer": "2/15",
+    "ideal_solution": "P(1st red) = 4/10. P(2nd red | 1st red) = 3/9. P(both) = 4/10 × 3/9 = 12/90 = 2/15. Socratic Hint: After drawing the first red marble, there are fewer reds and fewer total marbles.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses replacement: (4/10)² = 16/100.",
+      "arithmetic_slip": "Student computes 12/90 = 4/15 (wrong simplification).",
+      "premature_calculation": "Student computes 4/10 = 2/5 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is 5! - 4!?",
+    "options": [
+      "1",
+      "20",
+      "24",
+      "96",
+      "120"
+    ],
+    "correct_answer": "96",
+    "ideal_solution": "5! = 120. 4! = 24. 120 - 24 = 96. Or: 5! - 4! = 4!(5-1) = 24 × 4 = 96. Socratic Hint: Compute each factorial, then subtract.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (5-4)! = 1! = 1.",
+      "arithmetic_slip": "Student computes 120 - 24 = 86.",
+      "premature_calculation": "Student computes 5! = 120 and picks that."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is the weighted average if Test 1 (weight 30%) = 80 and Test 2 (weight 70%) = 90?",
+    "options": [
+      "84",
+      "85",
+      "86",
+      "87",
+      "88"
+    ],
+    "correct_answer": "87",
+    "ideal_solution": "Weighted avg = 0.30 × 80 + 0.70 × 90 = 24 + 63 = 87. Socratic Hint: Multiply each score by its weight, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes simple average: (80+90)/2 = 85.",
+      "arithmetic_slip": "Student computes 0.30 × 80 = 30: total = 93.",
+      "premature_calculation": "Student computes 0.30 × 80 = 24 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A rectangular box is 10 cm × 6 cm × 4 cm. What is the length of the space diagonal?",
+    "options": [
+      "10 cm",
+      "12 cm",
+      "√152 cm",
+      "√200 cm",
+      "20 cm"
+    ],
+    "correct_answer": "√152 cm",
+    "ideal_solution": "Space diagonal = √(10² + 6² + 4²) = √(100 + 36 + 16) = √152 ≈ 12.33 cm. Socratic Hint: Use the 3D distance formula: √(l² + w² + h²).",
+    "failure_modes": {
+      "formula_misapplication": "Student uses 2D: √(100+36) = √136.",
+      "arithmetic_slip": "Student computes 100+36+16 = 200.",
+      "premature_calculation": "Student computes 10+6+4 = 20."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "How many ways can you arrange the letters in the word MATH?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "24",
+      "256"
+    ],
+    "correct_answer": "24",
+    "ideal_solution": "4 distinct letters. Arrangements = 4! = 4 × 3 × 2 × 1 = 24. Socratic Hint: The number of arrangements of n distinct items is n!.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 4⁴ = 256.",
+      "arithmetic_slip": "Student computes 4 × 3 × 2 = 24 (forgetting ×1, but correct).",
+      "undercounting": "Student computes 4 × 4 = 16."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the largest prime factor of 210?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "7",
+      "42"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "210 = 2 × 105 = 2 × 3 × 35 = 2 × 3 × 5 × 7. Largest prime factor = 7. Socratic Hint: Factor completely into primes.",
+    "failure_modes": {
+      "premature_calculation": "Student finds 210/2 = 105 and picks 105.",
+      "undercounting": "Student stops at 210 = 2 × 3 × 35: picks 35.",
+      "formula_misapplication": "Student computes 210/5 = 42 and picks that."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A shopkeeper mixes 5 kg of coffee at $12/kg with 3 kg at $8/kg. What is the cost per kg of the mixture?",
+    "options": [
+      "$9.50",
+      "$10.00",
+      "$10.50",
+      "$11.00",
+      "$20.00"
+    ],
+    "correct_answer": "$10.50",
+    "ideal_solution": "Total cost = 5×$12 + 3×$8 = $60 + $24 = $84. Total weight = 8 kg. Cost/kg = $84/8 = $10.50. Socratic Hint: Find total cost and total weight, then divide.",
+    "failure_modes": {
+      "formula_misapplication": "Student averages prices: ($12+$8)/2 = $10.",
+      "arithmetic_slip": "Student computes $84/8 = $11.",
+      "premature_calculation": "Student computes total cost = $84 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "The area of a rhombus is 120 sq cm. One diagonal is 10 cm. What is the other diagonal?",
+    "options": [
+      "12 cm",
+      "16 cm",
+      "20 cm",
+      "24 cm",
+      "30 cm"
+    ],
+    "correct_answer": "24 cm",
+    "ideal_solution": "Area = (d₁ × d₂)/2. 120 = (10 × d₂)/2. 240 = 10 × d₂. d₂ = 24 cm. Socratic Hint: Rearrange the rhombus area formula to solve for the unknown diagonal.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 120/10 = 12 (forgetting to double the area first).",
+      "formula_misapplication": "Student computes 120/10 = 12 (not doubling area).",
+      "premature_calculation": "Student computes d₁ × d₂ = 240 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If the pattern continues: 1, 4, 9, 16, 25, ..., what is the 12th term?",
+    "options": [
+      "121",
+      "132",
+      "144",
+      "156",
+      "169"
+    ],
+    "correct_answer": "144",
+    "ideal_solution": "Pattern is n²: 1², 2², 3², ... 12th term = 12² = 144. Socratic Hint: Recognize the pattern of perfect squares.",
+    "failure_modes": {
+      "off_by_one": "Student computes 11² = 121.",
+      "overcounting": "Student computes 13² = 169.",
+      "formula_misapplication": "Student computes 12 × 11 = 132."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many two-digit multiples of 7 are there?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct_answer": "13",
+    "ideal_solution": "Smallest: 7 × 2 = 14. Largest: 7 × 14 = 98. Count = 14 - 2 + 1 = 13. Socratic Hint: Find the first and last multiplier that gives a two-digit result.",
+    "failure_modes": {
+      "off_by_one": "Student computes 14 - 2 = 12.",
+      "overcounting": "Student includes 7: count = 14.",
+      "arithmetic_slip": "Student computes 98/7 = 14, picks that."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 3.75 × 0.4?",
+    "options": [
+      "0.15",
+      "1.5",
+      "1.50",
+      "15",
+      "150"
+    ],
+    "correct_answer": "1.5",
+    "ideal_solution": "3.75 × 0.4 = 375 × 4 / 1000 = 1500/1000 = 1.5. Socratic Hint: Remove decimals, multiply, then place the decimal point.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 375 × 4 = 1500, places decimal wrong: 15.",
+      "formula_misapplication": "Student computes 3.75/0.4 = 9.375.",
+      "premature_calculation": "Student computes 3 × 0.4 = 1.2 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A hexagonal prism has a regular hexagonal base with side 4 cm and a height of 10 cm. What is the lateral surface area?",
+    "options": [
+      "120 sq cm",
+      "160 sq cm",
+      "200 sq cm",
+      "240 sq cm",
+      "960 sq cm"
+    ],
+    "correct_answer": "240 sq cm",
+    "ideal_solution": "Lateral SA = perimeter × height = (6 × 4) × 10 = 24 × 10 = 240 sq cm. Socratic Hint: The lateral surface area of any prism is base perimeter × height.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses base area × height = volume.",
+      "arithmetic_slip": "Student computes 6 × 4 × 10 = 200 (using 5 sides).",
+      "premature_calculation": "Student computes perimeter = 24 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A bat and ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?",
+    "options": [
+      "$0.05",
+      "$0.10",
+      "$0.15",
+      "$0.50",
+      "$1.00"
+    ],
+    "correct_answer": "$0.05",
+    "ideal_solution": "Let ball = x. Bat = x + 1. x + (x + 1) = 1.10. 2x = 0.10. x = $0.05. Socratic Hint: 'More than' means difference, not the bat's price. Set up an equation.",
+    "failure_modes": {
+      "premature_calculation": "Student assumes ball = $0.10 (the classic trap): bat = $1, total = $1.10, but bat is only $0.90 more.",
+      "arithmetic_slip": "Student computes 2x = 0.10, x = $0.10.",
+      "formula_misapplication": "Student computes $1.10 - $1.00 = $0.10."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the product of the first 4 prime numbers?",
+    "options": [
+      "24",
+      "30",
+      "120",
+      "210",
+      "2310"
+    ],
+    "correct_answer": "210",
+    "ideal_solution": "First 4 primes: 2, 3, 5, 7. Product = 2 × 3 × 5 × 7 = 210. Socratic Hint: List the first four prime numbers, then multiply.",
+    "failure_modes": {
+      "overcounting": "Student includes 1: 1×2×3×5 = 30.",
+      "undercounting": "Student uses 2×3×5 = 30 (only 3 primes).",
+      "arithmetic_slip": "Student computes 2×3×5×7 = 180."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A tank is 3/8 full. After pumping in 45 liters, it is 7/8 full. What is the tank's capacity?",
+    "options": [
+      "72 L",
+      "80 L",
+      "90 L",
+      "100 L",
+      "120 L"
+    ],
+    "correct_answer": "90 L",
+    "ideal_solution": "45 liters fills 7/8 - 3/8 = 4/8 = 1/2 of the tank. Full capacity = 45 × 2 = 90 L. Socratic Hint: Find what fraction 45 liters represents, then scale up.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 45/(3/8) = 120.",
+      "arithmetic_slip": "Student computes 7/8 - 3/8 = 3/8: capacity = 120.",
+      "premature_calculation": "Student computes 45/0.5 = 90 (correct shortcut)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A circle passes through the vertices of a square with side 10 cm. What is the circle's area? (π ≈ 3.14)",
+    "options": [
+      "78.5 sq cm",
+      "157 sq cm",
+      "200 sq cm",
+      "314 sq cm",
+      "628 sq cm"
+    ],
+    "correct_answer": "157 sq cm",
+    "ideal_solution": "Square diagonal = 10√2. Circle diameter = 10√2, radius = 5√2. Area = π(5√2)² = 3.14 × 50 = 157 sq cm. Socratic Hint: The circle's diameter equals the square's diagonal.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses side as diameter: π(5²) = 78.5.",
+      "arithmetic_slip": "Student computes π × 50 = 314.",
+      "premature_calculation": "Student finds diagonal = 10√2 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "In a knockout tournament with 32 teams, how many games are needed to determine a winner?",
+    "options": [
+      "16",
+      "24",
+      "31",
+      "32",
+      "64"
+    ],
+    "correct_answer": "31",
+    "ideal_solution": "Each game eliminates 1 team. To go from 32 to 1 winner: 31 eliminations = 31 games. Socratic Hint: Every team except the winner loses exactly once.",
+    "failure_modes": {
+      "off_by_one": "Student computes 32 games.",
+      "formula_misapplication": "Student computes 32/2 = 16.",
+      "overcounting": "Student computes 16+8+4+2+1 = 31 (correct by rounds)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A savings account has $2,000. It earns 4% compound interest annually. What is the balance after 2 years?",
+    "options": [
+      "$2,080",
+      "$2,160",
+      "$2,163.20",
+      "$2,240",
+      "$2,400"
+    ],
+    "correct_answer": "$2,163.20",
+    "ideal_solution": "After 1 year: $2,000 × 1.04 = $2,080. After 2 years: $2,080 × 1.04 = $2,163.20. Socratic Hint: Apply the interest to the new balance each year.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses simple interest: $2,000 + $160 = $2,160.",
+      "premature_calculation": "Student computes 1 year = $2,080 and stops.",
+      "arithmetic_slip": "Student computes $2,080 × 1.04 = $2,240."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A regular dodecagon (12 sides) has a perimeter of 60 cm. What is its side length?",
+    "options": [
+      "4 cm",
+      "5 cm",
+      "6 cm",
+      "10 cm",
+      "12 cm"
+    ],
+    "correct_answer": "5 cm",
+    "ideal_solution": "Side = 60/12 = 5 cm. Socratic Hint: Divide the perimeter by the number of sides.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides by 10: 60/10 = 6.",
+      "arithmetic_slip": "Student computes 60/12 = 4.",
+      "constraint_neglect": "Student confuses 12-gon with decagon: 60/10 = 6."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the value of 2⁶ + 3³?",
+    "options": [
+      "35",
+      "72",
+      "91",
+      "100",
+      "127"
+    ],
+    "correct_answer": "91",
+    "ideal_solution": "2⁶ = 64. 3³ = 27. 64 + 27 = 91. Socratic Hint: Compute each power separately, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (2+3)⁶ = way too large.",
+      "arithmetic_slip": "Student computes 2⁶ = 32 (confusing with 2⁵): 32+27 = 59.",
+      "premature_calculation": "Student computes 2⁶ = 64 and stops."
+    }
+  }
 ]

@@ -24,8 +24,8 @@ def rebuild_grade_5():
     print(f"Removed {duplicate_count} duplicates.")
     print(f"Final count: {len(all_questions)} unique questions.")
     
-    difficulty_order = {"beginner": 1, "intermediate": 2, "advanced": 3, "master": 4, "grandmaster": 5, "gifted": 6}
-    all_questions.sort(key=lambda x: (x.get('level', 0), difficulty_order.get(x.get('difficulty', ''), 99)))
+    # Sort questions by level
+    all_questions.sort(key=lambda x: x.get('level', 0))
     
     output_file = 'seed_content/seed_grade_5.json'
     with open(output_file, 'w') as f:

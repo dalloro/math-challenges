@@ -36,6 +36,19 @@ export function QuestionWizard() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
+  const isBlindModeSafe = useMemo(() => {
+    const forbiddenPhrases = [
+      'which of these',
+      'which of the following',
+      'which one',
+      'which of the below',
+      'following numbers',
+      'following fractions'
+    ];
+    const qLower = formData.question.toLowerCase();
+    return !forbiddenPhrases.some(phrase => qLower.includes(phrase));
+  }, [formData.question]);
+
   const isValid = useMemo(() => {
     const hasQuestion = formData.question.trim().length >= 5;
     const hasType = formData.type.trim().length > 0;
@@ -43,9 +56,9 @@ export function QuestionWizard() {
     const hasCorrectAnswer = formData.correct_answer !== '' && formData.options.includes(formData.correct_answer);
     const hasSolution = formData.ideal_solution.trim().length >= 10;
     const hasValidFailures = formData.failure_modes_list.every(f => f.title.trim() !== '' && f.content.trim() !== '');
-    
-    return hasQuestion && hasType && hasOptions && hasCorrectAnswer && hasSolution && hasValidFailures;
-  }, [formData]);
+
+    return hasQuestion && hasType && hasOptions && hasCorrectAnswer && hasSolution && hasValidFailures && isBlindModeSafe;
+  }, [formData, isBlindModeSafe]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -57,12 +70,12 @@ export function QuestionWizard() {
     try {
       // 1. Duplicate Check
       const q = query(
-        collection(db, 'questions'), 
+        collection(db, 'questions'),
         where('grade', '==', formData.grade),
         where('question', '==', formData.question.trim())
       );
       const snapshot = await getDocs(q);
-      
+
       if (!snapshot.empty) {
         throw new Error('A question with this exact text already exists in this grade.');
       }
@@ -78,11 +91,19 @@ export function QuestionWizard() {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { failure_modes_list, ...submitData } = formData;
 
+      const getDifficulty = (level: number) => {
+        if (level <= 2) return 'beginner';
+        if (level <= 4) return 'intermediate';
+        if (level <= 6) return 'advanced';
+        if (level <= 8) return 'expert';
+        return 'master';
+      };
+
       await addDoc(collection(db, 'questions'), {
         ...submitData,
         failure_modes,
         question: formData.question.trim(),
-        difficulty: 'gifted',
+        difficulty: getDifficulty(submitData.level),
         createdAt: serverTimestamp()
       });
 
@@ -134,32 +155,32 @@ export function QuestionWizard() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="space-y-2">
           <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Grade Level</label>
-          <select 
+          <select
             value={formData.grade}
-            onChange={(e) => setFormData({...formData, grade: parseInt(e.target.value)})}
+            onChange={(e) => setFormData({ ...formData, grade: parseInt(e.target.value) })}
             className="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none font-bold"
           >
-            {Array.from({length: 12}, (_, i) => i + 1).map(g => <option key={g} value={g}>Grade {g}</option>)}
+            {Array.from({ length: 12 }, (_, i) => i + 1).map(g => <option key={g} value={g}>Grade {g}</option>)}
           </select>
         </div>
         <div className="space-y-2">
           <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Difficulty Level</label>
-          <select 
+          <select
             value={formData.level}
-            onChange={(e) => setFormData({...formData, level: parseInt(e.target.value)})}
+            onChange={(e) => setFormData({ ...formData, level: parseInt(e.target.value) })}
             className="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none font-bold"
           >
-            {Array.from({length: 10}, (_, i) => i + 1).map(l => <option key={l} value={l}>Level {l}</option>)}
+            {Array.from({ length: 10 }, (_, i) => i + 1).map(l => <option key={l} value={l}>Level {l}</option>)}
           </select>
         </div>
         <div className="space-y-2">
           <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Question Type</label>
-          <input 
+          <input
             type="text"
             list="type-suggestions"
             placeholder="e.g. Number Theory"
             value={formData.type}
-            onChange={(e) => setFormData({...formData, type: e.target.value})}
+            onChange={(e) => setFormData({ ...formData, type: e.target.value })}
             className="w-full p-3 rounded-xl border border-gray-200 bg-gray-50 focus:ring-2 focus:ring-blue-500 outline-none font-bold"
           />
           <datalist id="type-suggestions">
@@ -174,12 +195,18 @@ export function QuestionWizard() {
 
       <div className="space-y-2">
         <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Question Content</label>
-        <textarea 
+        <textarea
           placeholder="Enter the math challenge..."
           value={formData.question}
-          onChange={(e) => setFormData({...formData, question: e.target.value})}
-          className="w-full h-32 p-4 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none text-lg resize-none"
+          onChange={(e) => setFormData({ ...formData, question: e.target.value })}
+          className={`w-full h-32 p-4 rounded-2xl border ${!isBlindModeSafe && formData.question.length > 10 ? 'border-amber-400 bg-amber-50/30' : 'border-gray-200'} focus:ring-2 focus:ring-blue-500 outline-none text-lg resize-none transition-colors`}
         />
+        {!isBlindModeSafe && formData.question.length > 10 && (
+          <div className="p-3 bg-amber-50 rounded-xl text-amber-700 text-[10px] font-bold uppercase tracking-tight flex items-center space-x-2 animate-in fade-in slide-in-from-top-1">
+            <AlertCircle size={14} />
+            <span>Rule 9 Violation: Avoid phrases like "Which of these". Embed options directly in text for Blind Mode safety.</span>
+          </div>
+        )}
       </div>
 
       <div className="space-y-4">
@@ -190,7 +217,7 @@ export function QuestionWizard() {
               <span className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center font-bold text-gray-500 text-xs">
                 {String.fromCharCode(65 + idx)}
               </span>
-              <input 
+              <input
                 type="text"
                 placeholder={`Option ${String.fromCharCode(65 + idx)}`}
                 value={opt}
@@ -199,12 +226,11 @@ export function QuestionWizard() {
               />
               <button
                 type="button"
-                onClick={() => setFormData({...formData, correct_answer: opt})}
-                className={`px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all ${
-                  formData.correct_answer === opt && opt !== '' 
-                    ? 'bg-green-500 text-white shadow-lg' 
+                onClick={() => setFormData({ ...formData, correct_answer: opt })}
+                className={`px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all ${formData.correct_answer === opt && opt !== ''
+                    ? 'bg-green-500 text-white shadow-lg'
                     : 'bg-gray-100 text-gray-400 hover:bg-gray-200'
-                }`}
+                  }`}
               >
                 {formData.correct_answer === opt && opt !== '' ? 'Correct' : 'Set Correct'}
               </button>
@@ -217,8 +243,8 @@ export function QuestionWizard() {
         <div className="flex justify-between items-center">
           <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Failure Modes (Max 3)</label>
           {formData.failure_modes_list.length < 3 && (
-            <button 
-              type="button" 
+            <button
+              type="button"
               onClick={addFailureMode}
               className="text-[10px] font-black uppercase tracking-widest text-blue-600 hover:text-blue-800"
             >
@@ -226,26 +252,26 @@ export function QuestionWizard() {
             </button>
           )}
         </div>
-        
+
         <div className="space-y-4">
           {formData.failure_modes_list.map((fm, idx) => (
             <div key={idx} className="p-4 bg-gray-50 rounded-2xl border border-gray-200 space-y-3 relative group">
               {formData.failure_modes_list.length > 1 && (
-                <button 
+                <button
                   onClick={() => removeFailureMode(idx)}
                   className="absolute top-4 right-4 text-gray-300 hover:text-red-500"
                 >
                   <Trash2 size={16} />
                 </button>
               )}
-              <input 
+              <input
                 type="text"
                 placeholder="Mode Title (e.g. Calculation Error)"
                 value={fm.title}
                 onChange={(e) => updateFailureMode(idx, 'title', e.target.value)}
                 className="w-full bg-transparent border-b border-gray-200 focus:border-blue-500 outline-none text-sm font-bold pb-1"
               />
-              <textarea 
+              <textarea
                 placeholder="Feedback for this specific error..."
                 value={fm.content}
                 onChange={(e) => updateFailureMode(idx, 'content', e.target.value)}
@@ -258,10 +284,10 @@ export function QuestionWizard() {
 
       <div className="space-y-2">
         <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Ideal Socratic Solution</label>
-        <textarea 
+        <textarea
           placeholder="Explain the step-by-step logic..."
           value={formData.ideal_solution}
-          onChange={(e) => setFormData({...formData, ideal_solution: e.target.value})}
+          onChange={(e) => setFormData({ ...formData, ideal_solution: e.target.value })}
           className="w-full h-48 p-4 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none text-sm leading-relaxed"
         />
       </div>
@@ -269,9 +295,8 @@ export function QuestionWizard() {
       <div className="flex items-center justify-between pt-6 border-t border-gray-100">
         <div className="flex-1 mr-8">
           {status && (
-            <div className={`p-4 rounded-xl flex items-center space-x-3 animate-in fade-in duration-300 ${
-              status.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'
-            }`}>
+            <div className={`p-4 rounded-xl flex items-center space-x-3 animate-in fade-in duration-300 ${status.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'
+              }`}>
               {status.type === 'success' ? <Check size={18} /> : <AlertCircle size={18} />}
               <span className="text-xs font-bold uppercase tracking-tight">{status.message}</span>
             </div>

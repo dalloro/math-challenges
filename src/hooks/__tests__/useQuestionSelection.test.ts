@@ -7,10 +7,10 @@ import type { Question } from '../useQuestions';
 vi.mock('../../services/storage');
 
 const mockQuestions: Question[] = [
-  { id: '1', grade: 1, level: 1, type: 'Arithmetic', question: 'Q1', options: [], correct_answer: '', ideal_solution: '', difficulty: 'gifted', failure_modes: {} },
-  { id: '2', grade: 1, level: 1, type: 'Arithmetic', question: 'Q2', options: [], correct_answer: '', ideal_solution: '', difficulty: 'gifted', failure_modes: {} },
-  { id: '3', grade: 1, level: 1, type: 'Logic', question: 'Q3', options: [], correct_answer: '', ideal_solution: '', difficulty: 'gifted', failure_modes: {} },
-  { id: '4', grade: 1, level: 2, type: 'Arithmetic', question: 'Q4', options: [], correct_answer: '', ideal_solution: '', difficulty: 'gifted', failure_modes: {} },
+  { id: '1', grade: 1, level: 1, type: 'Arithmetic', question: 'Q1', options: [], correct_answer: '', ideal_solution: '', difficulty: 'beginner', failure_modes: {} },
+  { id: '2', grade: 1, level: 1, type: 'Arithmetic', question: 'Q2', options: [], correct_answer: '', ideal_solution: '', difficulty: 'beginner', failure_modes: {} },
+  { id: '3', grade: 1, level: 1, type: 'Logic', question: 'Q3', options: [], correct_answer: '', ideal_solution: '', difficulty: 'beginner', failure_modes: {} },
+  { id: '4', grade: 1, level: 2, type: 'Arithmetic', question: 'Q4', options: [], correct_answer: '', ideal_solution: '', difficulty: 'beginner', failure_modes: {} },
 ];
 
 describe('useQuestionSelection', () => {

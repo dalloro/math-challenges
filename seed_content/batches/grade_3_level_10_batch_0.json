@@ -1,1052 +1,1052 @@
 [
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "100 lockers are all closed. Student 1 opens every locker. Student 2 toggles every 2nd. Student 3 toggles every 3rd, etc. After all 100 students, how many lockers are open?",
-        "options": [
-            "5",
-            "8",
-            "10",
-            "12",
-            "50"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "A locker ends open if toggled an odd number of times. Locker n is toggled once per divisor. Odd number of divisors = perfect squares. Perfect squares up to 100: 1,4,9,16,25,36,49,64,81,100 = 10. Socratic Hint: Which numbers have an odd number of divisors?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 8 miscounting squares.",
-            "formula_misapplication": "Student picks 50 computing 100/2.",
-            "premature_calculation": "Student picks 5 counting sqrt only."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is 1/1! + 1/2! + 1/3! + 1/4!? (n! = n factorial)",
-        "options": [
-            "5/8",
-            "41/24",
-            "65/24",
-            "7/3",
-            "3"
-        ],
-        "correct_answer": "41/24",
-        "ideal_solution": "1/1!=1. 1/2!=1/2. 1/3!=1/6. 1/4!=1/24. LCD=24: 24+12+4+1=41. Sum=41/24. Socratic Hint: Convert each to 24ths.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 65/24 adding wrong.",
-            "formula_misapplication": "Student picks 5/8 from wrong LCD.",
-            "premature_calculation": "Student gets 24+12=36 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 999999 / 7?",
-        "options": [
-            "142856",
-            "142857",
-            "142858",
-            "142859",
-            "142860"
-        ],
-        "correct_answer": "142857",
-        "ideal_solution": "999999/7 = 142857. Check: 142857 x 7 = 999999. This is the famous cyclic number. Socratic Hint: Divide step by step, or recognize 1/7=0.142857...",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 142856 from wrong division.",
-            "formula_misapplication": "Student picks 142858 from rounding.",
-            "premature_calculation": "Student divides partially and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "A cube has side 5. What is the length of the space diagonal?",
-        "options": [
-            "5 sqrt(2)",
-            "5 sqrt(3)",
-            "10",
-            "15",
-            "25"
-        ],
-        "correct_answer": "5 sqrt(3)",
-        "ideal_solution": "Space diagonal = s x sqrt(3) = 5 sqrt(3). Or: sqrt(25+25+25) = sqrt(75) = 5 sqrt(3). Socratic Hint: Space diagonal formula = s x sqrt(3).",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10 computing 2 x 5.",
-            "formula_misapplication": "Student picks 5 sqrt(2) (face diagonal).",
-            "premature_calculation": "Student gets 25+25=50 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is the sum of the first 100 positive integers?",
-        "options": [
-            "4950",
-            "5000",
-            "5050",
-            "5100",
-            "10000"
-        ],
-        "correct_answer": "5050",
-        "ideal_solution": "Sum = n(n+1)/2 = 100 x 101/2 = 5050. Socratic Hint: Use Gauss's formula.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4950 computing 99x100/2.",
-            "formula_misapplication": "Student picks 5000 computing 100x50.",
-            "premature_calculation": "Student gets 100x101=10100 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "A survey: 60 like math, 50 like science, 40 like both, 10 like neither. How many students total?",
-        "options": [
-            "70",
-            "80",
-            "90",
-            "100",
-            "160"
-        ],
-        "correct_answer": "80",
-        "ideal_solution": "At least one: 60+50-40=70. Total: 70+10=80. Socratic Hint: Use inclusion-exclusion, then add neither.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 70 forgetting neither.",
-            "formula_misapplication": "Student picks 160 adding all.",
-            "premature_calculation": "Student gets 60+50=110 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "Simplify: (1 + 1/2)(1 + 1/3)(1 + 1/4)(1 + 1/5).",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "5/2",
-            "8/5"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "(3/2)(4/3)(5/4)(6/5). Telescoping: 6/2 = 3. Socratic Hint: Write each as (n+1)/n and cancel.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5/2 from partial product.",
-            "formula_misapplication": "Student picks 2 from wrong cancellation.",
-            "premature_calculation": "Student gets 3/2 x 4/3=2 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 2^15?",
-        "options": [
-            "16384",
-            "32768",
-            "65536",
-            "131072",
-            "262144"
-        ],
-        "correct_answer": "32768",
-        "ideal_solution": "2^10=1024. 2^15=2^10 x 2^5=1024 x 32=32768. Socratic Hint: Break into known powers of 2.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 16384 (that's 2^14).",
-            "formula_misapplication": "Student picks 65536 (that's 2^16).",
-            "premature_calculation": "Student gets 2^10=1024 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "A triangle has vertices at (0,0), (6,0), and (3,4). What is its area?",
-        "options": [
-            "8",
-            "10",
-            "12",
-            "15",
-            "24"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Base = 6 (along x-axis). Height = 4 (y-coordinate of apex). Area = 1/2 x 6 x 4 = 12. Socratic Hint: Use base x height / 2 with coordinates.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10 from wrong base.",
-            "formula_misapplication": "Student picks 24 computing 6 x 4.",
-            "premature_calculation": "Student gets base=6 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is the smallest prime p such that p+2 and p+6 are also both prime?",
-        "options": [
-            "3",
-            "5",
-            "7",
-            "11",
-            "13"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "p=5: 5,7,11 all prime. Check p=3: 3,5,9. 9 is not prime. Check p=2: 2,4,8. Not prime. So p=5 is smallest. Socratic Hint: Try small primes and check p+2 and p+6.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 7 not checking p=5.",
-            "formula_misapplication": "Student picks 3 thinking 9 is prime.",
-            "premature_calculation": "Student picks 11 not trying smaller."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "In a room of 23 people, what is the probability that at least 2 share a birthday? (Closest answer)",
-        "options": [
-            "About 6%",
-            "About 15%",
-            "About 25%",
-            "About 50%",
-            "About 99%"
-        ],
-        "correct_answer": "About 50%",
-        "ideal_solution": "The birthday paradox: with 23 people, P(at least 2 share) > 50%. P(no match) = 365/365 x 364/365 x ... x 343/365 = about 0.493. So P(match) = about 0.507 = 50.7%. Socratic Hint: It's the famous birthday paradox.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6% computing 23/365.",
-            "formula_misapplication": "Student picks 25% intuiting too low.",
-            "premature_calculation": "Student gets 23/365 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is 1/2 + 1/4 + 1/8 + 1/16 + 1/32?",
-        "options": [
-            "15/16",
-            "31/32",
-            "63/64",
-            "1",
-            "127/128"
-        ],
-        "correct_answer": "31/32",
-        "ideal_solution": "Geometric series: sum = 1 - (1/2)^5 = 1 - 1/32 = 31/32. Or: 16/32+8/32+4/32+2/32+1/32=31/32. Socratic Hint: Each term is half the previous. Sum = 1 - last term.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 15/16 missing last term.",
-            "formula_misapplication": "Student picks 1 thinking infinite series.",
-            "premature_calculation": "Student gets 16+8+4=28/32 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 123456789 x 9 + 10?",
-        "options": [
-            "1111111101",
-            "1111111111",
-            "1111111121",
-            "1234567891",
-            "9876543210"
-        ],
-        "correct_answer": "1111111111",
-        "ideal_solution": "123456789 x 9 = 1111111101. Add 10: 1111111111. Socratic Hint: Try the multiplication and notice the pattern.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1111111101 forgetting +10.",
-            "formula_misapplication": "Student picks 1234567891 adding 2.",
-            "premature_calculation": "Student stops at 123456789 x 9."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "What is the maximum number of regions created by 5 lines in a plane?",
-        "options": [
-            "10",
-            "11",
-            "15",
-            "16",
-            "32"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "Formula: R(n) = n(n+1)/2 + 1. R(5) = 5x6/2+1 = 15+1 = 16. Each new line crosses all previous lines, maximizing regions. Socratic Hint: Each new line adds as many new regions as lines it crosses, plus 1.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 15 forgetting +1.",
-            "formula_misapplication": "Student picks 32 computing 2^5.",
-            "premature_calculation": "Student gets 5x6/2=15 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "How many trailing zeroes does 50! have?",
-        "options": [
-            "5",
-            "10",
-            "12",
-            "15",
-            "25"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Count factors of 5: floor(50/5)=10. floor(50/25)=2. Total: 12. (Plenty of 2s.) Socratic Hint: Each trailing zero needs a factor of 5. Count how many times 5 divides into 50!.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10 forgetting floor(50/25).",
-            "formula_misapplication": "Student picks 25 computing 50 x 49/... wrong.",
-            "premature_calculation": "Student gets floor(50/5)=10 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "A chessboard has 2 opposite corners removed. Can you cover the remaining 62 squares with 31 dominoes (each covering 2 adjacent squares)?",
-        "options": [
-            "Yes, easily",
-            "Yes, with difficulty",
-            "No, never",
-            "Only sometimes",
-            "Need more info"
-        ],
-        "correct_answer": "No, never",
-        "ideal_solution": "Opposite corners are same color (both white or both black). Removing them leaves 32 of one color and 30 of another. Each domino covers 1 white + 1 black. So 31 dominoes need 31 white + 31 black. Impossible. Socratic Hint: Think about the coloring of the board.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 'Yes, easily' not considering colors.",
-            "formula_misapplication": "Student picks 'Only sometimes'.",
-            "premature_calculation": "Student picks 'Yes, with difficulty' trying manually."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is the infinite sum 1/2 + 1/4 + 1/8 + 1/16 + ...?",
-        "options": [
-            "1/2",
-            "3/4",
-            "7/8",
-            "1",
-            "2"
-        ],
-        "correct_answer": "1",
-        "ideal_solution": "Infinite geometric series: a/(1-r) = (1/2)/(1-1/2) = (1/2)/(1/2) = 1. Socratic Hint: Use the geometric series formula a/(1-r).",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3/4 from partial sum.",
-            "formula_misapplication": "Student picks 2 computing 1/(1/2).",
-            "premature_calculation": "Student adds a few terms and picks 7/8."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 37 x 3 x 11 x 91?",
-        "options": [
-            "333333",
-            "999999",
-            "111111",
-            "777777",
-            "1111111"
-        ],
-        "correct_answer": "111111",
-        "ideal_solution": "37 x 3 = 111. 11 x 91 = 1001. 111 x 1001 = 111111. Socratic Hint: Group factors cleverly: (37x3) and (11x91).",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 999999 from wrong product.",
-            "formula_misapplication": "Student picks 777777 from wrong factor.",
-            "premature_calculation": "Student gets 37x3=111 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "A circle is inscribed in a square of side 10. What is the area between the square and the circle? (pi=3.14)",
-        "options": [
-            "10.75 sq cm",
-            "14.50 sq cm",
-            "21.50 sq cm",
-            "25.00 sq cm",
-            "78.50 sq cm"
-        ],
-        "correct_answer": "21.50 sq cm",
-        "ideal_solution": "Square area: 100. Circle radius=5. Circle area: pi x 25 = 78.5. Difference: 100-78.5 = 21.5 sq cm. Socratic Hint: Subtract circle area from square area.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 14.50 from wrong subtraction.",
-            "formula_misapplication": "Student picks 78.50 computing circle area only.",
-            "premature_calculation": "Student gets circle area=78.5 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is the digital root of 123456789? (Keep summing digits until single digit.)",
-        "options": [
-            "3",
-            "6",
-            "9",
-            "1",
-            "0"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "1+2+3+4+5+6+7+8+9=45. 4+5=9. Digital root is 9. Socratic Hint: Sum all digits, then sum again if needed.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 from wrong addition.",
-            "formula_misapplication": "Student picks 3 computing 45/15.",
-            "premature_calculation": "Student gets 45 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "You flip a fair coin 3 times. What is the probability of getting exactly 2 heads?",
-        "options": [
-            "1/8",
-            "1/4",
-            "3/8",
-            "1/2",
-            "3/4"
-        ],
-        "correct_answer": "3/8",
-        "ideal_solution": "Total outcomes: 2^3=8. Exactly 2 heads: HHT, HTH, THH = 3 ways. P=3/8. Or C(3,2)/8=3/8. Socratic Hint: List favorable outcomes or use combinations.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1/4 from wrong count.",
-            "formula_misapplication": "Student picks 1/2 thinking half are heads.",
-            "premature_calculation": "Student gets 8 outcomes and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is (1-1/4)(1-1/9)(1-1/16)(1-1/25)(1-1/36)?",
-        "options": [
-            "1/6",
-            "5/12",
-            "7/12",
-            "7/6",
-            "35/36"
-        ],
-        "correct_answer": "7/12",
-        "ideal_solution": "(3/4)(8/9)(15/16)(24/25)(35/36). Each = (n^2-1)/n^2 = (n-1)(n+1)/n^2. Product: (1x3)/(2^2) x (2x4)/(3^2) x (3x5)/(4^2) x (4x6)/(5^2) x (5x7)/(6^2). Telescoping: (1x7)/(2x6) = 7/12. Socratic Hint: Factor each term as (n-1)(n+1)/n^2 and look for cancellation.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5/12 from wrong cancellation.",
-            "formula_misapplication": "Student picks 35/36 computing last term only.",
-            "premature_calculation": "Student gets (3/4)(8/9)=2/3 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 111111 / 111?",
-        "options": [
-            "101",
-            "1001",
-            "1010",
-            "1100",
-            "10001"
-        ],
-        "correct_answer": "1001",
-        "ideal_solution": "111111 / 111 = 1001. Check: 111 x 1001 = 111111. Socratic Hint: Divide or recognize the pattern.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1010 from wrong division.",
-            "formula_misapplication": "Student picks 101 computing 111/111 x 10.",
-            "premature_calculation": "Student divides partially and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "How many diagonals does a convex 10-sided polygon have?",
-        "options": [
-            "20",
-            "25",
-            "30",
-            "35",
-            "40"
-        ],
-        "correct_answer": "35",
-        "ideal_solution": "Diagonals = n(n-3)/2 = 10 x 7/2 = 35. Socratic Hint: From each vertex, n-3 diagonals. Divide by 2 to avoid double-counting.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 30 computing 10 x 6/2.",
-            "formula_misapplication": "Student picks 40 computing C(10,2)-10/2.",
-            "premature_calculation": "Student gets 10 x 7=70 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is the smallest prime that is the sum of 3 consecutive primes?",
-        "options": [
-            "5",
-            "7",
-            "13",
-            "23",
-            "29"
-        ],
-        "correct_answer": "23",
-        "ideal_solution": "2+3+5=10 (not prime). 3+5+7=15 (not prime). 5+7+11=23 (prime!). So 23. Socratic Hint: Try consecutive prime triples starting from smallest.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 13 from wrong triple.",
-            "formula_misapplication": "Student picks 29 from wrong set.",
-            "premature_calculation": "Student gets 2+3+5=10 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "How many squares (of any size) are on a standard 8x8 chessboard?",
-        "options": [
-            "64",
-            "100",
-            "140",
-            "196",
-            "204"
-        ],
-        "correct_answer": "204",
-        "ideal_solution": "Sum of k^2 for k=1 to 8: 1+4+9+16+25+36+49+64=204. (1x1 squares: 64, 2x2: 49, ..., 8x8: 1). Socratic Hint: Count squares of each size separately.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 196 from wrong sum.",
-            "formula_misapplication": "Student picks 64 counting only 1x1.",
-            "premature_calculation": "Student counts 1x1 and 2x2 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is the value of the continued fraction 1 + 1/(2 + 1/(3 + 1/4))?",
-        "options": [
-            "10/7",
-            "43/30",
-            "53/30",
-            "157/100",
-            "30/43"
-        ],
-        "correct_answer": "43/30",
-        "ideal_solution": "Inside out: 3+1/4=13/4. Then 2+1/(13/4)=2+4/13=30/13. Then 1+1/(30/13)=1+13/30=43/30. Socratic Hint: Start from innermost fraction and work outward.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 53/30 from wrong step.",
-            "formula_misapplication": "Student picks 10/7 from simplified wrong.",
-            "premature_calculation": "Student gets 13/4 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 17 x 19 x 23?",
-        "options": [
-            "7297",
-            "7337",
-            "7429",
-            "7843",
-            "7957"
-        ],
-        "correct_answer": "7429",
-        "ideal_solution": "17 x 19 = 323. 323 x 23: 323 x 20=6460, 323 x 3=969. 6460+969=7429. Socratic Hint: Multiply in stages.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 7337 from wrong addition.",
-            "formula_misapplication": "Student picks 7843 from wrong partial product.",
-            "premature_calculation": "Student gets 17 x 19=323 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "A circle passes through all 4 vertices of a rectangle with sides 6 and 8. What is the radius of this circle?",
-        "options": [
-            "4",
-            "5",
-            "6",
-            "7",
-            "10"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "The diagonal is the diameter: sqrt(36+64) = sqrt(100) = 10. Radius = 10/2 = 5. Socratic Hint: The circumscribed circle's diameter equals the rectangle's diagonal.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 7 from wrong Pythagorean.",
-            "formula_misapplication": "Student picks 10 computing diameter.",
-            "premature_calculation": "Student gets diagonal=10 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "How many integers from 1 to 1000 are perfect cubes?",
-        "options": [
-            "5",
-            "8",
-            "10",
-            "31",
-            "100"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "Cubes: 1,8,27,64,125,216,343,512,729,1000. That's 10. (10^3=1000.) Socratic Hint: Find the cube root of 1000.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 8 miscounting.",
-            "formula_misapplication": "Student picks 31 computing cube root of 1000 wrong.",
-            "premature_calculation": "Student lists a few cubes and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "At a round table, 6 people are seated. How many distinct seating arrangements exist? (Rotations are considered the same.)",
-        "options": [
-            "6",
-            "24",
-            "60",
-            "120",
-            "720"
-        ],
-        "correct_answer": "120",
-        "ideal_solution": "Circular permutations: (n-1)! = 5! = 120. Fix one person, arrange the rest: 5 x 4 x 3 x 2 x 1 = 120. Socratic Hint: Fix one seat to remove rotational equivalence.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 60 computing 5!/2.",
-            "formula_misapplication": "Student picks 720 computing 6!.",
-            "premature_calculation": "Student gets 5! and doubts."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is 1 - 1/2 + 1/3 - 1/4 + 1/5?",
-        "options": [
-            "1/5",
-            "37/60",
-            "47/60",
-            "59/60",
-            "1"
-        ],
-        "correct_answer": "47/60",
-        "ideal_solution": "LCD=60: 60-30+20-15+12=47. Answer: 47/60. Socratic Hint: Convert all to 60ths, then alternate.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 37/60 from wrong arithmetic.",
-            "formula_misapplication": "Student picks 1/5 (last term only).",
-            "premature_calculation": "Student gets 60-30=30 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is the square root of 1764?",
-        "options": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-        ],
-        "correct_answer": "42",
-        "ideal_solution": "42^2 = 1764. Check: 40^2=1600, 42^2=(40+2)^2=1600+160+4=1764. Socratic Hint: Estimate between 40 and 45, then check.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 40 from underestimate.",
-            "formula_misapplication": "Student picks 44 computing (40+4)^2=1936.",
-            "premature_calculation": "Student gets 40^2=1600 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "A frustum (truncated cone) has top radius 3, bottom radius 6, and slant height 5. What is its lateral surface area? (LSA = pi(r1+r2)l)",
-        "options": [
-            "45 pi",
-            "30 pi",
-            "15 pi",
-            "90 pi",
-            "60 pi"
-        ],
-        "correct_answer": "45 pi",
-        "ideal_solution": "LSA = pi(r1+r2)l = pi(3+6)(5) = 45 pi. Socratic Hint: Plug into the frustum formula.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 30 pi from wrong sum.",
-            "formula_misapplication": "Student picks 90 pi computing 2 x pi(r1+r2)l.",
-            "premature_calculation": "Student gets r1+r2=9 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is the smallest positive integer that is divisible by all of 1 through 12?",
-        "options": [
-            "2520",
-            "5040",
-            "27720",
-            "55440",
-            "479001600"
-        ],
-        "correct_answer": "27720",
-        "ideal_solution": "LCM(1-12): need 2^3 x 3^2 x 5 x 7 x 11 = 8 x 9 x 5 x 7 x 11. 8x9=72. 72x5=360. 360x7=2520. 2520x11=27720. Socratic Hint: Take highest power of each prime up to 12.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2520 (LCM of 1-10 only).",
-            "formula_misapplication": "Student picks 479001600 computing 12!.",
-            "premature_calculation": "Student gets LCM(1-10)=2520 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "How many paths go from corner (0,0) to corner (3,3) on a grid, moving only right or up?",
-        "options": [
-            "6",
-            "9",
-            "15",
-            "20",
-            "27"
-        ],
-        "correct_answer": "20",
-        "ideal_solution": "Need 3 rights and 3 ups in some order. Total: C(6,3) = 6!/(3!3!) = 720/36 = 20. Socratic Hint: Choose which 3 of 6 steps are 'right'.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 15 computing C(6,2).",
-            "formula_misapplication": "Student picks 27 computing 3^3.",
-            "premature_calculation": "Student gets 6!=720 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is the sum 1/3 + 1/15 + 1/35 + 1/63? (Each term is 1/((2n-1)(2n+1)) for n=1,2,3,4)",
-        "options": [
-            "1/9",
-            "4/9",
-            "1/3",
-            "2/3",
-            "8/9"
-        ],
-        "correct_answer": "4/9",
-        "ideal_solution": "Each term: 1/((2n-1)(2n+1)) = (1/2)(1/(2n-1) - 1/(2n+1)). Sum telescopes: (1/2)(1-1/3+1/3-1/5+1/5-1/7+1/7-1/9) = (1/2)(1-1/9) = (1/2)(8/9) = 4/9. Socratic Hint: Use partial fractions and watch the telescope.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1/3 from partial sum.",
-            "formula_misapplication": "Student picks 1/9 computing last term.",
-            "premature_calculation": "Student gets 1/3+1/15=6/15 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 2^10 - 10^2?",
-        "options": [
-            "924",
-            "1000",
-            "1014",
-            "1024",
-            "1124"
-        ],
-        "correct_answer": "924",
-        "ideal_solution": "2^10 = 1024. 10^2 = 100. 1024 - 100 = 924. Socratic Hint: Compute each power separately.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1014 from wrong subtraction.",
-            "formula_misapplication": "Student picks 1024 forgetting to subtract.",
-            "premature_calculation": "Student gets 2^10=1024 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "What is the sum of interior angles of a convex polygon with 15 sides?",
-        "options": [
-            "1800 deg",
-            "2160 deg",
-            "2340 deg",
-            "2520 deg",
-            "2700 deg"
-        ],
-        "correct_answer": "2340 deg",
-        "ideal_solution": "Sum = (n-2) x 180 = 13 x 180 = 2340 degrees. Socratic Hint: Use the formula (n-2) x 180.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2160 computing 12 x 180.",
-            "formula_misapplication": "Student picks 2700 computing 15 x 180.",
-            "premature_calculation": "Student gets n-2=13 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is phi(12)? (Euler's totient: count of integers 1 to 12 coprime to 12)",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "6",
-            "8"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "12=2^2 x 3. phi(12)=12 x (1-1/2) x (1-1/3) = 12 x 1/2 x 2/3 = 4. Numbers coprime to 12: 1,5,7,11. Socratic Hint: Use the Euler totient formula.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 computing 12/2.",
-            "formula_misapplication": "Student picks 8 computing wrong.",
-            "premature_calculation": "Student gets 12 x 1/2=6 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "A rope is stretched tight around the Earth's equator (radius 6371 km). If you add 1 meter to the rope and lift it uniformly, how high above the surface will it be?",
-        "options": [
-            "Invisible amount",
-            "About 1 mm",
-            "About 16 cm",
-            "About 1 m",
-            "About 1 km"
-        ],
-        "correct_answer": "About 16 cm",
-        "ideal_solution": "New circumference = 2 pi (R+h). Old = 2 pi R. Difference = 2 pi h = 1 m. h = 1/(2 pi) = about 0.159 m = about 16 cm. Independent of R! Socratic Hint: The gap depends only on the added length, not the Earth's size.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 'About 1 mm' underestimating.",
-            "formula_misapplication": "Student picks 'Invisible' thinking Earth is too big.",
-            "premature_calculation": "Student computes circumference and gets overwhelmed."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is 1/(1x2) + 1/(2x3) + 1/(3x4) + ... + 1/(9x10)?",
-        "options": [
-            "1/10",
-            "9/10",
-            "1/2",
-            "9/20",
-            "4/5"
-        ],
-        "correct_answer": "9/10",
-        "ideal_solution": "Telescoping: each 1/(n(n+1)) = 1/n - 1/(n+1). Sum: (1-1/2)+(1/2-1/3)+...+(1/9-1/10) = 1-1/10 = 9/10. Socratic Hint: Use partial fractions and telescope.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4/5 from wrong cancellation.",
-            "formula_misapplication": "Student picks 1/10 computing last term.",
-            "premature_calculation": "Student telescopes 1/2+1/6 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 7^5?",
-        "options": [
-            "16807",
-            "16907",
-            "17807",
-            "19607",
-            "21007"
-        ],
-        "correct_answer": "16807",
-        "ideal_solution": "7^2=49. 7^4=49^2=2401. 7^5=2401 x 7=16807. Socratic Hint: Build up from smaller powers.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 16907 from wrong multiplication.",
-            "formula_misapplication": "Student picks 17807 from wrong power.",
-            "premature_calculation": "Student gets 7^4=2401 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "A triangle with sides 5, 12, and 13 has an inscribed circle. What is the radius of that circle?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "This is a right triangle (5^2+12^2=169=13^2). Area = 1/2 x 5 x 12 = 30. Semi-perimeter: (5+12+13)/2=15. Inradius: Area/s = 30/15 = 2. Socratic Hint: Use r = Area / semi-perimeter.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3 from wrong semi-perimeter.",
-            "formula_misapplication": "Student picks 5 confusing with a side.",
-            "premature_calculation": "Student gets area=30 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "Wilson's theorem states (p-1)! mod p = p-1 for any prime p. What is 6! mod 7?",
-        "options": [
-            "0",
-            "1",
-            "3",
-            "5",
-            "6"
-        ],
-        "correct_answer": "6",
-        "ideal_solution": "By Wilson's theorem, (7-1)! = 6! = 720. 720 mod 7: 720/7=102 R6. Or directly: (p-1)! mod p = -1 mod p = p-1 = 6. Socratic Hint: Apply Wilson's theorem directly.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1 confusing with n-1.",
-            "formula_misapplication": "Student picks 0 thinking 720 div by 7.",
-            "premature_calculation": "Student computes 6!=720 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "logic",
-        "question": "Three logicians walk into a bar. The bartender asks 'Does everyone want a drink?' The first says 'I don't know.' The second says 'I don't know.' The third says 'Yes.' How many want a drink?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "Cannot tell",
-            "0"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "If logician 1 didn't want a drink, they'd know 'not everyone' and say 'No'. They said 'I don't know', so logician 1 wants a drink. Same logic for 2. Logician 3 knows 1 and 2 want drinks (from their answers), and knows their own desire: says 'Yes', so all 3 want drinks. Socratic Hint: 'I don't know' from each reveals they want one.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2 from partial logic.",
-            "formula_misapplication": "Student picks 'Cannot tell'.",
-            "premature_calculation": "Student picks 1 thinking only 3rd wants."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "arithmetic",
-        "question": "What is 13^3?",
-        "options": [
-            "2097",
-            "2147",
-            "2197",
-            "2247",
-            "2297"
-        ],
-        "correct_answer": "2197",
-        "ideal_solution": "13^2=169. 13^3=169 x 13: 169 x 10=1690, 169 x 3=507. 1690+507=2197. Socratic Hint: Build from 13 squared.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2147 from wrong addition.",
-            "formula_misapplication": "Student picks 2097 from wrong product.",
-            "premature_calculation": "Student gets 13^2=169 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "fractions",
-        "question": "What is 1 - 1/2! + 1/3! - 1/4! + 1/5!?",
-        "options": [
-            "11/30",
-            "19/30",
-            "37/60",
-            "53/120",
-            "101/120"
-        ],
-        "correct_answer": "19/30",
-        "ideal_solution": "Terms: 1, -1/2, 1/6, -1/24, 1/120. LCD=120: 120-60+20-5+1=76. 76/120=19/30. Socratic Hint: Convert to common denominator 120.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 37/60 from wrong LCD.",
-            "formula_misapplication": "Student picks 53/120 from wrong sign.",
-            "premature_calculation": "Student gets 120-60=60 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "geometry",
-        "question": "What is the volume of a sphere with radius 3? (V = 4/3 pi r^3, pi = 3.14)",
-        "options": [
-            "37.68 cu cm",
-            "56.52 cu cm",
-            "84.78 cu cm",
-            "113.04 cu cm",
-            "150.72 cu cm"
-        ],
-        "correct_answer": "113.04 cu cm",
-        "ideal_solution": "V = 4/3 x 3.14 x 27 = 4/3 x 84.78 = 113.04 cu cm. Socratic Hint: Compute r^3 first, then multiply.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 84.78 forgetting x4/3.",
-            "formula_misapplication": "Student picks 56.52 computing 2/3 pi r^3.",
-            "premature_calculation": "Student gets pi x 27=84.78 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 10,
-        "difficulty": "genius",
-        "type": "number_theory",
-        "question": "What is the sum 1^3 + 2^3 + 3^3 + 4^3 + 5^3?",
-        "options": [
-            "125",
-            "150",
-            "200",
-            "225",
-            "250"
-        ],
-        "correct_answer": "225",
-        "ideal_solution": "1+8+27+64+125=225. Or use formula: (n(n+1)/2)^2 = (15)^2 = 225. The sum of first n cubes equals the square of the sum of first n numbers! Socratic Hint: Sum cubes individually, or use the beautiful formula.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 200 from wrong addition.",
-            "formula_misapplication": "Student picks 125 computing only 5^3.",
-            "premature_calculation": "Student gets 1+8+27=36 and stops."
-        }
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "100 lockers are all closed. Student 1 opens every locker. Student 2 toggles every 2nd. Student 3 toggles every 3rd, etc. After all 100 students, how many lockers are open?",
+    "options": [
+      "5",
+      "8",
+      "10",
+      "12",
+      "50"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "A locker ends open if toggled an odd number of times. Locker n is toggled once per divisor. Odd number of divisors = perfect squares. Perfect squares up to 100: 1,4,9,16,25,36,49,64,81,100 = 10. Socratic Hint: Which numbers have an odd number of divisors?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 8 miscounting squares.",
+      "formula_misapplication": "Student picks 50 computing 100/2.",
+      "premature_calculation": "Student picks 5 counting sqrt only."
     }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is 1/1! + 1/2! + 1/3! + 1/4!? (n! = n factorial)",
+    "options": [
+      "5/8",
+      "41/24",
+      "65/24",
+      "7/3",
+      "3"
+    ],
+    "correct_answer": "41/24",
+    "ideal_solution": "1/1!=1. 1/2!=1/2. 1/3!=1/6. 1/4!=1/24. LCD=24: 24+12+4+1=41. Sum=41/24. Socratic Hint: Convert each to 24ths.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 65/24 adding wrong.",
+      "formula_misapplication": "Student picks 5/8 from wrong LCD.",
+      "premature_calculation": "Student gets 24+12=36 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 999999 / 7?",
+    "options": [
+      "142856",
+      "142857",
+      "142858",
+      "142859",
+      "142860"
+    ],
+    "correct_answer": "142857",
+    "ideal_solution": "999999/7 = 142857. Check: 142857 x 7 = 999999. This is the famous cyclic number. Socratic Hint: Divide step by step, or recognize 1/7=0.142857...",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 142856 from wrong division.",
+      "formula_misapplication": "Student picks 142858 from rounding.",
+      "premature_calculation": "Student divides partially and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A cube has side 5. What is the length of the space diagonal?",
+    "options": [
+      "5 sqrt(2)",
+      "5 sqrt(3)",
+      "10",
+      "15",
+      "25"
+    ],
+    "correct_answer": "5 sqrt(3)",
+    "ideal_solution": "Space diagonal = s x sqrt(3) = 5 sqrt(3). Or: sqrt(25+25+25) = sqrt(75) = 5 sqrt(3). Socratic Hint: Space diagonal formula = s x sqrt(3).",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10 computing 2 x 5.",
+      "formula_misapplication": "Student picks 5 sqrt(2) (face diagonal).",
+      "premature_calculation": "Student gets 25+25=50 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the sum of the first 100 positive integers?",
+    "options": [
+      "4950",
+      "5000",
+      "5050",
+      "5100",
+      "10000"
+    ],
+    "correct_answer": "5050",
+    "ideal_solution": "Sum = n(n+1)/2 = 100 x 101/2 = 5050. Socratic Hint: Use Gauss's formula.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4950 computing 99x100/2.",
+      "formula_misapplication": "Student picks 5000 computing 100x50.",
+      "premature_calculation": "Student gets 100x101=10100 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A survey: 60 like math, 50 like science, 40 like both, 10 like neither. How many students total?",
+    "options": [
+      "70",
+      "80",
+      "90",
+      "100",
+      "160"
+    ],
+    "correct_answer": "80",
+    "ideal_solution": "At least one: 60+50-40=70. Total: 70+10=80. Socratic Hint: Use inclusion-exclusion, then add neither.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 70 forgetting neither.",
+      "formula_misapplication": "Student picks 160 adding all.",
+      "premature_calculation": "Student gets 60+50=110 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "Simplify: (1 + 1/2)(1 + 1/3)(1 + 1/4)(1 + 1/5).",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5/2",
+      "8/5"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "(3/2)(4/3)(5/4)(6/5). Telescoping: 6/2 = 3. Socratic Hint: Write each as (n+1)/n and cancel.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5/2 from partial product.",
+      "formula_misapplication": "Student picks 2 from wrong cancellation.",
+      "premature_calculation": "Student gets 3/2 x 4/3=2 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 2^15?",
+    "options": [
+      "16384",
+      "32768",
+      "65536",
+      "131072",
+      "262144"
+    ],
+    "correct_answer": "32768",
+    "ideal_solution": "2^10=1024. 2^15=2^10 x 2^5=1024 x 32=32768. Socratic Hint: Break into known powers of 2.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 16384 (that's 2^14).",
+      "formula_misapplication": "Student picks 65536 (that's 2^16).",
+      "premature_calculation": "Student gets 2^10=1024 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A triangle has vertices at (0,0), (6,0), and (3,4). What is its area?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15",
+      "24"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Base = 6 (along x-axis). Height = 4 (y-coordinate of apex). Area = 1/2 x 6 x 4 = 12. Socratic Hint: Use base x height / 2 with coordinates.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10 from wrong base.",
+      "formula_misapplication": "Student picks 24 computing 6 x 4.",
+      "premature_calculation": "Student gets base=6 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the smallest prime p such that p+2 and p+6 are also both prime?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "11",
+      "13"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "p=5: 5,7,11 all prime. Check p=3: 3,5,9. 9 is not prime. Check p=2: 2,4,8. Not prime. So p=5 is smallest. Socratic Hint: Try small primes and check p+2 and p+6.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 7 not checking p=5.",
+      "formula_misapplication": "Student picks 3 thinking 9 is prime.",
+      "premature_calculation": "Student picks 11 not trying smaller."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "In a room of 23 people, what is the probability that at least 2 share a birthday? (Closest answer)",
+    "options": [
+      "About 6%",
+      "About 15%",
+      "About 25%",
+      "About 50%",
+      "About 99%"
+    ],
+    "correct_answer": "About 50%",
+    "ideal_solution": "The birthday paradox: with 23 people, P(at least 2 share) > 50%. P(no match) = 365/365 x 364/365 x ... x 343/365 = about 0.493. So P(match) = about 0.507 = 50.7%. Socratic Hint: It's the famous birthday paradox.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6% computing 23/365.",
+      "formula_misapplication": "Student picks 25% intuiting too low.",
+      "premature_calculation": "Student gets 23/365 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is 1/2 + 1/4 + 1/8 + 1/16 + 1/32?",
+    "options": [
+      "15/16",
+      "31/32",
+      "63/64",
+      "1",
+      "127/128"
+    ],
+    "correct_answer": "31/32",
+    "ideal_solution": "Geometric series: sum = 1 - (1/2)^5 = 1 - 1/32 = 31/32. Or: 16/32+8/32+4/32+2/32+1/32=31/32. Socratic Hint: Each term is half the previous. Sum = 1 - last term.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 15/16 missing last term.",
+      "formula_misapplication": "Student picks 1 thinking infinite series.",
+      "premature_calculation": "Student gets 16+8+4=28/32 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 123456789 x 9 + 10?",
+    "options": [
+      "1111111101",
+      "1111111111",
+      "1111111121",
+      "1234567891",
+      "9876543210"
+    ],
+    "correct_answer": "1111111111",
+    "ideal_solution": "123456789 x 9 = 1111111101. Add 10: 1111111111. Socratic Hint: Try the multiplication and notice the pattern.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1111111101 forgetting +10.",
+      "formula_misapplication": "Student picks 1234567891 adding 2.",
+      "premature_calculation": "Student stops at 123456789 x 9."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "What is the maximum number of regions created by 5 lines in a plane?",
+    "options": [
+      "10",
+      "11",
+      "15",
+      "16",
+      "32"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "Formula: R(n) = n(n+1)/2 + 1. R(5) = 5x6/2+1 = 15+1 = 16. Each new line crosses all previous lines, maximizing regions. Socratic Hint: Each new line adds as many new regions as lines it crosses, plus 1.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 15 forgetting +1.",
+      "formula_misapplication": "Student picks 32 computing 2^5.",
+      "premature_calculation": "Student gets 5x6/2=15 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many trailing zeroes does 50! have?",
+    "options": [
+      "5",
+      "10",
+      "12",
+      "15",
+      "25"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Count factors of 5: floor(50/5)=10. floor(50/25)=2. Total: 12. (Plenty of 2s.) Socratic Hint: Each trailing zero needs a factor of 5. Count how many times 5 divides into 50!.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10 forgetting floor(50/25).",
+      "formula_misapplication": "Student picks 25 computing 50 x 49/... wrong.",
+      "premature_calculation": "Student gets floor(50/5)=10 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A chessboard has 2 opposite corners removed. Can you cover the remaining 62 squares with 31 dominoes (each covering 2 adjacent squares)?",
+    "options": [
+      "Yes, easily",
+      "Yes, with difficulty",
+      "No, never",
+      "Only sometimes",
+      "Need more info"
+    ],
+    "correct_answer": "No, never",
+    "ideal_solution": "Opposite corners are same color (both white or both black). Removing them leaves 32 of one color and 30 of another. Each domino covers 1 white + 1 black. So 31 dominoes need 31 white + 31 black. Impossible. Socratic Hint: Think about the coloring of the board.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 'Yes, easily' not considering colors.",
+      "formula_misapplication": "Student picks 'Only sometimes'.",
+      "premature_calculation": "Student picks 'Yes, with difficulty' trying manually."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is the infinite sum 1/2 + 1/4 + 1/8 + 1/16 + ...?",
+    "options": [
+      "1/2",
+      "3/4",
+      "7/8",
+      "1",
+      "2"
+    ],
+    "correct_answer": "1",
+    "ideal_solution": "Infinite geometric series: a/(1-r) = (1/2)/(1-1/2) = (1/2)/(1/2) = 1. Socratic Hint: Use the geometric series formula a/(1-r).",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3/4 from partial sum.",
+      "formula_misapplication": "Student picks 2 computing 1/(1/2).",
+      "premature_calculation": "Student adds a few terms and picks 7/8."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 37 x 3 x 11 x 91?",
+    "options": [
+      "333333",
+      "999999",
+      "111111",
+      "777777",
+      "1111111"
+    ],
+    "correct_answer": "111111",
+    "ideal_solution": "37 x 3 = 111. 11 x 91 = 1001. 111 x 1001 = 111111. Socratic Hint: Group factors cleverly: (37x3) and (11x91).",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 999999 from wrong product.",
+      "formula_misapplication": "Student picks 777777 from wrong factor.",
+      "premature_calculation": "Student gets 37x3=111 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A circle is inscribed in a square of side 10. What is the area between the square and the circle? (pi=3.14)",
+    "options": [
+      "10.75 sq cm",
+      "14.50 sq cm",
+      "21.50 sq cm",
+      "25.00 sq cm",
+      "78.50 sq cm"
+    ],
+    "correct_answer": "21.50 sq cm",
+    "ideal_solution": "Square area: 100. Circle radius=5. Circle area: pi x 25 = 78.5. Difference: 100-78.5 = 21.5 sq cm. Socratic Hint: Subtract circle area from square area.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 14.50 from wrong subtraction.",
+      "formula_misapplication": "Student picks 78.50 computing circle area only.",
+      "premature_calculation": "Student gets circle area=78.5 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the digital root of 123456789? (Keep summing digits until single digit.)",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "1",
+      "0"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "1+2+3+4+5+6+7+8+9=45. 4+5=9. Digital root is 9. Socratic Hint: Sum all digits, then sum again if needed.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 from wrong addition.",
+      "formula_misapplication": "Student picks 3 computing 45/15.",
+      "premature_calculation": "Student gets 45 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You flip a fair coin 3 times. What is the probability of getting exactly 2 heads?",
+    "options": [
+      "1/8",
+      "1/4",
+      "3/8",
+      "1/2",
+      "3/4"
+    ],
+    "correct_answer": "3/8",
+    "ideal_solution": "Total outcomes: 2^3=8. Exactly 2 heads: HHT, HTH, THH = 3 ways. P=3/8. Or C(3,2)/8=3/8. Socratic Hint: List favorable outcomes or use combinations.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1/4 from wrong count.",
+      "formula_misapplication": "Student picks 1/2 thinking half are heads.",
+      "premature_calculation": "Student gets 8 outcomes and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is (1-1/4)(1-1/9)(1-1/16)(1-1/25)(1-1/36)?",
+    "options": [
+      "1/6",
+      "5/12",
+      "7/12",
+      "7/6",
+      "35/36"
+    ],
+    "correct_answer": "7/12",
+    "ideal_solution": "(3/4)(8/9)(15/16)(24/25)(35/36). Each = (n^2-1)/n^2 = (n-1)(n+1)/n^2. Product: (1x3)/(2^2) x (2x4)/(3^2) x (3x5)/(4^2) x (4x6)/(5^2) x (5x7)/(6^2). Telescoping: (1x7)/(2x6) = 7/12. Socratic Hint: Factor each term as (n-1)(n+1)/n^2 and look for cancellation.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5/12 from wrong cancellation.",
+      "formula_misapplication": "Student picks 35/36 computing last term only.",
+      "premature_calculation": "Student gets (3/4)(8/9)=2/3 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 111111 / 111?",
+    "options": [
+      "101",
+      "1001",
+      "1010",
+      "1100",
+      "10001"
+    ],
+    "correct_answer": "1001",
+    "ideal_solution": "111111 / 111 = 1001. Check: 111 x 1001 = 111111. Socratic Hint: Divide or recognize the pattern.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1010 from wrong division.",
+      "formula_misapplication": "Student picks 101 computing 111/111 x 10.",
+      "premature_calculation": "Student divides partially and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "How many diagonals does a convex 10-sided polygon have?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "correct_answer": "35",
+    "ideal_solution": "Diagonals = n(n-3)/2 = 10 x 7/2 = 35. Socratic Hint: From each vertex, n-3 diagonals. Divide by 2 to avoid double-counting.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 30 computing 10 x 6/2.",
+      "formula_misapplication": "Student picks 40 computing C(10,2)-10/2.",
+      "premature_calculation": "Student gets 10 x 7=70 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the smallest prime that is the sum of 3 consecutive primes?",
+    "options": [
+      "5",
+      "7",
+      "13",
+      "23",
+      "29"
+    ],
+    "correct_answer": "23",
+    "ideal_solution": "2+3+5=10 (not prime). 3+5+7=15 (not prime). 5+7+11=23 (prime!). So 23. Socratic Hint: Try consecutive prime triples starting from smallest.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 13 from wrong triple.",
+      "formula_misapplication": "Student picks 29 from wrong set.",
+      "premature_calculation": "Student gets 2+3+5=10 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "How many squares (of any size) are on a standard 8x8 chessboard?",
+    "options": [
+      "64",
+      "100",
+      "140",
+      "196",
+      "204"
+    ],
+    "correct_answer": "204",
+    "ideal_solution": "Sum of k^2 for k=1 to 8: 1+4+9+16+25+36+49+64=204. (1x1 squares: 64, 2x2: 49, ..., 8x8: 1). Socratic Hint: Count squares of each size separately.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 196 from wrong sum.",
+      "formula_misapplication": "Student picks 64 counting only 1x1.",
+      "premature_calculation": "Student counts 1x1 and 2x2 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is the value of the continued fraction 1 + 1/(2 + 1/(3 + 1/4))?",
+    "options": [
+      "10/7",
+      "43/30",
+      "53/30",
+      "157/100",
+      "30/43"
+    ],
+    "correct_answer": "43/30",
+    "ideal_solution": "Inside out: 3+1/4=13/4. Then 2+1/(13/4)=2+4/13=30/13. Then 1+1/(30/13)=1+13/30=43/30. Socratic Hint: Start from innermost fraction and work outward.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 53/30 from wrong step.",
+      "formula_misapplication": "Student picks 10/7 from simplified wrong.",
+      "premature_calculation": "Student gets 13/4 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 17 x 19 x 23?",
+    "options": [
+      "7297",
+      "7337",
+      "7429",
+      "7843",
+      "7957"
+    ],
+    "correct_answer": "7429",
+    "ideal_solution": "17 x 19 = 323. 323 x 23: 323 x 20=6460, 323 x 3=969. 6460+969=7429. Socratic Hint: Multiply in stages.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 7337 from wrong addition.",
+      "formula_misapplication": "Student picks 7843 from wrong partial product.",
+      "premature_calculation": "Student gets 17 x 19=323 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A circle passes through all 4 vertices of a rectangle with sides 6 and 8. What is the radius of this circle?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "10"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "The diagonal is the diameter: sqrt(36+64) = sqrt(100) = 10. Radius = 10/2 = 5. Socratic Hint: The circumscribed circle's diameter equals the rectangle's diagonal.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 7 from wrong Pythagorean.",
+      "formula_misapplication": "Student picks 10 computing diameter.",
+      "premature_calculation": "Student gets diagonal=10 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many integers from 1 to 1000 are perfect cubes?",
+    "options": [
+      "5",
+      "8",
+      "10",
+      "31",
+      "100"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "Cubes: 1,8,27,64,125,216,343,512,729,1000. That's 10. (10^3=1000.) Socratic Hint: Find the cube root of 1000.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 8 miscounting.",
+      "formula_misapplication": "Student picks 31 computing cube root of 1000 wrong.",
+      "premature_calculation": "Student lists a few cubes and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "At a round table, 6 people are seated. How many distinct seating arrangements exist? (Rotations are considered the same.)",
+    "options": [
+      "6",
+      "24",
+      "60",
+      "120",
+      "720"
+    ],
+    "correct_answer": "120",
+    "ideal_solution": "Circular permutations: (n-1)! = 5! = 120. Fix one person, arrange the rest: 5 x 4 x 3 x 2 x 1 = 120. Socratic Hint: Fix one seat to remove rotational equivalence.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 60 computing 5!/2.",
+      "formula_misapplication": "Student picks 720 computing 6!.",
+      "premature_calculation": "Student gets 5! and doubts."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is 1 - 1/2 + 1/3 - 1/4 + 1/5?",
+    "options": [
+      "1/5",
+      "37/60",
+      "47/60",
+      "59/60",
+      "1"
+    ],
+    "correct_answer": "47/60",
+    "ideal_solution": "LCD=60: 60-30+20-15+12=47. Answer: 47/60. Socratic Hint: Convert all to 60ths, then alternate.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 37/60 from wrong arithmetic.",
+      "formula_misapplication": "Student picks 1/5 (last term only).",
+      "premature_calculation": "Student gets 60-30=30 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is the square root of 1764?",
+    "options": [
+      "38",
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "correct_answer": "42",
+    "ideal_solution": "42^2 = 1764. Check: 40^2=1600, 42^2=(40+2)^2=1600+160+4=1764. Socratic Hint: Estimate between 40 and 45, then check.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 40 from underestimate.",
+      "formula_misapplication": "Student picks 44 computing (40+4)^2=1936.",
+      "premature_calculation": "Student gets 40^2=1600 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A frustum (truncated cone) has top radius 3, bottom radius 6, and slant height 5. What is its lateral surface area? (LSA = pi(r1+r2)l)",
+    "options": [
+      "45 pi",
+      "30 pi",
+      "15 pi",
+      "90 pi",
+      "60 pi"
+    ],
+    "correct_answer": "45 pi",
+    "ideal_solution": "LSA = pi(r1+r2)l = pi(3+6)(5) = 45 pi. Socratic Hint: Plug into the frustum formula.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 30 pi from wrong sum.",
+      "formula_misapplication": "Student picks 90 pi computing 2 x pi(r1+r2)l.",
+      "premature_calculation": "Student gets r1+r2=9 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the smallest positive integer that is divisible by all of 1 through 12?",
+    "options": [
+      "2520",
+      "5040",
+      "27720",
+      "55440",
+      "479001600"
+    ],
+    "correct_answer": "27720",
+    "ideal_solution": "LCM(1-12): need 2^3 x 3^2 x 5 x 7 x 11 = 8 x 9 x 5 x 7 x 11. 8x9=72. 72x5=360. 360x7=2520. 2520x11=27720. Socratic Hint: Take highest power of each prime up to 12.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2520 (LCM of 1-10 only).",
+      "formula_misapplication": "Student picks 479001600 computing 12!.",
+      "premature_calculation": "Student gets LCM(1-10)=2520 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "How many paths go from corner (0,0) to corner (3,3) on a grid, moving only right or up?",
+    "options": [
+      "6",
+      "9",
+      "15",
+      "20",
+      "27"
+    ],
+    "correct_answer": "20",
+    "ideal_solution": "Need 3 rights and 3 ups in some order. Total: C(6,3) = 6!/(3!3!) = 720/36 = 20. Socratic Hint: Choose which 3 of 6 steps are 'right'.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 15 computing C(6,2).",
+      "formula_misapplication": "Student picks 27 computing 3^3.",
+      "premature_calculation": "Student gets 6!=720 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is the sum 1/3 + 1/15 + 1/35 + 1/63? (Each term is 1/((2n-1)(2n+1)) for n=1,2,3,4)",
+    "options": [
+      "1/9",
+      "4/9",
+      "1/3",
+      "2/3",
+      "8/9"
+    ],
+    "correct_answer": "4/9",
+    "ideal_solution": "Each term: 1/((2n-1)(2n+1)) = (1/2)(1/(2n-1) - 1/(2n+1)). Sum telescopes: (1/2)(1-1/3+1/3-1/5+1/5-1/7+1/7-1/9) = (1/2)(1-1/9) = (1/2)(8/9) = 4/9. Socratic Hint: Use partial fractions and watch the telescope.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1/3 from partial sum.",
+      "formula_misapplication": "Student picks 1/9 computing last term.",
+      "premature_calculation": "Student gets 1/3+1/15=6/15 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 2^10 - 10^2?",
+    "options": [
+      "924",
+      "1000",
+      "1014",
+      "1024",
+      "1124"
+    ],
+    "correct_answer": "924",
+    "ideal_solution": "2^10 = 1024. 10^2 = 100. 1024 - 100 = 924. Socratic Hint: Compute each power separately.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1014 from wrong subtraction.",
+      "formula_misapplication": "Student picks 1024 forgetting to subtract.",
+      "premature_calculation": "Student gets 2^10=1024 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "What is the sum of interior angles of a convex polygon with 15 sides?",
+    "options": [
+      "1800 deg",
+      "2160 deg",
+      "2340 deg",
+      "2520 deg",
+      "2700 deg"
+    ],
+    "correct_answer": "2340 deg",
+    "ideal_solution": "Sum = (n-2) x 180 = 13 x 180 = 2340 degrees. Socratic Hint: Use the formula (n-2) x 180.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2160 computing 12 x 180.",
+      "formula_misapplication": "Student picks 2700 computing 15 x 180.",
+      "premature_calculation": "Student gets n-2=13 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is phi(12)? (Euler's totient: count of integers 1 to 12 coprime to 12)",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "12=2^2 x 3. phi(12)=12 x (1-1/2) x (1-1/3) = 12 x 1/2 x 2/3 = 4. Numbers coprime to 12: 1,5,7,11. Socratic Hint: Use the Euler totient formula.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 computing 12/2.",
+      "formula_misapplication": "Student picks 8 computing wrong.",
+      "premature_calculation": "Student gets 12 x 1/2=6 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A rope is stretched tight around the Earth's equator (radius 6371 km). If you add 1 meter to the rope and lift it uniformly, how high above the surface will it be?",
+    "options": [
+      "Invisible amount",
+      "About 1 mm",
+      "About 16 cm",
+      "About 1 m",
+      "About 1 km"
+    ],
+    "correct_answer": "About 16 cm",
+    "ideal_solution": "New circumference = 2 pi (R+h). Old = 2 pi R. Difference = 2 pi h = 1 m. h = 1/(2 pi) = about 0.159 m = about 16 cm. Independent of R! Socratic Hint: The gap depends only on the added length, not the Earth's size.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 'About 1 mm' underestimating.",
+      "formula_misapplication": "Student picks 'Invisible' thinking Earth is too big.",
+      "premature_calculation": "Student computes circumference and gets overwhelmed."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is 1/(1x2) + 1/(2x3) + 1/(3x4) + ... + 1/(9x10)?",
+    "options": [
+      "1/10",
+      "9/10",
+      "1/2",
+      "9/20",
+      "4/5"
+    ],
+    "correct_answer": "9/10",
+    "ideal_solution": "Telescoping: each 1/(n(n+1)) = 1/n - 1/(n+1). Sum: (1-1/2)+(1/2-1/3)+...+(1/9-1/10) = 1-1/10 = 9/10. Socratic Hint: Use partial fractions and telescope.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4/5 from wrong cancellation.",
+      "formula_misapplication": "Student picks 1/10 computing last term.",
+      "premature_calculation": "Student telescopes 1/2+1/6 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 7^5?",
+    "options": [
+      "16807",
+      "16907",
+      "17807",
+      "19607",
+      "21007"
+    ],
+    "correct_answer": "16807",
+    "ideal_solution": "7^2=49. 7^4=49^2=2401. 7^5=2401 x 7=16807. Socratic Hint: Build up from smaller powers.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 16907 from wrong multiplication.",
+      "formula_misapplication": "Student picks 17807 from wrong power.",
+      "premature_calculation": "Student gets 7^4=2401 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A triangle with sides 5, 12, and 13 has an inscribed circle. What is the radius of that circle?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "This is a right triangle (5^2+12^2=169=13^2). Area = 1/2 x 5 x 12 = 30. Semi-perimeter: (5+12+13)/2=15. Inradius: Area/s = 30/15 = 2. Socratic Hint: Use r = Area / semi-perimeter.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3 from wrong semi-perimeter.",
+      "formula_misapplication": "Student picks 5 confusing with a side.",
+      "premature_calculation": "Student gets area=30 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "Wilson's theorem states (p-1)! mod p = p-1 for any prime p. What is 6! mod 7?",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct_answer": "6",
+    "ideal_solution": "By Wilson's theorem, (7-1)! = 6! = 720. 720 mod 7: 720/7=102 R6. Or directly: (p-1)! mod p = -1 mod p = p-1 = 6. Socratic Hint: Apply Wilson's theorem directly.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1 confusing with n-1.",
+      "formula_misapplication": "Student picks 0 thinking 720 div by 7.",
+      "premature_calculation": "Student computes 6!=720 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Three logicians walk into a bar. The bartender asks 'Does everyone want a drink?' The first says 'I don't know.' The second says 'I don't know.' The third says 'Yes.' How many want a drink?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "Cannot tell",
+      "0"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "If logician 1 didn't want a drink, they'd know 'not everyone' and say 'No'. They said 'I don't know', so logician 1 wants a drink. Same logic for 2. Logician 3 knows 1 and 2 want drinks (from their answers), and knows their own desire: says 'Yes', so all 3 want drinks. Socratic Hint: 'I don't know' from each reveals they want one.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2 from partial logic.",
+      "formula_misapplication": "Student picks 'Cannot tell'.",
+      "premature_calculation": "Student picks 1 thinking only 3rd wants."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 13^3?",
+    "options": [
+      "2097",
+      "2147",
+      "2197",
+      "2247",
+      "2297"
+    ],
+    "correct_answer": "2197",
+    "ideal_solution": "13^2=169. 13^3=169 x 13: 169 x 10=1690, 169 x 3=507. 1690+507=2197. Socratic Hint: Build from 13 squared.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2147 from wrong addition.",
+      "formula_misapplication": "Student picks 2097 from wrong product.",
+      "premature_calculation": "Student gets 13^2=169 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "fractions",
+    "question": "What is 1 - 1/2! + 1/3! - 1/4! + 1/5!?",
+    "options": [
+      "11/30",
+      "19/30",
+      "37/60",
+      "53/120",
+      "101/120"
+    ],
+    "correct_answer": "19/30",
+    "ideal_solution": "Terms: 1, -1/2, 1/6, -1/24, 1/120. LCD=120: 120-60+20-5+1=76. 76/120=19/30. Socratic Hint: Convert to common denominator 120.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 37/60 from wrong LCD.",
+      "formula_misapplication": "Student picks 53/120 from wrong sign.",
+      "premature_calculation": "Student gets 120-60=60 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "What is the volume of a sphere with radius 3? (V = 4/3 pi r^3, pi = 3.14)",
+    "options": [
+      "37.68 cu cm",
+      "56.52 cu cm",
+      "84.78 cu cm",
+      "113.04 cu cm",
+      "150.72 cu cm"
+    ],
+    "correct_answer": "113.04 cu cm",
+    "ideal_solution": "V = 4/3 x 3.14 x 27 = 4/3 x 84.78 = 113.04 cu cm. Socratic Hint: Compute r^3 first, then multiply.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 84.78 forgetting x4/3.",
+      "formula_misapplication": "Student picks 56.52 computing 2/3 pi r^3.",
+      "premature_calculation": "Student gets pi x 27=84.78 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 10,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the sum 1^3 + 2^3 + 3^3 + 4^3 + 5^3?",
+    "options": [
+      "125",
+      "150",
+      "200",
+      "225",
+      "250"
+    ],
+    "correct_answer": "225",
+    "ideal_solution": "1+8+27+64+125=225. Or use formula: (n(n+1)/2)^2 = (15)^2 = 225. The sum of first n cubes equals the square of the sum of first n numbers! Socratic Hint: Sum cubes individually, or use the beautiful formula.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 200 from wrong addition.",
+      "formula_misapplication": "Student picks 125 computing only 5^3.",
+      "premature_calculation": "Student gets 1+8+27=36 and stops."
+    }
+  }
 ]

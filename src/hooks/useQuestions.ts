@@ -6,7 +6,7 @@ export interface Question {
   id: string;
   grade: number;
   level: number;
-  difficulty: 'gifted';
+  difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert' | 'master';
   type: string;
   question: string;
   options: string[];
@@ -27,7 +27,6 @@ export function useQuestions(grade: number) {
         const q = query(
           collection(db, 'questions'),
           where('grade', '==', grade),
-          where('difficulty', '==', 'gifted'),
           limit(1000) // Fetch a larger pool to cover all questions per grade
         );
 

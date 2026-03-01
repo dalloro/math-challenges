@@ -26,7 +26,7 @@ const mockQuestion: useQuestionsHook.Question = {
   options: ['3', '4', '5'],
   correct_answer: '4',
   level: 1,
-  difficulty: 'gifted',
+  difficulty: 'beginner',
   type: 'Arithmetic',
   ideal_solution: 'Step 1: Add 2 and 2. Result is 4.',
   failure_modes: {}

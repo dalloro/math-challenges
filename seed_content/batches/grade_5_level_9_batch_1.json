@@ -1,1094 +1,1094 @@
 [
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the value of 1 - 1/2 + 1/3 - 1/4?",
-        "options": [
-            "1/12",
-            "5/12",
-            "7/12",
-            "1/4",
-            "11/12"
-        ],
-        "correct_answer": "7/12",
-        "ideal_solution": "LCD=12. 12/12 - 6/12 + 4/12 - 3/12 = 7/12. Socratic Hint: Convert to LCD and combine, being careful with signs.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 12-6+4-3 = 5/12.",
-            "formula_misapplication": "Student adds all: 1+1/2+1/3+1/4.",
-            "premature_calculation": "Student computes 1-1/2 = 1/2 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cone has a slant height of 13 cm and base radius of 5 cm. What is its height?",
-        "options": [
-            "8 cm",
-            "10 cm",
-            "12 cm",
-            "15 cm",
-            "18 cm"
-        ],
-        "correct_answer": "12 cm",
-        "ideal_solution": "h = √(l² - r²) = √(169 - 25) = √144 = 12 cm. Socratic Hint: The slant height, radius, and height form a right triangle.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 13+5 = 18.",
-            "arithmetic_slip": "Student computes √144 = 10.",
-            "premature_calculation": "Student computes 169-25 = 144 and picks 15."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Tom, Jim, and Sara each have a different pet (cat, dog, fish). Tom doesn't have a cat or a fish. Jim doesn't have a fish. What pet does Sara have?",
-        "options": [
-            "Cat",
-            "Dog",
-            "Fish",
-            "Cat or Dog",
-            "Cannot determine"
-        ],
-        "correct_answer": "Fish",
-        "ideal_solution": "Tom ≠ cat, Tom ≠ fish → Tom has dog. Jim ≠ fish → Jim has cat (dog taken by Tom). Sara has fish. Socratic Hint: Start with the person who has the most restrictions.",
-        "failure_modes": {
-            "premature_calculation": "Student assigns pets randomly.",
-            "converse_error": "Student thinks Tom has cat.",
-            "formula_misapplication": "Student picks Cannot determine."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the LCM of 12, 18, and 20?",
-        "options": [
-            "60",
-            "120",
-            "180",
-            "360",
-            "720"
-        ],
-        "correct_answer": "180",
-        "ideal_solution": "12 = 2² × 3. 18 = 2 × 3². 20 = 2² × 5. LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180. Socratic Hint: Take the highest power of each prime factor.",
-        "failure_modes": {
-            "undercounting": "Student computes LCM(12,18) = 36, forgets 20.",
-            "overcounting": "Student multiplies: 12 × 18 × 20 = 4320.",
-            "arithmetic_slip": "Student computes 4 × 9 × 5 = 120."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A hiker walks uphill at 3 km/h and downhill at 5 km/h. If a trail is 15 km uphill and 15 km downhill, what is the total time?",
-        "options": [
-            "6 hr",
-            "7 hr",
-            "7.5 hr",
-            "8 hr",
-            "10 hr"
-        ],
-        "correct_answer": "8 hr",
-        "ideal_solution": "Uphill time = 15/3 = 5 hr. Downhill time = 15/5 = 3 hr. Total = 5 + 3 = 8 hr. Socratic Hint: Calculate each segment's time separately, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student averages speeds: 30/4 = 7.5 hr.",
-            "arithmetic_slip": "Student computes 15/3 = 4: total = 7 hr.",
-            "premature_calculation": "Student computes uphill time = 5 hr and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A square is cut diagonally. What is the area of each resulting triangle if the square has side 8 cm?",
-        "options": [
-            "16 sq cm",
-            "24 sq cm",
-            "32 sq cm",
-            "48 sq cm",
-            "64 sq cm"
-        ],
-        "correct_answer": "32 sq cm",
-        "ideal_solution": "Square area = 8² = 64 sq cm. Each triangle = 64/2 = 32 sq cm. Socratic Hint: A diagonal divides a square into two equal triangles.",
-        "failure_modes": {
-            "premature_calculation": "Student computes square area = 64 and picks that.",
-            "formula_misapplication": "Student computes (1/2)(8)(8) = 32 (correct shortcut).",
-            "arithmetic_slip": "Student computes 64/2 = 24."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A tournament has 8 players. Each player plays every other player once. How many games are played?",
-        "options": [
-            "16",
-            "28",
-            "32",
-            "56",
-            "64"
-        ],
-        "correct_answer": "28",
-        "ideal_solution": "C(8,2) = 8×7/2 = 28. Socratic Hint: Each game is between a unique pair of players. Count pairs.",
-        "failure_modes": {
-            "overcounting": "Student computes 8 × 7 = 56 (double-counting).",
-            "formula_misapplication": "Student computes 8 × 8 = 64.",
-            "arithmetic_slip": "Student computes 8×7/2 = 32."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the smallest positive integer that is a multiple of both 15 and 20?",
-        "options": [
-            "30",
-            "45",
-            "60",
-            "100",
-            "300"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "LCM(15,20). 15 = 3×5. 20 = 2²×5. LCM = 2²×3×5 = 60. Socratic Hint: Find the LCM using prime factorization.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 15 × 20 = 300.",
-            "undercounting": "Student picks 30 (multiple of 15 but not 20).",
-            "arithmetic_slip": "Student computes LCM = 45."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 2⁴ × 3² ÷ 6²",
-        "options": [
-            "1",
-            "2",
-            "4",
-            "8",
-            "16"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "2⁴ = 16. 3² = 9. 6² = 36. 16 × 9 ÷ 36 = 144 ÷ 36 = 4. Or: (2⁴ × 3²)/(2² × 3²) = 2² = 4. Socratic Hint: Simplify by cancelling common factors.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 144/36 = 2.",
-            "formula_misapplication": "Student computes 2⁴ × 3² = 48 and divides by 6 = 8.",
-            "premature_calculation": "Student computes 16 × 9 = 144 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "An isosceles triangle has two sides of 10 cm each and a base of 12 cm. What is its height?",
-        "options": [
-            "6 cm",
-            "8 cm",
-            "10 cm",
-            "12 cm",
-            "14 cm"
-        ],
-        "correct_answer": "8 cm",
-        "ideal_solution": "Height bisects the base: half-base = 6 cm. h = √(10² - 6²) = √(100 - 36) = √64 = 8 cm. Socratic Hint: Drop a perpendicular from the apex to the midpoint of the base.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses full base: √(100-144) (negative).",
-            "arithmetic_slip": "Student computes √64 = 6.",
-            "premature_calculation": "Student finds half-base = 6 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "How many diagonals does a hexagon have?",
-        "options": [
-            "3",
-            "6",
-            "9",
-            "12",
-            "15"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "Diagonals = n(n-3)/2 = 6(6-3)/2 = 6×3/2 = 9. Socratic Hint: Each vertex connects to n-3 non-adjacent vertices, then divide by 2 to avoid double-counting.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes C(6,2) - 6 = 15 - 6 = 9 (correct by subtracting sides).",
-            "arithmetic_slip": "Student computes 6×3/2 = 6.",
-            "undercounting": "Student counts by drawing and misses some."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is 11² - 10²?",
-        "options": [
-            "1",
-            "11",
-            "21",
-            "31",
-            "101"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "11² - 10² = (11+10)(11-10) = 21 × 1 = 21. Or: 121 - 100 = 21. Socratic Hint: Use a²-b² = (a+b)(a-b).",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (11-10)² = 1.",
-            "arithmetic_slip": "Student computes 121-100 = 31.",
-            "premature_calculation": "Student computes 11² = 121 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A water tank loses 2% of its water each day. Starting with 1000 liters, how much remains after 3 days? (Round to nearest liter)",
-        "options": [
-            "940 L",
-            "941 L",
-            "960 L",
-            "970 L",
-            "1000 L"
-        ],
-        "correct_answer": "941 L",
-        "ideal_solution": "Day 1: 1000 × 0.98 = 980. Day 2: 980 × 0.98 = 960.4. Day 3: 960.4 × 0.98 = 941.19 ≈ 941 L. Or: 1000 × 0.98³ = 1000 × 0.941192 ≈ 941. Socratic Hint: Multiply by 0.98 each day (compound decrease).",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts 2% × 3 = 6%: 940 L.",
-            "arithmetic_slip": "Student computes 1000 × 0.98 = 980 and stops for day 1.",
-            "premature_calculation": "Student computes 2% loss = 20L × 3 = 60L: 940L."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Two circles have radii 3 cm and 7 cm. Their centers are 15 cm apart. What is the distance between the nearest points on the two circles?",
-        "options": [
-            "2 cm",
-            "5 cm",
-            "8 cm",
-            "10 cm",
-            "15 cm"
-        ],
-        "correct_answer": "5 cm",
-        "ideal_solution": "Distance between nearest points = distance between centers - sum of radii = 15 - (3+7) = 15 - 10 = 5 cm. Socratic Hint: Subtract both radii from the center-to-center distance.",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts only one radius: 15-7 = 8.",
-            "arithmetic_slip": "Student computes 15-3-7 = 2.",
-            "premature_calculation": "Student computes 3+7 = 10 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A 5×5 magic square has all rows, columns, and diagonals summing to the same value. Using numbers 1-25, what is the magic constant?",
-        "options": [
-            "55",
-            "60",
-            "65",
-            "70",
-            "75"
-        ],
-        "correct_answer": "65",
-        "ideal_solution": "Sum of 1 to 25 = 25×26/2 = 325. Each of 5 rows sums equally: 325/5 = 65. Socratic Hint: Total sum divided by number of rows gives the constant.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 325/5 = 55.",
-            "formula_misapplication": "Student computes 25 × 5 = 125.",
-            "premature_calculation": "Student computes sum = 325 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many numbers from 1 to 100 are NOT divisible by 2 or 3?",
-        "options": [
-            "17",
-            "25",
-            "33",
-            "50",
-            "67"
-        ],
-        "correct_answer": "33",
-        "ideal_solution": "Div by 2: 50. Div by 3: 33. Div by both (6): 16. By inclusion-exclusion: div by 2 or 3 = 50+33-16 = 67. NOT divisible = 100 - 67 = 33. Socratic Hint: Use inclusion-exclusion, then subtract from 100.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 100 - 50 = 50.",
-            "arithmetic_slip": "Student computes 100 - (50+33) = 17 (forgetting overlap).",
-            "overcounting": "Student computes 100-50-33+16 = 33 (correct)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A clock gains 5 minutes every hour. If you set it correctly at noon, what time does it show when the actual time is 6 PM?",
-        "options": [
-            "6:15 PM",
-            "6:20 PM",
-            "6:25 PM",
-            "6:30 PM",
-            "6:40 PM"
-        ],
-        "correct_answer": "6:30 PM",
-        "ideal_solution": "6 hours elapsed. Gain = 5 min/hr × 6 hr = 30 min. Shows: 6:30 PM. Socratic Hint: Multiply the gain per hour by the number of hours.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 5 × 6 = 25: shows 6:25.",
-            "formula_misapplication": "Student adds 5 min once: 6:05 PM.",
-            "premature_calculation": "Student computes total gain = 30 min and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A semicircular window has radius 3 feet. What is its area? (π ≈ 3.14)",
-        "options": [
-            "4.71 sq ft",
-            "9.42 sq ft",
-            "14.13 sq ft",
-            "28.26 sq ft",
-            "56.52 sq ft"
-        ],
-        "correct_answer": "14.13 sq ft",
-        "ideal_solution": "Area = (1/2)πr² = (1/2)(3.14)(9) = 14.13 sq ft. Socratic Hint: A semicircle is half a full circle.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses full circle: 3.14 × 9 = 28.26.",
-            "arithmetic_slip": "Student computes (1/2)(3.14)(9) = 9.42.",
-            "premature_calculation": "Student computes πr² = 28.26 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "You have coins that sum to exactly $1.00 using the fewest coins possible (quarters, dimes, nickels, pennies). How many coins do you need?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "10"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "4 quarters = $1.00 (4 coins). Socratic Hint: Use the largest denomination first to minimize coin count.",
-        "failure_modes": {
-            "overcounting": "Student uses mixed: 3Q+2D+1N = 6 coins.",
-            "formula_misapplication": "Student uses 10 dimes = 10 coins.",
-            "arithmetic_slip": "Student computes 100/25 = 3."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the product of the GCF and LCM of 12 and 18?",
-        "options": [
-            "36",
-            "108",
-            "216",
-            "324",
-            "432"
-        ],
-        "correct_answer": "216",
-        "ideal_solution": "GCF(12,18) = 6. LCM(12,18) = 36. Product = 6 × 36 = 216. Note: GCF × LCM always equals the product of the two numbers (12 × 18 = 216). Socratic Hint: Compute GCF and LCM separately, then multiply.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 12 + 18 = 30.",
-            "arithmetic_slip": "Student computes 6 × 36 = 108.",
-            "premature_calculation": "Student finds GCF = 6 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 0.125 expressed as a fraction in simplest form?",
-        "options": [
-            "1/4",
-            "1/6",
-            "1/8",
-            "3/25",
-            "5/40"
-        ],
-        "correct_answer": "1/8",
-        "ideal_solution": "0.125 = 125/1000 = 1/8. Socratic Hint: Write as a fraction over 1000, then simplify by dividing by GCF (125).",
-        "failure_modes": {
-            "formula_misapplication": "Student writes 125/100 = 5/4.",
-            "arithmetic_slip": "Student simplifies 125/1000 = 1/4.",
-            "premature_calculation": "Student writes 125/1000 and doesn't simplify."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A circle has an area of 154 sq cm. What is its diameter? (π ≈ 22/7)",
-        "options": [
-            "7 cm",
-            "11 cm",
-            "14 cm",
-            "22 cm",
-            "49 cm"
-        ],
-        "correct_answer": "14 cm",
-        "ideal_solution": "πr² = 154. (22/7)r² = 154. r² = 154 × 7/22 = 49. r = 7 cm. Diameter = 14 cm. Socratic Hint: Solve for r² from the area formula, then double r.",
-        "failure_modes": {
-            "premature_calculation": "Student finds r = 7 and picks that.",
-            "formula_misapplication": "Student computes √154 ≈ 12.4 and picks 11.",
-            "arithmetic_slip": "Student computes r² = 49 and picks 49."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If 5 cats can catch 5 mice in 5 minutes, how many cats are needed to catch 100 mice in 100 minutes?",
-        "options": [
-            "5",
-            "20",
-            "50",
-            "100",
-            "500"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "Each cat catches 1 mouse in 5 minutes. In 100 minutes, each cat catches 100/5 = 20 mice. To catch 100 mice: 100/20 = 5 cats. Socratic Hint: Find the rate per cat first.",
-        "failure_modes": {
-            "formula_misapplication": "Student scales linearly: 5 × (100/5) = 100 cats.",
-            "arithmetic_slip": "Student computes 100/5 = 20 cats.",
-            "premature_calculation": "Student computes 5 cats × 20 = 100 mice (correct check)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many perfect squares are between 100 and 400 (exclusive)?",
-        "options": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "√100 = 10. √400 = 20. Squares: 11², 12², ..., 19². Count = 19 - 11 + 1 = 9. Socratic Hint: Find the square roots of the bounds (exclude them) and count.",
-        "failure_modes": {
-            "off_by_one": "Student includes 100 and 400: 10²-20² = 11 squares.",
-            "overcounting": "Student counts 10² to 20²: 11.",
-            "arithmetic_slip": "Student computes 19-11 = 8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Simplify: (4/5) ÷ (2/3)",
-        "options": [
-            "6/5",
-            "8/15",
-            "2/5",
-            "12/10",
-            "15/8"
-        ],
-        "correct_answer": "6/5",
-        "ideal_solution": "(4/5) ÷ (2/3) = (4/5) × (3/2) = 12/10 = 6/5. Socratic Hint: Dividing by a fraction means multiplying by its reciprocal.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 4/5 × 2/3 = 8/15.",
-            "premature_calculation": "Student computes 4/5 × 3/2 = 12/10 but doesn't simplify.",
-            "arithmetic_slip": "Student computes 4×3 = 12, 5×2 = 10, picks 15/8 (inverse)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rectangular garden is 20m × 15m. A 2m-wide path runs inside along all edges. What is the area of the garden excluding the path?",
-        "options": [
-            "176 sq m",
-            "200 sq m",
-            "240 sq m",
-            "260 sq m",
-            "300 sq m"
-        ],
-        "correct_answer": "176 sq m",
-        "ideal_solution": "Inner rectangle: (20-4) × (15-4) = 16 × 11 = 176 sq m. Socratic Hint: Subtract twice the path width from each dimension (path on both sides).",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts once: (20-2)(15-2) = 234.",
-            "arithmetic_slip": "Student computes 16 × 11 = 200.",
-            "premature_calculation": "Student computes total area = 300 and subtracts path area wrong."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A function f(n) = n² + n. What is f(7) - f(6)?",
-        "options": [
-            "7",
-            "13",
-            "14",
-            "15",
-            "56"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "f(7) = 49 + 7 = 56. f(6) = 36 + 6 = 42. 56 - 42 = 14. Or: f(n)-f(n-1) = 2n. f(7)-f(6) = 2×7 = 14. Socratic Hint: Compute each function value, then subtract.",
-        "failure_modes": {
-            "premature_calculation": "Student computes f(7) = 56 and picks that.",
-            "arithmetic_slip": "Student computes 56-42 = 13.",
-            "formula_misapplication": "Student computes 7² - 6² = 13."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "A number n satisfies n ≡ 3 (mod 5) and n ≡ 4 (mod 7). What is the smallest positive n?",
-        "options": [
-            "18",
-            "23",
-            "28",
-            "33",
-            "38"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "n mod 5 = 3: candidates 3,8,13,18,23,28... Check mod 7: 3%7=3, 8%7=1, 13%7=6, 18%7=4 ✓. Smallest = 18. Socratic Hint: List numbers with remainder 3 mod 5, then check which has remainder 4 mod 7.",
-        "failure_modes": {
-            "off_by_one": "Student picks 23: 23%7=2, not 4.",
-            "overcounting": "Student picks 28: 28%5=3 ✓, 28%7=0 ✗.",
-            "formula_misapplication": "Student computes 5×7+3+4 = 42."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Three workers can build a wall in 12 days. How many days would 4 workers take?",
-        "options": [
-            "6",
-            "8",
-            "9",
-            "10",
-            "16"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "Total work = 3 × 12 = 36 worker-days. With 4 workers: 36/4 = 9 days. Socratic Hint: Find total worker-days, then divide by the new number of workers.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 12 × 4/3 = 16.",
-            "arithmetic_slip": "Student computes 36/4 = 8.",
-            "premature_calculation": "Student computes 12/4 = 3."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A triangle has sides of 7, 24, and 25. Is it a right triangle? What is its area?",
-        "options": [
-            "42 sq units",
-            "84 sq units",
-            "87.5 sq units",
-            "168 sq units",
-            "175 sq units"
-        ],
-        "correct_answer": "84 sq units",
-        "ideal_solution": "Check: 7² + 24² = 49 + 576 = 625 = 25². Yes, right triangle! Area = (1/2)(7)(24) = 84 sq units. Socratic Hint: Verify it's a right triangle using the Pythagorean theorem, then compute area using the legs.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (1/2)(25)(7) = 87.5 (using hypotenuse as base).",
-            "arithmetic_slip": "Student computes (1/2)(7)(24) = 42.",
-            "premature_calculation": "Student verifies right triangle but doesn't compute area."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A locker problem: 100 lockers, all closed. Student 1 toggles every locker. Student 2 toggles every 2nd. Student 3 toggles every 3rd... Student 100 toggles the 100th. Which numbered lockers remain open?",
-        "options": [
-            "Only odd numbers",
-            "Only even numbers",
-            "Perfect squares",
-            "Primes",
-            "Multiples of 10"
-        ],
-        "correct_answer": "Perfect squares",
-        "ideal_solution": "A locker is toggled once for each of its divisors. Lockers with odd number of divisors stay open. Only perfect squares have odd number of divisors (since divisors pair up, except √n). Socratic Hint: A locker ends open if toggled an odd number of times.",
-        "failure_modes": {
-            "converse_error": "Student thinks odd lockers stay open.",
-            "formula_misapplication": "Student thinks primes stay open.",
-            "premature_calculation": "Student simulates a few lockers and guesses."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the units digit of 7⁴?",
-        "options": [
-            "1",
-            "3",
-            "7",
-            "9",
-            "0"
-        ],
-        "correct_answer": "1",
-        "ideal_solution": "7¹=7, 7²=49(9), 7³=343(3), 7⁴=2401(1). Units digit of 7⁴ = 1. Socratic Hint: Track only the ones digit through each multiplication.",
-        "failure_modes": {
-            "off_by_one": "Student picks 7 (confusing with 7¹).",
-            "arithmetic_slip": "Student computes 7⁴ = 2401 but reads units digit as 0.",
-            "formula_misapplication": "Student computes 7 × 4 = 28, units = 8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Convert 3.625 to a fraction in simplest form.",
-        "options": [
-            "3 5/8",
-            "3 1/4",
-            "3 3/4",
-            "29/8",
-            "3625/1000"
-        ],
-        "correct_answer": "29/8",
-        "ideal_solution": "3.625 = 3 + 0.625 = 3 + 625/1000 = 3 + 5/8 = 29/8. Socratic Hint: Convert the decimal part to a fraction, simplify, then convert to improper fraction.",
-        "failure_modes": {
-            "premature_calculation": "Student writes 3 5/8 (mixed number, not option format).",
-            "formula_misapplication": "Student writes 3625/1000.",
-            "arithmetic_slip": "Student simplifies 625/1000 = 1/4: gets 3 1/4."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A square ABCD has side 12 cm. Point E is the midpoint of BC. What is the area of triangle ABE?",
-        "options": [
-            "18 sq cm",
-            "24 sq cm",
-            "36 sq cm",
-            "48 sq cm",
-            "72 sq cm"
-        ],
-        "correct_answer": "36 sq cm",
-        "ideal_solution": "Place A=(0,0), B=(12,0), C=(12,12), D=(0,12). E = midpoint of BC = (12,6). Triangle ABE: base AB = 12, height = 6 (y-coordinate of E). Area = (1/2)(12)(6) = 36 sq cm. Socratic Hint: Identify the base and the perpendicular height from the opposite vertex.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (1/2)(12)(12) = 72.",
-            "arithmetic_slip": "Student computes (1/2)(12)(6) = 24.",
-            "premature_calculation": "Student finds E at midpoint and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A sequence: 2, 6, 18, 54, ... What is the 7th term?",
-        "options": [
-            "162",
-            "486",
-            "1458",
-            "4374",
-            "13122"
-        ],
-        "correct_answer": "1458",
-        "ideal_solution": "Geometric sequence, ratio = 3. Terms: 2, 6, 18, 54, 162, 486, 1458. 7th term = 2 × 3⁶ = 2 × 729 = 1458. Socratic Hint: Find the common ratio, then use a₁ × rⁿ⁻¹.",
-        "failure_modes": {
-            "off_by_one": "Student computes 6th term: 486.",
-            "overcounting": "Student computes 8th term: 4374.",
-            "arithmetic_slip": "Student computes 2 × 3⁶ = 2 × 243 = 486 (wrong power of 3)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "Is 143 prime? If not, what are its prime factors?",
-        "options": [
-            "Yes, 143 is prime",
-            "11 × 13",
-            "7 × 20 + 3",
-            "11 × 12 + 11",
-            "13 × 11"
-        ],
-        "correct_answer": "11 × 13",
-        "ideal_solution": "Check: 143/11 = 13. So 143 = 11 × 13. Not prime. Socratic Hint: Test divisibility by primes up to √143 ≈ 12.",
-        "failure_modes": {
-            "premature_calculation": "Student checks only 2,3,5,7 and concludes prime.",
-            "arithmetic_slip": "Student computes 143/7 = 20.4 and gives up.",
-            "formula_misapplication": "Student picks 7 × 20 + 3 = 143 (not a factorization)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A tank fills in 6 hours from pipe A and 4 hours from pipe B. How long to fill with both pipes open?",
-        "options": [
-            "2 hr",
-            "2.4 hr",
-            "3 hr",
-            "5 hr",
-            "10 hr"
-        ],
-        "correct_answer": "2.4 hr",
-        "ideal_solution": "Rate A = 1/6 tank/hr. Rate B = 1/4 tank/hr. Combined = 1/6 + 1/4 = 2/12 + 3/12 = 5/12. Time = 12/5 = 2.4 hr. Socratic Hint: Add the rates, then take the reciprocal.",
-        "failure_modes": {
-            "formula_misapplication": "Student averages times: (6+4)/2 = 5 hr.",
-            "arithmetic_slip": "Student computes 1/6+1/4 = 1/10: time = 10 hr.",
-            "premature_calculation": "Student computes combined rate = 5/12 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cone has volume 100π cu cm and height 12 cm. What is its base radius?",
-        "options": [
-            "3 cm",
-            "4 cm",
-            "5 cm",
-            "6 cm",
-            "10 cm"
-        ],
-        "correct_answer": "5 cm",
-        "ideal_solution": "V = (1/3)πr²h. 100π = (1/3)πr²(12). 100 = 4r². r² = 25. r = 5 cm. Socratic Hint: Plug into the volume formula and solve for r.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses V = πr²h: 100 = 12r². r = √(100/12).",
-            "arithmetic_slip": "Student computes r² = 25 but picks 6.",
-            "premature_calculation": "Student solves 100 = 4r² and picks 25."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A calendar for a non-leap year starts on a Wednesday. What day is December 31st?",
-        "options": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "correct_answer": "Wednesday",
-        "ideal_solution": "365 days in a non-leap year. 365 = 52 × 7 + 1. So Dec 31 is 1 day ahead of Jan 1. Wait: Jan 1 is day 1 (Wednesday). Dec 31 is day 365. (365-1) = 364 days after Jan 1. 364/7 = 52 exactly. So Dec 31 is also Wednesday. Socratic Hint: Count total days, then find the remainder when divided by 7.",
-        "failure_modes": {
-            "off_by_one": "Student computes 365/7 = 52 R1: Thursday.",
-            "formula_misapplication": "Student adds 365 days to Wednesday: Thursday.",
-            "arithmetic_slip": "Student computes 365 mod 7 = 1 and picks Thursday."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the sum of all even numbers from 2 to 100?",
-        "options": [
-            "2450",
-            "2500",
-            "2550",
-            "5050",
-            "5100"
-        ],
-        "correct_answer": "2550",
-        "ideal_solution": "Even numbers: 2,4,6,...,100. Count = 50. Sum = 2(1+2+...+50) = 2 × 50×51/2 = 2550. Or: sum = 50 × (2+100)/2 = 50 × 51 = 2550. Socratic Hint: Factor out 2 and use Gauss's formula, or use the arithmetic series formula.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes sum of 1 to 100 = 5050.",
-            "arithmetic_slip": "Student computes 50 × 51 = 2500.",
-            "overcounting": "Student includes 0: sum = 2550 (same, since 0 doesn't change sum)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 37 × 27 + 37 × 73?",
-        "options": [
-            "2700",
-            "3600",
-            "3700",
-            "4000",
-            "7400"
-        ],
-        "correct_answer": "3700",
-        "ideal_solution": "Factor: 37 × (27 + 73) = 37 × 100 = 3700. Socratic Hint: Factor out the common term using the distributive property.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 37 × 100 = 3600.",
-            "formula_misapplication": "Student computes 37 × 27 + 37 × 73 separately and adds wrong.",
-            "premature_calculation": "Student computes 37 × 27 = 999 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A tetrahedron has 4 triangular faces. How many edges does it have?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "12"
-        ],
-        "correct_answer": "6",
-        "ideal_solution": "Using Euler's formula: V - E + F = 2. V=4, F=4. 4 - E + 4 = 2. E = 6. Or: each vertex connects to 3 others, but each edge is shared: 4×3/2 = 6. Socratic Hint: Use Euler's formula or count vertex connections.",
-        "failure_modes": {
-            "formula_misapplication": "Student counts faces × 3 = 12 (double-counting).",
-            "undercounting": "Student counts 4 edges (same as faces).",
-            "arithmetic_slip": "Student computes 4×3/2 = 4."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "What is the 100th digit in the sequence 123456789101112131415...?",
-        "options": [
-            "5",
-            "0",
-            "4",
-            "1",
-            "9"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "1-digit numbers (1-9): 9 numbers × 1 digit = 9 digits. 2-digit numbers (10-99): using 100-9 = 91 more digits. 91/2 = 45 numbers + 1 digit. So 45 two-digit numbers: 10,11,...,54. That's 9 + 90 = 99 digits through '54'. 100th digit = first digit of 55 = 5. Socratic Hint: Count digits used by 1-digit numbers, then 2-digit numbers.",
-        "failure_modes": {
-            "off_by_one": "Student gets 100th digit as 4 (last digit of 54).",
-            "arithmetic_slip": "Student miscounts 2-digit numbers.",
-            "formula_misapplication": "Student picks 1 (the 1st digit)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the sum of 1/1 + 1/2 + 1/3 + 1/6?",
-        "options": [
-            "1",
-            "1 1/2",
-            "2",
-            "5/6",
-            "11/6"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "LCD = 6. 6/6 + 3/6 + 2/6 + 1/6 = 12/6 = 2. Socratic Hint: Convert to LCD and add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 6+3+2+1 = 11/6.",
-            "formula_misapplication": "Student adds numerators: 1+1+1+1 = 4.",
-            "premature_calculation": "Student computes 1+1/2 = 3/2 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "An item priced at $80 is discounted 25%, then the discounted price is increased by 25%. What is the final price?",
-        "options": [
-            "$60",
-            "$65",
-            "$75",
-            "$80",
-            "$85"
-        ],
-        "correct_answer": "$75",
-        "ideal_solution": "After 25% off: $80 × 0.75 = $60. After 25% increase: $60 × 1.25 = $75. Socratic Hint: A 25% decrease followed by a 25% increase does NOT return to the original price.",
-        "failure_modes": {
-            "formula_misapplication": "Student assumes return to original: $80.",
-            "arithmetic_slip": "Student computes $60 × 1.25 = $65.",
-            "premature_calculation": "Student computes $80 × 0.75 = $60 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A regular hexagon has side 6 cm. What is its area? (Use A = (3√3/2)s², √3 ≈ 1.73)",
-        "options": [
-            "54 sq cm",
-            "62.28 sq cm",
-            "93.53 sq cm",
-            "108 sq cm",
-            "187.06 sq cm"
-        ],
-        "correct_answer": "93.53 sq cm",
-        "ideal_solution": "A = (3√3/2)(6²) = (3×1.73/2)(36) = (2.595)(36) = 93.42 ≈ 93.53 sq cm. Socratic Hint: Use the regular hexagon area formula with s = 6.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses 6×6 = 36 as area.",
-            "arithmetic_slip": "Student computes (3×1.73/2)(36) = 62.28.",
-            "premature_calculation": "Student computes s² = 36 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A snail is at the bottom of a 20-foot well. Each day it climbs 5 feet and each night it slips back 3 feet. On which day does it reach the top?",
-        "options": [
-            "8th",
-            "9th",
-            "10th",
-            "11th",
-            "20th"
-        ],
-        "correct_answer": "9th",
-        "ideal_solution": "Net gain per day: 2 feet. After 8 days: 16 feet. On day 9, climbs 5 feet to 21 feet — past 20, so it escapes on day 9 without slipping back. Socratic Hint: On the last day, the snail reaches the top before nightfall.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 20/2 = 10 days.",
-            "off_by_one": "Student says day 8 (16+5=21, but day 8 night slip to 18).",
-            "arithmetic_slip": "Student computes 20/5 = 4 days."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many zeros does 15! end with?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "Trailing zeros = floor(15/5) + floor(15/25) = 3 + 0 = 3. Socratic Hint: Count multiples of 5 and higher powers of 5.",
-        "failure_modes": {
-            "undercounting": "Student counts only 5 and 10: gets 2.",
-            "overcounting": "Student counts all even × 5 combos.",
-            "formula_misapplication": "Student computes 15/5 = 3 (correct!)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A store sells pens at $1.50 each. If you buy 10 or more, you get 20% off. How much do 12 pens cost?",
-        "options": [
-            "$12.00",
-            "$14.40",
-            "$15.00",
-            "$16.80",
-            "$18.00"
-        ],
-        "correct_answer": "$14.40",
-        "ideal_solution": "12 × $1.50 = $18.00. With 20% off: $18.00 × 0.80 = $14.40. Socratic Hint: Calculate the undiscounted total first, then apply the discount.",
-        "failure_modes": {
-            "premature_calculation": "Student computes 12 × $1.50 = $18 and stops.",
-            "arithmetic_slip": "Student computes $18 × 0.80 = $16.80.",
-            "formula_misapplication": "Student discounts only 2 extra pens."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cylinder has a volume of 500π cu cm and a height of 20 cm. What is its radius?",
-        "options": [
-            "3 cm",
-            "4 cm",
-            "5 cm",
-            "10 cm",
-            "25 cm"
-        ],
-        "correct_answer": "5 cm",
-        "ideal_solution": "V = πr²h. 500π = πr²(20). 500 = 20r². r² = 25. r = 5 cm. Socratic Hint: Divide both sides by πh to isolate r².",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 500/20 = 25 and picks that.",
-            "arithmetic_slip": "Student computes √25 = 4.",
-            "premature_calculation": "Student computes r² = 25 and stops."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "grandmaster",
-        "type": "logic",
-        "question": "A farmer has some chickens and some cows. Together they have 10 heads and 26 legs. How many chickens does the farmer have?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "Let c be chickens, w be cows. c + w = 10. 2c + 4w = 26. w = 10 - c. 2c + 4(10 - c) = 26. 2c + 40 - 4c = 26. -2c = -14. c = 7. Thus 7 chickens (14 legs) and 3 cows (12 legs) = 26 legs. Socratic Hint: Every animal has at least 2 legs. If all 10 had 2 legs, that's 20 legs. You have 6 extra legs. How many 4-legged animals do you need to make 6 extra legs?",
-        "failure_modes": {
-            "formula_misapplication": "Student calculates the number of cows (3) instead.",
-            "arithmetic_slip": "Student guesses 5.",
-            "premature_calculation": "Student guesses 4."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 9,
-        "difficulty": "grandmaster",
-        "type": "algebra",
-        "question": "If x + y = 10 and x - y = 4, what is the value of x × y?",
-        "options": [
-            "14",
-            "21",
-            "24",
-            "40",
-            "44"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "Adding equations: 2x = 14 so x = 7. Then 7 + y = 10 so y = 3. x × y = 7 × 3 = 21. Socratic Hint: What two numbers add to 10 and are 4 apart?",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies 10 × 4 = 40.",
-            "premature_calculation": "Student adds 10+4 = 14.",
-            "arithmetic_slip": "Student gets x=7, y=3 but adds them instead to get 10, then guesses 24."
-        }
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is the value of 1 - 1/2 + 1/3 - 1/4?",
+    "options": [
+      "1/12",
+      "5/12",
+      "7/12",
+      "1/4",
+      "11/12"
+    ],
+    "correct_answer": "7/12",
+    "ideal_solution": "LCD=12. 12/12 - 6/12 + 4/12 - 3/12 = 7/12. Socratic Hint: Convert to LCD and combine, being careful with signs.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 12-6+4-3 = 5/12.",
+      "formula_misapplication": "Student adds all: 1+1/2+1/3+1/4.",
+      "premature_calculation": "Student computes 1-1/2 = 1/2 and stops."
     }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A cone has a slant height of 13 cm and base radius of 5 cm. What is its height?",
+    "options": [
+      "8 cm",
+      "10 cm",
+      "12 cm",
+      "15 cm",
+      "18 cm"
+    ],
+    "correct_answer": "12 cm",
+    "ideal_solution": "h = √(l² - r²) = √(169 - 25) = √144 = 12 cm. Socratic Hint: The slant height, radius, and height form a right triangle.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 13+5 = 18.",
+      "arithmetic_slip": "Student computes √144 = 10.",
+      "premature_calculation": "Student computes 169-25 = 144 and picks 15."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Tom, Jim, and Sara each have a different pet (cat, dog, fish). Tom doesn't have a cat or a fish. Jim doesn't have a fish. What pet does Sara have?",
+    "options": [
+      "Cat",
+      "Dog",
+      "Fish",
+      "Cat or Dog",
+      "Cannot determine"
+    ],
+    "correct_answer": "Fish",
+    "ideal_solution": "Tom ≠ cat, Tom ≠ fish → Tom has dog. Jim ≠ fish → Jim has cat (dog taken by Tom). Sara has fish. Socratic Hint: Start with the person who has the most restrictions.",
+    "failure_modes": {
+      "premature_calculation": "Student assigns pets randomly.",
+      "converse_error": "Student thinks Tom has cat.",
+      "formula_misapplication": "Student picks Cannot determine."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the LCM of 12, 18, and 20?",
+    "options": [
+      "60",
+      "120",
+      "180",
+      "360",
+      "720"
+    ],
+    "correct_answer": "180",
+    "ideal_solution": "12 = 2² × 3. 18 = 2 × 3². 20 = 2² × 5. LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180. Socratic Hint: Take the highest power of each prime factor.",
+    "failure_modes": {
+      "undercounting": "Student computes LCM(12,18) = 36, forgets 20.",
+      "overcounting": "Student multiplies: 12 × 18 × 20 = 4320.",
+      "arithmetic_slip": "Student computes 4 × 9 × 5 = 120."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A hiker walks uphill at 3 km/h and downhill at 5 km/h. If a trail is 15 km uphill and 15 km downhill, what is the total time?",
+    "options": [
+      "6 hr",
+      "7 hr",
+      "7.5 hr",
+      "8 hr",
+      "10 hr"
+    ],
+    "correct_answer": "8 hr",
+    "ideal_solution": "Uphill time = 15/3 = 5 hr. Downhill time = 15/5 = 3 hr. Total = 5 + 3 = 8 hr. Socratic Hint: Calculate each segment's time separately, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student averages speeds: 30/4 = 7.5 hr.",
+      "arithmetic_slip": "Student computes 15/3 = 4: total = 7 hr.",
+      "premature_calculation": "Student computes uphill time = 5 hr and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A square is cut diagonally. What is the area of each resulting triangle if the square has side 8 cm?",
+    "options": [
+      "16 sq cm",
+      "24 sq cm",
+      "32 sq cm",
+      "48 sq cm",
+      "64 sq cm"
+    ],
+    "correct_answer": "32 sq cm",
+    "ideal_solution": "Square area = 8² = 64 sq cm. Each triangle = 64/2 = 32 sq cm. Socratic Hint: A diagonal divides a square into two equal triangles.",
+    "failure_modes": {
+      "premature_calculation": "Student computes square area = 64 and picks that.",
+      "formula_misapplication": "Student computes (1/2)(8)(8) = 32 (correct shortcut).",
+      "arithmetic_slip": "Student computes 64/2 = 24."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A tournament has 8 players. Each player plays every other player once. How many games are played?",
+    "options": [
+      "16",
+      "28",
+      "32",
+      "56",
+      "64"
+    ],
+    "correct_answer": "28",
+    "ideal_solution": "C(8,2) = 8×7/2 = 28. Socratic Hint: Each game is between a unique pair of players. Count pairs.",
+    "failure_modes": {
+      "overcounting": "Student computes 8 × 7 = 56 (double-counting).",
+      "formula_misapplication": "Student computes 8 × 8 = 64.",
+      "arithmetic_slip": "Student computes 8×7/2 = 32."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the smallest positive integer that is a multiple of both 15 and 20?",
+    "options": [
+      "30",
+      "45",
+      "60",
+      "100",
+      "300"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "LCM(15,20). 15 = 3×5. 20 = 2²×5. LCM = 2²×3×5 = 60. Socratic Hint: Find the LCM using prime factorization.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 15 × 20 = 300.",
+      "undercounting": "Student picks 30 (multiple of 15 but not 20).",
+      "arithmetic_slip": "Student computes LCM = 45."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Evaluate: 2⁴ × 3² ÷ 6²",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "2⁴ = 16. 3² = 9. 6² = 36. 16 × 9 ÷ 36 = 144 ÷ 36 = 4. Or: (2⁴ × 3²)/(2² × 3²) = 2² = 4. Socratic Hint: Simplify by cancelling common factors.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 144/36 = 2.",
+      "formula_misapplication": "Student computes 2⁴ × 3² = 48 and divides by 6 = 8.",
+      "premature_calculation": "Student computes 16 × 9 = 144 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "An isosceles triangle has two sides of 10 cm each and a base of 12 cm. What is its height?",
+    "options": [
+      "6 cm",
+      "8 cm",
+      "10 cm",
+      "12 cm",
+      "14 cm"
+    ],
+    "correct_answer": "8 cm",
+    "ideal_solution": "Height bisects the base: half-base = 6 cm. h = √(10² - 6²) = √(100 - 36) = √64 = 8 cm. Socratic Hint: Drop a perpendicular from the apex to the midpoint of the base.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses full base: √(100-144) (negative).",
+      "arithmetic_slip": "Student computes √64 = 6.",
+      "premature_calculation": "Student finds half-base = 6 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "How many diagonals does a hexagon have?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12",
+      "15"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "Diagonals = n(n-3)/2 = 6(6-3)/2 = 6×3/2 = 9. Socratic Hint: Each vertex connects to n-3 non-adjacent vertices, then divide by 2 to avoid double-counting.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes C(6,2) - 6 = 15 - 6 = 9 (correct by subtracting sides).",
+      "arithmetic_slip": "Student computes 6×3/2 = 6.",
+      "undercounting": "Student counts by drawing and misses some."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is 11² - 10²?",
+    "options": [
+      "1",
+      "11",
+      "21",
+      "31",
+      "101"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "11² - 10² = (11+10)(11-10) = 21 × 1 = 21. Or: 121 - 100 = 21. Socratic Hint: Use a²-b² = (a+b)(a-b).",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (11-10)² = 1.",
+      "arithmetic_slip": "Student computes 121-100 = 31.",
+      "premature_calculation": "Student computes 11² = 121 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A water tank loses 2% of its water each day. Starting with 1000 liters, how much remains after 3 days? (Round to nearest liter)",
+    "options": [
+      "940 L",
+      "941 L",
+      "960 L",
+      "970 L",
+      "1000 L"
+    ],
+    "correct_answer": "941 L",
+    "ideal_solution": "Day 1: 1000 × 0.98 = 980. Day 2: 980 × 0.98 = 960.4. Day 3: 960.4 × 0.98 = 941.19 ≈ 941 L. Or: 1000 × 0.98³ = 1000 × 0.941192 ≈ 941. Socratic Hint: Multiply by 0.98 each day (compound decrease).",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts 2% × 3 = 6%: 940 L.",
+      "arithmetic_slip": "Student computes 1000 × 0.98 = 980 and stops for day 1.",
+      "premature_calculation": "Student computes 2% loss = 20L × 3 = 60L: 940L."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "Two circles have radii 3 cm and 7 cm. Their centers are 15 cm apart. What is the distance between the nearest points on the two circles?",
+    "options": [
+      "2 cm",
+      "5 cm",
+      "8 cm",
+      "10 cm",
+      "15 cm"
+    ],
+    "correct_answer": "5 cm",
+    "ideal_solution": "Distance between nearest points = distance between centers - sum of radii = 15 - (3+7) = 15 - 10 = 5 cm. Socratic Hint: Subtract both radii from the center-to-center distance.",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts only one radius: 15-7 = 8.",
+      "arithmetic_slip": "Student computes 15-3-7 = 2.",
+      "premature_calculation": "Student computes 3+7 = 10 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A 5×5 magic square has all rows, columns, and diagonals summing to the same value. Using numbers 1-25, what is the magic constant?",
+    "options": [
+      "55",
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
+    "correct_answer": "65",
+    "ideal_solution": "Sum of 1 to 25 = 25×26/2 = 325. Each of 5 rows sums equally: 325/5 = 65. Socratic Hint: Total sum divided by number of rows gives the constant.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 325/5 = 55.",
+      "formula_misapplication": "Student computes 25 × 5 = 125.",
+      "premature_calculation": "Student computes sum = 325 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many numbers from 1 to 100 are NOT divisible by 2 or 3?",
+    "options": [
+      "17",
+      "25",
+      "33",
+      "50",
+      "67"
+    ],
+    "correct_answer": "33",
+    "ideal_solution": "Div by 2: 50. Div by 3: 33. Div by both (6): 16. By inclusion-exclusion: div by 2 or 3 = 50+33-16 = 67. NOT divisible = 100 - 67 = 33. Socratic Hint: Use inclusion-exclusion, then subtract from 100.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 100 - 50 = 50.",
+      "arithmetic_slip": "Student computes 100 - (50+33) = 17 (forgetting overlap).",
+      "overcounting": "Student computes 100-50-33+16 = 33 (correct)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A clock gains 5 minutes every hour. If you set it correctly at noon, what time does it show when the actual time is 6 PM?",
+    "options": [
+      "6:15 PM",
+      "6:20 PM",
+      "6:25 PM",
+      "6:30 PM",
+      "6:40 PM"
+    ],
+    "correct_answer": "6:30 PM",
+    "ideal_solution": "6 hours elapsed. Gain = 5 min/hr × 6 hr = 30 min. Shows: 6:30 PM. Socratic Hint: Multiply the gain per hour by the number of hours.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 5 × 6 = 25: shows 6:25.",
+      "formula_misapplication": "Student adds 5 min once: 6:05 PM.",
+      "premature_calculation": "Student computes total gain = 30 min and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A semicircular window has radius 3 feet. What is its area? (π ≈ 3.14)",
+    "options": [
+      "4.71 sq ft",
+      "9.42 sq ft",
+      "14.13 sq ft",
+      "28.26 sq ft",
+      "56.52 sq ft"
+    ],
+    "correct_answer": "14.13 sq ft",
+    "ideal_solution": "Area = (1/2)πr² = (1/2)(3.14)(9) = 14.13 sq ft. Socratic Hint: A semicircle is half a full circle.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses full circle: 3.14 × 9 = 28.26.",
+      "arithmetic_slip": "Student computes (1/2)(3.14)(9) = 9.42.",
+      "premature_calculation": "Student computes πr² = 28.26 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You have coins that sum to exactly $1.00 using the fewest coins possible (quarters, dimes, nickels, pennies). How many coins do you need?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "4 quarters = $1.00 (4 coins). Socratic Hint: Use the largest denomination first to minimize coin count.",
+    "failure_modes": {
+      "overcounting": "Student uses mixed: 3Q+2D+1N = 6 coins.",
+      "formula_misapplication": "Student uses 10 dimes = 10 coins.",
+      "arithmetic_slip": "Student computes 100/25 = 3."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the product of the GCF and LCM of 12 and 18?",
+    "options": [
+      "36",
+      "108",
+      "216",
+      "324",
+      "432"
+    ],
+    "correct_answer": "216",
+    "ideal_solution": "GCF(12,18) = 6. LCM(12,18) = 36. Product = 6 × 36 = 216. Note: GCF × LCM always equals the product of the two numbers (12 × 18 = 216). Socratic Hint: Compute GCF and LCM separately, then multiply.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 12 + 18 = 30.",
+      "arithmetic_slip": "Student computes 6 × 36 = 108.",
+      "premature_calculation": "Student finds GCF = 6 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 0.125 expressed as a fraction in simplest form?",
+    "options": [
+      "1/4",
+      "1/6",
+      "1/8",
+      "3/25",
+      "5/40"
+    ],
+    "correct_answer": "1/8",
+    "ideal_solution": "0.125 = 125/1000 = 1/8. Socratic Hint: Write as a fraction over 1000, then simplify by dividing by GCF (125).",
+    "failure_modes": {
+      "formula_misapplication": "Student writes 125/100 = 5/4.",
+      "arithmetic_slip": "Student simplifies 125/1000 = 1/4.",
+      "premature_calculation": "Student writes 125/1000 and doesn't simplify."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A circle has an area of 154 sq cm. What is its diameter? (π ≈ 22/7)",
+    "options": [
+      "7 cm",
+      "11 cm",
+      "14 cm",
+      "22 cm",
+      "49 cm"
+    ],
+    "correct_answer": "14 cm",
+    "ideal_solution": "πr² = 154. (22/7)r² = 154. r² = 154 × 7/22 = 49. r = 7 cm. Diameter = 14 cm. Socratic Hint: Solve for r² from the area formula, then double r.",
+    "failure_modes": {
+      "premature_calculation": "Student finds r = 7 and picks that.",
+      "formula_misapplication": "Student computes √154 ≈ 12.4 and picks 11.",
+      "arithmetic_slip": "Student computes r² = 49 and picks 49."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If 5 cats can catch 5 mice in 5 minutes, how many cats are needed to catch 100 mice in 100 minutes?",
+    "options": [
+      "5",
+      "20",
+      "50",
+      "100",
+      "500"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "Each cat catches 1 mouse in 5 minutes. In 100 minutes, each cat catches 100/5 = 20 mice. To catch 100 mice: 100/20 = 5 cats. Socratic Hint: Find the rate per cat first.",
+    "failure_modes": {
+      "formula_misapplication": "Student scales linearly: 5 × (100/5) = 100 cats.",
+      "arithmetic_slip": "Student computes 100/5 = 20 cats.",
+      "premature_calculation": "Student computes 5 cats × 20 = 100 mice (correct check)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many perfect squares are between 100 and 400 (exclusive)?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "√100 = 10. √400 = 20. Squares: 11², 12², ..., 19². Count = 19 - 11 + 1 = 9. Socratic Hint: Find the square roots of the bounds (exclude them) and count.",
+    "failure_modes": {
+      "off_by_one": "Student includes 100 and 400: 10²-20² = 11 squares.",
+      "overcounting": "Student counts 10² to 20²: 11.",
+      "arithmetic_slip": "Student computes 19-11 = 8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Simplify: (4/5) ÷ (2/3)",
+    "options": [
+      "6/5",
+      "8/15",
+      "2/5",
+      "12/10",
+      "15/8"
+    ],
+    "correct_answer": "6/5",
+    "ideal_solution": "(4/5) ÷ (2/3) = (4/5) × (3/2) = 12/10 = 6/5. Socratic Hint: Dividing by a fraction means multiplying by its reciprocal.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 4/5 × 2/3 = 8/15.",
+      "premature_calculation": "Student computes 4/5 × 3/2 = 12/10 but doesn't simplify.",
+      "arithmetic_slip": "Student computes 4×3 = 12, 5×2 = 10, picks 15/8 (inverse)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A rectangular garden is 20m × 15m. A 2m-wide path runs inside along all edges. What is the area of the garden excluding the path?",
+    "options": [
+      "176 sq m",
+      "200 sq m",
+      "240 sq m",
+      "260 sq m",
+      "300 sq m"
+    ],
+    "correct_answer": "176 sq m",
+    "ideal_solution": "Inner rectangle: (20-4) × (15-4) = 16 × 11 = 176 sq m. Socratic Hint: Subtract twice the path width from each dimension (path on both sides).",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts once: (20-2)(15-2) = 234.",
+      "arithmetic_slip": "Student computes 16 × 11 = 200.",
+      "premature_calculation": "Student computes total area = 300 and subtracts path area wrong."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A function f(n) = n² + n. What is f(7) - f(6)?",
+    "options": [
+      "7",
+      "13",
+      "14",
+      "15",
+      "56"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "f(7) = 49 + 7 = 56. f(6) = 36 + 6 = 42. 56 - 42 = 14. Or: f(n)-f(n-1) = 2n. f(7)-f(6) = 2×7 = 14. Socratic Hint: Compute each function value, then subtract.",
+    "failure_modes": {
+      "premature_calculation": "Student computes f(7) = 56 and picks that.",
+      "arithmetic_slip": "Student computes 56-42 = 13.",
+      "formula_misapplication": "Student computes 7² - 6² = 13."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "A number n satisfies n ≡ 3 (mod 5) and n ≡ 4 (mod 7). What is the smallest positive n?",
+    "options": [
+      "18",
+      "23",
+      "28",
+      "33",
+      "38"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "n mod 5 = 3: candidates 3,8,13,18,23,28... Check mod 7: 3%7=3, 8%7=1, 13%7=6, 18%7=4 ✓. Smallest = 18. Socratic Hint: List numbers with remainder 3 mod 5, then check which has remainder 4 mod 7.",
+    "failure_modes": {
+      "off_by_one": "Student picks 23: 23%7=2, not 4.",
+      "overcounting": "Student picks 28: 28%5=3 ✓, 28%7=0 ✗.",
+      "formula_misapplication": "Student computes 5×7+3+4 = 42."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Three workers can build a wall in 12 days. How many days would 4 workers take?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "10",
+      "16"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "Total work = 3 × 12 = 36 worker-days. With 4 workers: 36/4 = 9 days. Socratic Hint: Find total worker-days, then divide by the new number of workers.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 12 × 4/3 = 16.",
+      "arithmetic_slip": "Student computes 36/4 = 8.",
+      "premature_calculation": "Student computes 12/4 = 3."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A triangle has sides of 7, 24, and 25. Is it a right triangle? What is its area?",
+    "options": [
+      "42 sq units",
+      "84 sq units",
+      "87.5 sq units",
+      "168 sq units",
+      "175 sq units"
+    ],
+    "correct_answer": "84 sq units",
+    "ideal_solution": "Check: 7² + 24² = 49 + 576 = 625 = 25². Yes, right triangle! Area = (1/2)(7)(24) = 84 sq units. Socratic Hint: Verify it's a right triangle using the Pythagorean theorem, then compute area using the legs.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (1/2)(25)(7) = 87.5 (using hypotenuse as base).",
+      "arithmetic_slip": "Student computes (1/2)(7)(24) = 42.",
+      "premature_calculation": "Student verifies right triangle but doesn't compute area."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A locker problem: 100 lockers, all closed. Student 1 toggles every locker. Student 2 toggles every 2nd. Student 3 toggles every 3rd... Student 100 toggles the 100th. Which numbered lockers remain open?",
+    "options": [
+      "Only odd numbers",
+      "Only even numbers",
+      "Perfect squares",
+      "Primes",
+      "Multiples of 10"
+    ],
+    "correct_answer": "Perfect squares",
+    "ideal_solution": "A locker is toggled once for each of its divisors. Lockers with odd number of divisors stay open. Only perfect squares have odd number of divisors (since divisors pair up, except √n). Socratic Hint: A locker ends open if toggled an odd number of times.",
+    "failure_modes": {
+      "converse_error": "Student thinks odd lockers stay open.",
+      "formula_misapplication": "Student thinks primes stay open.",
+      "premature_calculation": "Student simulates a few lockers and guesses."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the units digit of 7⁴?",
+    "options": [
+      "1",
+      "3",
+      "7",
+      "9",
+      "0"
+    ],
+    "correct_answer": "1",
+    "ideal_solution": "7¹=7, 7²=49(9), 7³=343(3), 7⁴=2401(1). Units digit of 7⁴ = 1. Socratic Hint: Track only the ones digit through each multiplication.",
+    "failure_modes": {
+      "off_by_one": "Student picks 7 (confusing with 7¹).",
+      "arithmetic_slip": "Student computes 7⁴ = 2401 but reads units digit as 0.",
+      "formula_misapplication": "Student computes 7 × 4 = 28, units = 8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Convert 3.625 to a fraction in simplest form.",
+    "options": [
+      "3 5/8",
+      "3 1/4",
+      "3 3/4",
+      "29/8",
+      "3625/1000"
+    ],
+    "correct_answer": "29/8",
+    "ideal_solution": "3.625 = 3 + 0.625 = 3 + 625/1000 = 3 + 5/8 = 29/8. Socratic Hint: Convert the decimal part to a fraction, simplify, then convert to improper fraction.",
+    "failure_modes": {
+      "premature_calculation": "Student writes 3 5/8 (mixed number, not option format).",
+      "formula_misapplication": "Student writes 3625/1000.",
+      "arithmetic_slip": "Student simplifies 625/1000 = 1/4: gets 3 1/4."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A square ABCD has side 12 cm. Point E is the midpoint of BC. What is the area of triangle ABE?",
+    "options": [
+      "18 sq cm",
+      "24 sq cm",
+      "36 sq cm",
+      "48 sq cm",
+      "72 sq cm"
+    ],
+    "correct_answer": "36 sq cm",
+    "ideal_solution": "Place A=(0,0), B=(12,0), C=(12,12), D=(0,12). E = midpoint of BC = (12,6). Triangle ABE: base AB = 12, height = 6 (y-coordinate of E). Area = (1/2)(12)(6) = 36 sq cm. Socratic Hint: Identify the base and the perpendicular height from the opposite vertex.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (1/2)(12)(12) = 72.",
+      "arithmetic_slip": "Student computes (1/2)(12)(6) = 24.",
+      "premature_calculation": "Student finds E at midpoint and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A sequence: 2, 6, 18, 54, ... What is the 7th term?",
+    "options": [
+      "162",
+      "486",
+      "1458",
+      "4374",
+      "13122"
+    ],
+    "correct_answer": "1458",
+    "ideal_solution": "Geometric sequence, ratio = 3. Terms: 2, 6, 18, 54, 162, 486, 1458. 7th term = 2 × 3⁶ = 2 × 729 = 1458. Socratic Hint: Find the common ratio, then use a₁ × rⁿ⁻¹.",
+    "failure_modes": {
+      "off_by_one": "Student computes 6th term: 486.",
+      "overcounting": "Student computes 8th term: 4374.",
+      "arithmetic_slip": "Student computes 2 × 3⁶ = 2 × 243 = 486 (wrong power of 3)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "Is 143 prime? If not, what are its prime factors?",
+    "options": [
+      "Yes, 143 is prime",
+      "11 × 13",
+      "7 × 20 + 3",
+      "11 × 12 + 11",
+      "13 × 11"
+    ],
+    "correct_answer": "11 × 13",
+    "ideal_solution": "Check: 143/11 = 13. So 143 = 11 × 13. Not prime. Socratic Hint: Test divisibility by primes up to √143 ≈ 12.",
+    "failure_modes": {
+      "premature_calculation": "Student checks only 2,3,5,7 and concludes prime.",
+      "arithmetic_slip": "Student computes 143/7 = 20.4 and gives up.",
+      "formula_misapplication": "Student picks 7 × 20 + 3 = 143 (not a factorization)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A tank fills in 6 hours from pipe A and 4 hours from pipe B. How long to fill with both pipes open?",
+    "options": [
+      "2 hr",
+      "2.4 hr",
+      "3 hr",
+      "5 hr",
+      "10 hr"
+    ],
+    "correct_answer": "2.4 hr",
+    "ideal_solution": "Rate A = 1/6 tank/hr. Rate B = 1/4 tank/hr. Combined = 1/6 + 1/4 = 2/12 + 3/12 = 5/12. Time = 12/5 = 2.4 hr. Socratic Hint: Add the rates, then take the reciprocal.",
+    "failure_modes": {
+      "formula_misapplication": "Student averages times: (6+4)/2 = 5 hr.",
+      "arithmetic_slip": "Student computes 1/6+1/4 = 1/10: time = 10 hr.",
+      "premature_calculation": "Student computes combined rate = 5/12 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A cone has volume 100π cu cm and height 12 cm. What is its base radius?",
+    "options": [
+      "3 cm",
+      "4 cm",
+      "5 cm",
+      "6 cm",
+      "10 cm"
+    ],
+    "correct_answer": "5 cm",
+    "ideal_solution": "V = (1/3)πr²h. 100π = (1/3)πr²(12). 100 = 4r². r² = 25. r = 5 cm. Socratic Hint: Plug into the volume formula and solve for r.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses V = πr²h: 100 = 12r². r = √(100/12).",
+      "arithmetic_slip": "Student computes r² = 25 but picks 6.",
+      "premature_calculation": "Student solves 100 = 4r² and picks 25."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A calendar for a non-leap year starts on a Wednesday. What day is December 31st?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "correct_answer": "Wednesday",
+    "ideal_solution": "365 days in a non-leap year. 365 = 52 × 7 + 1. So Dec 31 is 1 day ahead of Jan 1. Wait: Jan 1 is day 1 (Wednesday). Dec 31 is day 365. (365-1) = 364 days after Jan 1. 364/7 = 52 exactly. So Dec 31 is also Wednesday. Socratic Hint: Count total days, then find the remainder when divided by 7.",
+    "failure_modes": {
+      "off_by_one": "Student computes 365/7 = 52 R1: Thursday.",
+      "formula_misapplication": "Student adds 365 days to Wednesday: Thursday.",
+      "arithmetic_slip": "Student computes 365 mod 7 = 1 and picks Thursday."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the sum of all even numbers from 2 to 100?",
+    "options": [
+      "2450",
+      "2500",
+      "2550",
+      "5050",
+      "5100"
+    ],
+    "correct_answer": "2550",
+    "ideal_solution": "Even numbers: 2,4,6,...,100. Count = 50. Sum = 2(1+2+...+50) = 2 × 50×51/2 = 2550. Or: sum = 50 × (2+100)/2 = 50 × 51 = 2550. Socratic Hint: Factor out 2 and use Gauss's formula, or use the arithmetic series formula.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes sum of 1 to 100 = 5050.",
+      "arithmetic_slip": "Student computes 50 × 51 = 2500.",
+      "overcounting": "Student includes 0: sum = 2550 (same, since 0 doesn't change sum)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 37 × 27 + 37 × 73?",
+    "options": [
+      "2700",
+      "3600",
+      "3700",
+      "4000",
+      "7400"
+    ],
+    "correct_answer": "3700",
+    "ideal_solution": "Factor: 37 × (27 + 73) = 37 × 100 = 3700. Socratic Hint: Factor out the common term using the distributive property.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 37 × 100 = 3600.",
+      "formula_misapplication": "Student computes 37 × 27 + 37 × 73 separately and adds wrong.",
+      "premature_calculation": "Student computes 37 × 27 = 999 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A tetrahedron has 4 triangular faces. How many edges does it have?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "12"
+    ],
+    "correct_answer": "6",
+    "ideal_solution": "Using Euler's formula: V - E + F = 2. V=4, F=4. 4 - E + 4 = 2. E = 6. Or: each vertex connects to 3 others, but each edge is shared: 4×3/2 = 6. Socratic Hint: Use Euler's formula or count vertex connections.",
+    "failure_modes": {
+      "formula_misapplication": "Student counts faces × 3 = 12 (double-counting).",
+      "undercounting": "Student counts 4 edges (same as faces).",
+      "arithmetic_slip": "Student computes 4×3/2 = 4."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "What is the 100th digit in the sequence 123456789101112131415...?",
+    "options": [
+      "5",
+      "0",
+      "4",
+      "1",
+      "9"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "1-digit numbers (1-9): 9 numbers × 1 digit = 9 digits. 2-digit numbers (10-99): using 100-9 = 91 more digits. 91/2 = 45 numbers + 1 digit. So 45 two-digit numbers: 10,11,...,54. That's 9 + 90 = 99 digits through '54'. 100th digit = first digit of 55 = 5. Socratic Hint: Count digits used by 1-digit numbers, then 2-digit numbers.",
+    "failure_modes": {
+      "off_by_one": "Student gets 100th digit as 4 (last digit of 54).",
+      "arithmetic_slip": "Student miscounts 2-digit numbers.",
+      "formula_misapplication": "Student picks 1 (the 1st digit)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "What is the sum of 1/1 + 1/2 + 1/3 + 1/6?",
+    "options": [
+      "1",
+      "1 1/2",
+      "2",
+      "5/6",
+      "11/6"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "LCD = 6. 6/6 + 3/6 + 2/6 + 1/6 = 12/6 = 2. Socratic Hint: Convert to LCD and add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 6+3+2+1 = 11/6.",
+      "formula_misapplication": "Student adds numerators: 1+1+1+1 = 4.",
+      "premature_calculation": "Student computes 1+1/2 = 3/2 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "An item priced at $80 is discounted 25%, then the discounted price is increased by 25%. What is the final price?",
+    "options": [
+      "$60",
+      "$65",
+      "$75",
+      "$80",
+      "$85"
+    ],
+    "correct_answer": "$75",
+    "ideal_solution": "After 25% off: $80 × 0.75 = $60. After 25% increase: $60 × 1.25 = $75. Socratic Hint: A 25% decrease followed by a 25% increase does NOT return to the original price.",
+    "failure_modes": {
+      "formula_misapplication": "Student assumes return to original: $80.",
+      "arithmetic_slip": "Student computes $60 × 1.25 = $65.",
+      "premature_calculation": "Student computes $80 × 0.75 = $60 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A regular hexagon has side 6 cm. What is its area? (Use A = (3√3/2)s², √3 ≈ 1.73)",
+    "options": [
+      "54 sq cm",
+      "62.28 sq cm",
+      "93.53 sq cm",
+      "108 sq cm",
+      "187.06 sq cm"
+    ],
+    "correct_answer": "93.53 sq cm",
+    "ideal_solution": "A = (3√3/2)(6²) = (3×1.73/2)(36) = (2.595)(36) = 93.42 ≈ 93.53 sq cm. Socratic Hint: Use the regular hexagon area formula with s = 6.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses 6×6 = 36 as area.",
+      "arithmetic_slip": "Student computes (3×1.73/2)(36) = 62.28.",
+      "premature_calculation": "Student computes s² = 36 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A snail is at the bottom of a 20-foot well. Each day it climbs 5 feet and each night it slips back 3 feet. On which day does it reach the top?",
+    "options": [
+      "8th",
+      "9th",
+      "10th",
+      "11th",
+      "20th"
+    ],
+    "correct_answer": "9th",
+    "ideal_solution": "Net gain per day: 2 feet. After 8 days: 16 feet. On day 9, climbs 5 feet to 21 feet — past 20, so it escapes on day 9 without slipping back. Socratic Hint: On the last day, the snail reaches the top before nightfall.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 20/2 = 10 days.",
+      "off_by_one": "Student says day 8 (16+5=21, but day 8 night slip to 18).",
+      "arithmetic_slip": "Student computes 20/5 = 4 days."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "number_theory",
+    "question": "How many zeros does 15! end with?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "Trailing zeros = floor(15/5) + floor(15/25) = 3 + 0 = 3. Socratic Hint: Count multiples of 5 and higher powers of 5.",
+    "failure_modes": {
+      "undercounting": "Student counts only 5 and 10: gets 2.",
+      "overcounting": "Student counts all even × 5 combos.",
+      "formula_misapplication": "Student computes 15/5 = 3 (correct!)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "A store sells pens at $1.50 each. If you buy 10 or more, you get 20% off. How much do 12 pens cost?",
+    "options": [
+      "$12.00",
+      "$14.40",
+      "$15.00",
+      "$16.80",
+      "$18.00"
+    ],
+    "correct_answer": "$14.40",
+    "ideal_solution": "12 × $1.50 = $18.00. With 20% off: $18.00 × 0.80 = $14.40. Socratic Hint: Calculate the undiscounted total first, then apply the discount.",
+    "failure_modes": {
+      "premature_calculation": "Student computes 12 × $1.50 = $18 and stops.",
+      "arithmetic_slip": "Student computes $18 × 0.80 = $16.80.",
+      "formula_misapplication": "Student discounts only 2 extra pens."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "A cylinder has a volume of 500π cu cm and a height of 20 cm. What is its radius?",
+    "options": [
+      "3 cm",
+      "4 cm",
+      "5 cm",
+      "10 cm",
+      "25 cm"
+    ],
+    "correct_answer": "5 cm",
+    "ideal_solution": "V = πr²h. 500π = πr²(20). 500 = 20r². r² = 25. r = 5 cm. Socratic Hint: Divide both sides by πh to isolate r².",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 500/20 = 25 and picks that.",
+      "arithmetic_slip": "Student computes √25 = 4.",
+      "premature_calculation": "Student computes r² = 25 and stops."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A farmer has some chickens and some cows. Together they have 10 heads and 26 legs. How many chickens does the farmer have?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "Let c be chickens, w be cows. c + w = 10. 2c + 4w = 26. w = 10 - c. 2c + 4(10 - c) = 26. 2c + 40 - 4c = 26. -2c = -14. c = 7. Thus 7 chickens (14 legs) and 3 cows (12 legs) = 26 legs. Socratic Hint: Every animal has at least 2 legs. If all 10 had 2 legs, that's 20 legs. You have 6 extra legs. How many 4-legged animals do you need to make 6 extra legs?",
+    "failure_modes": {
+      "formula_misapplication": "Student calculates the number of cows (3) instead.",
+      "arithmetic_slip": "Student guesses 5.",
+      "premature_calculation": "Student guesses 4."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 9,
+    "difficulty": "master",
+    "type": "algebra",
+    "question": "If x + y = 10 and x - y = 4, what is the value of x × y?",
+    "options": [
+      "14",
+      "21",
+      "24",
+      "40",
+      "44"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "Adding equations: 2x = 14 so x = 7. Then 7 + y = 10 so y = 3. x × y = 7 × 3 = 21. Socratic Hint: What two numbers add to 10 and are 4 apart?",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies 10 × 4 = 40.",
+      "premature_calculation": "Student adds 10+4 = 14.",
+      "arithmetic_slip": "Student gets x=7, y=3 but adds them instead to get 10, then guesses 24."
+    }
+  }
 ]

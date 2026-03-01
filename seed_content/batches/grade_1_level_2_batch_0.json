@@ -1,922 +1,968 @@
 [
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 8 + 4?",
-        "options": [
-            "10",
-            "11",
-            "12",
-            "13",
-            "14"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "8 + 4 = 12. Make 10 first: 8 + 2 = 10, then 10 + 2 = 12. Socratic Hint: Break the 4 into 2 + 2. Add 2 to 8 to make 10, then add 2 more.",
-        "failure_modes": {
-            "off_by_one": "Student says 11 or 13.",
-            "arithmetic_slip": "Student says 14."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 15 - 7?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "22"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "15 - 7 = 8. Think: 7 + ? = 15. 7 + 8 = 15. Socratic Hint: Start at 7 and count up to 15. How many did you count?",
-        "failure_modes": {
-            "off_by_one": "Student says 7 or 9.",
-            "formula_misapplication": "Student adds: 15 + 7 = 22."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What number has 4 tens and 2 ones?",
-        "options": [
-            "6",
-            "24",
-            "42",
-            "402",
-            "40"
-        ],
-        "correct_answer": "42",
-        "ideal_solution": "4 tens = 40. 2 ones = 2. 40 + 2 = 42. Socratic Hint: The tens digit goes in the left spot, the ones digit goes in the right spot.",
-        "failure_modes": {
-            "converse_error": "Student reverses the digits and says 24.",
-            "arithmetic_slip": "Student adds 4 + 2 = 6."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Maya picked 6 flowers in the morning and 5 more in the afternoon. How many flowers did she pick in all?",
-        "options": [
-            "9",
-            "10",
-            "11",
-            "12",
-            "1"
-        ],
-        "correct_answer": "11",
-        "ideal_solution": "6 + 5 = 11 flowers. Socratic Hint: Make 10 first: 6 + 4 = 10, then 10 + 1 = 11.",
-        "failure_modes": {
-            "off_by_one": "Student says 10.",
-            "formula_misapplication": "Student subtracts: 6 - 5 = 1."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 20 + 30?",
-        "options": [
-            "23",
-            "32",
-            "50",
-            "60",
-            "2030"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "20 + 30 = 50. 2 tens + 3 tens = 5 tens = 50. Socratic Hint: Count the tens: 20 is 2 tens, 30 is 3 tens. 2 + 3 = 5 tens = 50.",
-        "failure_modes": {
-            "arithmetic_slip": "Student writes 2030.",
-            "off_by_one": "Student says 60."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "What comes next? 5, 10, 15, 20, ___",
-        "options": [
-            "21",
-            "22",
-            "24",
-            "25",
-            "30"
-        ],
-        "correct_answer": "25",
-        "ideal_solution": "Counting by 5s: 5, 10, 15, 20, 25. Each number is 5 more than the last. 20 + 5 = 25. Socratic Hint: What is 5 more than 20?",
-        "failure_modes": {
-            "off_by_one": "Student says 21 (counting by 1 instead of 5).",
-            "overcounting": "Student says 30 (skipping 25)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which is greater: 37 or 73?",
-        "options": [
-            "37",
-            "73",
-            "They are the same",
-            "Cannot tell",
-            "370"
-        ],
-        "correct_answer": "73",
-        "ideal_solution": "73 is greater than 37. Compare the tens digit first: 7 tens > 3 tens. Socratic Hint: Look at the tens place. Which number has more tens?",
-        "failure_modes": {
-            "converse_error": "Student confuses the digit positions and says 37.",
-            "arithmetic_slip": "Student says they are the same because they have the same digits."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "How many tens and ones are in the number 56?",
-        "options": [
-            "5 tens, 6 ones",
-            "6 tens, 5 ones",
-            "56 tens",
-            "5 ones, 6 tens",
-            "50 tens, 6 ones"
-        ],
-        "correct_answer": "5 tens, 6 ones",
-        "ideal_solution": "56 = 5 tens and 6 ones. The 5 is in the tens place, the 6 is in the ones place. Socratic Hint: The left digit tells tens, the right digit tells ones.",
-        "failure_modes": {
-            "converse_error": "Student reverses and says 6 tens, 5 ones.",
-            "formula_misapplication": "Student says 56 tens."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "There are 12 books on a shelf. 4 books fall off. How many books are still on the shelf?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "16"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "12 - 4 = 8 books still on the shelf. Socratic Hint: Think: 4 + ? = 12. 4 + 8 = 12.",
-        "failure_modes": {
-            "off_by_one": "Student says 7 or 9.",
-            "formula_misapplication": "Student adds: 12 + 4 = 16."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A shape has 3 straight sides and 3 corners. What shape is it?",
-        "options": [
-            "Circle",
-            "Square",
-            "Triangle",
-            "Rectangle",
-            "Oval"
-        ],
-        "correct_answer": "Triangle",
-        "ideal_solution": "A shape with 3 sides and 3 corners is a triangle. Socratic Hint: 'Tri' means three. A triangle has 3 of everything: 3 sides, 3 corners.",
-        "failure_modes": {
-            "converse_error": "Student says square (which has 4 sides).",
-            "arithmetic_slip": "Student says circle (which has no sides)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 9 + 5?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15",
-            "16"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "9 + 5 = 14. Make 10: 9 + 1 = 10, then 10 + 4 = 14. Socratic Hint: Break 5 into 1 + 4. Add 1 to 9 to make 10, then add 4.",
-        "failure_modes": {
-            "off_by_one": "Student says 13 or 15.",
-            "arithmetic_slip": "Student says 12."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 40 + 7?",
-        "options": [
-            "11",
-            "43",
-            "47",
-            "74",
-            "407"
-        ],
-        "correct_answer": "47",
-        "ideal_solution": "40 + 7 = 47. 4 tens plus 7 ones = 47. Socratic Hint: The tens stay the same (4), and you just add 7 ones.",
-        "failure_modes": {
-            "converse_error": "Student reverses and says 74.",
-            "arithmetic_slip": "Student adds digits: 4 + 7 = 11."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 13 - 5?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "18"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "13 - 5 = 8. Think: 5 + ? = 13. 5 + 8 = 13. Socratic Hint: Count up from 5: 6, 7, 8, 9, 10, 11, 12, 13. That's 8 counts.",
-        "failure_modes": {
-            "off_by_one": "Student says 7 or 9.",
-            "formula_misapplication": "Student adds: 13 + 5 = 18."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Dan has 8 crayons. He finds 6 more. How many crayons does Dan have now?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15",
-            "2"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "8 + 6 = 14. Make 10: 8 + 2 = 10, then 10 + 4 = 14. Socratic Hint: He starts with 8 and gets more, so you add.",
-        "failure_modes": {
-            "off_by_one": "Student says 13.",
-            "formula_misapplication": "Student subtracts: 8 - 6 = 2."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "What number is missing? 10, 20, ___, 40, 50",
-        "options": [
-            "21",
-            "25",
-            "30",
-            "35",
-            "31"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "Counting by 10s: 10, 20, 30, 40, 50. The missing number is 30. Socratic Hint: Each number is 10 more than the last. What is 10 more than 20?",
-        "failure_modes": {
-            "off_by_one": "Student says 21 or 31.",
-            "arithmetic_slip": "Student says 25 (counting by 5s instead)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 7 + 7?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15",
-            "77"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "7 + 7 = 14. This is a doubles fact. Socratic Hint: Think of two rows of 7. Count them all.",
-        "failure_modes": {
-            "off_by_one": "Student says 13.",
-            "arithmetic_slip": "Student writes 77."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 60 - 10?",
-        "options": [
-            "40",
-            "50",
-            "51",
-            "59",
-            "70"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "60 - 10 = 50. 6 tens minus 1 ten = 5 tens = 50. Socratic Hint: Just subtract the tens: 6 - 1 = 5. So the answer is 50.",
-        "failure_modes": {
-            "off_by_one": "Student says 59 (subtracting 1 instead of 10).",
-            "formula_misapplication": "Student adds: 60 + 10 = 70."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A clock shows 6:00. What is the hour?",
-        "options": [
-            "4",
-            "5",
-            "6",
-            "12",
-            "60"
-        ],
-        "correct_answer": "6",
-        "ideal_solution": "At 6:00, the hour is 6. The little hand points to 6 and the big hand points to 12. Socratic Hint: In 6:00, the number before the colon is the hour.",
-        "failure_modes": {
-            "converse_error": "Student says 12 (reading the minute hand).",
-            "arithmetic_slip": "Student says 60."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Is 24 greater than, less than, or equal to 42?",
-        "options": [
-            "Greater than",
-            "Less than",
-            "Equal to",
-            "Cannot tell",
-            "Both are the same"
-        ],
-        "correct_answer": "Less than",
-        "ideal_solution": "24 < 42. Compare tens: 2 tens < 4 tens. Socratic Hint: Look at the tens digit first. 2 is less than 4, so 24 is less than 42.",
-        "failure_modes": {
-            "converse_error": "Student says greater than.",
-            "arithmetic_slip": "Student says equal because both use digits 2 and 4."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 11 - 3?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "14"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "11 - 3 = 8. Count back from 11: 10, 9, 8. Socratic Hint: Start at 11, count back 3.",
-        "failure_modes": {
-            "off_by_one": "Student says 7 or 9.",
-            "formula_misapplication": "Student adds: 11 + 3 = 14."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "How many corners does a rectangle have?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "A rectangle has 4 corners (vertices). Each corner is a right angle (like the corner of a book). Socratic Hint: Point to each corner of a book or a door.",
-        "failure_modes": {
-            "off_by_one": "Student says 3 (confusing with triangle).",
-            "overcounting": "Student says 6."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 6 + 6?",
-        "options": [
-            "10",
-            "11",
-            "12",
-            "13",
-            "66"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "6 + 6 = 12. This is a doubles fact. Socratic Hint: Think of a dozen eggs — that's 12. 6 eggs in each row, 2 rows.",
-        "failure_modes": {
-            "off_by_one": "Student says 11.",
-            "arithmetic_slip": "Student writes 66."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Tim has 15 marbles. He gives 8 to Zara. How many marbles does Tim have left?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "23"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "15 - 8 = 7. Think: 8 + ? = 15. 8 + 7 = 15. Socratic Hint: Count up from 8 to 15: 9, 10, 11, 12, 13, 14, 15. That's 7 counts.",
-        "failure_modes": {
-            "off_by_one": "Student says 6 or 8.",
-            "formula_misapplication": "Student adds: 15 + 8 = 23."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which number is between 48 and 50?",
-        "options": [
-            "47",
-            "48",
-            "49",
-            "50",
-            "51"
-        ],
-        "correct_answer": "49",
-        "ideal_solution": "48, 49, 50 — the number between 48 and 50 is 49. Socratic Hint: What number do you say after 48 but before 50?",
-        "failure_modes": {
-            "off_by_one": "Student says 48 or 50 (boundary numbers).",
-            "arithmetic_slip": "Student says 47 or 51."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 30 + 20?",
-        "options": [
-            "32",
-            "50",
-            "52",
-            "3020",
-            "10"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "30 + 20 = 50. 3 tens + 2 tens = 5 tens = 50. Socratic Hint: Add the tens: 3 + 2 = 5. Put 0 at the end: 50.",
-        "failure_modes": {
-            "arithmetic_slip": "Student writes 3020.",
-            "off_by_one": "Student says 52."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 16 - 9?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "25"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "16 - 9 = 7. Think: 9 + ? = 16. 9 + 7 = 16. Socratic Hint: Count up from 9: 10, 11, 12, 13, 14, 15, 16. That's 7 counts.",
-        "failure_modes": {
-            "off_by_one": "Student says 6 or 8.",
-            "formula_misapplication": "Student adds: 16 + 9 = 25."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "What comes next? AA BB CC ___",
-        "options": [
-            "AA",
-            "CC",
-            "DD",
-            "AB",
-            "EE"
-        ],
-        "correct_answer": "DD",
-        "ideal_solution": "The pattern uses pairs of letters in alphabetical order: AA, BB, CC, DD. Each letter is doubled, and the letters go A, B, C, D. Socratic Hint: What letter comes after C? Now double it.",
-        "failure_modes": {
-            "converse_error": "Student says CC (repeating the last pair).",
-            "overcounting": "Student says EE (skipping D)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "How many tens are in 80?",
-        "options": [
-            "0",
-            "4",
-            "8",
-            "18",
-            "80"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "80 = 8 tens and 0 ones. There are 8 tens in 80. Socratic Hint: Count by 10s: 10, 20, 30, 40, 50, 60, 70, 80. That's 8 tens.",
-        "failure_modes": {
-            "off_by_one": "Student says 4 (half of 8).",
-            "formula_misapplication": "Student says 80 (confusing the number with how many tens)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "9 birds are on a tree. 3 more land on the tree. Then 2 fly away. How many birds are on the tree now?",
-        "options": [
-            "8",
-            "9",
-            "10",
-            "11",
-            "14"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "Start: 9. Then +3: 9 + 3 = 12. Then -2: 12 - 2 = 10. Socratic Hint: Do each step in order. First add, then subtract.",
-        "failure_modes": {
-            "premature_calculation": "Student only does 9 + 3 = 12 and forgets the 2 that fly away.",
-            "arithmetic_slip": "Student says 14 (adding everything: 9 + 3 + 2)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 50 - 20?",
-        "options": [
-            "20",
-            "25",
-            "30",
-            "35",
-            "70"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "50 - 20 = 30. 5 tens - 2 tens = 3 tens = 30. Socratic Hint: Just subtract the tens: 5 - 2 = 3, so the answer is 30.",
-        "failure_modes": {
-            "off_by_one": "Student says 25 or 35.",
-            "formula_misapplication": "Student adds: 50 + 20 = 70."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Which shape has no straight sides?",
-        "options": [
-            "Rectangle",
-            "Triangle",
-            "Circle",
-            "Square",
-            "Hexagon"
-        ],
-        "correct_answer": "Circle",
-        "ideal_solution": "A circle has no straight sides — it is completely curved. All other shapes listed have straight sides. Socratic Hint: Run your finger along each shape. Which one is smooth and curved all the way around?",
-        "failure_modes": {
-            "converse_error": "Student picks hexagon (which has 6 straight sides).",
-            "constraint_neglect": "Student picks rectangle."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 8 + 8?",
-        "options": [
-            "14",
-            "15",
-            "16",
-            "17",
-            "88"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "8 + 8 = 16. This is a doubles fact. Socratic Hint: 8 + 8 is the same as 8 + 2 + 6 = 10 + 6 = 16.",
-        "failure_modes": {
-            "off_by_one": "Student says 15.",
-            "arithmetic_slip": "Student writes 88."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Order these numbers from least to greatest: 45, 18, 32",
-        "options": [
-            "18, 32, 45",
-            "45, 32, 18",
-            "32, 18, 45",
-            "18, 45, 32",
-            "45, 18, 32"
-        ],
-        "correct_answer": "18, 32, 45",
-        "ideal_solution": "Compare tens: 18 has 1 ten, 32 has 3 tens, 45 has 4 tens. Order: 18 < 32 < 45. Socratic Hint: Look at the tens digit. The smallest tens goes first.",
-        "failure_modes": {
-            "converse_error": "Student orders greatest to least: 45, 32, 18.",
-            "arithmetic_slip": "Student doesn't compare correctly."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 14 - 6?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "20"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "14 - 6 = 8. Think: 6 + ? = 14. 6 + 8 = 14. Socratic Hint: Count up from 6 to 14: 7, 8, 9, 10, 11, 12, 13, 14. That's 8 counts.",
-        "failure_modes": {
-            "off_by_one": "Student says 7 or 9.",
-            "formula_misapplication": "Student adds: 14 + 6 = 20."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A class has 10 girls and 9 boys. How many students are in the class?",
-        "options": [
-            "17",
-            "18",
-            "19",
-            "20",
-            "1"
-        ],
-        "correct_answer": "19",
-        "ideal_solution": "10 + 9 = 19 students. Socratic Hint: Start at 10, count 9 more: 11, 12, 13, 14, 15, 16, 17, 18, 19.",
-        "failure_modes": {
-            "off_by_one": "Student says 18 or 20.",
-            "formula_misapplication": "Student subtracts: 10 - 9 = 1."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What number is 10 less than 50?",
-        "options": [
-            "30",
-            "39",
-            "40",
-            "41",
-            "60"
-        ],
-        "correct_answer": "40",
-        "ideal_solution": "10 less than 50 is 50 - 10 = 40. Socratic Hint: The tens digit goes down by 1: 5 → 4. The ones stay 0. So 40.",
-        "failure_modes": {
-            "off_by_one": "Student says 39 or 41.",
-            "formula_misapplication": "Student adds: 50 + 10 = 60."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Is 16 odd or even?",
-        "options": [
-            "Odd",
-            "Even",
-            "Both",
-            "Neither",
-            "Cannot tell"
-        ],
-        "correct_answer": "Even",
-        "ideal_solution": "16 is even. It ends in 6, which is an even digit. You can also check: 16 ÷ 2 = 8, so it splits evenly. Socratic Hint: Can you pair up 16 objects with nothing left over? If yes, it's even.",
-        "failure_modes": {
-            "converse_error": "Student says odd.",
-            "constraint_neglect": "Student says cannot tell."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "If you put two triangles together, what shape can you make?",
-        "options": [
-            "Circle",
-            "Triangle",
-            "Square",
-            "Star",
-            "Oval"
-        ],
-        "correct_answer": "Square",
-        "ideal_solution": "Two identical right triangles placed together along their longest side create a square (or rectangle). Socratic Hint: Cut a square diagonally. How many triangles do you get? Now put them back together.",
-        "failure_modes": {
-            "converse_error": "Student says triangle.",
-            "constraint_neglect": "Student says circle."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 5 + 9?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15",
-            "59"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "5 + 9 = 14. Make 10: 9 + 1 = 10, then 10 + 4 = 14. Socratic Hint: Start from the bigger number (9). How many more to get to 10? Then add the rest.",
-        "failure_modes": {
-            "off_by_one": "Student says 13.",
-            "arithmetic_slip": "Student writes 59."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "You have 2 nickels. How many cents do you have?",
-        "options": [
-            "2",
-            "5",
-            "7",
-            "10",
-            "25"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "Each nickel is 5 cents. 2 nickels = 5 + 5 = 10 cents. Socratic Hint: A nickel = 5 cents. Two nickels = 5 + 5.",
-        "failure_modes": {
-            "undercounting": "Student says 5 (counting only one nickel).",
-            "formula_misapplication": "Student says 2 (counting the coins, not the cents)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 17 - 8?",
-        "options": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "25"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "17 - 8 = 9. Think: 8 + ? = 17. 8 + 9 = 17. Socratic Hint: Count up from 8 to 17: 9, 10, 11, 12, 13, 14, 15, 16, 17. That's 9 counts.",
-        "failure_modes": {
-            "off_by_one": "Student says 8 or 10.",
-            "formula_misapplication": "Student adds: 17 + 8 = 25."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Write the number: seven tens and one one",
-        "options": [
-            "17",
-            "71",
-            "701",
-            "107",
-            "8"
-        ],
-        "correct_answer": "71",
-        "ideal_solution": "7 tens = 70. 1 one = 1. 70 + 1 = 71. Socratic Hint: The tens digit is 7, the ones digit is 1.",
-        "failure_modes": {
-            "converse_error": "Student reverses and says 17.",
-            "arithmetic_slip": "Student adds 7 + 1 = 8."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "What comes next? 3, 6, 9, 12, ___",
-        "options": [
-            "13",
-            "14",
-            "15",
-            "16",
-            "18"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "The pattern counts by 3s: 3, 6, 9, 12, 15. Each number is 3 more than the last. 12 + 3 = 15. Socratic Hint: What is 3 more than 12?",
-        "failure_modes": {
-            "off_by_one": "Student says 13 (adding 1 instead of 3).",
-            "overcounting": "Student says 18 (adding 6 instead of 3)."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which number is closest to 50: 38, 47, or 62?",
-        "options": [
-            "38",
-            "47",
-            "50",
-            "62",
-            "They are all the same"
-        ],
-        "correct_answer": "47",
-        "ideal_solution": "Distance from 50: |50-38|=12, |50-47|=3, |50-62|=12. 47 is only 3 away from 50, so it's the closest. Socratic Hint: How many more from each number to get to 50? The one that needs the fewest jumps is closest.",
-        "failure_modes": {
-            "converse_error": "Student says 62 (going past 50).",
-            "constraint_neglect": "Student says 38."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 10 + 10 + 10?",
-        "options": [
-            "10",
-            "20",
-            "30",
-            "33",
-            "100"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "10 + 10 = 20. 20 + 10 = 30. Three groups of 10 = 30. Socratic Hint: Count by 10s three times: 10, 20, 30.",
-        "failure_modes": {
-            "off_by_one": "Student says 20 (only adding two 10s).",
-            "arithmetic_slip": "Student says 100."
-        }
-    },
-    {
-        "grade": 1,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "How many half-hours are in 1 hour?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "30"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "1 hour = 2 half-hours. A half-hour is 30 minutes, and there are 60 minutes in an hour. 60 ÷ 30 = 2. Socratic Hint: If you cut an hour in half, how many pieces do you get?",
-        "failure_modes": {
-            "off_by_one": "Student says 1 or 3.",
-            "formula_misapplication": "Student says 30 (confusing half-hours with minutes)."
-        }
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 8 + 4?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "8 + 4 = 12. Make 10 first: 8 + 2 = 10, then 10 + 2 = 12. Socratic Hint: Break the 4 into 2 + 2. Add 2 to 8 to make 10, then add 2 more.",
+    "failure_modes": {
+      "off_by_one": "Student says 11 or 13.",
+      "arithmetic_slip": "Student says 14.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
     }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 15 - 7?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "22"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "15 - 7 = 8. Think: 7 + ? = 15. 7 + 8 = 15. Socratic Hint: Start at 7 and count up to 15. How many did you count?",
+    "failure_modes": {
+      "off_by_one": "Student says 7 or 9.",
+      "formula_misapplication": "Student adds: 15 + 7 = 22.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What number has 4 tens and 2 ones?",
+    "options": [
+      "6",
+      "24",
+      "42",
+      "402",
+      "40"
+    ],
+    "correct_answer": "42",
+    "ideal_solution": "4 tens = 40. 2 ones = 2. 40 + 2 = 42. Socratic Hint: The tens digit goes in the left spot, the ones digit goes in the right spot.",
+    "failure_modes": {
+      "converse_error": "Student reverses the digits and says 24.",
+      "arithmetic_slip": "Student adds 4 + 2 = 6.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Maya picked 6 flowers in the morning and 5 more in the afternoon. How many flowers did she pick in all?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12",
+      "1"
+    ],
+    "correct_answer": "11",
+    "ideal_solution": "6 + 5 = 11 flowers. Socratic Hint: Make 10 first: 6 + 4 = 10, then 10 + 1 = 11.",
+    "failure_modes": {
+      "off_by_one": "Student says 10.",
+      "formula_misapplication": "Student subtracts: 6 - 5 = 1.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 20 + 30?",
+    "options": [
+      "23",
+      "32",
+      "50",
+      "60",
+      "2030"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "20 + 30 = 50. 2 tens + 3 tens = 5 tens = 50. Socratic Hint: Count the tens: 20 is 2 tens, 30 is 3 tens. 2 + 3 = 5 tens = 50.",
+    "failure_modes": {
+      "arithmetic_slip": "Student writes 2030.",
+      "off_by_one": "Student says 60.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "What comes next? 5, 10, 15, 20, ___",
+    "options": [
+      "21",
+      "22",
+      "24",
+      "25",
+      "30"
+    ],
+    "correct_answer": "25",
+    "ideal_solution": "Counting by 5s: 5, 10, 15, 20, 25. Each number is 5 more than the last. 20 + 5 = 25. Socratic Hint: What is 5 more than 20?",
+    "failure_modes": {
+      "off_by_one": "Student says 21 (counting by 1 instead of 5).",
+      "overcounting": "Student says 30 (skipping 25).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Which is greater: 37 or 73?",
+    "options": [
+      "37",
+      "73",
+      "They are the same",
+      "Cannot tell",
+      "370"
+    ],
+    "correct_answer": "73",
+    "ideal_solution": "73 is greater than 37. Compare the tens digit first: 7 tens > 3 tens. Socratic Hint: Look at the tens place. Which number has more tens?",
+    "failure_modes": {
+      "converse_error": "Student confuses the digit positions and says 37.",
+      "arithmetic_slip": "Student says they are the same because they have the same digits.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "How many tens and ones are in the number 56?",
+    "options": [
+      "5 tens, 6 ones",
+      "6 tens, 5 ones",
+      "56 tens",
+      "5 ones, 6 tens",
+      "50 tens, 6 ones"
+    ],
+    "correct_answer": "5 tens, 6 ones",
+    "ideal_solution": "56 = 5 tens and 6 ones. The 5 is in the tens place, the 6 is in the ones place. Socratic Hint: The left digit tells tens, the right digit tells ones.",
+    "failure_modes": {
+      "converse_error": "Student reverses and says 6 tens, 5 ones.",
+      "formula_misapplication": "Student says 56 tens.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "There are 12 books on a shelf. 4 books fall off. How many books are still on the shelf?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "16"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "12 - 4 = 8 books still on the shelf. Socratic Hint: Think: 4 + ? = 12. 4 + 8 = 12.",
+    "failure_modes": {
+      "off_by_one": "Student says 7 or 9.",
+      "formula_misapplication": "Student adds: 12 + 4 = 16.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "A shape has 3 straight sides and 3 corners. What shape is it?",
+    "options": [
+      "Circle",
+      "Square",
+      "Triangle",
+      "Rectangle",
+      "Oval"
+    ],
+    "correct_answer": "Triangle",
+    "ideal_solution": "A shape with 3 sides and 3 corners is a triangle. Socratic Hint: 'Tri' means three. A triangle has 3 of everything: 3 sides, 3 corners.",
+    "failure_modes": {
+      "converse_error": "Student says square (which has 4 sides).",
+      "arithmetic_slip": "Student says circle (which has no sides).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 9 + 5?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "9 + 5 = 14. Make 10: 9 + 1 = 10, then 10 + 4 = 14. Socratic Hint: Break 5 into 1 + 4. Add 1 to 9 to make 10, then add 4.",
+    "failure_modes": {
+      "off_by_one": "Student says 13 or 15.",
+      "arithmetic_slip": "Student says 12.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 40 + 7?",
+    "options": [
+      "11",
+      "43",
+      "47",
+      "74",
+      "407"
+    ],
+    "correct_answer": "47",
+    "ideal_solution": "40 + 7 = 47. 4 tens plus 7 ones = 47. Socratic Hint: The tens stay the same (4), and you just add 7 ones.",
+    "failure_modes": {
+      "converse_error": "Student reverses and says 74.",
+      "arithmetic_slip": "Student adds digits: 4 + 7 = 11.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 13 - 5?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "18"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "13 - 5 = 8. Think: 5 + ? = 13. 5 + 8 = 13. Socratic Hint: Count up from 5: 6, 7, 8, 9, 10, 11, 12, 13. That's 8 counts.",
+    "failure_modes": {
+      "off_by_one": "Student says 7 or 9.",
+      "formula_misapplication": "Student adds: 13 + 5 = 18.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Dan has 8 crayons. He finds 6 more. How many crayons does Dan have now?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "2"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "8 + 6 = 14. Make 10: 8 + 2 = 10, then 10 + 4 = 14. Socratic Hint: He starts with 8 and gets more, so you add.",
+    "failure_modes": {
+      "off_by_one": "Student says 13.",
+      "formula_misapplication": "Student subtracts: 8 - 6 = 2.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "What number is missing? 10, 20, ___, 40, 50",
+    "options": [
+      "21",
+      "25",
+      "30",
+      "35",
+      "31"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "Counting by 10s: 10, 20, 30, 40, 50. The missing number is 30. Socratic Hint: Each number is 10 more than the last. What is 10 more than 20?",
+    "failure_modes": {
+      "off_by_one": "Student says 21 or 31.",
+      "arithmetic_slip": "Student says 25 (counting by 5s instead).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 7 + 7?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "77"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "7 + 7 = 14. This is a doubles fact. Socratic Hint: Think of two rows of 7. Count them all.",
+    "failure_modes": {
+      "off_by_one": "Student says 13.",
+      "arithmetic_slip": "Student writes 77.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 60 - 10?",
+    "options": [
+      "40",
+      "50",
+      "51",
+      "59",
+      "70"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "60 - 10 = 50. 6 tens minus 1 ten = 5 tens = 50. Socratic Hint: Just subtract the tens: 6 - 1 = 5. So the answer is 50.",
+    "failure_modes": {
+      "off_by_one": "Student says 59 (subtracting 1 instead of 10).",
+      "formula_misapplication": "Student adds: 60 + 10 = 70.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "A clock shows 6:00. What is the hour?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "12",
+      "60"
+    ],
+    "correct_answer": "6",
+    "ideal_solution": "At 6:00, the hour is 6. The little hand points to 6 and the big hand points to 12. Socratic Hint: In 6:00, the number before the colon is the hour.",
+    "failure_modes": {
+      "converse_error": "Student says 12 (reading the minute hand).",
+      "arithmetic_slip": "Student says 60.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Is 24 greater than, less than, or equal to 42?",
+    "options": [
+      "Greater than",
+      "Less than",
+      "Equal to",
+      "Cannot tell",
+      "Both are the same"
+    ],
+    "correct_answer": "Less than",
+    "ideal_solution": "24 < 42. Compare tens: 2 tens < 4 tens. Socratic Hint: Look at the tens digit first. 2 is less than 4, so 24 is less than 42.",
+    "failure_modes": {
+      "converse_error": "Student says greater than.",
+      "arithmetic_slip": "Student says equal because both use digits 2 and 4.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 11 - 3?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "14"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "11 - 3 = 8. Count back from 11: 10, 9, 8. Socratic Hint: Start at 11, count back 3.",
+    "failure_modes": {
+      "off_by_one": "Student says 7 or 9.",
+      "formula_misapplication": "Student adds: 11 + 3 = 14.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "How many corners does a rectangle have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "A rectangle has 4 corners (vertices). Each corner is a right angle (like the corner of a book). Socratic Hint: Point to each corner of a book or a door.",
+    "failure_modes": {
+      "off_by_one": "Student says 3 (confusing with triangle).",
+      "overcounting": "Student says 6.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 6 + 6?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "66"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "6 + 6 = 12. This is a doubles fact. Socratic Hint: Think of a dozen eggs — that's 12. 6 eggs in each row, 2 rows.",
+    "failure_modes": {
+      "off_by_one": "Student says 11.",
+      "arithmetic_slip": "Student writes 66.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Tim has 15 marbles. He gives 8 to Zara. How many marbles does Tim have left?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "23"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "15 - 8 = 7. Think: 8 + ? = 15. 8 + 7 = 15. Socratic Hint: Count up from 8 to 15: 9, 10, 11, 12, 13, 14, 15. That's 7 counts.",
+    "failure_modes": {
+      "off_by_one": "Student says 6 or 8.",
+      "formula_misapplication": "Student adds: 15 + 8 = 23.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Which number is between 48 and 50?",
+    "options": [
+      "47",
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "correct_answer": "49",
+    "ideal_solution": "48, 49, 50 — the number between 48 and 50 is 49. Socratic Hint: What number do you say after 48 but before 50?",
+    "failure_modes": {
+      "off_by_one": "Student says 48 or 50 (boundary numbers).",
+      "arithmetic_slip": "Student says 47 or 51.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 30 + 20?",
+    "options": [
+      "32",
+      "50",
+      "52",
+      "3020",
+      "10"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "30 + 20 = 50. 3 tens + 2 tens = 5 tens = 50. Socratic Hint: Add the tens: 3 + 2 = 5. Put 0 at the end: 50.",
+    "failure_modes": {
+      "arithmetic_slip": "Student writes 3020.",
+      "off_by_one": "Student says 52.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 16 - 9?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "25"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "16 - 9 = 7. Think: 9 + ? = 16. 9 + 7 = 16. Socratic Hint: Count up from 9: 10, 11, 12, 13, 14, 15, 16. That's 7 counts.",
+    "failure_modes": {
+      "off_by_one": "Student says 6 or 8.",
+      "formula_misapplication": "Student adds: 16 + 9 = 25.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "What comes next? AA BB CC ___",
+    "options": [
+      "AA",
+      "CC",
+      "DD",
+      "AB",
+      "EE"
+    ],
+    "correct_answer": "DD",
+    "ideal_solution": "The pattern uses pairs of letters in alphabetical order: AA, BB, CC, DD. Each letter is doubled, and the letters go A, B, C, D. Socratic Hint: What letter comes after C? Now double it.",
+    "failure_modes": {
+      "converse_error": "Student says CC (repeating the last pair).",
+      "overcounting": "Student says EE (skipping D).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "How many tens are in 80?",
+    "options": [
+      "0",
+      "4",
+      "8",
+      "18",
+      "80"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "80 = 8 tens and 0 ones. There are 8 tens in 80. Socratic Hint: Count by 10s: 10, 20, 30, 40, 50, 60, 70, 80. That's 8 tens.",
+    "failure_modes": {
+      "off_by_one": "Student says 4 (half of 8).",
+      "formula_misapplication": "Student says 80 (confusing the number with how many tens).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "9 birds are on a tree. 3 more land on the tree. Then 2 fly away. How many birds are on the tree now?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "14"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "Start: 9. Then +3: 9 + 3 = 12. Then -2: 12 - 2 = 10. Socratic Hint: Do each step in order. First add, then subtract.",
+    "failure_modes": {
+      "premature_calculation": "Student only does 9 + 3 = 12 and forgets the 2 that fly away.",
+      "arithmetic_slip": "Student says 14 (adding everything: 9 + 3 + 2).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 50 - 20?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35",
+      "70"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "50 - 20 = 30. 5 tens - 2 tens = 3 tens = 30. Socratic Hint: Just subtract the tens: 5 - 2 = 3, so the answer is 30.",
+    "failure_modes": {
+      "off_by_one": "Student says 25 or 35.",
+      "formula_misapplication": "Student adds: 50 + 20 = 70.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "Which shape has no straight sides?",
+    "options": [
+      "Rectangle",
+      "Triangle",
+      "Circle",
+      "Square",
+      "Hexagon"
+    ],
+    "correct_answer": "Circle",
+    "ideal_solution": "A circle has no straight sides — it is completely curved. All other shapes listed have straight sides. Socratic Hint: Run your finger along each shape. Which one is smooth and curved all the way around?",
+    "failure_modes": {
+      "converse_error": "Student picks hexagon (which has 6 straight sides).",
+      "constraint_neglect": "Student picks rectangle.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 8 + 8?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17",
+      "88"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "8 + 8 = 16. This is a doubles fact. Socratic Hint: 8 + 8 is the same as 8 + 2 + 6 = 10 + 6 = 16.",
+    "failure_modes": {
+      "off_by_one": "Student says 15.",
+      "arithmetic_slip": "Student writes 88.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Order these numbers from least to greatest: 45, 18, 32",
+    "options": [
+      "18, 32, 45",
+      "45, 32, 18",
+      "32, 18, 45",
+      "18, 45, 32",
+      "45, 18, 32"
+    ],
+    "correct_answer": "18, 32, 45",
+    "ideal_solution": "Compare tens: 18 has 1 ten, 32 has 3 tens, 45 has 4 tens. Order: 18 < 32 < 45. Socratic Hint: Look at the tens digit. The smallest tens goes first.",
+    "failure_modes": {
+      "converse_error": "Student orders greatest to least: 45, 32, 18.",
+      "arithmetic_slip": "Student doesn't compare correctly.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 14 - 6?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "20"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "14 - 6 = 8. Think: 6 + ? = 14. 6 + 8 = 14. Socratic Hint: Count up from 6 to 14: 7, 8, 9, 10, 11, 12, 13, 14. That's 8 counts.",
+    "failure_modes": {
+      "off_by_one": "Student says 7 or 9.",
+      "formula_misapplication": "Student adds: 14 + 6 = 20.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "A class has 10 girls and 9 boys. How many students are in the class?",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "20",
+      "1"
+    ],
+    "correct_answer": "19",
+    "ideal_solution": "10 + 9 = 19 students. Socratic Hint: Start at 10, count 9 more: 11, 12, 13, 14, 15, 16, 17, 18, 19.",
+    "failure_modes": {
+      "off_by_one": "Student says 18 or 20.",
+      "formula_misapplication": "Student subtracts: 10 - 9 = 1.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What number is 10 less than 50?",
+    "options": [
+      "30",
+      "39",
+      "40",
+      "41",
+      "60"
+    ],
+    "correct_answer": "40",
+    "ideal_solution": "10 less than 50 is 50 - 10 = 40. Socratic Hint: The tens digit goes down by 1: 5 → 4. The ones stay 0. So 40.",
+    "failure_modes": {
+      "off_by_one": "Student says 39 or 41.",
+      "formula_misapplication": "Student adds: 50 + 10 = 60.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "Is 16 odd or even?",
+    "options": [
+      "Odd",
+      "Even",
+      "Both",
+      "Neither",
+      "Cannot tell"
+    ],
+    "correct_answer": "Even",
+    "ideal_solution": "16 is even. It ends in 6, which is an even digit. You can also check: 16 ÷ 2 = 8, so it splits evenly. Socratic Hint: Can you pair up 16 objects with nothing left over? If yes, it's even.",
+    "failure_modes": {
+      "converse_error": "Student says odd.",
+      "constraint_neglect": "Student says cannot tell.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "If you put two triangles together, what shape can you make?",
+    "options": [
+      "Circle",
+      "Triangle",
+      "Square",
+      "Star",
+      "Oval"
+    ],
+    "correct_answer": "Square",
+    "ideal_solution": "Two identical right triangles placed together along their longest side create a square (or rectangle). Socratic Hint: Cut a square diagonally. How many triangles do you get? Now put them back together.",
+    "failure_modes": {
+      "converse_error": "Student says triangle.",
+      "constraint_neglect": "Student says circle.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 5 + 9?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "59"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "5 + 9 = 14. Make 10: 9 + 1 = 10, then 10 + 4 = 14. Socratic Hint: Start from the bigger number (9). How many more to get to 10? Then add the rest.",
+    "failure_modes": {
+      "off_by_one": "Student says 13.",
+      "arithmetic_slip": "Student writes 59.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "You have 2 nickels. How many cents do you have?",
+    "options": [
+      "2",
+      "5",
+      "7",
+      "10",
+      "25"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "Each nickel is 5 cents. 2 nickels = 5 + 5 = 10 cents. Socratic Hint: A nickel = 5 cents. Two nickels = 5 + 5.",
+    "failure_modes": {
+      "undercounting": "Student says 5 (counting only one nickel).",
+      "formula_misapplication": "Student says 2 (counting the coins, not the cents).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 17 - 8?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "25"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "17 - 8 = 9. Think: 8 + ? = 17. 8 + 9 = 17. Socratic Hint: Count up from 8 to 17: 9, 10, 11, 12, 13, 14, 15, 16, 17. That's 9 counts.",
+    "failure_modes": {
+      "off_by_one": "Student says 8 or 10.",
+      "formula_misapplication": "Student adds: 17 + 8 = 25.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Write the number: seven tens and one one",
+    "options": [
+      "17",
+      "71",
+      "701",
+      "107",
+      "8"
+    ],
+    "correct_answer": "71",
+    "ideal_solution": "7 tens = 70. 1 one = 1. 70 + 1 = 71. Socratic Hint: The tens digit is 7, the ones digit is 1.",
+    "failure_modes": {
+      "converse_error": "Student reverses and says 17.",
+      "arithmetic_slip": "Student adds 7 + 1 = 8.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "What comes next? 3, 6, 9, 12, ___",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16",
+      "18"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "The pattern counts by 3s: 3, 6, 9, 12, 15. Each number is 3 more than the last. 12 + 3 = 15. Socratic Hint: What is 3 more than 12?",
+    "failure_modes": {
+      "off_by_one": "Student says 13 (adding 1 instead of 3).",
+      "overcounting": "Student says 18 (adding 6 instead of 3).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Which number is closest to 50: 38, 47, or 62?",
+    "options": [
+      "38",
+      "47",
+      "50",
+      "62",
+      "They are all the same"
+    ],
+    "correct_answer": "47",
+    "ideal_solution": "Distance from 50: |50-38|=12, |50-47|=3, |50-62|=12. 47 is only 3 away from 50, so it's the closest. Socratic Hint: How many more from each number to get to 50? The one that needs the fewest jumps is closest.",
+    "failure_modes": {
+      "converse_error": "Student says 62 (going past 50).",
+      "constraint_neglect": "Student says 38.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 10 + 10 + 10?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "33",
+      "100"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "10 + 10 = 20. 20 + 10 = 30. Three groups of 10 = 30. Socratic Hint: Count by 10s three times: 10, 20, 30.",
+    "failure_modes": {
+      "off_by_one": "Student says 20 (only adding two 10s).",
+      "arithmetic_slip": "Student says 100.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 1,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "How many half-hours are in 1 hour?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "30"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "1 hour = 2 half-hours. A half-hour is 30 minutes, and there are 60 minutes in an hour. 60 ÷ 30 = 2. Socratic Hint: If you cut an hour in half, how many pieces do you get?",
+    "failure_modes": {
+      "off_by_one": "Student says 1 or 3.",
+      "formula_misapplication": "Student says 30 (confusing half-hours with minutes).",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  }
 ]

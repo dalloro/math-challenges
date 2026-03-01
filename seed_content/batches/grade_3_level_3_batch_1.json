@@ -1,1052 +1,1052 @@
 [
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A toy store has 36 toy cars. They are packed in boxes of 4. How many boxes are needed?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "32"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "36 ÷ 4 = 9 boxes. Socratic Hint: How many groups of 4 are in 36?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 8 confusing with 32 ÷ 4.",
-            "formula_misapplication": "Student picks 32 computing 36 - 4.",
-            "premature_calculation": "Student picks 6 confusing with 36 ÷ 6."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Maria has 60 beads. She uses 7 beads for each necklace. How many complete necklaces can she make?",
-        "options": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "53"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "60 ÷ 7 = 8 remainder 4. She can make 8 complete necklaces. Socratic Hint: How many times does 7 go into 60?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9 thinking 7 × 9 = 63 fits.",
-            "formula_misapplication": "Student picks 53 computing 60 - 7.",
-            "premature_calculation": "Student picks 7 confusing divisor with answer."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 5 × 9 + 6?",
-        "options": [
-            "45",
-            "51",
-            "54",
-            "56",
-            "75"
-        ],
-        "correct_answer": "51",
-        "ideal_solution": "5 × 9 = 45. Then 45 + 6 = 51. Socratic Hint: Multiply first, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 45 + 6 = 54 (wrong).",
-            "formula_misapplication": "Student adds first: 9 + 6 = 15, then 5 × 15 = 75.",
-            "premature_calculation": "Student stops at 45."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 7 × 8 - 12?",
-        "options": [
-            "36",
-            "40",
-            "44",
-            "48",
-            "56"
-        ],
-        "correct_answer": "44",
-        "ideal_solution": "7 × 8 = 56. Then 56 - 12 = 44. Socratic Hint: Multiply first, then subtract.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 56 - 12 = 40 (wrong).",
-            "formula_misapplication": "Student subtracts first: 8 - 12 impossible.",
-            "premature_calculation": "Student stops at 56."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A school orders 8 boxes of pencils. Each box has 12 pencils. 15 pencils are broken and thrown away. How many good pencils are there?",
-        "options": [
-            "77",
-            "81",
-            "85",
-            "93",
-            "96"
-        ],
-        "correct_answer": "81",
-        "ideal_solution": "Total: 8 × 12 = 96. After removing broken: 96 - 15 = 81. Socratic Hint: Find the total first, then subtract the broken ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 96 - 15 = 85 (wrong).",
-            "formula_misapplication": "Student computes 12 - 15 (impossible) or guesses.",
-            "premature_calculation": "Student stops at 96."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Tom has some marbles. He gives 7 to each of 6 friends and has 3 left. How many marbles did Tom start with?",
-        "options": [
-            "16",
-            "39",
-            "42",
-            "45",
-            "52"
-        ],
-        "correct_answer": "45",
-        "ideal_solution": "Given away: 7 × 6 = 42. Started with: 42 + 3 = 45. Socratic Hint: Find how many were given away, then add the leftovers.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 42 + 3 = 39 (wrong).",
-            "formula_misapplication": "Student computes 7 + 6 + 3 = 16.",
-            "premature_calculation": "Student gets 42 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "A rectangle has an area of 56 sq cm. Its width is 7 cm. What is its length?",
-        "options": [
-            "6 cm",
-            "7 cm",
-            "8 cm",
-            "9 cm",
-            "49 cm"
-        ],
-        "correct_answer": "8 cm",
-        "ideal_solution": "Area = length × width. 56 = length × 7. Length = 56 ÷ 7 = 8 cm. Socratic Hint: Divide the area by the known side.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 49 computing 56 - 7.",
-            "formula_misapplication": "Student picks 7 thinking it is a square.",
-            "premature_calculation": "Student picks 6 from wrong division."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "A square has a perimeter of 28 cm. What is the length of each side?",
-        "options": [
-            "4 cm",
-            "5 cm",
-            "6 cm",
-            "7 cm",
-            "14 cm"
-        ],
-        "correct_answer": "7 cm",
-        "ideal_solution": "Perimeter = 4 × side. Side = 28 ÷ 4 = 7 cm. Socratic Hint: Divide the perimeter by 4.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 14 dividing by 2 instead of 4.",
-            "formula_misapplication": "Student picks 6 from wrong division.",
-            "premature_calculation": "Student picks 4 confusing with the number of sides."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "number_theory",
-        "question": "What is the next number in the pattern: 2, 6, 18, 54, __?",
-        "options": [
-            "60",
-            "72",
-            "108",
-            "162",
-            "216"
-        ],
-        "correct_answer": "162",
-        "ideal_solution": "Each number is multiplied by 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162. Socratic Hint: What is the relationship between each pair of consecutive numbers?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 108 confusing with 54 × 2.",
-            "formula_misapplication": "Student picks 60 adding 6 instead of multiplying.",
-            "premature_calculation": "Student picks 72 adding 18."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "number_theory",
-        "question": "What is the next number in the pattern: 1, 4, 9, 16, __?",
-        "options": [
-            "20",
-            "21",
-            "23",
-            "25",
-            "36"
-        ],
-        "correct_answer": "25",
-        "ideal_solution": "These are perfect squares: 1×1=1, 2×2=4, 3×3=9, 4×4=16, 5×5=25. Socratic Hint: What number times itself gives each term?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 20 adding 4 (16+4).",
-            "formula_misapplication": "Student picks 21 adding 5.",
-            "premature_calculation": "Student picks 36 skipping to 6×6."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 836 - 479?",
-        "options": [
-            "257",
-            "347",
-            "357",
-            "367",
-            "457"
-        ],
-        "correct_answer": "357",
-        "ideal_solution": "836 - 479: ones 16-9=7 (borrow), tens 12-7=5 (borrow from hundreds), hundreds 7-4=3. Answer: 357. Socratic Hint: Borrow when needed.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 367 from a tens error.",
-            "formula_misapplication": "Student gets 457 not borrowing properly.",
-            "premature_calculation": "Student gets 347 from an ones error."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 589 + 276?",
-        "options": [
-            "755",
-            "855",
-            "865",
-            "875",
-            "965"
-        ],
-        "correct_answer": "865",
-        "ideal_solution": "589 + 276: ones 9+6=15 (write 5 carry 1), tens 8+7+1=16 (write 6 carry 1), hundreds 5+2+1=8. Answer: 865. Socratic Hint: Watch for carries in each column.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 855 forgetting the carry from ones.",
-            "formula_misapplication": "Student gets 755 computing hundreds as 5+2=7.",
-            "premature_calculation": "Student gets 875 from a tens error."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Class A has 24 students. Class B has 28 students. If each student brings 3 pencils, how many pencils in total?",
-        "options": [
-            "52",
-            "72",
-            "84",
-            "156",
-            "168"
-        ],
-        "correct_answer": "156",
-        "ideal_solution": "Total students: 24 + 28 = 52. Total pencils: 52 × 3 = 156. Socratic Hint: First find total students, then multiply by pencils each.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 24 × 3 = 72 (only Class A).",
-            "formula_misapplication": "Student computes 28 × 3 = 84 (only Class B).",
-            "premature_calculation": "Student gets 24 + 28 = 52 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A library has 4 shelves. The first shelf has 15 books, the second has 12, the third has 18, and the fourth has 15. How many books in total?",
-        "options": [
-            "45",
-            "50",
-            "55",
-            "60",
-            "65"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "15 + 12 + 18 + 15 = 60. Socratic Hint: Add all four numbers.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 55 from an addition error.",
-            "formula_misapplication": "Student computes 4 × 15 = 60 (lucky guess but wrong reasoning if applied to other problems).",
-            "premature_calculation": "Student adds only 15 + 12 + 18 = 45."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A swimming pool opens at 10:00 AM and closes at 6:00 PM. How many hours is it open?",
-        "options": [
-            "4 hours",
-            "6 hours",
-            "8 hours",
-            "10 hours",
-            "16 hours"
-        ],
-        "correct_answer": "8 hours",
-        "ideal_solution": "From 10:00 AM to 6:00 PM is 8 hours. Count: 10→11→12→1→2→3→4→5→6 = 8 hours. Socratic Hint: Count the hours from 10 to 6.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 hours miscounting.",
-            "formula_misapplication": "Student computes 6 + 10 = 16 hours.",
-            "premature_calculation": "Student computes 6 - 10 (impossible) and guesses 4."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is the value of the 3 in the number 4,325?",
-        "options": [
-            "3",
-            "30",
-            "300",
-            "3,000",
-            "325"
-        ],
-        "correct_answer": "300",
-        "ideal_solution": "In 4,325, the digit 3 is in the hundreds place. Its value is 300. Socratic Hint: What place is the 3 in?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3 (face value, not place value).",
-            "formula_misapplication": "Student picks 3,000 confusing with thousands place.",
-            "premature_calculation": "Student picks 30 confusing with tens place."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "A figure is made of two squares. Each square has sides of 5 cm. They share one side. What is the perimeter of the combined figure?",
-        "options": [
-            "20 cm",
-            "30 cm",
-            "35 cm",
-            "40 cm",
-            "50 cm"
-        ],
-        "correct_answer": "30 cm",
-        "ideal_solution": "Two squares together make a rectangle 10 cm × 5 cm. Perimeter = 2(10+5) = 30 cm. Or: each square has perimeter 20, total 40, minus 2 shared sides × 5 = 10. 40-10 = 30. Socratic Hint: The shared side is inside and doesn't count for the perimeter.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 40 adding both perimeters without subtracting.",
-            "formula_misapplication": "Student picks 20 (one square's perimeter).",
-            "premature_calculation": "Student picks 50 computing 2 × 25."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A recipe needs 3 cups of flour for 1 batch of cookies. How many cups of flour are needed for 6 batches?",
-        "options": [
-            "9",
-            "12",
-            "15",
-            "18",
-            "21"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "6 × 3 = 18 cups. Socratic Hint: Multiply the number of batches by cups per batch.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 6 + 3 = 9.",
-            "formula_misapplication": "Student picks 12 confusing with 4 × 3.",
-            "premature_calculation": "Student picks 15 confusing with 5 × 3."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A theater has 9 rows. Each row has 8 seats. 5 seats are broken. How many seats can actually be used?",
-        "options": [
-            "62",
-            "67",
-            "72",
-            "77",
-            "82"
-        ],
-        "correct_answer": "67",
-        "ideal_solution": "Total seats: 9 × 8 = 72. Usable: 72 - 5 = 67. Socratic Hint: Find total seats first, then subtract broken ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 72 - 5 = 62 (wrong).",
-            "formula_misapplication": "Student computes 8 - 5 = 3 per row (wrong interpretation).",
-            "premature_calculation": "Student stops at 72."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 1,000 - 385?",
-        "options": [
-            "515",
-            "615",
-            "625",
-            "715",
-            "785"
-        ],
-        "correct_answer": "615",
-        "ideal_solution": "1000 - 385: 1000 - 400 = 600, then add back 15: 615. Or borrow column by column. Answer: 615. Socratic Hint: Try subtracting from 1000 in steps.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 625 from a borrowing error.",
-            "formula_misapplication": "Student gets 715 computing 1000 - 285.",
-            "premature_calculation": "Student gets 515 from incorrect subtraction."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "number_theory",
-        "question": "If you multiply an even number by an odd number, is the result even or odd?",
-        "options": [
-            "Always even",
-            "Always odd",
-            "Sometimes even, sometimes odd",
-            "Cannot tell",
-            "Neither"
-        ],
-        "correct_answer": "Always even",
-        "ideal_solution": "Even × odd = even. Example: 4 × 3 = 12 (even). Any product with an even factor is even. Socratic Hint: Try a few examples: 2×3, 4×5, 6×7.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 'Always odd' confusing rules.",
-            "formula_misapplication": "Student picks 'Sometimes even, sometimes odd' not seeing the pattern.",
-            "premature_calculation": "Student picks 'Cannot tell' without trying examples."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A caterpillar crawls 8 cm every minute. How far does it crawl in 9 minutes?",
-        "options": [
-            "17 cm",
-            "56 cm",
-            "64 cm",
-            "72 cm",
-            "80 cm"
-        ],
-        "correct_answer": "72 cm",
-        "ideal_solution": "8 × 9 = 72 cm. Socratic Hint: Multiply the distance per minute by the number of minutes.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 8 + 9 = 17 cm.",
-            "formula_misapplication": "Student picks 64 confusing with 8 × 8.",
-            "premature_calculation": "Student picks 80 confusing with 8 × 10."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "A rectangular path around a garden is 15 m long and 8 m wide. What is the total distance if you walk all the way around once?",
-        "options": [
-            "23 m",
-            "38 m",
-            "46 m",
-            "54 m",
-            "120 m"
-        ],
-        "correct_answer": "46 m",
-        "ideal_solution": "Perimeter = 2 × (15 + 8) = 2 × 23 = 46 m. Socratic Hint: Walking around means you travel the perimeter.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 15 + 8 = 23 (only half the perimeter).",
-            "formula_misapplication": "Student computes 15 × 8 = 120 (area, not perimeter).",
-            "premature_calculation": "Student picks 38 from wrong doubling."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Dan has 3 shelves. He puts 9 books on the first shelf, 7 on the second, and the rest on the third. He has 25 books total. How many books are on the third shelf?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "16"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "First two shelves: 9 + 7 = 16. Third shelf: 25 - 16 = 9. Socratic Hint: Find how many books are already placed, then subtract from total.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 25 - 16 = 8 (off by 1).",
-            "formula_misapplication": "Student computes 25 - 9 = 16 (subtracts only first shelf).",
-            "premature_calculation": "Student gets 9 + 7 = 16 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "Which is greater: 6 × 8 or 7 × 7?",
-        "options": [
-            "6 × 8",
-            "7 × 7",
-            "They are equal",
-            "Cannot tell",
-            "Neither"
-        ],
-        "correct_answer": "7 × 7",
-        "ideal_solution": "6 × 8 = 48. 7 × 7 = 49. Since 49 > 48, 7 × 7 is greater. Socratic Hint: Calculate both and compare.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 7 × 7 = 48 and picks 'They are equal'.",
-            "formula_misapplication": "Student compares 8 > 7 and picks 6 × 8.",
-            "premature_calculation": "Student picks 'Cannot tell' without computing."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A bag has 5 red marbles and 3 blue marbles. If you add 4 more red marbles, how many marbles are in the bag?",
-        "options": [
-            "8",
-            "9",
-            "12",
-            "15",
-            "20"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Original: 5 + 3 = 8. After adding 4 red: 8 + 4 = 12. Socratic Hint: Count all marbles after the addition.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9 computing 5 + 4 only (forgets blue).",
-            "formula_misapplication": "Student picks 8 forgetting to add the new ones.",
-            "premature_calculation": "Student picks 15 computing 5 + 3 + 4 + 3."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "Round 3,650 to the nearest thousand.",
-        "options": [
-            "3,000",
-            "3,600",
-            "3,700",
-            "4,000",
-            "5,000"
-        ],
-        "correct_answer": "4,000",
-        "ideal_solution": "3,650 is between 3,000 and 4,000. The hundreds digit is 6 (≥5), so round up to 4,000. Socratic Hint: Look at the hundreds digit to decide.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3,000 rounding down.",
-            "formula_misapplication": "Student picks 3,700 rounding to nearest hundred.",
-            "premature_calculation": "Student picks 3,600 rounding to wrong value."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Zoe walks 6 blocks to school and 6 blocks back home, 5 days a week. How many blocks does she walk in a week?",
-        "options": [
-            "12",
-            "30",
-            "36",
-            "55",
-            "60"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "Per day: 6 + 6 = 12 blocks. Per week: 12 × 5 = 60 blocks. Socratic Hint: First find the daily total, then multiply by 5.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 6 × 5 = 30 (one way only).",
-            "formula_misapplication": "Student computes 6 + 6 = 12 and stops.",
-            "premature_calculation": "Student picks 36 from 6 × 6."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "Two rectangles overlap. Rectangle A is 4 cm × 6 cm. Rectangle B is 3 cm × 5 cm. The overlapping region is 2 cm × 3 cm. What is the total area covered (without double-counting)?",
-        "options": [
-            "33 sq cm",
-            "36 sq cm",
-            "39 sq cm",
-            "45 sq cm",
-            "51 sq cm"
-        ],
-        "correct_answer": "33 sq cm",
-        "ideal_solution": "A = 4×6 = 24, B = 3×5 = 15, overlap = 2×3 = 6. Total = 24 + 15 - 6 = 33. Socratic Hint: Add both areas and subtract the overlap to avoid counting it twice.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 24 + 15 = 39 (forgets to subtract overlap).",
-            "formula_misapplication": "Student computes 24 + 15 + 6 = 45.",
-            "premature_calculation": "Student gets 24 + 15 = 39 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "An office has 7 desks. Each desk has 4 drawers. Each drawer holds 3 folders. How many folders are there in total?",
-        "options": [
-            "12",
-            "21",
-            "28",
-            "84",
-            "91"
-        ],
-        "correct_answer": "84",
-        "ideal_solution": "Drawers: 7 × 4 = 28. Folders: 28 × 3 = 84. Socratic Hint: First find total drawers, then multiply by folders per drawer.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 7 × 4 × 3 = 91 (wrong multiplication).",
-            "formula_misapplication": "Student computes 7 + 4 + 3 = 14.",
-            "premature_calculation": "Student gets 7 × 4 = 28 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What number makes this true: 72 ÷ __ = 8?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "64"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "72 ÷ ? = 8. So ? = 72 ÷ 8 = 9. Check: 72 ÷ 9 = 8. ✓ Socratic Hint: What times 8 equals 72?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 8 confusing with 64 ÷ 8.",
-            "formula_misapplication": "Student picks 64 computing 72 - 8.",
-            "premature_calculation": "Student picks 7 from wrong fact."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "number_theory",
-        "question": "How many even numbers are between 11 and 20 (not including 11 and 20)?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "8",
-            "9"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "Between 11 and 20 (exclusive): 12, 13, 14, 15, 16, 17, 18, 19. The even ones are: 12, 14, 16, 18.  That is 4 even numbers. Socratic Hint: List the numbers and circle the even ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5 including 20.",
-            "formula_misapplication": "Student picks 3 forgetting one even number.",
-            "premature_calculation": "Student picks 8 counting all numbers between 11 and 20."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Ava reads 9 pages on Monday, 12 pages on Tuesday, and 15 pages on Wednesday. If the pattern continues, how many pages will she read on Thursday?",
-        "options": [
-            "15",
-            "16",
-            "17",
-            "18",
-            "21"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "The pattern increases by 3 each day: 9, 12, 15, 18. Socratic Hint: What is the difference between each pair of numbers?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 16 adding 1 to 15.",
-            "formula_misapplication": "Student picks 21 adding 6 to 15.",
-            "premature_calculation": "Student picks 15 repeating Wednesday."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 6 × 6 + 8 × 3?",
-        "options": [
-            "36",
-            "48",
-            "54",
-            "60",
-            "66"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "6 × 6 = 36. 8 × 3 = 24. 36 + 24 = 60. Socratic Hint: Do both multiplications first, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 36 + 24 = 54 (wrong).",
-            "formula_misapplication": "Student computes (6+8) × (6+3) = 126.",
-            "premature_calculation": "Student stops at 36."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A shop sells juice for 4 dollars and water for 2 dollars. Jim buys 3 juices and some waters and spends 18 dollars total. How many waters did he buy?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "6"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "Juice cost: 3 × 4 = 12. Remaining: 18 - 12 = 6. Waters: 6 ÷ 2 = 3. Socratic Hint: Find how much was spent on juice first, then figure out the waters.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2 computing 6 ÷ 3.",
-            "formula_misapplication": "Student picks 6 computing 18 ÷ 3.",
-            "premature_calculation": "Student gets 18 - 12 = 6 and picks that."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "A rectangle is 7 cm long and 5 cm wide. What is its area plus its perimeter?",
-        "options": [
-            "35",
-            "47",
-            "59",
-            "70",
-            "84"
-        ],
-        "correct_answer": "59",
-        "ideal_solution": "Area = 7 × 5 = 35. Perimeter = 2(7+5) = 24. Sum = 35 + 24 = 59. Socratic Hint: Calculate area and perimeter separately, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 35 + 24 = 47 (wrong).",
-            "formula_misapplication": "Student picks 35 (area only).",
-            "premature_calculation": "Student picks 70 computing 2 × 35."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A bus departs every 15 minutes starting at 8:00 AM. What time does the 5th bus depart?",
-        "options": [
-            "8:45 AM",
-            "9:00 AM",
-            "9:15 AM",
-            "9:30 AM",
-            "10:00 AM"
-        ],
-        "correct_answer": "9:00 AM",
-        "ideal_solution": "1st bus: 8:00. 2nd: 8:15. 3rd: 8:30. 4th: 8:45. 5th: 9:00. After the 1st, there are 4 more intervals of 15 min: 4 × 15 = 60 min. 8:00 + 60 min = 9:00. Socratic Hint: The 5th bus is 4 intervals after the first.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9:15 AM counting 5 intervals instead of 4.",
-            "formula_misapplication": "Student picks 8:45 AM computing only 3 intervals.",
-            "premature_calculation": "Student picks 9:30 AM counting incorrectly."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 258 + 177 + 65?",
-        "options": [
-            "400",
-            "450",
-            "490",
-            "500",
-            "510"
-        ],
-        "correct_answer": "500",
-        "ideal_solution": "258 + 177 = 435. 435 + 65 = 500. Socratic Hint: Add two numbers first, then add the third.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 490 from an error in the first addition.",
-            "formula_misapplication": "Student gets 450 from multiple errors.",
-            "premature_calculation": "Student gets 435 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "Each table in a restaurant has 4 legs. There are also 6 chairs, each with 4 legs. If there are 5 tables and 6 chairs, how many legs in total?",
-        "options": [
-            "20",
-            "24",
-            "40",
-            "44",
-            "56"
-        ],
-        "correct_answer": "44",
-        "ideal_solution": "Table legs: 5 × 4 = 20. Chair legs: 6 × 4 = 24. Total: 20 + 24 = 44. Socratic Hint: Find table legs and chair legs separately, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 20 + 24 = 40 (wrong).",
-            "formula_misapplication": "Student computes (5 + 6) × 4 = 44 (correct but only by coincidence).",
-            "premature_calculation": "Student stops at 20."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "number_theory",
-        "question": "What is the next number in the pattern: 7, 14, 21, 28, __?",
-        "options": [
-            "30",
-            "32",
-            "34",
-            "35",
-            "42"
-        ],
-        "correct_answer": "35",
-        "ideal_solution": "The pattern adds 7 each time (multiples of 7): 7, 14, 21, 28, 35. Socratic Hint: What is 28 + 7?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 34 adding 6.",
-            "formula_misapplication": "Student picks 42 adding 14.",
-            "premature_calculation": "Student picks 30 adding 2."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 9 × 3 + 7 × 2?",
-        "options": [
-            "27",
-            "34",
-            "41",
-            "45",
-            "48"
-        ],
-        "correct_answer": "41",
-        "ideal_solution": "9 × 3 = 27. 7 × 2 = 14. 27 + 14 = 41. Socratic Hint: Do both multiplications, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 27 + 14 = 45 (wrong addition).",
-            "formula_misapplication": "Student computes (9+7) × (3+2) = 80.",
-            "premature_calculation": "Student stops at 27."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A pet shop has 4 fish tanks. Each tank has 8 fish. They sell 11 fish. How many fish remain?",
-        "options": [
-            "17",
-            "19",
-            "21",
-            "25",
-            "32"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "Total: 4 × 8 = 32. After selling: 32 - 11 = 21. Socratic Hint: Find the total first, then subtract.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 32 - 11 = 19 (wrong).",
-            "formula_misapplication": "Student computes 8 - 11 and gets confused.",
-            "premature_calculation": "Student stops at 32."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "geometry",
-        "question": "A square room has sides of 10 m. How many square meters of tile are needed to cover the floor?",
-        "options": [
-            "20 sq m",
-            "40 sq m",
-            "80 sq m",
-            "100 sq m",
-            "400 sq m"
-        ],
-        "correct_answer": "100 sq m",
-        "ideal_solution": "Area = 10 × 10 = 100 sq m. Socratic Hint: To tile a floor, you need to find the area.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 10 + 10 = 20.",
-            "formula_misapplication": "Student computes perimeter: 4 × 10 = 40.",
-            "premature_calculation": "Student picks 80 from wrong calculation."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A plant grows 3 cm each week. After 8 weeks, how tall is it if it started at 5 cm?",
-        "options": [
-            "24 cm",
-            "29 cm",
-            "32 cm",
-            "40 cm",
-            "45 cm"
-        ],
-        "correct_answer": "29 cm",
-        "ideal_solution": "Growth: 3 × 8 = 24 cm. Total height: 5 + 24 = 29 cm. Socratic Hint: Find total growth, then add the starting height.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 24 (forgetting starting height).",
-            "formula_misapplication": "Student picks 40 computing 5 × 8.",
-            "premature_calculation": "Student picks 32 adding 8 instead of multiplying."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 100 - 37 - 28?",
-        "options": [
-            "25",
-            "30",
-            "35",
-            "45",
-            "65"
-        ],
-        "correct_answer": "35",
-        "ideal_solution": "100 - 37 = 63. 63 - 28 = 35. Socratic Hint: Subtract one number at a time.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 63 - 28 = 45 (wrong).",
-            "formula_misapplication": "Student computes 100 - (37+28) = 100 - 65 = 35 (same answer, but may error to 100 - 55 = 45).",
-            "premature_calculation": "Student stops at 63."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "There are 3 bags. The first bag has 12 marbles, the second has twice as many as the first, and the third has 5 fewer than the second. How many marbles are in the third bag?",
-        "options": [
-            "7",
-            "14",
-            "17",
-            "19",
-            "24"
-        ],
-        "correct_answer": "19",
-        "ideal_solution": "First: 12. Second: 2 × 12 = 24. Third: 24 - 5 = 19. Socratic Hint: Work through each bag in order.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 24 - 5 = 17 (wrong).",
-            "formula_misapplication": "Student computes 12 - 5 = 7 (subtracts from first bag).",
-            "premature_calculation": "Student gets 24 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "number_theory",
-        "question": "Which of these numbers is a multiple of both 3 and 4?",
-        "options": [
-            "8",
-            "9",
-            "12",
-            "15",
-            "16"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "A multiple of both 3 and 4 must be a multiple of 12. From the list, 12 ÷ 3 = 4 ✓ and 12 ÷ 4 = 3 ✓. Socratic Hint: Check which numbers are divisible by both 3 and 4.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9 (multiple of 3 but not 4).",
-            "formula_misapplication": "Student picks 8 (multiple of 4 but not 3).",
-            "premature_calculation": "Student picks 15 (multiple of 3 but not 4)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A farmer has 50 eggs. He packs them in cartons of 6. How many cartons does he fill completely, and how many eggs are left over?",
-        "options": [
-            "7 cartons, 8 left",
-            "8 cartons, 0 left",
-            "8 cartons, 2 left",
-            "9 cartons, 4 left",
-            "10 cartons, 0 left"
-        ],
-        "correct_answer": "8 cartons, 2 left",
-        "ideal_solution": "50 ÷ 6 = 8 remainder 2. He fills 8 cartons with 2 eggs left over. Check: 8 × 6 = 48, 50 - 48 = 2. Socratic Hint: How many times does 6 go into 50?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks '7 cartons, 8 left' (7 × 6 = 42, 50-42=8).",
-            "formula_misapplication": "Student picks '9 cartons, 4 left' computing incorrectly.",
-            "premature_calculation": "Student picks '8 cartons, 0 left' thinking 48 = 50."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "logic",
-        "question": "A ribbon is 90 cm long. Jake cuts off 3 pieces, each 12 cm long. How much ribbon is left?",
-        "options": [
-            "42 cm",
-            "48 cm",
-            "54 cm",
-            "66 cm",
-            "78 cm"
-        ],
-        "correct_answer": "54 cm",
-        "ideal_solution": "Cut: 3 × 12 = 36 cm. Left: 90 - 36 = 54 cm. Socratic Hint: Find total cut length, then subtract from original.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 90 - 36 = 48 (wrong).",
-            "formula_misapplication": "Student computes 90 - 12 = 78 (only one piece).",
-            "premature_calculation": "Student gets 3 × 12 = 36 and picks that."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 3,
-        "difficulty": "intermediate",
-        "type": "arithmetic",
-        "question": "What is 8 × 7 + 4 × 3?",
-        "options": [
-            "44",
-            "56",
-            "68",
-            "72",
-            "84"
-        ],
-        "correct_answer": "68",
-        "ideal_solution": "8 × 7 = 56. 4 × 3 = 12. 56 + 12 = 68. Socratic Hint: Do both multiplications first, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 56 + 12 = 72 (wrong).",
-            "formula_misapplication": "Student computes (8+4) × (7+3) = 120.",
-            "premature_calculation": "Student stops at 56."
-        }
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A toy store has 36 toy cars. They are packed in boxes of 4. How many boxes are needed?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "32"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "36 ÷ 4 = 9 boxes. Socratic Hint: How many groups of 4 are in 36?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 8 confusing with 32 ÷ 4.",
+      "formula_misapplication": "Student picks 32 computing 36 - 4.",
+      "premature_calculation": "Student picks 6 confusing with 36 ÷ 6."
     }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Maria has 60 beads. She uses 7 beads for each necklace. How many complete necklaces can she make?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "53"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "60 ÷ 7 = 8 remainder 4. She can make 8 complete necklaces. Socratic Hint: How many times does 7 go into 60?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9 thinking 7 × 9 = 63 fits.",
+      "formula_misapplication": "Student picks 53 computing 60 - 7.",
+      "premature_calculation": "Student picks 7 confusing divisor with answer."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 5 × 9 + 6?",
+    "options": [
+      "45",
+      "51",
+      "54",
+      "56",
+      "75"
+    ],
+    "correct_answer": "51",
+    "ideal_solution": "5 × 9 = 45. Then 45 + 6 = 51. Socratic Hint: Multiply first, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 45 + 6 = 54 (wrong).",
+      "formula_misapplication": "Student adds first: 9 + 6 = 15, then 5 × 15 = 75.",
+      "premature_calculation": "Student stops at 45."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 7 × 8 - 12?",
+    "options": [
+      "36",
+      "40",
+      "44",
+      "48",
+      "56"
+    ],
+    "correct_answer": "44",
+    "ideal_solution": "7 × 8 = 56. Then 56 - 12 = 44. Socratic Hint: Multiply first, then subtract.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 56 - 12 = 40 (wrong).",
+      "formula_misapplication": "Student subtracts first: 8 - 12 impossible.",
+      "premature_calculation": "Student stops at 56."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A school orders 8 boxes of pencils. Each box has 12 pencils. 15 pencils are broken and thrown away. How many good pencils are there?",
+    "options": [
+      "77",
+      "81",
+      "85",
+      "93",
+      "96"
+    ],
+    "correct_answer": "81",
+    "ideal_solution": "Total: 8 × 12 = 96. After removing broken: 96 - 15 = 81. Socratic Hint: Find the total first, then subtract the broken ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 96 - 15 = 85 (wrong).",
+      "formula_misapplication": "Student computes 12 - 15 (impossible) or guesses.",
+      "premature_calculation": "Student stops at 96."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Tom has some marbles. He gives 7 to each of 6 friends and has 3 left. How many marbles did Tom start with?",
+    "options": [
+      "16",
+      "39",
+      "42",
+      "45",
+      "52"
+    ],
+    "correct_answer": "45",
+    "ideal_solution": "Given away: 7 × 6 = 42. Started with: 42 + 3 = 45. Socratic Hint: Find how many were given away, then add the leftovers.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 42 + 3 = 39 (wrong).",
+      "formula_misapplication": "Student computes 7 + 6 + 3 = 16.",
+      "premature_calculation": "Student gets 42 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "A rectangle has an area of 56 sq cm. Its width is 7 cm. What is its length?",
+    "options": [
+      "6 cm",
+      "7 cm",
+      "8 cm",
+      "9 cm",
+      "49 cm"
+    ],
+    "correct_answer": "8 cm",
+    "ideal_solution": "Area = length × width. 56 = length × 7. Length = 56 ÷ 7 = 8 cm. Socratic Hint: Divide the area by the known side.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 49 computing 56 - 7.",
+      "formula_misapplication": "Student picks 7 thinking it is a square.",
+      "premature_calculation": "Student picks 6 from wrong division."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "A square has a perimeter of 28 cm. What is the length of each side?",
+    "options": [
+      "4 cm",
+      "5 cm",
+      "6 cm",
+      "7 cm",
+      "14 cm"
+    ],
+    "correct_answer": "7 cm",
+    "ideal_solution": "Perimeter = 4 × side. Side = 28 ÷ 4 = 7 cm. Socratic Hint: Divide the perimeter by 4.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 14 dividing by 2 instead of 4.",
+      "formula_misapplication": "Student picks 6 from wrong division.",
+      "premature_calculation": "Student picks 4 confusing with the number of sides."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "number_theory",
+    "question": "What is the next number in the pattern: 2, 6, 18, 54, __?",
+    "options": [
+      "60",
+      "72",
+      "108",
+      "162",
+      "216"
+    ],
+    "correct_answer": "162",
+    "ideal_solution": "Each number is multiplied by 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162. Socratic Hint: What is the relationship between each pair of consecutive numbers?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 108 confusing with 54 × 2.",
+      "formula_misapplication": "Student picks 60 adding 6 instead of multiplying.",
+      "premature_calculation": "Student picks 72 adding 18."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "number_theory",
+    "question": "What is the next number in the pattern: 1, 4, 9, 16, __?",
+    "options": [
+      "20",
+      "21",
+      "23",
+      "25",
+      "36"
+    ],
+    "correct_answer": "25",
+    "ideal_solution": "These are perfect squares: 1×1=1, 2×2=4, 3×3=9, 4×4=16, 5×5=25. Socratic Hint: What number times itself gives each term?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 20 adding 4 (16+4).",
+      "formula_misapplication": "Student picks 21 adding 5.",
+      "premature_calculation": "Student picks 36 skipping to 6×6."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 836 - 479?",
+    "options": [
+      "257",
+      "347",
+      "357",
+      "367",
+      "457"
+    ],
+    "correct_answer": "357",
+    "ideal_solution": "836 - 479: ones 16-9=7 (borrow), tens 12-7=5 (borrow from hundreds), hundreds 7-4=3. Answer: 357. Socratic Hint: Borrow when needed.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 367 from a tens error.",
+      "formula_misapplication": "Student gets 457 not borrowing properly.",
+      "premature_calculation": "Student gets 347 from an ones error."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 589 + 276?",
+    "options": [
+      "755",
+      "855",
+      "865",
+      "875",
+      "965"
+    ],
+    "correct_answer": "865",
+    "ideal_solution": "589 + 276: ones 9+6=15 (write 5 carry 1), tens 8+7+1=16 (write 6 carry 1), hundreds 5+2+1=8. Answer: 865. Socratic Hint: Watch for carries in each column.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 855 forgetting the carry from ones.",
+      "formula_misapplication": "Student gets 755 computing hundreds as 5+2=7.",
+      "premature_calculation": "Student gets 875 from a tens error."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Class A has 24 students. Class B has 28 students. If each student brings 3 pencils, how many pencils in total?",
+    "options": [
+      "52",
+      "72",
+      "84",
+      "156",
+      "168"
+    ],
+    "correct_answer": "156",
+    "ideal_solution": "Total students: 24 + 28 = 52. Total pencils: 52 × 3 = 156. Socratic Hint: First find total students, then multiply by pencils each.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 24 × 3 = 72 (only Class A).",
+      "formula_misapplication": "Student computes 28 × 3 = 84 (only Class B).",
+      "premature_calculation": "Student gets 24 + 28 = 52 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A library has 4 shelves. The first shelf has 15 books, the second has 12, the third has 18, and the fourth has 15. How many books in total?",
+    "options": [
+      "45",
+      "50",
+      "55",
+      "60",
+      "65"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "15 + 12 + 18 + 15 = 60. Socratic Hint: Add all four numbers.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 55 from an addition error.",
+      "formula_misapplication": "Student computes 4 × 15 = 60 (lucky guess but wrong reasoning if applied to other problems).",
+      "premature_calculation": "Student adds only 15 + 12 + 18 = 45."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A swimming pool opens at 10:00 AM and closes at 6:00 PM. How many hours is it open?",
+    "options": [
+      "4 hours",
+      "6 hours",
+      "8 hours",
+      "10 hours",
+      "16 hours"
+    ],
+    "correct_answer": "8 hours",
+    "ideal_solution": "From 10:00 AM to 6:00 PM is 8 hours. Count: 10→11→12→1→2→3→4→5→6 = 8 hours. Socratic Hint: Count the hours from 10 to 6.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 hours miscounting.",
+      "formula_misapplication": "Student computes 6 + 10 = 16 hours.",
+      "premature_calculation": "Student computes 6 - 10 (impossible) and guesses 4."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is the value of the 3 in the number 4,325?",
+    "options": [
+      "3",
+      "30",
+      "300",
+      "3,000",
+      "325"
+    ],
+    "correct_answer": "300",
+    "ideal_solution": "In 4,325, the digit 3 is in the hundreds place. Its value is 300. Socratic Hint: What place is the 3 in?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3 (face value, not place value).",
+      "formula_misapplication": "Student picks 3,000 confusing with thousands place.",
+      "premature_calculation": "Student picks 30 confusing with tens place."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "A figure is made of two squares. Each square has sides of 5 cm. They share one side. What is the perimeter of the combined figure?",
+    "options": [
+      "20 cm",
+      "30 cm",
+      "35 cm",
+      "40 cm",
+      "50 cm"
+    ],
+    "correct_answer": "30 cm",
+    "ideal_solution": "Two squares together make a rectangle 10 cm × 5 cm. Perimeter = 2(10+5) = 30 cm. Or: each square has perimeter 20, total 40, minus 2 shared sides × 5 = 10. 40-10 = 30. Socratic Hint: The shared side is inside and doesn't count for the perimeter.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 40 adding both perimeters without subtracting.",
+      "formula_misapplication": "Student picks 20 (one square's perimeter).",
+      "premature_calculation": "Student picks 50 computing 2 × 25."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A recipe needs 3 cups of flour for 1 batch of cookies. How many cups of flour are needed for 6 batches?",
+    "options": [
+      "9",
+      "12",
+      "15",
+      "18",
+      "21"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "6 × 3 = 18 cups. Socratic Hint: Multiply the number of batches by cups per batch.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 6 + 3 = 9.",
+      "formula_misapplication": "Student picks 12 confusing with 4 × 3.",
+      "premature_calculation": "Student picks 15 confusing with 5 × 3."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A theater has 9 rows. Each row has 8 seats. 5 seats are broken. How many seats can actually be used?",
+    "options": [
+      "62",
+      "67",
+      "72",
+      "77",
+      "82"
+    ],
+    "correct_answer": "67",
+    "ideal_solution": "Total seats: 9 × 8 = 72. Usable: 72 - 5 = 67. Socratic Hint: Find total seats first, then subtract broken ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 72 - 5 = 62 (wrong).",
+      "formula_misapplication": "Student computes 8 - 5 = 3 per row (wrong interpretation).",
+      "premature_calculation": "Student stops at 72."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 1,000 - 385?",
+    "options": [
+      "515",
+      "615",
+      "625",
+      "715",
+      "785"
+    ],
+    "correct_answer": "615",
+    "ideal_solution": "1000 - 385: 1000 - 400 = 600, then add back 15: 615. Or borrow column by column. Answer: 615. Socratic Hint: Try subtracting from 1000 in steps.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 625 from a borrowing error.",
+      "formula_misapplication": "Student gets 715 computing 1000 - 285.",
+      "premature_calculation": "Student gets 515 from incorrect subtraction."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "number_theory",
+    "question": "If you multiply an even number by an odd number, is the result even or odd?",
+    "options": [
+      "Always even",
+      "Always odd",
+      "Sometimes even, sometimes odd",
+      "Cannot tell",
+      "Neither"
+    ],
+    "correct_answer": "Always even",
+    "ideal_solution": "Even × odd = even. Example: 4 × 3 = 12 (even). Any product with an even factor is even. Socratic Hint: Try a few examples: 2×3, 4×5, 6×7.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 'Always odd' confusing rules.",
+      "formula_misapplication": "Student picks 'Sometimes even, sometimes odd' not seeing the pattern.",
+      "premature_calculation": "Student picks 'Cannot tell' without trying examples."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A caterpillar crawls 8 cm every minute. How far does it crawl in 9 minutes?",
+    "options": [
+      "17 cm",
+      "56 cm",
+      "64 cm",
+      "72 cm",
+      "80 cm"
+    ],
+    "correct_answer": "72 cm",
+    "ideal_solution": "8 × 9 = 72 cm. Socratic Hint: Multiply the distance per minute by the number of minutes.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 8 + 9 = 17 cm.",
+      "formula_misapplication": "Student picks 64 confusing with 8 × 8.",
+      "premature_calculation": "Student picks 80 confusing with 8 × 10."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "A rectangular path around a garden is 15 m long and 8 m wide. What is the total distance if you walk all the way around once?",
+    "options": [
+      "23 m",
+      "38 m",
+      "46 m",
+      "54 m",
+      "120 m"
+    ],
+    "correct_answer": "46 m",
+    "ideal_solution": "Perimeter = 2 × (15 + 8) = 2 × 23 = 46 m. Socratic Hint: Walking around means you travel the perimeter.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 15 + 8 = 23 (only half the perimeter).",
+      "formula_misapplication": "Student computes 15 × 8 = 120 (area, not perimeter).",
+      "premature_calculation": "Student picks 38 from wrong doubling."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Dan has 3 shelves. He puts 9 books on the first shelf, 7 on the second, and the rest on the third. He has 25 books total. How many books are on the third shelf?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "16"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "First two shelves: 9 + 7 = 16. Third shelf: 25 - 16 = 9. Socratic Hint: Find how many books are already placed, then subtract from total.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 25 - 16 = 8 (off by 1).",
+      "formula_misapplication": "Student computes 25 - 9 = 16 (subtracts only first shelf).",
+      "premature_calculation": "Student gets 9 + 7 = 16 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "Which is greater: 6 × 8 or 7 × 7?",
+    "options": [
+      "6 × 8",
+      "7 × 7",
+      "They are equal",
+      "Cannot tell",
+      "Neither"
+    ],
+    "correct_answer": "7 × 7",
+    "ideal_solution": "6 × 8 = 48. 7 × 7 = 49. Since 49 > 48, 7 × 7 is greater. Socratic Hint: Calculate both and compare.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 7 × 7 = 48 and picks 'They are equal'.",
+      "formula_misapplication": "Student compares 8 > 7 and picks 6 × 8.",
+      "premature_calculation": "Student picks 'Cannot tell' without computing."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A bag has 5 red marbles and 3 blue marbles. If you add 4 more red marbles, how many marbles are in the bag?",
+    "options": [
+      "8",
+      "9",
+      "12",
+      "15",
+      "20"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Original: 5 + 3 = 8. After adding 4 red: 8 + 4 = 12. Socratic Hint: Count all marbles after the addition.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9 computing 5 + 4 only (forgets blue).",
+      "formula_misapplication": "Student picks 8 forgetting to add the new ones.",
+      "premature_calculation": "Student picks 15 computing 5 + 3 + 4 + 3."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "Round 3,650 to the nearest thousand.",
+    "options": [
+      "3,000",
+      "3,600",
+      "3,700",
+      "4,000",
+      "5,000"
+    ],
+    "correct_answer": "4,000",
+    "ideal_solution": "3,650 is between 3,000 and 4,000. The hundreds digit is 6 (≥5), so round up to 4,000. Socratic Hint: Look at the hundreds digit to decide.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3,000 rounding down.",
+      "formula_misapplication": "Student picks 3,700 rounding to nearest hundred.",
+      "premature_calculation": "Student picks 3,600 rounding to wrong value."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Zoe walks 6 blocks to school and 6 blocks back home, 5 days a week. How many blocks does she walk in a week?",
+    "options": [
+      "12",
+      "30",
+      "36",
+      "55",
+      "60"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "Per day: 6 + 6 = 12 blocks. Per week: 12 × 5 = 60 blocks. Socratic Hint: First find the daily total, then multiply by 5.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 6 × 5 = 30 (one way only).",
+      "formula_misapplication": "Student computes 6 + 6 = 12 and stops.",
+      "premature_calculation": "Student picks 36 from 6 × 6."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "Two rectangles overlap. Rectangle A is 4 cm × 6 cm. Rectangle B is 3 cm × 5 cm. The overlapping region is 2 cm × 3 cm. What is the total area covered (without double-counting)?",
+    "options": [
+      "33 sq cm",
+      "36 sq cm",
+      "39 sq cm",
+      "45 sq cm",
+      "51 sq cm"
+    ],
+    "correct_answer": "33 sq cm",
+    "ideal_solution": "A = 4×6 = 24, B = 3×5 = 15, overlap = 2×3 = 6. Total = 24 + 15 - 6 = 33. Socratic Hint: Add both areas and subtract the overlap to avoid counting it twice.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 24 + 15 = 39 (forgets to subtract overlap).",
+      "formula_misapplication": "Student computes 24 + 15 + 6 = 45.",
+      "premature_calculation": "Student gets 24 + 15 = 39 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "An office has 7 desks. Each desk has 4 drawers. Each drawer holds 3 folders. How many folders are there in total?",
+    "options": [
+      "12",
+      "21",
+      "28",
+      "84",
+      "91"
+    ],
+    "correct_answer": "84",
+    "ideal_solution": "Drawers: 7 × 4 = 28. Folders: 28 × 3 = 84. Socratic Hint: First find total drawers, then multiply by folders per drawer.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 7 × 4 × 3 = 91 (wrong multiplication).",
+      "formula_misapplication": "Student computes 7 + 4 + 3 = 14.",
+      "premature_calculation": "Student gets 7 × 4 = 28 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What number makes this true: 72 ÷ __ = 8?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "64"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "72 ÷ ? = 8. So ? = 72 ÷ 8 = 9. Check: 72 ÷ 9 = 8. ✓ Socratic Hint: What times 8 equals 72?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 8 confusing with 64 ÷ 8.",
+      "formula_misapplication": "Student picks 64 computing 72 - 8.",
+      "premature_calculation": "Student picks 7 from wrong fact."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "number_theory",
+    "question": "How many even numbers are between 11 and 20 (not including 11 and 20)?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "Between 11 and 20 (exclusive): 12, 13, 14, 15, 16, 17, 18, 19. The even ones are: 12, 14, 16, 18.  That is 4 even numbers. Socratic Hint: List the numbers and circle the even ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5 including 20.",
+      "formula_misapplication": "Student picks 3 forgetting one even number.",
+      "premature_calculation": "Student picks 8 counting all numbers between 11 and 20."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Ava reads 9 pages on Monday, 12 pages on Tuesday, and 15 pages on Wednesday. If the pattern continues, how many pages will she read on Thursday?",
+    "options": [
+      "15",
+      "16",
+      "17",
+      "18",
+      "21"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "The pattern increases by 3 each day: 9, 12, 15, 18. Socratic Hint: What is the difference between each pair of numbers?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 16 adding 1 to 15.",
+      "formula_misapplication": "Student picks 21 adding 6 to 15.",
+      "premature_calculation": "Student picks 15 repeating Wednesday."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 6 × 6 + 8 × 3?",
+    "options": [
+      "36",
+      "48",
+      "54",
+      "60",
+      "66"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "6 × 6 = 36. 8 × 3 = 24. 36 + 24 = 60. Socratic Hint: Do both multiplications first, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 36 + 24 = 54 (wrong).",
+      "formula_misapplication": "Student computes (6+8) × (6+3) = 126.",
+      "premature_calculation": "Student stops at 36."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A shop sells juice for 4 dollars and water for 2 dollars. Jim buys 3 juices and some waters and spends 18 dollars total. How many waters did he buy?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "Juice cost: 3 × 4 = 12. Remaining: 18 - 12 = 6. Waters: 6 ÷ 2 = 3. Socratic Hint: Find how much was spent on juice first, then figure out the waters.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2 computing 6 ÷ 3.",
+      "formula_misapplication": "Student picks 6 computing 18 ÷ 3.",
+      "premature_calculation": "Student gets 18 - 12 = 6 and picks that."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "A rectangle is 7 cm long and 5 cm wide. What is its area plus its perimeter?",
+    "options": [
+      "35",
+      "47",
+      "59",
+      "70",
+      "84"
+    ],
+    "correct_answer": "59",
+    "ideal_solution": "Area = 7 × 5 = 35. Perimeter = 2(7+5) = 24. Sum = 35 + 24 = 59. Socratic Hint: Calculate area and perimeter separately, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 35 + 24 = 47 (wrong).",
+      "formula_misapplication": "Student picks 35 (area only).",
+      "premature_calculation": "Student picks 70 computing 2 × 35."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A bus departs every 15 minutes starting at 8:00 AM. What time does the 5th bus depart?",
+    "options": [
+      "8:45 AM",
+      "9:00 AM",
+      "9:15 AM",
+      "9:30 AM",
+      "10:00 AM"
+    ],
+    "correct_answer": "9:00 AM",
+    "ideal_solution": "1st bus: 8:00. 2nd: 8:15. 3rd: 8:30. 4th: 8:45. 5th: 9:00. After the 1st, there are 4 more intervals of 15 min: 4 × 15 = 60 min. 8:00 + 60 min = 9:00. Socratic Hint: The 5th bus is 4 intervals after the first.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9:15 AM counting 5 intervals instead of 4.",
+      "formula_misapplication": "Student picks 8:45 AM computing only 3 intervals.",
+      "premature_calculation": "Student picks 9:30 AM counting incorrectly."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 258 + 177 + 65?",
+    "options": [
+      "400",
+      "450",
+      "490",
+      "500",
+      "510"
+    ],
+    "correct_answer": "500",
+    "ideal_solution": "258 + 177 = 435. 435 + 65 = 500. Socratic Hint: Add two numbers first, then add the third.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 490 from an error in the first addition.",
+      "formula_misapplication": "Student gets 450 from multiple errors.",
+      "premature_calculation": "Student gets 435 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "Each table in a restaurant has 4 legs. There are also 6 chairs, each with 4 legs. If there are 5 tables and 6 chairs, how many legs in total?",
+    "options": [
+      "20",
+      "24",
+      "40",
+      "44",
+      "56"
+    ],
+    "correct_answer": "44",
+    "ideal_solution": "Table legs: 5 × 4 = 20. Chair legs: 6 × 4 = 24. Total: 20 + 24 = 44. Socratic Hint: Find table legs and chair legs separately, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 20 + 24 = 40 (wrong).",
+      "formula_misapplication": "Student computes (5 + 6) × 4 = 44 (correct but only by coincidence).",
+      "premature_calculation": "Student stops at 20."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "number_theory",
+    "question": "What is the next number in the pattern: 7, 14, 21, 28, __?",
+    "options": [
+      "30",
+      "32",
+      "34",
+      "35",
+      "42"
+    ],
+    "correct_answer": "35",
+    "ideal_solution": "The pattern adds 7 each time (multiples of 7): 7, 14, 21, 28, 35. Socratic Hint: What is 28 + 7?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 34 adding 6.",
+      "formula_misapplication": "Student picks 42 adding 14.",
+      "premature_calculation": "Student picks 30 adding 2."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 9 × 3 + 7 × 2?",
+    "options": [
+      "27",
+      "34",
+      "41",
+      "45",
+      "48"
+    ],
+    "correct_answer": "41",
+    "ideal_solution": "9 × 3 = 27. 7 × 2 = 14. 27 + 14 = 41. Socratic Hint: Do both multiplications, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 27 + 14 = 45 (wrong addition).",
+      "formula_misapplication": "Student computes (9+7) × (3+2) = 80.",
+      "premature_calculation": "Student stops at 27."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A pet shop has 4 fish tanks. Each tank has 8 fish. They sell 11 fish. How many fish remain?",
+    "options": [
+      "17",
+      "19",
+      "21",
+      "25",
+      "32"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "Total: 4 × 8 = 32. After selling: 32 - 11 = 21. Socratic Hint: Find the total first, then subtract.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 32 - 11 = 19 (wrong).",
+      "formula_misapplication": "Student computes 8 - 11 and gets confused.",
+      "premature_calculation": "Student stops at 32."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "geometry",
+    "question": "A square room has sides of 10 m. How many square meters of tile are needed to cover the floor?",
+    "options": [
+      "20 sq m",
+      "40 sq m",
+      "80 sq m",
+      "100 sq m",
+      "400 sq m"
+    ],
+    "correct_answer": "100 sq m",
+    "ideal_solution": "Area = 10 × 10 = 100 sq m. Socratic Hint: To tile a floor, you need to find the area.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 10 + 10 = 20.",
+      "formula_misapplication": "Student computes perimeter: 4 × 10 = 40.",
+      "premature_calculation": "Student picks 80 from wrong calculation."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A plant grows 3 cm each week. After 8 weeks, how tall is it if it started at 5 cm?",
+    "options": [
+      "24 cm",
+      "29 cm",
+      "32 cm",
+      "40 cm",
+      "45 cm"
+    ],
+    "correct_answer": "29 cm",
+    "ideal_solution": "Growth: 3 × 8 = 24 cm. Total height: 5 + 24 = 29 cm. Socratic Hint: Find total growth, then add the starting height.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 24 (forgetting starting height).",
+      "formula_misapplication": "Student picks 40 computing 5 × 8.",
+      "premature_calculation": "Student picks 32 adding 8 instead of multiplying."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 100 - 37 - 28?",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "45",
+      "65"
+    ],
+    "correct_answer": "35",
+    "ideal_solution": "100 - 37 = 63. 63 - 28 = 35. Socratic Hint: Subtract one number at a time.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 63 - 28 = 45 (wrong).",
+      "formula_misapplication": "Student computes 100 - (37+28) = 100 - 65 = 35 (same answer, but may error to 100 - 55 = 45).",
+      "premature_calculation": "Student stops at 63."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "There are 3 bags. The first bag has 12 marbles, the second has twice as many as the first, and the third has 5 fewer than the second. How many marbles are in the third bag?",
+    "options": [
+      "7",
+      "14",
+      "17",
+      "19",
+      "24"
+    ],
+    "correct_answer": "19",
+    "ideal_solution": "First: 12. Second: 2 × 12 = 24. Third: 24 - 5 = 19. Socratic Hint: Work through each bag in order.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 24 - 5 = 17 (wrong).",
+      "formula_misapplication": "Student computes 12 - 5 = 7 (subtracts from first bag).",
+      "premature_calculation": "Student gets 24 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "number_theory",
+    "question": "Which of the numbers 8, 9, 12, 15, and 16 is a multiple of both 3 and 4?",
+    "options": [
+      "8",
+      "9",
+      "12",
+      "15",
+      "16"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "A multiple of both 3 and 4 must be a multiple of 12. From the list, 12 ÷ 3 = 4 ✓ and 12 ÷ 4 = 3 ✓. Socratic Hint: Check which numbers are divisible by both 3 and 4.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9 (multiple of 3 but not 4).",
+      "formula_misapplication": "Student picks 8 (multiple of 4 but not 3).",
+      "premature_calculation": "Student picks 15 (multiple of 3 but not 4)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A farmer has 50 eggs. He packs them in cartons of 6. How many cartons does he fill completely, and how many eggs are left over?",
+    "options": [
+      "7 cartons, 8 left",
+      "8 cartons, 0 left",
+      "8 cartons, 2 left",
+      "9 cartons, 4 left",
+      "10 cartons, 0 left"
+    ],
+    "correct_answer": "8 cartons, 2 left",
+    "ideal_solution": "50 ÷ 6 = 8 remainder 2. He fills 8 cartons with 2 eggs left over. Check: 8 × 6 = 48, 50 - 48 = 2. Socratic Hint: How many times does 6 go into 50?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks '7 cartons, 8 left' (7 × 6 = 42, 50-42=8).",
+      "formula_misapplication": "Student picks '9 cartons, 4 left' computing incorrectly.",
+      "premature_calculation": "Student picks '8 cartons, 0 left' thinking 48 = 50."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "logic",
+    "question": "A ribbon is 90 cm long. Jake cuts off 3 pieces, each 12 cm long. How much ribbon is left?",
+    "options": [
+      "42 cm",
+      "48 cm",
+      "54 cm",
+      "66 cm",
+      "78 cm"
+    ],
+    "correct_answer": "54 cm",
+    "ideal_solution": "Cut: 3 × 12 = 36 cm. Left: 90 - 36 = 54 cm. Socratic Hint: Find total cut length, then subtract from original.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 90 - 36 = 48 (wrong).",
+      "formula_misapplication": "Student computes 90 - 12 = 78 (only one piece).",
+      "premature_calculation": "Student gets 3 × 12 = 36 and picks that."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 3,
+    "difficulty": "intermediate",
+    "type": "arithmetic",
+    "question": "What is 8 × 7 + 4 × 3?",
+    "options": [
+      "44",
+      "56",
+      "68",
+      "72",
+      "84"
+    ],
+    "correct_answer": "68",
+    "ideal_solution": "8 × 7 = 56. 4 × 3 = 12. 56 + 12 = 68. Socratic Hint: Do both multiplications first, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 56 + 12 = 72 (wrong).",
+      "formula_misapplication": "Student computes (8+4) × (7+3) = 120.",
+      "premature_calculation": "Student stops at 56."
+    }
+  }
 ]

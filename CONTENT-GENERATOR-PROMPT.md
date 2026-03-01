@@ -53,6 +53,21 @@ Refer to `seed_content/CURRICULUM_GUIDE.md` for the exact CCSS-based topic scope
 6. HYBRID SOLUTION: The `ideal_solution` must contain a direct mathematical derivation followed by a "Socratic Hint" section designed to lead the student to the answer without giving it away.
 7. LOGIC VERIFICATION: Solve the problem twice using different methods internally before generating the JSON to ensure accuracy.
 8. EXACT COUNT: You MUST generate exactly {count} complete questions in the JSON array. Do not stop early.
+9. BLIND-MODE COMPATIBILITY: Every question MUST be fully answerable without seeing the multiple-choice options. The question text alone must provide all the context needed to solve the problem.
+   - DO NOT use phrases like "Which of these…", "Which of the following…", "Which one…", or any phrasing that references the answer choices.
+   - DO NOT write bare comparatives like "Which fraction is the largest?" where the items being compared only appear in the options.
+   - INSTEAD, embed the items directly in the question text when the question involves selecting from a set. Examples:
+     - ✗ "Which fraction is the largest?"
+     - ✓ "What is the largest fraction among 1/2, 3/8, 2/5, 3/4, and 5/8?"
+     - ✗ "Which of these numbers is prime?"
+     - ✓ "Which of the numbers 21, 27, 33, 37, and 39 is prime?"
+   - Questions that ask for a computed or derived answer (e.g., "What is 6 × 3?") are inherently blind-mode-safe and need no changes.
+10. DIFFICULTY FIELD: The `difficulty` field MUST be set based on the level, following this exact mapping:
+    - Level 1-2 → `"beginner"`
+    - Level 3-4 → `"intermediate"`
+    - Level 5-6 → `"advanced"`
+    - Level 7-8 → `"expert"`
+    - Level 9-10 → `"master"`
 
 # Output Format
 Respond ONLY with a JSON array. Do not include introductory text, explanations, or markdown code blocks (e.g., no ```json).
@@ -62,7 +77,7 @@ Respond ONLY with a JSON array. Do not include introductory text, explanations, 
   {
     "grade": 6,
     "level": 4,
-    "difficulty": "gifted",
+    "difficulty": "intermediate",
     "type": "number_theory",
     "question": "What is the smallest positive integer that is divisible by 2, 3, 4, 5, and 6?",
     "options": ["30", "60", "120", "180", "720"],

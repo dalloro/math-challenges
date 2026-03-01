@@ -7,6 +7,7 @@ interface Question {
   id?: string;
   grade: number;
   level: number;
+  difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert' | 'master' | 'gifted';
   type: string;
   question: string;
   options: string[];
@@ -34,17 +35,17 @@ export function BulkUpload() {
       if (!Array.isArray(questions)) throw new Error('Input must be a JSON array.');
 
       const batch = writeBatch(db);
-      
+
       // 1. Handle Refresh Mode (Purge scope before import)
       if (refreshMode) {
         // Collect all Grade/Level pairs from the input
         const scopes = new Set<string>();
         questions.forEach(q => scopes.add(`${q.grade}-${q.level}`));
-        
+
         for (const scope of scopes) {
           const [g, l] = scope.split('-').map(Number);
           const purgeQuery = query(
-            collection(db, 'questions'), 
+            collection(db, 'questions'),
             where('grade', '==', g),
             where('level', '==', l)
           );
@@ -56,18 +57,44 @@ export function BulkUpload() {
       let addedCount = 0;
       let skippedCount = 0;
 
+      const getDifficultyTier = (level: number) => {
+        if (level <= 2) return 'beginner';
+        if (level <= 4) return 'intermediate';
+        if (level <= 6) return 'advanced';
+        if (level <= 8) return 'expert';
+        return 'master';
+      };
+
+      const isBlindModeSafe = (text: string) => {
+        const forbiddenPhrases = [
+          'which of these',
+          'which of the following',
+          'which one',
+          'which of the below',
+          'following numbers',
+          'following fractions'
+        ];
+        const qLower = text.toLowerCase();
+        return !forbiddenPhrases.some(phrase => qLower.includes(phrase));
+      };
+
       for (const qData of questions) {
         if (!qData.question || !qData.grade || !qData.level) continue;
+
+        // Rule 9 Enforcement
+        if (!isBlindModeSafe(qData.question)) {
+          throw new Error(`Question "${qData.question.substring(0, 30)}..." violates Rule 9 (Blind Mode Safety).`);
+        }
 
         // Duplicate check (Only if NOT in refresh mode, since refresh mode just purged the scope)
         if (!refreshMode) {
           const existingQuery = query(
-            collection(db, 'questions'), 
+            collection(db, 'questions'),
             where('grade', '==', qData.grade),
             where('question', '==', qData.question.trim())
           );
           const snapshot = await getDocs(existingQuery);
-          
+
           if (!snapshot.empty) {
             skippedCount++;
             continue;
@@ -77,17 +104,17 @@ export function BulkUpload() {
         const newDocRef = doc(collection(db, 'questions'));
         batch.set(newDocRef, {
           ...qData,
+          difficulty: getDifficultyTier(qData.level), // Enforce schema
           question: qData.question.trim(),
-          difficulty: 'gifted',
           createdAt: new Date()
         });
         addedCount++;
       }
 
       await batch.commit();
-      setStatus({ 
-        type: 'success', 
-        message: `Import complete! ${refreshMode ? 'Refreshed' : 'Appended'} ${addedCount} questions. ${skippedCount > 0 ? `Skipped ${skippedCount} duplicates.` : ''}` 
+      setStatus({
+        type: 'success',
+        message: `Import complete! ${refreshMode ? 'Refreshed' : 'Appended'} ${addedCount} questions. ${skippedCount > 0 ? `Skipped ${skippedCount} duplicates.` : ''}`
       });
       setJsonInput('');
     } catch (err: unknown) {
@@ -110,12 +137,12 @@ export function BulkUpload() {
             <p className="font-bold mb-1">Refresh Mode Logic:</p>
             <p className="leading-relaxed">
               <span className="text-blue-400">ON:</span> Deletes all existing questions for the Grades/Levels in your JSON before adding new ones. (Clean Replace)
-              <br/><br/>
+              <br /><br />
               <span className="text-green-400">OFF:</span> Keeps existing questions and only adds new ones, automatically skipping exact duplicates. (Safe Append)
             </p>
           </div>
-          <input 
-            type="checkbox" 
+          <input
+            type="checkbox"
             id="refresh-mode"
             checked={refreshMode}
             onChange={() => setRefreshMode(!refreshMode)}
@@ -141,9 +168,8 @@ export function BulkUpload() {
       </div>
 
       {status && (
-        <div className={`p-4 rounded-xl flex items-center space-x-3 ${
-          status.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'
-        }`}>
+        <div className={`p-4 rounded-xl flex items-center space-x-3 ${status.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'
+          }`}>
           {status.type === 'success' ? <Check size={18} /> : <AlertCircle size={18} />}
           <span className="text-xs font-bold uppercase tracking-tight">{status.message}</span>
         </div>
@@ -187,7 +213,7 @@ export function QuestionExporter() {
       }
 
       const snapshot = await getDocs(q);
-      
+
       if (snapshot.empty) {
         alert(grade === 'all' ? 'The database is empty.' : `No questions found for Grade ${grade}. Nothing to download.`);
         return;
@@ -239,13 +265,13 @@ export function QuestionExporter() {
 
       <div className="space-y-3">
         <label className="text-[10px] font-black uppercase tracking-widest text-blue-400">Target Scope</label>
-        <select 
+        <select
           value={grade}
           onChange={(e) => setGrade(e.target.value === 'all' ? 'all' : parseInt(e.target.value))}
           className="w-full p-3 rounded-xl border border-blue-200 bg-white text-sm font-bold text-blue-900 outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
         >
           <option value="all">All Grades (Batch)</option>
-          {Array.from({length: 12}, (_, i) => i + 1).map(g => <option key={g} value={g}>Grade {g}</option>)}
+          {Array.from({ length: 12 }, (_, i) => i + 1).map(g => <option key={g} value={g}>Grade {g}</option>)}
         </select>
         <button
           onClick={handleExport}
@@ -262,7 +288,7 @@ export function QuestionExporter() {
           )}
         </button>
       </div>
-      
+
       <div className="pt-2 border-t border-blue-100">
         <p className="text-[9px] text-blue-500 leading-relaxed italic">
           Files follow the seed script convention: <span className="font-mono bg-blue-100 px-1 rounded">seed_grade_X.json</span>
@@ -314,14 +340,14 @@ export function QuestionExplorer() {
       <div className="flex justify-between items-center">
         <h3 className="text-xl font-bold text-gray-900">Live Question Explorer</h3>
         <div className="flex items-center space-x-4">
-          <select 
+          <select
             value={grade}
             onChange={(e) => setGrade(parseInt(e.target.value))}
             className="p-2 rounded-lg border border-gray-200 text-sm font-bold"
           >
-            {Array.from({length: 12}, (_, i) => i + 1).map(g => <option key={g} value={g}>Grade {g}</option>)}
+            {Array.from({ length: 12 }, (_, i) => i + 1).map(g => <option key={g} value={g}>Grade {g}</option>)}
           </select>
-          <button 
+          <button
             onClick={fetchQuestions}
             className="p-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors"
           >
@@ -351,7 +377,7 @@ export function QuestionExplorer() {
                 </div>
                 <p className="text-gray-800 font-medium leading-relaxed">{q.question}</p>
               </div>
-              <button 
+              <button
                 onClick={() => q.id && deleteQuestion(q.id)}
                 className="p-2 text-gray-300 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all"
               >

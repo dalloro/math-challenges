@@ -1,1052 +1,1052 @@
 [
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A farmer has chickens and cows. He counts 30 heads and 80 legs. How many chickens does he have?",
-        "options": [
-            "10",
-            "15",
-            "18",
-            "20",
-            "25"
-        ],
-        "correct_answer": "20",
-        "ideal_solution": "Let c=chickens, w=cows. c+w=30. 2c+4w=80. From first: w=30-c. Sub: 2c+4(30-c)=80. 2c+120-4c=80. -2c=-40. c=20. Socratic Hint: Set up two equations using heads and legs.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 18 from wrong algebra.",
-            "formula_misapplication": "Student picks 10 computing 80/4-30/2.",
-            "premature_calculation": "Student gets w=30-c and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "What is 5/6 - 1/3 + 1/4?",
-        "options": [
-            "1/4",
-            "5/12",
-            "7/12",
-            "3/4",
-            "11/12"
-        ],
-        "correct_answer": "3/4",
-        "ideal_solution": "LCD=12: 5/6=10/12, 1/3=4/12, 1/4=3/12. Compute: 10-4+3=9. Answer: 9/12=3/4. Socratic Hint: Convert all to twelfths.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 7/12 from wrong arithmetic.",
-            "formula_misapplication": "Student picks 5/12 from wrong order.",
-            "premature_calculation": "Student gets 10/12-4/12=6/12 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 246 x 8?",
-        "options": [
-            "1928",
-            "1948",
-            "1958",
-            "1968",
-            "1988"
-        ],
-        "correct_answer": "1968",
-        "ideal_solution": "246x8: 200x8=1600, 40x8=320, 6x8=48. 1600+320+48=1968. Socratic Hint: Break into hundreds, tens, ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1958 from wrong addition.",
-            "formula_misapplication": "Student picks 1948 from wrong tens.",
-            "premature_calculation": "Student gets 1600+320=1920 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A trapezoid has parallel sides of 10 cm and 14 cm, and height 8 cm. What is its area?",
-        "options": [
-            "80 sq cm",
-            "88 sq cm",
-            "96 sq cm",
-            "104 sq cm",
-            "112 sq cm"
-        ],
-        "correct_answer": "96 sq cm",
-        "ideal_solution": "Area = 1/2 x (10+14) x 8 = 1/2 x 24 x 8 = 96 sq cm. Socratic Hint: Average the parallel sides, multiply by height.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 88 from wrong sum.",
-            "formula_misapplication": "Student picks 112 computing 14x8.",
-            "premature_calculation": "Student gets (10+14)=24 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "The product of two consecutive numbers is 156. What are the numbers?",
-        "options": [
-            "11 and 12",
-            "12 and 13",
-            "13 and 14",
-            "14 and 15",
-            "15 and 16"
-        ],
-        "correct_answer": "12 and 13",
-        "ideal_solution": "Try: 12x13=156. Check. Socratic Hint: sqrt(156) is about 12.5, so try 12 and 13.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 11 and 12 computing 132.",
-            "formula_misapplication": "Student picks 13 and 14 computing 182.",
-            "premature_calculation": "Student gets sqrt(156)=12.5 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A store sells notebooks for $3 each and pens for $1 each. Alex spends exactly $20 buying at least 1 of each. How many combinations are possible?",
-        "options": [
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"
-        ],
-        "correct_answer": "6",
-        "ideal_solution": "3n+p=20, n>=1, p>=1. For n=1: p=17. n=2: p=14. n=3: p=11. n=4: p=8. n=5: p=5. n=6: p=2. n=7: p=-1 (invalid). So 6 combinations. Socratic Hint: Try each possible number of notebooks.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5 missing one case.",
-            "formula_misapplication": "Student picks 7 including n=0.",
-            "premature_calculation": "Student gets n=1,p=17 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "A car uses 2/5 of its tank for a 120 km trip. How far can it go on a full tank?",
-        "options": [
-            "200 km",
-            "240 km",
-            "280 km",
-            "300 km",
-            "360 km"
-        ],
-        "correct_answer": "300 km",
-        "ideal_solution": "2/5 of tank = 120 km. 1/5 = 60 km. Full tank (5/5) = 300 km. Socratic Hint: Find 1/5 first, then multiply by 5.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 240 computing 120x2.",
-            "formula_misapplication": "Student picks 360 computing 120x3.",
-            "premature_calculation": "Student gets 1/5=60 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 1111 x 9?",
-        "options": [
-            "9899",
-            "9979",
-            "9989",
-            "9999",
-            "10009"
-        ],
-        "correct_answer": "9999",
-        "ideal_solution": "1111 x 9: 1111 x 10 = 11110, minus 1111 = 9999. Or notice: 1111 x 9 = 9999. Socratic Hint: Multiply by 10, subtract once.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9989 from wrong subtraction.",
-            "formula_misapplication": "Student picks 10009 adding instead.",
-            "premature_calculation": "Student gets 1111 x 10 = 11110 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "Two congruent rectangles, each 8 cm x 3 cm, overlap in a 3 cm x 3 cm square. What is the total area of the combined shape?",
-        "options": [
-            "33 sq cm",
-            "39 sq cm",
-            "42 sq cm",
-            "45 sq cm",
-            "48 sq cm"
-        ],
-        "correct_answer": "39 sq cm",
-        "ideal_solution": "Each rectangle: 8x3=24. Two: 48. Overlap: 3x3=9. Combined: 48-9=39 sq cm. Socratic Hint: Add both areas, subtract the overlap.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 42 from wrong overlap.",
-            "formula_misapplication": "Student picks 48 not subtracting overlap.",
-            "premature_calculation": "Student gets 24+24=48 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "What is 63 x 57?",
-        "options": [
-            "3491",
-            "3541",
-            "3591",
-            "3641",
-            "3691"
-        ],
-        "correct_answer": "3591",
-        "ideal_solution": "63 x 57 = (60+3)(60-3) = 3600-9 = 3591. Socratic Hint: Use difference of squares a^2-b^2.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3541 from wrong subtraction.",
-            "formula_misapplication": "Student picks 3641 from wrong product.",
-            "premature_calculation": "Student gets 60^2=3600 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A square number is also a triangular number. What is the smallest such number greater than 1?",
-        "options": [
-            "4",
-            "9",
-            "16",
-            "25",
-            "36"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "Triangular numbers: 1,3,6,10,15,21,28,36,... Perfect squares: 1,4,9,16,25,36,... Common (>1): 36. Check: 36=6 squared, and T8=8x9/2=36. Socratic Hint: List both sequences until they match.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9 (not triangular).",
-            "formula_misapplication": "Student picks 25 (not triangular).",
-            "premature_calculation": "Student lists triangular numbers and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "In a class, 2/5 are boys. If there are 18 girls, how many students total?",
-        "options": [
-            "24",
-            "27",
-            "30",
-            "36",
-            "45"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "Girls = 1-2/5 = 3/5 of total. 3/5 x total = 18. Total = 18 x 5/3 = 30. Socratic Hint: Girls fraction = 1 minus boys fraction.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 27 from wrong calculation.",
-            "formula_misapplication": "Student picks 45 computing 18 x 5/2.",
-            "premature_calculation": "Student gets 3/5 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 75 x 75?",
-        "options": [
-            "5525",
-            "5575",
-            "5600",
-            "5625",
-            "5675"
-        ],
-        "correct_answer": "5625",
-        "ideal_solution": "75 squared: use trick for numbers ending in 5. 7x8=56, append 25. Answer: 5625. Socratic Hint: For n5 squared: n(n+1) then 25.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5575 from wrong calculation.",
-            "formula_misapplication": "Student picks 5600 rounding.",
-            "premature_calculation": "Student gets 7x8=56 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A circle has area 154 sq cm. What is its radius? (Use pi = 22/7)",
-        "options": [
-            "5 cm",
-            "6 cm",
-            "7 cm",
-            "8 cm",
-            "14 cm"
-        ],
-        "correct_answer": "7 cm",
-        "ideal_solution": "A = pi x r squared. 154 = 22/7 x r squared. r squared = 154 x 7/22 = 49. r = 7 cm. Socratic Hint: Rearrange the area formula to solve for r.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 8 from wrong calculation.",
-            "formula_misapplication": "Student picks 14 computing diameter.",
-            "premature_calculation": "Student gets r squared = 49 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "What is the smallest number that has exactly 6 factors?",
-        "options": [
-            "12",
-            "16",
-            "18",
-            "24",
-            "32"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "12: factors are 1,2,3,4,6,12. That is 6. Check smaller: 10 has 4 factors, 11 has 2. So 12 is smallest with 6 factors. Socratic Hint: Check numbers systematically.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 18 (also has 6 but not smallest).",
-            "formula_misapplication": "Student picks 16 (has 5 factors).",
-            "premature_calculation": "Student checks a few numbers and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A frog jumps 3 steps forward, then 1 step back. Starting at step 0, after 20 jumps (10 forward + 10 back in sequence), what step is the frog on?",
-        "options": [
-            "10",
-            "15",
-            "20",
-            "25",
-            "30"
-        ],
-        "correct_answer": "20",
-        "ideal_solution": "Each forward-back cycle: 3 forward, 1 back = net 2 steps. 10 complete cycles: 10 x 2 = 20 steps. Socratic Hint: Find the net gain per cycle, then multiply by cycles.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 15 from wrong cycle count.",
-            "formula_misapplication": "Student picks 30 computing 3 x 10.",
-            "premature_calculation": "Student gets net 2 per cycle and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "What is 7/8 of 64?",
-        "options": [
-            "48",
-            "52",
-            "54",
-            "56",
-            "58"
-        ],
-        "correct_answer": "56",
-        "ideal_solution": "1/8 of 64 = 8. 7/8 = 7 x 8 = 56. Socratic Hint: Find 1/8 first, then multiply by 7.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 54 from wrong multiplication.",
-            "formula_misapplication": "Student picks 48 computing 6/8 x 64.",
-            "premature_calculation": "Student gets 64/8=8 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is the value of 100 - 99 + 98 - 97 + ... + 2 - 1?",
-        "options": [
-            "0",
-            "1",
-            "49",
-            "50",
-            "100"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "Group in pairs: (100-99)+(98-97)+...+(2-1). Each pair = 1. Number of pairs: 50. Sum = 50. Socratic Hint: Pair consecutive terms.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 49 miscounting pairs.",
-            "formula_misapplication": "Student picks 1 computing only first pair.",
-            "premature_calculation": "Student gets a few pairs and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A cone has base radius 6 cm and slant height 10 cm. What is the lateral surface area? (LSA = pi x r x slant height, pi=3.14)",
-        "options": [
-            "94.2 sq cm",
-            "150.72 sq cm",
-            "188.4 sq cm",
-            "226.08 sq cm",
-            "376.8 sq cm"
-        ],
-        "correct_answer": "188.4 sq cm",
-        "ideal_solution": "LSA = pi x r x l = 3.14 x 6 x 10 = 188.4 sq cm. Socratic Hint: Plug into the formula directly.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 150.72 from wrong calculation.",
-            "formula_misapplication": "Student picks 376.8 computing 2 x pi x r x l.",
-            "premature_calculation": "Student gets 3.14 x 6 = 18.84 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "How many numbers from 1 to 100 are NOT divisible by 2 or 3?",
-        "options": [
-            "17",
-            "27",
-            "33",
-            "34",
-            "50"
-        ],
-        "correct_answer": "33",
-        "ideal_solution": "Divisible by 2: 50. By 3: 33. By both (6): 16. By 2 or 3: 50+33-16=67. NOT divisible by 2 or 3: 100-67=33. Socratic Hint: Use inclusion-exclusion.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 34 from wrong count.",
-            "formula_misapplication": "Student picks 17 computing 100/6.",
-            "premature_calculation": "Student gets 50+33=83 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "You have 9 coins, 1 is lighter (fake). Using a balance scale, what is the minimum number of weighings to find the fake?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "Divide into 3 groups of 3. Weigh group 1 vs group 2. If balanced, fake is in group 3. If not, take the lighter group. Now weigh 1 vs 1 of the 3 suspects. Found in 2 weighings. Socratic Hint: Divide into thirds each time.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3 not using optimal strategy.",
-            "formula_misapplication": "Student picks 4 using pairs.",
-            "premature_calculation": "Student picks 1 thinking one weigh suffices."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "Two-thirds of the students passed. If 12 students failed, how many passed?",
-        "options": [
-            "18",
-            "20",
-            "24",
-            "30",
-            "36"
-        ],
-        "correct_answer": "24",
-        "ideal_solution": "Failed = 1-2/3 = 1/3 of total. 1/3 = 12, total = 36. Passed = 2/3 x 36 = 24. Socratic Hint: Failed fraction times total equals 12.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 18 computing 12 x 3/2.",
-            "formula_misapplication": "Student picks 36 computing total not passed.",
-            "premature_calculation": "Student gets total=36 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 12 x 12 x 12?",
-        "options": [
-            "1278",
-            "1728",
-            "1628",
-            "1828",
-            "1928"
-        ],
-        "correct_answer": "1728",
-        "ideal_solution": "12 cubed: 12x12=144. 144x12: 144x10=1440, 144x2=288. 1440+288=1728. Socratic Hint: Build step by step.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1628 from wrong addition.",
-            "formula_misapplication": "Student picks 1828 from wrong multiplication.",
-            "premature_calculation": "Student gets 12x12=144 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A regular hexagon has side 6 cm. What is its perimeter?",
-        "options": [
-            "24 cm",
-            "30 cm",
-            "36 cm",
-            "42 cm",
-            "48 cm"
-        ],
-        "correct_answer": "36 cm",
-        "ideal_solution": "Hexagon has 6 sides. Perimeter: 6 x 6 = 36 cm. Socratic Hint: Regular = all sides equal.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 30 computing 5 x 6.",
-            "formula_misapplication": "Student picks 42 computing 7 x 6.",
-            "premature_calculation": "Student confuses hexagon with pentagon."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "What is the GCF of 60 and 84?",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "12",
-            "24"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "60=2x2x3x5. 84=2x2x3x7. Common: 2x2x3=12. GCF=12. Socratic Hint: Prime factorize both, take common factors.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 using only 2x3.",
-            "formula_misapplication": "Student picks 24 multiplying wrong.",
-            "premature_calculation": "Student gets 2x2=4 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A hall has rows of chairs. The first row has 10 chairs, each next row has 2 more. There are 8 rows. How many chairs total?",
-        "options": [
-            "112",
-            "120",
-            "128",
-            "136",
-            "144"
-        ],
-        "correct_answer": "136",
-        "ideal_solution": "Rows: 10,12,14,16,18,20,22,24. Sum: 8 x (10+24)/2 = 8 x 17 = 136. Socratic Hint: Use arithmetic series sum formula.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 128 from wrong sum.",
-            "formula_misapplication": "Student picks 120 computing 8 x 15.",
-            "premature_calculation": "Student gets (10+24)/2=17 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "What is 3 and 1/4 minus 1 and 2/3?",
-        "options": [
-            "1 and 1/12",
-            "1 and 5/12",
-            "1 and 7/12",
-            "2 and 1/12",
-            "2 and 7/12"
-        ],
-        "correct_answer": "1 and 7/12",
-        "ideal_solution": "3 and 1/4 = 13/4. 1 and 2/3 = 5/3. LCD=12: 39/12 - 20/12 = 19/12 = 1 and 7/12. Socratic Hint: Convert to improper fractions, then subtract.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1 and 5/12 from wrong conversion.",
-            "formula_misapplication": "Student picks 2 and 1/12 from wrong subtraction.",
-            "premature_calculation": "Student gets 13/4 and 5/3 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 987 + 876 + 765?",
-        "options": [
-            "2528",
-            "2618",
-            "2628",
-            "2638",
-            "2728"
-        ],
-        "correct_answer": "2628",
-        "ideal_solution": "987+876: 7+6=13(carry1), 8+7+1=16(carry1), 9+8+1=18. =1863. 1863+765: 3+5=8, 6+6=12(carry1), 8+7+1=16. =2628. Socratic Hint: Add step by step with carries.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2618 from wrong carry.",
-            "formula_misapplication": "Student picks 2638 from wrong tens.",
-            "premature_calculation": "Student gets 987+876=1863 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "An isosceles triangle has two sides of 13 cm and a base of 10 cm. What is its area? (Height splits base into two 5-cm halves.)",
-        "options": [
-            "50 sq cm",
-            "55 sq cm",
-            "60 sq cm",
-            "65 sq cm",
-            "130 sq cm"
-        ],
-        "correct_answer": "60 sq cm",
-        "ideal_solution": "Height: sqrt(13 squared - 5 squared) = sqrt(169-25) = sqrt(144) = 12 cm. Area: 1/2 x 10 x 12 = 60 sq cm. Socratic Hint: Use Pythagorean theorem to find height.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 55 from wrong Pythagorean calc.",
-            "formula_misapplication": "Student picks 65 computing 13 x 10/2.",
-            "premature_calculation": "Student gets height=12 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "The number 2^n ends in 8. What is the smallest positive n?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "5",
-            "8"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "2^1=2, 2^2=4, 2^3=8. So n=3. Socratic Hint: Compute powers of 2 until ones digit is 8.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4 computing 2^4=16.",
-            "formula_misapplication": "Student picks 8 thinking n=8.",
-            "premature_calculation": "Student gets 2^1=2 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A 3x3 magic square uses numbers 1-9. Each row, column, and diagonal sums to the same number. What is that sum?",
-        "options": [
-            "12",
-            "13",
-            "14",
-            "15",
-            "16"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "Sum of 1-9 = 45. 3 rows share the total equally: 45/3=15. Each row sums to 15. Socratic Hint: Total sum divided by number of rows.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 14 from wrong total.",
-            "formula_misapplication": "Student picks 12 computing 36/3.",
-            "premature_calculation": "Student gets sum=45 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "A pipe fills 1/6 of a pool per hour. A drain empties 1/10 per hour. If both are open, what fraction fills per hour?",
-        "options": [
-            "1/15",
-            "1/12",
-            "2/15",
-            "1/16",
-            "4/15"
-        ],
-        "correct_answer": "1/15",
-        "ideal_solution": "Net rate: 1/6 - 1/10. LCD=30: 5/30 - 3/30 = 2/30 = 1/15 per hour. Socratic Hint: Subtract drain rate from fill rate.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2/15 from wrong LCD.",
-            "formula_misapplication": "Student picks 1/16 computing 1/(6+10).",
-            "premature_calculation": "Student gets 1/6 and 1/10 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 55 x 45?",
-        "options": [
-            "2425",
-            "2450",
-            "2475",
-            "2500",
-            "2525"
-        ],
-        "correct_answer": "2475",
-        "ideal_solution": "55x45 = (50+5)(50-5) = 2500-25 = 2475. Socratic Hint: Use difference of squares.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2450 from wrong subtraction.",
-            "formula_misapplication": "Student picks 2500 computing 50x50.",
-            "premature_calculation": "Student gets 50 squared=2500 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A semicircle has diameter 14 cm. What is its area? (Use pi = 22/7)",
-        "options": [
-            "77 sq cm",
-            "88 sq cm",
-            "154 sq cm",
-            "308 sq cm",
-            "616 sq cm"
-        ],
-        "correct_answer": "77 sq cm",
-        "ideal_solution": "Radius = 7 cm. Full circle area: pi x 49 = 22/7 x 49 = 154. Semicircle: 154/2 = 77 sq cm. Socratic Hint: Half of the full circle area.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 88 from wrong calculation.",
-            "formula_misapplication": "Student picks 154 computing full circle.",
-            "premature_calculation": "Student gets r=7, pi x 49=154 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "What is the LCM of 12, 15, and 20?",
-        "options": [
-            "30",
-            "60",
-            "120",
-            "180",
-            "300"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "12=2^2x3. 15=3x5. 20=2^2x5. LCM: 2^2x3x5=60. Check: 60/12=5, 60/15=4, 60/20=3. All whole. Socratic Hint: Take highest power of each prime.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 120 computing 12x10.",
-            "formula_misapplication": "Student picks 180 computing 12x15.",
-            "premature_calculation": "Student gets 2^2x3=12 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "How many rectangles (including squares) can you count in a 3x2 grid?",
-        "options": [
-            "8",
-            "12",
-            "15",
-            "18",
-            "24"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "In a 3x2 grid: choose 2 vertical lines from 4, 2 horizontal from 3. C(4,2)xC(3,2) = 6x3 = 18. Socratic Hint: Each rectangle is formed by choosing 2 vertical and 2 horizontal lines.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 15 from wrong combination.",
-            "formula_misapplication": "Student picks 12 counting only obvious ones.",
-            "premature_calculation": "Student gets C(4,2)=6 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "If you eat 1/3 of a pie, then 1/4 of what remains, how much pie is left?",
-        "options": [
-            "1/4",
-            "5/12",
-            "1/2",
-            "7/12",
-            "3/4"
-        ],
-        "correct_answer": "1/2",
-        "ideal_solution": "After eating 1/3: 2/3 remains. Eat 1/4 of 2/3: 1/4 x 2/3 = 2/12 = 1/6. Left: 2/3 - 1/6 = 4/6 - 1/6 = 3/6 = 1/2. Socratic Hint: Find remaining after each step.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5/12 from wrong subtraction.",
-            "formula_misapplication": "Student picks 7/12 computing wrong remainder.",
-            "premature_calculation": "Student gets 2/3 remaining and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 999 + 998 + 997?",
-        "options": [
-            "2984",
-            "2994",
-            "3004",
-            "3014",
-            "3024"
-        ],
-        "correct_answer": "2994",
-        "ideal_solution": "999+998+997 = 3x1000 - (1+2+3) = 3000-6 = 2994. Socratic Hint: Write each as 1000 minus something.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 2984 from wrong subtraction.",
-            "formula_misapplication": "Student picks 3004 adding instead of subtracting.",
-            "premature_calculation": "Student gets 3x1000=3000 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A rectangular box is 10 cm x 8 cm x 6 cm. What is its surface area?",
-        "options": [
-            "296 sq cm",
-            "376 sq cm",
-            "380 sq cm",
-            "480 sq cm",
-            "560 sq cm"
-        ],
-        "correct_answer": "376 sq cm",
-        "ideal_solution": "SA = 2(10x8 + 10x6 + 8x6) = 2(80+60+48) = 2(188) = 376 sq cm. Socratic Hint: Sum the three pair areas, double.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 296 from wrong addition.",
-            "formula_misapplication": "Student picks 480 computing volume.",
-            "premature_calculation": "Student gets 80+60+48=188 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A number n satisfies: n mod 4 = 3, n mod 5 = 2, and 20 < n < 40. What is n?",
-        "options": [
-            "23",
-            "27",
-            "31",
-            "35",
-            "37"
-        ],
-        "correct_answer": "27",
-        "ideal_solution": "mod 4 = 3: 23,27,31,35,39. mod 5 = 2: 22,27,32,37. Common in range: 27. Check: 27/4=6R3, 27/5=5R2. Socratic Hint: List both sets and find intersection.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 31 (mod 5=1, not 2).",
-            "formula_misapplication": "Student picks 37 (mod 4=1, not 3).",
-            "premature_calculation": "Student lists one set and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "What is the sum of all two-digit multiples of 7?",
-        "options": [
-            "686",
-            "693",
-            "728",
-            "735",
-            "756"
-        ],
-        "correct_answer": "728",
-        "ideal_solution": "Two-digit multiples of 7: 14,21,28,...,98. Count: (98-14)/7+1=13. Sum: 13x(14+98)/2=13x56=728. Socratic Hint: Use arithmetic series formula.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 735 from wrong count.",
-            "formula_misapplication": "Student picks 693 computing wrong first term.",
-            "premature_calculation": "Student gets 13 terms and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "Express 0.1666... (repeating 6) as a fraction.",
-        "options": [
-            "1/5",
-            "1/6",
-            "5/30",
-            "17/100",
-            "1/7"
-        ],
-        "correct_answer": "1/6",
-        "ideal_solution": "0.1666... = 1/6. Check: 1/6 = 0.16666... Socratic Hint: Try dividing 1 by 6 to verify.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1/7 computing 0.142857.",
-            "formula_misapplication": "Student picks 17/100 from truncation.",
-            "premature_calculation": "Student picks 1/5 computing 0.2."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A dartboard has rings worth 3, 5, and 7 points. Using exactly 3 darts (each hitting a ring), how many distinct totals are possible?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "All combos of 3 darts with values {3,5,7}: (3,3,3)=9, (3,3,5)=11, (3,3,7)=13, (3,5,5)=13, (3,5,7)=15, (3,7,7)=17, (5,5,5)=15, (5,5,7)=17, (5,7,7)=19, (7,7,7)=21. Distinct sums: 9,11,13,15,17,19,21 = 7. Socratic Hint: List all combinations, then count unique totals.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 9 including duplicates.",
-            "formula_misapplication": "Student picks 10 computing 3^3.",
-            "premature_calculation": "Student lists a few sums and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 143 x 7?",
-        "options": [
-            "991",
-            "1001",
-            "1011",
-            "1021",
-            "1031"
-        ],
-        "correct_answer": "1001",
-        "ideal_solution": "143 x 7: 100x7=700, 40x7=280, 3x7=21. 700+280+21=1001. Socratic Hint: Break into parts.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1011 from wrong addition.",
-            "formula_misapplication": "Student picks 991 from wrong tens.",
-            "premature_calculation": "Student gets 700+280=980 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "geometry",
-        "question": "A parallelogram has base 15 cm and height 8 cm. What is its area?",
-        "options": [
-            "60 sq cm",
-            "80 sq cm",
-            "100 sq cm",
-            "120 sq cm",
-            "150 sq cm"
-        ],
-        "correct_answer": "120 sq cm",
-        "ideal_solution": "Area = base x height = 15 x 8 = 120 sq cm. Socratic Hint: Same formula as rectangle: base times height.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 100 from wrong multiplication.",
-            "formula_misapplication": "Student picks 150 computing 15 x 10.",
-            "premature_calculation": "Student confuses with perimeter."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "number_theory",
-        "question": "A group of people stand in a circle. The 5th person is directly opposite the 19th person. How many people are in the circle?",
-        "options": [
-            "24",
-            "26",
-            "28",
-            "30",
-            "32"
-        ],
-        "correct_answer": "28",
-        "ideal_solution": "Opposite means half the circle apart. Distance: 19-5=14 positions. Full circle: 2 x 14 = 28. Socratic Hint: Opposite = half the total around.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 24 computing 19+5.",
-            "formula_misapplication": "Student picks 30 adding wrong.",
-            "premature_calculation": "Student gets 19-5=14 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A rectangular pool is 25 m x 10 m and 2 m deep. How many liters of water does it hold? (1 cubic meter = 1000 liters)",
-        "options": [
-            "250 L",
-            "500 L",
-            "5000 L",
-            "50000 L",
-            "500000 L"
-        ],
-        "correct_answer": "500000 L",
-        "ideal_solution": "Volume: 25 x 10 x 2 = 500 cubic meters. Liters: 500 x 1000 = 500000 L. Socratic Hint: Find volume in cubic meters, convert to liters.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 50000 forgetting one zero.",
-            "formula_misapplication": "Student picks 5000 computing 25 x 10 x 2 x 10.",
-            "premature_calculation": "Student gets 500 cubic m and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "fractions",
-        "question": "What is 5/6 of 42?",
-        "options": [
-            "30",
-            "33",
-            "35",
-            "36",
-            "40"
-        ],
-        "correct_answer": "35",
-        "ideal_solution": "1/6 of 42 = 7. 5/6 = 5 x 7 = 35. Socratic Hint: Find 1/6 first, then multiply.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 36 from wrong multiplication.",
-            "formula_misapplication": "Student picks 30 computing 5/7 x 42.",
-            "premature_calculation": "Student gets 42/6=7 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "logic",
-        "question": "A pattern of dots forms triangles: row 1 has 1 dot, row 2 has 2 dots, row 3 has 3 dots, etc. How many dots in the first 12 rows?",
-        "options": [
-            "66",
-            "72",
-            "78",
-            "84",
-            "144"
-        ],
-        "correct_answer": "78",
-        "ideal_solution": "Sum = 1+2+3+...+12 = 12 x 13/2 = 78. Socratic Hint: Use the formula n(n+1)/2.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 72 from wrong formula.",
-            "formula_misapplication": "Student picks 144 computing 12 x 12.",
-            "premature_calculation": "Student gets 12 x 13 = 156 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 8,
-        "difficulty": "competition",
-        "type": "arithmetic",
-        "question": "What is 64 x 25?",
-        "options": [
-            "1400",
-            "1500",
-            "1550",
-            "1600",
-            "1700"
-        ],
-        "correct_answer": "1600",
-        "ideal_solution": "64 x 25 = 64 x 100 / 4 = 6400/4 = 1600. Socratic Hint: 25 = 100/4.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1500 from wrong calculation.",
-            "formula_misapplication": "Student picks 1400 computing 56 x 25.",
-            "premature_calculation": "Student gets 64 x 100 = 6400 and stops."
-        }
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A farmer has chickens and cows. He counts 30 heads and 80 legs. How many chickens does he have?",
+    "options": [
+      "10",
+      "15",
+      "18",
+      "20",
+      "25"
+    ],
+    "correct_answer": "20",
+    "ideal_solution": "Let c=chickens, w=cows. c+w=30. 2c+4w=80. From first: w=30-c. Sub: 2c+4(30-c)=80. 2c+120-4c=80. -2c=-40. c=20. Socratic Hint: Set up two equations using heads and legs.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 18 from wrong algebra.",
+      "formula_misapplication": "Student picks 10 computing 80/4-30/2.",
+      "premature_calculation": "Student gets w=30-c and stops."
     }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "What is 5/6 - 1/3 + 1/4?",
+    "options": [
+      "1/4",
+      "5/12",
+      "7/12",
+      "3/4",
+      "11/12"
+    ],
+    "correct_answer": "3/4",
+    "ideal_solution": "LCD=12: 5/6=10/12, 1/3=4/12, 1/4=3/12. Compute: 10-4+3=9. Answer: 9/12=3/4. Socratic Hint: Convert all to twelfths.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 7/12 from wrong arithmetic.",
+      "formula_misapplication": "Student picks 5/12 from wrong order.",
+      "premature_calculation": "Student gets 10/12-4/12=6/12 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 246 x 8?",
+    "options": [
+      "1928",
+      "1948",
+      "1958",
+      "1968",
+      "1988"
+    ],
+    "correct_answer": "1968",
+    "ideal_solution": "246x8: 200x8=1600, 40x8=320, 6x8=48. 1600+320+48=1968. Socratic Hint: Break into hundreds, tens, ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1958 from wrong addition.",
+      "formula_misapplication": "Student picks 1948 from wrong tens.",
+      "premature_calculation": "Student gets 1600+320=1920 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A trapezoid has parallel sides of 10 cm and 14 cm, and height 8 cm. What is its area?",
+    "options": [
+      "80 sq cm",
+      "88 sq cm",
+      "96 sq cm",
+      "104 sq cm",
+      "112 sq cm"
+    ],
+    "correct_answer": "96 sq cm",
+    "ideal_solution": "Area = 1/2 x (10+14) x 8 = 1/2 x 24 x 8 = 96 sq cm. Socratic Hint: Average the parallel sides, multiply by height.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 88 from wrong sum.",
+      "formula_misapplication": "Student picks 112 computing 14x8.",
+      "premature_calculation": "Student gets (10+14)=24 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "The product of two consecutive numbers is 156. What are the numbers?",
+    "options": [
+      "11 and 12",
+      "12 and 13",
+      "13 and 14",
+      "14 and 15",
+      "15 and 16"
+    ],
+    "correct_answer": "12 and 13",
+    "ideal_solution": "Try: 12x13=156. Check. Socratic Hint: sqrt(156) is about 12.5, so try 12 and 13.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 11 and 12 computing 132.",
+      "formula_misapplication": "Student picks 13 and 14 computing 182.",
+      "premature_calculation": "Student gets sqrt(156)=12.5 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A store sells notebooks for $3 each and pens for $1 each. Alex spends exactly $20 buying at least 1 of each. How many combinations are possible?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "6",
+    "ideal_solution": "3n+p=20, n>=1, p>=1. For n=1: p=17. n=2: p=14. n=3: p=11. n=4: p=8. n=5: p=5. n=6: p=2. n=7: p=-1 (invalid). So 6 combinations. Socratic Hint: Try each possible number of notebooks.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5 missing one case.",
+      "formula_misapplication": "Student picks 7 including n=0.",
+      "premature_calculation": "Student gets n=1,p=17 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "A car uses 2/5 of its tank for a 120 km trip. How far can it go on a full tank?",
+    "options": [
+      "200 km",
+      "240 km",
+      "280 km",
+      "300 km",
+      "360 km"
+    ],
+    "correct_answer": "300 km",
+    "ideal_solution": "2/5 of tank = 120 km. 1/5 = 60 km. Full tank (5/5) = 300 km. Socratic Hint: Find 1/5 first, then multiply by 5.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 240 computing 120x2.",
+      "formula_misapplication": "Student picks 360 computing 120x3.",
+      "premature_calculation": "Student gets 1/5=60 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 1111 x 9?",
+    "options": [
+      "9899",
+      "9979",
+      "9989",
+      "9999",
+      "10009"
+    ],
+    "correct_answer": "9999",
+    "ideal_solution": "1111 x 9: 1111 x 10 = 11110, minus 1111 = 9999. Or notice: 1111 x 9 = 9999. Socratic Hint: Multiply by 10, subtract once.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9989 from wrong subtraction.",
+      "formula_misapplication": "Student picks 10009 adding instead.",
+      "premature_calculation": "Student gets 1111 x 10 = 11110 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "Two congruent rectangles, each 8 cm x 3 cm, overlap in a 3 cm x 3 cm square. What is the total area of the combined shape?",
+    "options": [
+      "33 sq cm",
+      "39 sq cm",
+      "42 sq cm",
+      "45 sq cm",
+      "48 sq cm"
+    ],
+    "correct_answer": "39 sq cm",
+    "ideal_solution": "Each rectangle: 8x3=24. Two: 48. Overlap: 3x3=9. Combined: 48-9=39 sq cm. Socratic Hint: Add both areas, subtract the overlap.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 42 from wrong overlap.",
+      "formula_misapplication": "Student picks 48 not subtracting overlap.",
+      "premature_calculation": "Student gets 24+24=48 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "What is 63 x 57?",
+    "options": [
+      "3491",
+      "3541",
+      "3591",
+      "3641",
+      "3691"
+    ],
+    "correct_answer": "3591",
+    "ideal_solution": "63 x 57 = (60+3)(60-3) = 3600-9 = 3591. Socratic Hint: Use difference of squares a^2-b^2.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3541 from wrong subtraction.",
+      "formula_misapplication": "Student picks 3641 from wrong product.",
+      "premature_calculation": "Student gets 60^2=3600 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A square number is also a triangular number. What is the smallest such number greater than 1?",
+    "options": [
+      "4",
+      "9",
+      "16",
+      "25",
+      "36"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "Triangular numbers: 1,3,6,10,15,21,28,36,... Perfect squares: 1,4,9,16,25,36,... Common (>1): 36. Check: 36=6 squared, and T8=8x9/2=36. Socratic Hint: List both sequences until they match.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9 (not triangular).",
+      "formula_misapplication": "Student picks 25 (not triangular).",
+      "premature_calculation": "Student lists triangular numbers and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "In a class, 2/5 are boys. If there are 18 girls, how many students total?",
+    "options": [
+      "24",
+      "27",
+      "30",
+      "36",
+      "45"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "Girls = 1-2/5 = 3/5 of total. 3/5 x total = 18. Total = 18 x 5/3 = 30. Socratic Hint: Girls fraction = 1 minus boys fraction.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 27 from wrong calculation.",
+      "formula_misapplication": "Student picks 45 computing 18 x 5/2.",
+      "premature_calculation": "Student gets 3/5 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 75 x 75?",
+    "options": [
+      "5525",
+      "5575",
+      "5600",
+      "5625",
+      "5675"
+    ],
+    "correct_answer": "5625",
+    "ideal_solution": "75 squared: use trick for numbers ending in 5. 7x8=56, append 25. Answer: 5625. Socratic Hint: For n5 squared: n(n+1) then 25.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5575 from wrong calculation.",
+      "formula_misapplication": "Student picks 5600 rounding.",
+      "premature_calculation": "Student gets 7x8=56 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A circle has area 154 sq cm. What is its radius? (Use pi = 22/7)",
+    "options": [
+      "5 cm",
+      "6 cm",
+      "7 cm",
+      "8 cm",
+      "14 cm"
+    ],
+    "correct_answer": "7 cm",
+    "ideal_solution": "A = pi x r squared. 154 = 22/7 x r squared. r squared = 154 x 7/22 = 49. r = 7 cm. Socratic Hint: Rearrange the area formula to solve for r.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 8 from wrong calculation.",
+      "formula_misapplication": "Student picks 14 computing diameter.",
+      "premature_calculation": "Student gets r squared = 49 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "What is the smallest number that has exactly 6 factors?",
+    "options": [
+      "12",
+      "16",
+      "18",
+      "24",
+      "32"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "12: factors are 1,2,3,4,6,12. That is 6. Check smaller: 10 has 4 factors, 11 has 2. So 12 is smallest with 6 factors. Socratic Hint: Check numbers systematically.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 18 (also has 6 but not smallest).",
+      "formula_misapplication": "Student picks 16 (has 5 factors).",
+      "premature_calculation": "Student checks a few numbers and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A frog jumps 3 steps forward, then 1 step back. Starting at step 0, after 20 jumps (10 forward + 10 back in sequence), what step is the frog on?",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correct_answer": "20",
+    "ideal_solution": "Each forward-back cycle: 3 forward, 1 back = net 2 steps. 10 complete cycles: 10 x 2 = 20 steps. Socratic Hint: Find the net gain per cycle, then multiply by cycles.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 15 from wrong cycle count.",
+      "formula_misapplication": "Student picks 30 computing 3 x 10.",
+      "premature_calculation": "Student gets net 2 per cycle and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "What is 7/8 of 64?",
+    "options": [
+      "48",
+      "52",
+      "54",
+      "56",
+      "58"
+    ],
+    "correct_answer": "56",
+    "ideal_solution": "1/8 of 64 = 8. 7/8 = 7 x 8 = 56. Socratic Hint: Find 1/8 first, then multiply by 7.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 54 from wrong multiplication.",
+      "formula_misapplication": "Student picks 48 computing 6/8 x 64.",
+      "premature_calculation": "Student gets 64/8=8 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is the value of 100 - 99 + 98 - 97 + ... + 2 - 1?",
+    "options": [
+      "0",
+      "1",
+      "49",
+      "50",
+      "100"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "Group in pairs: (100-99)+(98-97)+...+(2-1). Each pair = 1. Number of pairs: 50. Sum = 50. Socratic Hint: Pair consecutive terms.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 49 miscounting pairs.",
+      "formula_misapplication": "Student picks 1 computing only first pair.",
+      "premature_calculation": "Student gets a few pairs and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A cone has base radius 6 cm and slant height 10 cm. What is the lateral surface area? (LSA = pi x r x slant height, pi=3.14)",
+    "options": [
+      "94.2 sq cm",
+      "150.72 sq cm",
+      "188.4 sq cm",
+      "226.08 sq cm",
+      "376.8 sq cm"
+    ],
+    "correct_answer": "188.4 sq cm",
+    "ideal_solution": "LSA = pi x r x l = 3.14 x 6 x 10 = 188.4 sq cm. Socratic Hint: Plug into the formula directly.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 150.72 from wrong calculation.",
+      "formula_misapplication": "Student picks 376.8 computing 2 x pi x r x l.",
+      "premature_calculation": "Student gets 3.14 x 6 = 18.84 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "How many numbers from 1 to 100 are NOT divisible by 2 or 3?",
+    "options": [
+      "17",
+      "27",
+      "33",
+      "34",
+      "50"
+    ],
+    "correct_answer": "33",
+    "ideal_solution": "Divisible by 2: 50. By 3: 33. By both (6): 16. By 2 or 3: 50+33-16=67. NOT divisible by 2 or 3: 100-67=33. Socratic Hint: Use inclusion-exclusion.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 34 from wrong count.",
+      "formula_misapplication": "Student picks 17 computing 100/6.",
+      "premature_calculation": "Student gets 50+33=83 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "You have 9 coins, 1 is lighter (fake). Using a balance scale, what is the minimum number of weighings to find the fake?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "Divide into 3 groups of 3. Weigh group 1 vs group 2. If balanced, fake is in group 3. If not, take the lighter group. Now weigh 1 vs 1 of the 3 suspects. Found in 2 weighings. Socratic Hint: Divide into thirds each time.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3 not using optimal strategy.",
+      "formula_misapplication": "Student picks 4 using pairs.",
+      "premature_calculation": "Student picks 1 thinking one weigh suffices."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "Two-thirds of the students passed. If 12 students failed, how many passed?",
+    "options": [
+      "18",
+      "20",
+      "24",
+      "30",
+      "36"
+    ],
+    "correct_answer": "24",
+    "ideal_solution": "Failed = 1-2/3 = 1/3 of total. 1/3 = 12, total = 36. Passed = 2/3 x 36 = 24. Socratic Hint: Failed fraction times total equals 12.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 18 computing 12 x 3/2.",
+      "formula_misapplication": "Student picks 36 computing total not passed.",
+      "premature_calculation": "Student gets total=36 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 12 x 12 x 12?",
+    "options": [
+      "1278",
+      "1728",
+      "1628",
+      "1828",
+      "1928"
+    ],
+    "correct_answer": "1728",
+    "ideal_solution": "12 cubed: 12x12=144. 144x12: 144x10=1440, 144x2=288. 1440+288=1728. Socratic Hint: Build step by step.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1628 from wrong addition.",
+      "formula_misapplication": "Student picks 1828 from wrong multiplication.",
+      "premature_calculation": "Student gets 12x12=144 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A regular hexagon has side 6 cm. What is its perimeter?",
+    "options": [
+      "24 cm",
+      "30 cm",
+      "36 cm",
+      "42 cm",
+      "48 cm"
+    ],
+    "correct_answer": "36 cm",
+    "ideal_solution": "Hexagon has 6 sides. Perimeter: 6 x 6 = 36 cm. Socratic Hint: Regular = all sides equal.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 30 computing 5 x 6.",
+      "formula_misapplication": "Student picks 42 computing 7 x 6.",
+      "premature_calculation": "Student confuses hexagon with pentagon."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "What is the GCF of 60 and 84?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12",
+      "24"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "60=2x2x3x5. 84=2x2x3x7. Common: 2x2x3=12. GCF=12. Socratic Hint: Prime factorize both, take common factors.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 using only 2x3.",
+      "formula_misapplication": "Student picks 24 multiplying wrong.",
+      "premature_calculation": "Student gets 2x2=4 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A hall has rows of chairs. The first row has 10 chairs, each next row has 2 more. There are 8 rows. How many chairs total?",
+    "options": [
+      "112",
+      "120",
+      "128",
+      "136",
+      "144"
+    ],
+    "correct_answer": "136",
+    "ideal_solution": "Rows: 10,12,14,16,18,20,22,24. Sum: 8 x (10+24)/2 = 8 x 17 = 136. Socratic Hint: Use arithmetic series sum formula.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 128 from wrong sum.",
+      "formula_misapplication": "Student picks 120 computing 8 x 15.",
+      "premature_calculation": "Student gets (10+24)/2=17 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "What is 3 and 1/4 minus 1 and 2/3?",
+    "options": [
+      "1 and 1/12",
+      "1 and 5/12",
+      "1 and 7/12",
+      "2 and 1/12",
+      "2 and 7/12"
+    ],
+    "correct_answer": "1 and 7/12",
+    "ideal_solution": "3 and 1/4 = 13/4. 1 and 2/3 = 5/3. LCD=12: 39/12 - 20/12 = 19/12 = 1 and 7/12. Socratic Hint: Convert to improper fractions, then subtract.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1 and 5/12 from wrong conversion.",
+      "formula_misapplication": "Student picks 2 and 1/12 from wrong subtraction.",
+      "premature_calculation": "Student gets 13/4 and 5/3 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 987 + 876 + 765?",
+    "options": [
+      "2528",
+      "2618",
+      "2628",
+      "2638",
+      "2728"
+    ],
+    "correct_answer": "2628",
+    "ideal_solution": "987+876: 7+6=13(carry1), 8+7+1=16(carry1), 9+8+1=18. =1863. 1863+765: 3+5=8, 6+6=12(carry1), 8+7+1=16. =2628. Socratic Hint: Add step by step with carries.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2618 from wrong carry.",
+      "formula_misapplication": "Student picks 2638 from wrong tens.",
+      "premature_calculation": "Student gets 987+876=1863 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "An isosceles triangle has two sides of 13 cm and a base of 10 cm. What is its area? (Height splits base into two 5-cm halves.)",
+    "options": [
+      "50 sq cm",
+      "55 sq cm",
+      "60 sq cm",
+      "65 sq cm",
+      "130 sq cm"
+    ],
+    "correct_answer": "60 sq cm",
+    "ideal_solution": "Height: sqrt(13 squared - 5 squared) = sqrt(169-25) = sqrt(144) = 12 cm. Area: 1/2 x 10 x 12 = 60 sq cm. Socratic Hint: Use Pythagorean theorem to find height.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 55 from wrong Pythagorean calc.",
+      "formula_misapplication": "Student picks 65 computing 13 x 10/2.",
+      "premature_calculation": "Student gets height=12 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "The number 2^n ends in 8. What is the smallest positive n?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "2^1=2, 2^2=4, 2^3=8. So n=3. Socratic Hint: Compute powers of 2 until ones digit is 8.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4 computing 2^4=16.",
+      "formula_misapplication": "Student picks 8 thinking n=8.",
+      "premature_calculation": "Student gets 2^1=2 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A 3x3 magic square uses numbers 1-9. Each row, column, and diagonal sums to the same number. What is that sum?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "Sum of 1-9 = 45. 3 rows share the total equally: 45/3=15. Each row sums to 15. Socratic Hint: Total sum divided by number of rows.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 14 from wrong total.",
+      "formula_misapplication": "Student picks 12 computing 36/3.",
+      "premature_calculation": "Student gets sum=45 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "A pipe fills 1/6 of a pool per hour. A drain empties 1/10 per hour. If both are open, what fraction fills per hour?",
+    "options": [
+      "1/15",
+      "1/12",
+      "2/15",
+      "1/16",
+      "4/15"
+    ],
+    "correct_answer": "1/15",
+    "ideal_solution": "Net rate: 1/6 - 1/10. LCD=30: 5/30 - 3/30 = 2/30 = 1/15 per hour. Socratic Hint: Subtract drain rate from fill rate.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2/15 from wrong LCD.",
+      "formula_misapplication": "Student picks 1/16 computing 1/(6+10).",
+      "premature_calculation": "Student gets 1/6 and 1/10 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 55 x 45?",
+    "options": [
+      "2425",
+      "2450",
+      "2475",
+      "2500",
+      "2525"
+    ],
+    "correct_answer": "2475",
+    "ideal_solution": "55x45 = (50+5)(50-5) = 2500-25 = 2475. Socratic Hint: Use difference of squares.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2450 from wrong subtraction.",
+      "formula_misapplication": "Student picks 2500 computing 50x50.",
+      "premature_calculation": "Student gets 50 squared=2500 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A semicircle has diameter 14 cm. What is its area? (Use pi = 22/7)",
+    "options": [
+      "77 sq cm",
+      "88 sq cm",
+      "154 sq cm",
+      "308 sq cm",
+      "616 sq cm"
+    ],
+    "correct_answer": "77 sq cm",
+    "ideal_solution": "Radius = 7 cm. Full circle area: pi x 49 = 22/7 x 49 = 154. Semicircle: 154/2 = 77 sq cm. Socratic Hint: Half of the full circle area.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 88 from wrong calculation.",
+      "formula_misapplication": "Student picks 154 computing full circle.",
+      "premature_calculation": "Student gets r=7, pi x 49=154 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "What is the LCM of 12, 15, and 20?",
+    "options": [
+      "30",
+      "60",
+      "120",
+      "180",
+      "300"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "12=2^2x3. 15=3x5. 20=2^2x5. LCM: 2^2x3x5=60. Check: 60/12=5, 60/15=4, 60/20=3. All whole. Socratic Hint: Take highest power of each prime.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 120 computing 12x10.",
+      "formula_misapplication": "Student picks 180 computing 12x15.",
+      "premature_calculation": "Student gets 2^2x3=12 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "How many rectangles (including squares) can you count in a 3x2 grid?",
+    "options": [
+      "8",
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "In a 3x2 grid: choose 2 vertical lines from 4, 2 horizontal from 3. C(4,2)xC(3,2) = 6x3 = 18. Socratic Hint: Each rectangle is formed by choosing 2 vertical and 2 horizontal lines.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 15 from wrong combination.",
+      "formula_misapplication": "Student picks 12 counting only obvious ones.",
+      "premature_calculation": "Student gets C(4,2)=6 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "If you eat 1/3 of a pie, then 1/4 of what remains, how much pie is left?",
+    "options": [
+      "1/4",
+      "5/12",
+      "1/2",
+      "7/12",
+      "3/4"
+    ],
+    "correct_answer": "1/2",
+    "ideal_solution": "After eating 1/3: 2/3 remains. Eat 1/4 of 2/3: 1/4 x 2/3 = 2/12 = 1/6. Left: 2/3 - 1/6 = 4/6 - 1/6 = 3/6 = 1/2. Socratic Hint: Find remaining after each step.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5/12 from wrong subtraction.",
+      "formula_misapplication": "Student picks 7/12 computing wrong remainder.",
+      "premature_calculation": "Student gets 2/3 remaining and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 999 + 998 + 997?",
+    "options": [
+      "2984",
+      "2994",
+      "3004",
+      "3014",
+      "3024"
+    ],
+    "correct_answer": "2994",
+    "ideal_solution": "999+998+997 = 3x1000 - (1+2+3) = 3000-6 = 2994. Socratic Hint: Write each as 1000 minus something.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 2984 from wrong subtraction.",
+      "formula_misapplication": "Student picks 3004 adding instead of subtracting.",
+      "premature_calculation": "Student gets 3x1000=3000 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A rectangular box is 10 cm x 8 cm x 6 cm. What is its surface area?",
+    "options": [
+      "296 sq cm",
+      "376 sq cm",
+      "380 sq cm",
+      "480 sq cm",
+      "560 sq cm"
+    ],
+    "correct_answer": "376 sq cm",
+    "ideal_solution": "SA = 2(10x8 + 10x6 + 8x6) = 2(80+60+48) = 2(188) = 376 sq cm. Socratic Hint: Sum the three pair areas, double.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 296 from wrong addition.",
+      "formula_misapplication": "Student picks 480 computing volume.",
+      "premature_calculation": "Student gets 80+60+48=188 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A number n satisfies: n mod 4 = 3, n mod 5 = 2, and 20 < n < 40. What is n?",
+    "options": [
+      "23",
+      "27",
+      "31",
+      "35",
+      "37"
+    ],
+    "correct_answer": "27",
+    "ideal_solution": "mod 4 = 3: 23,27,31,35,39. mod 5 = 2: 22,27,32,37. Common in range: 27. Check: 27/4=6R3, 27/5=5R2. Socratic Hint: List both sets and find intersection.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 31 (mod 5=1, not 2).",
+      "formula_misapplication": "Student picks 37 (mod 4=1, not 3).",
+      "premature_calculation": "Student lists one set and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "What is the sum of all two-digit multiples of 7?",
+    "options": [
+      "686",
+      "693",
+      "728",
+      "735",
+      "756"
+    ],
+    "correct_answer": "728",
+    "ideal_solution": "Two-digit multiples of 7: 14,21,28,...,98. Count: (98-14)/7+1=13. Sum: 13x(14+98)/2=13x56=728. Socratic Hint: Use arithmetic series formula.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 735 from wrong count.",
+      "formula_misapplication": "Student picks 693 computing wrong first term.",
+      "premature_calculation": "Student gets 13 terms and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "Express 0.1666... (repeating 6) as a fraction.",
+    "options": [
+      "1/5",
+      "1/6",
+      "5/30",
+      "17/100",
+      "1/7"
+    ],
+    "correct_answer": "1/6",
+    "ideal_solution": "0.1666... = 1/6. Check: 1/6 = 0.16666... Socratic Hint: Try dividing 1 by 6 to verify.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1/7 computing 0.142857.",
+      "formula_misapplication": "Student picks 17/100 from truncation.",
+      "premature_calculation": "Student picks 1/5 computing 0.2."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A dartboard has rings worth 3, 5, and 7 points. Using exactly 3 darts (each hitting a ring), how many distinct totals are possible?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "All combos of 3 darts with values {3,5,7}: (3,3,3)=9, (3,3,5)=11, (3,3,7)=13, (3,5,5)=13, (3,5,7)=15, (3,7,7)=17, (5,5,5)=15, (5,5,7)=17, (5,7,7)=19, (7,7,7)=21. Distinct sums: 9,11,13,15,17,19,21 = 7. Socratic Hint: List all combinations, then count unique totals.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 9 including duplicates.",
+      "formula_misapplication": "Student picks 10 computing 3^3.",
+      "premature_calculation": "Student lists a few sums and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 143 x 7?",
+    "options": [
+      "991",
+      "1001",
+      "1011",
+      "1021",
+      "1031"
+    ],
+    "correct_answer": "1001",
+    "ideal_solution": "143 x 7: 100x7=700, 40x7=280, 3x7=21. 700+280+21=1001. Socratic Hint: Break into parts.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1011 from wrong addition.",
+      "formula_misapplication": "Student picks 991 from wrong tens.",
+      "premature_calculation": "Student gets 700+280=980 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "geometry",
+    "question": "A parallelogram has base 15 cm and height 8 cm. What is its area?",
+    "options": [
+      "60 sq cm",
+      "80 sq cm",
+      "100 sq cm",
+      "120 sq cm",
+      "150 sq cm"
+    ],
+    "correct_answer": "120 sq cm",
+    "ideal_solution": "Area = base x height = 15 x 8 = 120 sq cm. Socratic Hint: Same formula as rectangle: base times height.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 100 from wrong multiplication.",
+      "formula_misapplication": "Student picks 150 computing 15 x 10.",
+      "premature_calculation": "Student confuses with perimeter."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "number_theory",
+    "question": "A group of people stand in a circle. The 5th person is directly opposite the 19th person. How many people are in the circle?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_answer": "28",
+    "ideal_solution": "Opposite means half the circle apart. Distance: 19-5=14 positions. Full circle: 2 x 14 = 28. Socratic Hint: Opposite = half the total around.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 24 computing 19+5.",
+      "formula_misapplication": "Student picks 30 adding wrong.",
+      "premature_calculation": "Student gets 19-5=14 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A rectangular pool is 25 m x 10 m and 2 m deep. How many liters of water does it hold? (1 cubic meter = 1000 liters)",
+    "options": [
+      "250 L",
+      "500 L",
+      "5000 L",
+      "50000 L",
+      "500000 L"
+    ],
+    "correct_answer": "500000 L",
+    "ideal_solution": "Volume: 25 x 10 x 2 = 500 cubic meters. Liters: 500 x 1000 = 500000 L. Socratic Hint: Find volume in cubic meters, convert to liters.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 50000 forgetting one zero.",
+      "formula_misapplication": "Student picks 5000 computing 25 x 10 x 2 x 10.",
+      "premature_calculation": "Student gets 500 cubic m and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "fractions",
+    "question": "What is 5/6 of 42?",
+    "options": [
+      "30",
+      "33",
+      "35",
+      "36",
+      "40"
+    ],
+    "correct_answer": "35",
+    "ideal_solution": "1/6 of 42 = 7. 5/6 = 5 x 7 = 35. Socratic Hint: Find 1/6 first, then multiply.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 36 from wrong multiplication.",
+      "formula_misapplication": "Student picks 30 computing 5/7 x 42.",
+      "premature_calculation": "Student gets 42/6=7 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "logic",
+    "question": "A pattern of dots forms triangles: row 1 has 1 dot, row 2 has 2 dots, row 3 has 3 dots, etc. How many dots in the first 12 rows?",
+    "options": [
+      "66",
+      "72",
+      "78",
+      "84",
+      "144"
+    ],
+    "correct_answer": "78",
+    "ideal_solution": "Sum = 1+2+3+...+12 = 12 x 13/2 = 78. Socratic Hint: Use the formula n(n+1)/2.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 72 from wrong formula.",
+      "formula_misapplication": "Student picks 144 computing 12 x 12.",
+      "premature_calculation": "Student gets 12 x 13 = 156 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 8,
+    "difficulty": "expert",
+    "type": "arithmetic",
+    "question": "What is 64 x 25?",
+    "options": [
+      "1400",
+      "1500",
+      "1550",
+      "1600",
+      "1700"
+    ],
+    "correct_answer": "1600",
+    "ideal_solution": "64 x 25 = 64 x 100 / 4 = 6400/4 = 1600. Socratic Hint: 25 = 100/4.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1500 from wrong calculation.",
+      "formula_misapplication": "Student picks 1400 computing 56 x 25.",
+      "premature_calculation": "Student gets 64 x 100 = 6400 and stops."
+    }
+  }
 ]

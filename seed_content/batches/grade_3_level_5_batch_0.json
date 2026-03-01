@@ -1,1052 +1,1052 @@
 [
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A store sells packs of 6 pencils for $3 and single pencils for $1 each. What is the cheapest way to buy exactly 20 pencils?",
-        "options": [
-            "$8",
-            "$9",
-            "$10",
-            "$11",
-            "$20"
-        ],
-        "correct_answer": "$11",
-        "ideal_solution": "3 packs of 6 = 18 pencils for $9. Need 2 more single pencils at $1 each = $2. Total: $9 + $2 = $11. Socratic Hint: Buy as many packs as possible, then fill in singles.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks $10 miscounting pencils (3×6=18, need 2 more but thinks need 1).",
-            "formula_misapplication": "Student picks $20 buying all singles.",
-            "premature_calculation": "Student picks $9 (3 packs) forgetting the 2 extra."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "Ella has 3 times as many stickers as Ben. Together they have 48 stickers. How many stickers does Ben have?",
-        "options": [
-            "8",
-            "12",
-            "16",
-            "24",
-            "36"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Let Ben = x. Ella = 3x. Total: x + 3x = 4x = 48. x = 12. Ben has 12 stickers. Socratic Hint: If you add Ben's share and Ella's share (3 times Ben's), what do you get?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 16 computing 48 ÷ 3.",
-            "formula_misapplication": "Student picks 36 giving Ella's amount instead.",
-            "premature_calculation": "Student picks 24 computing 48 ÷ 2."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 45 × 6?",
-        "options": [
-            "240",
-            "250",
-            "260",
-            "270",
-            "280"
-        ],
-        "correct_answer": "270",
-        "ideal_solution": "45 × 6: 40 × 6 = 240, 5 × 6 = 30. 240 + 30 = 270. Socratic Hint: Break 45 into 40 + 5.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 260 from wrong addition.",
-            "formula_misapplication": "Student picks 250 from rounding.",
-            "premature_calculation": "Student computes 40 × 6 = 240 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 37 × 8?",
-        "options": [
-            "276",
-            "286",
-            "296",
-            "306",
-            "316"
-        ],
-        "correct_answer": "296",
-        "ideal_solution": "37 × 8: 30 × 8 = 240, 7 × 8 = 56. 240 + 56 = 296. Socratic Hint: Split into tens and ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 286 adding 240 + 46.",
-            "formula_misapplication": "Student gets 306 from wrong tens digit.",
-            "premature_calculation": "Student gets 240 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "A tank is 2/5 full. It holds 60 liters when full. How many more liters are needed to fill it?",
-        "options": [
-            "12",
-            "18",
-            "24",
-            "36",
-            "48"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "Currently has: 2/5 of 60 = 24 liters. Needs: 60 - 24 = 36 liters more. Socratic Hint: Find how much is in the tank, then subtract from full.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 24 (what's in the tank, not what's needed).",
-            "formula_misapplication": "Student picks 48 computing 4/5 of 60.",
-            "premature_calculation": "Student picks 12 computing 1/5 of 60."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A store sells apples at $2 each, bananas at $1 each, and oranges at $3 each. Tim buys 4 apples, 5 bananas, and 2 oranges. How much does he spend?",
-        "options": [
-            "$11",
-            "$14",
-            "$17",
-            "$19",
-            "$22"
-        ],
-        "correct_answer": "$19",
-        "ideal_solution": "Apples: 4 × $2 = $8. Bananas: 5 × $1 = $5. Oranges: 2 × $3 = $6. Total: 8 + 5 + 6 = $19. Socratic Hint: Calculate each fruit cost, then add all.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 8 + 5 + 6 = 17 (wrong).",
-            "formula_misapplication": "Student picks $11 computing 4+5+2.",
-            "premature_calculation": "Student gets 8 + 5 = 13 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "A rectangular room is 8 m by 6 m. A 2 m × 3 m rug is placed in the center. What area of the floor is NOT covered by the rug?",
-        "options": [
-            "36 sq m",
-            "38 sq m",
-            "40 sq m",
-            "42 sq m",
-            "48 sq m"
-        ],
-        "correct_answer": "42 sq m",
-        "ideal_solution": "Room area: 8 × 6 = 48. Rug area: 2 × 3 = 6. Uncovered: 48 - 6 = 42 sq m. Socratic Hint: Subtract the rug area from the room area.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 48 - 6 = 40 (wrong).",
-            "formula_misapplication": "Student picks 48 forgetting to subtract the rug.",
-            "premature_calculation": "Student picks 36 from wrong calculation."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "Which is greater: 5/6 or 7/8?",
-        "options": [
-            "5/6",
-            "7/8",
-            "They are equal",
-            "Cannot tell",
-            "Neither"
-        ],
-        "correct_answer": "7/8",
-        "ideal_solution": "Find common denominator 24: 5/6 = 20/24, 7/8 = 21/24. Since 21 > 20, 7/8 > 5/6. Socratic Hint: Convert to the same denominator.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 5/6 because 5+6=11 > 7+8=15 (nonsense logic).",
-            "formula_misapplication": "Student picks 'They are equal' without computing.",
-            "premature_calculation": "Student picks 'Cannot tell' without trying."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A library lends 125 books per day for 4 days, and 98 books on the 5th day. How many books were lent in total?",
-        "options": [
-            "523",
-            "548",
-            "580",
-            "598",
-            "625"
-        ],
-        "correct_answer": "598",
-        "ideal_solution": "First 4 days: 125 × 4 = 500. 5th day: 98. Total: 500 + 98 = 598. Socratic Hint: Find the 4-day total first, then add the 5th day.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 500 + 98 = 580 (wrong).",
-            "formula_misapplication": "Student computes 125 × 5 = 625 (assumes all days equal).",
-            "premature_calculation": "Student gets 125 × 4 = 500 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "number_theory",
-        "question": "A number is divisible by both 4 and 5. What is the smallest such positive number?",
-        "options": [
-            "9",
-            "10",
-            "15",
-            "20",
-            "40"
-        ],
-        "correct_answer": "20",
-        "ideal_solution": "LCM(4,5) = 20. Check: 20 ÷ 4 = 5 ✓, 20 ÷ 5 = 4 ✓. Socratic Hint: List multiples of each until you find a common one.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10 (multiple of 5 but not 4).",
-            "formula_misapplication": "Student picks 9 computing 4+5.",
-            "premature_calculation": "Student picks 40 (LCM × 2)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "Mom bakes 60 cookies. She gives 1/3 to the neighbors, 1/4 to the school, and keeps the rest. How many does she keep?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20",
-            "25"
-        ],
-        "correct_answer": "25",
-        "ideal_solution": "Neighbors: 60 ÷ 3 = 20. School: 60 ÷ 4 = 15. Given: 20 + 15 = 35. Kept: 60 - 35 = 25. Socratic Hint: Find what was given away, then subtract from total.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 60 - 35 = 20 (wrong subtraction).",
-            "formula_misapplication": "Student picks 20 (neighbors only) or 15 (school only).",
-            "premature_calculation": "Student picks 5 computing 60÷12."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "A rectangular tile is 3 cm by 4 cm. How many tiles are needed to cover a floor that is 12 cm by 8 cm?",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "10",
-            "12"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Floor area: 12 × 8 = 96 sq cm. Tile area: 3 × 4 = 12 sq cm. Tiles needed: 96 ÷ 12 = 8. Socratic Hint: Divide the floor area by the tile area.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 from wrong division.",
-            "formula_misapplication": "Student picks 4 computing 12÷3.",
-            "premature_calculation": "Student computes floor area = 96 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 56 × 4?",
-        "options": [
-            "204",
-            "214",
-            "220",
-            "224",
-            "234"
-        ],
-        "correct_answer": "224",
-        "ideal_solution": "56 × 4: 50 × 4 = 200, 6 × 4 = 24. 200 + 24 = 224. Socratic Hint: Split into tens and ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 220 from rounding down.",
-            "formula_misapplication": "Student gets 214 from wrong ones calculation.",
-            "premature_calculation": "Student gets 200 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A garden is 15 m by 10 m. A path 1 m wide runs around the inside of the garden (reducing the planting area). What is the planting area?",
-        "options": [
-            "96 sq m",
-            "100 sq m",
-            "104 sq m",
-            "120 sq m",
-            "150 sq m"
-        ],
-        "correct_answer": "104 sq m",
-        "ideal_solution": "Inner dimensions: (15-2) × (10-2) = 13 × 8 = 104 sq m. The path reduces each dimension by 2 (1m on each side). Socratic Hint: Subtract 2 from length and width (1m on each end).",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 13 × 8 = 96 (wrong multiplication).",
-            "formula_misapplication": "Student picks 120 subtracting path area differently: 150 - 30.",
-            "premature_calculation": "Student computes 15 × 10 = 150 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "Arrange in order from least to greatest: 3/5, 1/2, 7/10.",
-        "options": [
-            "1/2, 3/5, 7/10",
-            "3/5, 1/2, 7/10",
-            "7/10, 3/5, 1/2",
-            "1/2, 7/10, 3/5",
-            "3/5, 7/10, 1/2"
-        ],
-        "correct_answer": "1/2, 3/5, 7/10",
-        "ideal_solution": "Convert to tenths: 3/5 = 6/10, 1/2 = 5/10, 7/10 = 7/10. Order: 5/10, 6/10, 7/10 = 1/2, 3/5, 7/10. Socratic Hint: Use a common denominator of 10.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3/5, 1/2, 7/10 (puts 3/5 before 1/2).",
-            "formula_misapplication": "Student picks 7/10, 3/5, 1/2 (greatest to least).",
-            "premature_calculation": "Student picks 1/2, 7/10, 3/5."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "At a party, each guest gets 3 cookies, 2 juice boxes, and 1 party hat. There are 15 guests. How many items are needed in total?",
-        "options": [
-            "6",
-            "45",
-            "60",
-            "75",
-            "90"
-        ],
-        "correct_answer": "90",
-        "ideal_solution": "Per guest: 3 + 2 + 1 = 6 items. For 15 guests: 15 × 6 = 90. Socratic Hint: Find items per guest, then multiply.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 75 computing 15 × 5.",
-            "formula_misapplication": "Student picks 45 computing 15 × 3.",
-            "premature_calculation": "Student gets 3+2+1=6 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 125 × 4?",
-        "options": [
-            "400",
-            "425",
-            "450",
-            "475",
-            "500"
-        ],
-        "correct_answer": "500",
-        "ideal_solution": "125 × 4 = 500. Think: 100 × 4 = 400, 25 × 4 = 100. 400 + 100 = 500. Socratic Hint: Break 125 into 100 + 25.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 475 from wrong addition.",
-            "formula_misapplication": "Student picks 400 computing only 100 × 4.",
-            "premature_calculation": "Student picks 425 adding 25 instead of 100."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "number_theory",
-        "question": "What is the result: 4 × 4 × 4 = ?",
-        "options": [
-            "12",
-            "16",
-            "48",
-            "64",
-            "128"
-        ],
-        "correct_answer": "64",
-        "ideal_solution": "4 × 4 = 16. 16 × 4 = 64. Socratic Hint: Multiply step by step.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 48 computing 4 × 12.",
-            "formula_misapplication": "Student picks 12 computing 4 + 4 + 4.",
-            "premature_calculation": "Student picks 16 computing only 4 × 4."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "5 children share some candy equally. Each child gets 7 pieces and 3 pieces are left over. How many pieces of candy were there altogether?",
-        "options": [
-            "35",
-            "36",
-            "37",
-            "38",
-            "40"
-        ],
-        "correct_answer": "38",
-        "ideal_solution": "Shared: 5 × 7 = 35 pieces. Plus leftover: 35 + 3 = 38. Socratic Hint: Multiply children by pieces each, then add leftovers.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 35 forgetting the leftovers.",
-            "formula_misapplication": "Student picks 36 computing 5 × 7 + 1.",
-            "premature_calculation": "Student picks 40 computing 5 × 8."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "A picture frame is rectangular. The outside is 10 cm × 8 cm. The frame is 1 cm wide on all sides. What is the area of the picture inside?",
-        "options": [
-            "36 sq cm",
-            "42 sq cm",
-            "48 sq cm",
-            "56 sq cm",
-            "80 sq cm"
-        ],
-        "correct_answer": "48 sq cm",
-        "ideal_solution": "Inside dimensions: (10-2) × (8-2) = 8 × 6 = 48 sq cm. Socratic Hint: The frame takes 1 cm from each side (2 cm total per dimension).",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 8 × 6 = 42 (wrong).",
-            "formula_misapplication": "Student picks 56 subtracting only 1 from each dimension.",
-            "premature_calculation": "Student computes 10 × 8 = 80 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "A pizza has 12 slices. Tom eats 1/3 and Sarah eats 1/4. What fraction of the pizza is left?",
-        "options": [
-            "1/12",
-            "3/12",
-            "5/12",
-            "7/12",
-            "9/12"
-        ],
-        "correct_answer": "5/12",
-        "ideal_solution": "Tom: 1/3 = 4/12. Sarah: 1/4 = 3/12. Eaten: 4/12 + 3/12 = 7/12. Left: 12/12 - 7/12 = 5/12. Socratic Hint: Convert to twelfths, add what's eaten, subtract from whole.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 7/12 (what was eaten, not what's left).",
-            "formula_misapplication": "Student picks 1/12 computing 1/3 - 1/4.",
-            "premature_calculation": "Student picks 9/12 computing 12/12 - 3/12."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A school has 180 students. 2/9 of them walk to school, 1/3 ride the bus, and the rest are driven by parents. How many are driven by parents?",
-        "options": [
-            "20",
-            "40",
-            "60",
-            "80",
-            "100"
-        ],
-        "correct_answer": "80",
-        "ideal_solution": "Walk: 180 × 2/9 = 40. Bus: 180 × 1/3 = 60. Walk + Bus = 100. Driven: 180 - 100 = 80. Socratic Hint: Find each group, subtract from total.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 180 - 100 = 60 (wrong).",
-            "formula_misapplication": "Student picks 60 (bus riders, not driven).",
-            "premature_calculation": "Student picks 40 (walkers only)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 68 × 5?",
-        "options": [
-            "300",
-            "320",
-            "340",
-            "350",
-            "380"
-        ],
-        "correct_answer": "340",
-        "ideal_solution": "68 × 5: 70 × 5 = 350, minus 2 × 5 = 10. 350 - 10 = 340. Socratic Hint: Multiply by a nearby round number and adjust.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 350 not subtracting 10.",
-            "formula_misapplication": "Student gets 320 from wrong calculation.",
-            "premature_calculation": "Student gets 60 × 5 = 300 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "number_theory",
-        "question": "What are the first 3 common multiples of 3 and 5?",
-        "options": [
-            "3, 5, 15",
-            "15, 30, 45",
-            "15, 25, 35",
-            "8, 15, 30",
-            "5, 10, 15"
-        ],
-        "correct_answer": "15, 30, 45",
-        "ideal_solution": "Multiples of 15 (LCM of 3 and 5): 15, 30, 45. Socratic Hint: The LCM of 3 and 5 is 15. Common multiples are multiples of the LCM.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks '3, 5, 15' (includes non-common multiples).",
-            "formula_misapplication": "Student picks '15, 25, 35' (multiples of 5 only from 15).",
-            "premature_calculation": "Student picks '5, 10, 15' (multiples of 5)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A farmer plants trees in a square pattern: 7 rows with 7 trees in each row. How many trees are on the border (outside edge)?",
-        "options": [
-            "20",
-            "24",
-            "28",
-            "32",
-            "49"
-        ],
-        "correct_answer": "24",
-        "ideal_solution": "Border: 4 × 7 = 28, but corners are counted twice. Subtract 4 corners: 28 - 4 = 24. Or: 4 × (7-1) = 24. Socratic Hint: Count each side, but don't double-count the corners.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 28 not subtracting corners.",
-            "formula_misapplication": "Student picks 49 counting all trees.",
-            "premature_calculation": "Student picks 20 computing 7×7 - 29."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "A room has the shape of two connected rectangles. The first is 5 m × 4 m. The second is 3 m × 6 m. They share one wall that is 3 m long. What is the total floor area?",
-        "options": [
-            "32 sq m",
-            "35 sq m",
-            "38 sq m",
-            "44 sq m",
-            "48 sq m"
-        ],
-        "correct_answer": "38 sq m",
-        "ideal_solution": "Area 1: 5 × 4 = 20. Area 2: 3 × 6 = 18. Total: 20 + 18 = 38 sq m (shared wall doesn't affect area calculation). Socratic Hint: Add both rectangular areas.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 20 + 18 = 35 (wrong).",
-            "formula_misapplication": "Student picks 44 computing (5+3)×(4+6)/2.",
-            "premature_calculation": "Student picks 20 (first rectangle only)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A fence post is placed every 3 meters along a 24-meter side of a field. How many fence posts are needed for that side?",
-        "options": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "24"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "Number of gaps: 24 ÷ 3 = 8 gaps. Posts = gaps + 1 = 9. Socratic Hint: There's always one more post than the number of gaps.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 8 forgetting the extra post at the end.",
-            "formula_misapplication": "Student picks 24 counting one per meter.",
-            "premature_calculation": "Student picks 7 subtracting too much."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "What fraction is equivalent to 6/9?",
-        "options": [
-            "1/3",
-            "2/3",
-            "3/6",
-            "3/9",
-            "4/6"
-        ],
-        "correct_answer": "2/3",
-        "ideal_solution": "6/9: divide both by 3. 6÷3=2, 9÷3=3. So 6/9 = 2/3. Socratic Hint: Find the GCD and simplify.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 1/3 dividing numerator by 6.",
-            "formula_misapplication": "Student picks 3/6 just rearranging digits.",
-            "premature_calculation": "Student picks 3/9 dividing only the numerator."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "Jake walks 15 minutes to the store, spends 30 minutes shopping, and walks 15 minutes home. If he leaves at 10:00 AM, what time does he get home?",
-        "options": [
-            "10:30 AM",
-            "10:45 AM",
-            "11:00 AM",
-            "11:15 AM",
-            "11:30 AM"
-        ],
-        "correct_answer": "11:00 AM",
-        "ideal_solution": "Total time: 15 + 30 + 15 = 60 minutes = 1 hour. 10:00 + 1:00 = 11:00 AM. Socratic Hint: Add all the times together.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10:45 adding only walk + shop.",
-            "formula_misapplication": "Student picks 11:30 doubling the shopping time.",
-            "premature_calculation": "Student picks 10:30 adding only one walk."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 250 × 3?",
-        "options": [
-            "650",
-            "700",
-            "750",
-            "800",
-            "850"
-        ],
-        "correct_answer": "750",
-        "ideal_solution": "250 × 3 = 750. Think: 25 × 3 = 75, then add two zeros: 750. Or: 200×3=600, 50×3=150, 600+150=750.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 700 from rounding.",
-            "formula_misapplication": "Student picks 253 adding instead.",
-            "premature_calculation": "Student gets 600 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "In a class of 24 students, 1/4 are absent today. Of the present students, half are boys. How many boys are present?",
-        "options": [
-            "3",
-            "6",
-            "9",
-            "10",
-            "12"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "Absent: 1/4 of 24 = 6. Present: 24 - 6 = 18. Boys present: 18 ÷ 2 = 9. Socratic Hint: Find absent count, subtract from total, then take half.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 (the absent count).",
-            "formula_misapplication": "Student picks 12 computing half of 24 (ignores absences).",
-            "premature_calculation": "Student gets 24 - 6 = 18 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "number_theory",
-        "question": "How many factors does the number 24 have?",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "10",
-            "12"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. That's 8 factors. Socratic Hint: Try dividing 24 by 1, 2, 3, 4, etc.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6 missing some factors.",
-            "formula_misapplication": "Student picks 4 listing only 1, 2, 3, 4.",
-            "premature_calculation": "Student picks 12 without checking all."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A pool fills at 25 liters per minute. How long to fill a 300-liter pool?",
-        "options": [
-            "8 min",
-            "10 min",
-            "12 min",
-            "15 min",
-            "25 min"
-        ],
-        "correct_answer": "12 min",
-        "ideal_solution": "300 ÷ 25 = 12 minutes. Socratic Hint: Divide the total by the rate.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10 from wrong division.",
-            "formula_misapplication": "Student picks 25 confusing rate with time.",
-            "premature_calculation": "Student picks 15 from wrong calculation."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "A rectangle has an area of 72 sq cm. If the length is 2 times the width, what are the dimensions?",
-        "options": [
-            "3 cm × 24 cm",
-            "4 cm × 18 cm",
-            "6 cm × 12 cm",
-            "8 cm × 9 cm",
-            "12 cm × 6 cm"
-        ],
-        "correct_answer": "6 cm × 12 cm",
-        "ideal_solution": "Let width = w, length = 2w. Area = w × 2w = 2w² = 72. w² = 36, w = 6 cm. Length = 2 × 6 = 12 cm. Dimensions: 6 cm × 12 cm. Socratic Hint: Use the relationship between length and width to set up an equation.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4 × 18 (not ratio 1:2).",
-            "formula_misapplication": "Student picks 8 × 9 (correct area but wrong ratio).",
-            "premature_calculation": "Student picks 3 × 24 (correct area but wrong ratio)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "What is 3/4 + 1/4?",
-        "options": [
-            "1/2",
-            "3/8",
-            "4/4",
-            "4/8",
-            "3/16"
-        ],
-        "correct_answer": "4/4",
-        "ideal_solution": "Same denominator: 3/4 + 1/4 = 4/4 = 1 whole. Socratic Hint: Add the numerators when denominators match.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4/8 adding denominators too.",
-            "formula_misapplication": "Student picks 3/8 multiplying numerators.",
-            "premature_calculation": "Student picks 1/2 from wrong computation."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "Emma scores 85, 90, 78, and 92 on four tests. What is her average score?",
-        "options": [
-            "83.25",
-            "85",
-            "86.25",
-            "87.5",
-            "90"
-        ],
-        "correct_answer": "86.25",
-        "ideal_solution": "Sum: 85 + 90 + 78 + 92 = 345. Average: 345 ÷ 4 = 86.25. Socratic Hint: Add all scores, then divide by the number of tests.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 340 ÷ 4 = 85.",
-            "formula_misapplication": "Student picks 90 (the highest score).",
-            "premature_calculation": "Student adds 85+90=175 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 75 × 8?",
-        "options": [
-            "500",
-            "550",
-            "575",
-            "600",
-            "650"
-        ],
-        "correct_answer": "600",
-        "ideal_solution": "75 × 8: 70 × 8 = 560, 5 × 8 = 40. 560 + 40 = 600. Socratic Hint: Split into tens and ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 575 from wrong addition.",
-            "formula_misapplication": "Student gets 550 from wrong calculation.",
-            "premature_calculation": "Student gets 560 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A clock gains 5 minutes every hour. If it shows 12:00 noon when set correctly, what time will it show after 6 actual hours?",
-        "options": [
-            "6:00 PM",
-            "6:15 PM",
-            "6:30 PM",
-            "6:45 PM",
-            "7:00 PM"
-        ],
-        "correct_answer": "6:30 PM",
-        "ideal_solution": "In 6 hours, the clock gains 6 × 5 = 30 extra minutes. It shows: 6:00 PM + 30 min = 6:30 PM. Socratic Hint: Find total extra minutes gained, then add to the correct time.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 6:15 PM computing 6 × 5 = 30 but divides by 2.",
-            "formula_misapplication": "Student picks 7:00 PM adding 1 full hour.",
-            "premature_calculation": "Student picks 6:00 PM ignoring the gain."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "number_theory",
-        "question": "What is the sum of all factors of 12?",
-        "options": [
-            "16",
-            "24",
-            "28",
-            "36",
-            "40"
-        ],
-        "correct_answer": "28",
-        "ideal_solution": "Factors of 12: 1, 2, 3, 4, 6, 12. Sum: 1+2+3+4+6+12 = 28. Socratic Hint: List all factors first, then add.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 1+2+3+4+6+12 = 24 (wrong addition).",
-            "formula_misapplication": "Student picks 36 including 8 and 9 as factors.",
-            "premature_calculation": "Student lists 1, 2, 3, 4 and sums to 10."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A rope is cut into 5 equal pieces. Each piece is 12 cm plus a knot that uses 1 cm. The original rope was 65 cm. Is this possible?",
-        "options": [
-            "Yes, exactly",
-            "No, you need 60 cm",
-            "No, you need 70 cm",
-            "No, you need 65 cm but there aren't enough knots",
-            "Yes, with 0 cm left"
-        ],
-        "correct_answer": "Yes, exactly",
-        "ideal_solution": "Each piece uses 12 cm of rope + 1 cm for its knot = 13 cm per piece. 5 pieces × 13 cm = 65 cm. The original rope is 65 cm. Yes, exactly! Socratic Hint: Each piece includes the knot length.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 'No, you need 60 cm' forgetting the knots.",
-            "formula_misapplication": "Student picks 'No, you need 70 cm' computing 5 × 14.",
-            "premature_calculation": "Student computes 5 × 12 = 60 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "fractions",
-        "question": "What is 5/6 - 1/3?",
-        "options": [
-            "1/6",
-            "2/6",
-            "3/6",
-            "4/6",
-            "4/3"
-        ],
-        "correct_answer": "3/6",
-        "ideal_solution": "Convert 1/3 to sixths: 1/3 = 2/6. Now: 5/6 - 2/6 = 3/6 (= 1/2). Socratic Hint: Make the denominators the same first.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4/6 computing 5-1=4 without converting.",
-            "formula_misapplication": "Student picks 4/3 subtracting denominators.",
-            "premature_calculation": "Student picks 1/6 from wrong conversion."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "Ana is twice as old as her brother. In 5 years, she will be 21 years old. How old is her brother now?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "10"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Ana in 5 years: 21. Ana now: 21 - 5 = 16. Brother: 16 ÷ 2 = 8. Socratic Hint: Work backward from Anna's future age.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 10 computing 21 - 5 = 16, 16/2 = 10 (wrong).",
-            "formula_misapplication": "Student picks 6 computing 21 ÷ 2 ≈ 10, then 10 - 5 + 1.",
-            "premature_calculation": "Student gets 21 - 5 = 16 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "A square has an area of 49 sq cm. What is its perimeter?",
-        "options": [
-            "14 cm",
-            "21 cm",
-            "28 cm",
-            "35 cm",
-            "49 cm"
-        ],
-        "correct_answer": "28 cm",
-        "ideal_solution": "Side = √49 = 7 cm. Perimeter = 4 × 7 = 28 cm. Socratic Hint: Find the side length first (what × what = 49?), then multiply by 4.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 21 computing 3 × 7.",
-            "formula_misapplication": "Student picks 49 confusing area with perimeter.",
-            "premature_calculation": "Student gets side = 7 and picks 14 (2 sides only)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 99 × 7?",
-        "options": [
-            "663",
-            "683",
-            "693",
-            "703",
-            "793"
-        ],
-        "correct_answer": "693",
-        "ideal_solution": "99 × 7: 100 × 7 = 700, minus 1 × 7 = 7. 700 - 7 = 693. Socratic Hint: Multiply by 100 and subtract one group.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 700 - 7 = 683 (wrong).",
-            "formula_misapplication": "Student picks 703 adding instead of subtracting.",
-            "premature_calculation": "Student gets 700 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A bus starts with 15 passengers. At the first stop, 7 get off and 12 get on. At the second stop, 9 get off and 4 get on. How many passengers are on the bus now?",
-        "options": [
-            "13",
-            "15",
-            "17",
-            "19",
-            "21"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "Start: 15. After stop 1: 15 - 7 + 12 = 20. After stop 2: 20 - 9 + 4 = 15. Socratic Hint: Track passengers at each stop.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 20 - 9 + 4 = 17 (wrong).",
-            "formula_misapplication": "Student only tracks one stop: 15 - 7 + 12 = 20.",
-            "premature_calculation": "Student picks 13 from wrong calculation."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A book has 150 pages. Sarah reads 1/5 on Monday, 1/3 on Tuesday, and the rest on Wednesday. How many pages does she read on Wednesday?",
-        "options": [
-            "30",
-            "50",
-            "70",
-            "80",
-            "100"
-        ],
-        "correct_answer": "70",
-        "ideal_solution": "Monday: 150 ÷ 5 = 30 pages. Tuesday: 150 ÷ 3 = 50 pages. Read so far: 30 + 50 = 80. Wednesday: 150 - 80 = 70 pages. Socratic Hint: Find pages read each day, then subtract from total.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 80 (the pages already read).",
-            "formula_misapplication": "Student picks 50 (Tuesday's pages).",
-            "premature_calculation": "Student picks 30 (Monday's pages)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "arithmetic",
-        "question": "What is 48 × 7?",
-        "options": [
-            "326",
-            "330",
-            "336",
-            "340",
-            "346"
-        ],
-        "correct_answer": "336",
-        "ideal_solution": "48 × 7: 50 × 7 = 350, minus 2 × 7 = 14. 350 - 14 = 336. Socratic Hint: Round up to 50, multiply, then subtract.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 350 - 14 = 340 (wrong).",
-            "formula_misapplication": "Student gets 326 from wrong calculation.",
-            "premature_calculation": "Student gets 350 and stops."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "geometry",
-        "question": "Three squares, each with side 5 cm, are placed in a row sharing sides. What is the perimeter of the combined shape?",
-        "options": [
-            "30 cm",
-            "35 cm",
-            "40 cm",
-            "50 cm",
-            "60 cm"
-        ],
-        "correct_answer": "40 cm",
-        "ideal_solution": "Combined shape is a rectangle: 15 cm × 5 cm. Perimeter = 2(15 + 5) = 40 cm. Socratic Hint: Three squares in a row form a long rectangle.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 30 computing 6 × 5.",
-            "formula_misapplication": "Student picks 60 computing 3 × 20 (each square perimeter without removing shared sides).",
-            "premature_calculation": "Student picks 50 from wrong perimeter formula."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "number_theory",
-        "question": "What is the greatest common factor (GCF) of 18 and 24?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "6",
-            "12"
-        ],
-        "correct_answer": "6",
-        "ideal_solution": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common: 1, 2, 3, 6. Greatest: 6. Socratic Hint: List factors of each and find the largest in common.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 3 (a common factor, but not the greatest).",
-            "formula_misapplication": "Student picks 12 (a factor of 24 but not 18).",
-            "premature_calculation": "Student picks 2 (the smallest common factor)."
-        }
-    },
-    {
-        "grade": 3,
-        "level": 5,
-        "difficulty": "challenging",
-        "type": "logic",
-        "question": "A recipe serves 4 people. It needs 2 cups flour, 3 eggs, and 1 cup sugar. How much flour is needed to serve 12 people?",
-        "options": [
-            "4 cups",
-            "5 cups",
-            "6 cups",
-            "8 cups",
-            "12 cups"
-        ],
-        "correct_answer": "6 cups",
-        "ideal_solution": "Serving 12 people = 3 times the recipe (12 ÷ 4 = 3). Flour: 2 × 3 = 6 cups. Socratic Hint: How many times do you need to multiply the recipe?",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 4 cups computing 2 × 2.",
-            "formula_misapplication": "Student picks 12 computing 12 × 1.",
-            "premature_calculation": "Student picks 8 computing 2 × 4."
-        }
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A store sells packs of 6 pencils for $3 and single pencils for $1 each. What is the cheapest way to buy exactly 20 pencils?",
+    "options": [
+      "$8",
+      "$9",
+      "$10",
+      "$11",
+      "$20"
+    ],
+    "correct_answer": "$11",
+    "ideal_solution": "3 packs of 6 = 18 pencils for $9. Need 2 more single pencils at $1 each = $2. Total: $9 + $2 = $11. Socratic Hint: Buy as many packs as possible, then fill in singles.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks $10 miscounting pencils (3×6=18, need 2 more but thinks need 1).",
+      "formula_misapplication": "Student picks $20 buying all singles.",
+      "premature_calculation": "Student picks $9 (3 packs) forgetting the 2 extra."
     }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Ella has 3 times as many stickers as Ben. Together they have 48 stickers. How many stickers does Ben have?",
+    "options": [
+      "8",
+      "12",
+      "16",
+      "24",
+      "36"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Let Ben = x. Ella = 3x. Total: x + 3x = 4x = 48. x = 12. Ben has 12 stickers. Socratic Hint: If you add Ben's share and Ella's share (3 times Ben's), what do you get?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 16 computing 48 ÷ 3.",
+      "formula_misapplication": "Student picks 36 giving Ella's amount instead.",
+      "premature_calculation": "Student picks 24 computing 48 ÷ 2."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 45 × 6?",
+    "options": [
+      "240",
+      "250",
+      "260",
+      "270",
+      "280"
+    ],
+    "correct_answer": "270",
+    "ideal_solution": "45 × 6: 40 × 6 = 240, 5 × 6 = 30. 240 + 30 = 270. Socratic Hint: Break 45 into 40 + 5.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 260 from wrong addition.",
+      "formula_misapplication": "Student picks 250 from rounding.",
+      "premature_calculation": "Student computes 40 × 6 = 240 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 37 × 8?",
+    "options": [
+      "276",
+      "286",
+      "296",
+      "306",
+      "316"
+    ],
+    "correct_answer": "296",
+    "ideal_solution": "37 × 8: 30 × 8 = 240, 7 × 8 = 56. 240 + 56 = 296. Socratic Hint: Split into tens and ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 286 adding 240 + 46.",
+      "formula_misapplication": "Student gets 306 from wrong tens digit.",
+      "premature_calculation": "Student gets 240 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "A tank is 2/5 full. It holds 60 liters when full. How many more liters are needed to fill it?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "Currently has: 2/5 of 60 = 24 liters. Needs: 60 - 24 = 36 liters more. Socratic Hint: Find how much is in the tank, then subtract from full.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 24 (what's in the tank, not what's needed).",
+      "formula_misapplication": "Student picks 48 computing 4/5 of 60.",
+      "premature_calculation": "Student picks 12 computing 1/5 of 60."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A store sells apples at $2 each, bananas at $1 each, and oranges at $3 each. Tim buys 4 apples, 5 bananas, and 2 oranges. How much does he spend?",
+    "options": [
+      "$11",
+      "$14",
+      "$17",
+      "$19",
+      "$22"
+    ],
+    "correct_answer": "$19",
+    "ideal_solution": "Apples: 4 × $2 = $8. Bananas: 5 × $1 = $5. Oranges: 2 × $3 = $6. Total: 8 + 5 + 6 = $19. Socratic Hint: Calculate each fruit cost, then add all.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 8 + 5 + 6 = 17 (wrong).",
+      "formula_misapplication": "Student picks $11 computing 4+5+2.",
+      "premature_calculation": "Student gets 8 + 5 = 13 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangular room is 8 m by 6 m. A 2 m × 3 m rug is placed in the center. What area of the floor is NOT covered by the rug?",
+    "options": [
+      "36 sq m",
+      "38 sq m",
+      "40 sq m",
+      "42 sq m",
+      "48 sq m"
+    ],
+    "correct_answer": "42 sq m",
+    "ideal_solution": "Room area: 8 × 6 = 48. Rug area: 2 × 3 = 6. Uncovered: 48 - 6 = 42 sq m. Socratic Hint: Subtract the rug area from the room area.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 48 - 6 = 40 (wrong).",
+      "formula_misapplication": "Student picks 48 forgetting to subtract the rug.",
+      "premature_calculation": "Student picks 36 from wrong calculation."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "Which is greater: 5/6 or 7/8?",
+    "options": [
+      "5/6",
+      "7/8",
+      "They are equal",
+      "Cannot tell",
+      "Neither"
+    ],
+    "correct_answer": "7/8",
+    "ideal_solution": "Find common denominator 24: 5/6 = 20/24, 7/8 = 21/24. Since 21 > 20, 7/8 > 5/6. Socratic Hint: Convert to the same denominator.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 5/6 because 5+6=11 > 7+8=15 (nonsense logic).",
+      "formula_misapplication": "Student picks 'They are equal' without computing.",
+      "premature_calculation": "Student picks 'Cannot tell' without trying."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A library lends 125 books per day for 4 days, and 98 books on the 5th day. How many books were lent in total?",
+    "options": [
+      "523",
+      "548",
+      "580",
+      "598",
+      "625"
+    ],
+    "correct_answer": "598",
+    "ideal_solution": "First 4 days: 125 × 4 = 500. 5th day: 98. Total: 500 + 98 = 598. Socratic Hint: Find the 4-day total first, then add the 5th day.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 500 + 98 = 580 (wrong).",
+      "formula_misapplication": "Student computes 125 × 5 = 625 (assumes all days equal).",
+      "premature_calculation": "Student gets 125 × 4 = 500 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "A number is divisible by both 4 and 5. What is the smallest such positive number?",
+    "options": [
+      "9",
+      "10",
+      "15",
+      "20",
+      "40"
+    ],
+    "correct_answer": "20",
+    "ideal_solution": "LCM(4,5) = 20. Check: 20 ÷ 4 = 5 ✓, 20 ÷ 5 = 4 ✓. Socratic Hint: List multiples of each until you find a common one.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10 (multiple of 5 but not 4).",
+      "formula_misapplication": "Student picks 9 computing 4+5.",
+      "premature_calculation": "Student picks 40 (LCM × 2)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Mom bakes 60 cookies. She gives 1/3 to the neighbors, 1/4 to the school, and keeps the rest. How many does she keep?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_answer": "25",
+    "ideal_solution": "Neighbors: 60 ÷ 3 = 20. School: 60 ÷ 4 = 15. Given: 20 + 15 = 35. Kept: 60 - 35 = 25. Socratic Hint: Find what was given away, then subtract from total.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 60 - 35 = 20 (wrong subtraction).",
+      "formula_misapplication": "Student picks 20 (neighbors only) or 15 (school only).",
+      "premature_calculation": "Student picks 5 computing 60÷12."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangular tile is 3 cm by 4 cm. How many tiles are needed to cover a floor that is 12 cm by 8 cm?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Floor area: 12 × 8 = 96 sq cm. Tile area: 3 × 4 = 12 sq cm. Tiles needed: 96 ÷ 12 = 8. Socratic Hint: Divide the floor area by the tile area.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 from wrong division.",
+      "formula_misapplication": "Student picks 4 computing 12÷3.",
+      "premature_calculation": "Student computes floor area = 96 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 56 × 4?",
+    "options": [
+      "204",
+      "214",
+      "220",
+      "224",
+      "234"
+    ],
+    "correct_answer": "224",
+    "ideal_solution": "56 × 4: 50 × 4 = 200, 6 × 4 = 24. 200 + 24 = 224. Socratic Hint: Split into tens and ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 220 from rounding down.",
+      "formula_misapplication": "Student gets 214 from wrong ones calculation.",
+      "premature_calculation": "Student gets 200 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A garden is 15 m by 10 m. A path 1 m wide runs around the inside of the garden (reducing the planting area). What is the planting area?",
+    "options": [
+      "96 sq m",
+      "100 sq m",
+      "104 sq m",
+      "120 sq m",
+      "150 sq m"
+    ],
+    "correct_answer": "104 sq m",
+    "ideal_solution": "Inner dimensions: (15-2) × (10-2) = 13 × 8 = 104 sq m. The path reduces each dimension by 2 (1m on each side). Socratic Hint: Subtract 2 from length and width (1m on each end).",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 13 × 8 = 96 (wrong multiplication).",
+      "formula_misapplication": "Student picks 120 subtracting path area differently: 150 - 30.",
+      "premature_calculation": "Student computes 15 × 10 = 150 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "Arrange in order from least to greatest: 3/5, 1/2, 7/10.",
+    "options": [
+      "1/2, 3/5, 7/10",
+      "3/5, 1/2, 7/10",
+      "7/10, 3/5, 1/2",
+      "1/2, 7/10, 3/5",
+      "3/5, 7/10, 1/2"
+    ],
+    "correct_answer": "1/2, 3/5, 7/10",
+    "ideal_solution": "Convert to tenths: 3/5 = 6/10, 1/2 = 5/10, 7/10 = 7/10. Order: 5/10, 6/10, 7/10 = 1/2, 3/5, 7/10. Socratic Hint: Use a common denominator of 10.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3/5, 1/2, 7/10 (puts 3/5 before 1/2).",
+      "formula_misapplication": "Student picks 7/10, 3/5, 1/2 (greatest to least).",
+      "premature_calculation": "Student picks 1/2, 7/10, 3/5."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "At a party, each guest gets 3 cookies, 2 juice boxes, and 1 party hat. There are 15 guests. How many items are needed in total?",
+    "options": [
+      "6",
+      "45",
+      "60",
+      "75",
+      "90"
+    ],
+    "correct_answer": "90",
+    "ideal_solution": "Per guest: 3 + 2 + 1 = 6 items. For 15 guests: 15 × 6 = 90. Socratic Hint: Find items per guest, then multiply.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 75 computing 15 × 5.",
+      "formula_misapplication": "Student picks 45 computing 15 × 3.",
+      "premature_calculation": "Student gets 3+2+1=6 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 125 × 4?",
+    "options": [
+      "400",
+      "425",
+      "450",
+      "475",
+      "500"
+    ],
+    "correct_answer": "500",
+    "ideal_solution": "125 × 4 = 500. Think: 100 × 4 = 400, 25 × 4 = 100. 400 + 100 = 500. Socratic Hint: Break 125 into 100 + 25.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 475 from wrong addition.",
+      "formula_misapplication": "Student picks 400 computing only 100 × 4.",
+      "premature_calculation": "Student picks 425 adding 25 instead of 100."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the result: 4 × 4 × 4 = ?",
+    "options": [
+      "12",
+      "16",
+      "48",
+      "64",
+      "128"
+    ],
+    "correct_answer": "64",
+    "ideal_solution": "4 × 4 = 16. 16 × 4 = 64. Socratic Hint: Multiply step by step.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 48 computing 4 × 12.",
+      "formula_misapplication": "Student picks 12 computing 4 + 4 + 4.",
+      "premature_calculation": "Student picks 16 computing only 4 × 4."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "5 children share some candy equally. Each child gets 7 pieces and 3 pieces are left over. How many pieces of candy were there altogether?",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "40"
+    ],
+    "correct_answer": "38",
+    "ideal_solution": "Shared: 5 × 7 = 35 pieces. Plus leftover: 35 + 3 = 38. Socratic Hint: Multiply children by pieces each, then add leftovers.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 35 forgetting the leftovers.",
+      "formula_misapplication": "Student picks 36 computing 5 × 7 + 1.",
+      "premature_calculation": "Student picks 40 computing 5 × 8."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A picture frame is rectangular. The outside is 10 cm × 8 cm. The frame is 1 cm wide on all sides. What is the area of the picture inside?",
+    "options": [
+      "36 sq cm",
+      "42 sq cm",
+      "48 sq cm",
+      "56 sq cm",
+      "80 sq cm"
+    ],
+    "correct_answer": "48 sq cm",
+    "ideal_solution": "Inside dimensions: (10-2) × (8-2) = 8 × 6 = 48 sq cm. Socratic Hint: The frame takes 1 cm from each side (2 cm total per dimension).",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 8 × 6 = 42 (wrong).",
+      "formula_misapplication": "Student picks 56 subtracting only 1 from each dimension.",
+      "premature_calculation": "Student computes 10 × 8 = 80 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "A pizza has 12 slices. Tom eats 1/3 and Sarah eats 1/4. What fraction of the pizza is left?",
+    "options": [
+      "1/12",
+      "3/12",
+      "5/12",
+      "7/12",
+      "9/12"
+    ],
+    "correct_answer": "5/12",
+    "ideal_solution": "Tom: 1/3 = 4/12. Sarah: 1/4 = 3/12. Eaten: 4/12 + 3/12 = 7/12. Left: 12/12 - 7/12 = 5/12. Socratic Hint: Convert to twelfths, add what's eaten, subtract from whole.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 7/12 (what was eaten, not what's left).",
+      "formula_misapplication": "Student picks 1/12 computing 1/3 - 1/4.",
+      "premature_calculation": "Student picks 9/12 computing 12/12 - 3/12."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A school has 180 students. 2/9 of them walk to school, 1/3 ride the bus, and the rest are driven by parents. How many are driven by parents?",
+    "options": [
+      "20",
+      "40",
+      "60",
+      "80",
+      "100"
+    ],
+    "correct_answer": "80",
+    "ideal_solution": "Walk: 180 × 2/9 = 40. Bus: 180 × 1/3 = 60. Walk + Bus = 100. Driven: 180 - 100 = 80. Socratic Hint: Find each group, subtract from total.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 180 - 100 = 60 (wrong).",
+      "formula_misapplication": "Student picks 60 (bus riders, not driven).",
+      "premature_calculation": "Student picks 40 (walkers only)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 68 × 5?",
+    "options": [
+      "300",
+      "320",
+      "340",
+      "350",
+      "380"
+    ],
+    "correct_answer": "340",
+    "ideal_solution": "68 × 5: 70 × 5 = 350, minus 2 × 5 = 10. 350 - 10 = 340. Socratic Hint: Multiply by a nearby round number and adjust.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 350 not subtracting 10.",
+      "formula_misapplication": "Student gets 320 from wrong calculation.",
+      "premature_calculation": "Student gets 60 × 5 = 300 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What are the first 3 common multiples of 3 and 5?",
+    "options": [
+      "3, 5, 15",
+      "15, 30, 45",
+      "15, 25, 35",
+      "8, 15, 30",
+      "5, 10, 15"
+    ],
+    "correct_answer": "15, 30, 45",
+    "ideal_solution": "Multiples of 15 (LCM of 3 and 5): 15, 30, 45. Socratic Hint: The LCM of 3 and 5 is 15. Common multiples are multiples of the LCM.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks '3, 5, 15' (includes non-common multiples).",
+      "formula_misapplication": "Student picks '15, 25, 35' (multiples of 5 only from 15).",
+      "premature_calculation": "Student picks '5, 10, 15' (multiples of 5)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A farmer plants trees in a square pattern: 7 rows with 7 trees in each row. How many trees are on the border (outside edge)?",
+    "options": [
+      "20",
+      "24",
+      "28",
+      "32",
+      "49"
+    ],
+    "correct_answer": "24",
+    "ideal_solution": "Border: 4 × 7 = 28, but corners are counted twice. Subtract 4 corners: 28 - 4 = 24. Or: 4 × (7-1) = 24. Socratic Hint: Count each side, but don't double-count the corners.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 28 not subtracting corners.",
+      "formula_misapplication": "Student picks 49 counting all trees.",
+      "premature_calculation": "Student picks 20 computing 7×7 - 29."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A room has the shape of two connected rectangles. The first is 5 m × 4 m. The second is 3 m × 6 m. They share one wall that is 3 m long. What is the total floor area?",
+    "options": [
+      "32 sq m",
+      "35 sq m",
+      "38 sq m",
+      "44 sq m",
+      "48 sq m"
+    ],
+    "correct_answer": "38 sq m",
+    "ideal_solution": "Area 1: 5 × 4 = 20. Area 2: 3 × 6 = 18. Total: 20 + 18 = 38 sq m (shared wall doesn't affect area calculation). Socratic Hint: Add both rectangular areas.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 20 + 18 = 35 (wrong).",
+      "formula_misapplication": "Student picks 44 computing (5+3)×(4+6)/2.",
+      "premature_calculation": "Student picks 20 (first rectangle only)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A fence post is placed every 3 meters along a 24-meter side of a field. How many fence posts are needed for that side?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "24"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "Number of gaps: 24 ÷ 3 = 8 gaps. Posts = gaps + 1 = 9. Socratic Hint: There's always one more post than the number of gaps.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 8 forgetting the extra post at the end.",
+      "formula_misapplication": "Student picks 24 counting one per meter.",
+      "premature_calculation": "Student picks 7 subtracting too much."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "What fraction is equivalent to 6/9?",
+    "options": [
+      "1/3",
+      "2/3",
+      "3/6",
+      "3/9",
+      "4/6"
+    ],
+    "correct_answer": "2/3",
+    "ideal_solution": "6/9: divide both by 3. 6÷3=2, 9÷3=3. So 6/9 = 2/3. Socratic Hint: Find the GCD and simplify.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 1/3 dividing numerator by 6.",
+      "formula_misapplication": "Student picks 3/6 just rearranging digits.",
+      "premature_calculation": "Student picks 3/9 dividing only the numerator."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Jake walks 15 minutes to the store, spends 30 minutes shopping, and walks 15 minutes home. If he leaves at 10:00 AM, what time does he get home?",
+    "options": [
+      "10:30 AM",
+      "10:45 AM",
+      "11:00 AM",
+      "11:15 AM",
+      "11:30 AM"
+    ],
+    "correct_answer": "11:00 AM",
+    "ideal_solution": "Total time: 15 + 30 + 15 = 60 minutes = 1 hour. 10:00 + 1:00 = 11:00 AM. Socratic Hint: Add all the times together.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10:45 adding only walk + shop.",
+      "formula_misapplication": "Student picks 11:30 doubling the shopping time.",
+      "premature_calculation": "Student picks 10:30 adding only one walk."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 250 × 3?",
+    "options": [
+      "650",
+      "700",
+      "750",
+      "800",
+      "850"
+    ],
+    "correct_answer": "750",
+    "ideal_solution": "250 × 3 = 750. Think: 25 × 3 = 75, then add two zeros: 750. Or: 200×3=600, 50×3=150, 600+150=750.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 700 from rounding.",
+      "formula_misapplication": "Student picks 253 adding instead.",
+      "premature_calculation": "Student gets 600 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "In a class of 24 students, 1/4 are absent today. Of the present students, half are boys. How many boys are present?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "Absent: 1/4 of 24 = 6. Present: 24 - 6 = 18. Boys present: 18 ÷ 2 = 9. Socratic Hint: Find absent count, subtract from total, then take half.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 (the absent count).",
+      "formula_misapplication": "Student picks 12 computing half of 24 (ignores absences).",
+      "premature_calculation": "Student gets 24 - 6 = 18 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "How many factors does the number 24 have?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. That's 8 factors. Socratic Hint: Try dividing 24 by 1, 2, 3, 4, etc.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6 missing some factors.",
+      "formula_misapplication": "Student picks 4 listing only 1, 2, 3, 4.",
+      "premature_calculation": "Student picks 12 without checking all."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A pool fills at 25 liters per minute. How long to fill a 300-liter pool?",
+    "options": [
+      "8 min",
+      "10 min",
+      "12 min",
+      "15 min",
+      "25 min"
+    ],
+    "correct_answer": "12 min",
+    "ideal_solution": "300 ÷ 25 = 12 minutes. Socratic Hint: Divide the total by the rate.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10 from wrong division.",
+      "formula_misapplication": "Student picks 25 confusing rate with time.",
+      "premature_calculation": "Student picks 15 from wrong calculation."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangle has an area of 72 sq cm. If the length is 2 times the width, what are the dimensions?",
+    "options": [
+      "3 cm × 24 cm",
+      "4 cm × 18 cm",
+      "6 cm × 12 cm",
+      "8 cm × 9 cm",
+      "12 cm × 6 cm"
+    ],
+    "correct_answer": "6 cm × 12 cm",
+    "ideal_solution": "Let width = w, length = 2w. Area = w × 2w = 2w² = 72. w² = 36, w = 6 cm. Length = 2 × 6 = 12 cm. Dimensions: 6 cm × 12 cm. Socratic Hint: Use the relationship between length and width to set up an equation.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4 × 18 (not ratio 1:2).",
+      "formula_misapplication": "Student picks 8 × 9 (correct area but wrong ratio).",
+      "premature_calculation": "Student picks 3 × 24 (correct area but wrong ratio)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "What is 3/4 + 1/4?",
+    "options": [
+      "1/2",
+      "3/8",
+      "4/4",
+      "4/8",
+      "3/16"
+    ],
+    "correct_answer": "4/4",
+    "ideal_solution": "Same denominator: 3/4 + 1/4 = 4/4 = 1 whole. Socratic Hint: Add the numerators when denominators match.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4/8 adding denominators too.",
+      "formula_misapplication": "Student picks 3/8 multiplying numerators.",
+      "premature_calculation": "Student picks 1/2 from wrong computation."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Emma scores 85, 90, 78, and 92 on four tests. What is her average score?",
+    "options": [
+      "83.25",
+      "85",
+      "86.25",
+      "87.5",
+      "90"
+    ],
+    "correct_answer": "86.25",
+    "ideal_solution": "Sum: 85 + 90 + 78 + 92 = 345. Average: 345 ÷ 4 = 86.25. Socratic Hint: Add all scores, then divide by the number of tests.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 340 ÷ 4 = 85.",
+      "formula_misapplication": "Student picks 90 (the highest score).",
+      "premature_calculation": "Student adds 85+90=175 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 75 × 8?",
+    "options": [
+      "500",
+      "550",
+      "575",
+      "600",
+      "650"
+    ],
+    "correct_answer": "600",
+    "ideal_solution": "75 × 8: 70 × 8 = 560, 5 × 8 = 40. 560 + 40 = 600. Socratic Hint: Split into tens and ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 575 from wrong addition.",
+      "formula_misapplication": "Student gets 550 from wrong calculation.",
+      "premature_calculation": "Student gets 560 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A clock gains 5 minutes every hour. If it shows 12:00 noon when set correctly, what time will it show after 6 actual hours?",
+    "options": [
+      "6:00 PM",
+      "6:15 PM",
+      "6:30 PM",
+      "6:45 PM",
+      "7:00 PM"
+    ],
+    "correct_answer": "6:30 PM",
+    "ideal_solution": "In 6 hours, the clock gains 6 × 5 = 30 extra minutes. It shows: 6:00 PM + 30 min = 6:30 PM. Socratic Hint: Find total extra minutes gained, then add to the correct time.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 6:15 PM computing 6 × 5 = 30 but divides by 2.",
+      "formula_misapplication": "Student picks 7:00 PM adding 1 full hour.",
+      "premature_calculation": "Student picks 6:00 PM ignoring the gain."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the sum of all factors of 12?",
+    "options": [
+      "16",
+      "24",
+      "28",
+      "36",
+      "40"
+    ],
+    "correct_answer": "28",
+    "ideal_solution": "Factors of 12: 1, 2, 3, 4, 6, 12. Sum: 1+2+3+4+6+12 = 28. Socratic Hint: List all factors first, then add.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 1+2+3+4+6+12 = 24 (wrong addition).",
+      "formula_misapplication": "Student picks 36 including 8 and 9 as factors.",
+      "premature_calculation": "Student lists 1, 2, 3, 4 and sums to 10."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A rope is cut into 5 equal pieces. Each piece is 12 cm plus a knot that uses 1 cm. The original rope was 65 cm. Is this possible?",
+    "options": [
+      "Yes, exactly",
+      "No, you need 60 cm",
+      "No, you need 70 cm",
+      "No, you need 65 cm but there aren't enough knots",
+      "Yes, with 0 cm left"
+    ],
+    "correct_answer": "Yes, exactly",
+    "ideal_solution": "Each piece uses 12 cm of rope + 1 cm for its knot = 13 cm per piece. 5 pieces × 13 cm = 65 cm. The original rope is 65 cm. Yes, exactly! Socratic Hint: Each piece includes the knot length.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 'No, you need 60 cm' forgetting the knots.",
+      "formula_misapplication": "Student picks 'No, you need 70 cm' computing 5 × 14.",
+      "premature_calculation": "Student computes 5 × 12 = 60 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "fractions",
+    "question": "What is 5/6 - 1/3?",
+    "options": [
+      "1/6",
+      "2/6",
+      "3/6",
+      "4/6",
+      "4/3"
+    ],
+    "correct_answer": "3/6",
+    "ideal_solution": "Convert 1/3 to sixths: 1/3 = 2/6. Now: 5/6 - 2/6 = 3/6 (= 1/2). Socratic Hint: Make the denominators the same first.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4/6 computing 5-1=4 without converting.",
+      "formula_misapplication": "Student picks 4/3 subtracting denominators.",
+      "premature_calculation": "Student picks 1/6 from wrong conversion."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Ana is twice as old as her brother. In 5 years, she will be 21 years old. How old is her brother now?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Ana in 5 years: 21. Ana now: 21 - 5 = 16. Brother: 16 ÷ 2 = 8. Socratic Hint: Work backward from Anna's future age.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 10 computing 21 - 5 = 16, 16/2 = 10 (wrong).",
+      "formula_misapplication": "Student picks 6 computing 21 ÷ 2 ≈ 10, then 10 - 5 + 1.",
+      "premature_calculation": "Student gets 21 - 5 = 16 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A square has an area of 49 sq cm. What is its perimeter?",
+    "options": [
+      "14 cm",
+      "21 cm",
+      "28 cm",
+      "35 cm",
+      "49 cm"
+    ],
+    "correct_answer": "28 cm",
+    "ideal_solution": "Side = √49 = 7 cm. Perimeter = 4 × 7 = 28 cm. Socratic Hint: Find the side length first (what × what = 49?), then multiply by 4.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 21 computing 3 × 7.",
+      "formula_misapplication": "Student picks 49 confusing area with perimeter.",
+      "premature_calculation": "Student gets side = 7 and picks 14 (2 sides only)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 99 × 7?",
+    "options": [
+      "663",
+      "683",
+      "693",
+      "703",
+      "793"
+    ],
+    "correct_answer": "693",
+    "ideal_solution": "99 × 7: 100 × 7 = 700, minus 1 × 7 = 7. 700 - 7 = 693. Socratic Hint: Multiply by 100 and subtract one group.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 700 - 7 = 683 (wrong).",
+      "formula_misapplication": "Student picks 703 adding instead of subtracting.",
+      "premature_calculation": "Student gets 700 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A bus starts with 15 passengers. At the first stop, 7 get off and 12 get on. At the second stop, 9 get off and 4 get on. How many passengers are on the bus now?",
+    "options": [
+      "13",
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "Start: 15. After stop 1: 15 - 7 + 12 = 20. After stop 2: 20 - 9 + 4 = 15. Socratic Hint: Track passengers at each stop.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 20 - 9 + 4 = 17 (wrong).",
+      "formula_misapplication": "Student only tracks one stop: 15 - 7 + 12 = 20.",
+      "premature_calculation": "Student picks 13 from wrong calculation."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A book has 150 pages. Sarah reads 1/5 on Monday, 1/3 on Tuesday, and the rest on Wednesday. How many pages does she read on Wednesday?",
+    "options": [
+      "30",
+      "50",
+      "70",
+      "80",
+      "100"
+    ],
+    "correct_answer": "70",
+    "ideal_solution": "Monday: 150 ÷ 5 = 30 pages. Tuesday: 150 ÷ 3 = 50 pages. Read so far: 30 + 50 = 80. Wednesday: 150 - 80 = 70 pages. Socratic Hint: Find pages read each day, then subtract from total.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 80 (the pages already read).",
+      "formula_misapplication": "Student picks 50 (Tuesday's pages).",
+      "premature_calculation": "Student picks 30 (Monday's pages)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 48 × 7?",
+    "options": [
+      "326",
+      "330",
+      "336",
+      "340",
+      "346"
+    ],
+    "correct_answer": "336",
+    "ideal_solution": "48 × 7: 50 × 7 = 350, minus 2 × 7 = 14. 350 - 14 = 336. Socratic Hint: Round up to 50, multiply, then subtract.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 350 - 14 = 340 (wrong).",
+      "formula_misapplication": "Student gets 326 from wrong calculation.",
+      "premature_calculation": "Student gets 350 and stops."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "Three squares, each with side 5 cm, are placed in a row sharing sides. What is the perimeter of the combined shape?",
+    "options": [
+      "30 cm",
+      "35 cm",
+      "40 cm",
+      "50 cm",
+      "60 cm"
+    ],
+    "correct_answer": "40 cm",
+    "ideal_solution": "Combined shape is a rectangle: 15 cm × 5 cm. Perimeter = 2(15 + 5) = 40 cm. Socratic Hint: Three squares in a row form a long rectangle.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 30 computing 6 × 5.",
+      "formula_misapplication": "Student picks 60 computing 3 × 20 (each square perimeter without removing shared sides).",
+      "premature_calculation": "Student picks 50 from wrong perimeter formula."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the greatest common factor (GCF) of 18 and 24?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct_answer": "6",
+    "ideal_solution": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common: 1, 2, 3, 6. Greatest: 6. Socratic Hint: List factors of each and find the largest in common.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 3 (a common factor, but not the greatest).",
+      "formula_misapplication": "Student picks 12 (a factor of 24 but not 18).",
+      "premature_calculation": "Student picks 2 (the smallest common factor)."
+    }
+  },
+  {
+    "grade": 3,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A recipe serves 4 people. It needs 2 cups flour, 3 eggs, and 1 cup sugar. How much flour is needed to serve 12 people?",
+    "options": [
+      "4 cups",
+      "5 cups",
+      "6 cups",
+      "8 cups",
+      "12 cups"
+    ],
+    "correct_answer": "6 cups",
+    "ideal_solution": "Serving 12 people = 3 times the recipe (12 ÷ 4 = 3). Flour: 2 × 3 = 6 cups. Socratic Hint: How many times do you need to multiply the recipe?",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 4 cups computing 2 × 2.",
+      "formula_misapplication": "Student picks 12 computing 12 × 1.",
+      "premature_calculation": "Student picks 8 computing 2 × 4."
+    }
+  }
 ]

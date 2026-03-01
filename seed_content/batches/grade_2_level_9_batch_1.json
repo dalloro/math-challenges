@@ -1,1174 +1,1174 @@
 [
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A book has 120 pages. You read 10 pages every night. How many nights to finish?",
-        "options": [
-            "10",
-            "11",
-            "12",
-            "15",
-            "20"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "120 divided by 10 = 12. Socratic Hint: Count by 10s until you hit 120.",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 10.",
-            "formula_misapplication": "Student guesses 15.",
-            "converse_error": "Student guesses 11."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 7 × 10?",
-        "options": [
-            "17",
-            "60",
-            "70",
-            "77",
-            "700"
-        ],
-        "correct_answer": "70",
-        "ideal_solution": "7 groups of 10 is 70. Socratic Hint: Just put a zero on the 7.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 17.",
-            "converse_error": "Student guesses 700.",
-            "arithmetic_slip": "Student guesses 60."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Subtract: 250 - 55",
-        "options": [
-            "105",
-            "195",
-            "205",
-            "215",
-            "305"
-        ],
-        "correct_answer": "195",
-        "ideal_solution": "250 - 50 = 200. 200 - 5 = 195. Socratic Hint: Take away 50 first.",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 205.",
-            "formula_misapplication": "Student adds: 305.",
-            "off_by_one": "Student guesses 195 (correct), wait, off by one is 215."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "If you cut a long rope into 5 sections, how many cuts do you make?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "10"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "1 cut makes 2 pieces. 2 cuts make 3. 3 cuts make 4. 4 cuts make 5. Socratic Hint: Draw a line and put slashes through it.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 5.",
-            "arithmetic_slip": "Student guesses 6.",
-            "converse_error": "Student guesses 3."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "geometry",
-        "question": "Which of these shapes has exactly 3 vertices?",
-        "options": [
-            "Square",
-            "Circle",
-            "Pentagon",
-            "Triangle",
-            "Hexagon"
-        ],
-        "correct_answer": "Triangle",
-        "ideal_solution": "Vertices means corners. A triangle has 3 corners. Socratic Hint: 'Tri' means 3.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses Square.",
-            "converse_error": "Student guesses Pentagon.",
-            "arithmetic_slip": "Student guesses Hexagon."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Fill in the blank: 80 - 15 = ___ + 15",
-        "options": [
-            "35",
-            "50",
-            "65",
-            "80",
-            "95"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "Left side: 80 - 15 = 65. Right side must be 65. What + 15 = 65? 50. Socratic Hint: Solve the left part first. Then figure out what goes in the blank.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 65 (just answers the left side).",
-            "arithmetic_slip": "Student guesses 80.",
-            "converse_error": "Student guesses 35."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Anna has twice as many stickers as Ben. Ben has 12 stickers. How many do they have TOGETHER?",
-        "options": [
-            "12",
-            "24",
-            "30",
-            "36",
-            "48"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "Ben = 12. Anna = 12 × 2 = 24. Together = 12 + 24 = 36. Socratic Hint: Find Anna's amount first, then add them both up.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 24 (just Anna's amount).",
-            "arithmetic_slip": "Student guesses 30.",
-            "converse_error": "Student guesses 48."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 40 ÷ 5?",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Count by 5s to 40. 5, 10, 15, 20, 25, 30, 35, 40 -> 8 times. Socratic Hint: How many 5s fit in 40?",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 7.",
-            "formula_misapplication": "Student guesses 9.",
-            "converse_error": "Student guesses 10."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "You leave school at 3:30. The walk home takes 25 minutes. What time do you get home?",
-        "options": [
-            "3:45",
-            "3:55",
-            "4:00",
-            "4:05",
-            "4:15"
-        ],
-        "correct_answer": "3:55",
-        "ideal_solution": "30 + 25 = 55. 3:55. Socratic Hint: Just add 25 to the minutes.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 4:05 (rolls over incorrectly).",
-            "arithmetic_slip": "Student guesses 4:00.",
-            "converse_error": "Student guesses 3:45."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Add: 25 + 25 + 25 + 25",
-        "options": [
-            "50",
-            "75",
-            "100",
-            "125",
-            "150"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "4 quarters make a dollar (100). Socratic Hint: Think about quarters!",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 75.",
-            "formula_misapplication": "Student guesses 125.",
-            "converse_error": "Student guesses 50."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Which of these weights is the heaviest?",
-        "options": [
-            "5 pounds",
-            "12 pounds",
-            "9 pounds",
-            "15 pounds",
-            "3 pounds"
-        ],
-        "correct_answer": "15 pounds",
-        "ideal_solution": "15 is the biggest number. Socratic Hint: Look for the highest number.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 12 pounds.",
-            "converse_error": "Student guesses 5 pounds.",
-            "arithmetic_slip": "Student guesses 9 pounds."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "If 7 + 3 = 10, what is 70 + 30?",
-        "options": [
-            "10",
-            "100",
-            "110",
-            "730",
-            "1000"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "Just add a zero to the 10. Makes 100. Socratic Hint: 7 tens + 3 tens = 10 tens.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 110.",
-            "converse_error": "Student gets 1000.",
-            "arithmetic_slip": "Student gets 730."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "I am thinking of a shape. It has NO straight sides. What could it be?",
-        "options": [
-            "Triangle",
-            "Square",
-            "Hexagon",
-            "Circle",
-            "Rectangle"
-        ],
-        "correct_answer": "Circle",
-        "ideal_solution": "A circle is perfectly curved. Socratic Hint: What shape drops and rolls?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses Square.",
-            "converse_error": "Student guesses Triangle.",
-            "arithmetic_slip": "Student guesses Pentagon."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 100 - 90?",
-        "options": [
-            "0",
-            "9",
-            "10",
-            "11",
-            "90"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "10 tens - 9 tens = 1 ten (10). Socratic Hint: Count up from 90 to 100.",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 9.",
-            "formula_misapplication": "Student guesses 11.",
-            "converse_error": "Student guesses 0."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Every spider has 8 legs. If you see 24 legs on the wall, how many spiders are there?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "5",
-            "8"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "8 + 8 = 16. 16 + 8 = 24. 3 spiders. Socratic Hint: Count by 8s.",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 4.",
-            "formula_misapplication": "Student guesses 8.",
-            "converse_error": "Student guesses 2."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is half of 44?",
-        "options": [
-            "20",
-            "22",
-            "24",
-            "40",
-            "88"
-        ],
-        "correct_answer": "22",
-        "ideal_solution": "Half of 4 = 2. Half of 40 = 20. Total = 22. Socratic Hint: Cut the tens in half, cut the ones in half.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 88 (doubles it).",
-            "arithmetic_slip": "Student guesses 20.",
-            "converse_error": "Student guesses 24."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "If you are the 3rd person in line, and there are 5 people behind you, how many are in the line total?",
-        "options": [
-            "5",
-            "7",
-            "8",
-            "9",
-            "15"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "3rd in line means you are at spot 3. 5 people are behind you. 3 + 5 = 8. Socratic Hint: People in front of you (2) + You (1) + People behind you (5).",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 7 (misses counting YOU).",
-            "arithmetic_slip": "Student guesses 9.",
-            "converse_error": "Student guesses 5."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Subtract: 1000 - 100",
-        "options": [
-            "90",
-            "110",
-            "900",
-            "990",
-            "1100"
-        ],
-        "correct_answer": "900",
-        "ideal_solution": "10 hundreds - 1 hundred = 9 hundreds. Socratic Hint: 10 - 1 = 9. So 1000 - 100 = ?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 990.",
-            "arithmetic_slip": "Student guesses 90.",
-            "converse_error": "Student adds: 1100."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A dozen eggs is 12. How many eggs in two dozen?",
-        "options": [
-            "12",
-            "14",
-            "20",
-            "24",
-            "36"
-        ],
-        "correct_answer": "24",
-        "ideal_solution": "12 + 12 = 24. Socratic Hint: Add 12 and 12 together.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 14 (adds 2).",
-            "arithmetic_slip": "Student guesses 20.",
-            "converse_error": "Student guesses 36 (3 dozen)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "geometry",
-        "question": "If you hold a sphere in your hand, what does it feel most like?",
-        "options": [
-            "A Book",
-            "A Dice",
-            "A Stop Sign",
-            "A Ball",
-            "A Pencil"
-        ],
-        "correct_answer": "A Ball",
-        "ideal_solution": "A sphere is perfectly round like a ball. Socratic Hint: What object rolls around in all directions?",
-        "failure_modes": {
-            "converse_error": "Student guesses A Book.",
-            "formula_misapplication": "Student guesses A Dice.",
-            "arithmetic_slip": "Student guesses A Stop Sign."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 40 - 8?",
-        "options": [
-            "22",
-            "28",
-            "32",
-            "38",
-            "48"
-        ],
-        "correct_answer": "32",
-        "ideal_solution": "40 - 10 = 30. We took away 2 too many. 30 + 2 = 32. Socratic Hint: 10 - 8 = 2. Apply it here.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 38.",
-            "arithmetic_slip": "Student gets 22.",
-            "converse_error": "Student gets 48."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A table has 4 legs. A chair has 4 legs. If a room has 1 table and 3 chairs, how many total legs?",
-        "options": [
-            "12",
-            "16",
-            "20",
-            "24",
-            "43"
-        ],
-        "correct_answer": "16",
-        "ideal_solution": "1 table = 4. 3 chairs = 12. 4 + 12 = 16. Socratic Hint: Find the legs for the chairs first.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 12 (forgets table).",
-            "arithmetic_slip": "Student guesses 20.",
-            "converse_error": "Student guesses 24."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Add: 199 + 1",
-        "options": [
-            "100",
-            "190",
-            "198",
-            "200",
-            "201"
-        ],
-        "correct_answer": "200",
-        "ideal_solution": "Adding 1 rolls the 99 over to the next hundred. Socratic Hint: Count up one single number from 199.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 198 (subtracts).",
-            "arithmetic_slip": "Student gets 201.",
-            "converse_error": "Student gets 190."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "How many minutes are in 2 hours?",
-        "options": [
-            "60",
-            "100",
-            "120",
-            "140",
-            "200"
-        ],
-        "correct_answer": "120",
-        "ideal_solution": "1 hr = 60 min. 2 hrs = 60 + 60 = 120. Socratic Hint: Add 60 and 60.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 100.",
-            "arithmetic_slip": "Student gets 60.",
-            "converse_error": "Student gets 140."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 55 + 45?",
-        "options": [
-            "90",
-            "95",
-            "100",
-            "105",
-            "110"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "50 + 40 = 90. 5 + 5 = 10. 90 + 10 = 100. Socratic Hint: Grab the fives first to make a 10.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 90 (misses the 5s).",
-            "formula_misapplication": "Student gets 110.",
-            "converse_error": "Student gets 95."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Tom was born in 2010. How old is he in 2025?",
-        "options": [
-            "10",
-            "12",
-            "15",
-            "18",
-            "20"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "2025 - 2010 = 15. Socratic Hint: Subtract 2010 from 2025 like a math problem.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 10.",
-            "arithmetic_slip": "Student gets 12.",
-            "converse_error": "Student gets 20."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "geometry",
-        "question": "How many right angles inside a standard square?",
-        "options": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "0"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "A square has 4 perfect 'L' shaped corners. Socratic Hint: Look at a book. Count its corners.",
-        "failure_modes": {
-            "converse_error": "Student guesses 0.",
-            "formula_misapplication": "Student guesses 2.",
-            "arithmetic_slip": "Student guesses 1."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Is 50 > 55?",
-        "options": [
-            "Yes",
-            "No",
-            "They are equal",
-            "Cannot tell"
-        ],
-        "correct_answer": "No",
-        "ideal_solution": "50 is LESS than 55. Socratic Hint: Do you want 50 pieces of candy or 55?",
-        "failure_modes": {
-            "converse_error": "Student guesses Yes.",
-            "formula_misapplication": "Student guesses They are equal.",
-            "arithmetic_slip": "Student guesses Cannot tell."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "If you count backwards by 10s from 80: 80, 70, 60... what is the 5th number you say?",
-        "options": [
-            "20",
-            "30",
-            "40",
-            "50",
-            "60"
-        ],
-        "correct_answer": "40",
-        "ideal_solution": "1) 80. 2) 70. 3) 60. 4) 50. 5) 40. Socratic Hint: Use your fingers and say them out loud.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 30.",
-            "arithmetic_slip": "Student guesses 50.",
-            "converse_error": "Student guesses 20."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 30 + 30 + 30 + 30 + 30?",
-        "options": [
-            "120",
-            "150",
-            "180",
-            "200",
-            "300"
-        ],
-        "correct_answer": "150",
-        "ideal_solution": "5 groups of 30. = 150. Socratic Hint: What is 3 + 3 + 3 + 3 + 3? Then add a zero.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 120 (4 groups).",
-            "arithmetic_slip": "Student guesses 180.",
-            "converse_error": "Student guesses 300."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Mary has twice as many apples as John. John has half as many apples as Sally. Sally has 10 apples. How many does Mary have?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20",
-            "40"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "Sally = 10. John = half of 10 = 5. Mary = twice John (5x2) = 10. Mary has 10! Socratic Hint: Start with Sally. Then find John. Then find Mary.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 5 (John's amount).",
-            "arithmetic_slip": "Student gets 20 (Sally doubled).",
-            "converse_error": "Student gets 15."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Subtract: 101 - 2",
-        "options": [
-            "98",
-            "99",
-            "100",
-            "103",
-            "200"
-        ],
-        "correct_answer": "99",
-        "ideal_solution": "101 - 1 = 100. 100 - 1 = 99. Socratic Hint: Jump back over 100.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 98.",
-            "formula_misapplication": "Student adds: 103.",
-            "converse_error": "Student says 100."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Which represents 'one half' of the pizza?",
-        "options": [
-            "2 out of 4 slices",
-            "1 out of 4 slices",
-            "3 out of 4 slices",
-            "4 out of 4 slices",
-            "0 slices"
-        ],
-        "correct_answer": "2 out of 4 slices",
-        "ideal_solution": "2/4 is equal to 1/2. Socratic Hint: If there are 4 slices, what is exactly in the middle?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 1 out of 4 slices.",
-            "converse_error": "Student guesses 3 out of 4 slices.",
-            "arithmetic_slip": "Student guesses 4 out of 4 slices."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Multiply: 9 × 2",
-        "options": [
-            "11",
-            "16",
-            "18",
-            "20",
-            "81"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "Double 9. 9 + 9 = 18. Socratic Hint: Add 9 and 9.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds 9 + 2 = 11.",
-            "arithmetic_slip": "Student guesses 16.",
-            "converse_error": "Student guesses 20."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Every tricycle has 3 wheels. If there are 7 tricycles, how many wheels?",
-        "options": [
-            "10",
-            "14",
-            "18",
-            "21",
-            "24"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "3 × 7 = 21. Socratic Hint: Count by 3s: 3, 6, 9, 12, 15, 18, 21.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds 7 + 3 = 10.",
-            "arithmetic_slip": "Student gets 24.",
-            "converse_error": "Student gets 18."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Add: 13 + 13 + 13",
-        "options": [
-            "26",
-            "36",
-            "39",
-            "42",
-            "49"
-        ],
-        "correct_answer": "39",
-        "ideal_solution": "10+10+10 = 30. 3+3+3=9. 30+9 = 39. Socratic Hint: Split the tens and ones.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 26 (misses one 13).",
-            "formula_misapplication": "Student gets 49.",
-            "converse_error": "Student gets 36."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "If you mix blue paint and red paint, what color do you get?",
-        "options": [
-            "Yellow",
-            "Purple",
-            "Green",
-            "Orange",
-            "Black"
-        ],
-        "correct_answer": "Purple",
-        "ideal_solution": "Blue + Red = Purple. Socratic Hint: Think of a dark grape color.",
-        "failure_modes": {
-            "converse_error": "Student guesses Green.",
-            "formula_misapplication": "Student guesses Orange.",
-            "arithmetic_slip": "Student guesses Black."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Fill in the blank: 5 + 6 + 7 = 10 + ___",
-        "options": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "18"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Left: 5+6=11. 11+7=18. Right: 10 + blank = 18. Blank = 8. Socratic Hint: What does the left side equal? Now what do you add to 10 to get that number?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 18 (left side sum).",
-            "arithmetic_slip": "Student guesses 7.",
-            "converse_error": "Student guesses 9."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Bob is taller than Sam. Sam is taller than Tim. Who is the shortest?",
-        "options": [
-            "Bob",
-            "Sam",
-            "Tim",
-            "All the same",
-            "Cannot tell"
-        ],
-        "correct_answer": "Tim",
-        "ideal_solution": "Bob > Sam. Sam > Tim. So Bob > Sam > Tim. Tim is shortest. Socratic Hint: Draw them out as stick figures. Bob is big, Sam is medium.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses Bob (tallest).",
-            "converse_error": "Student guesses Sam.",
-            "arithmetic_slip": "Student guesses Cannot tell."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Subtract: 84 - 44",
-        "options": [
-            "40",
-            "44",
-            "48",
-            "80",
-            "128"
-        ],
-        "correct_answer": "40",
-        "ideal_solution": "4 - 4 = 0. 80 - 40 = 40. 40. Socratic Hint: The ones place zeroes out.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 80 (just drops the 4).",
-            "formula_misapplication": "Student gets 44.",
-            "converse_error": "Student gets 48."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A square has how many sides?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "8"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "A square is a 4-sided shape. Socratic Hint: Count the edges of a box base.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 3.",
-            "converse_error": "Student guesses 6.",
-            "arithmetic_slip": "Student guesses 8."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "geometry",
-        "question": "All sides of a regular hexagon are EQUAL in length.",
-        "options": [
-            "True",
-            "False",
-            "Sometimes",
-            "Never"
-        ],
-        "correct_answer": "True",
-        "ideal_solution": "A 'regular' shape means all sides and angles are equal. Socratic Hint: What does the word 'regular' mean for a shape?",
-        "failure_modes": {
-            "converse_error": "Student guesses False.",
-            "formula_misapplication": "Student guesses Sometimes.",
-            "arithmetic_slip": "Student guesses Never."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 100 - 40 + 10?",
-        "options": [
-            "50",
-            "70",
-            "130",
-            "150",
-            "400"
-        ],
-        "correct_answer": "70",
-        "ideal_solution": "100 - 40 = 60. 60 + 10 = 70. Socratic Hint: Solve from left to right.",
-        "failure_modes": {
-            "formula_misapplication": "Student does 40+10=50. 100-50=50.",
-            "arithmetic_slip": "Student gets 130.",
-            "converse_error": "Student gets 150."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "What happens if you subtract an odd number from an odd number? (Like 5 - 3)",
-        "options": [
-            "You get an ODD number",
-            "You get an EVEN number",
-            "You get ZERO",
-            "It depends"
-        ],
-        "correct_answer": "You get an EVEN number",
-        "ideal_solution": "Odd - Odd = Even. Example: 7 - 5 = 2. 9 - 3 = 6. Socratic Hint: Try picking two odd numbers and subtract them.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses ODD.",
-            "converse_error": "Student guesses It depends.",
-            "arithmetic_slip": "Student guesses ZERO."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Is 30 + 40 greater than or less than 100 - 20?",
-        "options": [
-            "Greater than",
-            "Less than",
-            "Equal to",
-            "Cannot be determined"
-        ],
-        "correct_answer": "Less than",
-        "ideal_solution": "30+40 = 70. 100-20 = 80. 70 is less than 80. Socratic Hint: Solve both sides first.",
-        "failure_modes": {
-            "converse_error": "Student guesses Greater than.",
-            "formula_misapplication": "Student guesses Equal to.",
-            "arithmetic_slip": "Student guesses Cannot be determined."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Which of these is the largest total?",
-        "options": [
-            "10 dimes",
-            "4 quarters",
-            "100 pennies",
-            "20 nickels",
-            "They are all exactly 1 dollar ($1.00)"
-        ],
-        "correct_answer": "They are all exactly 1 dollar ($1.00)",
-        "ideal_solution": "100, 100, 100, 100. They are perfectly equal to 100 cents. Socratic Hint: Calculate every single choice first.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 100 pennies (because 100 is big).",
-            "arithmetic_slip": "Student guesses 4 quarters.",
-            "converse_error": "Student guesses 10 dimes."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Multiply: 0 × 1000",
-        "options": [
-            "0",
-            "1",
-            "10",
-            "100",
-            "1000"
-        ],
-        "correct_answer": "0",
-        "ideal_solution": "Zero times anything is zero. Socratic Hint: Zero means none.",
-        "failure_modes": {
-            "converse_error": "Student gets 1000.",
-            "formula_misapplication": "Student answers 1.",
-            "arithmetic_slip": "Student gets 100."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A car has 4 wheels. A bicycle has 2 wheels. If you see 2 cars and 3 bicycles, how many wheels total?",
-        "options": [
-            "10",
-            "12",
-            "14",
-            "16",
-            "18"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "Cars=2x4=8. Bikes=3x2=6. 8+6=14. Socratic Hint: Calculate car wheels, then bike wheels, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 4+2=6, 2+3=5. 6+5=11.",
-            "arithmetic_slip": "Student gets 12.",
-            "converse_error": "Student gets 16."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 75 - 25?",
-        "options": [
-            "25",
-            "50",
-            "75",
-            "100",
-            "125"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "3 quarters minus 1 quarter is 2 quarters (50 cents). Socratic Hint: Think of coins.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 25.",
-            "formula_misapplication": "Student adds: 100.",
-            "converse_error": "Student gets 75."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "Every day you save a penny. On day 1, you have 1. Day 2, 2. How much on day 100?",
-        "options": [
-            "$0.10",
-            "$1.00",
-            "$10.00",
-            "$100.00",
-            "$1000.00"
-        ],
-        "correct_answer": "$1.00",
-        "ideal_solution": "100 pennies is 1 dollar ($1.00). Socratic Hint: 100 pennies = $1.",
-        "failure_modes": {
-            "formula_misapplication": "Student thinks $100.00.",
-            "arithmetic_slip": "Student thinks $10.00.",
-            "converse_error": "Student thinks $0.10."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A train has 5 cars. Each car holds 20 people. If the train is completely full, how many people are on the train?",
-        "options": [
-            "80",
-            "100",
-            "120",
-            "150",
-            "200"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "5 x 20 = 100. Socratic Hint: Count by 20s five times.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 120 (6 cars).",
-            "arithmetic_slip": "Student gets 80.",
-            "converse_error": "Student adds 20+5=25."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Subtract: 300 - 150",
-        "options": [
-            "50",
-            "100",
-            "150",
-            "200",
-            "250"
-        ],
-        "correct_answer": "150",
-        "ideal_solution": "150 + 150 is 300. Thus, 300 - 150 = 150. Socratic Hint: What is half of 300?",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 100.",
-            "formula_misapplication": "Student gets 200.",
-            "converse_error": "Student gets 250."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "You see 6 bicycles and 4 tricycles parked. How many wheels total?",
-        "options": [
-            "20",
-            "22",
-            "24",
-            "26",
-            "30"
-        ],
-        "correct_answer": "24",
-        "ideal_solution": "Bicycles = 6x2 = 12. Tricycles = 4x3 = 12. 12 + 12 = 24. Socratic Hint: Calculate bicycles first, then tricycles.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 20 (forgets a wheel per tricycle).",
-            "arithmetic_slip": "Student gets 22.",
-            "converse_error": "Student gets 26."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "What is 8 × 10 - 20?",
-        "options": [
-            "40",
-            "50",
-            "60",
-            "70",
-            "80"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "8x10 = 80. 80 - 20 = 60. Socratic Hint: Multiply first.",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts first 10-20 (wrong order) or gets 70.",
-            "arithmetic_slip": "Student gets 50.",
-            "converse_error": "Student gets 40."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "logic",
-        "question": "A rectangle is 10 units long and 5 units wide. What is the distance all the way around its edge?",
-        "options": [
-            "15",
-            "20",
-            "25",
-            "30",
-            "50"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "Perimeter = 10+10+5+5 = 30. Socratic Hint: Add all four sides!",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 50 (area).",
-            "arithmetic_slip": "Student gets 25.",
-            "converse_error": "Student gets 15 (only adds two sides)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 9,
-        "difficulty": "master",
-        "type": "arithmetic",
-        "question": "Fill in the blank: 100 - ___ = 25",
-        "options": [
-            "25",
-            "50",
-            "75",
-            "100",
-            "125"
-        ],
-        "correct_answer": "75",
-        "ideal_solution": "100 - 25 = 75. 3 quarters makes 75 cents. Socratic Hint: Think of coins.",
-        "failure_modes": {
-            "formula_misapplication": "Student gets 125.",
-            "arithmetic_slip": "Student gets 50.",
-            "converse_error": "Student gets 25."
-        }
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A book has 120 pages. You read 10 pages every night. How many nights to finish?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "15",
+      "20"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "120 divided by 10 = 12. Socratic Hint: Count by 10s until you hit 120.",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 10.",
+      "formula_misapplication": "Student guesses 15.",
+      "converse_error": "Student guesses 11."
     }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 7 × 10?",
+    "options": [
+      "17",
+      "60",
+      "70",
+      "77",
+      "700"
+    ],
+    "correct_answer": "70",
+    "ideal_solution": "7 groups of 10 is 70. Socratic Hint: Just put a zero on the 7.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 17.",
+      "converse_error": "Student guesses 700.",
+      "arithmetic_slip": "Student guesses 60."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 250 - 55",
+    "options": [
+      "105",
+      "195",
+      "205",
+      "215",
+      "305"
+    ],
+    "correct_answer": "195",
+    "ideal_solution": "250 - 50 = 200. 200 - 5 = 195. Socratic Hint: Take away 50 first.",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 205.",
+      "formula_misapplication": "Student adds: 305.",
+      "off_by_one": "Student guesses 195 (correct), wait, off by one is 215."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If you cut a long rope into 5 sections, how many cuts do you make?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "1 cut makes 2 pieces. 2 cuts make 3. 3 cuts make 4. 4 cuts make 5. Socratic Hint: Draw a line and put slashes through it.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 5.",
+      "arithmetic_slip": "Student guesses 6.",
+      "converse_error": "Student guesses 3."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "Which of the shapes Square, Circle, Pentagon, Triangle, and Hexagon has exactly 3 vertices?",
+    "options": [
+      "Square",
+      "Circle",
+      "Pentagon",
+      "Triangle",
+      "Hexagon"
+    ],
+    "correct_answer": "Triangle",
+    "ideal_solution": "Vertices means corners. A triangle has 3 corners. Socratic Hint: 'Tri' means 3.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses Square.",
+      "converse_error": "Student guesses Pentagon.",
+      "arithmetic_slip": "Student guesses Hexagon."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Fill in the blank: 80 - 15 = ___ + 15",
+    "options": [
+      "35",
+      "50",
+      "65",
+      "80",
+      "95"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "Left side: 80 - 15 = 65. Right side must be 65. What + 15 = 65? 50. Socratic Hint: Solve the left part first. Then figure out what goes in the blank.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 65 (just answers the left side).",
+      "arithmetic_slip": "Student guesses 80.",
+      "converse_error": "Student guesses 35."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Anna has twice as many stickers as Ben. Ben has 12 stickers. How many do they have TOGETHER?",
+    "options": [
+      "12",
+      "24",
+      "30",
+      "36",
+      "48"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "Ben = 12. Anna = 12 × 2 = 24. Together = 12 + 24 = 36. Socratic Hint: Find Anna's amount first, then add them both up.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 24 (just Anna's amount).",
+      "arithmetic_slip": "Student guesses 30.",
+      "converse_error": "Student guesses 48."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 40 ÷ 5?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Count by 5s to 40. 5, 10, 15, 20, 25, 30, 35, 40 -> 8 times. Socratic Hint: How many 5s fit in 40?",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 7.",
+      "formula_misapplication": "Student guesses 9.",
+      "converse_error": "Student guesses 10."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You leave school at 3:30. The walk home takes 25 minutes. What time do you get home?",
+    "options": [
+      "3:45",
+      "3:55",
+      "4:00",
+      "4:05",
+      "4:15"
+    ],
+    "correct_answer": "3:55",
+    "ideal_solution": "30 + 25 = 55. 3:55. Socratic Hint: Just add 25 to the minutes.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 4:05 (rolls over incorrectly).",
+      "arithmetic_slip": "Student guesses 4:00.",
+      "converse_error": "Student guesses 3:45."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Add: 25 + 25 + 25 + 25",
+    "options": [
+      "50",
+      "75",
+      "100",
+      "125",
+      "150"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "4 quarters make a dollar (100). Socratic Hint: Think about quarters!",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 75.",
+      "formula_misapplication": "Student guesses 125.",
+      "converse_error": "Student guesses 50."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Which of the weights 5 pounds, 12 pounds, 9 pounds, 15 pounds, and 3 pounds is the heaviest?",
+    "options": [
+      "5 pounds",
+      "12 pounds",
+      "9 pounds",
+      "15 pounds",
+      "3 pounds"
+    ],
+    "correct_answer": "15 pounds",
+    "ideal_solution": "15 is the biggest number. Socratic Hint: Look for the highest number.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 12 pounds.",
+      "converse_error": "Student guesses 5 pounds.",
+      "arithmetic_slip": "Student guesses 9 pounds."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "If 7 + 3 = 10, what is 70 + 30?",
+    "options": [
+      "10",
+      "100",
+      "110",
+      "730",
+      "1000"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "Just add a zero to the 10. Makes 100. Socratic Hint: 7 tens + 3 tens = 10 tens.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 110.",
+      "converse_error": "Student gets 1000.",
+      "arithmetic_slip": "Student gets 730."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "I am thinking of a shape. It has NO straight sides. What could it be?",
+    "options": [
+      "Triangle",
+      "Square",
+      "Hexagon",
+      "Circle",
+      "Rectangle"
+    ],
+    "correct_answer": "Circle",
+    "ideal_solution": "A circle is perfectly curved. Socratic Hint: What shape drops and rolls?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses Square.",
+      "converse_error": "Student guesses Triangle.",
+      "arithmetic_slip": "Student guesses Pentagon."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 100 - 90?",
+    "options": [
+      "0",
+      "9",
+      "10",
+      "11",
+      "90"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "10 tens - 9 tens = 1 ten (10). Socratic Hint: Count up from 90 to 100.",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 9.",
+      "formula_misapplication": "Student guesses 11.",
+      "converse_error": "Student guesses 0."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Every spider has 8 legs. If you see 24 legs on the wall, how many spiders are there?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "8"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "8 + 8 = 16. 16 + 8 = 24. 3 spiders. Socratic Hint: Count by 8s.",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 4.",
+      "formula_misapplication": "Student guesses 8.",
+      "converse_error": "Student guesses 2."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is half of 44?",
+    "options": [
+      "20",
+      "22",
+      "24",
+      "40",
+      "88"
+    ],
+    "correct_answer": "22",
+    "ideal_solution": "Half of 4 = 2. Half of 40 = 20. Total = 22. Socratic Hint: Cut the tens in half, cut the ones in half.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 88 (doubles it).",
+      "arithmetic_slip": "Student guesses 20.",
+      "converse_error": "Student guesses 24."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If you are the 3rd person in line, and there are 5 people behind you, how many are in the line total?",
+    "options": [
+      "5",
+      "7",
+      "8",
+      "9",
+      "15"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "3rd in line means you are at spot 3. 5 people are behind you. 3 + 5 = 8. Socratic Hint: People in front of you (2) + You (1) + People behind you (5).",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 7 (misses counting YOU).",
+      "arithmetic_slip": "Student guesses 9.",
+      "converse_error": "Student guesses 5."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 1000 - 100",
+    "options": [
+      "90",
+      "110",
+      "900",
+      "990",
+      "1100"
+    ],
+    "correct_answer": "900",
+    "ideal_solution": "10 hundreds - 1 hundred = 9 hundreds. Socratic Hint: 10 - 1 = 9. So 1000 - 100 = ?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 990.",
+      "arithmetic_slip": "Student guesses 90.",
+      "converse_error": "Student adds: 1100."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A dozen eggs is 12. How many eggs in two dozen?",
+    "options": [
+      "12",
+      "14",
+      "20",
+      "24",
+      "36"
+    ],
+    "correct_answer": "24",
+    "ideal_solution": "12 + 12 = 24. Socratic Hint: Add 12 and 12 together.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 14 (adds 2).",
+      "arithmetic_slip": "Student guesses 20.",
+      "converse_error": "Student guesses 36 (3 dozen)."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "If you hold a sphere in your hand, what does it feel most like?",
+    "options": [
+      "A Book",
+      "A Dice",
+      "A Stop Sign",
+      "A Ball",
+      "A Pencil"
+    ],
+    "correct_answer": "A Ball",
+    "ideal_solution": "A sphere is perfectly round like a ball. Socratic Hint: What object rolls around in all directions?",
+    "failure_modes": {
+      "converse_error": "Student guesses A Book.",
+      "formula_misapplication": "Student guesses A Dice.",
+      "arithmetic_slip": "Student guesses A Stop Sign."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 40 - 8?",
+    "options": [
+      "22",
+      "28",
+      "32",
+      "38",
+      "48"
+    ],
+    "correct_answer": "32",
+    "ideal_solution": "40 - 10 = 30. We took away 2 too many. 30 + 2 = 32. Socratic Hint: 10 - 8 = 2. Apply it here.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 38.",
+      "arithmetic_slip": "Student gets 22.",
+      "converse_error": "Student gets 48."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A table has 4 legs. A chair has 4 legs. If a room has 1 table and 3 chairs, how many total legs?",
+    "options": [
+      "12",
+      "16",
+      "20",
+      "24",
+      "43"
+    ],
+    "correct_answer": "16",
+    "ideal_solution": "1 table = 4. 3 chairs = 12. 4 + 12 = 16. Socratic Hint: Find the legs for the chairs first.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 12 (forgets table).",
+      "arithmetic_slip": "Student guesses 20.",
+      "converse_error": "Student guesses 24."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Add: 199 + 1",
+    "options": [
+      "100",
+      "190",
+      "198",
+      "200",
+      "201"
+    ],
+    "correct_answer": "200",
+    "ideal_solution": "Adding 1 rolls the 99 over to the next hundred. Socratic Hint: Count up one single number from 199.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 198 (subtracts).",
+      "arithmetic_slip": "Student gets 201.",
+      "converse_error": "Student gets 190."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "How many minutes are in 2 hours?",
+    "options": [
+      "60",
+      "100",
+      "120",
+      "140",
+      "200"
+    ],
+    "correct_answer": "120",
+    "ideal_solution": "1 hr = 60 min. 2 hrs = 60 + 60 = 120. Socratic Hint: Add 60 and 60.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 100.",
+      "arithmetic_slip": "Student gets 60.",
+      "converse_error": "Student gets 140."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 55 + 45?",
+    "options": [
+      "90",
+      "95",
+      "100",
+      "105",
+      "110"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "50 + 40 = 90. 5 + 5 = 10. 90 + 10 = 100. Socratic Hint: Grab the fives first to make a 10.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 90 (misses the 5s).",
+      "formula_misapplication": "Student gets 110.",
+      "converse_error": "Student gets 95."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Tom was born in 2010. How old is he in 2025?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18",
+      "20"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "2025 - 2010 = 15. Socratic Hint: Subtract 2010 from 2025 like a math problem.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 10.",
+      "arithmetic_slip": "Student gets 12.",
+      "converse_error": "Student gets 20."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "How many right angles inside a standard square?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "0"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "A square has 4 perfect 'L' shaped corners. Socratic Hint: Look at a book. Count its corners.",
+    "failure_modes": {
+      "converse_error": "Student guesses 0.",
+      "formula_misapplication": "Student guesses 2.",
+      "arithmetic_slip": "Student guesses 1."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Is 50 > 55?",
+    "options": [
+      "Yes",
+      "No",
+      "They are equal",
+      "Cannot tell"
+    ],
+    "correct_answer": "No",
+    "ideal_solution": "50 is LESS than 55. Socratic Hint: Do you want 50 pieces of candy or 55?",
+    "failure_modes": {
+      "converse_error": "Student guesses Yes.",
+      "formula_misapplication": "Student guesses They are equal.",
+      "arithmetic_slip": "Student guesses Cannot tell."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If you count backwards by 10s from 80: 80, 70, 60... what is the 5th number you say?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "correct_answer": "40",
+    "ideal_solution": "1) 80. 2) 70. 3) 60. 4) 50. 5) 40. Socratic Hint: Use your fingers and say them out loud.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 30.",
+      "arithmetic_slip": "Student guesses 50.",
+      "converse_error": "Student guesses 20."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 30 + 30 + 30 + 30 + 30?",
+    "options": [
+      "120",
+      "150",
+      "180",
+      "200",
+      "300"
+    ],
+    "correct_answer": "150",
+    "ideal_solution": "5 groups of 30. = 150. Socratic Hint: What is 3 + 3 + 3 + 3 + 3? Then add a zero.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 120 (4 groups).",
+      "arithmetic_slip": "Student guesses 180.",
+      "converse_error": "Student guesses 300."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Mary has twice as many apples as John. John has half as many apples as Sally. Sally has 10 apples. How many does Mary have?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20",
+      "40"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "Sally = 10. John = half of 10 = 5. Mary = twice John (5x2) = 10. Mary has 10! Socratic Hint: Start with Sally. Then find John. Then find Mary.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 5 (John's amount).",
+      "arithmetic_slip": "Student gets 20 (Sally doubled).",
+      "converse_error": "Student gets 15."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 101 - 2",
+    "options": [
+      "98",
+      "99",
+      "100",
+      "103",
+      "200"
+    ],
+    "correct_answer": "99",
+    "ideal_solution": "101 - 1 = 100. 100 - 1 = 99. Socratic Hint: Jump back over 100.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 98.",
+      "formula_misapplication": "Student adds: 103.",
+      "converse_error": "Student says 100."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Which represents 'one half' of the pizza?",
+    "options": [
+      "2 out of 4 slices",
+      "1 out of 4 slices",
+      "3 out of 4 slices",
+      "4 out of 4 slices",
+      "0 slices"
+    ],
+    "correct_answer": "2 out of 4 slices",
+    "ideal_solution": "2/4 is equal to 1/2. Socratic Hint: If there are 4 slices, what is exactly in the middle?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 1 out of 4 slices.",
+      "converse_error": "Student guesses 3 out of 4 slices.",
+      "arithmetic_slip": "Student guesses 4 out of 4 slices."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Multiply: 9 × 2",
+    "options": [
+      "11",
+      "16",
+      "18",
+      "20",
+      "81"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "Double 9. 9 + 9 = 18. Socratic Hint: Add 9 and 9.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds 9 + 2 = 11.",
+      "arithmetic_slip": "Student guesses 16.",
+      "converse_error": "Student guesses 20."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Every tricycle has 3 wheels. If there are 7 tricycles, how many wheels?",
+    "options": [
+      "10",
+      "14",
+      "18",
+      "21",
+      "24"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "3 × 7 = 21. Socratic Hint: Count by 3s: 3, 6, 9, 12, 15, 18, 21.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds 7 + 3 = 10.",
+      "arithmetic_slip": "Student gets 24.",
+      "converse_error": "Student gets 18."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Add: 13 + 13 + 13",
+    "options": [
+      "26",
+      "36",
+      "39",
+      "42",
+      "49"
+    ],
+    "correct_answer": "39",
+    "ideal_solution": "10+10+10 = 30. 3+3+3=9. 30+9 = 39. Socratic Hint: Split the tens and ones.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 26 (misses one 13).",
+      "formula_misapplication": "Student gets 49.",
+      "converse_error": "Student gets 36."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "If you mix blue paint and red paint, what color do you get?",
+    "options": [
+      "Yellow",
+      "Purple",
+      "Green",
+      "Orange",
+      "Black"
+    ],
+    "correct_answer": "Purple",
+    "ideal_solution": "Blue + Red = Purple. Socratic Hint: Think of a dark grape color.",
+    "failure_modes": {
+      "converse_error": "Student guesses Green.",
+      "formula_misapplication": "Student guesses Orange.",
+      "arithmetic_slip": "Student guesses Black."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Fill in the blank: 5 + 6 + 7 = 10 + ___",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "18"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Left: 5+6=11. 11+7=18. Right: 10 + blank = 18. Blank = 8. Socratic Hint: What does the left side equal? Now what do you add to 10 to get that number?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 18 (left side sum).",
+      "arithmetic_slip": "Student guesses 7.",
+      "converse_error": "Student guesses 9."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Bob is taller than Sam. Sam is taller than Tim. Who is the shortest?",
+    "options": [
+      "Bob",
+      "Sam",
+      "Tim",
+      "All the same",
+      "Cannot tell"
+    ],
+    "correct_answer": "Tim",
+    "ideal_solution": "Bob > Sam. Sam > Tim. So Bob > Sam > Tim. Tim is shortest. Socratic Hint: Draw them out as stick figures. Bob is big, Sam is medium.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses Bob (tallest).",
+      "converse_error": "Student guesses Sam.",
+      "arithmetic_slip": "Student guesses Cannot tell."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 84 - 44",
+    "options": [
+      "40",
+      "44",
+      "48",
+      "80",
+      "128"
+    ],
+    "correct_answer": "40",
+    "ideal_solution": "4 - 4 = 0. 80 - 40 = 40. 40. Socratic Hint: The ones place zeroes out.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 80 (just drops the 4).",
+      "formula_misapplication": "Student gets 44.",
+      "converse_error": "Student gets 48."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A square has how many sides?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "A square is a 4-sided shape. Socratic Hint: Count the edges of a box base.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 3.",
+      "converse_error": "Student guesses 6.",
+      "arithmetic_slip": "Student guesses 8."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "geometry",
+    "question": "All sides of a regular hexagon are EQUAL in length.",
+    "options": [
+      "True",
+      "False",
+      "Sometimes",
+      "Never"
+    ],
+    "correct_answer": "True",
+    "ideal_solution": "A 'regular' shape means all sides and angles are equal. Socratic Hint: What does the word 'regular' mean for a shape?",
+    "failure_modes": {
+      "converse_error": "Student guesses False.",
+      "formula_misapplication": "Student guesses Sometimes.",
+      "arithmetic_slip": "Student guesses Never."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 100 - 40 + 10?",
+    "options": [
+      "50",
+      "70",
+      "130",
+      "150",
+      "400"
+    ],
+    "correct_answer": "70",
+    "ideal_solution": "100 - 40 = 60. 60 + 10 = 70. Socratic Hint: Solve from left to right.",
+    "failure_modes": {
+      "formula_misapplication": "Student does 40+10=50. 100-50=50.",
+      "arithmetic_slip": "Student gets 130.",
+      "converse_error": "Student gets 150."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "What happens if you subtract an odd number from an odd number? (Like 5 - 3)",
+    "options": [
+      "You get an ODD number",
+      "You get an EVEN number",
+      "You get ZERO",
+      "It depends"
+    ],
+    "correct_answer": "You get an EVEN number",
+    "ideal_solution": "Odd - Odd = Even. Example: 7 - 5 = 2. 9 - 3 = 6. Socratic Hint: Try picking two odd numbers and subtract them.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses ODD.",
+      "converse_error": "Student guesses It depends.",
+      "arithmetic_slip": "Student guesses ZERO."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Is 30 + 40 greater than or less than 100 - 20?",
+    "options": [
+      "Greater than",
+      "Less than",
+      "Equal to",
+      "Cannot be determined"
+    ],
+    "correct_answer": "Less than",
+    "ideal_solution": "30+40 = 70. 100-20 = 80. 70 is less than 80. Socratic Hint: Solve both sides first.",
+    "failure_modes": {
+      "converse_error": "Student guesses Greater than.",
+      "formula_misapplication": "Student guesses Equal to.",
+      "arithmetic_slip": "Student guesses Cannot be determined."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Which of 10 dimes, 4 quarters, 100 pennies, 20 nickels, and They are all exactly 1 dollar ($1.00) is the largest total?",
+    "options": [
+      "10 dimes",
+      "4 quarters",
+      "100 pennies",
+      "20 nickels",
+      "They are all exactly 1 dollar ($1.00)"
+    ],
+    "correct_answer": "They are all exactly 1 dollar ($1.00)",
+    "ideal_solution": "100, 100, 100, 100. They are perfectly equal to 100 cents. Socratic Hint: Calculate every single choice first.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 100 pennies (because 100 is big).",
+      "arithmetic_slip": "Student guesses 4 quarters.",
+      "converse_error": "Student guesses 10 dimes."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Multiply: 0 × 1000",
+    "options": [
+      "0",
+      "1",
+      "10",
+      "100",
+      "1000"
+    ],
+    "correct_answer": "0",
+    "ideal_solution": "Zero times anything is zero. Socratic Hint: Zero means none.",
+    "failure_modes": {
+      "converse_error": "Student gets 1000.",
+      "formula_misapplication": "Student answers 1.",
+      "arithmetic_slip": "Student gets 100."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A car has 4 wheels. A bicycle has 2 wheels. If you see 2 cars and 3 bicycles, how many wheels total?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "Cars=2x4=8. Bikes=3x2=6. 8+6=14. Socratic Hint: Calculate car wheels, then bike wheels, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 4+2=6, 2+3=5. 6+5=11.",
+      "arithmetic_slip": "Student gets 12.",
+      "converse_error": "Student gets 16."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 75 - 25?",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "100",
+      "125"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "3 quarters minus 1 quarter is 2 quarters (50 cents). Socratic Hint: Think of coins.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 25.",
+      "formula_misapplication": "Student adds: 100.",
+      "converse_error": "Student gets 75."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "Every day you save a penny. On day 1, you have 1. Day 2, 2. How much on day 100?",
+    "options": [
+      "$0.10",
+      "$1.00",
+      "$10.00",
+      "$100.00",
+      "$1000.00"
+    ],
+    "correct_answer": "$1.00",
+    "ideal_solution": "100 pennies is 1 dollar ($1.00). Socratic Hint: 100 pennies = $1.",
+    "failure_modes": {
+      "formula_misapplication": "Student thinks $100.00.",
+      "arithmetic_slip": "Student thinks $10.00.",
+      "converse_error": "Student thinks $0.10."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A train has 5 cars. Each car holds 20 people. If the train is completely full, how many people are on the train?",
+    "options": [
+      "80",
+      "100",
+      "120",
+      "150",
+      "200"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "5 x 20 = 100. Socratic Hint: Count by 20s five times.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 120 (6 cars).",
+      "arithmetic_slip": "Student gets 80.",
+      "converse_error": "Student adds 20+5=25."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Subtract: 300 - 150",
+    "options": [
+      "50",
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "correct_answer": "150",
+    "ideal_solution": "150 + 150 is 300. Thus, 300 - 150 = 150. Socratic Hint: What is half of 300?",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 100.",
+      "formula_misapplication": "Student gets 200.",
+      "converse_error": "Student gets 250."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "You see 6 bicycles and 4 tricycles parked. How many wheels total?",
+    "options": [
+      "20",
+      "22",
+      "24",
+      "26",
+      "30"
+    ],
+    "correct_answer": "24",
+    "ideal_solution": "Bicycles = 6x2 = 12. Tricycles = 4x3 = 12. 12 + 12 = 24. Socratic Hint: Calculate bicycles first, then tricycles.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 20 (forgets a wheel per tricycle).",
+      "arithmetic_slip": "Student gets 22.",
+      "converse_error": "Student gets 26."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "What is 8 × 10 - 20?",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "8x10 = 80. 80 - 20 = 60. Socratic Hint: Multiply first.",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts first 10-20 (wrong order) or gets 70.",
+      "arithmetic_slip": "Student gets 50.",
+      "converse_error": "Student gets 40."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "logic",
+    "question": "A rectangle is 10 units long and 5 units wide. What is the distance all the way around its edge?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30",
+      "50"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "Perimeter = 10+10+5+5 = 30. Socratic Hint: Add all four sides!",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 50 (area).",
+      "arithmetic_slip": "Student gets 25.",
+      "converse_error": "Student gets 15 (only adds two sides)."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 9,
+    "difficulty": "master",
+    "type": "arithmetic",
+    "question": "Fill in the blank: 100 - ___ = 25",
+    "options": [
+      "25",
+      "50",
+      "75",
+      "100",
+      "125"
+    ],
+    "correct_answer": "75",
+    "ideal_solution": "100 - 25 = 75. 3 quarters makes 75 cents. Socratic Hint: Think of coins.",
+    "failure_modes": {
+      "formula_misapplication": "Student gets 125.",
+      "arithmetic_slip": "Student gets 50.",
+      "converse_error": "Student gets 25."
+    }
+  }
 ]

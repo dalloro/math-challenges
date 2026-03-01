@@ -1,949 +1,1049 @@
 [
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 1/2 + 1/8?",
-        "options": [
-            "2/10",
-            "1/10",
-            "5/8",
-            "1/4",
-            "3/8"
-        ],
-        "correct_answer": "5/8",
-        "ideal_solution": "Convert 1/2 to 4/8. 4/8 + 1/8 = 5/8. Socratic Hint: Turn the half into eighths. How many eighths make a half?",
-        "failure_modes": {
-            "formula_misapplication": "Student adds straight across: 2/10 = 1/5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 4 × (12 - 7) + 3",
-        "options": [
-            "23",
-            "28",
-            "45",
-            "51",
-            "55"
-        ],
-        "correct_answer": "23",
-        "ideal_solution": "Parentheses first: 12 - 7 = 5. Then multiply: 4 × 5 = 20. Then add: 20 + 3 = 23. Socratic Hint: PEMDAS. Parentheses, then multiply, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies 4 × 12 first (48), subtracts 7 (41), adds 3 = 44."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 3.5 - 0.75?",
-        "options": [
-            "2.25",
-            "2.75",
-            "3.25",
-            "4.25",
-            "2.5"
-        ],
-        "correct_answer": "2.75",
-        "ideal_solution": "3.5 is 3.50. 3.50 - 0.75. Take away 0.50 to get 3.00, then take away 0.25 more to get 2.75. Socratic Hint: Think of $3.50 minus 75 cents.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 3.25."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A box is 4 cm long, 3 cm wide, and 1.5 cm tall. What is its volume?",
-        "options": [
-            "8.5",
-            "12",
-            "18",
-            "24",
-            "45"
-        ],
-        "correct_answer": "18",
-        "ideal_solution": "Volume = L × W × H. 4 × 3 = 12. 12 × 1.5 = 18. Socratic Hint: Multiply 4 by 3. Then multiply that answer by 1 and a half.",
-        "failure_modes": {
-            "formula_misapplication": "Student calculates 4+3+1.5 = 8.5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which of these numbers is equivalent to 10²?",
-        "options": [
-            "20",
-            "100",
-            "200",
-            "1000",
-            "10"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "10² means 10 × 10, which is 100. Socratic Hint: The little 2 means you multiply two tens together.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 20 (10 × 2)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Divide: 12.5 ÷ 10",
-        "options": [
-            "0.125",
-            "1.25",
-            "125",
-            "1250",
-            "0.0125"
-        ],
-        "correct_answer": "1.25",
-        "ideal_solution": "Dividing by 10 moves the decimal place one step to the left. 12.5 -> 1.25. Socratic Hint: Move the decimal point one jump to the left to make the number smaller.",
-        "failure_modes": {
-            "order_reversal": "Student multiplies to get 125."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "If you add 0.05 to 0.95, what do you get?",
-        "options": [
-            "0.10",
-            "1.0",
-            "1.05",
-            "0.955",
-            "9.55"
-        ],
-        "correct_answer": "1.0",
-        "ideal_solution": "5 hundredths + 95 hundredths = 100 hundredths = 1 whole. Socratic Hint: A nickel plus ninety-five cents makes exactly one dollar.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 0.10."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Which set of ordered pairs shows moving straight right 3 units from (2, 4)?",
-        "options": [
-            "(2, 7)",
-            "(5, 4)",
-            "(-1, 4)",
-            "(2, 1)",
-            "(6, 4)"
-        ],
-        "correct_answer": "(5, 4)",
-        "ideal_solution": "Moving right changes the x-coordinate by adding. 2 + 3 = 5. Y stays 4. So (5, 4). Socratic Hint: Right/left means changing the first number. Right is bigger.",
-        "failure_modes": {
-            "order_reversal": "Student adds to y-coordinate (2, 7)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 2/3 × 1/4?",
-        "options": [
-            "1/6",
-            "3/7",
-            "8/3",
-            "4/3",
-            "2/7"
-        ],
-        "correct_answer": "1/6",
-        "ideal_solution": "Multiply numerators: 2. Denominators: 12. 2/12 simplifies to 1/6. Socratic Hint: Multiply top times top, and bottom times bottom. Then simplify.",
-        "failure_modes": {
-            "premature_calculation": "Student selects 2/7 unsimplified or messes up."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Round 149.51 to the nearest whole number.",
-        "options": [
-            "149",
-            "150",
-            "149.5",
-            "100",
-            "200"
-        ],
-        "correct_answer": "150",
-        "ideal_solution": "Tenths digit is 5. Since it's 5 or greater, round the ones digit up. 149 becomes 150. Socratic Hint: Is it past the halfway mark of .50? Yes, it's .51.",
-        "failure_modes": {
-            "formula_misapplication": "Student rounds down to 149."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A recipe needs 1.5 cups of sugar. If you make exactly 10 batches, how many cups of sugar?",
-        "options": [
-            "1.5",
-            "11.5",
-            "15",
-            "150",
-            "105"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "1.5 × 10 = 15. Socratic Hint: Move the decimal point one place to the right.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 150."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 1 - 2/5.",
-        "options": [
-            "1/5",
-            "2/5",
-            "3/5",
-            "4/5",
-            "5/5"
-        ],
-        "correct_answer": "3/5",
-        "ideal_solution": "1 whole = 5/5. 5/5 - 2/5 = 3/5. Socratic Hint: A whole pizza is cut into 5 slices. You eat 2.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 2/5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Which 3D shape looks like a standard soup can?",
-        "options": [
-            "Cone",
-            "Cylinder",
-            "Sphere",
-            "Prism",
-            "Pyramid"
-        ],
-        "correct_answer": "Cylinder",
-        "ideal_solution": "A cylinder has two parallel circular bases. Socratic Hint: It has a circle on top, a circle on the bottom, and straight sides.",
-        "failure_modes": {
-            "converse_error": "Student guesses Prism."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 50 ÷ 5 + 5",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20",
-            "55"
-        ],
-        "correct_answer": "15",
-        "ideal_solution": "Divide first: 50 ÷ 5 = 10. Then add: 10 + 5 = 15. Socratic Hint: Division comes before addition.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds first (50 ÷ 10 = 5)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 0.4 × 0.5?",
-        "options": [
-            "0.9",
-            "0.2",
-            "0.02",
-            "2.0",
-            "0.002"
-        ],
-        "correct_answer": "0.2",
-        "ideal_solution": "4 × 5 = 20. Two decimal places. 0.20, which is equal to 0.2. Socratic Hint: 4 times 5 is 20. Now you need two decimal places... 0.20.",
-        "failure_modes": {
-            "formula_misapplication": "Student says 0.02, dropping the zero from the 20."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A runner ran 4.2 km on Monday and 3.8 km on Tuesday. How far in total?",
-        "options": [
-            "7.0 km",
-            "7.8 km",
-            "8.0 km",
-            "8.2 km",
-            "7.2 km"
-        ],
-        "correct_answer": "8.0 km",
-        "ideal_solution": "4.0 + 3.0 = 7.0. 0.2 + 0.8 = 1.0. Total is 8.0. Socratic Hint: 2 tenths plus 8 tenths makes a whole number.",
-        "failure_modes": {
-            "arithmetic_slip": "Student gets 7.0 (forgets to carry)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Look at the pattern: 0.1, 0.3, 0.5, 0.7... What is next?",
-        "options": [
-            "0.8",
-            "0.9",
-            "1.0",
-            "1.1",
-            "0.09"
-        ],
-        "correct_answer": "0.9",
-        "ideal_solution": "Adding 0.2 each time. 0.7 + 0.2 = 0.9. Socratic Hint: Just count by odd numbers in the tenths place.",
-        "failure_modes": {
-            "off_by_one": "Student says 0.8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 10³ divided by 10?",
-        "options": [
-            "10",
-            "100",
-            "1000",
-            "1",
-            "10000"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "10³ = 1000. 1000 ÷ 10 = 100. Or 10³ / 10¹ = 10². Socratic Hint: A thousand divided by ten is a hundred.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 10 or 1000."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Compare: 1/2 ___ 5/10",
-        "options": [
-            ">",
-            "<",
-            "=",
-            "Cannot tell"
-        ],
-        "correct_answer": "=",
-        "ideal_solution": "5 is exactly half of 10. So 5/10 = 1/2. They are equal. Socratic Hint: Divide the top and bottom of 5/10 by 5.",
-        "failure_modes": {
-            "converse_error": "Student guesses < because 10 is bigger than 2."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "If you double the width of a rectangle, the overall area:",
-        "options": [
-            "Stays the same",
-            "Doubles",
-            "Triples",
-            "Quadruples",
-            "Cannot be guessed"
-        ],
-        "correct_answer": "Doubles",
-        "ideal_solution": "Area = L × W. Area_new = L × (2W) = 2(L × W). It doubles. Socratic Hint: If you push two of the exact same carpets together, you have twice as much floor covered.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses Quadruples (confusing 1D scaling with both dimensions scaling)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 8 × 1/8",
-        "options": [
-            "1/64",
-            "1",
-            "8/8",
-            "64",
-            "2"
-        ],
-        "correct_answer": "1",
-        "ideal_solution": "8/1 × 1/8 = 8/8, which equals 1. Socratic Hint: If you have 8 slices of pizza that are each 1/8th of a pie, you have one whole pie.",
-        "failure_modes": {
-            "formula_misapplication": "Student selects 64 or 1/64."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Convert 4.5 liters to milliliters.",
-        "options": [
-            "45",
-            "450",
-            "4500",
-            "45000",
-            "0.0045"
-        ],
-        "correct_answer": "4500",
-        "ideal_solution": "1 L = 1000 mL. 4.5 × 1000 = 4500. Socratic Hint: A 2-liter bottle is 2000 mL. 4.5 liters would be...",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies by 100 to get 450."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Is 3/5 greater or less than 1/2?",
-        "options": [
-            "Greater",
-            "Less",
-            "Equal",
-            "Cannot tell"
-        ],
-        "correct_answer": "Greater",
-        "ideal_solution": "1/2 of 5 is 2.5. Since 3 > 2.5, 3/5 > 1/2. Another way: 3/5 = 6/10; 1/2 = 5/10. Socratic Hint: What is exactly half of 5? It's 2.5. Since 3 is bigger than 2.5, it's bigger than half.",
-        "failure_modes": {
-            "converse_error": "Student guesses Less."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 10.05 + 0.05?",
-        "options": [
-            "10.10",
-            "11.0",
-            "10.010",
-            "15.5",
-            "10.50"
-        ],
-        "correct_answer": "10.10",
-        "ideal_solution": ".05 + .05 = .10. So 10.10. Socratic Hint: Think of $10.05 plus a nickel.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 11.0."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 1/2 - 1/4",
-        "options": [
-            "1/8",
-            "1/4",
-            "0",
-            "1/2",
-            "3/4"
-        ],
-        "correct_answer": "1/4",
-        "ideal_solution": "1/2 is equal to 2/4. 2/4 - 1/4 = 1/4. Socratic Hint: If you have half a pizza and eat a quarter of the pizza, what is left?",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts straight across: 1/2 (1-1=0)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 0.02 × 100?",
-        "options": [
-            "20",
-            "200",
-            "2",
-            "0.2",
-            "0.0002"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "Multiply by 100: move the decimal 2 places to the right. 0.02 turns into 2. Socratic Hint: Move the dot two hops to the right.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 20 or 0.2."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 3 + (5 × 2) - 4",
-        "options": [
-            "12",
-            "9",
-            "10",
-            "8",
-            "6"
-        ],
-        "correct_answer": "9",
-        "ideal_solution": "Parentheses: 5 × 2 = 10. Add 3 = 13. Subtract 4 = 9. Socratic Hint: Do the multiplication inside the parentheses first, then work left to right.",
-        "failure_modes": {
-            "formula_misapplication": "Student calculates 3+5=8, 8×2=16, 16-4=12."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "How many zeroes are there in 10 to the 5th power?",
-        "options": [
-            "4",
-            "5",
-            "6",
-            "10",
-            "50"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "10⁵ = 100,000. It has 5 zeroes. Socratic Hint: The little exponent number matches exactly how many zeroes come after the 1.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Add: 2/3 + 2/3",
-        "options": [
-            "4/6",
-            "4/3",
-            "1",
-            "2/9",
-            "4/9"
-        ],
-        "correct_answer": "4/3",
-        "ideal_solution": "Keep denominator. 2 + 2 = 4. 4/3. Socratic Hint: Denominators don't change when you add them.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds denominators: 4/6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A string is 1 meter long. I cut off 25 centimeters. How much is left?",
-        "options": [
-            "75 cm",
-            "24 cm",
-            "125 cm",
-            "0.75 cm",
-            "7.5 cm"
-        ],
-        "correct_answer": "75 cm",
-        "ideal_solution": "1 m = 100 cm. 100 - 25 = 75 cm. Socratic Hint: Think of a meter as exactly 100 centimeters.",
-        "failure_modes": {
-            "formula_misapplication": "Student says 24 (1 - 25 is negative, but they miscalculate)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A square's perimeter is 24 inches. What is the length of one side?",
-        "options": [
-            "4 inches",
-            "6 inches",
-            "8 inches",
-            "12 inches",
-            "96 inches"
-        ],
-        "correct_answer": "6 inches",
-        "ideal_solution": "Perimeter = 4 × side. 24 ÷ 4 = 6. Socratic Hint: A square has 4 sides perfectly equal in length. Divide 24 by 4.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides by 2 (12 or 8)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Divide 3/4 by 3.",
-        "options": [
-            "1/4",
-            "3/12",
-            "9/4",
-            "3",
-            "3/4"
-        ],
-        "correct_answer": "1/4",
-        "ideal_solution": "(3/4) ÷ 3 = 1/4. Or think: three quarters divided equally among 3 people is one quarter each. Socratic Hint: You have 3 slices of pizza. Give them to 3 friends evenly.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies by 3: 9/4."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the product of 0.6 and 6?",
-        "options": [
-            "36",
-            "0.36",
-            "3.6",
-            "1.2",
-            "360"
-        ],
-        "correct_answer": "3.6",
-        "ideal_solution": "6 × 6 = 36. One decimal placement means 3.6. Socratic Hint: Six times six is 36. Now place the decimal one spot in.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 36 or 0.36."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Starting at the origin, move right 2, up 4, left 1. What are your coordinates?",
-        "options": [
-            "(1, 4)",
-            "(3, 4)",
-            "(2, 3)",
-            "(1, 3)",
-            "(3, 3)"
-        ],
-        "correct_answer": "(1, 4)",
-        "ideal_solution": "Start: (0,0). Right 2: (2,0). Up 4: (2,4). Left 1: (1,4). Socratic Hint: Track your left/right position separately from your up/down position.",
-        "failure_modes": {
-            "order_reversal": "Student maps it to (4, 1)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Can a triangle have two right angles?",
-        "options": [
-            "Yes, always",
-            "No, never",
-            "Only if it is isosceles",
-            "Cannot tell"
-        ],
-        "correct_answer": "No, never",
-        "ideal_solution": "Two right angles = 90 + 90 = 180 degrees. A triangle has 180 total, leaving 0 for the third angle. Not a triangle. Socratic Hint: If a triangle has 180 total degrees inside, and two of them eat up 180 exactly... there's nothing left for the third angle!",
-        "failure_modes": {
-            "converse_error": "Student guesses Yes."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 10 - 2.5",
-        "options": [
-            "8.5",
-            "7.5",
-            "12.5",
-            "7.0",
-            "8.0"
-        ],
-        "correct_answer": "7.5",
-        "ideal_solution": "10.0 - 2.0 = 8.0. 8.0 - 0.5 = 7.5. Socratic Hint: Take away 2 dollars. Then take away 50 cents.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 8.5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which of these is 5 hundredths expressed as a decimal?",
-        "options": [
-            "0.5",
-            "5.0",
-            "0.05",
-            "0.005",
-            "500.0"
-        ],
-        "correct_answer": "0.05",
-        "ideal_solution": "Hundredths means two places after the decimal. 0.05. Socratic Hint: First place is tenths, second is hundredths.",
-        "failure_modes": {
-            "converse_error": "Student chooses 0.5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 4 × (50 + 5)?",
-        "options": [
-            "220",
-            "200",
-            "205",
-            "455",
-            "54"
-        ],
-        "correct_answer": "220",
-        "ideal_solution": "Distributive property or PEMDAS. 4 × 55 = 220. Or (4×50) + (4×5) = 200 + 20 = 220. Socratic Hint: Multiply 4 by 50. Multiply 4 by 5. Add them together.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 205 (does 4×50=200, adds 5)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A movie starts at 7:15 PM and is exactly 2 hours and 10 minutes long. When does it end?",
-        "options": [
-            "9:15 PM",
-            "9:25 PM",
-            "10:15 PM",
-            "9:10 PM",
-            "8:25 PM"
-        ],
-        "correct_answer": "9:25 PM",
-        "ideal_solution": "7:15 + 2 hours = 9:15. 9:15 + 10 mins = 9:25. Socratic Hint: Add the hours to the hours, and minutes to the minutes.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 9:15 PM."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Volume is measured in:",
-        "options": [
-            "Unit lengths",
-            "Square units",
-            "Cubic units",
-            "Degrees",
-            "Pounds"
-        ],
-        "correct_answer": "Cubic units",
-        "ideal_solution": "Length is 1D (units). Area is 2D (square units). Volume is 3D (cubic units). Socratic Hint: Volume fills up a 3D box, so it needs tiny 3D unit blocks.",
-        "failure_modes": {
-            "converse_error": "Student guesses Square units."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 1/2 of 1/3",
-        "options": [
-            "1/5",
-            "1/6",
-            "5/6",
-            "2/3",
-            "1"
-        ],
-        "correct_answer": "1/6",
-        "ideal_solution": "multiply 1/2 × 1/3 = 1/6. Socratic Hint: Cut a pizza into thirds. Then cut those slices in half. You now have 6 slices.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 1/5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 1.1 - 0.9",
-        "options": [
-            "0.1",
-            "0.2",
-            "0.3",
-            "1.8",
-            "0"
-        ],
-        "correct_answer": "0.2",
-        "ideal_solution": "11 tenths - 9 tenths = 2 tenths = 0.2. Socratic Hint: Count up from 0.9 to 1.1.",
-        "failure_modes": {
-            "arithmetic_slip": "Student guesses 0.1."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the equivalent fraction to 2/3 with a denominator of 12?",
-        "options": [
-            "4/12",
-            "6/12",
-            "8/12",
-            "10/12",
-            "3/12"
-        ],
-        "correct_answer": "8/12",
-        "ideal_solution": "3 × 4 = 12. 2 × 4 = 8. So 8/12. Socratic Hint: You have to multiply the top and bottom by the same numbered factor.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 4/12 or 6/12."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A sequence goes 10, 20, 40, 80... what is next?",
-        "options": [
-            "100",
-            "120",
-            "160",
-            "200",
-            "240"
-        ],
-        "correct_answer": "160",
-        "ideal_solution": "It is doubling each time. 80 × 2 = 160. Socratic Hint: 10 + 10 = 20. 20 + 20 = 40. 40 + 40 = 80.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds 40: 120."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 14 + (6 ÷ 2)",
-        "options": [
-            "10",
-            "13",
-            "17",
-            "20",
-            "7"
-        ],
-        "correct_answer": "17",
-        "ideal_solution": "Parentheses: 6 ÷ 2 = 3. 14 + 3 = 17. Socratic Hint: Let's do the easy division inside the parentheses first.",
-        "failure_modes": {
-            "formula_misapplication": "Student does 14 + 6 = 20, 20 ÷ 2 = 10."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What does a 5 mean in the tenths place?",
-        "options": [
-            "50",
-            "5",
-            "0.5",
-            "0.05",
-            "500"
-        ],
-        "correct_answer": "0.5",
-        "ideal_solution": "5/10 which is written as 0.5. Socratic Hint: Tenths is the first slot after the decimal.",
-        "failure_modes": {
-            "converse_error": "Student guesses 0.05 or 50."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "The coordinates of a rectangle are (1,1), (1,3), (4,3), and (4,1). What is its length?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "6",
-            "12"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "Length is the x-distance. 4 - 1 = 3. Width is y-distance (3 - 1 = 2). The length is 3. Socratic Hint: Count the spaces between 1 on the x axis and 4 on the x axis.",
-        "failure_modes": {
-            "formula_misapplication": "Student picks 2 (width) or 12 (area)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Add perfectly: 0.12 + 0.34",
-        "options": [
-            "0.46",
-            "0.56",
-            "0.22",
-            "1.2",
-            "46"
-        ],
-        "correct_answer": "0.46",
-        "ideal_solution": "12 + 34 = 46. Two decimal places. 0.46. Socratic Hint: Add the hundredths. Then add the tenths.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 46."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 100 × 0.07?",
-        "options": [
-            "0.7",
-            "7",
-            "70",
-            "700",
-            "0.007"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "Move decimal two places right. 0.07 -> 7.0. Socratic Hint: Two zeroes in 100 means two hops of the decimal dot.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 0.7 or 70."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 2,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If you share 3 identical pizzas among 4 people equally, how much does each person get?",
-        "options": [
-            "3/4",
-            "1/4",
-            "1 and 1/3",
-            "4/3",
-            "1/2"
-        ],
-        "correct_answer": "3/4",
-        "ideal_solution": "3 pizzas divided by 4 people = 3 ÷ 4 = 3/4. Socratic Hint: Just make the pizzas into a fraction. The pizzas are the top part. The people sharing are the bottom part.",
-        "failure_modes": {
-            "formula_misapplication": "Student incorrectly picks 4/3."
-        }
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 1/2 + 1/8?",
+    "options": [
+      "2/10",
+      "1/10",
+      "5/8",
+      "1/4",
+      "3/8"
+    ],
+    "correct_answer": "5/8",
+    "ideal_solution": "Convert 1/2 to 4/8. 4/8 + 1/8 = 5/8. Socratic Hint: Turn the half into eighths. How many eighths make a half?",
+    "failure_modes": {
+      "formula_misapplication": "Student adds straight across: 2/10 = 1/5.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
     }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Evaluate: 4 × (12 - 7) + 3",
+    "options": [
+      "23",
+      "28",
+      "45",
+      "51",
+      "55"
+    ],
+    "correct_answer": "23",
+    "ideal_solution": "Parentheses first: 12 - 7 = 5. Then multiply: 4 × 5 = 20. Then add: 20 + 3 = 23. Socratic Hint: PEMDAS. Parentheses, then multiply, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies 4 × 12 first (48), subtracts 7 (41), adds 3 = 44.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 3.5 - 0.75?",
+    "options": [
+      "2.25",
+      "2.75",
+      "3.25",
+      "4.25",
+      "2.5"
+    ],
+    "correct_answer": "2.75",
+    "ideal_solution": "3.5 is 3.50. 3.50 - 0.75. Take away 0.50 to get 3.00, then take away 0.25 more to get 2.75. Socratic Hint: Think of $3.50 minus 75 cents.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 3.25.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "A box is 4 cm long, 3 cm wide, and 1.5 cm tall. What is its volume?",
+    "options": [
+      "8.5",
+      "12",
+      "18",
+      "24",
+      "45"
+    ],
+    "correct_answer": "18",
+    "ideal_solution": "Volume = L × W × H. 4 × 3 = 12. 12 × 1.5 = 18. Socratic Hint: Multiply 4 by 3. Then multiply that answer by 1 and a half.",
+    "failure_modes": {
+      "formula_misapplication": "Student calculates 4+3+1.5 = 8.5.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Which of the numbers 20, 100, 200, 1000, and 10 is equivalent to 10²?",
+    "options": [
+      "20",
+      "100",
+      "200",
+      "1000",
+      "10"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "10² means 10 × 10, which is 100. Socratic Hint: The little 2 means you multiply two tens together.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 20 (10 × 2).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Divide: 12.5 ÷ 10",
+    "options": [
+      "0.125",
+      "1.25",
+      "125",
+      "1250",
+      "0.0125"
+    ],
+    "correct_answer": "1.25",
+    "ideal_solution": "Dividing by 10 moves the decimal place one step to the left. 12.5 -> 1.25. Socratic Hint: Move the decimal point one jump to the left to make the number smaller.",
+    "failure_modes": {
+      "order_reversal": "Student multiplies to get 125.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "If you add 0.05 to 0.95, what do you get?",
+    "options": [
+      "0.10",
+      "1.0",
+      "1.05",
+      "0.955",
+      "9.55"
+    ],
+    "correct_answer": "1.0",
+    "ideal_solution": "5 hundredths + 95 hundredths = 100 hundredths = 1 whole. Socratic Hint: A nickel plus ninety-five cents makes exactly one dollar.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 0.10.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "Which set of ordered pairs shows moving straight right 3 units from (2, 4)?",
+    "options": [
+      "(2, 7)",
+      "(5, 4)",
+      "(-1, 4)",
+      "(2, 1)",
+      "(6, 4)"
+    ],
+    "correct_answer": "(5, 4)",
+    "ideal_solution": "Moving right changes the x-coordinate by adding. 2 + 3 = 5. Y stays 4. So (5, 4). Socratic Hint: Right/left means changing the first number. Right is bigger.",
+    "failure_modes": {
+      "order_reversal": "Student adds to y-coordinate (2, 7).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 2/3 × 1/4?",
+    "options": [
+      "1/6",
+      "3/7",
+      "8/3",
+      "4/3",
+      "2/7"
+    ],
+    "correct_answer": "1/6",
+    "ideal_solution": "Multiply numerators: 2. Denominators: 12. 2/12 simplifies to 1/6. Socratic Hint: Multiply top times top, and bottom times bottom. Then simplify.",
+    "failure_modes": {
+      "premature_calculation": "Student selects 2/7 unsimplified or messes up.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Round 149.51 to the nearest whole number.",
+    "options": [
+      "149",
+      "150",
+      "149.5",
+      "100",
+      "200"
+    ],
+    "correct_answer": "150",
+    "ideal_solution": "Tenths digit is 5. Since it's 5 or greater, round the ones digit up. 149 becomes 150. Socratic Hint: Is it past the halfway mark of .50? Yes, it's .51.",
+    "failure_modes": {
+      "formula_misapplication": "Student rounds down to 149.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "A recipe needs 1.5 cups of sugar. If you make exactly 10 batches, how many cups of sugar?",
+    "options": [
+      "1.5",
+      "11.5",
+      "15",
+      "150",
+      "105"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "1.5 × 10 = 15. Socratic Hint: Move the decimal point one place to the right.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 150.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Subtract: 1 - 2/5.",
+    "options": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5",
+      "5/5"
+    ],
+    "correct_answer": "3/5",
+    "ideal_solution": "1 whole = 5/5. 5/5 - 2/5 = 3/5. Socratic Hint: A whole pizza is cut into 5 slices. You eat 2.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 2/5.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "Which 3D shape looks like a standard soup can?",
+    "options": [
+      "Cone",
+      "Cylinder",
+      "Sphere",
+      "Prism",
+      "Pyramid"
+    ],
+    "correct_answer": "Cylinder",
+    "ideal_solution": "A cylinder has two parallel circular bases. Socratic Hint: It has a circle on top, a circle on the bottom, and straight sides.",
+    "failure_modes": {
+      "converse_error": "Student guesses Prism.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Evaluate: 50 ÷ 5 + 5",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20",
+      "55"
+    ],
+    "correct_answer": "15",
+    "ideal_solution": "Divide first: 50 ÷ 5 = 10. Then add: 10 + 5 = 15. Socratic Hint: Division comes before addition.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds first (50 ÷ 10 = 5).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 0.4 × 0.5?",
+    "options": [
+      "0.9",
+      "0.2",
+      "0.02",
+      "2.0",
+      "0.002"
+    ],
+    "correct_answer": "0.2",
+    "ideal_solution": "4 × 5 = 20. Two decimal places. 0.20, which is equal to 0.2. Socratic Hint: 4 times 5 is 20. Now you need two decimal places... 0.20.",
+    "failure_modes": {
+      "formula_misapplication": "Student says 0.02, dropping the zero from the 20.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "A runner ran 4.2 km on Monday and 3.8 km on Tuesday. How far in total?",
+    "options": [
+      "7.0 km",
+      "7.8 km",
+      "8.0 km",
+      "8.2 km",
+      "7.2 km"
+    ],
+    "correct_answer": "8.0 km",
+    "ideal_solution": "4.0 + 3.0 = 7.0. 0.2 + 0.8 = 1.0. Total is 8.0. Socratic Hint: 2 tenths plus 8 tenths makes a whole number.",
+    "failure_modes": {
+      "arithmetic_slip": "Student gets 7.0 (forgets to carry).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "Look at the pattern: 0.1, 0.3, 0.5, 0.7... What is next?",
+    "options": [
+      "0.8",
+      "0.9",
+      "1.0",
+      "1.1",
+      "0.09"
+    ],
+    "correct_answer": "0.9",
+    "ideal_solution": "Adding 0.2 each time. 0.7 + 0.2 = 0.9. Socratic Hint: Just count by odd numbers in the tenths place.",
+    "failure_modes": {
+      "off_by_one": "Student says 0.8.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 10³ divided by 10?",
+    "options": [
+      "10",
+      "100",
+      "1000",
+      "1",
+      "10000"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "10³ = 1000. 1000 ÷ 10 = 100. Or 10³ / 10¹ = 10². Socratic Hint: A thousand divided by ten is a hundred.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 10 or 1000.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Compare: 1/2 ___ 5/10",
+    "options": [
+      ">",
+      "<",
+      "=",
+      "Cannot tell"
+    ],
+    "correct_answer": "=",
+    "ideal_solution": "5 is exactly half of 10. So 5/10 = 1/2. They are equal. Socratic Hint: Divide the top and bottom of 5/10 by 5.",
+    "failure_modes": {
+      "converse_error": "Student guesses < because 10 is bigger than 2.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "If you double the width of a rectangle, the overall area:",
+    "options": [
+      "Stays the same",
+      "Doubles",
+      "Triples",
+      "Quadruples",
+      "Cannot be guessed"
+    ],
+    "correct_answer": "Doubles",
+    "ideal_solution": "Area = L × W. Area_new = L × (2W) = 2(L × W). It doubles. Socratic Hint: If you push two of the exact same carpets together, you have twice as much floor covered.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses Quadruples (confusing 1D scaling with both dimensions scaling).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Evaluate: 8 × 1/8",
+    "options": [
+      "1/64",
+      "1",
+      "8/8",
+      "64",
+      "2"
+    ],
+    "correct_answer": "1",
+    "ideal_solution": "8/1 × 1/8 = 8/8, which equals 1. Socratic Hint: If you have 8 slices of pizza that are each 1/8th of a pie, you have one whole pie.",
+    "failure_modes": {
+      "formula_misapplication": "Student selects 64 or 1/64.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Convert 4.5 liters to milliliters.",
+    "options": [
+      "45",
+      "450",
+      "4500",
+      "45000",
+      "0.0045"
+    ],
+    "correct_answer": "4500",
+    "ideal_solution": "1 L = 1000 mL. 4.5 × 1000 = 4500. Socratic Hint: A 2-liter bottle is 2000 mL. 4.5 liters would be...",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies by 100 to get 450.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Is 3/5 greater or less than 1/2?",
+    "options": [
+      "Greater",
+      "Less",
+      "Equal",
+      "Cannot tell"
+    ],
+    "correct_answer": "Greater",
+    "ideal_solution": "1/2 of 5 is 2.5. Since 3 > 2.5, 3/5 > 1/2. Another way: 3/5 = 6/10; 1/2 = 5/10. Socratic Hint: What is exactly half of 5? It's 2.5. Since 3 is bigger than 2.5, it's bigger than half.",
+    "failure_modes": {
+      "converse_error": "Student guesses Less.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 10.05 + 0.05?",
+    "options": [
+      "10.10",
+      "11.0",
+      "10.010",
+      "15.5",
+      "10.50"
+    ],
+    "correct_answer": "10.10",
+    "ideal_solution": ".05 + .05 = .10. So 10.10. Socratic Hint: Think of $10.05 plus a nickel.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 11.0.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Subtract: 1/2 - 1/4",
+    "options": [
+      "1/8",
+      "1/4",
+      "0",
+      "1/2",
+      "3/4"
+    ],
+    "correct_answer": "1/4",
+    "ideal_solution": "1/2 is equal to 2/4. 2/4 - 1/4 = 1/4. Socratic Hint: If you have half a pizza and eat a quarter of the pizza, what is left?",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts straight across: 1/2 (1-1=0).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 0.02 × 100?",
+    "options": [
+      "20",
+      "200",
+      "2",
+      "0.2",
+      "0.0002"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "Multiply by 100: move the decimal 2 places to the right. 0.02 turns into 2. Socratic Hint: Move the dot two hops to the right.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 20 or 0.2.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Evaluate: 3 + (5 × 2) - 4",
+    "options": [
+      "12",
+      "9",
+      "10",
+      "8",
+      "6"
+    ],
+    "correct_answer": "9",
+    "ideal_solution": "Parentheses: 5 × 2 = 10. Add 3 = 13. Subtract 4 = 9. Socratic Hint: Do the multiplication inside the parentheses first, then work left to right.",
+    "failure_modes": {
+      "formula_misapplication": "Student calculates 3+5=8, 8×2=16, 16-4=12.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "How many zeroes are there in 10 to the 5th power?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "10",
+      "50"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "10⁵ = 100,000. It has 5 zeroes. Socratic Hint: The little exponent number matches exactly how many zeroes come after the 1.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 6.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Add: 2/3 + 2/3",
+    "options": [
+      "4/6",
+      "4/3",
+      "1",
+      "2/9",
+      "4/9"
+    ],
+    "correct_answer": "4/3",
+    "ideal_solution": "Keep denominator. 2 + 2 = 4. 4/3. Socratic Hint: Denominators don't change when you add them.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds denominators: 4/6.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "A string is 1 meter long. I cut off 25 centimeters. How much is left?",
+    "options": [
+      "75 cm",
+      "24 cm",
+      "125 cm",
+      "0.75 cm",
+      "7.5 cm"
+    ],
+    "correct_answer": "75 cm",
+    "ideal_solution": "1 m = 100 cm. 100 - 25 = 75 cm. Socratic Hint: Think of a meter as exactly 100 centimeters.",
+    "failure_modes": {
+      "formula_misapplication": "Student says 24 (1 - 25 is negative, but they miscalculate).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "A square's perimeter is 24 inches. What is the length of one side?",
+    "options": [
+      "4 inches",
+      "6 inches",
+      "8 inches",
+      "12 inches",
+      "96 inches"
+    ],
+    "correct_answer": "6 inches",
+    "ideal_solution": "Perimeter = 4 × side. 24 ÷ 4 = 6. Socratic Hint: A square has 4 sides perfectly equal in length. Divide 24 by 4.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides by 2 (12 or 8).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Divide 3/4 by 3.",
+    "options": [
+      "1/4",
+      "3/12",
+      "9/4",
+      "3",
+      "3/4"
+    ],
+    "correct_answer": "1/4",
+    "ideal_solution": "(3/4) ÷ 3 = 1/4. Or think: three quarters divided equally among 3 people is one quarter each. Socratic Hint: You have 3 slices of pizza. Give them to 3 friends evenly.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies by 3: 9/4.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is the product of 0.6 and 6?",
+    "options": [
+      "36",
+      "0.36",
+      "3.6",
+      "1.2",
+      "360"
+    ],
+    "correct_answer": "3.6",
+    "ideal_solution": "6 × 6 = 36. One decimal placement means 3.6. Socratic Hint: Six times six is 36. Now place the decimal one spot in.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 36 or 0.36.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "Starting at the origin, move right 2, up 4, left 1. What are your coordinates?",
+    "options": [
+      "(1, 4)",
+      "(3, 4)",
+      "(2, 3)",
+      "(1, 3)",
+      "(3, 3)"
+    ],
+    "correct_answer": "(1, 4)",
+    "ideal_solution": "Start: (0,0). Right 2: (2,0). Up 4: (2,4). Left 1: (1,4). Socratic Hint: Track your left/right position separately from your up/down position.",
+    "failure_modes": {
+      "order_reversal": "Student maps it to (4, 1).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "Can a triangle have two right angles?",
+    "options": [
+      "Yes, always",
+      "No, never",
+      "Only if it is isosceles",
+      "Cannot tell"
+    ],
+    "correct_answer": "No, never",
+    "ideal_solution": "Two right angles = 90 + 90 = 180 degrees. A triangle has 180 total, leaving 0 for the third angle. Not a triangle. Socratic Hint: If a triangle has 180 total degrees inside, and two of them eat up 180 exactly... there's nothing left for the third angle!",
+    "failure_modes": {
+      "converse_error": "Student guesses Yes.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Subtract: 10 - 2.5",
+    "options": [
+      "8.5",
+      "7.5",
+      "12.5",
+      "7.0",
+      "8.0"
+    ],
+    "correct_answer": "7.5",
+    "ideal_solution": "10.0 - 2.0 = 8.0. 8.0 - 0.5 = 7.5. Socratic Hint: Take away 2 dollars. Then take away 50 cents.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 8.5.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Which of 0.5, 5.0, 0.05, 0.005, and 500.0 is 5 hundredths expressed as a decimal?",
+    "options": [
+      "0.5",
+      "5.0",
+      "0.05",
+      "0.005",
+      "500.0"
+    ],
+    "correct_answer": "0.05",
+    "ideal_solution": "Hundredths means two places after the decimal. 0.05. Socratic Hint: First place is tenths, second is hundredths.",
+    "failure_modes": {
+      "converse_error": "Student chooses 0.5.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 4 × (50 + 5)?",
+    "options": [
+      "220",
+      "200",
+      "205",
+      "455",
+      "54"
+    ],
+    "correct_answer": "220",
+    "ideal_solution": "Distributive property or PEMDAS. 4 × 55 = 220. Or (4×50) + (4×5) = 200 + 20 = 220. Socratic Hint: Multiply 4 by 50. Multiply 4 by 5. Add them together.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 205 (does 4×50=200, adds 5).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "A movie starts at 7:15 PM and is exactly 2 hours and 10 minutes long. When does it end?",
+    "options": [
+      "9:15 PM",
+      "9:25 PM",
+      "10:15 PM",
+      "9:10 PM",
+      "8:25 PM"
+    ],
+    "correct_answer": "9:25 PM",
+    "ideal_solution": "7:15 + 2 hours = 9:15. 9:15 + 10 mins = 9:25. Socratic Hint: Add the hours to the hours, and minutes to the minutes.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 9:15 PM.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "Volume is measured in:",
+    "options": [
+      "Unit lengths",
+      "Square units",
+      "Cubic units",
+      "Degrees",
+      "Pounds"
+    ],
+    "correct_answer": "Cubic units",
+    "ideal_solution": "Length is 1D (units). Area is 2D (square units). Volume is 3D (cubic units). Socratic Hint: Volume fills up a 3D box, so it needs tiny 3D unit blocks.",
+    "failure_modes": {
+      "converse_error": "Student guesses Square units.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Evaluate: 1/2 of 1/3",
+    "options": [
+      "1/5",
+      "1/6",
+      "5/6",
+      "2/3",
+      "1"
+    ],
+    "correct_answer": "1/6",
+    "ideal_solution": "multiply 1/2 × 1/3 = 1/6. Socratic Hint: Cut a pizza into thirds. Then cut those slices in half. You now have 6 slices.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 1/5.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Subtract: 1.1 - 0.9",
+    "options": [
+      "0.1",
+      "0.2",
+      "0.3",
+      "1.8",
+      "0"
+    ],
+    "correct_answer": "0.2",
+    "ideal_solution": "11 tenths - 9 tenths = 2 tenths = 0.2. Socratic Hint: Count up from 0.9 to 1.1.",
+    "failure_modes": {
+      "arithmetic_slip": "Student guesses 0.1.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is the equivalent fraction to 2/3 with a denominator of 12?",
+    "options": [
+      "4/12",
+      "6/12",
+      "8/12",
+      "10/12",
+      "3/12"
+    ],
+    "correct_answer": "8/12",
+    "ideal_solution": "3 × 4 = 12. 2 × 4 = 8. So 8/12. Socratic Hint: You have to multiply the top and bottom by the same numbered factor.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 4/12 or 6/12.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "A sequence goes 10, 20, 40, 80... what is next?",
+    "options": [
+      "100",
+      "120",
+      "160",
+      "200",
+      "240"
+    ],
+    "correct_answer": "160",
+    "ideal_solution": "It is doubling each time. 80 × 2 = 160. Socratic Hint: 10 + 10 = 20. 20 + 20 = 40. 40 + 40 = 80.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds 40: 120.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Evaluate: 14 + (6 ÷ 2)",
+    "options": [
+      "10",
+      "13",
+      "17",
+      "20",
+      "7"
+    ],
+    "correct_answer": "17",
+    "ideal_solution": "Parentheses: 6 ÷ 2 = 3. 14 + 3 = 17. Socratic Hint: Let's do the easy division inside the parentheses first.",
+    "failure_modes": {
+      "formula_misapplication": "Student does 14 + 6 = 20, 20 ÷ 2 = 10.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What does a 5 mean in the tenths place?",
+    "options": [
+      "50",
+      "5",
+      "0.5",
+      "0.05",
+      "500"
+    ],
+    "correct_answer": "0.5",
+    "ideal_solution": "5/10 which is written as 0.5. Socratic Hint: Tenths is the first slot after the decimal.",
+    "failure_modes": {
+      "converse_error": "Student guesses 0.05 or 50.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "geometry",
+    "question": "The coordinates of a rectangle are (1,1), (1,3), (4,3), and (4,1). What is its length?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "Length is the x-distance. 4 - 1 = 3. Width is y-distance (3 - 1 = 2). The length is 3. Socratic Hint: Count the spaces between 1 on the x axis and 4 on the x axis.",
+    "failure_modes": {
+      "formula_misapplication": "Student picks 2 (width) or 12 (area).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "Add perfectly: 0.12 + 0.34",
+    "options": [
+      "0.46",
+      "0.56",
+      "0.22",
+      "1.2",
+      "46"
+    ],
+    "correct_answer": "0.46",
+    "ideal_solution": "12 + 34 = 46. Two decimal places. 0.46. Socratic Hint: Add the hundredths. Then add the tenths.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 46.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "arithmetic",
+    "question": "What is 100 × 0.07?",
+    "options": [
+      "0.7",
+      "7",
+      "70",
+      "700",
+      "0.007"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "Move decimal two places right. 0.07 -> 7.0. Socratic Hint: Two zeroes in 100 means two hops of the decimal dot.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 0.7 or 70.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 2,
+    "difficulty": "beginner",
+    "type": "logic",
+    "question": "If you share 3 identical pizzas among 4 people equally, how much does each person get?",
+    "options": [
+      "3/4",
+      "1/4",
+      "1 and 1/3",
+      "4/3",
+      "1/2"
+    ],
+    "correct_answer": "3/4",
+    "ideal_solution": "3 pizzas divided by 4 people = 3 ÷ 4 = 3/4. Socratic Hint: Just make the pizzas into a fraction. The pizzas are the top part. The people sharing are the bottom part.",
+    "failure_modes": {
+      "formula_misapplication": "Student incorrectly picks 4/3.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  }
 ]

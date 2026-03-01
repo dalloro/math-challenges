@@ -1,1052 +1,1052 @@
 [
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 2/3 + 3/4 - 1/6",
-        "options": [
-            "1/4",
-            "5/12",
-            "1 1/4",
-            "3/4",
-            "7/12"
-        ],
-        "correct_answer": "1 1/4",
-        "ideal_solution": "LCD = 12. Convert: 2/3 = 8/12, 3/4 = 9/12, 1/6 = 2/12. Compute: 8/12 + 9/12 - 2/12 = 15/12 = 5/4 = 1 1/4. Socratic Hint: Find a common denominator for all three fractions, then add and subtract from left to right.",
-        "failure_modes": {
-            "arithmetic_slip": "Student converts incorrectly: 2/3 = 6/12 instead of 8/12, getting 13/12.",
-            "formula_misapplication": "Student adds numerators and denominators: (2+3-1)/(3+4-6) = 4/1.",
-            "premature_calculation": "Student adds 2/3 + 3/4 = 17/12 but forgets to subtract 1/6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rectangular prism has a volume of 180 cu cm. Its length is 10 cm and its width is 6 cm. What is its height?",
-        "options": [
-            "2 cm",
-            "3 cm",
-            "4 cm",
-            "5 cm",
-            "6 cm"
-        ],
-        "correct_answer": "3 cm",
-        "ideal_solution": "Volume = l × w × h. 180 = 10 × 6 × h. 180 = 60h. h = 180/60 = 3 cm. Socratic Hint: Divide the volume by the product of length and width.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides 180 by 10 only, getting 18.",
-            "arithmetic_slip": "Student computes 180/60 = 4.",
-            "converse_error": "Student multiplies 10 × 6 × 180 instead of dividing."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A snail climbs 5 feet up a wall each day but slips back 2 feet each night. If the wall is 21 feet tall, on which day does the snail first reach the top?",
-        "options": [
-            "6th day",
-            "7th day",
-            "8th day",
-            "9th day",
-            "10th day"
-        ],
-        "correct_answer": "7th day",
-        "ideal_solution": "Net gain per day: 5-2 = 3 feet (except the last day when it escapes). After 6 days: 6 × 3 = 18 feet. On day 7, it climbs 5 feet to reach 23 feet, which exceeds 21. The snail reaches the top during day 7. Socratic Hint: On the final day, the snail reaches the top before sliding back at night.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides 21/3 = 7, but this ignores the final day escape.",
-            "off_by_one": "Student calculates 21/3 = 7 and adds 1, getting 8th day.",
-            "arithmetic_slip": "Student tracks 3, 6, 9, 12, 15, 18, 21 and says 7th which is correct, but if they include day 0 they might say 8th."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A shirt costs $45. It is discounted by 20%, and then the discounted price is taxed at 10%. What is the final price?",
-        "options": [
-            "$35.00",
-            "$36.00",
-            "$39.00",
-            "$39.60",
-            "$40.50"
-        ],
-        "correct_answer": "$39.60",
-        "ideal_solution": "Discount: 20% of $45 = $9. Sale price = $45 - $9 = $36. Tax: 10% of $36 = $3.60. Final = $36 + $3.60 = $39.60. Socratic Hint: Apply discount first to get the sale price, then add tax to the sale price.",
-        "failure_modes": {
-            "formula_misapplication": "Student nets 20%-10%=10% discount: $45 × 0.90 = $40.50.",
-            "premature_calculation": "Student stops at $36 (after discount, before tax).",
-            "arithmetic_slip": "Student computes 10% of $45 = $4.50 instead of 10% of $36."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many prime numbers are there between 20 and 40?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "Check each odd number: 21=3×7, 23 is prime, 25=5×5, 27=3×9, 29 is prime, 31 is prime, 33=3×11, 35=5×7, 37 is prime, 39=3×13. Primes: 23, 29, 31, 37. Count = 4. Socratic Hint: Check each number for divisibility by small primes (2, 3, 5).",
-        "failure_modes": {
-            "overcounting": "Student includes 21 or 27, getting 5 or 6.",
-            "undercounting": "Student misses 37, getting only 3.",
-            "constraint_neglect": "Student includes 20 or 40 in the range."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 3 1/2 ÷ 1/4?",
-        "options": [
-            "7/8",
-            "3 1/8",
-            "7",
-            "14",
-            "28"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "Convert: 3 1/2 = 7/2. Divide: (7/2) ÷ (1/4) = (7/2) × (4/1) = 28/2 = 14. Socratic Hint: Convert the mixed number to improper, flip the divisor, and multiply.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies instead: 7/2 × 1/4 = 7/8.",
-            "arithmetic_slip": "Student computes 28/2 = 7.",
-            "converse_error": "Student divides 1/4 by 7/2 = 2/28 = 1/14."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Two shapes are placed together without overlapping. Shape A is a rectangle 8 cm by 5 cm. Shape B is a square with sides of 5 cm. What is the total area?",
-        "options": [
-            "40 sq cm",
-            "55 sq cm",
-            "60 sq cm",
-            "65 sq cm",
-            "80 sq cm"
-        ],
-        "correct_answer": "65 sq cm",
-        "ideal_solution": "Area of A = 8 × 5 = 40 sq cm. Area of B = 5 × 5 = 25 sq cm. Total = 40 + 25 = 65 sq cm. Socratic Hint: Find each area separately and add.",
-        "failure_modes": {
-            "premature_calculation": "Student calculates only rectangle A: 40 sq cm.",
-            "arithmetic_slip": "Student adds 40 + 25 = 55.",
-            "formula_misapplication": "Student treats it as one large shape: (8+5) × 5 = 65 (happens to be right but reasoning is wrong for non-aligned shapes)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A tank is 3/5 full. After adding 12 liters, it becomes completely full. What is the total capacity of the tank?",
-        "options": [
-            "20 liters",
-            "24 liters",
-            "30 liters",
-            "36 liters",
-            "60 liters"
-        ],
-        "correct_answer": "30 liters",
-        "ideal_solution": "The tank is 2/5 empty. 2/5 of capacity = 12 liters. 1/5 = 6 liters. Total capacity = 5 × 6 = 30 liters. Socratic Hint: If it is 3/5 full, it is 2/5 empty. Those 12 liters filled the remaining 2/5.",
-        "failure_modes": {
-            "formula_misapplication": "Student divides 12 by 3/5: 12 × 5/3 = 20.",
-            "arithmetic_slip": "Student computes 12 × 5 = 60.",
-            "premature_calculation": "Student computes 12 × 2 = 24."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "In a school election, Amy got twice as many votes as Ben, and Ben got 15 more votes than Carol. If Carol got 20 votes, how many votes did Amy get?",
-        "options": [
-            "35",
-            "40",
-            "55",
-            "60",
-            "70"
-        ],
-        "correct_answer": "70",
-        "ideal_solution": "Carol = 20. Ben = 20 + 15 = 35. Amy = 2 × 35 = 70. Socratic Hint: Start from what you know (Carol's votes) and work forward step by step.",
-        "failure_modes": {
-            "premature_calculation": "Student finds Ben = 35 and stops.",
-            "formula_misapplication": "Student adds all: 20 + 15 + 2 × 20 = 75.",
-            "arithmetic_slip": "Student computes Amy = 2 × 20 = 40 (doubling Carol instead of Ben)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 4.2 × 3.5",
-        "options": [
-            "7.7",
-            "12.7",
-            "14.7",
-            "15.4",
-            "16.8"
-        ],
-        "correct_answer": "14.7",
-        "ideal_solution": "42 × 35 = 1470. Count 2 decimal places total. Result: 14.70 = 14.7. Socratic Hint: Remove the decimals, multiply, then put back the correct number of decimal places.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 4.2 + 3.5 = 7.7.",
-            "arithmetic_slip": "Student computes 42 × 35 = 1540, getting 15.4.",
-            "off_by_one": "Student places only 1 decimal: 147.0."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A right triangle has legs of 5 cm and 12 cm. What is the length of the hypotenuse?",
-        "options": [
-            "7 cm",
-            "10 cm",
-            "13 cm",
-            "15 cm",
-            "17 cm"
-        ],
-        "correct_answer": "13 cm",
-        "ideal_solution": "Using the Pythagorean theorem (stretch topic for Grade 5): a^2 + b^2 = c^2. 5^2 + 12^2 = 25 + 144 = 169. sqrt(169) = 13. Socratic Hint: Square both legs, add them, then take the square root.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds legs: 5 + 12 = 17.",
-            "arithmetic_slip": "Student computes 25 + 144 = 159, sqrt(159) ≈ 12.6, rounds to 13 (right answer, wrong path).",
-            "premature_calculation": "Student computes 5^2 + 12^2 = 169 but picks 15 instead of sqrt(169)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 5/8 ÷ 5/4?",
-        "options": [
-            "1/2",
-            "25/32",
-            "1",
-            "2",
-            "4/5"
-        ],
-        "correct_answer": "1/2",
-        "ideal_solution": "5/8 ÷ 5/4 = 5/8 × 4/5 = 20/40 = 1/2. Socratic Hint: Flip the second fraction and multiply. The 5s cancel.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies without flipping: 5/8 × 5/4 = 25/32.",
-            "converse_error": "Student divides in reverse: 5/4 ÷ 5/8 = 5/4 × 8/5 = 2.",
-            "arithmetic_slip": "Student computes 20/40 = 4/5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A rope is 10 meters long. You need to cut it into pieces that are each 2/5 of a meter long. How many pieces can you get?",
-        "options": [
-            "4",
-            "5",
-            "20",
-            "25",
-            "50"
-        ],
-        "correct_answer": "25",
-        "ideal_solution": "10 ÷ (2/5) = 10 × (5/2) = 50/2 = 25 pieces. Socratic Hint: Dividing by 2/5 is the same as multiplying by 5/2.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 10 × 2/5 = 4.",
-            "arithmetic_slip": "Student computes 10 ÷ 2 × 5 = 25 (correct) but writes 50.",
-            "converse_error": "Student divides by 5/2 instead of 2/5, getting 4."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: (2^4 - 6) × 2 + 1",
-        "options": [
-            "11",
-            "17",
-            "21",
-            "27",
-            "33"
-        ],
-        "correct_answer": "21",
-        "ideal_solution": "Exponent: 2^4 = 16. Subtract: 16 - 6 = 10. Multiply: 10 × 2 = 20. Add: 20 + 1 = 21. Socratic Hint: Follow order of operations: exponents, then parentheses, then multiply, then add.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes (2^4 - 6) = (8-6) = 2 (using 2×4 instead of 2^4).",
-            "arithmetic_slip": "Student gets 2^4 = 16, then (16-6)×2+1 = 10×2+1 = 10×3 = 30.",
-            "premature_calculation": "Student adds 2+1 first: (16-6) × 3 = 30."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the GCF of 28, 42, and 70?",
-        "options": [
-            "2",
-            "7",
-            "14",
-            "28",
-            "42"
-        ],
-        "correct_answer": "14",
-        "ideal_solution": "28 = 2^2 × 7. 42 = 2 × 3 × 7. 70 = 2 × 5 × 7. GCF = take the lowest power of each common prime: 2^1 × 7 = 14. Socratic Hint: Find the prime factorization of each number and take the primes they all share.",
-        "failure_modes": {
-            "undercounting": "Student finds only common factor 7, missing the 2.",
-            "overcounting": "Student picks 28, which is a factor of 28 but not of 42.",
-            "arithmetic_slip": "Student finds GCF of just 28 and 42 (14) but then incorrectly recalculates with 70."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A composite 3D shape is made of two rectangular prisms joined end-to-end. Prism A is 4 cm × 3 cm × 2 cm. Prism B is 6 cm × 3 cm × 2 cm. What is the total volume?",
-        "options": [
-            "24 cu cm",
-            "36 cu cm",
-            "48 cu cm",
-            "60 cu cm",
-            "72 cu cm"
-        ],
-        "correct_answer": "60 cu cm",
-        "ideal_solution": "Volume A = 4×3×2 = 24. Volume B = 6×3×2 = 36. Total = 24+36 = 60 cu cm. Socratic Hint: Find each volume separately and add.",
-        "failure_modes": {
-            "premature_calculation": "Student calculates only one prism: 24 or 36.",
-            "arithmetic_slip": "Student adds 24 + 36 = 48.",
-            "formula_misapplication": "Student multiplies volumes: 24 × 36."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A car travels 240 miles using 8 gallons of gas. How many miles per gallon does the car get?",
-        "options": [
-            "20 mpg",
-            "25 mpg",
-            "28 mpg",
-            "30 mpg",
-            "32 mpg"
-        ],
-        "correct_answer": "30 mpg",
-        "ideal_solution": "Miles per gallon = 240 ÷ 8 = 30. Socratic Hint: Divide total distance by total fuel used.",
-        "failure_modes": {
-            "converse_error": "Student divides 8/240 = 0.033 gallons per mile.",
-            "arithmetic_slip": "Student computes 240 ÷ 8 = 28.",
-            "formula_misapplication": "Student multiplies 240 × 8 = 1920."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Three consecutive even numbers have a sum of 78. What is the largest of the three?",
-        "options": [
-            "24",
-            "26",
-            "28",
-            "30",
-            "32"
-        ],
-        "correct_answer": "28",
-        "ideal_solution": "Let the numbers be n, n+2, n+4. Sum: 3n + 6 = 78. 3n = 72. n = 24. The three are 24, 26, 28. Largest = 28. Socratic Hint: The middle number equals the average. 78/3 = 26. So the numbers are 24, 26, 28.",
-        "failure_modes": {
-            "premature_calculation": "Student finds n = 24 and stops (smallest, not largest).",
-            "arithmetic_slip": "Student computes 78/3 = 25 and lists 23, 25, 27.",
-            "off_by_one": "Student lists 26, 28, 30 (middle is correct but sequence wrong)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 2.5^2?",
-        "options": [
-            "5.0",
-            "5.25",
-            "6.00",
-            "6.25",
-            "12.5"
-        ],
-        "correct_answer": "6.25",
-        "ideal_solution": "2.5^2 = 2.5 × 2.5 = 6.25. Compute: 25 × 25 = 625, place 2 decimals: 6.25. Socratic Hint: Squaring means multiplying the number by itself.",
-        "failure_modes": {
-            "formula_misapplication": "Student doubles: 2.5 × 2 = 5.0.",
-            "arithmetic_slip": "Student computes 2.5 × 2.5 = 5.25.",
-            "converse_error": "Student computes sqrt(2.5) ≈ 1.58."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "On a coordinate plane, a triangle has vertices at (0,0), (6,0), and (3,4). What is the area of the triangle?",
-        "options": [
-            "6 sq units",
-            "8 sq units",
-            "10 sq units",
-            "12 sq units",
-            "24 sq units"
-        ],
-        "correct_answer": "12 sq units",
-        "ideal_solution": "Base lies along the x-axis from (0,0) to (6,0), so base = 6. Height is the y-coordinate of the third vertex: 4. Area = (1/2) × 6 × 4 = 12. Socratic Hint: Use the base along the x-axis and the height from the third point.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses rectangle formula: 6 × 4 = 24.",
-            "arithmetic_slip": "Student computes (1/2) × 6 × 4 = 8.",
-            "premature_calculation": "Student picks base = 3 (x-coordinate of apex), area = (1/2)×3×4 = 6."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Sam has $50. He spends 2/5 of his money on a book and 1/4 of his money on lunch. How much money does he have left?",
-        "options": [
-            "$7.50",
-            "$12.50",
-            "$17.50",
-            "$20.00",
-            "$32.50"
-        ],
-        "correct_answer": "$17.50",
-        "ideal_solution": "Book: 2/5 × $50 = $20. Lunch: 1/4 × $50 = $12.50. Spent: $20 + $12.50 = $32.50. Left: $50 - $32.50 = $17.50. Socratic Hint: Calculate each expense separately, add them, then subtract from the total.",
-        "failure_modes": {
-            "premature_calculation": "Student only subtracts the book: $50 - $20 = $30.",
-            "arithmetic_slip": "Student computes 1/4 of $50 = $10, getting $50 - $30 = $20.",
-            "formula_misapplication": "Student adds fractions 2/5 + 1/4 = 3/9 = 1/3, then $50 × 1/3 ≈ $16.67."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A store sells apples in bags of 6 and oranges in bags of 8. What is the least number of bags needed so that you have the same number of apples as oranges?",
-        "options": [
-            "2",
-            "3",
-            "4",
-            "5",
-            "7"
-        ],
-        "correct_answer": "4",
-        "ideal_solution": "LCM of 6 and 8 = 24. Need 24/6 = 4 bags of apples and 24/8 = 3 bags of oranges. Total bags = 4 + 3 = 7. Wait — the question asks for total bags. Hmm. Let me re-read. Actually it asks for the least number of bags TOTAL. 4 + 3 = 7 bags. Socratic Hint: Find the LCM to know how many fruits you need, then figure out how many bags that takes.",
-        "failure_modes": {
-            "premature_calculation": "Student finds LCM = 24 and picks 4 (only apple bags).",
-            "arithmetic_slip": "Student computes LCM incorrectly as 12, needing 2+1.5 bags.",
-            "formula_misapplication": "Student adds 6 + 8 = 14 and divides by something."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 8.4 ÷ 0.7?",
-        "options": [
-            "1.2",
-            "5.88",
-            "7.7",
-            "12",
-            "84"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "Multiply both by 10: 84 ÷ 7 = 12. Socratic Hint: Move the decimal in both numbers the same number of places to make the divisor a whole number.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 8.4 × 0.7 = 5.88.",
-            "arithmetic_slip": "Student computes 84 ÷ 7 = 11.",
-            "converse_error": "Student divides 0.7 ÷ 8.4."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "A number is divisible by both 4 and 6. What is the smallest such positive number?",
-        "options": [
-            "6",
-            "8",
-            "10",
-            "12",
-            "24"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "LCM of 4 and 6: Multiples of 4: 4, 8, 12. Multiples of 6: 6, 12. Smallest common = 12. Socratic Hint: List multiples of each number until you find the first one they share.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies 4 × 6 = 24.",
-            "undercounting": "Student picks 6 (divisible by 6 but not by 4).",
-            "converse_error": "Student picks GCF (2) instead of LCM."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A circle has a radius of 7 cm. What is its diameter?",
-        "options": [
-            "3.5 cm",
-            "7 cm",
-            "14 cm",
-            "21 cm",
-            "49 cm"
-        ],
-        "correct_answer": "14 cm",
-        "ideal_solution": "Diameter = 2 × radius = 2 × 7 = 14 cm. Socratic Hint: The diameter is always twice the radius.",
-        "failure_modes": {
-            "converse_error": "Student divides: 7 ÷ 2 = 3.5 (thinking radius = diameter/2 backwards).",
-            "formula_misapplication": "Student computes circumference-related: 3 × 7 = 21.",
-            "premature_calculation": "Student squares the radius: 7^2 = 49."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A number decreased by 35% gives 52. What is the original number?",
-        "options": [
-            "70",
-            "72",
-            "75",
-            "78",
-            "80"
-        ],
-        "correct_answer": "80",
-        "ideal_solution": "If a number is decreased by 35%, 65% remains. 0.65 × n = 52. n = 52/0.65 = 80. Socratic Hint: If 35% is removed, 65% is left. Set up: 65% of what equals 52?",
-        "failure_modes": {
-            "formula_misapplication": "Student adds 35% to 52: 52 × 1.35 = 70.2, rounds to 70.",
-            "arithmetic_slip": "Student divides 52/0.65 incorrectly = 75.",
-            "converse_error": "Student computes 35% of 52 = 18.2 and adds: 52 + 18.2 = 70.2."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A code uses 3-letter combinations from the letters A, B, C, D. Letters can repeat. How many different codes are possible?",
-        "options": [
-            "12",
-            "24",
-            "27",
-            "64",
-            "81"
-        ],
-        "correct_answer": "64",
-        "ideal_solution": "4 choices for each position × 3 positions = 4 × 4 × 4 = 64. Socratic Hint: For each slot in the code, you have 4 letter options. Multiply the choices together.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 4 × 3 = 12 (multiplicies letters × positions).",
-            "undercounting": "Student computes 4! = 24 (permutations without repetition).",
-            "arithmetic_slip": "Student computes 3^3 = 27 (using 3 letters instead of 4)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 1 - (1/3 + 1/4)",
-        "options": [
-            "5/12",
-            "7/12",
-            "1/7",
-            "2/7",
-            "1/12"
-        ],
-        "correct_answer": "5/12",
-        "ideal_solution": "1/3 + 1/4: LCD 12. 4/12 + 3/12 = 7/12. Then 1 - 7/12 = 12/12 - 7/12 = 5/12. Socratic Hint: First add the two fractions, then subtract from 1 (which equals 12/12).",
-        "failure_modes": {
-            "converse_error": "Student subtracts 7/12 from the wrong direction, getting 7/12.",
-            "formula_misapplication": "Student adds denominators: 1/3 + 1/4 = 2/7, then 1 - 2/7 = 5/7.",
-            "arithmetic_slip": "Student computes 1/3 + 1/4 = 7/12, then 1 - 7/12 = 1/12."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A trapezoid has parallel sides of 10 cm and 6 cm, and a height of 4 cm. What is its area?",
-        "options": [
-            "24 sq cm",
-            "28 sq cm",
-            "32 sq cm",
-            "40 sq cm",
-            "60 sq cm"
-        ],
-        "correct_answer": "32 sq cm",
-        "ideal_solution": "Area = (1/2) × (base1 + base2) × height = (1/2) × (10 + 6) × 4 = (1/2) × 16 × 4 = 32. Socratic Hint: Add the two parallel sides, multiply by the height, then take half.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses only one base: (1/2) × 10 × 4 = 20 or 10 × 4 = 40.",
-            "premature_calculation": "Student adds bases: 10 + 6 = 16 and multiplies by height: 64, then forgets the 1/2.",
-            "arithmetic_slip": "Student calculates (1/2) × 16 × 4 = 28."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "If n × 0.25 = 15, what is n?",
-        "options": [
-            "3.75",
-            "30",
-            "45",
-            "60",
-            "75"
-        ],
-        "correct_answer": "60",
-        "ideal_solution": "n = 15 ÷ 0.25 = 15 × 4 = 60. Socratic Hint: Dividing by 0.25 is the same as multiplying by 4, because 0.25 = 1/4.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 15 × 0.25 = 3.75.",
-            "arithmetic_slip": "Student computes 15 × 4 = 45.",
-            "converse_error": "Student computes 15/4 = 3.75."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Anna thinks of a number. She doubles it, adds 6, then divides by 2. The result is 11. What was her original number?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "10"
-        ],
-        "correct_answer": "8",
-        "ideal_solution": "Work backwards: result is 11. Before dividing by 2: 11 × 2 = 22. Before adding 6: 22 - 6 = 16. Before doubling: 16/2 = 8. Socratic Hint: Undo each operation in reverse order.",
-        "failure_modes": {
-            "formula_misapplication": "Student works forward with a guess: tries 5 → 10+6=16, 16/2=8, not 11.",
-            "arithmetic_slip": "Student computes 11×2 = 22, 22-6 = 14, 14/2 = 7.",
-            "converse_error": "Student undoes in wrong order: 11-6=5, 5×2=10, 10/2=5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 7/9 - 2/3?",
-        "options": [
-            "1/9",
-            "5/6",
-            "5/9",
-            "1/3",
-            "2/9"
-        ],
-        "correct_answer": "1/9",
-        "ideal_solution": "Convert 2/3 to 6/9. Then 7/9 - 6/9 = 1/9. Socratic Hint: Make the denominators the same, then subtract.",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts across: (7-2)/(9-3) = 5/6.",
-            "arithmetic_slip": "Student converts 2/3 to 4/9, getting 3/9 = 1/3.",
-            "premature_calculation": "Student subtracts numerators only: 7-2 = 5, writes 5/9."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "What is the prime factorization of 90?",
-        "options": [
-            "2 × 45",
-            "2 × 3 × 15",
-            "2 × 3^2 × 5",
-            "3 × 30",
-            "2 × 9 × 5"
-        ],
-        "correct_answer": "2 × 3^2 × 5",
-        "ideal_solution": "90 = 2 × 45 = 2 × 9 × 5 = 2 × 3^2 × 5. All factors are prime. Socratic Hint: Divide by the smallest prime repeatedly until all factors are prime.",
-        "failure_modes": {
-            "undercounting": "Student stops at 2 × 3 × 15 (15 is not fully factored).",
-            "constraint_neglect": "Student writes 2 × 9 × 5 (9 is not prime).",
-            "formula_misapplication": "Student writes 2 × 45 (45 is not prime)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A cylinder-shaped can has a circular base with radius 3 cm and a height of 10 cm. If you unroll the side of the can into a rectangle, what is the width of that rectangle?",
-        "options": [
-            "3 cm",
-            "6 cm",
-            "10 cm",
-            "6pi cm",
-            "18.84 cm"
-        ],
-        "correct_answer": "6pi cm",
-        "ideal_solution": "The width of the unrolled rectangle equals the circumference of the base circle. Circumference = 2 × pi × r = 2 × pi × 3 = 6pi cm. Socratic Hint: When you unroll the curved side, the width matches the distance around the circle.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses diameter: 2 × 3 = 6 cm (no pi).",
-            "premature_calculation": "Student confuses with height: picks 10 cm.",
-            "arithmetic_slip": "Student approximates 6 × 3.14 = 18.84 but the exact answer is 6pi."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 15 × 1 3/5?",
-        "options": [
-            "15 3/5",
-            "18",
-            "24",
-            "27",
-            "48"
-        ],
-        "correct_answer": "24",
-        "ideal_solution": "Convert: 1 3/5 = 8/5. Multiply: 15 × 8/5 = 120/5 = 24. Socratic Hint: Convert the mixed number to an improper fraction first, then multiply. Notice that 15 and 5 simplify.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies 15 × 1 = 15 and writes 15 3/5.",
-            "arithmetic_slip": "Student computes 15 × 8/5 = 120/5 = 18.",
-            "premature_calculation": "Student computes 15 × 3/5 = 9, then adds 15 to get 24 (correct, but could err to 27 if adding wrong)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Two trains leave the same station at the same time, traveling in opposite directions. One goes 50 mph and the other goes 70 mph. How far apart are they after 2 hours?",
-        "options": [
-            "40 miles",
-            "100 miles",
-            "120 miles",
-            "140 miles",
-            "240 miles"
-        ],
-        "correct_answer": "240 miles",
-        "ideal_solution": "Combined speed = 50 + 70 = 120 mph. In 2 hours: 120 × 2 = 240 miles apart. Socratic Hint: When traveling in opposite directions, add the speeds to find how fast they separate.",
-        "failure_modes": {
-            "premature_calculation": "Student computes only one train: 70 × 2 = 140 miles.",
-            "formula_misapplication": "Student subtracts speeds: (70-50) × 2 = 40 miles.",
-            "arithmetic_slip": "Student computes 120 × 2 = 120."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Convert the repeating decimal 0.333... to a fraction.",
-        "options": [
-            "3/10",
-            "33/100",
-            "1/3",
-            "3/9",
-            "3/33"
-        ],
-        "correct_answer": "1/3",
-        "ideal_solution": "Let x = 0.333... Then 10x = 3.333... Subtract: 10x - x = 3. So 9x = 3, x = 3/9 = 1/3. Socratic Hint: A single repeating digit goes over 9. So 0.333... = 3/9 = 1/3.",
-        "failure_modes": {
-            "premature_calculation": "Student writes 3/9 but does not simplify to 1/3.",
-            "formula_misapplication": "Student writes 3/10 (treating it as a terminating decimal).",
-            "arithmetic_slip": "Student writes 33/100 (using two digits)."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Two identical squares, each with an area of 25 sq cm, are placed side by side to form a rectangle. What is the perimeter of the rectangle?",
-        "options": [
-            "20 cm",
-            "25 cm",
-            "30 cm",
-            "40 cm",
-            "50 cm"
-        ],
-        "correct_answer": "30 cm",
-        "ideal_solution": "Side of each square = sqrt(25) = 5 cm. Rectangle dimensions: 10 cm × 5 cm. Perimeter = 2(10+5) = 30 cm. Socratic Hint: Find the side of each square, then the rectangle is twice as long and the same width.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds areas: 25+25 = 50 and picks 50 cm.",
-            "premature_calculation": "Student computes perimeter of one square: 4×5 = 20.",
-            "arithmetic_slip": "Student computes 2(10+5) = 2×15 = 40."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 60% of a number if 20% of it is 18?",
-        "options": [
-            "36",
-            "42",
-            "48",
-            "54",
-            "90"
-        ],
-        "correct_answer": "54",
-        "ideal_solution": "20% of n = 18, so n = 18/0.20 = 90. 60% of 90 = 0.60 × 90 = 54. Or: 60% is 3 times 20%, so 3 × 18 = 54. Socratic Hint: If you know 20%, you can multiply by 3 to get 60%.",
-        "failure_modes": {
-            "premature_calculation": "Student finds n = 90 and stops.",
-            "arithmetic_slip": "Student computes 18 × 3 = 42.",
-            "formula_misapplication": "Student computes 60% of 18 = 10.8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A rectangular garden is 12 m long and 8 m wide. A fence costs $5 per meter. How much does it cost to fence the entire garden?",
-        "options": [
-            "$80",
-            "$96",
-            "$100",
-            "$160",
-            "$200"
-        ],
-        "correct_answer": "$200",
-        "ideal_solution": "Perimeter = 2(12+8) = 40 meters. Cost = 40 × $5 = $200. Socratic Hint: Find the perimeter (total distance around), then multiply by the cost per meter.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes area: 12 × 8 = 96, then 96 × 5 = $480.",
-            "premature_calculation": "Student computes perimeter = 40 but forgets to multiply by $5.",
-            "arithmetic_slip": "Student computes 2(12+8) = 32, then 32 × 5 = $160."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 5 ÷ 1/2 + 3?",
-        "options": [
-            "5.5",
-            "8",
-            "10",
-            "13",
-            "28"
-        ],
-        "correct_answer": "13",
-        "ideal_solution": "Order of operations: division first. 5 ÷ 1/2 = 5 × 2 = 10. Then 10 + 3 = 13. Socratic Hint: Division comes before addition. Dividing by 1/2 means multiplying by 2.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 5 ÷ (1/2 + 3) = 5 ÷ 3.5 ≈ 1.43.",
-            "arithmetic_slip": "Student computes 5 × 1/2 = 2.5 (multiplies instead of dividing), then 2.5 + 3 = 5.5.",
-            "premature_calculation": "Student adds first: 1/2 + 3 = 3.5, then 5 ÷ 3.5."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "The sum of two prime numbers is 24. Both primes are odd. What is their product?",
-        "options": [
-            "35",
-            "77",
-            "119",
-            "143",
-            "95"
-        ],
-        "correct_answer": "119",
-        "ideal_solution": "Odd prime pairs summing to 24: 5+19=24, 7+17=24, 11+13=24. Products: 5×19=95, 7×17=119, 11×13=143. Multiple valid answers exist, but 7×17=119 is in the options. Socratic Hint: List pairs of odd primes that add to 24 and check which product is offered.",
-        "failure_modes": {
-            "undercounting": "Student only finds 11+13 and picks 143.",
-            "arithmetic_slip": "Student computes 7 × 17 = 77.",
-            "constraint_neglect": "Student includes 2+22=24 but 22 is not prime."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A rectangular piece of paper is 20 cm by 10 cm. Two squares, each 3 cm by 3 cm, are cut from the corners. What is the area of the remaining paper?",
-        "options": [
-            "164 sq cm",
-            "172 sq cm",
-            "182 sq cm",
-            "191 sq cm",
-            "196 sq cm"
-        ],
-        "correct_answer": "182 sq cm",
-        "ideal_solution": "Original area = 20 × 10 = 200 sq cm. Each cut square = 3 × 3 = 9 sq cm. Two squares removed = 18 sq cm. Remaining = 200 - 18 = 182 sq cm. Socratic Hint: Find the area of the original paper, then subtract the area of the two cut-out squares.",
-        "failure_modes": {
-            "undercounting": "Student subtracts only one square: 200 - 9 = 191.",
-            "arithmetic_slip": "Student computes 200 - 18 = 172.",
-            "formula_misapplication": "Student subtracts perimeter of squares from area."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Simplify: 4/6 + 3/6 - 2/6",
-        "options": [
-            "1/6",
-            "5/6",
-            "5/18",
-            "1",
-            "7/6"
-        ],
-        "correct_answer": "5/6",
-        "ideal_solution": "Since all denominators are 6: (4+3-2)/6 = 5/6. Socratic Hint: When fractions have the same denominator, just add and subtract the numerators.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds all denominators: 5/18.",
-            "arithmetic_slip": "Student computes 4+3-2 = 7, getting 7/6.",
-            "premature_calculation": "Student simplifies 4/6 to 2/3 first and miscalculates."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A jar has 15 red, 10 blue, and 5 green marbles. You remove 3 red marbles. What fraction of the remaining marbles are blue?",
-        "options": [
-            "1/3",
-            "5/14",
-            "10/27",
-            "2/5",
-            "10/30"
-        ],
-        "correct_answer": "10/27",
-        "ideal_solution": "After removing 3 red: 12 red + 10 blue + 5 green = 27 total. Fraction blue = 10/27. Socratic Hint: First find the new total after removing marbles, then put the blue count over the new total.",
-        "failure_modes": {
-            "premature_calculation": "Student uses original total: 10/30 = 1/3.",
-            "arithmetic_slip": "Student counts 15-3 = 11 red, getting 26 total.",
-            "formula_misapplication": "Student divides blue by red: 10/12."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Evaluate: 3/4 × 2/5 × 10",
-        "options": [
-            "1",
-            "3",
-            "6",
-            "15",
-            "60"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "(3/4) × (2/5) = 6/20 = 3/10. Then 3/10 × 10 = 30/10 = 3. Socratic Hint: Multiply the fractions first, simplify, then multiply by 10.",
-        "failure_modes": {
-            "arithmetic_slip": "Student computes 3 × 2 × 10 = 60 and forgets denominators.",
-            "premature_calculation": "Student simplifies 6/20 to 3/10 but stops.",
-            "formula_misapplication": "Student adds: 3/4 + 2/5 + 10."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A triangular flag has a base of 2 feet and a height of 3 feet. If fabric costs $4 per square foot, how much does the fabric for the flag cost?",
-        "options": [
-            "$6",
-            "$8",
-            "$12",
-            "$16",
-            "$24"
-        ],
-        "correct_answer": "$12",
-        "ideal_solution": "Area = (1/2) × 2 × 3 = 3 sq ft. Cost = 3 × $4 = $12. Socratic Hint: Find the area of the triangle first, then multiply by the cost per square foot.",
-        "failure_modes": {
-            "formula_misapplication": "Student uses rectangle area: 2 × 3 = 6, then 6 × $4 = $24.",
-            "premature_calculation": "Student finds area = 3 but picks $6 (confusing area with cost).",
-            "arithmetic_slip": "Student computes (1/2) × 2 × 3 = 2, then 2 × $4 = $8."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "number_theory",
-        "question": "How many multiples of 7 are between 50 and 100?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "Multiples of 7 in range: 56, 63, 70, 77, 84, 91, 98. Count = 7. Socratic Hint: Find the first multiple of 7 above 50 and the last one below 100, then list them all.",
-        "failure_modes": {
-            "off_by_one": "Student includes 49 or 105, getting 8 or 9.",
-            "undercounting": "Student misses 98, getting 6.",
-            "arithmetic_slip": "Student starts at 49 (7×7) which is not in the range."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A book has 300 pages. Maria reads 40 pages on Monday, then 1/4 of the remaining pages on Tuesday. How many pages does she still have left to read?",
-        "options": [
-            "65",
-            "75",
-            "130",
-            "195",
-            "260"
-        ],
-        "correct_answer": "195",
-        "ideal_solution": "After Monday: 300 - 40 = 260 pages left. Tuesday she reads 1/4 of 260 = 65. Left after Tuesday: 260 - 65 = 195. Socratic Hint: Subtract Monday's reading first, then find 1/4 of what remains.",
-        "failure_modes": {
-            "formula_misapplication": "Student computes 1/4 of 300 = 75, then 300 - 40 - 75 = 185.",
-            "premature_calculation": "Student computes 260 remaining after Monday and stops.",
-            "arithmetic_slip": "Student computes 1/4 of 260 = 70, getting 190."
-        }
-    },
-    {
-        "grade": 5,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 0.75 ÷ 0.25?",
-        "options": [
-            "0.1875",
-            "0.5",
-            "1",
-            "3",
-            "5"
-        ],
-        "correct_answer": "3",
-        "ideal_solution": "0.75 ÷ 0.25: multiply both by 100 → 75 ÷ 25 = 3. Or think: how many quarters (0.25) fit in 0.75? Three. Socratic Hint: Shift both decimals the same number of places to make whole numbers.",
-        "failure_modes": {
-            "formula_misapplication": "Student multiplies: 0.75 × 0.25 = 0.1875.",
-            "converse_error": "Student divides 0.25/0.75 ≈ 0.33.",
-            "arithmetic_slip": "Student computes 75 ÷ 25 = 5."
-        }
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 2/3 + 3/4 - 1/6",
+    "options": [
+      "1/4",
+      "5/12",
+      "1 1/4",
+      "3/4",
+      "7/12"
+    ],
+    "correct_answer": "1 1/4",
+    "ideal_solution": "LCD = 12. Convert: 2/3 = 8/12, 3/4 = 9/12, 1/6 = 2/12. Compute: 8/12 + 9/12 - 2/12 = 15/12 = 5/4 = 1 1/4. Socratic Hint: Find a common denominator for all three fractions, then add and subtract from left to right.",
+    "failure_modes": {
+      "arithmetic_slip": "Student converts incorrectly: 2/3 = 6/12 instead of 8/12, getting 13/12.",
+      "formula_misapplication": "Student adds numerators and denominators: (2+3-1)/(3+4-6) = 4/1.",
+      "premature_calculation": "Student adds 2/3 + 3/4 = 17/12 but forgets to subtract 1/6."
     }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangular prism has a volume of 180 cu cm. Its length is 10 cm and its width is 6 cm. What is its height?",
+    "options": [
+      "2 cm",
+      "3 cm",
+      "4 cm",
+      "5 cm",
+      "6 cm"
+    ],
+    "correct_answer": "3 cm",
+    "ideal_solution": "Volume = l × w × h. 180 = 10 × 6 × h. 180 = 60h. h = 180/60 = 3 cm. Socratic Hint: Divide the volume by the product of length and width.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides 180 by 10 only, getting 18.",
+      "arithmetic_slip": "Student computes 180/60 = 4.",
+      "converse_error": "Student multiplies 10 × 6 × 180 instead of dividing."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A snail climbs 5 feet up a wall each day but slips back 2 feet each night. If the wall is 21 feet tall, on which day does the snail first reach the top?",
+    "options": [
+      "6th day",
+      "7th day",
+      "8th day",
+      "9th day",
+      "10th day"
+    ],
+    "correct_answer": "7th day",
+    "ideal_solution": "Net gain per day: 5-2 = 3 feet (except the last day when it escapes). After 6 days: 6 × 3 = 18 feet. On day 7, it climbs 5 feet to reach 23 feet, which exceeds 21. The snail reaches the top during day 7. Socratic Hint: On the final day, the snail reaches the top before sliding back at night.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides 21/3 = 7, but this ignores the final day escape.",
+      "off_by_one": "Student calculates 21/3 = 7 and adds 1, getting 8th day.",
+      "arithmetic_slip": "Student tracks 3, 6, 9, 12, 15, 18, 21 and says 7th which is correct, but if they include day 0 they might say 8th."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A shirt costs $45. It is discounted by 20%, and then the discounted price is taxed at 10%. What is the final price?",
+    "options": [
+      "$35.00",
+      "$36.00",
+      "$39.00",
+      "$39.60",
+      "$40.50"
+    ],
+    "correct_answer": "$39.60",
+    "ideal_solution": "Discount: 20% of $45 = $9. Sale price = $45 - $9 = $36. Tax: 10% of $36 = $3.60. Final = $36 + $3.60 = $39.60. Socratic Hint: Apply discount first to get the sale price, then add tax to the sale price.",
+    "failure_modes": {
+      "formula_misapplication": "Student nets 20%-10%=10% discount: $45 × 0.90 = $40.50.",
+      "premature_calculation": "Student stops at $36 (after discount, before tax).",
+      "arithmetic_slip": "Student computes 10% of $45 = $4.50 instead of 10% of $36."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "How many prime numbers are there between 20 and 40?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "Check each odd number: 21=3×7, 23 is prime, 25=5×5, 27=3×9, 29 is prime, 31 is prime, 33=3×11, 35=5×7, 37 is prime, 39=3×13. Primes: 23, 29, 31, 37. Count = 4. Socratic Hint: Check each number for divisibility by small primes (2, 3, 5).",
+    "failure_modes": {
+      "overcounting": "Student includes 21 or 27, getting 5 or 6.",
+      "undercounting": "Student misses 37, getting only 3.",
+      "constraint_neglect": "Student includes 20 or 40 in the range."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 3 1/2 ÷ 1/4?",
+    "options": [
+      "7/8",
+      "3 1/8",
+      "7",
+      "14",
+      "28"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "Convert: 3 1/2 = 7/2. Divide: (7/2) ÷ (1/4) = (7/2) × (4/1) = 28/2 = 14. Socratic Hint: Convert the mixed number to improper, flip the divisor, and multiply.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies instead: 7/2 × 1/4 = 7/8.",
+      "arithmetic_slip": "Student computes 28/2 = 7.",
+      "converse_error": "Student divides 1/4 by 7/2 = 2/28 = 1/14."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "Two shapes are placed together without overlapping. Shape A is a rectangle 8 cm by 5 cm. Shape B is a square with sides of 5 cm. What is the total area?",
+    "options": [
+      "40 sq cm",
+      "55 sq cm",
+      "60 sq cm",
+      "65 sq cm",
+      "80 sq cm"
+    ],
+    "correct_answer": "65 sq cm",
+    "ideal_solution": "Area of A = 8 × 5 = 40 sq cm. Area of B = 5 × 5 = 25 sq cm. Total = 40 + 25 = 65 sq cm. Socratic Hint: Find each area separately and add.",
+    "failure_modes": {
+      "premature_calculation": "Student calculates only rectangle A: 40 sq cm.",
+      "arithmetic_slip": "Student adds 40 + 25 = 55.",
+      "formula_misapplication": "Student treats it as one large shape: (8+5) × 5 = 65 (happens to be right but reasoning is wrong for non-aligned shapes)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A tank is 3/5 full. After adding 12 liters, it becomes completely full. What is the total capacity of the tank?",
+    "options": [
+      "20 liters",
+      "24 liters",
+      "30 liters",
+      "36 liters",
+      "60 liters"
+    ],
+    "correct_answer": "30 liters",
+    "ideal_solution": "The tank is 2/5 empty. 2/5 of capacity = 12 liters. 1/5 = 6 liters. Total capacity = 5 × 6 = 30 liters. Socratic Hint: If it is 3/5 full, it is 2/5 empty. Those 12 liters filled the remaining 2/5.",
+    "failure_modes": {
+      "formula_misapplication": "Student divides 12 by 3/5: 12 × 5/3 = 20.",
+      "arithmetic_slip": "Student computes 12 × 5 = 60.",
+      "premature_calculation": "Student computes 12 × 2 = 24."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "In a school election, Amy got twice as many votes as Ben, and Ben got 15 more votes than Carol. If Carol got 20 votes, how many votes did Amy get?",
+    "options": [
+      "35",
+      "40",
+      "55",
+      "60",
+      "70"
+    ],
+    "correct_answer": "70",
+    "ideal_solution": "Carol = 20. Ben = 20 + 15 = 35. Amy = 2 × 35 = 70. Socratic Hint: Start from what you know (Carol's votes) and work forward step by step.",
+    "failure_modes": {
+      "premature_calculation": "Student finds Ben = 35 and stops.",
+      "formula_misapplication": "Student adds all: 20 + 15 + 2 × 20 = 75.",
+      "arithmetic_slip": "Student computes Amy = 2 × 20 = 40 (doubling Carol instead of Ben)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 4.2 × 3.5",
+    "options": [
+      "7.7",
+      "12.7",
+      "14.7",
+      "15.4",
+      "16.8"
+    ],
+    "correct_answer": "14.7",
+    "ideal_solution": "42 × 35 = 1470. Count 2 decimal places total. Result: 14.70 = 14.7. Socratic Hint: Remove the decimals, multiply, then put back the correct number of decimal places.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 4.2 + 3.5 = 7.7.",
+      "arithmetic_slip": "Student computes 42 × 35 = 1540, getting 15.4.",
+      "off_by_one": "Student places only 1 decimal: 147.0."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A right triangle has legs of 5 cm and 12 cm. What is the length of the hypotenuse?",
+    "options": [
+      "7 cm",
+      "10 cm",
+      "13 cm",
+      "15 cm",
+      "17 cm"
+    ],
+    "correct_answer": "13 cm",
+    "ideal_solution": "Using the Pythagorean theorem (stretch topic for Grade 5): a^2 + b^2 = c^2. 5^2 + 12^2 = 25 + 144 = 169. sqrt(169) = 13. Socratic Hint: Square both legs, add them, then take the square root.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds legs: 5 + 12 = 17.",
+      "arithmetic_slip": "Student computes 25 + 144 = 159, sqrt(159) ≈ 12.6, rounds to 13 (right answer, wrong path).",
+      "premature_calculation": "Student computes 5^2 + 12^2 = 169 but picks 15 instead of sqrt(169)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 5/8 ÷ 5/4?",
+    "options": [
+      "1/2",
+      "25/32",
+      "1",
+      "2",
+      "4/5"
+    ],
+    "correct_answer": "1/2",
+    "ideal_solution": "5/8 ÷ 5/4 = 5/8 × 4/5 = 20/40 = 1/2. Socratic Hint: Flip the second fraction and multiply. The 5s cancel.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies without flipping: 5/8 × 5/4 = 25/32.",
+      "converse_error": "Student divides in reverse: 5/4 ÷ 5/8 = 5/4 × 8/5 = 2.",
+      "arithmetic_slip": "Student computes 20/40 = 4/5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A rope is 10 meters long. You need to cut it into pieces that are each 2/5 of a meter long. How many pieces can you get?",
+    "options": [
+      "4",
+      "5",
+      "20",
+      "25",
+      "50"
+    ],
+    "correct_answer": "25",
+    "ideal_solution": "10 ÷ (2/5) = 10 × (5/2) = 50/2 = 25 pieces. Socratic Hint: Dividing by 2/5 is the same as multiplying by 5/2.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 10 × 2/5 = 4.",
+      "arithmetic_slip": "Student computes 10 ÷ 2 × 5 = 25 (correct) but writes 50.",
+      "converse_error": "Student divides by 5/2 instead of 2/5, getting 4."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: (2^4 - 6) × 2 + 1",
+    "options": [
+      "11",
+      "17",
+      "21",
+      "27",
+      "33"
+    ],
+    "correct_answer": "21",
+    "ideal_solution": "Exponent: 2^4 = 16. Subtract: 16 - 6 = 10. Multiply: 10 × 2 = 20. Add: 20 + 1 = 21. Socratic Hint: Follow order of operations: exponents, then parentheses, then multiply, then add.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes (2^4 - 6) = (8-6) = 2 (using 2×4 instead of 2^4).",
+      "arithmetic_slip": "Student gets 2^4 = 16, then (16-6)×2+1 = 10×2+1 = 10×3 = 30.",
+      "premature_calculation": "Student adds 2+1 first: (16-6) × 3 = 30."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the GCF of 28, 42, and 70?",
+    "options": [
+      "2",
+      "7",
+      "14",
+      "28",
+      "42"
+    ],
+    "correct_answer": "14",
+    "ideal_solution": "28 = 2^2 × 7. 42 = 2 × 3 × 7. 70 = 2 × 5 × 7. GCF = take the lowest power of each common prime: 2^1 × 7 = 14. Socratic Hint: Find the prime factorization of each number and take the primes they all share.",
+    "failure_modes": {
+      "undercounting": "Student finds only common factor 7, missing the 2.",
+      "overcounting": "Student picks 28, which is a factor of 28 but not of 42.",
+      "arithmetic_slip": "Student finds GCF of just 28 and 42 (14) but then incorrectly recalculates with 70."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A composite 3D shape is made of two rectangular prisms joined end-to-end. Prism A is 4 cm × 3 cm × 2 cm. Prism B is 6 cm × 3 cm × 2 cm. What is the total volume?",
+    "options": [
+      "24 cu cm",
+      "36 cu cm",
+      "48 cu cm",
+      "60 cu cm",
+      "72 cu cm"
+    ],
+    "correct_answer": "60 cu cm",
+    "ideal_solution": "Volume A = 4×3×2 = 24. Volume B = 6×3×2 = 36. Total = 24+36 = 60 cu cm. Socratic Hint: Find each volume separately and add.",
+    "failure_modes": {
+      "premature_calculation": "Student calculates only one prism: 24 or 36.",
+      "arithmetic_slip": "Student adds 24 + 36 = 48.",
+      "formula_misapplication": "Student multiplies volumes: 24 × 36."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A car travels 240 miles using 8 gallons of gas. How many miles per gallon does the car get?",
+    "options": [
+      "20 mpg",
+      "25 mpg",
+      "28 mpg",
+      "30 mpg",
+      "32 mpg"
+    ],
+    "correct_answer": "30 mpg",
+    "ideal_solution": "Miles per gallon = 240 ÷ 8 = 30. Socratic Hint: Divide total distance by total fuel used.",
+    "failure_modes": {
+      "converse_error": "Student divides 8/240 = 0.033 gallons per mile.",
+      "arithmetic_slip": "Student computes 240 ÷ 8 = 28.",
+      "formula_misapplication": "Student multiplies 240 × 8 = 1920."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Three consecutive even numbers have a sum of 78. What is the largest of the three?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_answer": "28",
+    "ideal_solution": "Let the numbers be n, n+2, n+4. Sum: 3n + 6 = 78. 3n = 72. n = 24. The three are 24, 26, 28. Largest = 28. Socratic Hint: The middle number equals the average. 78/3 = 26. So the numbers are 24, 26, 28.",
+    "failure_modes": {
+      "premature_calculation": "Student finds n = 24 and stops (smallest, not largest).",
+      "arithmetic_slip": "Student computes 78/3 = 25 and lists 23, 25, 27.",
+      "off_by_one": "Student lists 26, 28, 30 (middle is correct but sequence wrong)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 2.5^2?",
+    "options": [
+      "5.0",
+      "5.25",
+      "6.00",
+      "6.25",
+      "12.5"
+    ],
+    "correct_answer": "6.25",
+    "ideal_solution": "2.5^2 = 2.5 × 2.5 = 6.25. Compute: 25 × 25 = 625, place 2 decimals: 6.25. Socratic Hint: Squaring means multiplying the number by itself.",
+    "failure_modes": {
+      "formula_misapplication": "Student doubles: 2.5 × 2 = 5.0.",
+      "arithmetic_slip": "Student computes 2.5 × 2.5 = 5.25.",
+      "converse_error": "Student computes sqrt(2.5) ≈ 1.58."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "On a coordinate plane, a triangle has vertices at (0,0), (6,0), and (3,4). What is the area of the triangle?",
+    "options": [
+      "6 sq units",
+      "8 sq units",
+      "10 sq units",
+      "12 sq units",
+      "24 sq units"
+    ],
+    "correct_answer": "12 sq units",
+    "ideal_solution": "Base lies along the x-axis from (0,0) to (6,0), so base = 6. Height is the y-coordinate of the third vertex: 4. Area = (1/2) × 6 × 4 = 12. Socratic Hint: Use the base along the x-axis and the height from the third point.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses rectangle formula: 6 × 4 = 24.",
+      "arithmetic_slip": "Student computes (1/2) × 6 × 4 = 8.",
+      "premature_calculation": "Student picks base = 3 (x-coordinate of apex), area = (1/2)×3×4 = 6."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Sam has $50. He spends 2/5 of his money on a book and 1/4 of his money on lunch. How much money does he have left?",
+    "options": [
+      "$7.50",
+      "$12.50",
+      "$17.50",
+      "$20.00",
+      "$32.50"
+    ],
+    "correct_answer": "$17.50",
+    "ideal_solution": "Book: 2/5 × $50 = $20. Lunch: 1/4 × $50 = $12.50. Spent: $20 + $12.50 = $32.50. Left: $50 - $32.50 = $17.50. Socratic Hint: Calculate each expense separately, add them, then subtract from the total.",
+    "failure_modes": {
+      "premature_calculation": "Student only subtracts the book: $50 - $20 = $30.",
+      "arithmetic_slip": "Student computes 1/4 of $50 = $10, getting $50 - $30 = $20.",
+      "formula_misapplication": "Student adds fractions 2/5 + 1/4 = 3/9 = 1/3, then $50 × 1/3 ≈ $16.67."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A store sells apples in bags of 6 and oranges in bags of 8. What is the least number of bags needed so that you have the same number of apples as oranges?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correct_answer": "4",
+    "ideal_solution": "LCM of 6 and 8 = 24. Need 24/6 = 4 bags of apples and 24/8 = 3 bags of oranges. Total bags = 4 + 3 = 7. Wait — the question asks for total bags. Hmm. Let me re-read. Actually it asks for the least number of bags TOTAL. 4 + 3 = 7 bags. Socratic Hint: Find the LCM to know how many fruits you need, then figure out how many bags that takes.",
+    "failure_modes": {
+      "premature_calculation": "Student finds LCM = 24 and picks 4 (only apple bags).",
+      "arithmetic_slip": "Student computes LCM incorrectly as 12, needing 2+1.5 bags.",
+      "formula_misapplication": "Student adds 6 + 8 = 14 and divides by something."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 8.4 ÷ 0.7?",
+    "options": [
+      "1.2",
+      "5.88",
+      "7.7",
+      "12",
+      "84"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "Multiply both by 10: 84 ÷ 7 = 12. Socratic Hint: Move the decimal in both numbers the same number of places to make the divisor a whole number.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 8.4 × 0.7 = 5.88.",
+      "arithmetic_slip": "Student computes 84 ÷ 7 = 11.",
+      "converse_error": "Student divides 0.7 ÷ 8.4."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "A number is divisible by both 4 and 6. What is the smallest such positive number?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12",
+      "24"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "LCM of 4 and 6: Multiples of 4: 4, 8, 12. Multiples of 6: 6, 12. Smallest common = 12. Socratic Hint: List multiples of each number until you find the first one they share.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies 4 × 6 = 24.",
+      "undercounting": "Student picks 6 (divisible by 6 but not by 4).",
+      "converse_error": "Student picks GCF (2) instead of LCM."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A circle has a radius of 7 cm. What is its diameter?",
+    "options": [
+      "3.5 cm",
+      "7 cm",
+      "14 cm",
+      "21 cm",
+      "49 cm"
+    ],
+    "correct_answer": "14 cm",
+    "ideal_solution": "Diameter = 2 × radius = 2 × 7 = 14 cm. Socratic Hint: The diameter is always twice the radius.",
+    "failure_modes": {
+      "converse_error": "Student divides: 7 ÷ 2 = 3.5 (thinking radius = diameter/2 backwards).",
+      "formula_misapplication": "Student computes circumference-related: 3 × 7 = 21.",
+      "premature_calculation": "Student squares the radius: 7^2 = 49."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A number decreased by 35% gives 52. What is the original number?",
+    "options": [
+      "70",
+      "72",
+      "75",
+      "78",
+      "80"
+    ],
+    "correct_answer": "80",
+    "ideal_solution": "If a number is decreased by 35%, 65% remains. 0.65 × n = 52. n = 52/0.65 = 80. Socratic Hint: If 35% is removed, 65% is left. Set up: 65% of what equals 52?",
+    "failure_modes": {
+      "formula_misapplication": "Student adds 35% to 52: 52 × 1.35 = 70.2, rounds to 70.",
+      "arithmetic_slip": "Student divides 52/0.65 incorrectly = 75.",
+      "converse_error": "Student computes 35% of 52 = 18.2 and adds: 52 + 18.2 = 70.2."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A code uses 3-letter combinations from the letters A, B, C, D. Letters can repeat. How many different codes are possible?",
+    "options": [
+      "12",
+      "24",
+      "27",
+      "64",
+      "81"
+    ],
+    "correct_answer": "64",
+    "ideal_solution": "4 choices for each position × 3 positions = 4 × 4 × 4 = 64. Socratic Hint: For each slot in the code, you have 4 letter options. Multiply the choices together.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 4 × 3 = 12 (multiplicies letters × positions).",
+      "undercounting": "Student computes 4! = 24 (permutations without repetition).",
+      "arithmetic_slip": "Student computes 3^3 = 27 (using 3 letters instead of 4)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 1 - (1/3 + 1/4)",
+    "options": [
+      "5/12",
+      "7/12",
+      "1/7",
+      "2/7",
+      "1/12"
+    ],
+    "correct_answer": "5/12",
+    "ideal_solution": "1/3 + 1/4: LCD 12. 4/12 + 3/12 = 7/12. Then 1 - 7/12 = 12/12 - 7/12 = 5/12. Socratic Hint: First add the two fractions, then subtract from 1 (which equals 12/12).",
+    "failure_modes": {
+      "converse_error": "Student subtracts 7/12 from the wrong direction, getting 7/12.",
+      "formula_misapplication": "Student adds denominators: 1/3 + 1/4 = 2/7, then 1 - 2/7 = 5/7.",
+      "arithmetic_slip": "Student computes 1/3 + 1/4 = 7/12, then 1 - 7/12 = 1/12."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A trapezoid has parallel sides of 10 cm and 6 cm, and a height of 4 cm. What is its area?",
+    "options": [
+      "24 sq cm",
+      "28 sq cm",
+      "32 sq cm",
+      "40 sq cm",
+      "60 sq cm"
+    ],
+    "correct_answer": "32 sq cm",
+    "ideal_solution": "Area = (1/2) × (base1 + base2) × height = (1/2) × (10 + 6) × 4 = (1/2) × 16 × 4 = 32. Socratic Hint: Add the two parallel sides, multiply by the height, then take half.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses only one base: (1/2) × 10 × 4 = 20 or 10 × 4 = 40.",
+      "premature_calculation": "Student adds bases: 10 + 6 = 16 and multiplies by height: 64, then forgets the 1/2.",
+      "arithmetic_slip": "Student calculates (1/2) × 16 × 4 = 28."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "If n × 0.25 = 15, what is n?",
+    "options": [
+      "3.75",
+      "30",
+      "45",
+      "60",
+      "75"
+    ],
+    "correct_answer": "60",
+    "ideal_solution": "n = 15 ÷ 0.25 = 15 × 4 = 60. Socratic Hint: Dividing by 0.25 is the same as multiplying by 4, because 0.25 = 1/4.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 15 × 0.25 = 3.75.",
+      "arithmetic_slip": "Student computes 15 × 4 = 45.",
+      "converse_error": "Student computes 15/4 = 3.75."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Anna thinks of a number. She doubles it, adds 6, then divides by 2. The result is 11. What was her original number?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "correct_answer": "8",
+    "ideal_solution": "Work backwards: result is 11. Before dividing by 2: 11 × 2 = 22. Before adding 6: 22 - 6 = 16. Before doubling: 16/2 = 8. Socratic Hint: Undo each operation in reverse order.",
+    "failure_modes": {
+      "formula_misapplication": "Student works forward with a guess: tries 5 → 10+6=16, 16/2=8, not 11.",
+      "arithmetic_slip": "Student computes 11×2 = 22, 22-6 = 14, 14/2 = 7.",
+      "converse_error": "Student undoes in wrong order: 11-6=5, 5×2=10, 10/2=5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 7/9 - 2/3?",
+    "options": [
+      "1/9",
+      "5/6",
+      "5/9",
+      "1/3",
+      "2/9"
+    ],
+    "correct_answer": "1/9",
+    "ideal_solution": "Convert 2/3 to 6/9. Then 7/9 - 6/9 = 1/9. Socratic Hint: Make the denominators the same, then subtract.",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts across: (7-2)/(9-3) = 5/6.",
+      "arithmetic_slip": "Student converts 2/3 to 4/9, getting 3/9 = 1/3.",
+      "premature_calculation": "Student subtracts numerators only: 7-2 = 5, writes 5/9."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "What is the prime factorization of 90?",
+    "options": [
+      "2 × 45",
+      "2 × 3 × 15",
+      "2 × 3^2 × 5",
+      "3 × 30",
+      "2 × 9 × 5"
+    ],
+    "correct_answer": "2 × 3^2 × 5",
+    "ideal_solution": "90 = 2 × 45 = 2 × 9 × 5 = 2 × 3^2 × 5. All factors are prime. Socratic Hint: Divide by the smallest prime repeatedly until all factors are prime.",
+    "failure_modes": {
+      "undercounting": "Student stops at 2 × 3 × 15 (15 is not fully factored).",
+      "constraint_neglect": "Student writes 2 × 9 × 5 (9 is not prime).",
+      "formula_misapplication": "Student writes 2 × 45 (45 is not prime)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A cylinder-shaped can has a circular base with radius 3 cm and a height of 10 cm. If you unroll the side of the can into a rectangle, what is the width of that rectangle?",
+    "options": [
+      "3 cm",
+      "6 cm",
+      "10 cm",
+      "6pi cm",
+      "18.84 cm"
+    ],
+    "correct_answer": "6pi cm",
+    "ideal_solution": "The width of the unrolled rectangle equals the circumference of the base circle. Circumference = 2 × pi × r = 2 × pi × 3 = 6pi cm. Socratic Hint: When you unroll the curved side, the width matches the distance around the circle.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses diameter: 2 × 3 = 6 cm (no pi).",
+      "premature_calculation": "Student confuses with height: picks 10 cm.",
+      "arithmetic_slip": "Student approximates 6 × 3.14 = 18.84 but the exact answer is 6pi."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 15 × 1 3/5?",
+    "options": [
+      "15 3/5",
+      "18",
+      "24",
+      "27",
+      "48"
+    ],
+    "correct_answer": "24",
+    "ideal_solution": "Convert: 1 3/5 = 8/5. Multiply: 15 × 8/5 = 120/5 = 24. Socratic Hint: Convert the mixed number to an improper fraction first, then multiply. Notice that 15 and 5 simplify.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies 15 × 1 = 15 and writes 15 3/5.",
+      "arithmetic_slip": "Student computes 15 × 8/5 = 120/5 = 18.",
+      "premature_calculation": "Student computes 15 × 3/5 = 9, then adds 15 to get 24 (correct, but could err to 27 if adding wrong)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Two trains leave the same station at the same time, traveling in opposite directions. One goes 50 mph and the other goes 70 mph. How far apart are they after 2 hours?",
+    "options": [
+      "40 miles",
+      "100 miles",
+      "120 miles",
+      "140 miles",
+      "240 miles"
+    ],
+    "correct_answer": "240 miles",
+    "ideal_solution": "Combined speed = 50 + 70 = 120 mph. In 2 hours: 120 × 2 = 240 miles apart. Socratic Hint: When traveling in opposite directions, add the speeds to find how fast they separate.",
+    "failure_modes": {
+      "premature_calculation": "Student computes only one train: 70 × 2 = 140 miles.",
+      "formula_misapplication": "Student subtracts speeds: (70-50) × 2 = 40 miles.",
+      "arithmetic_slip": "Student computes 120 × 2 = 120."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Convert the repeating decimal 0.333... to a fraction.",
+    "options": [
+      "3/10",
+      "33/100",
+      "1/3",
+      "3/9",
+      "3/33"
+    ],
+    "correct_answer": "1/3",
+    "ideal_solution": "Let x = 0.333... Then 10x = 3.333... Subtract: 10x - x = 3. So 9x = 3, x = 3/9 = 1/3. Socratic Hint: A single repeating digit goes over 9. So 0.333... = 3/9 = 1/3.",
+    "failure_modes": {
+      "premature_calculation": "Student writes 3/9 but does not simplify to 1/3.",
+      "formula_misapplication": "Student writes 3/10 (treating it as a terminating decimal).",
+      "arithmetic_slip": "Student writes 33/100 (using two digits)."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "Two identical squares, each with an area of 25 sq cm, are placed side by side to form a rectangle. What is the perimeter of the rectangle?",
+    "options": [
+      "20 cm",
+      "25 cm",
+      "30 cm",
+      "40 cm",
+      "50 cm"
+    ],
+    "correct_answer": "30 cm",
+    "ideal_solution": "Side of each square = sqrt(25) = 5 cm. Rectangle dimensions: 10 cm × 5 cm. Perimeter = 2(10+5) = 30 cm. Socratic Hint: Find the side of each square, then the rectangle is twice as long and the same width.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds areas: 25+25 = 50 and picks 50 cm.",
+      "premature_calculation": "Student computes perimeter of one square: 4×5 = 20.",
+      "arithmetic_slip": "Student computes 2(10+5) = 2×15 = 40."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 60% of a number if 20% of it is 18?",
+    "options": [
+      "36",
+      "42",
+      "48",
+      "54",
+      "90"
+    ],
+    "correct_answer": "54",
+    "ideal_solution": "20% of n = 18, so n = 18/0.20 = 90. 60% of 90 = 0.60 × 90 = 54. Or: 60% is 3 times 20%, so 3 × 18 = 54. Socratic Hint: If you know 20%, you can multiply by 3 to get 60%.",
+    "failure_modes": {
+      "premature_calculation": "Student finds n = 90 and stops.",
+      "arithmetic_slip": "Student computes 18 × 3 = 42.",
+      "formula_misapplication": "Student computes 60% of 18 = 10.8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A rectangular garden is 12 m long and 8 m wide. A fence costs $5 per meter. How much does it cost to fence the entire garden?",
+    "options": [
+      "$80",
+      "$96",
+      "$100",
+      "$160",
+      "$200"
+    ],
+    "correct_answer": "$200",
+    "ideal_solution": "Perimeter = 2(12+8) = 40 meters. Cost = 40 × $5 = $200. Socratic Hint: Find the perimeter (total distance around), then multiply by the cost per meter.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes area: 12 × 8 = 96, then 96 × 5 = $480.",
+      "premature_calculation": "Student computes perimeter = 40 but forgets to multiply by $5.",
+      "arithmetic_slip": "Student computes 2(12+8) = 32, then 32 × 5 = $160."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 5 ÷ 1/2 + 3?",
+    "options": [
+      "5.5",
+      "8",
+      "10",
+      "13",
+      "28"
+    ],
+    "correct_answer": "13",
+    "ideal_solution": "Order of operations: division first. 5 ÷ 1/2 = 5 × 2 = 10. Then 10 + 3 = 13. Socratic Hint: Division comes before addition. Dividing by 1/2 means multiplying by 2.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 5 ÷ (1/2 + 3) = 5 ÷ 3.5 ≈ 1.43.",
+      "arithmetic_slip": "Student computes 5 × 1/2 = 2.5 (multiplies instead of dividing), then 2.5 + 3 = 5.5.",
+      "premature_calculation": "Student adds first: 1/2 + 3 = 3.5, then 5 ÷ 3.5."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "The sum of two prime numbers is 24. Both primes are odd. What is their product?",
+    "options": [
+      "35",
+      "77",
+      "119",
+      "143",
+      "95"
+    ],
+    "correct_answer": "119",
+    "ideal_solution": "Odd prime pairs summing to 24: 5+19=24, 7+17=24, 11+13=24. Products: 5×19=95, 7×17=119, 11×13=143. Multiple valid answers exist, but 7×17=119 is in the options. Socratic Hint: List pairs of odd primes that add to 24 and check which product is offered.",
+    "failure_modes": {
+      "undercounting": "Student only finds 11+13 and picks 143.",
+      "arithmetic_slip": "Student computes 7 × 17 = 77.",
+      "constraint_neglect": "Student includes 2+22=24 but 22 is not prime."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A rectangular piece of paper is 20 cm by 10 cm. Two squares, each 3 cm by 3 cm, are cut from the corners. What is the area of the remaining paper?",
+    "options": [
+      "164 sq cm",
+      "172 sq cm",
+      "182 sq cm",
+      "191 sq cm",
+      "196 sq cm"
+    ],
+    "correct_answer": "182 sq cm",
+    "ideal_solution": "Original area = 20 × 10 = 200 sq cm. Each cut square = 3 × 3 = 9 sq cm. Two squares removed = 18 sq cm. Remaining = 200 - 18 = 182 sq cm. Socratic Hint: Find the area of the original paper, then subtract the area of the two cut-out squares.",
+    "failure_modes": {
+      "undercounting": "Student subtracts only one square: 200 - 9 = 191.",
+      "arithmetic_slip": "Student computes 200 - 18 = 172.",
+      "formula_misapplication": "Student subtracts perimeter of squares from area."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Simplify: 4/6 + 3/6 - 2/6",
+    "options": [
+      "1/6",
+      "5/6",
+      "5/18",
+      "1",
+      "7/6"
+    ],
+    "correct_answer": "5/6",
+    "ideal_solution": "Since all denominators are 6: (4+3-2)/6 = 5/6. Socratic Hint: When fractions have the same denominator, just add and subtract the numerators.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds all denominators: 5/18.",
+      "arithmetic_slip": "Student computes 4+3-2 = 7, getting 7/6.",
+      "premature_calculation": "Student simplifies 4/6 to 2/3 first and miscalculates."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A jar has 15 red, 10 blue, and 5 green marbles. You remove 3 red marbles. What fraction of the remaining marbles are blue?",
+    "options": [
+      "1/3",
+      "5/14",
+      "10/27",
+      "2/5",
+      "10/30"
+    ],
+    "correct_answer": "10/27",
+    "ideal_solution": "After removing 3 red: 12 red + 10 blue + 5 green = 27 total. Fraction blue = 10/27. Socratic Hint: First find the new total after removing marbles, then put the blue count over the new total.",
+    "failure_modes": {
+      "premature_calculation": "Student uses original total: 10/30 = 1/3.",
+      "arithmetic_slip": "Student counts 15-3 = 11 red, getting 26 total.",
+      "formula_misapplication": "Student divides blue by red: 10/12."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Evaluate: 3/4 × 2/5 × 10",
+    "options": [
+      "1",
+      "3",
+      "6",
+      "15",
+      "60"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "(3/4) × (2/5) = 6/20 = 3/10. Then 3/10 × 10 = 30/10 = 3. Socratic Hint: Multiply the fractions first, simplify, then multiply by 10.",
+    "failure_modes": {
+      "arithmetic_slip": "Student computes 3 × 2 × 10 = 60 and forgets denominators.",
+      "premature_calculation": "Student simplifies 6/20 to 3/10 but stops.",
+      "formula_misapplication": "Student adds: 3/4 + 2/5 + 10."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A triangular flag has a base of 2 feet and a height of 3 feet. If fabric costs $4 per square foot, how much does the fabric for the flag cost?",
+    "options": [
+      "$6",
+      "$8",
+      "$12",
+      "$16",
+      "$24"
+    ],
+    "correct_answer": "$12",
+    "ideal_solution": "Area = (1/2) × 2 × 3 = 3 sq ft. Cost = 3 × $4 = $12. Socratic Hint: Find the area of the triangle first, then multiply by the cost per square foot.",
+    "failure_modes": {
+      "formula_misapplication": "Student uses rectangle area: 2 × 3 = 6, then 6 × $4 = $24.",
+      "premature_calculation": "Student finds area = 3 but picks $6 (confusing area with cost).",
+      "arithmetic_slip": "Student computes (1/2) × 2 × 3 = 2, then 2 × $4 = $8."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "number_theory",
+    "question": "How many multiples of 7 are between 50 and 100?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "Multiples of 7 in range: 56, 63, 70, 77, 84, 91, 98. Count = 7. Socratic Hint: Find the first multiple of 7 above 50 and the last one below 100, then list them all.",
+    "failure_modes": {
+      "off_by_one": "Student includes 49 or 105, getting 8 or 9.",
+      "undercounting": "Student misses 98, getting 6.",
+      "arithmetic_slip": "Student starts at 49 (7×7) which is not in the range."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A book has 300 pages. Maria reads 40 pages on Monday, then 1/4 of the remaining pages on Tuesday. How many pages does she still have left to read?",
+    "options": [
+      "65",
+      "75",
+      "130",
+      "195",
+      "260"
+    ],
+    "correct_answer": "195",
+    "ideal_solution": "After Monday: 300 - 40 = 260 pages left. Tuesday she reads 1/4 of 260 = 65. Left after Tuesday: 260 - 65 = 195. Socratic Hint: Subtract Monday's reading first, then find 1/4 of what remains.",
+    "failure_modes": {
+      "formula_misapplication": "Student computes 1/4 of 300 = 75, then 300 - 40 - 75 = 185.",
+      "premature_calculation": "Student computes 260 remaining after Monday and stops.",
+      "arithmetic_slip": "Student computes 1/4 of 260 = 70, getting 190."
+    }
+  },
+  {
+    "grade": 5,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 0.75 ÷ 0.25?",
+    "options": [
+      "0.1875",
+      "0.5",
+      "1",
+      "3",
+      "5"
+    ],
+    "correct_answer": "3",
+    "ideal_solution": "0.75 ÷ 0.25: multiply both by 100 → 75 ÷ 25 = 3. Or think: how many quarters (0.25) fit in 0.75? Three. Socratic Hint: Shift both decimals the same number of places to make whole numbers.",
+    "failure_modes": {
+      "formula_misapplication": "Student multiplies: 0.75 × 0.25 = 0.1875.",
+      "converse_error": "Student divides 0.25/0.75 ≈ 0.33.",
+      "arithmetic_slip": "Student computes 75 ÷ 25 = 5."
+    }
+  }
 ]

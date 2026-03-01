@@ -34,7 +34,7 @@ const mockQuestion: useQuestionsHook.Question = {
   id: '1',
   level: 1,
   grade: 1,
-  difficulty: 'gifted',
+  difficulty: 'beginner',
   type: 'logic',
   question: 'Logic Question',
   options: ['A', 'B', 'C', 'D', 'E'],

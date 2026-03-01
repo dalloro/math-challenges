@@ -1,949 +1,1049 @@
 [
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 348 + 215?",
-        "options": [
-            "553",
-            "563",
-            "573",
-            "600",
-            "663"
-        ],
-        "correct_answer": "563",
-        "ideal_solution": "300+200=500. 40+10=50. 8+5=13. 500+50+13 = 563. Socratic Hint: Add the ones (8+5). Do you need to regroup a ten?",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 553 (forgot to regroup the 10 from 8+5)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 400 - 125.",
-        "options": [
-            "275",
-            "285",
-            "325",
-            "375",
-            "125"
-        ],
-        "correct_answer": "275",
-        "ideal_solution": "400 - 100 = 300. 300 - 20 = 280. 280 - 5 = 275. Socratic Hint: Count up from 125. 125+75=200. 200+200=400. So 275.",
-        "failure_modes": {
-            "off_by_one": "Student says 285."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A store has 225 apples and 150 oranges. How much fruit in total?",
-        "options": [
-            "350",
-            "365",
-            "375",
-            "400",
-            "425"
-        ],
-        "correct_answer": "375",
-        "ideal_solution": "200 + 100 = 300. 25 + 50 = 75. Total = 375. Socratic Hint: Just add the hundreds directly, then add 50 and 25.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 365."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Which set of polygons all have at least 5 sides?",
-        "options": [
-            "Pentagon, Hexagon",
-            "Square, Pentagon",
-            "Triangle, Square",
-            "Rectangle, Octagon",
-            "Hexagon, Quadrilateral"
-        ],
-        "correct_answer": "Pentagon, Hexagon",
-        "ideal_solution": "Pentagon = 5, Hexagon = 6. Both have 5 or more. Quadrilaterals, squares, rectangles, triangles have 4 or less. Socratic Hint: Any shape starting with 'quad', 'tri', 'rect', or 'square' doesn't meet the rule.",
-        "failure_modes": {
-            "constraint_neglect": "Student picks Square, Pentagon."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is $5.00 - $1.20?",
-        "options": [
-            "$3.20",
-            "$3.80",
-            "$4.20",
-            "$4.80",
-            "$6.20"
-        ],
-        "correct_answer": "$3.80",
-        "ideal_solution": "500 cents - 100 cents = 400 cents. 400 - 20 = 380 cents ($3.80). Socratic Hint: If you have 4 dollars, and take away 20 cents, you have 3 dollars and 80 cents left.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says $4.80 or $4.20."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "You buy 4 items that each cost 15 cents. How much do they cost in total?",
-        "options": [
-            "45 cents",
-            "50 cents",
-            "60 cents",
-            "75 cents",
-            "100 cents"
-        ],
-        "correct_answer": "60 cents",
-        "ideal_solution": "15 + 15 = 30. 30 + 30 = 60. Socratic Hint: Add them in pairs! What is 15 plus 15?",
-        "failure_modes": {
-            "premature_calculation": "Student stops at 45 (3 items)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "Sara is 10 years old. Her brother is half her age. How old will her brother be in 5 years?",
-        "options": [
-            "5",
-            "10",
-            "15",
-            "20",
-            "25"
-        ],
-        "correct_answer": "10",
-        "ideal_solution": "Brother's age now = half of 10 = 5. In 5 years: 5 + 5 = 10. Socratic Hint: Find his age RIGHT NOW first. What is half of 10? Then add 5.",
-        "failure_modes": {
-            "formula_misapplication": "Student takes half of Sara's future age (15/2 = not a whole number) or just adds 5 to Sara's age."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Is 115 closer to 100 or 200?",
-        "options": [
-            "100",
-            "200",
-            "Exactly halfway",
-            "Neither"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "115 is 15 away from 100. It is 85 away from 200. It is much closer to 100. Socratic Hint: The halfway point between 100 and 200 is 150. Is 115 below or above 150?",
-        "failure_modes": {
-            "converse_error": "Student guesses 200."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Add: 25 + 25 + 25 + 25.",
-        "options": [
-            "75",
-            "100",
-            "125",
-            "150",
-            "50"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "Four quarters makes a dollar. 25 + 25 = 50. 50 + 50 = 100. Socratic Hint: What is 50 + 50?",
-        "failure_modes": {
-            "premature_calculation": "Student stops at 75."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A rope is 200 centimeters long. You cut off 45 centimeters. How long is it now?",
-        "options": [
-            "145 cm",
-            "150 cm",
-            "155 cm",
-            "165 cm",
-            "100 cm"
-        ],
-        "correct_answer": "155 cm",
-        "ideal_solution": "200 - 40 = 160. 160 - 5 = 155. Socratic Hint: Subtract 50 first to get 150. Since you only needed to subtract 45, add 5 back.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 145 or 165."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "In the number 842, what is the value of the digit '8'?",
-        "options": [
-            "8",
-            "80",
-            "84",
-            "800",
-            "842"
-        ],
-        "correct_answer": "800",
-        "ideal_solution": "The 8 is in the hundreds place, so it represents 8 hundreds, which is 800. Socratic Hint: If you read the number out loud, you say 'Eight hundred...'",
-        "failure_modes": {
-            "converse_error": "Student says 8 (its face value)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 18 + 18?",
-        "options": [
-            "26",
-            "36",
-            "46",
-            "38",
-            "28"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "10 + 10 = 20. 8 + 8 = 16. 20 + 16 = 36. Socratic Hint: Add 10 and 10. Then add 8 and 8. Finally, put them together.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 26 (forgot to regroup)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "A piece of paper is a rectangle. It has 4 corners. If you cut off one corner perfectly straight, how many corners does the paper have now?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "6",
-            "8"
-        ],
-        "correct_answer": "5",
-        "ideal_solution": "You remove 1 corner, but the straight cut creates 2 new corners where it meets the edges. 4 - 1 + 2 = 5 corners. (It becomes a pentagon). Socratic Hint: Draw a rectangle. Draw a line cutting off a corner. Count the new points.",
-        "failure_modes": {
-            "formula_misapplication": "Student says 3 (4 - 1 = 3)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "If day 1 is Monday, what is day 10?",
-        "options": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "correct_answer": "Wednesday",
-        "ideal_solution": "Day 1=Mon. 1 week later is Day 8=Mon. Day 9=Tue. Day 10=Wed. Socratic Hint: A week is 7 days. Move forward 7 days to get back to Monday.",
-        "failure_modes": {
-            "off_by_one": "Student says Tuesday."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 425 + 10?",
-        "options": [
-            "415",
-            "426",
-            "430",
-            "435",
-            "525"
-        ],
-        "correct_answer": "435",
-        "ideal_solution": "Only the tens digit changes. 2 + 1 = 3. 435. Socratic Hint: Look at the 25. What is 25+10?",
-        "failure_modes": {
-            "off_by_one": "Student adds 10 to hundreds: 525."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 120 - 90?",
-        "options": [
-            "20",
-            "30",
-            "40",
-            "110",
-            "210"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "12 tens - 9 tens = 3 tens = 30. Socratic Hint: Think: 90 plus what equals 120?",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 20."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 1/2 of 50?",
-        "options": [
-            "10",
-            "20",
-            "25",
-            "50",
-            "100"
-        ],
-        "correct_answer": "25",
-        "ideal_solution": "25 + 25 = 50. So half of 50 is 25. Socratic Hint: Two quarters equal a half-dollar. How many cents in a quarter?",
-        "failure_modes": {
-            "formula_misapplication": "Student says 20 or 100."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "There are 5 shelves. The first 4 shelves have 10 books each. The last shelf has 5 books. How many books total?",
-        "options": [
-            "40",
-            "45",
-            "50",
-            "55",
-            "100"
-        ],
-        "correct_answer": "45",
-        "ideal_solution": "4 groups of 10 = 40. Plus 5 = 45. Socratic Hint: Count the tens first: 10, 20, 30, 40. Then add the 5.",
-        "failure_modes": {
-            "premature_calculation": "Student stops at 40 or miscounts 5 shelves of 10 = 50."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 99 + 99?",
-        "options": [
-            "180",
-            "188",
-            "198",
-            "199",
-            "200"
-        ],
-        "correct_answer": "198",
-        "ideal_solution": "Think: 100 + 100 = 200. Since we are adding 99 (which is 1 less each time), 200 - 1 - 1 = 198. Socratic Hint: Pretend it's 100 + 100, then subtract 2.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 188."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "A game starts at 4:15. It lasts exactly 30 minutes. What time does it end?",
-        "options": [
-            "4:30",
-            "4:45",
-            "5:00",
-            "5:15",
-            "5:30"
-        ],
-        "correct_answer": "4:45",
-        "ideal_solution": "15 + 30 = 45 minutes. The hour stays 4. Answer is 4:45. Socratic Hint: Just add the minutes together.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 4:30."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: $2.00 - 85 cents.",
-        "options": [
-            "15 cents",
-            "$1.00",
-            "$1.15",
-            "$1.25",
-            "$2.85"
-        ],
-        "correct_answer": "$1.15",
-        "ideal_solution": "200 - 85. Or: $2.00 - 1.00 = $1.00. But 85 cents is 15 cents less than a dollar. So he keeps $1.00 and 15 cents. $1.15. Socratic Hint: Subtract 85 cents from the first dollar. You get 15 cents. Add back the second dollar.",
-        "failure_modes": {
-            "formula_misapplication": "Student says 15 cents (only used $1.00)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A class has 20 kids. 12 are wearing blue. 10 are wearing red. Some kids wear both! How many wear BOTH red and blue?",
-        "options": [
-            "0",
-            "2",
-            "4",
-            "10",
-            "12"
-        ],
-        "correct_answer": "2",
-        "ideal_solution": "Blue+Red = 12 + 10 = 22 completely. But there are only 20 kids physically. 22 - 20 = 2 overlapping. Socratic Hint: If you add up the shirts (12+10), you get 22. But there are only 20 kids! The extra must be wearing both.",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 0 or 4, unable to resolve the overlap."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 70 + 70 + 10?",
-        "options": [
-            "130",
-            "140",
-            "150",
-            "160",
-            "200"
-        ],
-        "correct_answer": "150",
-        "ideal_solution": "7+7 = 14. 140+10 = 150. Socratic Hint: Add 70 and 70. 7+7 is 14, so it's 140.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 140."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which length is the longest?",
-        "options": [
-            "1 inch",
-            "1 foot",
-            "1 meter",
-            "1 centimeter",
-            "1 yard"
-        ],
-        "correct_answer": "1 meter",
-        "ideal_solution": "Inch/cm < foot < yard. 1 meter is ~39 inches, which is > 1 yard (36 inches). 1 meter is longest. Socratic Hint: Centimeter/Inch are very small. Foot is a ruler. Yard is 3 rulers. Meter is slightly more than a yard.",
-        "failure_modes": {
-            "converse_error": "Student chooses 1 yard (common confusion)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "If you stack 4 cubes vertically, what is the new shape?",
-        "options": [
-            "Square",
-            "Cube",
-            "Rectangular Prism",
-            "Cylinder",
-            "Pyramid"
-        ],
-        "correct_answer": "Rectangular Prism",
-        "ideal_solution": "Stacking cubes creates a tower that is taller than it is wide. This is a rectangular prism. Socratic Hint: It has flat rectangle sides, like a skyscraper or cereal box.",
-        "failure_modes": {
-            "converse_error": "Student guesses Cube (ignoring height)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 315 + 205?",
-        "options": [
-            "500",
-            "510",
-            "515",
-            "520",
-            "525"
-        ],
-        "correct_answer": "520",
-        "ideal_solution": "Hundreds: 300+200=500. Tens/Ones: 15+5=20. 500+20 = 520. Socratic Hint: Add the 5 and 15 together first.",
-        "failure_modes": {
-            "arithmetic_slip": "Student writes 510 or 515."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Count back by 20s: 100, 80, 60, ___",
-        "options": [
-            "30",
-            "40",
-            "50",
-            "60",
-            "80"
-        ],
-        "correct_answer": "40",
-        "ideal_solution": "Like counting back by 2s with a zero. 10, 8, 6, 4. So 40. Socratic Hint: Subtract 2 from 6.",
-        "failure_modes": {
-            "off_by_one": "Student guesses 50 (counting by tens)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A dog eats 2 cups of food per day. A bag holds 14 cups. How many days will the bag last?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-        ],
-        "correct_answer": "7",
-        "ideal_solution": "Count down or up by 2s to 14. 2, 4, 6, 8, 10, 12, 14. That is 7 times. Socratic Hint: Ask yourself: what number plus itself gives you 14?",
-        "failure_modes": {
-            "formula_misapplication": "Student subtracts 14 - 2 = 12."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 6 × 5? (Or 5 + 5 + 5 + 5 + 5 + 5)",
-        "options": [
-            "25",
-            "30",
-            "35",
-            "40",
-            "65"
-        ],
-        "correct_answer": "30",
-        "ideal_solution": "Count by 5s six times. 5, 10, 15, 20, 25, 30. Socratic Hint: Hold up 6 fingers and skip count by 5.",
-        "failure_modes": {
-            "off_by_one": "Student says 25 or 35."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 100 - 8 - 2?",
-        "options": [
-            "80",
-            "82",
-            "90",
-            "92",
-            "98"
-        ],
-        "correct_answer": "90",
-        "ideal_solution": "8 + 2 = 10. You are subtracting 10 total. 100 - 10 = 90. Socratic Hint: Add the numbers you are taking away. You are taking away 8 and 2. That's taking away 10.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 82 (100 - 8 - 10)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which of these sums is exactly 100?",
-        "options": [
-            "30 + 60",
-            "25 + 75",
-            "45 + 65",
-            "80 + 30",
-            "50 + 40"
-        ],
-        "correct_answer": "25 + 75",
-        "ideal_solution": "20+70=90. 5+5=10. 90+10=100. Or 1 quarter + 3 quarters = 4 quarters ($1.00). Socratic Hint: Look for combinations ending in zero. 5+5=10.",
-        "failure_modes": {
-            "arithmetic_slip": "Student picks 45 + 65 (110)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "geometry",
-        "question": "Which shape has the same number of sides as a square?",
-        "options": [
-            "Triangle",
-            "Rectangle",
-            "Pentagon",
-            "Hexagon",
-            "Circle"
-        ],
-        "correct_answer": "Rectangle",
-        "ideal_solution": "Square has 4. Rectangle has 4. Therefore Rectangle. Socratic Hint: A square is just a special type of this shape.",
-        "failure_modes": {
-            "converse_error": "Student guesses Pentagon (5)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Add: 12 + 12 + 12.",
-        "options": [
-            "24",
-            "36",
-            "48",
-            "60",
-            "1212"
-        ],
-        "correct_answer": "36",
-        "ideal_solution": "10+10+10 = 30. 2+2+2 = 6. 30+6=36. Socratic Hint: Add the ones together: 2+2+2. Then the tens: 1+1+1.",
-        "failure_modes": {
-            "premature_calculation": "Student adds 12 + 12 = 24."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 40 - 11?",
-        "options": [
-            "28",
-            "29",
-            "30",
-            "31",
-            "51"
-        ],
-        "correct_answer": "29",
-        "ideal_solution": "40 - 10 = 30. 30 - 1 = 29. Socratic Hint: Take away exactly 10 first. Then take away 1.",
-        "failure_modes": {
-            "off_by_one": "Student says 31 (usually 40-10+1 by mistake)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "A farm has 2 cows and 4 ducks. How many heads in total?",
-        "options": [
-            "4",
-            "6",
-            "8",
-            "16",
-            "24"
-        ],
-        "correct_answer": "6",
-        "ideal_solution": "Every normal animal has 1 head. 2 + 4 = 6 heads. Socratic Hint: Is it asking for legs or heads?",
-        "failure_modes": {
-            "formula_misapplication": "Student calculates legs instead (2x4 + 4x2 = 16)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 205 + 95?",
-        "options": [
-            "290",
-            "295",
-            "300",
-            "305",
-            "310"
-        ],
-        "correct_answer": "300",
-        "ideal_solution": "5 + 95 = 100. 200 + 100 = 300. Socratic Hint: Give the 5 from 205 to the 95 to make 100. Then you just have 200 + 100.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 290."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is the next odd number after 149?",
-        "options": [
-            "148",
-            "150",
-            "151",
-            "152",
-            "159"
-        ],
-        "correct_answer": "151",
-        "ideal_solution": "149 is odd. The next number is 150 (even). The next is 151 (odd). Adding 2 to an odd number gives the next odd. Socratic Hint: 150 is the very next number, but it ends in a zero (even). Go one more.",
-        "failure_modes": {
-            "off_by_one": "Student guesses 150."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Subtract: 300 - 99.",
-        "options": [
-            "101",
-            "199",
-            "200",
-            "201",
-            "299"
-        ],
-        "correct_answer": "201",
-        "ideal_solution": "300 - 100 = 200. Since we wanted to subtract 99, we took away 1 too many. So we add 1 back: 200 + 1 = 201. Socratic Hint: Subtract 100 to make it easy. Then fix it by adding 1.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 200 or 101."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "If you have $2.00, and spend $1.30, how much change is left?",
-        "options": [
-            "60 cents",
-            "70 cents",
-            "80 cents",
-            "$1.70",
-            "$3.30"
-        ],
-        "correct_answer": "70 cents",
-        "ideal_solution": "2.00 is 200. $1.30 is 130. 200 - 130 = 70. Socratic Hint: Count up from 30 cents to a dollar. That's 70 cents.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 80 cents."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 44 + 55?",
-        "options": [
-            "88",
-            "99",
-            "100",
-            "110",
-            "4455"
-        ],
-        "correct_answer": "99",
-        "ideal_solution": "Add tens: 40+50 = 90. Add ones: 4+5 = 9. 99. Socratic Hint: Since the tens and ones digits match, add 4 and 5 together.",
-        "failure_modes": {
-            "arithmetic_slip": "Student writes 4455."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "There are 6 groups of 2. How many total?",
-        "options": [
-            "8",
-            "10",
-            "12",
-            "14",
-            "16"
-        ],
-        "correct_answer": "12",
-        "ideal_solution": "2+2+2+2+2+2 = 12. Skip count by 2s: 2, 4, 6, 8, 10, 12. Socratic Hint: Give yourself 6 fingers and count them by 2s.",
-        "failure_modes": {
-            "formula_misapplication": "Student adds: 6 + 2 = 8."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "I am a solid shape. I roll easily. I have exactly 2 flat faces. What am I?",
-        "options": [
-            "Sphere",
-            "Cube",
-            "Cylinder",
-            "Cone",
-            "Pyramid"
-        ],
-        "correct_answer": "Cylinder",
-        "ideal_solution": "A cylinder rolls (curved surface) and has a flat circle on top and bottom (2 faces). Socratic Hint: Like a can of soup!",
-        "failure_modes": {
-            "converse_error": "Student chooses Sphere (0 flat faces) or Cone (1 flat face)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 200 - 15 - 5?",
-        "options": [
-            "170",
-            "175",
-            "180",
-            "185",
-            "190"
-        ],
-        "correct_answer": "180",
-        "ideal_solution": "15 + 5 = 20. Total to subtract is 20. 200 - 20 = 180. Socratic Hint: Add the numbers you are taking away first.",
-        "failure_modes": {
-            "arithmetic_slip": "Student does 200 - 15 + 5 = 190."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "In the number 6,104, what place is the digit 6 in?",
-        "options": [
-            "Ones",
-            "Tens",
-            "Hundreds",
-            "Thousands",
-            "Ten-Thousands"
-        ],
-        "correct_answer": "Thousands",
-        "ideal_solution": "Counting right to left: 4=Ones, 0=Tens, 1=Hundreds, 6=Thousands. Socratic Hint: The comma separates the hundreds from the thousands.",
-        "failure_modes": {
-            "converse_error": "Student says Hundreds."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 35 + 35 + 30?",
-        "options": [
-            "90",
-            "95",
-            "100",
-            "105",
-            "110"
-        ],
-        "correct_answer": "100",
-        "ideal_solution": "35 + 35 = 70. 70 + 30 = 100. Socratic Hint: First double the 35.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 90."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is 95 - 45?",
-        "options": [
-            "40",
-            "45",
-            "50",
-            "55",
-            "140"
-        ],
-        "correct_answer": "50",
-        "ideal_solution": "90 - 40 = 50. 5 - 5 = 0. Answer is 50. Socratic Hint: The ones digit is exactly the same, so it turns into a zero.",
-        "failure_modes": {
-            "arithmetic_slip": "Student says 40."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Which represents a group of 15?",
-        "options": [
-            "3 rows of 4",
-            "5 rows of 3",
-            "2 rows of 7",
-            "6 rows of 2",
-            "4 rows of 5"
-        ],
-        "correct_answer": "5 rows of 3",
-        "ideal_solution": "5 + 5 + 5 = 15. The other combinations are 12, 14, 12, and 20. Socratic Hint: Can you skip count by any of those numbers exactly to 15?",
-        "failure_modes": {
-            "formula_misapplication": "Student guesses 3 rows of 4 (12)."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "What is $1.00 + 4 quarters?",
-        "options": [
-            "$1.04",
-            "$1.25",
-            "$1.50",
-            "$2.00",
-            "$5.00"
-        ],
-        "correct_answer": "$2.00",
-        "ideal_solution": "4 quarters = $1.00. $1.00 + $1.00 = $2.00. Socratic Hint: Wait, how much are 4 quarters worth on their own?",
-        "failure_modes": {
-            "formula_misapplication": "Student adds 4 to 1 to get $1.04."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "arithmetic",
-        "question": "Is 380 - 80 greater than, less than, or equal to 300?",
-        "options": [
-            "Greater than",
-            "Less than",
-            "Equal to",
-            "Cannot tell"
-        ],
-        "correct_answer": "Equal to",
-        "ideal_solution": "380 - 80 removes the 8 tens. It leaves exactly 300. So it is equal. Socratic Hint: If you take away the 80, what do you have left?",
-        "failure_modes": {
-            "converse_error": "Student thinks 300 is 'smaller' than 380 so answers Less than."
-        }
-    },
-    {
-        "grade": 2,
-        "level": 5,
-        "difficulty": "gifted",
-        "type": "logic",
-        "question": "You have a square piece of paper. You fold it exactly in half so the opposite edges touch. What shape is it now?",
-        "options": [
-            "Triangle",
-            "Square",
-            "Rectangle",
-            "Circle"
-        ],
-        "correct_answer": "Rectangle",
-        "ideal_solution": "Folding a square in half parallel to a side creates a shape that is half as wide as it is tall: a rectangle. Socratic Hint: Does it look like a door or a box?",
-        "failure_modes": {
-            "converse_error": "Student guesses Triangle (this happens if folded corner to corner)."
-        }
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 348 + 215?",
+    "options": [
+      "553",
+      "563",
+      "573",
+      "600",
+      "663"
+    ],
+    "correct_answer": "563",
+    "ideal_solution": "300+200=500. 40+10=50. 8+5=13. 500+50+13 = 563. Socratic Hint: Add the ones (8+5). Do you need to regroup a ten?",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 553 (forgot to regroup the 10 from 8+5).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
     }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Subtract: 400 - 125.",
+    "options": [
+      "275",
+      "285",
+      "325",
+      "375",
+      "125"
+    ],
+    "correct_answer": "275",
+    "ideal_solution": "400 - 100 = 300. 300 - 20 = 280. 280 - 5 = 275. Socratic Hint: Count up from 125. 125+75=200. 200+200=400. So 275.",
+    "failure_modes": {
+      "off_by_one": "Student says 285.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A store has 225 apples and 150 oranges. How much fruit in total?",
+    "options": [
+      "350",
+      "365",
+      "375",
+      "400",
+      "425"
+    ],
+    "correct_answer": "375",
+    "ideal_solution": "200 + 100 = 300. 25 + 50 = 75. Total = 375. Socratic Hint: Just add the hundreds directly, then add 50 and 25.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 365.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "Which set of polygons all have at least 5 sides?",
+    "options": [
+      "Pentagon, Hexagon",
+      "Square, Pentagon",
+      "Triangle, Square",
+      "Rectangle, Octagon",
+      "Hexagon, Quadrilateral"
+    ],
+    "correct_answer": "Pentagon, Hexagon",
+    "ideal_solution": "Pentagon = 5, Hexagon = 6. Both have 5 or more. Quadrilaterals, squares, rectangles, triangles have 4 or less. Socratic Hint: Any shape starting with 'quad', 'tri', 'rect', or 'square' doesn't meet the rule.",
+    "failure_modes": {
+      "constraint_neglect": "Student picks Square, Pentagon.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is $5.00 - $1.20?",
+    "options": [
+      "$3.20",
+      "$3.80",
+      "$4.20",
+      "$4.80",
+      "$6.20"
+    ],
+    "correct_answer": "$3.80",
+    "ideal_solution": "500 cents - 100 cents = 400 cents. 400 - 20 = 380 cents ($3.80). Socratic Hint: If you have 4 dollars, and take away 20 cents, you have 3 dollars and 80 cents left.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says $4.80 or $4.20.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "You buy 4 items that each cost 15 cents. How much do they cost in total?",
+    "options": [
+      "45 cents",
+      "50 cents",
+      "60 cents",
+      "75 cents",
+      "100 cents"
+    ],
+    "correct_answer": "60 cents",
+    "ideal_solution": "15 + 15 = 30. 30 + 30 = 60. Socratic Hint: Add them in pairs! What is 15 plus 15?",
+    "failure_modes": {
+      "premature_calculation": "Student stops at 45 (3 items).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "Sara is 10 years old. Her brother is half her age. How old will her brother be in 5 years?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct_answer": "10",
+    "ideal_solution": "Brother's age now = half of 10 = 5. In 5 years: 5 + 5 = 10. Socratic Hint: Find his age RIGHT NOW first. What is half of 10? Then add 5.",
+    "failure_modes": {
+      "formula_misapplication": "Student takes half of Sara's future age (15/2 = not a whole number) or just adds 5 to Sara's age.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Is 115 closer to 100 or 200?",
+    "options": [
+      "100",
+      "200",
+      "Exactly halfway",
+      "Neither"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "115 is 15 away from 100. It is 85 away from 200. It is much closer to 100. Socratic Hint: The halfway point between 100 and 200 is 150. Is 115 below or above 150?",
+    "failure_modes": {
+      "converse_error": "Student guesses 200.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Add: 25 + 25 + 25 + 25.",
+    "options": [
+      "75",
+      "100",
+      "125",
+      "150",
+      "50"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "Four quarters makes a dollar. 25 + 25 = 50. 50 + 50 = 100. Socratic Hint: What is 50 + 50?",
+    "failure_modes": {
+      "premature_calculation": "Student stops at 75.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A rope is 200 centimeters long. You cut off 45 centimeters. How long is it now?",
+    "options": [
+      "145 cm",
+      "150 cm",
+      "155 cm",
+      "165 cm",
+      "100 cm"
+    ],
+    "correct_answer": "155 cm",
+    "ideal_solution": "200 - 40 = 160. 160 - 5 = 155. Socratic Hint: Subtract 50 first to get 150. Since you only needed to subtract 45, add 5 back.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 145 or 165.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "In the number 842, what is the value of the digit '8'?",
+    "options": [
+      "8",
+      "80",
+      "84",
+      "800",
+      "842"
+    ],
+    "correct_answer": "800",
+    "ideal_solution": "The 8 is in the hundreds place, so it represents 8 hundreds, which is 800. Socratic Hint: If you read the number out loud, you say 'Eight hundred...'",
+    "failure_modes": {
+      "converse_error": "Student says 8 (its face value).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 18 + 18?",
+    "options": [
+      "26",
+      "36",
+      "46",
+      "38",
+      "28"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "10 + 10 = 20. 8 + 8 = 16. 20 + 16 = 36. Socratic Hint: Add 10 and 10. Then add 8 and 8. Finally, put them together.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 26 (forgot to regroup).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "A piece of paper is a rectangle. It has 4 corners. If you cut off one corner perfectly straight, how many corners does the paper have now?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_answer": "5",
+    "ideal_solution": "You remove 1 corner, but the straight cut creates 2 new corners where it meets the edges. 4 - 1 + 2 = 5 corners. (It becomes a pentagon). Socratic Hint: Draw a rectangle. Draw a line cutting off a corner. Count the new points.",
+    "failure_modes": {
+      "formula_misapplication": "Student says 3 (4 - 1 = 3).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "If day 1 is Monday, what is day 10?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "correct_answer": "Wednesday",
+    "ideal_solution": "Day 1=Mon. 1 week later is Day 8=Mon. Day 9=Tue. Day 10=Wed. Socratic Hint: A week is 7 days. Move forward 7 days to get back to Monday.",
+    "failure_modes": {
+      "off_by_one": "Student says Tuesday.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 425 + 10?",
+    "options": [
+      "415",
+      "426",
+      "430",
+      "435",
+      "525"
+    ],
+    "correct_answer": "435",
+    "ideal_solution": "Only the tens digit changes. 2 + 1 = 3. 435. Socratic Hint: Look at the 25. What is 25+10?",
+    "failure_modes": {
+      "off_by_one": "Student adds 10 to hundreds: 525.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 120 - 90?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "110",
+      "210"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "12 tens - 9 tens = 3 tens = 30. Socratic Hint: Think: 90 plus what equals 120?",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 20.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 1/2 of 50?",
+    "options": [
+      "10",
+      "20",
+      "25",
+      "50",
+      "100"
+    ],
+    "correct_answer": "25",
+    "ideal_solution": "25 + 25 = 50. So half of 50 is 25. Socratic Hint: Two quarters equal a half-dollar. How many cents in a quarter?",
+    "failure_modes": {
+      "formula_misapplication": "Student says 20 or 100.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "There are 5 shelves. The first 4 shelves have 10 books each. The last shelf has 5 books. How many books total?",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55",
+      "100"
+    ],
+    "correct_answer": "45",
+    "ideal_solution": "4 groups of 10 = 40. Plus 5 = 45. Socratic Hint: Count the tens first: 10, 20, 30, 40. Then add the 5.",
+    "failure_modes": {
+      "premature_calculation": "Student stops at 40 or miscounts 5 shelves of 10 = 50.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 99 + 99?",
+    "options": [
+      "180",
+      "188",
+      "198",
+      "199",
+      "200"
+    ],
+    "correct_answer": "198",
+    "ideal_solution": "Think: 100 + 100 = 200. Since we are adding 99 (which is 1 less each time), 200 - 1 - 1 = 198. Socratic Hint: Pretend it's 100 + 100, then subtract 2.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 188.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "A game starts at 4:15. It lasts exactly 30 minutes. What time does it end?",
+    "options": [
+      "4:30",
+      "4:45",
+      "5:00",
+      "5:15",
+      "5:30"
+    ],
+    "correct_answer": "4:45",
+    "ideal_solution": "15 + 30 = 45 minutes. The hour stays 4. Answer is 4:45. Socratic Hint: Just add the minutes together.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 4:30.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Subtract: $2.00 - 85 cents.",
+    "options": [
+      "15 cents",
+      "$1.00",
+      "$1.15",
+      "$1.25",
+      "$2.85"
+    ],
+    "correct_answer": "$1.15",
+    "ideal_solution": "200 - 85. Or: $2.00 - 1.00 = $1.00. But 85 cents is 15 cents less than a dollar. So he keeps $1.00 and 15 cents. $1.15. Socratic Hint: Subtract 85 cents from the first dollar. You get 15 cents. Add back the second dollar.",
+    "failure_modes": {
+      "formula_misapplication": "Student says 15 cents (only used $1.00).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A class has 20 kids. 12 are wearing blue. 10 are wearing red. Some kids wear both! How many wear BOTH red and blue?",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "10",
+      "12"
+    ],
+    "correct_answer": "2",
+    "ideal_solution": "Blue+Red = 12 + 10 = 22 completely. But there are only 20 kids physically. 22 - 20 = 2 overlapping. Socratic Hint: If you add up the shirts (12+10), you get 22. But there are only 20 kids! The extra must be wearing both.",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 0 or 4, unable to resolve the overlap.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 70 + 70 + 10?",
+    "options": [
+      "130",
+      "140",
+      "150",
+      "160",
+      "200"
+    ],
+    "correct_answer": "150",
+    "ideal_solution": "7+7 = 14. 140+10 = 150. Socratic Hint: Add 70 and 70. 7+7 is 14, so it's 140.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 140.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Which length is the longest among 1 inch, 1 foot, 1 meter, 1 centimeter, and 1 yard?",
+    "options": [
+      "1 inch",
+      "1 foot",
+      "1 meter",
+      "1 centimeter",
+      "1 yard"
+    ],
+    "correct_answer": "1 meter",
+    "ideal_solution": "Inch/cm < foot < yard. 1 meter is ~39 inches, which is > 1 yard (36 inches). 1 meter is longest. Socratic Hint: Centimeter/Inch are very small. Foot is a ruler. Yard is 3 rulers. Meter is slightly more than a yard.",
+    "failure_modes": {
+      "converse_error": "Student chooses 1 yard (common confusion).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "If you stack 4 cubes vertically, what is the new shape?",
+    "options": [
+      "Square",
+      "Cube",
+      "Rectangular Prism",
+      "Cylinder",
+      "Pyramid"
+    ],
+    "correct_answer": "Rectangular Prism",
+    "ideal_solution": "Stacking cubes creates a tower that is taller than it is wide. This is a rectangular prism. Socratic Hint: It has flat rectangle sides, like a skyscraper or cereal box.",
+    "failure_modes": {
+      "converse_error": "Student guesses Cube (ignoring height).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 315 + 205?",
+    "options": [
+      "500",
+      "510",
+      "515",
+      "520",
+      "525"
+    ],
+    "correct_answer": "520",
+    "ideal_solution": "Hundreds: 300+200=500. Tens/Ones: 15+5=20. 500+20 = 520. Socratic Hint: Add the 5 and 15 together first.",
+    "failure_modes": {
+      "arithmetic_slip": "Student writes 510 or 515.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Count back by 20s: 100, 80, 60, ___",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "60",
+      "80"
+    ],
+    "correct_answer": "40",
+    "ideal_solution": "Like counting back by 2s with a zero. 10, 8, 6, 4. So 40. Socratic Hint: Subtract 2 from 6.",
+    "failure_modes": {
+      "off_by_one": "Student guesses 50 (counting by tens).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A dog eats 2 cups of food per day. A bag holds 14 cups. How many days will the bag last?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_answer": "7",
+    "ideal_solution": "Count down or up by 2s to 14. 2, 4, 6, 8, 10, 12, 14. That is 7 times. Socratic Hint: Ask yourself: what number plus itself gives you 14?",
+    "failure_modes": {
+      "formula_misapplication": "Student subtracts 14 - 2 = 12.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 6 × 5? (Or 5 + 5 + 5 + 5 + 5 + 5)",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "40",
+      "65"
+    ],
+    "correct_answer": "30",
+    "ideal_solution": "Count by 5s six times. 5, 10, 15, 20, 25, 30. Socratic Hint: Hold up 6 fingers and skip count by 5.",
+    "failure_modes": {
+      "off_by_one": "Student says 25 or 35.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 100 - 8 - 2?",
+    "options": [
+      "80",
+      "82",
+      "90",
+      "92",
+      "98"
+    ],
+    "correct_answer": "90",
+    "ideal_solution": "8 + 2 = 10. You are subtracting 10 total. 100 - 10 = 90. Socratic Hint: Add the numbers you are taking away. You are taking away 8 and 2. That's taking away 10.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 82 (100 - 8 - 10).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Which of the sums 30 + 60, 25 + 75, 45 + 65, 80 + 30, and 50 + 40 is exactly 100?",
+    "options": [
+      "30 + 60",
+      "25 + 75",
+      "45 + 65",
+      "80 + 30",
+      "50 + 40"
+    ],
+    "correct_answer": "25 + 75",
+    "ideal_solution": "20+70=90. 5+5=10. 90+10=100. Or 1 quarter + 3 quarters = 4 quarters ($1.00). Socratic Hint: Look for combinations ending in zero. 5+5=10.",
+    "failure_modes": {
+      "arithmetic_slip": "Student picks 45 + 65 (110).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "geometry",
+    "question": "Which shape has the same number of sides as a square?",
+    "options": [
+      "Triangle",
+      "Rectangle",
+      "Pentagon",
+      "Hexagon",
+      "Circle"
+    ],
+    "correct_answer": "Rectangle",
+    "ideal_solution": "Square has 4. Rectangle has 4. Therefore Rectangle. Socratic Hint: A square is just a special type of this shape.",
+    "failure_modes": {
+      "converse_error": "Student guesses Pentagon (5).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Add: 12 + 12 + 12.",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60",
+      "1212"
+    ],
+    "correct_answer": "36",
+    "ideal_solution": "10+10+10 = 30. 2+2+2 = 6. 30+6=36. Socratic Hint: Add the ones together: 2+2+2. Then the tens: 1+1+1.",
+    "failure_modes": {
+      "premature_calculation": "Student adds 12 + 12 = 24.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 40 - 11?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "51"
+    ],
+    "correct_answer": "29",
+    "ideal_solution": "40 - 10 = 30. 30 - 1 = 29. Socratic Hint: Take away exactly 10 first. Then take away 1.",
+    "failure_modes": {
+      "off_by_one": "Student says 31 (usually 40-10+1 by mistake).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "A farm has 2 cows and 4 ducks. How many heads in total?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "16",
+      "24"
+    ],
+    "correct_answer": "6",
+    "ideal_solution": "Every normal animal has 1 head. 2 + 4 = 6 heads. Socratic Hint: Is it asking for legs or heads?",
+    "failure_modes": {
+      "formula_misapplication": "Student calculates legs instead (2x4 + 4x2 = 16).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 205 + 95?",
+    "options": [
+      "290",
+      "295",
+      "300",
+      "305",
+      "310"
+    ],
+    "correct_answer": "300",
+    "ideal_solution": "5 + 95 = 100. 200 + 100 = 300. Socratic Hint: Give the 5 from 205 to the 95 to make 100. Then you just have 200 + 100.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 290.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is the next odd number after 149?",
+    "options": [
+      "148",
+      "150",
+      "151",
+      "152",
+      "159"
+    ],
+    "correct_answer": "151",
+    "ideal_solution": "149 is odd. The next number is 150 (even). The next is 151 (odd). Adding 2 to an odd number gives the next odd. Socratic Hint: 150 is the very next number, but it ends in a zero (even). Go one more.",
+    "failure_modes": {
+      "off_by_one": "Student guesses 150.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Subtract: 300 - 99.",
+    "options": [
+      "101",
+      "199",
+      "200",
+      "201",
+      "299"
+    ],
+    "correct_answer": "201",
+    "ideal_solution": "300 - 100 = 200. Since we wanted to subtract 99, we took away 1 too many. So we add 1 back: 200 + 1 = 201. Socratic Hint: Subtract 100 to make it easy. Then fix it by adding 1.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 200 or 101.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "If you have $2.00, and spend $1.30, how much change is left?",
+    "options": [
+      "60 cents",
+      "70 cents",
+      "80 cents",
+      "$1.70",
+      "$3.30"
+    ],
+    "correct_answer": "70 cents",
+    "ideal_solution": "2.00 is 200. $1.30 is 130. 200 - 130 = 70. Socratic Hint: Count up from 30 cents to a dollar. That's 70 cents.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 80 cents.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 44 + 55?",
+    "options": [
+      "88",
+      "99",
+      "100",
+      "110",
+      "4455"
+    ],
+    "correct_answer": "99",
+    "ideal_solution": "Add tens: 40+50 = 90. Add ones: 4+5 = 9. 99. Socratic Hint: Since the tens and ones digits match, add 4 and 5 together.",
+    "failure_modes": {
+      "arithmetic_slip": "Student writes 4455.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "There are 6 groups of 2. How many total?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_answer": "12",
+    "ideal_solution": "2+2+2+2+2+2 = 12. Skip count by 2s: 2, 4, 6, 8, 10, 12. Socratic Hint: Give yourself 6 fingers and count them by 2s.",
+    "failure_modes": {
+      "formula_misapplication": "Student adds: 6 + 2 = 8.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "I am a solid shape. I roll easily. I have exactly 2 flat faces. What am I?",
+    "options": [
+      "Sphere",
+      "Cube",
+      "Cylinder",
+      "Cone",
+      "Pyramid"
+    ],
+    "correct_answer": "Cylinder",
+    "ideal_solution": "A cylinder rolls (curved surface) and has a flat circle on top and bottom (2 faces). Socratic Hint: Like a can of soup!",
+    "failure_modes": {
+      "converse_error": "Student chooses Sphere (0 flat faces) or Cone (1 flat face).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 200 - 15 - 5?",
+    "options": [
+      "170",
+      "175",
+      "180",
+      "185",
+      "190"
+    ],
+    "correct_answer": "180",
+    "ideal_solution": "15 + 5 = 20. Total to subtract is 20. 200 - 20 = 180. Socratic Hint: Add the numbers you are taking away first.",
+    "failure_modes": {
+      "arithmetic_slip": "Student does 200 - 15 + 5 = 190.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "In the number 6,104, what place is the digit 6 in?",
+    "options": [
+      "Ones",
+      "Tens",
+      "Hundreds",
+      "Thousands",
+      "Ten-Thousands"
+    ],
+    "correct_answer": "Thousands",
+    "ideal_solution": "Counting right to left: 4=Ones, 0=Tens, 1=Hundreds, 6=Thousands. Socratic Hint: The comma separates the hundreds from the thousands.",
+    "failure_modes": {
+      "converse_error": "Student says Hundreds.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 35 + 35 + 30?",
+    "options": [
+      "90",
+      "95",
+      "100",
+      "105",
+      "110"
+    ],
+    "correct_answer": "100",
+    "ideal_solution": "35 + 35 = 70. 70 + 30 = 100. Socratic Hint: First double the 35.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 90.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is 95 - 45?",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55",
+      "140"
+    ],
+    "correct_answer": "50",
+    "ideal_solution": "90 - 40 = 50. 5 - 5 = 0. Answer is 50. Socratic Hint: The ones digit is exactly the same, so it turns into a zero.",
+    "failure_modes": {
+      "arithmetic_slip": "Student says 40.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Which represents a group of 15?",
+    "options": [
+      "3 rows of 4",
+      "5 rows of 3",
+      "2 rows of 7",
+      "6 rows of 2",
+      "4 rows of 5"
+    ],
+    "correct_answer": "5 rows of 3",
+    "ideal_solution": "5 + 5 + 5 = 15. The other combinations are 12, 14, 12, and 20. Socratic Hint: Can you skip count by any of those numbers exactly to 15?",
+    "failure_modes": {
+      "formula_misapplication": "Student guesses 3 rows of 4 (12).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "What is $1.00 + 4 quarters?",
+    "options": [
+      "$1.04",
+      "$1.25",
+      "$1.50",
+      "$2.00",
+      "$5.00"
+    ],
+    "correct_answer": "$2.00",
+    "ideal_solution": "4 quarters = $1.00. $1.00 + $1.00 = $2.00. Socratic Hint: Wait, how much are 4 quarters worth on their own?",
+    "failure_modes": {
+      "formula_misapplication": "Student adds 4 to 1 to get $1.04.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "arithmetic",
+    "question": "Is 380 - 80 greater than, less than, or equal to 300?",
+    "options": [
+      "Greater than",
+      "Less than",
+      "Equal to",
+      "Cannot tell"
+    ],
+    "correct_answer": "Equal to",
+    "ideal_solution": "380 - 80 removes the 8 tens. It leaves exactly 300. So it is equal. Socratic Hint: If you take away the 80, what do you have left?",
+    "failure_modes": {
+      "converse_error": "Student thinks 300 is 'smaller' than 380 so answers Less than.",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  },
+  {
+    "grade": 2,
+    "level": 5,
+    "difficulty": "advanced",
+    "type": "logic",
+    "question": "You have a square piece of paper. You fold it exactly in half so the opposite edges touch. What shape is it now?",
+    "options": [
+      "Triangle",
+      "Square",
+      "Rectangle",
+      "Circle"
+    ],
+    "correct_answer": "Rectangle",
+    "ideal_solution": "Folding a square in half parallel to a side creates a shape that is half as wide as it is tall: a rectangle. Socratic Hint: Does it look like a door or a box?",
+    "failure_modes": {
+      "converse_error": "Student guesses Triangle (this happens if folded corner to corner).",
+      "unanticipated_error_2": "Student made an error in calculation or conceptual understanding.",
+      "unanticipated_error_3": "Student made an error in calculation or conceptual understanding."
+    }
+  }
 ]

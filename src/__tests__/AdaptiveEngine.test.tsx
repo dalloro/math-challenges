@@ -23,22 +23,23 @@ vi.mock('../services/storage', () => ({
   clearGlobalSeenQuestions: vi.fn(),
 }));
 
+let mockSelectionIndex = 0;
 vi.mock('../hooks/useQuestionSelection', () => ({
   useQuestionSelection: vi.fn((questions: useQuestionsHook.Question[]) => ({
     selectQuestion: vi.fn(({ level }: { level: number }) => {
       const pool = questions.filter((q: useQuestionsHook.Question) => q.level === level);
-      // Return a random one from the filtered pool to satisfy 'not to be' checks
-      // Fallback to first question if filtered pool is empty (e.g. metadata test)
-      return pool[Math.floor(Math.random() * pool.length)] || questions[0] || null;
+      const picked = pool[mockSelectionIndex % pool.length] || questions[0] || null;
+      mockSelectionIndex++;
+      return picked;
     }),
     markAsSeen: vi.fn(),
   })),
 }));
 
 const mockQuestions: useQuestionsHook.Question[] = [
-  { id: '1', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q1 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 1', failure_modes: {} },
-  { id: '2', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q2 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 2', failure_modes: {} },
-  { id: '3', level: 1, grade: 1, difficulty: 'gifted', type: 'logic', question: 'Q3 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 3', failure_modes: {} }
+  { id: '1', level: 1, grade: 1, difficulty: 'beginner', type: 'logic', question: 'Q1 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 1', failure_modes: {} },
+  { id: '2', level: 1, grade: 1, difficulty: 'beginner', type: 'logic', question: 'Q2 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 2', failure_modes: {} },
+  { id: '3', level: 1, grade: 1, difficulty: 'beginner', type: 'logic', question: 'Q3 L1', options: ['A'], correct_answer: 'A', ideal_solution: 'Solution 3', failure_modes: {} }
 ];
 
 function StatefulSessionMock() {
@@ -98,7 +99,7 @@ describe('Adaptive Engine Logic', () => {
     fireEvent.change(screen.getByPlaceholderText(/Explain your reasoning/i), { target: { value: 'My reasoning' } });
     // 3. Submit for review
     fireEvent.click(screen.getByText(/Show Ideal Solution/i));
-    
+
     // 4. Confirm selection (which now appears in the feedback view)
     // Delay is 0 in test mode
     const nextBtn = await screen.findByText(/Continue to Next Challenge/i);
@@ -131,7 +132,7 @@ describe('Adaptive Engine Logic', () => {
       const q2 = screen.getByText(/Q\d L1/);
       expect(q2.textContent).not.toBe(q1.textContent);
     });
-    
+
     // Answer second question correctly
     await submitQuestion();
 
