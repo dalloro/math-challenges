@@ -11,7 +11,7 @@
     - [x] Ensure tracking handles both Combined and Blind modes. [9ba6b7e]
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Performance Tracking Infrastructure' (Protocol in workflow.md) [dd4eac2]
 
-## Phase 2: Analytics UI & Cohort Visualization
+## Phase 2: Analytics UI & Cohort Visualization [checkpoint: 359746f]
 - [x] Task: Install & Setup Recharts [5d67c9a]
     - [x] Run `npm install recharts`. [5d67c9a]
     - [x] Verify setup with a simple placeholder chart. [5d67c9a]
@@ -20,7 +20,7 @@
     - [x] Implement "Global Distribution" Bar Chart (Success Rate per Grade/Level). [57c33ec]
     - [x] Implement "Cohort Composition" Pie/Bar Chart (Question Types per Grade+Level). [57c33ec]
     - [x] Implement "Question Performance Table" with type filters. [57c33ec]
-- [~] Task: Conductor - User Manual Verification 'Phase 2: Analytics UI & Cohort Visualization' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Analytics UI & Cohort Visualization' (Protocol in workflow.md) [359746f]
 
 ## Phase 3: Historical Trends & Calibration
 - [ ] Task: Implement Time-Series Tracking
