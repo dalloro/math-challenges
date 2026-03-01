@@ -6,9 +6,9 @@
     - [x] Implement `incrementQuestionStats` using Firestore `increment()`. [7fc801d]
     - [x] **Write failing tests** for counter increments. [7fc801d]
     - [x] **Implement** and verify counters. [7fc801d]
-- [ ] Task: Integrate Tracking into Submission Flow
-    - [ ] Update `src/pages/TestPage.tsx` to call the increment logic on answer submission.
-    - [ ] Ensure tracking handles both Combined and Blind modes.
+- [x] Task: Integrate Tracking into Submission Flow [9ba6b7e]
+    - [x] Update `src/pages/TestPage.tsx` to call the increment logic on answer submission. [9ba6b7e]
+    - [x] Ensure tracking handles both Combined and Blind modes. [9ba6b7e]
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Performance Tracking Infrastructure' (Protocol in workflow.md)
 
 ## Phase 2: Analytics UI & Cohort Visualization
